@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "finished_utc": "2026-10-23T06:37:09.283685+00:00",
+  "accounts": 180,
+  "compute_cutoff": "2014-12-31",
+  "source_cache_cutoff": "2023-05-29",
+  "oos_computed": false,
+  "protocol_sha256": "9be886f0e21feb3c97148b75ba016f79817f79541fd3921eb778183a439adbc3",
+  "source_integrity_pass": true,
+  "later_outcome_numbers_decoded": 0,
+  "outcome_parse_counts": {
+    "source_rows": 46545,
+    "late_entry_rows_skipped_before_return_parse": 21284,
+    "early_entry_rows_skipped_before_return_parse": 0,
+    "nonclosed_or_cross_D_rows_skipped_before_return_parse": 128,
+    "decoded_D_closed_rows": 25133,
+    "fixed_state_cells_validated": 326729,
+    "macro_strict_prior_validated": true
+  },
+  "state_cells": 8640,
+  "summary_rows": 129600,
+  "comparison_rows": 77760,
+  "coverage_rows": 540,
+  "partition_count_and_PnL_checks": 25920,
+  "support10_cells": 267,
+  "support20_cells": 61,
+  "support10_by_interaction": {
+    "dollar_carry_conflict": 51,
+    "efficiency_directional_stretch": 108,
+    "efficiency_volatility": 108
+  },
+  "output_sha256": {
+    "discovery_closed_entry_ledger.csv.gz": "43d4fa4da2be207b76786505de231402aa20590c43f475bf6e0f75be0aab1591",
+    "interaction_account_coverage.csv": "c2d30b05c678c28a97779b25f98612e8109c9964333a5d074a1523c453e22317",
+    "interaction_comparison_summary.csv": "2ed586f8249bc16525a8061892357cb773ae50709b8504b2d5b684990d56a923",
+    "interaction_state_summary.csv": "65e031a03677fb621b28505e4079a212c11f915417c4e25228d7a64db9622d6b",
+    "interaction_support_diagnostics.csv": "ae2a9cce80487d660fc81415769a1411ea439c5b6a5f9babb1b8eb542eacf3a0"
+  }
+}

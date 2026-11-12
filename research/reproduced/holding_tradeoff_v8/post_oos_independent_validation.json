@@ -1,0 +1,2481 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-23T14:26:30.407550+00:00",
+  "finished_utc": "2026-10-23T14:26:39.097682+00:00",
+  "audit_script_sha256": "46fa3669b08e281efa3899f81c007dda44dd43c25b58334db45641ccbe1f7079",
+  "checks_total": 501,
+  "checks_passed": 501,
+  "checks": [
+    {
+      "name": "passed_preaudit_and_exact_helper_source",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_holding_tradeoff_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_entry_interaction_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_supplement.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\protocol.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\development_status.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_holding_tradeoff_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_tradeoff_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_holding_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_timecap_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_holding_filters.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_timecap_filters.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\review.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\review.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\final_review_validation.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\build_holding_observations.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_observation_protocol.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_observation_validation.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\discovery_repeated_negative_patterns.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\discovery_repeated_negative_patterns.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\is_base_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\is_holding_checkpoints.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\protocol.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\development_status.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\independent_validation.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\protocol.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\development_status.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\independent_validation.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_trades.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_original_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence_unchanged:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_holding_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "freeze_preaudit_then_authorized_OOS",
+      "passed": true
+    },
+    {
+      "name": "protocol_freeze_preaudit_status_bindings",
+      "passed": true
+    },
+    {
+      "name": "approved_unchanged_curve_and_strict_quality_protocol",
+      "passed": true
+    },
+    {
+      "name": "fixed_three_anniversary_windows",
+      "passed": true
+    },
+    {
+      "name": "freeze_manifest:source_sha256",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:run_holding_tradeoff_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_tradeoff_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:run_holding_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:run_timecap_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_holding_filters.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_timecap_filters.py",
+      "passed": true
+    },
+    {
+      "name": "freeze_manifest:input_sha256",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:FX_Research_Datasets/data/raw/FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_filter_v3/is_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_filter_v3/is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/timecap_filter_v4/is_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/timecap_filter_v4/is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_quality_tradeoff_review/review.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_quality_tradeoff_review/review.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_quality_tradeoff_review/final_review_validation.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:run_holding_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_holding_filters.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:build_holding_observations.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_observations_v3/holding_observation_protocol.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_observations_v3/holding_observation_validation.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_observations_v3/discovery_repeated_negative_patterns.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_observations_v3/discovery_repeated_negative_patterns.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_observations_v3/holding_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_observations_v3/holding_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_observations_v3/is_base_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_observations_v3/is_holding_checkpoints.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_filter_v3/protocol.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_filter_v3/frozen_selection.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_filter_v3/development_status.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_filter_v3/independent_validation.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_filter_v3/is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_filter_v3/is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_filter_v3/is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_filter_v3/is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/holding_filter_v3/is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:run_timecap_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_timecap_filters.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/timecap_filter_v4/protocol.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/timecap_filter_v4/frozen_selection.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/timecap_filter_v4/development_status.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/timecap_filter_v4/independent_validation.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/timecap_filter_v4/is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/timecap_filter_v4/is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/timecap_filter_v4/is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/timecap_filter_v4/is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/timecap_filter_v4/is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_outputs:is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_outputs:is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_outputs:is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_outputs:is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_outputs:is_frozen_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_outputs:is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_outputs:is_frozen_trades.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_outputs:is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_outputs:is_original_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_outputs:is_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "completed_OOS_outputs:oos_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "completed_OOS_outputs:oos_anniversary_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "completed_OOS_outputs:oos_fresh_start_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "completed_OOS_outputs:candidate_assessment.csv",
+      "passed": true
+    },
+    {
+      "name": "completed_OOS_outputs:oos_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "completed_OOS_outputs:frozen_full_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "completed_OOS_outputs:frozen_full_episode_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "complete_21_original_rank_freeze",
+      "passed": true
+    },
+    {
+      "name": "all_and_only_frozen_candidates_in_every_table",
+      "passed": true
+    },
+    {
+      "name": "assessment_retains_original_IS_order",
+      "passed": true
+    },
+    {
+      "name": "result_dates_and_unique_grids",
+      "passed": true
+    },
+    {
+      "name": "explicit_boolean_decisions:IS",
+      "passed": true
+    },
+    {
+      "name": "explicit_boolean_decisions:FULL",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:AUD|TSMOM_63|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:AUD|TSMOM_63|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|TSMOM_63|CHECK_10_pnl_positive:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|TSMOM_63|CHECK_10_pnl_positive:unique_grid",
+      "passed": true,
+      "saved_rows": 371,
+      "computed_rows": 371
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|TSMOM_63|CHECK_10_pnl_positive:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:AUD|TSMOM_63|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|TSMOM_63|CHECK_10_pnl_positive:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|TSMOM_63|CHECK_10_pnl_positive:unique_grid",
+      "passed": true,
+      "saved_rows": 371,
+      "computed_rows": 371
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|TSMOM_63|CHECK_10_pnl_positive:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:AUD|TSMOM_63|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|TSMOM_63|CHECK_10_pnl_positive:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|TSMOM_63|CHECK_10_pnl_positive:unique_grid",
+      "passed": true,
+      "saved_rows": 318,
+      "computed_rows": 318
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|TSMOM_63|CHECK_10_pnl_positive:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:AUD|TSMOM_63|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|DONCHIAN_BO_20|TIME_CAP_10:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|DONCHIAN_BO_20|TIME_CAP_10:unique_grid",
+      "passed": true,
+      "saved_rows": 271,
+      "computed_rows": 271
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|DONCHIAN_BO_20|TIME_CAP_10:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|DONCHIAN_BO_20|TIME_CAP_10:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|DONCHIAN_BO_20|TIME_CAP_10:unique_grid",
+      "passed": true,
+      "saved_rows": 271,
+      "computed_rows": 271
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|DONCHIAN_BO_20|TIME_CAP_10:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|DONCHIAN_BO_20|TIME_CAP_10:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|DONCHIAN_BO_20|TIME_CAP_10:unique_grid",
+      "passed": true,
+      "saved_rows": 229,
+      "computed_rows": 229
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|DONCHIAN_BO_20|TIME_CAP_10:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|VOTE_EQUAL_4|TIME_CAP_10:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|VOTE_EQUAL_4|TIME_CAP_10:unique_grid",
+      "passed": true,
+      "saved_rows": 329,
+      "computed_rows": 329
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|VOTE_EQUAL_4|TIME_CAP_10:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|VOTE_EQUAL_4|TIME_CAP_10:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|VOTE_EQUAL_4|TIME_CAP_10:unique_grid",
+      "passed": true,
+      "saved_rows": 329,
+      "computed_rows": 329
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|VOTE_EQUAL_4|TIME_CAP_10:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|VOTE_EQUAL_4|TIME_CAP_10:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|VOTE_EQUAL_4|TIME_CAP_10:unique_grid",
+      "passed": true,
+      "saved_rows": 277,
+      "computed_rows": 277
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|VOTE_EQUAL_4|TIME_CAP_10:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:GBP|MA_20_60|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:GBP|MA_20_60|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:GBP|MA_20_60|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:GBP|MA_20_60|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 115,
+      "computed_rows": 115
+    },
+    {
+      "name": "independent_full_BASE_ledger:GBP|MA_20_60|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:GBP|MA_20_60|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:GBP|MA_20_60|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:GBP|MA_20_60|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 115,
+      "computed_rows": 115
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:GBP|MA_20_60|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:GBP|MA_20_60|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:GBP|MA_20_60|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:GBP|MA_20_60|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 97,
+      "computed_rows": 97
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:GBP|MA_20_60|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:GBP|MA_20_60|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:GBP|MA_10_30|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:GBP|MA_10_30|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:GBP|MA_10_30|CHECK_10_recent5_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:GBP|MA_10_30|CHECK_10_recent5_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 214,
+      "computed_rows": 214
+    },
+    {
+      "name": "independent_full_BASE_ledger:GBP|MA_10_30|CHECK_10_recent5_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:GBP|MA_10_30|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:GBP|MA_10_30|CHECK_10_recent5_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:GBP|MA_10_30|CHECK_10_recent5_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 214,
+      "computed_rows": 214
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:GBP|MA_10_30|CHECK_10_recent5_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:GBP|MA_10_30|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:GBP|MA_10_30|CHECK_10_recent5_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:GBP|MA_10_30|CHECK_10_recent5_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 190,
+      "computed_rows": 190
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:GBP|MA_10_30|CHECK_10_recent5_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:GBP|MA_10_30|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:NZD|TSMOM_21|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:NZD|TSMOM_21|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|TSMOM_21|CHECK_10_recent5_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|TSMOM_21|CHECK_10_recent5_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 570,
+      "computed_rows": 570
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|TSMOM_21|CHECK_10_recent5_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:NZD|TSMOM_21|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|TSMOM_21|CHECK_10_recent5_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|TSMOM_21|CHECK_10_recent5_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 570,
+      "computed_rows": 570
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|TSMOM_21|CHECK_10_recent5_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:NZD|TSMOM_21|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|TSMOM_21|CHECK_10_recent5_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|TSMOM_21|CHECK_10_recent5_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 501,
+      "computed_rows": 501
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|TSMOM_21|CHECK_10_recent5_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:NZD|TSMOM_21|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:AUD|MA_20_60|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:AUD|MA_20_60|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|MA_20_60|TIME_CAP_20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|MA_20_60|TIME_CAP_20:unique_grid",
+      "passed": true,
+      "saved_rows": 121,
+      "computed_rows": 121
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|MA_20_60|TIME_CAP_20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:AUD|MA_20_60|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|MA_20_60|TIME_CAP_20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|MA_20_60|TIME_CAP_20:unique_grid",
+      "passed": true,
+      "saved_rows": 121,
+      "computed_rows": 121
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|MA_20_60|TIME_CAP_20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:AUD|MA_20_60|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|MA_20_60|TIME_CAP_20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|MA_20_60|TIME_CAP_20:unique_grid",
+      "passed": true,
+      "saved_rows": 102,
+      "computed_rows": 102
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|MA_20_60|TIME_CAP_20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:AUD|MA_20_60|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:CAD|TSMOM_21|CHECK_5_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:CAD|TSMOM_21|CHECK_5_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:CAD|TSMOM_21|CHECK_5_pnl_positive:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:CAD|TSMOM_21|CHECK_5_pnl_positive:unique_grid",
+      "passed": true,
+      "saved_rows": 588,
+      "computed_rows": 588
+    },
+    {
+      "name": "independent_full_BASE_ledger:CAD|TSMOM_21|CHECK_5_pnl_positive:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:CAD|TSMOM_21|CHECK_5_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:CAD|TSMOM_21|CHECK_5_pnl_positive:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:CAD|TSMOM_21|CHECK_5_pnl_positive:unique_grid",
+      "passed": true,
+      "saved_rows": 588,
+      "computed_rows": 588
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:CAD|TSMOM_21|CHECK_5_pnl_positive:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:CAD|TSMOM_21|CHECK_5_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:CAD|TSMOM_21|CHECK_5_pnl_positive:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:CAD|TSMOM_21|CHECK_5_pnl_positive:unique_grid",
+      "passed": true,
+      "saved_rows": 496,
+      "computed_rows": 496
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:CAD|TSMOM_21|CHECK_5_pnl_positive:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:CAD|TSMOM_21|CHECK_5_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half:unique_grid",
+      "passed": true,
+      "saved_rows": 264,
+      "computed_rows": 264
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half:unique_grid",
+      "passed": true,
+      "saved_rows": 265,
+      "computed_rows": 265
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half:unique_grid",
+      "passed": true,
+      "saved_rows": 227,
+      "computed_rows": 227
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half:unique_grid",
+      "passed": true,
+      "saved_rows": 343,
+      "computed_rows": 343
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half:unique_grid",
+      "passed": true,
+      "saved_rows": 344,
+      "computed_rows": 344
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half:unique_grid",
+      "passed": true,
+      "saved_rows": 295,
+      "computed_rows": 295
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|MACD_12_26_9|CHECK_10_pnl_positive:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|MACD_12_26_9|CHECK_10_pnl_positive:unique_grid",
+      "passed": true,
+      "saved_rows": 460,
+      "computed_rows": 460
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|MACD_12_26_9|CHECK_10_pnl_positive:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|MACD_12_26_9|CHECK_10_pnl_positive:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|MACD_12_26_9|CHECK_10_pnl_positive:unique_grid",
+      "passed": true,
+      "saved_rows": 460,
+      "computed_rows": 460
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|MACD_12_26_9|CHECK_10_pnl_positive:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|MACD_12_26_9|CHECK_10_pnl_positive:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|MACD_12_26_9|CHECK_10_pnl_positive:unique_grid",
+      "passed": true,
+      "saved_rows": 392,
+      "computed_rows": 392
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|MACD_12_26_9|CHECK_10_pnl_positive:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:JPY|BB_MR_20|TIME_CAP_5",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:JPY|BB_MR_20|TIME_CAP_5",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|BB_MR_20|TIME_CAP_5:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|BB_MR_20|TIME_CAP_5:unique_grid",
+      "passed": true,
+      "saved_rows": 181,
+      "computed_rows": 181
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|BB_MR_20|TIME_CAP_5:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:JPY|BB_MR_20|TIME_CAP_5",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|BB_MR_20|TIME_CAP_5:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|BB_MR_20|TIME_CAP_5:unique_grid",
+      "passed": true,
+      "saved_rows": 181,
+      "computed_rows": 181
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|BB_MR_20|TIME_CAP_5:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:JPY|BB_MR_20|TIME_CAP_5",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|BB_MR_20|TIME_CAP_5:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|BB_MR_20|TIME_CAP_5:unique_grid",
+      "passed": true,
+      "saved_rows": 156,
+      "computed_rows": 156
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|BB_MR_20|TIME_CAP_5:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:JPY|BB_MR_20|TIME_CAP_5",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 318,
+      "computed_rows": 318
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 318,
+      "computed_rows": 318
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 275,
+      "computed_rows": 275
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:EUR|TSMOM_21|CHECK_5_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:EUR|TSMOM_21|CHECK_5_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:EUR|TSMOM_21|CHECK_5_giveback_half:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:EUR|TSMOM_21|CHECK_5_giveback_half:unique_grid",
+      "passed": true,
+      "saved_rows": 526,
+      "computed_rows": 526
+    },
+    {
+      "name": "independent_full_BASE_ledger:EUR|TSMOM_21|CHECK_5_giveback_half:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:EUR|TSMOM_21|CHECK_5_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:EUR|TSMOM_21|CHECK_5_giveback_half:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:EUR|TSMOM_21|CHECK_5_giveback_half:unique_grid",
+      "passed": true,
+      "saved_rows": 526,
+      "computed_rows": 526
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:EUR|TSMOM_21|CHECK_5_giveback_half:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:EUR|TSMOM_21|CHECK_5_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:EUR|TSMOM_21|CHECK_5_giveback_half:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:EUR|TSMOM_21|CHECK_5_giveback_half:unique_grid",
+      "passed": true,
+      "saved_rows": 466,
+      "computed_rows": 466
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:EUR|TSMOM_21|CHECK_5_giveback_half:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:EUR|TSMOM_21|CHECK_5_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:NZD|MACD_12_26_9|CHECK_5_opposite20",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:NZD|MACD_12_26_9|CHECK_5_opposite20",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|MACD_12_26_9|CHECK_5_opposite20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|MACD_12_26_9|CHECK_5_opposite20:unique_grid",
+      "passed": true,
+      "saved_rows": 447,
+      "computed_rows": 447
+    },
+    {
+      "name": "independent_full_BASE_ledger:NZD|MACD_12_26_9|CHECK_5_opposite20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:NZD|MACD_12_26_9|CHECK_5_opposite20",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|MACD_12_26_9|CHECK_5_opposite20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|MACD_12_26_9|CHECK_5_opposite20:unique_grid",
+      "passed": true,
+      "saved_rows": 448,
+      "computed_rows": 448
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:NZD|MACD_12_26_9|CHECK_5_opposite20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:NZD|MACD_12_26_9|CHECK_5_opposite20",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|MACD_12_26_9|CHECK_5_opposite20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|MACD_12_26_9|CHECK_5_opposite20:unique_grid",
+      "passed": true,
+      "saved_rows": 389,
+      "computed_rows": 389
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:NZD|MACD_12_26_9|CHECK_5_opposite20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:NZD|MACD_12_26_9|CHECK_5_opposite20",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:EUR|VOTE_STRENGTH_4|TIME_CAP_20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:EUR|VOTE_STRENGTH_4|TIME_CAP_20:unique_grid",
+      "passed": true,
+      "saved_rows": 314,
+      "computed_rows": 314
+    },
+    {
+      "name": "independent_full_BASE_ledger:EUR|VOTE_STRENGTH_4|TIME_CAP_20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:EUR|VOTE_STRENGTH_4|TIME_CAP_20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:EUR|VOTE_STRENGTH_4|TIME_CAP_20:unique_grid",
+      "passed": true,
+      "saved_rows": 314,
+      "computed_rows": 314
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:EUR|VOTE_STRENGTH_4|TIME_CAP_20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:EUR|VOTE_STRENGTH_4|TIME_CAP_20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:EUR|VOTE_STRENGTH_4|TIME_CAP_20:unique_grid",
+      "passed": true,
+      "saved_rows": 270,
+      "computed_rows": 270
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:EUR|VOTE_STRENGTH_4|TIME_CAP_20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 251,
+      "computed_rows": 251
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 251,
+      "computed_rows": 251
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 217,
+      "computed_rows": 217
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 320,
+      "computed_rows": 320
+    },
+    {
+      "name": "independent_full_BASE_ledger:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 320,
+      "computed_rows": 320
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 280,
+      "computed_rows": 280
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20:unique_grid",
+      "passed": true,
+      "saved_rows": 466,
+      "computed_rows": 466
+    },
+    {
+      "name": "independent_full_BASE_ledger:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20:unique_grid",
+      "passed": true,
+      "saved_rows": 466,
+      "computed_rows": 466
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20:unique_grid",
+      "passed": true,
+      "saved_rows": 397,
+      "computed_rows": 397
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:AUD|BB_MR_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:AUD|BB_MR_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|BB_MR_20|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|BB_MR_20|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 202,
+      "computed_rows": 202
+    },
+    {
+      "name": "independent_full_BASE_ledger:AUD|BB_MR_20|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:AUD|BB_MR_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|BB_MR_20|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|BB_MR_20|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 202,
+      "computed_rows": 202
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:AUD|BB_MR_20|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:AUD|BB_MR_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|BB_MR_20|CHECK_5_pnl_negative:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|BB_MR_20|CHECK_5_pnl_negative:unique_grid",
+      "passed": true,
+      "saved_rows": 173,
+      "computed_rows": 173
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:AUD|BB_MR_20|CHECK_5_pnl_negative:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:AUD|BB_MR_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "raw_price_calendar:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "original_BASE_episode_occupancy:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "independent_full_BASE_ledger:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_BASE_ledger:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20:unique_grid",
+      "passed": true,
+      "saved_rows": 241,
+      "computed_rows": 241
+    },
+    {
+      "name": "independent_full_BASE_ledger:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_identity_and_family:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20:unique_grid",
+      "passed": true,
+      "saved_rows": 241,
+      "computed_rows": 241
+    },
+    {
+      "name": "independent_full_checkpoint_decisions:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "removed_BASE_tail_conservation_execution_day_retained:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20:unique_grid",
+      "passed": true,
+      "saved_rows": 206,
+      "computed_rows": 206
+    },
+    {
+      "name": "independent_truncated_IS_checkpoint_decisions:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "causal_IS_execution_prefix:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "full_real_ledger:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "full_real_ledger:unique_grid",
+      "passed": true,
+      "saved_rows": 13824,
+      "computed_rows": 13824
+    },
+    {
+      "name": "full_real_ledger:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "truncated_IS_real_ledger:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "truncated_IS_real_ledger:unique_grid",
+      "passed": true,
+      "saved_rows": 11906,
+      "computed_rows": 11906
+    },
+    {
+      "name": "truncated_IS_real_ledger:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "all_frozen_IS_daily_prefixes:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "all_frozen_IS_daily_prefixes:unique_grid",
+      "passed": true,
+      "saved_rows": 201642,
+      "computed_rows": 201642
+    },
+    {
+      "name": "all_frozen_IS_daily_prefixes:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "all_frozen_continuous_OOS_daily_paths:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "all_frozen_continuous_OOS_daily_paths:unique_grid",
+      "passed": true,
+      "saved_rows": 32928,
+      "computed_rows": 32928
+    },
+    {
+      "name": "all_frozen_continuous_OOS_daily_paths:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "OOS_all_metrics:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "OOS_all_metrics:unique_grid",
+      "passed": true,
+      "saved_rows": 42,
+      "computed_rows": 42
+    },
+    {
+      "name": "OOS_all_metrics:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "anniversary_all_metrics:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "anniversary_all_metrics:unique_grid",
+      "passed": true,
+      "saved_rows": 126,
+      "computed_rows": 126
+    },
+    {
+      "name": "anniversary_all_metrics:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "fresh_start_all_metrics:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "fresh_start_all_metrics:unique_grid",
+      "passed": true,
+      "saved_rows": 42,
+      "computed_rows": 42
+    },
+    {
+      "name": "fresh_start_all_metrics:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "IS_prefix_all_metrics:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "IS_prefix_all_metrics:unique_grid",
+      "passed": true,
+      "saved_rows": 42,
+      "computed_rows": 42
+    },
+    {
+      "name": "IS_prefix_all_metrics:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:AUD|TSMOM_63|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:GBP|MA_20_60|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:GBP|MA_10_30|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:NZD|TSMOM_21|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:AUD|MA_20_60|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:CAD|TSMOM_21|CHECK_5_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:JPY|BB_MR_20|TIME_CAP_5",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:EUR|TSMOM_21|CHECK_5_giveback_half",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:NZD|MACD_12_26_9|CHECK_5_opposite20",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:AUD|BB_MR_20|CHECK_5_pnl_negative",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_return_against_independent_prefix:GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20",
+      "passed": true
+    },
+    {
+      "name": "independent_curve_new_quality_original_quality_and_reasons:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "independent_curve_new_quality_original_quality_and_reasons:unique_grid",
+      "passed": true,
+      "saved_rows": 21,
+      "computed_rows": 21
+    },
+    {
+      "name": "independent_curve_new_quality_original_quality_and_reasons:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "metric_quality_flag_join:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "metric_quality_flag_join:unique_grid",
+      "passed": true,
+      "saved_rows": 42,
+      "computed_rows": 42
+    },
+    {
+      "name": "metric_quality_flag_join:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "saved_status_pass_counts_independently_reproduced",
+      "passed": true
+    },
+    {
+      "name": "registered_evidence_unchanged_at_finish",
+      "passed": true
+    }
+  ],
+  "verified_files_sha256": {
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_holding_tradeoff_oos.py": "46fa3669b08e281efa3899f81c007dda44dd43c25b58334db45641ccbe1f7079",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_holding_tradeoff_research.py": "c83a452f7452ae2bdf16f76bdc2480e3128e8b6164341f026fc65f777a809edb",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_entry_interaction_research.py": "27426ed2e8f1bee41f7870faa993bbf5367a0432fb8f9fd59db5fd04af9b0680",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_entry_interaction_oos.py": "2b7d3ef6a91c309950f335dd814fabd9b1d9e5d8728c5e98b01a8c777d53d7d4",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_research.py": "9c24f76e55617b690bd8f39b6e0050fc4a1cbf2e393a9dee4559aa8112795f0f",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_supplement.py": "05531b7c3044995ff445d1007b0e5abe2b2efceeb2ae0784d8e205ddf2aa814b",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\oos_status.json": "3074f1a72cd2f33a80993bb42dc8d571fe90bdda2e30e994a9fd0a3184ed0c5d",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\protocol.json": "936a87369ae6826b656021501d2926853dfe748fa4d8e2235b33b67a1f3fc60f",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\frozen_selection.json": "8126136e79844055de2cfe243be3b4a4fbeb3c56f97070fbb84cadf13aa5cb35",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\independent_validation.json": "ead5457ee2c9b7d870bc864f38d266c25dcbe172234bbb559af9a8013805b08a",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\development_status.json": "33807a71d90a58be3a84af3c6e4f444f3a5cdeac9e1ca0339b9f9899e4b41f1c",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_hypotheses.json": "ab3ae51a41a135e59859ffd28efa795c0e3c26ede30f464fa8daf511ad05fea8",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_holding_tradeoff_research.py": "98342a731b996496d72b1a38941b0aacdd388cb309ac0fc46bfe08bbd75f916e",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_tradeoff_evaluation.py": "37dc8071aba94329a88db9688f9c46d6c3d891a53243ceca414bedb043d07e87",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_holding_filter_research.py": "02fdec7e7af9a94a8bb6e4c0029e57d193a4e7dc9cafb8a7ec61f5691501e71e",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_timecap_filter_research.py": "c4f68206fee9862598340123347f90ff8b9b0aaf3f739f30242efff592903fd0",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_holding_filters.py": "67b784ab5f2e2b1fdc86b555ab0f8e4b794017a3ad31df0f59a7834ae7e5a84e",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_timecap_filters.py": "e0bd60d7854a1ee425442009a3facda190463b1ab0cf09b82109f49381175bed",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_selection.csv": "edc4d06b409349246a0f90844e0fc70de64658b60ee6a5f3057671e69be52ce2",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_all_metrics.csv": "01149121361e108b2c01bda7b6c4b15e62bf983c3ef0c7b5d4f10cb61ed177ab",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_selection.csv": "79dd1ecf497b19b4eb1523f9017d86fb4e9f30b183da3727c4f6d111a7203726",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_all_metrics.csv": "3d96d5fe3e275473ac830a332a8662c1ae617048817b11c2826d66de18834bf3",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\review.json": "34cb72861f8166865afb23c24b1379d024f7bb861f3a35391cf8714efba6f1f3",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\review.csv": "357e5a508eed3534bf3544a59c69395c742aee626626f834440d69cffbbc99d2",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\final_review_validation.json": "153714b255ef3fdf675d4a17f729e42ee08f1c9345d6cc3926be816e4e8ed869",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\build_holding_observations.py": "2a3e5140e35fbda6203a2b5cec9baaf0e2c79ed71a22418f496783b5e42a569d",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_observation_protocol.json": "81109ee024c58b3751abfd1ce074ea69a8f00c4b18422b15eb619f6a4acee15f",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_observation_validation.json": "0e4237476cb52702d8eeca76746c7cafd7880bbbd5f37c448b5214b5b1570841",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\discovery_repeated_negative_patterns.csv": "f02a7e7e36d82de365762c57bd4dacdfdf80ad84c832b91f2c4500b6c5893ccb",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\discovery_repeated_negative_patterns.json": "20c6d2c4b5330dea1536f60ee7c07bb594928bd1e5c3f6083fca142466495a57",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_coverage.csv": "cad15ffb4b3c516539d58d15666abdb8bcd90f1d21a9f3082e9ee6ce92ee682e",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_state_summary.csv": "a37a3d0862559690189ccbc335a4feccb2968f18c5e1a1293e12c6761cdf5203",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\is_base_trade_ledger.csv.gz": "1fa2f3f890cfab95c3562ed1a6ebaaebff64ebd82f7a9b3abfe70493fb0700e7",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\is_holding_checkpoints.csv.gz": "bd122a23fa6777c8f2dac7e8ff19dd471be5322843cf616ab883d30d6c0dfa74",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\protocol.json": "595770463740715a0e1abb22fa2a56887de039cf2d189779f03a437f1ae9d6f0",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\frozen_selection.json": "ff1e4ab1d0be38ac0e9308e9ff0b20d9be12fe5a35302a99a1da79633bbb0d3d",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\development_status.json": "d59cf353aba8b31c8fb8765e7fa274a6fe475d89244fd172db987cebc58150d3",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\independent_validation.json": "297930c284f7fdca30a419125759d8c2c1460235dc22dbdb5516e0b40fc2d588",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_account_coverage.csv": "fc09c109034d394b7c364cb928bdda4f9572cc67999d650d91a9e4f83389272d",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_all_decisions.csv.gz": "9b33eace54f06bbea3cfd77cc1b4794a024965f648c1c5135c2d8313efc3d01f",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_frozen_daily.csv.gz": "8fe66d2ddd3307e272efec3856674eb9874e3b957b995d11905d9106cc33887a",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_frozen_metrics.csv": "9c2cda6c7a5476c6666fda7e370a749d6c4163d35abe948b1bf17ec9bfab3a7f",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_hypotheses.json": "21f61a768c627afdb541383693a08b7d066de774b6f745caf6ed041f0a889921",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\protocol.json": "83eaa7c7a4c35ac7ae789672c05ca5842cc2511a88c1eb25b75908bf49ac4c96",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\frozen_selection.json": "97cd55a6a84d0a7bbae63b3e60ce4a471a524265fd8b7399bdeb74272ec394d8",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\development_status.json": "58815cdafbf961ff2819b8f02ff16e3b2321dd7244ad66d5c174d4c6cf8430b7",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\independent_validation.json": "a1a25aa14d391c07219efd632f130c7659fbda4d813486cabc59f27cf7eccac4",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_account_coverage.csv": "971e38262c684d466eef06c63ce59345cd9bf563333fbe20518ac649647a90a9",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_all_decisions.csv.gz": "d2122df133995f4edafd0749db78c196955da9321d434fd942f3fe93488e62db",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_frozen_daily.csv.gz": "c9b63168eeee1723177120f10c75ec91ec5e16ffccbbc023af99d0410616fdb4",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_frozen_metrics.csv": "9c2cda6c7a5476c6666fda7e370a749d6c4163d35abe948b1bf17ec9bfab3a7f",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_hypotheses.json": "86c5def3b4c5431ba55504c9ad8bb9f34b182e65ff2fcf50c4a87d81cf9cc2b1",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_account_coverage.csv": "44a09a6e9fc42f86ee432fe716a19cca3f7202f03c79b845d3fd7362d4a83e5c",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_all_decisions.csv.gz": "e9bf5a2d16d4f921c7dc9c43e6961bcf9af58a6ce87bbbaf5d5cc2935b20f2fe",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_all_metrics.csv": "23b7a83c2996301c1bb6c2e429a6ff2acd75a76871d15af0889e301b23525c9e",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_daily.csv.gz": "1d148f27bb279202f050fc9d4e57174b6374ee415c284192c47d7392133089b8",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_decisions.csv.gz": "452b995d6e9ab7cd0cdb3a760890da3c3371246fa6a3af5826edd6a5246110d9",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_metrics.csv": "b6cbc80eee1dec740e70fe49d627e22537a0482982c5bca5c4b890bddf58f632",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_trades.csv.gz": "a011d93ff07f885cfebd61f7595c11c3533efaa547bc36cfc8804325ee40436c",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_original_selection.csv": "dfa0b47f81586ce2e288b009996b9be7ab5a8e3e6fa860b982a49e48da85c27f",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_selection.csv": "603963fccd3b2b7360d43602593452db106d03a6f9bfc767cb0321adc3973d89",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_holding_filter_research.py": "d4f939d232051d7cc9dcd7320625efb379b92dd62dcd3dc148571e857b41d696",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\oos_metrics.csv": "186855bfbf5e2a791a492880292c170229e781cc570ae32c63c2a821588ad968",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\oos_anniversary_metrics.csv": "4ec83e79b49b1bc1a0614c6866dc1ada1c073772502740e93dfca71842ad7d3e",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\oos_fresh_start_metrics.csv": "38d655b0eef3809963d1289d6b7e1faf677daa7143ebe580470b0ec9e8e796fa",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\candidate_assessment.csv": "b85730c07ca26273af8af14b8d09d8deb03557fe0d25e2d85906556138af4365",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\oos_daily.csv.gz": "a303c2bed9cff2aff3861b5b0e5dfed8da571e41a6268ac1d320368477215094",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\frozen_full_trade_ledger.csv.gz": "f56e0e120935dce20e6d46b5ae18d93d72f75d26f7c67165515a27453baf22fe",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\frozen_full_episode_decisions.csv.gz": "9e33e66c51a37802e5b80c1b7395a128555434bd0c040974fb60c24817d21cab"
+  },
+  "details": {
+    "candidates": 21,
+    "candidate_ids_in_frozen_order": [
+      "AUD|TSMOM_63|CHECK_10_pnl_positive",
+      "AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "GBP|MA_20_60|CHECK_5_pnl_negative",
+      "GBP|MA_10_30|CHECK_10_recent5_negative",
+      "NZD|TSMOM_21|CHECK_10_recent5_negative",
+      "AUD|MA_20_60|TIME_CAP_20",
+      "CAD|TSMOM_21|CHECK_5_pnl_positive",
+      "NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+      "NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+      "JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+      "JPY|BB_MR_20|TIME_CAP_5",
+      "NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+      "EUR|TSMOM_21|CHECK_5_giveback_half",
+      "NZD|MACD_12_26_9|CHECK_5_opposite20",
+      "EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+      "SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+      "AUD|BB_MR_20|CHECK_5_pnl_negative",
+      "GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20"
+    ],
+    "curve_passes": 4,
+    "quality_confirmed": 8,
+    "both_curve_and_quality": 4,
+    "original_quality_diagnostic_confirmed": 4,
+    "full_episode_decisions_checked": 6915,
+    "early_exit_decisions": 1849,
+    "independently_recomputed_metric_windows": 210,
+    "independently_recomputed_IS_prefix_metric_windows": 42,
+    "all_frozen_IS_paths_match": true,
+    "frozen_currencies_decoded": [
+      "AUD",
+      "CAD",
+      "EUR",
+      "GBP",
+      "JPY",
+      "NZD",
+      "SEK"
+    ],
+    "raw_prices_decoded_through": "2026-05-29",
+    "terminal_original_signal_limitations": {
+      "count": 6,
+      "cases": [
+        {
+          "candidate_id": "AUD|DONCHIAN_BO_20|TIME_CAP_10",
+          "scope": "FULL",
+          "entry_idx": 6882,
+          "kind": "pending_original_exit_or_reversal"
+        },
+        {
+          "candidate_id": "AUD|VOTE_EQUAL_4|TIME_CAP_10",
+          "scope": "FULL",
+          "entry_idx": 6882,
+          "kind": "pending_original_exit_or_reversal"
+        },
+        {
+          "candidate_id": "NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+          "scope": "FULL",
+          "signal_idx": 6889,
+          "kind": "pending_original_entry"
+        },
+        {
+          "candidate_id": "NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+          "scope": "FULL",
+          "signal_idx": 6889,
+          "kind": "pending_original_entry"
+        },
+        {
+          "candidate_id": "NZD|MACD_12_26_9|CHECK_5_opposite20",
+          "scope": "FULL",
+          "entry_idx": 6880,
+          "kind": "pending_original_exit_or_reversal"
+        },
+        {
+          "candidate_id": "NZD|MACD_12_26_9|CHECK_5_opposite20",
+          "scope": "FULL",
+          "signal_idx": 6889,
+          "kind": "pending_original_entry"
+        }
+      ],
+      "scope": "Only terminal unexecuted original BASE entry/exit/reversal facts are inherited from hash-bound decisions and structurally checked. Filled BASE episodes come from the saved execution ledger. No terminal-only distinction changes observed PnL. All checkpoint facts, predicate results, risk execution clocks and observed paths are independently reconstructed."
+    },
+    "quality_definition": "Eligible closed trades entered and genuinely closed in each window; flat trades remain in expectancy denominator. Gross PF=sum wins/absolute sum losses; missing wins=0, missing losses undefined. Finite FILTER > BASE for both, no selection epsilon; FILTER closed_n >=20 for new OOS quality.",
+    "execution_clock": "Risk signal at checkpoint m executes at close m+1; m+1 return retained, deleted tail starts m+2. Original-episode lock prevents reentry.",
+    "accounting_compatibility": "net_pnl_usd and all window research returns use fixed-principal simple PnL. Legacy ledger pnl_usd/price_pnl_usd fields retain independently reconstructed compound-equity accounting.",
+    "strategy_engine_replays": 0,
+    "production_filter_calls": 0,
+    "production_quality_evaluator_calls": 0,
+    "old_OOS_results_opened": false,
+    "OOS_results_opened": true,
+    "historical_evidence": "Reused historical OOS, not independent untouched evidence; all original frozen candidates preserved."
+  }
+}

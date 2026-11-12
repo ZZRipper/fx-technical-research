@@ -1,0 +1,421 @@
+{
+  "version": "filter_oos_v1",
+  "created_utc": "2026-10-23T05:12:09.220496+00:00",
+  "is_start": "2005-01-03",
+  "is_end": "2023-05-29",
+  "oos_start": "2023-05-30",
+  "oos_end": "2026-05-29",
+  "oos_duration": "Three calendar years immediately following IS, ending at the supplied workbook endpoint.",
+  "scope": {
+    "pairs": [
+      "EUR",
+      "GBP",
+      "AUD",
+      "NZD",
+      "JPY",
+      "CHF",
+      "CAD",
+      "NOK",
+      "SEK"
+    ],
+    "strategies": [
+      "RSI_MR_7",
+      "RSI_MR_14",
+      "RSI_MR_20",
+      "RSI_MOM_7",
+      "RSI_MOM_14",
+      "RSI_MOM_20",
+      "MA_10_30",
+      "MA_20_60",
+      "BB_MR_10",
+      "BB_MR_20",
+      "BB_BO_10",
+      "BB_BO_20",
+      "DONCHIAN_BO_10",
+      "DONCHIAN_BO_20",
+      "MACD_12_26_9",
+      "TSMOM_21",
+      "TSMOM_63",
+      "VOTE_EQUAL_4",
+      "VOTE_STRENGTH_4",
+      "REGIME_RULE_FIXED"
+    ],
+    "baseline_accounts": 180
+  },
+  "initial_capital_usd": 100000,
+  "accounting": "fixed_initial_capital_simple",
+  "cost_bp": 0.0,
+  "reference_cost_bp": 0.0,
+  "cost_instruction": "User explicitly requested no costs. No cost sensitivity is used this round.",
+  "carry_financing_cash_interest": 0.0,
+  "prior_holdout_exposure": "The 2023-2026 history was already plotted and inspected in earlier work. This is a development-isolated historical test, not virgin or newly collected OOS.",
+  "development_access": "After workbook parsing, price and native feature rows after IS_END are removed before indicator/return/feature calculations. No full-sample outcome artifact is used as a development input.",
+  "screen": {
+    "min_gross_annualized_simple_pct": 1.0,
+    "min_return_improvement_pp": 5.0,
+    "min_win_rate_improvement_pp": 2.0,
+    "min_payoff_relative_improvement": 0.1,
+    "max_drawdown_deterioration_pp": 2.0,
+    "return_to_drawdown_must_improve": true,
+    "min_closed_trades": 50,
+    "min_closed_retention": 0.5,
+    "min_positive_is_blocks": 2,
+    "min_improved_is_blocks": 2,
+    "last_is_block_positive_and_improved": true,
+    "one_way_cost_bp": 0.0,
+    "cost_sensitivity_evaluated": false,
+    "cost_instruction": "User explicitly requested no costs for this round.",
+    "rank": [
+      "gross_return_improvement_pp DESC",
+      "payoff_absolute_improvement DESC",
+      "win_rate_improvement_pp DESC",
+      "candidate_id ASC"
+    ],
+    "freeze": "One highest IS-ranked passing NEW filter per pair/strategy. All passing versions retained in IS table.",
+    "schedule_delay_is_diagnostic_only": true
+  },
+  "oos_screen": {
+    "min_net_annualized_simple_pct": 1.0,
+    "min_net_return_improvement_pp": 0.0,
+    "worst_net_drawdown_pp": -15.0,
+    "min_positive_anniversary_years": 2,
+    "min_closed_trades": 10,
+    "quality_confirmation": "Separately report whether both gross trade win rate and payoff are no worse than BASE, with >=20 closed trades. Not a license to tune on OOS."
+  },
+  "is_blocks": [
+    [
+      "IS_EARLY",
+      "2005-01-03",
+      "2014-12-31"
+    ],
+    [
+      "IS_MIDDLE",
+      "2015-01-01",
+      "2019-12-31"
+    ],
+    [
+      "IS_LATE",
+      "2020-01-01",
+      "2023-05-29"
+    ]
+  ],
+  "oos_anniversary_years": [
+    [
+      "OOS_YEAR_1",
+      "2023-05-30",
+      "2024-05-29"
+    ],
+    [
+      "OOS_YEAR_2",
+      "2024-05-30",
+      "2025-05-29"
+    ],
+    [
+      "OOS_YEAR_3",
+      "2025-05-30",
+      "2026-05-29"
+    ]
+  ],
+  "candidate_specs": [
+    {
+      "id": "BASE",
+      "label": "Unfiltered technical baseline",
+      "kind": "baseline",
+      "families": "all",
+      "parameters": {},
+      "mechanism": "Preserve the original technical targets and account clock."
+    },
+    {
+      "id": "VOL_NOT_EXPANDING",
+      "label": "Entry volatility is not expanding",
+      "kind": "entry",
+      "families": "all",
+      "parameters": {
+        "entry": {
+          "rule": "volatility_ratio",
+          "maximum_ratio": 1.0
+        }
+      },
+      "mechanism": "Avoid entry while short-horizon volatility exceeds its longer-horizon level."
+    },
+    {
+      "id": "VOL_NOT_SURGING",
+      "label": "Entry volatility is not surging",
+      "kind": "entry",
+      "families": "all",
+      "parameters": {
+        "entry": {
+          "rule": "volatility_ratio",
+          "maximum_ratio": 1.25
+        }
+      },
+      "mechanism": "Avoid a pronounced short-horizon volatility increase."
+    },
+    {
+      "id": "VIX_RISING",
+      "label": "Reject elevated and rising VIX",
+      "kind": "entry",
+      "families": "all",
+      "parameters": {
+        "entry": {
+          "rule": "vix_rising",
+          "minimum_level": 20.0,
+          "minimum_change_5": 3.0
+        }
+      },
+      "mechanism": "Avoid entry during an already elevated and worsening observed risk state."
+    },
+    {
+      "id": "ENTRY_NOT_EXTENDED",
+      "label": "Entry move is not extended",
+      "kind": "entry",
+      "families": [
+        "Momentum",
+        "Trend following",
+        "Breakout",
+        "Ensemble"
+      ],
+      "parameters": {
+        "entry": {
+          "rule": "directional_extension",
+          "lookback_observations": 20,
+          "maximum_volatility_units": 1.0,
+          "annualization_observations": 252
+        }
+      },
+      "mechanism": "Avoid following a directional move already larger than one 20-observation volatility unit."
+    },
+    {
+      "id": "MOM_ALIGNED_63",
+      "label": "Entry agrees with 63-observation direction",
+      "kind": "entry",
+      "families": [
+        "Momentum",
+        "Trend following",
+        "Breakout",
+        "Ensemble"
+      ],
+      "parameters": {
+        "entry": {
+          "rule": "momentum_alignment",
+          "lookback_observations": 63,
+          "minimum_directional_return_pct_exclusive": 0.0
+        }
+      },
+      "mechanism": "Avoid a short-horizon directional entry against the longer observed price move."
+    },
+    {
+      "id": "TREND_EFFICIENCY_63",
+      "label": "Require directional 63-observation path",
+      "kind": "entry",
+      "families": [
+        "Momentum",
+        "Trend following",
+        "Breakout",
+        "Ensemble"
+      ],
+      "parameters": {
+        "entry": {
+          "rule": "trend_efficiency",
+          "minimum_efficiency": 0.2
+        }
+      },
+      "mechanism": "Avoid trend entries when displacement is small relative to the traveled price path."
+    },
+    {
+      "id": "MR_NOT_TRENDING",
+      "label": "Avoid strongly directional mean-reversion entries",
+      "kind": "entry",
+      "families": [
+        "Mean reversion"
+      ],
+      "parameters": {
+        "entry": {
+          "rule": "mr_efficiency",
+          "maximum_efficiency": 0.4
+        }
+      },
+      "mechanism": "Avoid fading a strongly directional 63-observation price path."
+    },
+    {
+      "id": "MR_TIME_20",
+      "label": "Exit unrewarded mean reversion after 20 observations",
+      "kind": "exit",
+      "families": [
+        "Mean reversion"
+      ],
+      "parameters": {
+        "exit": {
+          "rule": "time_nonpositive",
+          "minimum_observations": 20,
+          "maximum_simple_return": 0.0
+        }
+      },
+      "mechanism": "Limit persistence in a mean-reversion episode that has not made progress."
+    },
+    {
+      "id": "MR_TIME_40",
+      "label": "Exit unrewarded mean reversion after 40 observations",
+      "kind": "exit",
+      "families": [
+        "Mean reversion"
+      ],
+      "parameters": {
+        "exit": {
+          "rule": "time_nonpositive",
+          "minimum_observations": 40,
+          "maximum_simple_return": 0.0
+        }
+      },
+      "mechanism": "Allow more time for reversion while limiting persistently unrewarded exposure."
+    },
+    {
+      "id": "MR_ADVERSE_2VOL",
+      "label": "Exit mean reversion at two entry-volatility units of loss",
+      "kind": "exit",
+      "families": [
+        "Mean reversion"
+      ],
+      "parameters": {
+        "exit": {
+          "rule": "adverse_entry_volatility",
+          "loss_daily_volatility_units": 2.0,
+          "annualization_observations": 252
+        }
+      },
+      "mechanism": "Limit adverse movement using volatility fixed at the original entry signal."
+    },
+    {
+      "id": "MOM_NO_PROGRESS_5",
+      "label": "Exit directional entry without progress after five observations",
+      "kind": "exit",
+      "families": [
+        "Momentum",
+        "Trend following",
+        "Breakout",
+        "Ensemble"
+      ],
+      "parameters": {
+        "exit": {
+          "rule": "time_nonpositive",
+          "minimum_observations": 5,
+          "maximum_simple_return": 0.0
+        }
+      },
+      "mechanism": "Limit a directional episode that fails to generate early cumulative progress."
+    },
+    {
+      "id": "TRAIL_2VOL",
+      "label": "Trail earned gains by two entry-volatility units",
+      "kind": "exit",
+      "families": "all",
+      "parameters": {
+        "exit": {
+          "rule": "trailing_entry_volatility",
+          "activation_daily_volatility_units": 2.0,
+          "giveback_daily_volatility_units": 2.0,
+          "annualization_observations": 252
+        }
+      },
+      "mechanism": "After sufficient observed gains, limit giveback using volatility frozen at the entry signal."
+    },
+    {
+      "id": "VOL_TIME_20",
+      "label": "Stable-volatility entry and 20-observation reversion timeout",
+      "kind": "entry_exit",
+      "families": [
+        "Mean reversion"
+      ],
+      "parameters": {
+        "entry": {
+          "rule": "volatility_ratio",
+          "maximum_ratio": 1.0
+        },
+        "exit": {
+          "rule": "time_nonpositive",
+          "minimum_observations": 20,
+          "maximum_simple_return": 0.0
+        }
+      },
+      "mechanism": "Combine entry volatility context with a no-progress time exit."
+    },
+    {
+      "id": "VOL_TREND_CONFLICT",
+      "label": "Stable-volatility nontrending reversion entry",
+      "kind": "entry",
+      "families": [
+        "Mean reversion"
+      ],
+      "parameters": {
+        "entry": {
+          "rule": "all",
+          "components": [
+            {
+              "rule": "volatility_ratio",
+              "maximum_ratio": 1.0
+            },
+            {
+              "rule": "mr_efficiency",
+              "maximum_efficiency": 0.4
+            }
+          ]
+        }
+      },
+      "mechanism": "Avoid mean-reversion entries with expanding volatility or a strongly directional path."
+    },
+    {
+      "id": "RATE_USD_CONFLICT",
+      "label": "Reject the existing rate-change and dollar conflict",
+      "kind": "entry",
+      "families": "all",
+      "parameters": {
+        "entry": {
+          "rule": "policy_usd",
+          "directional_rate_change_maximum_bp": -10.0,
+          "directional_dxy_change_minimum_pct": 1.0
+        }
+      },
+      "mechanism": "Retain the existing POLICY_USD predicate as a prespecified economic comparator."
+    },
+    {
+      "id": "COMMODITY_USD",
+      "label": "Reject the existing commodity and dollar conflict",
+      "kind": "entry",
+      "families": "all",
+      "parameters": {
+        "entry": {
+          "rule": "commodity_usd",
+          "applicable_pairs": [
+            "AUD",
+            "CAD",
+            "NOK"
+          ],
+          "directional_commodity_change_maximum_pct_exclusive": 0.0,
+          "directional_dxy_change_minimum_pct": 1.0
+        }
+      },
+      "mechanism": "For AUD/CAD/NOK, avoid a commodity move against the trade alongside a conflicting dollar move."
+    }
+  ],
+  "legacy_comparator_ids": [
+    "COMMODITY_USD",
+    "RATE_USD_CONFLICT"
+  ],
+  "family_application": "Each spec is applied to every compatible rule and currency; commodity comparator only AUD/CAD/NOK. No performance-dependent subset.",
+  "boundary_policy": "Main evaluation preserves continuous positions across IS/OOS; PnL display resets only. Quality uses entries and closes inside each interval. Carry-in and censored trades are reported separately.",
+  "fresh_start_sensitivity": "Zero prior positions; only original BASE episodes with execution entry on/after OOS_START may enter. No mid-episode re-entry.",
+  "schedule_delay_sensitivity": "IS-only diagnostic: lag the fixed target schedule by one additional quote for both BASE and FILTER. Decisions are not recomputed under delayed fills; this is not an operational latency simulator and not a selection gate.",
+  "holdout_rule": "Freeze one highest IS-ranked passing NEW filter per account, then evaluate every frozen candidate exactly as specified. No OOS-based re-ranking, rule revision or deletion of failures.",
+  "source_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3"
+  },
+  "input_sha256": {
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de"
+  }
+}

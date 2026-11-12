@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-10-23T06:48:33.752551+00:00",
+  "report": "interaction_report.html",
+  "base_report": "filter_research_report.html",
+  "atlas": "pnl_comparison.pdf",
+  "figures": [
+    "figures/frozen_0001.png",
+    "figures/frozen_0002.png"
+  ],
+  "accounts": 180,
+  "candidate_versions": 267,
+  "original_standard_passing_versions": 2,
+  "frozen_candidates": 2,
+  "oos_evaluated": true,
+  "ordering": "Saved freeze_rank first, then original is_selection row order.",
+  "equivalence": {
+    "candidate_versions": 267,
+    "distinct_rejected_episode_sets": 267,
+    "duplicate_groups": 0,
+    "versions_in_duplicate_groups": 0,
+    "identical_group_metric_checks": 0,
+    "definition": "Within one original account, identical complete rejected signal sets including terminal pending instructions. All versions remain listed; no equivalence group changes selection.",
+    "pending_distinction": "An additional executed_rejection_set_sha256 excludes pending entries. Equal complete sets are sufficient for equal IS target/execution paths; different terminal pending instructions remain separate."
+  },
+  "D_cases_present": true,
+  "artifact_validation": {
+    "status": "passed",
+    "html_documents": 2,
+    "local_links_checked": 317,
+    "png_dimensions": {
+      "figures/frozen_0001.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0002.png": [
+        2392,
+        1189
+      ]
+    },
+    "pdf_pages": 2,
+    "pdf_check": "PDF header, EOF and Page object count; visual review remains separate."
+  },
+  "IS_episode_attribution_present": true,
+  "post_OOS_independent_audit_present": true,
+  "input_paths_relative_to": "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\entry_interaction_filter_v5",
+  "input_sha256": {
+    "development_status.json": "672e5f0d2d2c768693650995d062eb01652fa56a1136f13c5930bbafda07565d",
+    "protocol.json": "fa1026caade32e10eeac0713128fa5316af53dbc9d77e252750d3aa66be8a6ea",
+    "frozen_selection.json": "dfa29078e270ab46981aa0ba559f16f37b1035cda765c7f0adab93884e12102b",
+    "is_selection.csv": "afb8b8dd92e2e7a17f672862004ec4b793bf8a59e469b6554fe6e3fac6411704",
+    "is_all_metrics.csv": "1ec19a7df5b8fdc6aa6214721225ad7652db2e725d46da8538de2dcf468745ce",
+    "is_all_decisions.csv.gz": "fb922e4c2059349fdaafc5eea2d31b23e00b287a38f8c760674f4f9fd2061723",
+    "is_account_coverage.csv": "3692ead48649be8de3a95a205e565d6bf435405e6bd77deb8326b67baaeb8116",
+    "is_hypotheses.json": "49f9b02b95af87e849852fe50f1d7b2623f5feeb5826fa086f5cc7420451e972",
+    "is_frozen_daily.csv.gz": "ea9bfc37945a8138a9fbaa7402cda9b6e6a0ab47fffc549028af123d69111267",
+    "is_frozen_metrics.csv": "d14bf48c3089a3496657173dea8b999a557750d1bd6f37482aa0bb10fe5842f5",
+    "oos_status.json": "82e6ab043bbde9728d984732621e46e4a4449cb8561b69f6d25aba972d949747",
+    "candidate_assessment.csv": "d6b985adbf692755886e07f920cb097920e424cd19290850377c193f4ea41cce",
+    "frozen_full_episode_decisions.csv.gz": "8d38cc9bc209876135f35b931ee95a3a05a3e537b6ab8ff0a69a559d00dc20ba",
+    "frozen_full_trade_ledger.csv.gz": "c89f0341bd1c79a2658b055a60a9d8639b4dadada34163c30dcf23ca04dce1e1",
+    "oos_anniversary_metrics.csv": "f2bc85a7d1eb71728a92a7a90236cff7d6b9a30c99b0db6e3cc3d4b704e6daca",
+    "oos_daily.csv.gz": "c01a375b4662f9254932e1a1f1b365afbed31978c790c6a4b91d3814d958b298",
+    "oos_fresh_start_metrics.csv": "9b27c91a71bd8ed652a023f194408b9a9c05dfa5f4d31b5c6a8be8e17f3a53e3",
+    "oos_metrics.csv": "282ac693900cbdd10c9bd6af18601f86da73b97464b8dd4564d94ed3ce4546e8",
+    "../entry_interaction_probe_v5/cases.json": "c4bbd08513f17a97ae6015d88aa9750dcd3cc1131ec415ac12666f3ee363ad70",
+    "independent_validation.json": "dda02dbcbe64a6875d395a401908cbf439ef1cf4a99b870a5e7ee69b1ce86dcf",
+    "post_oos_independent_validation.json": "577b54a6f0eb26d1eae0786cb4e9ca2a0d58847bc48b260db542c1d3b9de235e",
+    "../entry_interaction_probe_v5/frozen_IS_episode_attribution.json": "231bc1a96d908bacb1b08273a07728d59e3177b92ba9c9853002514ccce50bd2"
+  },
+  "output_sha256": {
+    "interaction_report.html": "857a93e6ac6828c510c4e711f94d4ec36b3465d1965c606deac0883f77459af8",
+    "interaction_decision_counts.csv": "481d69b794ecee4cd199521e2f34eb521faa70aacb67830e062acc7ebdd67c2b",
+    "interaction_equivalent_paths.csv": "41e6f21a48b94cc658c037970b3f96eb5b2a8eaf4a9a45af572cbab81765d474",
+    "interaction_gate_failures.csv": "e6f0dd02e9f5f412ae70a42b18ce86514766d72fc2cd340a0366f85f02b9cfd1",
+    "report_build.json": "aa20c466af65e2b41cea4ac60a5b0385badfd8a09b005d92cebc22ebd85fdf8f",
+    "filter_research_report.html": "958fbffd3909f03be765d93b0886028ffa6c622623fc0ad0b1b728f4d13c3e51",
+    "pnl_comparison.pdf": "dacac2b9c714efe879d1a2df3c9c4da498b76e47432625f1cd7fb95b5c1bdab1",
+    "figures/frozen_0001.png": "f77acaab74c382bec8d2d0e9efa6711092907886ed63d1d7f3511d7a72360654",
+    "figures/frozen_0002.png": "30afc5b7ee11826f150e9a7bf9ebf2a41c7bde74e9eedfbd2d9369a126653448"
+  },
+  "source_sha256": {
+    "build_entry_interaction_report.py": "8f7eb06a72df0fb16c766f8dfb19d379780f175833381dab90522ff8c056b272",
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_report.py": "9ed0d4998444379cbd89a3f2edb29aa8dd31e7fd291939acfb1f32c94d112555"
+  },
+  "strategy_recomputed": false,
+  "selection_changed": false,
+  "old_OOS_read": false
+}

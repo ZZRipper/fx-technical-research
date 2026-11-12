@@ -1,0 +1,10 @@
+pair,warmup_start,pre_sample_valid_observations,sample_first,sample_last,sample_valid_quotes,sample_calendar_weekdays,sample_ND_dates,earlier_warmup_all_targets_identical,source_url,calendar_missing_quote_dates
+EUR,2024-01-02,604,2026-06-01,2026-10-16,96,100,4,True,https://www.federalreserve.gov/releases/h10/hist/dat00_eu.htm,2026-06-19;2026-07-03;2026-09-07;2026-10-12
+GBP,2024-01-02,604,2026-06-01,2026-10-16,96,100,4,True,https://www.federalreserve.gov/releases/h10/hist/dat00_uk.htm,2026-06-19;2026-07-03;2026-09-07;2026-10-12
+AUD,2024-01-02,604,2026-06-01,2026-10-16,96,100,4,True,https://www.federalreserve.gov/releases/h10/hist/dat00_al.htm,2026-06-19;2026-07-03;2026-09-07;2026-10-12
+NZD,2024-01-02,604,2026-06-01,2026-10-16,96,100,4,True,https://www.federalreserve.gov/releases/h10/hist/dat00_nz.htm,2026-06-19;2026-07-03;2026-09-07;2026-10-12
+JPY,2024-01-02,604,2026-06-01,2026-10-16,96,100,4,True,https://www.federalreserve.gov/releases/h10/hist/dat00_ja.htm,2026-06-19;2026-07-03;2026-09-07;2026-10-12
+CHF,2024-01-02,604,2026-06-01,2026-10-16,96,100,4,True,https://www.federalreserve.gov/releases/h10/hist/dat00_sz.htm,2026-06-19;2026-07-03;2026-09-07;2026-10-12
+CAD,2024-01-02,604,2026-06-01,2026-10-16,96,100,4,True,https://www.federalreserve.gov/releases/h10/hist/dat00_ca.htm,2026-06-19;2026-07-03;2026-09-07;2026-10-12
+NOK,2024-01-02,604,2026-06-01,2026-10-16,96,100,4,True,https://www.federalreserve.gov/releases/h10/hist/dat00_no.htm,2026-06-19;2026-07-03;2026-09-07;2026-10-12
+SEK,2024-01-02,604,2026-06-01,2026-10-16,96,100,4,True,https://www.federalreserve.gov/releases/h10/hist/dat00_sd.htm,2026-06-19;2026-07-03;2026-09-07;2026-10-12

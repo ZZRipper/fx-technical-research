@@ -1,0 +1,48 @@
+{
+  "math": {
+    "hand_calculated_accounting": true,
+    "window_and_anchor": true,
+    "cohort_and_flat_trades": true,
+    "calendar_additivity": true,
+    "negative_equity": true
+  },
+  "data": {
+    "accounts": 912,
+    "total_daily_rows": 3041889,
+    "max_endpoint_error_usd": 2.1827872842550278e-11,
+    "max_annual_sum_error_pp": 2.842170943040401e-14,
+    "csv_rows": 5585,
+    "svg_labeled": true
+  },
+  "downloads": {
+    "csv_matches_view": true,
+    "svg_matches_view": true,
+    "csv_bytes": 1717871,
+    "svg_bytes": 640054
+  },
+  "interactions": {
+    "dataset_switches": 3,
+    "comparison_modes": 3,
+    "empty_selection": true,
+    "invalid_dates": true,
+    "normalization_toggle": true
+  },
+  "guide": {
+    "title": "FX Explorer · 策略与使用说明",
+    "internal_links": 13,
+    "broken_anchors": 0,
+    "details": 16,
+    "text_characters": 23688,
+    "search": true,
+    "expand_collapse": true,
+    "print_expansion": true
+  },
+  "browser_errors": 0,
+  "external_http_requests": 0,
+  "status": "passed",
+  "checked_file_sha256": {
+    "FX_PnL_Explorer_Simple.html": "0d989a88ce239714530fed60b9e2f013a81d4ecd5c90d28026e5629e079a1777",
+    "FX_PnL_Explorer_README.html": "6b1b2089ac309674605e27e77c68d38f9a2ebeedf2b644adea76f9bd7b215fdb",
+    "verify_simple_dashboard.py": "4e3b01f002806a0f42405b938b8d92b68df5867b4b074e58914148529312b3ed"
+  }
+}

@@ -1,0 +1,1659 @@
+{
+  "status": "passed",
+  "finished_utc": "2026-10-23T06:07:38.269836+00:00",
+  "protocol_sha256": "81109ee024c58b3751abfd1ce074ea69a8f00c4b18422b15eb619f6a4acee15f",
+  "accounts": 180,
+  "base_episode_rows": 46545,
+  "checkpoint_rows": 54082,
+  "summary_rows": 67500,
+  "coverage_rows": 4500,
+  "compute_cutoff": "2023-05-29",
+  "oos_computed": false,
+  "unique_episode_age": true,
+  "open_labels_missing": true,
+  "source_integrity_pass": true,
+  "synthetic_selfcheck": {
+    "status": "passed",
+    "checks": [
+      "hand_calculated_known_peak_fill_residual",
+      "future_mutation_known_feature_invariance",
+      "technical_exit_priority",
+      "open_terminal_checkpoint_has_no_outcome"
+    ]
+  },
+  "account_arithmetic_checks": [
+    {
+      "pair": "EUR",
+      "strategy": "RSI_MR_7",
+      "known_direct_slice_checks": 203,
+      "remaining_direct_slice_checks": 178,
+      "full_trade_reconciliation_checks": 178,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "EUR",
+      "strategy": "RSI_MR_14",
+      "known_direct_slice_checks": 127,
+      "remaining_direct_slice_checks": 123,
+      "full_trade_reconciliation_checks": 123,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 4.440892098500626e-16
+    },
+    {
+      "pair": "EUR",
+      "strategy": "RSI_MR_20",
+      "known_direct_slice_checks": 88,
+      "remaining_direct_slice_checks": 84,
+      "full_trade_reconciliation_checks": 84,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "EUR",
+      "strategy": "RSI_MOM_7",
+      "known_direct_slice_checks": 295,
+      "remaining_direct_slice_checks": 232,
+      "full_trade_reconciliation_checks": 232,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "EUR",
+      "strategy": "RSI_MOM_14",
+      "known_direct_slice_checks": 208,
+      "remaining_direct_slice_checks": 178,
+      "full_trade_reconciliation_checks": 178,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "EUR",
+      "strategy": "RSI_MOM_20",
+      "known_direct_slice_checks": 166,
+      "remaining_direct_slice_checks": 142,
+      "full_trade_reconciliation_checks": 142,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "EUR",
+      "strategy": "MA_10_30",
+      "known_direct_slice_checks": 459,
+      "remaining_direct_slice_checks": 442,
+      "full_trade_reconciliation_checks": 442,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "EUR",
+      "strategy": "MA_20_60",
+      "known_direct_slice_checks": 327,
+      "remaining_direct_slice_checks": 319,
+      "full_trade_reconciliation_checks": 319,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "EUR",
+      "strategy": "BB_MR_10",
+      "known_direct_slice_checks": 227,
+      "remaining_direct_slice_checks": 192,
+      "full_trade_reconciliation_checks": 192,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "EUR",
+      "strategy": "BB_MR_20",
+      "known_direct_slice_checks": 293,
+      "remaining_direct_slice_checks": 273,
+      "full_trade_reconciliation_checks": 273,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "EUR",
+      "strategy": "BB_BO_10",
+      "known_direct_slice_checks": 227,
+      "remaining_direct_slice_checks": 192,
+      "full_trade_reconciliation_checks": 192,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "EUR",
+      "strategy": "BB_BO_20",
+      "known_direct_slice_checks": 293,
+      "remaining_direct_slice_checks": 273,
+      "full_trade_reconciliation_checks": 273,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "EUR",
+      "strategy": "DONCHIAN_BO_10",
+      "known_direct_slice_checks": 449,
+      "remaining_direct_slice_checks": 386,
+      "full_trade_reconciliation_checks": 386,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "EUR",
+      "strategy": "DONCHIAN_BO_20",
+      "known_direct_slice_checks": 375,
+      "remaining_direct_slice_checks": 339,
+      "full_trade_reconciliation_checks": 339,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "EUR",
+      "strategy": "MACD_12_26_9",
+      "known_direct_slice_checks": 582,
+      "remaining_direct_slice_checks": 537,
+      "full_trade_reconciliation_checks": 537,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "EUR",
+      "strategy": "TSMOM_21",
+      "known_direct_slice_checks": 473,
+      "remaining_direct_slice_checks": 441,
+      "full_trade_reconciliation_checks": 441,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "EUR",
+      "strategy": "TSMOM_63",
+      "known_direct_slice_checks": 329,
+      "remaining_direct_slice_checks": 303,
+      "full_trade_reconciliation_checks": 303,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "EUR",
+      "strategy": "VOTE_EQUAL_4",
+      "known_direct_slice_checks": 410,
+      "remaining_direct_slice_checks": 365,
+      "full_trade_reconciliation_checks": 365,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "EUR",
+      "strategy": "VOTE_STRENGTH_4",
+      "known_direct_slice_checks": 377,
+      "remaining_direct_slice_checks": 358,
+      "full_trade_reconciliation_checks": 358,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "EUR",
+      "strategy": "REGIME_RULE_FIXED",
+      "known_direct_slice_checks": 64,
+      "remaining_direct_slice_checks": 60,
+      "full_trade_reconciliation_checks": 60,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 0.0
+    },
+    {
+      "pair": "GBP",
+      "strategy": "RSI_MR_7",
+      "known_direct_slice_checks": 197,
+      "remaining_direct_slice_checks": 169,
+      "full_trade_reconciliation_checks": 169,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "RSI_MR_14",
+      "known_direct_slice_checks": 115,
+      "remaining_direct_slice_checks": 108,
+      "full_trade_reconciliation_checks": 108,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "RSI_MR_20",
+      "known_direct_slice_checks": 81,
+      "remaining_direct_slice_checks": 80,
+      "full_trade_reconciliation_checks": 80,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "RSI_MOM_7",
+      "known_direct_slice_checks": 281,
+      "remaining_direct_slice_checks": 223,
+      "full_trade_reconciliation_checks": 223,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "GBP",
+      "strategy": "RSI_MOM_14",
+      "known_direct_slice_checks": 199,
+      "remaining_direct_slice_checks": 165,
+      "full_trade_reconciliation_checks": 165,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "RSI_MOM_20",
+      "known_direct_slice_checks": 146,
+      "remaining_direct_slice_checks": 124,
+      "full_trade_reconciliation_checks": 124,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "MA_10_30",
+      "known_direct_slice_checks": 470,
+      "remaining_direct_slice_checks": 459,
+      "full_trade_reconciliation_checks": 459,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "MA_20_60",
+      "known_direct_slice_checks": 326,
+      "remaining_direct_slice_checks": 315,
+      "full_trade_reconciliation_checks": 315,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "BB_MR_10",
+      "known_direct_slice_checks": 214,
+      "remaining_direct_slice_checks": 183,
+      "full_trade_reconciliation_checks": 183,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "GBP",
+      "strategy": "BB_MR_20",
+      "known_direct_slice_checks": 303,
+      "remaining_direct_slice_checks": 278,
+      "full_trade_reconciliation_checks": 278,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "GBP",
+      "strategy": "BB_BO_10",
+      "known_direct_slice_checks": 214,
+      "remaining_direct_slice_checks": 183,
+      "full_trade_reconciliation_checks": 183,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "GBP",
+      "strategy": "BB_BO_20",
+      "known_direct_slice_checks": 303,
+      "remaining_direct_slice_checks": 278,
+      "full_trade_reconciliation_checks": 278,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "GBP",
+      "strategy": "DONCHIAN_BO_10",
+      "known_direct_slice_checks": 464,
+      "remaining_direct_slice_checks": 392,
+      "full_trade_reconciliation_checks": 392,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "GBP",
+      "strategy": "DONCHIAN_BO_20",
+      "known_direct_slice_checks": 407,
+      "remaining_direct_slice_checks": 373,
+      "full_trade_reconciliation_checks": 373,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "MACD_12_26_9",
+      "known_direct_slice_checks": 590,
+      "remaining_direct_slice_checks": 542,
+      "full_trade_reconciliation_checks": 542,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "TSMOM_21",
+      "known_direct_slice_checks": 494,
+      "remaining_direct_slice_checks": 469,
+      "full_trade_reconciliation_checks": 469,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "TSMOM_63",
+      "known_direct_slice_checks": 319,
+      "remaining_direct_slice_checks": 301,
+      "full_trade_reconciliation_checks": 301,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "VOTE_EQUAL_4",
+      "known_direct_slice_checks": 433,
+      "remaining_direct_slice_checks": 398,
+      "full_trade_reconciliation_checks": 398,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "VOTE_STRENGTH_4",
+      "known_direct_slice_checks": 394,
+      "remaining_direct_slice_checks": 379,
+      "full_trade_reconciliation_checks": 379,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "GBP",
+      "strategy": "REGIME_RULE_FIXED",
+      "known_direct_slice_checks": 62,
+      "remaining_direct_slice_checks": 51,
+      "full_trade_reconciliation_checks": 51,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 4.440892098500626e-16
+    },
+    {
+      "pair": "AUD",
+      "strategy": "RSI_MR_7",
+      "known_direct_slice_checks": 212,
+      "remaining_direct_slice_checks": 186,
+      "full_trade_reconciliation_checks": 186,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "AUD",
+      "strategy": "RSI_MR_14",
+      "known_direct_slice_checks": 124,
+      "remaining_direct_slice_checks": 116,
+      "full_trade_reconciliation_checks": 116,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "AUD",
+      "strategy": "RSI_MR_20",
+      "known_direct_slice_checks": 68,
+      "remaining_direct_slice_checks": 67,
+      "full_trade_reconciliation_checks": 67,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "RSI_MOM_7",
+      "known_direct_slice_checks": 278,
+      "remaining_direct_slice_checks": 219,
+      "full_trade_reconciliation_checks": 219,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "RSI_MOM_14",
+      "known_direct_slice_checks": 193,
+      "remaining_direct_slice_checks": 161,
+      "full_trade_reconciliation_checks": 161,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "AUD",
+      "strategy": "RSI_MOM_20",
+      "known_direct_slice_checks": 157,
+      "remaining_direct_slice_checks": 132,
+      "full_trade_reconciliation_checks": 132,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "AUD",
+      "strategy": "MA_10_30",
+      "known_direct_slice_checks": 469,
+      "remaining_direct_slice_checks": 449,
+      "full_trade_reconciliation_checks": 449,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "MA_20_60",
+      "known_direct_slice_checks": 337,
+      "remaining_direct_slice_checks": 328,
+      "full_trade_reconciliation_checks": 328,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "BB_MR_10",
+      "known_direct_slice_checks": 195,
+      "remaining_direct_slice_checks": 176,
+      "full_trade_reconciliation_checks": 176,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "BB_MR_20",
+      "known_direct_slice_checks": 301,
+      "remaining_direct_slice_checks": 278,
+      "full_trade_reconciliation_checks": 278,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "BB_BO_10",
+      "known_direct_slice_checks": 195,
+      "remaining_direct_slice_checks": 176,
+      "full_trade_reconciliation_checks": 176,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "BB_BO_20",
+      "known_direct_slice_checks": 301,
+      "remaining_direct_slice_checks": 278,
+      "full_trade_reconciliation_checks": 278,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "DONCHIAN_BO_10",
+      "known_direct_slice_checks": 459,
+      "remaining_direct_slice_checks": 402,
+      "full_trade_reconciliation_checks": 402,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "DONCHIAN_BO_20",
+      "known_direct_slice_checks": 422,
+      "remaining_direct_slice_checks": 385,
+      "full_trade_reconciliation_checks": 385,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "MACD_12_26_9",
+      "known_direct_slice_checks": 593,
+      "remaining_direct_slice_checks": 547,
+      "full_trade_reconciliation_checks": 547,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "TSMOM_21",
+      "known_direct_slice_checks": 478,
+      "remaining_direct_slice_checks": 438,
+      "full_trade_reconciliation_checks": 438,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 7.105427357601002e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "TSMOM_63",
+      "known_direct_slice_checks": 356,
+      "remaining_direct_slice_checks": 334,
+      "full_trade_reconciliation_checks": 334,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "VOTE_EQUAL_4",
+      "known_direct_slice_checks": 450,
+      "remaining_direct_slice_checks": 408,
+      "full_trade_reconciliation_checks": 408,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "VOTE_STRENGTH_4",
+      "known_direct_slice_checks": 398,
+      "remaining_direct_slice_checks": 375,
+      "full_trade_reconciliation_checks": 375,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "AUD",
+      "strategy": "REGIME_RULE_FIXED",
+      "known_direct_slice_checks": 77,
+      "remaining_direct_slice_checks": 67,
+      "full_trade_reconciliation_checks": 67,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "RSI_MR_7",
+      "known_direct_slice_checks": 191,
+      "remaining_direct_slice_checks": 175,
+      "full_trade_reconciliation_checks": 175,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "NZD",
+      "strategy": "RSI_MR_14",
+      "known_direct_slice_checks": 143,
+      "remaining_direct_slice_checks": 139,
+      "full_trade_reconciliation_checks": 139,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "RSI_MR_20",
+      "known_direct_slice_checks": 85,
+      "remaining_direct_slice_checks": 82,
+      "full_trade_reconciliation_checks": 82,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "RSI_MOM_7",
+      "known_direct_slice_checks": 303,
+      "remaining_direct_slice_checks": 242,
+      "full_trade_reconciliation_checks": 242,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "RSI_MOM_14",
+      "known_direct_slice_checks": 202,
+      "remaining_direct_slice_checks": 181,
+      "full_trade_reconciliation_checks": 181,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "RSI_MOM_20",
+      "known_direct_slice_checks": 173,
+      "remaining_direct_slice_checks": 150,
+      "full_trade_reconciliation_checks": 150,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "MA_10_30",
+      "known_direct_slice_checks": 481,
+      "remaining_direct_slice_checks": 458,
+      "full_trade_reconciliation_checks": 458,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 7.105427357601002e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "MA_20_60",
+      "known_direct_slice_checks": 323,
+      "remaining_direct_slice_checks": 320,
+      "full_trade_reconciliation_checks": 320,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "BB_MR_10",
+      "known_direct_slice_checks": 201,
+      "remaining_direct_slice_checks": 168,
+      "full_trade_reconciliation_checks": 168,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "BB_MR_20",
+      "known_direct_slice_checks": 311,
+      "remaining_direct_slice_checks": 287,
+      "full_trade_reconciliation_checks": 287,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "BB_BO_10",
+      "known_direct_slice_checks": 201,
+      "remaining_direct_slice_checks": 168,
+      "full_trade_reconciliation_checks": 168,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "BB_BO_20",
+      "known_direct_slice_checks": 311,
+      "remaining_direct_slice_checks": 287,
+      "full_trade_reconciliation_checks": 287,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "DONCHIAN_BO_10",
+      "known_direct_slice_checks": 462,
+      "remaining_direct_slice_checks": 395,
+      "full_trade_reconciliation_checks": 395,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "DONCHIAN_BO_20",
+      "known_direct_slice_checks": 389,
+      "remaining_direct_slice_checks": 363,
+      "full_trade_reconciliation_checks": 363,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "MACD_12_26_9",
+      "known_direct_slice_checks": 584,
+      "remaining_direct_slice_checks": 541,
+      "full_trade_reconciliation_checks": 541,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "TSMOM_21",
+      "known_direct_slice_checks": 491,
+      "remaining_direct_slice_checks": 453,
+      "full_trade_reconciliation_checks": 453,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "TSMOM_63",
+      "known_direct_slice_checks": 325,
+      "remaining_direct_slice_checks": 305,
+      "full_trade_reconciliation_checks": 305,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "VOTE_EQUAL_4",
+      "known_direct_slice_checks": 428,
+      "remaining_direct_slice_checks": 396,
+      "full_trade_reconciliation_checks": 396,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "VOTE_STRENGTH_4",
+      "known_direct_slice_checks": 386,
+      "remaining_direct_slice_checks": 361,
+      "full_trade_reconciliation_checks": 361,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NZD",
+      "strategy": "REGIME_RULE_FIXED",
+      "known_direct_slice_checks": 83,
+      "remaining_direct_slice_checks": 75,
+      "full_trade_reconciliation_checks": 75,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 0.0
+    },
+    {
+      "pair": "JPY",
+      "strategy": "RSI_MR_7",
+      "known_direct_slice_checks": 198,
+      "remaining_direct_slice_checks": 166,
+      "full_trade_reconciliation_checks": 166,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "RSI_MR_14",
+      "known_direct_slice_checks": 131,
+      "remaining_direct_slice_checks": 122,
+      "full_trade_reconciliation_checks": 122,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "RSI_MR_20",
+      "known_direct_slice_checks": 94,
+      "remaining_direct_slice_checks": 92,
+      "full_trade_reconciliation_checks": 92,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "RSI_MOM_7",
+      "known_direct_slice_checks": 293,
+      "remaining_direct_slice_checks": 223,
+      "full_trade_reconciliation_checks": 223,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "RSI_MOM_14",
+      "known_direct_slice_checks": 211,
+      "remaining_direct_slice_checks": 172,
+      "full_trade_reconciliation_checks": 172,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "RSI_MOM_20",
+      "known_direct_slice_checks": 160,
+      "remaining_direct_slice_checks": 144,
+      "full_trade_reconciliation_checks": 144,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "MA_10_30",
+      "known_direct_slice_checks": 479,
+      "remaining_direct_slice_checks": 458,
+      "full_trade_reconciliation_checks": 458,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "MA_20_60",
+      "known_direct_slice_checks": 319,
+      "remaining_direct_slice_checks": 310,
+      "full_trade_reconciliation_checks": 310,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "BB_MR_10",
+      "known_direct_slice_checks": 217,
+      "remaining_direct_slice_checks": 189,
+      "full_trade_reconciliation_checks": 189,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "JPY",
+      "strategy": "BB_MR_20",
+      "known_direct_slice_checks": 274,
+      "remaining_direct_slice_checks": 256,
+      "full_trade_reconciliation_checks": 256,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "BB_BO_10",
+      "known_direct_slice_checks": 217,
+      "remaining_direct_slice_checks": 189,
+      "full_trade_reconciliation_checks": 189,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "JPY",
+      "strategy": "BB_BO_20",
+      "known_direct_slice_checks": 274,
+      "remaining_direct_slice_checks": 256,
+      "full_trade_reconciliation_checks": 256,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "DONCHIAN_BO_10",
+      "known_direct_slice_checks": 429,
+      "remaining_direct_slice_checks": 370,
+      "full_trade_reconciliation_checks": 370,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "DONCHIAN_BO_20",
+      "known_direct_slice_checks": 370,
+      "remaining_direct_slice_checks": 339,
+      "full_trade_reconciliation_checks": 339,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "MACD_12_26_9",
+      "known_direct_slice_checks": 582,
+      "remaining_direct_slice_checks": 537,
+      "full_trade_reconciliation_checks": 537,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "TSMOM_21",
+      "known_direct_slice_checks": 488,
+      "remaining_direct_slice_checks": 441,
+      "full_trade_reconciliation_checks": 441,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "TSMOM_63",
+      "known_direct_slice_checks": 324,
+      "remaining_direct_slice_checks": 303,
+      "full_trade_reconciliation_checks": 303,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "VOTE_EQUAL_4",
+      "known_direct_slice_checks": 413,
+      "remaining_direct_slice_checks": 381,
+      "full_trade_reconciliation_checks": 381,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "VOTE_STRENGTH_4",
+      "known_direct_slice_checks": 389,
+      "remaining_direct_slice_checks": 367,
+      "full_trade_reconciliation_checks": 367,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "JPY",
+      "strategy": "REGIME_RULE_FIXED",
+      "known_direct_slice_checks": 92,
+      "remaining_direct_slice_checks": 81,
+      "full_trade_reconciliation_checks": 81,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "RSI_MR_7",
+      "known_direct_slice_checks": 199,
+      "remaining_direct_slice_checks": 175,
+      "full_trade_reconciliation_checks": 175,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 4.440892098500626e-16
+    },
+    {
+      "pair": "CHF",
+      "strategy": "RSI_MR_14",
+      "known_direct_slice_checks": 130,
+      "remaining_direct_slice_checks": 118,
+      "full_trade_reconciliation_checks": 118,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "CHF",
+      "strategy": "RSI_MR_20",
+      "known_direct_slice_checks": 67,
+      "remaining_direct_slice_checks": 64,
+      "full_trade_reconciliation_checks": 64,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "CHF",
+      "strategy": "RSI_MOM_7",
+      "known_direct_slice_checks": 300,
+      "remaining_direct_slice_checks": 246,
+      "full_trade_reconciliation_checks": 246,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "RSI_MOM_14",
+      "known_direct_slice_checks": 208,
+      "remaining_direct_slice_checks": 178,
+      "full_trade_reconciliation_checks": 178,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "RSI_MOM_20",
+      "known_direct_slice_checks": 156,
+      "remaining_direct_slice_checks": 134,
+      "full_trade_reconciliation_checks": 134,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "MA_10_30",
+      "known_direct_slice_checks": 493,
+      "remaining_direct_slice_checks": 485,
+      "full_trade_reconciliation_checks": 485,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "MA_20_60",
+      "known_direct_slice_checks": 349,
+      "remaining_direct_slice_checks": 334,
+      "full_trade_reconciliation_checks": 334,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "BB_MR_10",
+      "known_direct_slice_checks": 241,
+      "remaining_direct_slice_checks": 206,
+      "full_trade_reconciliation_checks": 206,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "BB_MR_20",
+      "known_direct_slice_checks": 299,
+      "remaining_direct_slice_checks": 277,
+      "full_trade_reconciliation_checks": 277,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "CHF",
+      "strategy": "BB_BO_10",
+      "known_direct_slice_checks": 241,
+      "remaining_direct_slice_checks": 206,
+      "full_trade_reconciliation_checks": 206,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "BB_BO_20",
+      "known_direct_slice_checks": 299,
+      "remaining_direct_slice_checks": 277,
+      "full_trade_reconciliation_checks": 277,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "CHF",
+      "strategy": "DONCHIAN_BO_10",
+      "known_direct_slice_checks": 466,
+      "remaining_direct_slice_checks": 401,
+      "full_trade_reconciliation_checks": 401,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "DONCHIAN_BO_20",
+      "known_direct_slice_checks": 392,
+      "remaining_direct_slice_checks": 352,
+      "full_trade_reconciliation_checks": 352,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "MACD_12_26_9",
+      "known_direct_slice_checks": 586,
+      "remaining_direct_slice_checks": 536,
+      "full_trade_reconciliation_checks": 536,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "TSMOM_21",
+      "known_direct_slice_checks": 486,
+      "remaining_direct_slice_checks": 449,
+      "full_trade_reconciliation_checks": 449,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 2.220446049250313e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "TSMOM_63",
+      "known_direct_slice_checks": 365,
+      "remaining_direct_slice_checks": 338,
+      "full_trade_reconciliation_checks": 338,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "VOTE_EQUAL_4",
+      "known_direct_slice_checks": 426,
+      "remaining_direct_slice_checks": 378,
+      "full_trade_reconciliation_checks": 378,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "VOTE_STRENGTH_4",
+      "known_direct_slice_checks": 381,
+      "remaining_direct_slice_checks": 356,
+      "full_trade_reconciliation_checks": 356,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CHF",
+      "strategy": "REGIME_RULE_FIXED",
+      "known_direct_slice_checks": 79,
+      "remaining_direct_slice_checks": 66,
+      "full_trade_reconciliation_checks": 66,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 0.0
+    },
+    {
+      "pair": "CAD",
+      "strategy": "RSI_MR_7",
+      "known_direct_slice_checks": 162,
+      "remaining_direct_slice_checks": 140,
+      "full_trade_reconciliation_checks": 140,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "CAD",
+      "strategy": "RSI_MR_14",
+      "known_direct_slice_checks": 111,
+      "remaining_direct_slice_checks": 105,
+      "full_trade_reconciliation_checks": 105,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "CAD",
+      "strategy": "RSI_MR_20",
+      "known_direct_slice_checks": 63,
+      "remaining_direct_slice_checks": 62,
+      "full_trade_reconciliation_checks": 62,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 4.440892098500626e-16
+    },
+    {
+      "pair": "CAD",
+      "strategy": "RSI_MOM_7",
+      "known_direct_slice_checks": 289,
+      "remaining_direct_slice_checks": 236,
+      "full_trade_reconciliation_checks": 236,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "RSI_MOM_14",
+      "known_direct_slice_checks": 185,
+      "remaining_direct_slice_checks": 151,
+      "full_trade_reconciliation_checks": 151,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "RSI_MOM_20",
+      "known_direct_slice_checks": 126,
+      "remaining_direct_slice_checks": 111,
+      "full_trade_reconciliation_checks": 111,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "MA_10_30",
+      "known_direct_slice_checks": 466,
+      "remaining_direct_slice_checks": 451,
+      "full_trade_reconciliation_checks": 451,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "MA_20_60",
+      "known_direct_slice_checks": 345,
+      "remaining_direct_slice_checks": 336,
+      "full_trade_reconciliation_checks": 336,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "BB_MR_10",
+      "known_direct_slice_checks": 209,
+      "remaining_direct_slice_checks": 175,
+      "full_trade_reconciliation_checks": 175,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 0.0
+    },
+    {
+      "pair": "CAD",
+      "strategy": "BB_MR_20",
+      "known_direct_slice_checks": 279,
+      "remaining_direct_slice_checks": 253,
+      "full_trade_reconciliation_checks": 253,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "BB_BO_10",
+      "known_direct_slice_checks": 209,
+      "remaining_direct_slice_checks": 175,
+      "full_trade_reconciliation_checks": 175,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 0.0
+    },
+    {
+      "pair": "CAD",
+      "strategy": "BB_BO_20",
+      "known_direct_slice_checks": 279,
+      "remaining_direct_slice_checks": 253,
+      "full_trade_reconciliation_checks": 253,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "DONCHIAN_BO_10",
+      "known_direct_slice_checks": 445,
+      "remaining_direct_slice_checks": 384,
+      "full_trade_reconciliation_checks": 384,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "DONCHIAN_BO_20",
+      "known_direct_slice_checks": 379,
+      "remaining_direct_slice_checks": 354,
+      "full_trade_reconciliation_checks": 354,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "MACD_12_26_9",
+      "known_direct_slice_checks": 601,
+      "remaining_direct_slice_checks": 549,
+      "full_trade_reconciliation_checks": 549,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "TSMOM_21",
+      "known_direct_slice_checks": 493,
+      "remaining_direct_slice_checks": 459,
+      "full_trade_reconciliation_checks": 459,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "TSMOM_63",
+      "known_direct_slice_checks": 357,
+      "remaining_direct_slice_checks": 331,
+      "full_trade_reconciliation_checks": 331,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "VOTE_EQUAL_4",
+      "known_direct_slice_checks": 414,
+      "remaining_direct_slice_checks": 390,
+      "full_trade_reconciliation_checks": 390,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "VOTE_STRENGTH_4",
+      "known_direct_slice_checks": 388,
+      "remaining_direct_slice_checks": 366,
+      "full_trade_reconciliation_checks": 366,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "CAD",
+      "strategy": "REGIME_RULE_FIXED",
+      "known_direct_slice_checks": 68,
+      "remaining_direct_slice_checks": 62,
+      "full_trade_reconciliation_checks": 62,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 4.440892098500626e-16
+    },
+    {
+      "pair": "NOK",
+      "strategy": "RSI_MR_7",
+      "known_direct_slice_checks": 200,
+      "remaining_direct_slice_checks": 178,
+      "full_trade_reconciliation_checks": 178,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "RSI_MR_14",
+      "known_direct_slice_checks": 136,
+      "remaining_direct_slice_checks": 133,
+      "full_trade_reconciliation_checks": 133,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "RSI_MR_20",
+      "known_direct_slice_checks": 62,
+      "remaining_direct_slice_checks": 61,
+      "full_trade_reconciliation_checks": 61,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "RSI_MOM_7",
+      "known_direct_slice_checks": 279,
+      "remaining_direct_slice_checks": 221,
+      "full_trade_reconciliation_checks": 221,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "RSI_MOM_14",
+      "known_direct_slice_checks": 204,
+      "remaining_direct_slice_checks": 174,
+      "full_trade_reconciliation_checks": 174,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "RSI_MOM_20",
+      "known_direct_slice_checks": 157,
+      "remaining_direct_slice_checks": 130,
+      "full_trade_reconciliation_checks": 130,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "NOK",
+      "strategy": "MA_10_30",
+      "known_direct_slice_checks": 475,
+      "remaining_direct_slice_checks": 452,
+      "full_trade_reconciliation_checks": 452,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "MA_20_60",
+      "known_direct_slice_checks": 347,
+      "remaining_direct_slice_checks": 337,
+      "full_trade_reconciliation_checks": 337,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "BB_MR_10",
+      "known_direct_slice_checks": 229,
+      "remaining_direct_slice_checks": 195,
+      "full_trade_reconciliation_checks": 195,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "NOK",
+      "strategy": "BB_MR_20",
+      "known_direct_slice_checks": 285,
+      "remaining_direct_slice_checks": 263,
+      "full_trade_reconciliation_checks": 263,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "BB_BO_10",
+      "known_direct_slice_checks": 229,
+      "remaining_direct_slice_checks": 195,
+      "full_trade_reconciliation_checks": 195,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "NOK",
+      "strategy": "BB_BO_20",
+      "known_direct_slice_checks": 285,
+      "remaining_direct_slice_checks": 263,
+      "full_trade_reconciliation_checks": 263,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "DONCHIAN_BO_10",
+      "known_direct_slice_checks": 444,
+      "remaining_direct_slice_checks": 381,
+      "full_trade_reconciliation_checks": 381,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "DONCHIAN_BO_20",
+      "known_direct_slice_checks": 379,
+      "remaining_direct_slice_checks": 349,
+      "full_trade_reconciliation_checks": 349,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "MACD_12_26_9",
+      "known_direct_slice_checks": 580,
+      "remaining_direct_slice_checks": 527,
+      "full_trade_reconciliation_checks": 527,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "TSMOM_21",
+      "known_direct_slice_checks": 485,
+      "remaining_direct_slice_checks": 444,
+      "full_trade_reconciliation_checks": 444,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "TSMOM_63",
+      "known_direct_slice_checks": 329,
+      "remaining_direct_slice_checks": 308,
+      "full_trade_reconciliation_checks": 308,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "VOTE_EQUAL_4",
+      "known_direct_slice_checks": 417,
+      "remaining_direct_slice_checks": 380,
+      "full_trade_reconciliation_checks": 380,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "VOTE_STRENGTH_4",
+      "known_direct_slice_checks": 398,
+      "remaining_direct_slice_checks": 367,
+      "full_trade_reconciliation_checks": 367,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "NOK",
+      "strategy": "REGIME_RULE_FIXED",
+      "known_direct_slice_checks": 87,
+      "remaining_direct_slice_checks": 82,
+      "full_trade_reconciliation_checks": 82,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "SEK",
+      "strategy": "RSI_MR_7",
+      "known_direct_slice_checks": 215,
+      "remaining_direct_slice_checks": 188,
+      "full_trade_reconciliation_checks": 188,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "RSI_MR_14",
+      "known_direct_slice_checks": 123,
+      "remaining_direct_slice_checks": 117,
+      "full_trade_reconciliation_checks": 117,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "RSI_MR_20",
+      "known_direct_slice_checks": 74,
+      "remaining_direct_slice_checks": 71,
+      "full_trade_reconciliation_checks": 71,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "RSI_MOM_7",
+      "known_direct_slice_checks": 282,
+      "remaining_direct_slice_checks": 223,
+      "full_trade_reconciliation_checks": 223,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "RSI_MOM_14",
+      "known_direct_slice_checks": 209,
+      "remaining_direct_slice_checks": 172,
+      "full_trade_reconciliation_checks": 172,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "SEK",
+      "strategy": "RSI_MOM_20",
+      "known_direct_slice_checks": 155,
+      "remaining_direct_slice_checks": 135,
+      "full_trade_reconciliation_checks": 135,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "MA_10_30",
+      "known_direct_slice_checks": 450,
+      "remaining_direct_slice_checks": 436,
+      "full_trade_reconciliation_checks": 436,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "MA_20_60",
+      "known_direct_slice_checks": 325,
+      "remaining_direct_slice_checks": 319,
+      "full_trade_reconciliation_checks": 319,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "BB_MR_10",
+      "known_direct_slice_checks": 212,
+      "remaining_direct_slice_checks": 181,
+      "full_trade_reconciliation_checks": 181,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "SEK",
+      "strategy": "BB_MR_20",
+      "known_direct_slice_checks": 292,
+      "remaining_direct_slice_checks": 273,
+      "full_trade_reconciliation_checks": 273,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "BB_BO_10",
+      "known_direct_slice_checks": 212,
+      "remaining_direct_slice_checks": 181,
+      "full_trade_reconciliation_checks": 181,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "SEK",
+      "strategy": "BB_BO_20",
+      "known_direct_slice_checks": 292,
+      "remaining_direct_slice_checks": 273,
+      "full_trade_reconciliation_checks": 273,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "DONCHIAN_BO_10",
+      "known_direct_slice_checks": 450,
+      "remaining_direct_slice_checks": 389,
+      "full_trade_reconciliation_checks": 389,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    },
+    {
+      "pair": "SEK",
+      "strategy": "DONCHIAN_BO_20",
+      "known_direct_slice_checks": 386,
+      "remaining_direct_slice_checks": 357,
+      "full_trade_reconciliation_checks": 357,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "MACD_12_26_9",
+      "known_direct_slice_checks": 580,
+      "remaining_direct_slice_checks": 544,
+      "full_trade_reconciliation_checks": 544,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "TSMOM_21",
+      "known_direct_slice_checks": 468,
+      "remaining_direct_slice_checks": 440,
+      "full_trade_reconciliation_checks": 440,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "TSMOM_63",
+      "known_direct_slice_checks": 359,
+      "remaining_direct_slice_checks": 341,
+      "full_trade_reconciliation_checks": 341,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "VOTE_EQUAL_4",
+      "known_direct_slice_checks": 432,
+      "remaining_direct_slice_checks": 392,
+      "full_trade_reconciliation_checks": 392,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "VOTE_STRENGTH_4",
+      "known_direct_slice_checks": 389,
+      "remaining_direct_slice_checks": 365,
+      "full_trade_reconciliation_checks": 365,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 3.552713678800501e-15
+    },
+    {
+      "pair": "SEK",
+      "strategy": "REGIME_RULE_FIXED",
+      "known_direct_slice_checks": 65,
+      "remaining_direct_slice_checks": 55,
+      "full_trade_reconciliation_checks": 55,
+      "max_remaining_slice_error_pp": 0.0,
+      "max_full_trade_reconciliation_error_pp": 8.881784197001252e-16
+    }
+  ],
+  "known_direct_slice_checks": 54082,
+  "remaining_direct_slice_checks": 49162,
+  "full_trade_reconciliation_checks": 49162,
+  "max_remaining_slice_error_pp": 0.0,
+  "max_full_trade_reconciliation_error_pp": 7.105427357601002e-15,
+  "output_sha256": {
+    "discovery_repeated_negative_patterns.csv": "f02a7e7e36d82de365762c57bd4dacdfdf80ad84c832b91f2c4500b6c5893ccb",
+    "discovery_repeated_negative_patterns.json": "20c6d2c4b5330dea1536f60ee7c07bb594928bd1e5c3f6083fca142466495a57",
+    "holding_coverage.csv": "cad15ffb4b3c516539d58d15666abdb8bcd90f1d21a9f3082e9ee6ce92ee682e",
+    "holding_state_summary.csv": "a37a3d0862559690189ccbc335a4feccb2968f18c5e1a1293e12c6761cdf5203",
+    "is_base_trade_ledger.csv.gz": "1fa2f3f890cfab95c3562ed1a6ebaaebff64ebd82f7a9b3abfe70493fb0700e7",
+    "is_holding_checkpoints.csv.gz": "bd122a23fa6777c8f2dac7e8ff19dd471be5322843cf616ab883d30d6c0dfa74"
+  }
+}

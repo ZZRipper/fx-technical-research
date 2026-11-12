@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-23T06:43:16.777237+00:00",
+  "original_IS_standard_unchanged": true,
+  "cost_bp": 0,
+  "frozen_candidates": 2,
+  "audit_checks_passed": 4252,
+  "independent_validation_sha256": "dda02dbcbe64a6875d395a401908cbf439ef1cf4a99b870a5e7ee69b1ce86dcf",
+  "freeze_sha256": "dfa29078e270ab46981aa0ba559f16f37b1035cda765c7f0adab93884e12102b",
+  "OOS_opened": false,
+  "historical_OOS_reuse_disclosed": true
+}

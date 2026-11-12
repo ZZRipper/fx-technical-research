@@ -1,0 +1,238 @@
+{
+  "created_utc": "2026-10-23T06:06:35.954336+00:00",
+  "version": "holding_observations_v3",
+  "compute_start": "2005-01-03",
+  "compute_end": "2023-05-29",
+  "cost_bp": 0,
+  "accounting": "fixed_initial_capital_simple",
+  "pairs": [
+    "EUR",
+    "GBP",
+    "AUD",
+    "NZD",
+    "JPY",
+    "CHF",
+    "CAD",
+    "NOK",
+    "SEK"
+  ],
+  "strategies": [
+    "RSI_MR_7",
+    "RSI_MR_14",
+    "RSI_MR_20",
+    "RSI_MOM_7",
+    "RSI_MOM_14",
+    "RSI_MOM_20",
+    "MA_10_30",
+    "MA_20_60",
+    "BB_MR_10",
+    "BB_MR_20",
+    "BB_BO_10",
+    "BB_BO_20",
+    "DONCHIAN_BO_10",
+    "DONCHIAN_BO_20",
+    "MACD_12_26_9",
+    "TSMOM_21",
+    "TSMOM_63",
+    "VOTE_EQUAL_4",
+    "VOTE_STRENGTH_4",
+    "REGIME_RULE_FIXED"
+  ],
+  "accounts": 180,
+  "checkpoint_ages": [
+    5,
+    10,
+    20,
+    40,
+    63
+  ],
+  "blocks": [
+    [
+      "D1",
+      "2005-01-03",
+      "2009-12-31"
+    ],
+    [
+      "D2",
+      "2010-01-01",
+      "2014-12-31"
+    ],
+    [
+      "D",
+      "2005-01-03",
+      "2014-12-31"
+    ],
+    [
+      "V",
+      "2015-01-01",
+      "2019-12-31"
+    ],
+    [
+      "C",
+      "2020-01-01",
+      "2023-05-29"
+    ]
+  ],
+  "condition_order": [
+    "pnl_negative",
+    "pnl_positive",
+    "giveback_half",
+    "recent5_negative",
+    "opposite20"
+  ],
+  "conditions": [
+    {
+      "condition": "ALL",
+      "members": []
+    },
+    {
+      "condition": "pnl_negative",
+      "members": [
+        "pnl_negative"
+      ]
+    },
+    {
+      "condition": "pnl_positive",
+      "members": [
+        "pnl_positive"
+      ]
+    },
+    {
+      "condition": "giveback_half",
+      "members": [
+        "giveback_half"
+      ]
+    },
+    {
+      "condition": "recent5_negative",
+      "members": [
+        "recent5_negative"
+      ]
+    },
+    {
+      "condition": "opposite20",
+      "members": [
+        "opposite20"
+      ]
+    },
+    {
+      "condition": "pnl_negative&giveback_half",
+      "members": [
+        "pnl_negative",
+        "giveback_half"
+      ]
+    },
+    {
+      "condition": "pnl_negative&recent5_negative",
+      "members": [
+        "pnl_negative",
+        "recent5_negative"
+      ]
+    },
+    {
+      "condition": "pnl_negative&opposite20",
+      "members": [
+        "pnl_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "condition": "pnl_positive&giveback_half",
+      "members": [
+        "pnl_positive",
+        "giveback_half"
+      ]
+    },
+    {
+      "condition": "pnl_positive&recent5_negative",
+      "members": [
+        "pnl_positive",
+        "recent5_negative"
+      ]
+    },
+    {
+      "condition": "pnl_positive&opposite20",
+      "members": [
+        "pnl_positive",
+        "opposite20"
+      ]
+    },
+    {
+      "condition": "giveback_half&recent5_negative",
+      "members": [
+        "giveback_half",
+        "recent5_negative"
+      ]
+    },
+    {
+      "condition": "giveback_half&opposite20",
+      "members": [
+        "giveback_half",
+        "opposite20"
+      ]
+    },
+    {
+      "condition": "recent5_negative&opposite20",
+      "members": [
+        "recent5_negative",
+        "opposite20"
+      ]
+    }
+  ],
+  "max_condition_count": 2,
+  "tolerance_pct": 1e-10,
+  "clock": "Entry close e; exactly age returns earned at checkpoint close m=e+age. Exit signal m fills at m+1 close, still earning m+1. Remaining BASE label is sum of original returns m+2 through original exit inclusive.",
+  "known_fields": [
+    "known_cumulative_simple_pnl_pct",
+    "known_running_peak_pct",
+    "known_drawdown_from_peak_pp",
+    "known_giveback_fraction",
+    "known_recent5_signed_return_pct",
+    "entry_signal_daily_vol20_pct",
+    "current_daily_vol20_pct",
+    "current_vol_ratio_20_63",
+    "current_direction_return20_pct",
+    "current_direction_return63_pct"
+  ],
+  "known_running_peak": "max(0, cumulative simple PnL from first earned return through checkpoint); includes the zero initial value.",
+  "known_giveback": "(running_peak - known_PnL)/running_peak only when running_peak > tolerance.",
+  "entry_volatility": "20-quote sample daily-return standard deviation as known at original entry SIGNAL, annualized source divided by sqrt(252), percent units.",
+  "current_vol_ratio": "Current 20-quote annualized simple-return standard deviation divided by current 63-quote value.",
+  "directional_returns": "Original episode position multiplied by current price change over 20 or 63 quotes, in percent.",
+  "condition_definitions": {
+    "pnl_negative": "known cumulative simple PnL < -tolerance_pct",
+    "pnl_positive": "known cumulative simple PnL > tolerance_pct",
+    "giveback_half": "known peak > tolerance_pct AND known PnL <= 0.5 * known peak + tolerance_pct",
+    "recent5_negative": "sum of already-earned original signed returns over last 5 quotes < -tolerance_pct",
+    "opposite20": "original direction * current 20-quote spot return < -tolerance_pct"
+  },
+  "actionable": "Original episode remains active at checkpoint close, BASE target[checkpoint] still equals its direction, and next-close fill exists. Natural exit/reversal signals take priority.",
+  "residual_cohort": "Only complete original eligible-closed episodes whose entry and true exit both lie within each block, with an actionable checkpoint and at least one return after the hypothetical exit fill. Open/crossing/non-actionable records are preserved and counted separately.",
+  "sampling": "One observation per original episode per exact age. Different ages and overlapping conditions are correlated views, never pooled as independent trades. D overlaps D1/D2.",
+  "discovery_reporting": "Only D1/D2/D used initially. Two fixed support levels: each D1/D2 has >=10 or >=20 complete episodes and both residual sums negative. Removing worst 1/3 residuals is diagnostic only, never a pass gate.",
+  "later_blocks": "V/C stored for subsequent declared research; not used to nominate or rank initial patterns.",
+  "not_a_backtest": "No filtered path, optimized threshold, p-value, OOS evaluation, fitted exit or research-success claim is produced.",
+  "oos_computed": false,
+  "source_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "build_holding_observations.py": "2a3e5140e35fbda6203a2b5cec9baaf0e2c79ed71a22418f496783b5e42a569d"
+  },
+  "input_sha256": {
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de"
+  },
+  "synthetic_selfcheck": {
+    "status": "passed",
+    "checks": [
+      "hand_calculated_known_peak_fill_residual",
+      "future_mutation_known_feature_invariance",
+      "technical_exit_priority",
+      "open_terminal_checkpoint_has_no_outcome"
+    ]
+  }
+}

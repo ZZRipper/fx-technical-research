@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-23T05:12:09.252658+00:00",
+  "oos_evaluated": false,
+  "protocol_sha256": "f177e690c0efa07b8efc3f331706251b6383a662fd57683ff76c6f37f3c37839",
+  "compute_cutoff": "2023-05-29",
+  "finished_utc": "2026-10-23T05:13:36.754458+00:00",
+  "is_screen_completed": true,
+  "source_integrity_pass": true,
+  "accounts_covered": 180,
+  "candidates_evaluated": 1734,
+  "all_passing_versions": 9,
+  "frozen_candidates": 6,
+  "freeze_sha256": "60121ca59443ceb6ec9ccf2f9312dfa44df0f5bd60b99a683ec5a79a6b45a671",
+  "holdout_returns_computed": false
+}

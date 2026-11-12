@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "opened_utc": "2026-10-23T06:58:18.480106+00:00",
+  "freeze_sha256": "9d08c5f75be3e7287332273b2fb65454293a1633bff764e1d4f01aca88672802",
+  "protocol_sha256": "d8ae5377405da2f84bd47c671d00855e1f797ad2122cc45509f03cb117369428",
+  "oos_evaluated": true,
+  "freeze_created_before_oos": true,
+  "candidate_count": 1,
+  "retuning_permitted": false,
+  "finished_utc": "2026-10-23T06:58:26.553150+00:00",
+  "source_integrity_pass": true,
+  "is_prefix_positions_and_returns_match": true,
+  "is_screen_completed": true,
+  "curve_passing_candidates": 0,
+  "quality_confirmed_candidates": 0,
+  "both_curve_and_quality_candidates": 0,
+  "output_sha256": {
+    "candidate_assessment.csv": "377121d503976a00b55e051e81744b0f6477fbdb0345bd207ab89a3769d553ca",
+    "frozen_full_episode_decisions.csv.gz": "f56e015f202875661e174b7f98ce088cea67217c5ca578547c8b22d7b2dbdf43",
+    "frozen_full_trade_ledger.csv.gz": "87f71a565cc26a109fc2b231231eca80be08aea727224440d8b0a7bd14af9e79",
+    "oos_anniversary_metrics.csv": "69ed5891ac67b22908721e132b82f4a9eec53923609c8c04fad383a2789b4140",
+    "oos_daily.csv.gz": "1e3541d86b98f1620c8f805ba2c8014acd380e304a5dfa30fab2770821263aa8",
+    "oos_fresh_start_metrics.csv": "e6a1c44b8cd3ee66ca6efe09f7dd85a740945853e8c3060e6dda204bba76ffb7",
+    "oos_metrics.csv": "3590b5301e6c0344b0b750b37318caf84e9d445fd0c4517a90699efdd0271c47"
+  }
+}

@@ -1,0 +1,1534 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-23T05:47:29.623566+00:00",
+  "finished_utc": "2026-10-23T05:47:41.886738+00:00",
+  "audit_script_sha256": "9c24f76e55617b690bd8f39b6e0050fc4a1cbf2e393a9dee4559aa8112795f0f",
+  "scope": "Completed v2 IS-only campaign. No OOS result opened, no strategy recomputation or selection mutation.",
+  "method": "Independent D/V phase gates and state-based effect counts; original SCREEN reapplication; direct daily/episode date slicing for simple sums, drawdowns, cohort quality and top-three contribution removal.",
+  "checks_passed": 310,
+  "checks_total": 310,
+  "verified_file_count": 35,
+  "verified_files_sha256": {
+    "reproduced/state_filter_v2/protocol.json": "1211276d44902490a873f85a207841cee03f744af6d2cbc1d35101a07341f448",
+    "reproduced/state_filter_v2/validation_locked.json": "7e7275701d208811fed11f4149284c229a8a188d30b399b5ddfed94cde76b839",
+    "reproduced/state_filter_v2/fit_status.json": "69ad8ce55140adb2ac305ab6b8d95570d0b843afb0779a642361cde6d356c8d5",
+    "reproduced/state_filter_v2/preconfirmation_integrity_audit.json": "ced85fa5c9df7c49b29032035fdd595fa82341db92a1076b1b1e4492a6b020b4",
+    "reproduced/state_filter_v2/frozen_selection.json": "069fd143beec224809a8454d477ff9dcafb5c8fe1a1c1c89a748529858b63f6c",
+    "reproduced/state_filter_v2/development_status.json": "43813075e6a7898e3f02006fd94df1d9d0661d212b8dad0b05928adb91b95ca0",
+    "reproduced/state_filter_v2/discovery_proposals.json": "856e486434ef010bed09444cac16ba33d706cff08f3f1de37da750217d1557b6",
+    "reproduced/state_filter_v2/confirmation_effect_evidence.json": "70792892ecd8e1c1d59b553c66dcc2a4789640b15bb9735a41960c17c58db365",
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "run_state_filter_research.py": "8851bcd8ec23bb5bbefb0658106cad6c336337508a8ab3ebf153bbdd2319c92c",
+    "src/fx_is_states.py": "b14cacc51e83587dbd15514e05ff608ecb1ead4e8a875f6eab2acaf41a6d8f5b",
+    "src/fx_state_filters.py": "47f6c3f4b5696bb2f1039cf31b67244da5c81929e6ecbc6aa91d08e78904e619",
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv": "3e977f3e69662b1aba5e0e9d1d1cb8af4ecabccf24dd3fa2e315c9aa5ea91b2a",
+    "reproduced/state_filter_v2/fit_selection.csv": "b95622f124578882080326ad9bfde36fbf2db4ccb9040464e063e4b8cb659776",
+    "reproduced/state_filter_v2/fit_metrics.csv": "a1235f0e059a620042e574611eafe88d8efcb968b25fd4e2896cdfa48006919e",
+    "reproduced/state_filter_v2/fit_locked_daily.csv.gz": "248d65b6f3dcce55bef1c701fbaf86db7e90e0ca2593bca93faa6501141c1fcc",
+    "reproduced/state_filter_v2/confirmation_full_metrics.csv": "bf7667c80807496bb4c7085b13cc7250d7878a3fb3b1d95acc2d2fe4989e85b7",
+    "reproduced/state_filter_v2/confirmation_recent_metrics.csv": "80c058c9adfab972eb6d428f9fd90315cac8dfdc11d9ddd38f7c1eaa41880831",
+    "reproduced/state_filter_v2/confirmation_selection.csv": "0034f655b71c2bd3e58fa7b300d748f8d569ed79aac808443996b8dc384630d3",
+    "reproduced/state_filter_v2/is_frozen_daily.csv.gz": "70d1b93f983f1a89b64b97992b9ead0b175bc73fb649f5b0bf43df699ea197bc",
+    "reproduced/state_filter_v2/is_frozen_metrics.csv": "e54a3df4c388fabcdb7161886af42910c48895b3a588737cf1640120066f7295",
+    "reproduced/state_filter_v2/locked_is_daily.csv.gz": "3ef2d0da0fb18556d6707f7b98c0af329922fde4e4e066996726abc376f8885b",
+    "reproduced/state_filter_v2/locked_is_decisions.csv.gz": "2d79a7995c6f295081c2d2f3694fc9fed07db631e52c3cde4b49e730290796ee",
+    "reproduced/state_filter_v2/locked_is_trade_ledger.csv.gz": "2b0249659cc977483ac88cd49867800c19fad0fa4d5032dfe8fc8964b70609f8",
+    "reproduced/filter_is_diagnostics_v2/entry_state_validation.json": "2637b364492c0f6b9ba80823cd3f4fcfbef2f5ddca05584a19ab010c4c208e18",
+    "reproduced/filter_is_diagnostics_v2/technical_validation_amendment.json": "9b53b05bad9b78eafc75775ab7ea877aedb5ed7bcd253edbd1992d04261a7056",
+    "reproduced/filter_is_diagnostics_v2/is_entry_cohort_coverage.csv": "3115e6fa52bfc599a1f0ffd3ebdd1208f05a9e265cc652e172d01f80651aaa8a",
+    "reproduced/filter_is_diagnostics_v2/is_entry_state_ledger.csv.gz": "46718a115c30684bc4cbba1180120b1eb695a2d7c3fe2648ca259cc111f9f078"
+  },
+  "details": {
+    "accounts_considered": 180,
+    "discovery_proposals": 1201,
+    "locked_candidates": 4,
+    "frozen_candidates": 0,
+    "recomputed_metric_windows": 72,
+    "independently_recomputed_episode_effect_windows": 12,
+    "independent_episode_effects": {
+      "NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0": {
+        "IS": {
+          "delta_pp": 24.021030261137042,
+          "changed_closed_n": 63,
+          "changed_episode_n": 63,
+          "delta_without_best3_pp": 10.319696738227899
+        },
+        "CONFIRMATION": {
+          "delta_pp": -5.5544833989122795,
+          "changed_closed_n": 13,
+          "changed_episode_n": 13,
+          "delta_without_best3_pp": -11.230617691260525
+        },
+        "RECENT": {
+          "delta_pp": 8.83737771114429,
+          "changed_closed_n": 34,
+          "changed_episode_n": 34,
+          "delta_without_best3_pp": -0.5523792241284511
+        }
+      },
+      "JPY|BB_MR_20|STATE_efficiency_63_1": {
+        "IS": {
+          "delta_pp": 32.74747176432007,
+          "changed_closed_n": 50,
+          "changed_episode_n": 50,
+          "delta_without_best3_pp": 2.030385470876105
+        },
+        "CONFIRMATION": {
+          "delta_pp": 8.289493716145593,
+          "changed_closed_n": 10,
+          "changed_episode_n": 10,
+          "delta_without_best3_pp": -8.041904460760925
+        },
+        "RECENT": {
+          "delta_pp": 16.549889854075843,
+          "changed_closed_n": 21,
+          "changed_episode_n": 21,
+          "delta_without_best3_pp": -8.772647654244572
+        }
+      },
+      "NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0": {
+        "IS": {
+          "delta_pp": 59.92528962694276,
+          "changed_closed_n": 92,
+          "changed_episode_n": 92,
+          "delta_without_best3_pp": 42.00040962027519
+        },
+        "CONFIRMATION": {
+          "delta_pp": -11.551257097450875,
+          "changed_closed_n": 21,
+          "changed_episode_n": 21,
+          "delta_without_best3_pp": -18.722242773987542
+        },
+        "RECENT": {
+          "delta_pp": 3.8364694076896004,
+          "changed_closed_n": 49,
+          "changed_episode_n": 49,
+          "delta_without_best3_pp": -5.921435732420601
+        }
+      },
+      "NOK|MA_10_30|STATE_vol_ratio_20_63_2": {
+        "IS": {
+          "delta_pp": 51.489874934640035,
+          "changed_closed_n": 87,
+          "changed_episode_n": 88,
+          "delta_without_best3_pp": 33.690095985830325
+        },
+        "CONFIRMATION": {
+          "delta_pp": -1.740881156033446,
+          "changed_closed_n": 19,
+          "changed_episode_n": 20,
+          "delta_without_best3_pp": -12.72093615314824
+        },
+        "RECENT": {
+          "delta_pp": 7.889088386391696,
+          "changed_closed_n": 39,
+          "changed_episode_n": 40,
+          "delta_without_best3_pp": -5.648382843814004
+        }
+      }
+    },
+    "confirmation_rejections": [
+      {
+        "candidate_id": "NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0",
+        "original_is_failed": "block_improvement_pass",
+        "confirmation_failed": "return_improvement|return_drawdown|quality|drawdown|sample",
+        "robustness_failed": "recent_top3_robust"
+      },
+      {
+        "candidate_id": "JPY|BB_MR_20|STATE_efficiency_63_1",
+        "original_is_failed": "",
+        "confirmation_failed": "outcome_sample",
+        "robustness_failed": "recent_top3_robust"
+      },
+      {
+        "candidate_id": "NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0",
+        "original_is_failed": "block_improvement_pass",
+        "confirmation_failed": "return_improvement|return_drawdown|quality|drawdown|sample",
+        "robustness_failed": "recent_top3_robust"
+      },
+      {
+        "candidate_id": "NOK|MA_10_30|STATE_vol_ratio_20_63_2",
+        "original_is_failed": "block_improvement_pass",
+        "confirmation_failed": "return_improvement|quality|sample",
+        "robustness_failed": "recent_top3_robust"
+      }
+    ]
+  },
+  "tests": {
+    "executed": true,
+    "command": "python -B -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests_run": 76,
+    "elapsed_seconds": 6.122,
+    "test_source_sha256": {
+      "tests/test_fx_filter_candidates.py": "6f99c024b1ddd8de619e2409d1643cf305e63f598c9c15cfa66278cd4621869f",
+      "tests/test_fx_filter_research.py": "44f84a791454d202e6ab4018c31852da0682ce021679b1bf5f09cb53d88a3631",
+      "tests/test_fx_is_states.py": "2972bc7efcfb5f7de299edc499730c2442e1f8dbd069e8fd989935a4bad87155",
+      "tests/test_fx_observation.py": "427ecd0b1ec334aa94cda77eae0175018f2b27d128cbaf49cdb584432cd41156",
+      "tests/test_fx_observation_features.py": "141a6dd4a03a5d0e8a5c2a1f4380d240496e128e52081f07c2c43dadcccaa8fd",
+      "tests/test_fx_state_filters.py": "0691fba82746b94cec51f209566389bfb28aaa316d9118d014e2d66f0130040e",
+      "tests/test_fx_state_research.py": "daad00da9ae4e07a54814f411e4e45ca01b27cba3f235da47d353e9a5c43bfac"
+    },
+    "output": "test_adverse_exit_uses_entry_volatility_and_signed_simple_path (test_fx_filter_candidates.FilterCandidateTests.test_adverse_exit_uses_entry_volatility_and_signed_simple_path) ... ok\ntest_baseline_is_exact_and_registry_is_not_mutable (test_fx_filter_candidates.FilterCandidateTests.test_baseline_is_exact_and_registry_is_not_mutable) ... ok\ntest_entry_reads_signal_date_and_rejection_locks_whole_episode (test_fx_filter_candidates.FilterCandidateTests.test_entry_reads_signal_date_and_rejection_locks_whole_episode) ... ok\ntest_family_inapplicable_and_input_objects_remain_unchanged (test_fx_filter_candidates.FilterCandidateTests.test_family_inapplicable_and_input_objects_remain_unchanged) ... ok\ntest_last_day_risk_signal_is_pending_without_fabricated_close (test_fx_filter_candidates.FilterCandidateTests.test_last_day_risk_signal_is_pending_without_fabricated_close) ... ok\ntest_last_known_base_signal_has_prefix_consistent_filtered_target (test_fx_filter_candidates.FilterCandidateTests.test_last_known_base_signal_has_prefix_consistent_filtered_target) ... ok\ntest_macro_unknown_is_retained_and_future_macro_cannot_change_entry (test_fx_filter_candidates.FilterCandidateTests.test_macro_unknown_is_retained_and_future_macro_cannot_change_entry) ... ok\ntest_pending_time_exit_cannot_suppress_known_terminal_base_reversal (test_fx_filter_candidates.FilterCandidateTests.test_pending_time_exit_cannot_suppress_known_terminal_base_reversal) ... ok\ntest_rejects_changed_registry_parameter_or_misaligned_features (test_fx_filter_candidates.FilterCandidateTests.test_rejects_changed_registry_parameter_or_misaligned_features) ... ok\ntest_time_exit_earns_next_close_return_and_does_not_reenter (test_fx_filter_candidates.FilterCandidateTests.test_time_exit_earns_next_close_return_and_does_not_reenter) ... ok\ntest_trailing_exit_requires_prior_activation (test_fx_filter_candidates.FilterCandidateTests.test_trailing_exit_requires_prior_activation) ... ok\ntest_blocks_require_two_positive_two_improved_and_last_both (test_fx_filter_research.InSampleSelectionTests.test_blocks_require_two_positive_two_improved_and_last_both) ... ok\ntest_each_hard_gate_is_necessary (test_fx_filter_research.InSampleSelectionTests.test_each_hard_gate_is_necessary) ... ok\ntest_freezes_one_new_candidate_per_account_with_deterministic_ties (test_fx_filter_research.InSampleSelectionTests.test_freezes_one_new_candidate_per_account_with_deterministic_ties) ... ok\ntest_inclusive_hard_thresholds_pass_without_requiring_quality_in_each_block (test_fx_filter_research.InSampleSelectionTests.test_inclusive_hard_thresholds_pass_without_requiring_quality_in_each_block) ... ok\ntest_nan_or_infinite_payoff_cannot_pass (test_fx_filter_research.InSampleSelectionTests.test_nan_or_infinite_payoff_cannot_pass) ... ok\ntest_oos_rows_are_rejected_before_selection (test_fx_filter_research.InSampleSelectionTests.test_oos_rows_are_rejected_before_selection) ... ok\ntest_return_and_drawdown_limits_do_not_replace_ratio_improvement (test_fx_filter_research.InSampleSelectionTests.test_return_and_drawdown_limits_do_not_replace_ratio_improvement) ... ok\ntest_zero_cost_research_does_not_use_cost_sensitivity_as_a_gate (test_fx_filter_research.InSampleSelectionTests.test_zero_cost_research_does_not_use_cost_sensitivity_as_a_gate) ... ok\ntest_continuous_split_preserves_carry_in_without_synthetic_entry_cost (test_fx_filter_research.WindowAccountingTests.test_continuous_split_preserves_carry_in_without_synthetic_entry_cost) ... ok\ntest_cross_boundary_trade_is_censored_for_quality_not_liquidated (test_fx_filter_research.WindowAccountingTests.test_cross_boundary_trade_is_censored_for_quality_not_liquidated) ... ok\ntest_first_oos_close_entry_is_allowed_but_earns_only_next_quote (test_fx_filter_research.WindowAccountingTests.test_first_oos_close_entry_is_allowed_but_earns_only_next_quote) ... ok\ntest_fresh_start_does_not_restart_a_base_episode_already_underway (test_fx_filter_research.WindowAccountingTests.test_fresh_start_does_not_restart_a_base_episode_already_underway) ... ok\ntest_quality_counts_flat_trades_in_win_rate_denominator (test_fx_filter_research.WindowAccountingTests.test_quality_counts_flat_trades_in_win_rate_denominator) ... ok\ntest_reversal_cost_has_two_units_and_open_trade_has_no_exit_charge (test_fx_filter_research.WindowAccountingTests.test_reversal_cost_has_two_units_and_open_trade_has_no_exit_charge) ... ok\ntest_schedule_delay_is_one_quote_shift_without_return_recomputation (test_fx_filter_research.WindowAccountingTests.test_schedule_delay_is_one_quote_shift_without_return_recomputation) ... ok\ntest_simple_accounting_is_additive_and_optional_cost_is_fixed_notional (test_fx_filter_research.WindowAccountingTests.test_simple_accounting_is_additive_and_optional_cost_is_fixed_notional) ... ok\ntest_commodity_mapping_and_structural_unknown (test_fx_is_states.InSampleStateTests.test_commodity_mapping_and_structural_unknown) ... ok\ntest_empty_ledger_preserves_empty_feature_schema (test_fx_is_states.InSampleStateTests.test_empty_ledger_preserves_empty_feature_schema) ... ok\ntest_exact_signal_row_direction_and_volatility_units (test_fx_is_states.InSampleStateTests.test_exact_signal_row_direction_and_volatility_units) ... ok\ntest_finite_macro_requires_its_observation_date (test_fx_is_states.InSampleStateTests.test_finite_macro_requires_its_observation_date) ... ok\ntest_fixed_registry_and_left_inclusive_bin_boundaries (test_fx_is_states.InSampleStateTests.test_fixed_registry_and_left_inclusive_bin_boundaries) ... ok\ntest_future_return_macro_and_outcome_changes_do_not_change_entry (test_fx_is_states.InSampleStateTests.test_future_return_macro_and_outcome_changes_do_not_change_entry) ... ok\ntest_inputs_are_not_mutated (test_fx_is_states.InSampleStateTests.test_inputs_are_not_mutated) ... ok\ntest_macro_observations_are_strictly_prior_and_at_most_seven_days_old (test_fx_is_states.InSampleStateTests.test_macro_observations_are_strictly_prior_and_at_most_seven_days_old) ... ok\ntest_missing_macro_provenance_outside_selected_signals_has_no_effect (test_fx_is_states.InSampleStateTests.test_missing_macro_provenance_outside_selected_signals_has_no_effect) ... ok\ntest_missing_macro_values_remain_unknown (test_fx_is_states.InSampleStateTests.test_missing_macro_values_remain_unknown) ... ok\ntest_run_must_have_exact_feature_calendar_length_and_one_dimension (test_fx_is_states.InSampleStateTests.test_run_must_have_exact_feature_calendar_length_and_one_dimension) ... ok\ntest_signal_date_mismatch_is_rejected (test_fx_is_states.InSampleStateTests.test_signal_date_mismatch_is_rejected) ... ok\ntest_signal_indices_must_be_integral_finite_and_in_range (test_fx_is_states.InSampleStateTests.test_signal_indices_must_be_integral_finite_and_in_range) ... ok\ntest_trailing_base_pnl_includes_only_returns_earned_by_signal_close (test_fx_is_states.InSampleStateTests.test_trailing_base_pnl_includes_only_returns_earned_by_signal_close) ... ok\ntest_zero_volatility_cannot_create_a_numeric_extension_state (test_fx_is_states.InSampleStateTests.test_zero_volatility_cannot_create_a_numeric_extension_state) ... ok\ntest_cross_year_daily_attribution_keeps_entry_cohorts_censored (test_fx_observation.CalendarTests.test_cross_year_daily_attribution_keeps_entry_cohorts_censored) ... ok\ntest_period_missing_its_beginning_is_incomplete (test_fx_observation.CalendarTests.test_period_missing_its_beginning_is_incomplete) ... ok\ntest_flat_path_has_no_drawdown_episode (test_fx_observation.DrawdownTests.test_flat_path_has_no_drawdown_episode) ... ok\ntest_last_plateau_peak_cross_year_recovery_and_unrecovered_tail (test_fx_observation.DrawdownTests.test_last_plateau_peak_cross_year_recovery_and_unrecovered_tail) ... ok\ntest_complete_quote_windows_include_cash_days_and_selected_cases_are_disjoint (test_fx_observation.RollingTests.test_complete_quote_windows_include_cash_days_and_selected_cases_are_disjoint) ... ok\ntest_short_sample_does_not_borrow_warmup_to_make_a_window (test_fx_observation.RollingTests.test_short_sample_does_not_borrow_warmup_to_make_a_window) ... ok\ntest_giveback_can_exceed_one_and_no_prior_gain_has_no_ratio (test_fx_observation.TradeExcursionTests.test_giveback_can_exceed_one_and_no_prior_gain_has_no_ratio) ... ok\ntest_last_close_entry_has_zero_observations_and_is_not_liquidated (test_fx_observation.TradeExcursionTests.test_last_close_entry_has_zero_observations_and_is_not_liquidated) ... ok\ntest_no_trade_account_retains_empty_typed_outcomes (test_fx_observation.TradeExcursionTests.test_no_trade_account_retains_empty_typed_outcomes) ... ok\ntest_reversal_day_belongs_to_old_trade_and_tail_stays_open (test_fx_observation.TradeExcursionTests.test_reversal_day_belongs_to_old_trade_and_tail_stays_open) ... ok\ntest_accounts_without_eligible_outcomes_remain_visible (test_fx_observation_features.EntryFeatureTests.test_accounts_without_eligible_outcomes_remain_visible) ... ok\ntest_cohorts_require_exit_and_keep_cross_period_counts (test_fx_observation_features.EntryFeatureTests.test_cohorts_require_exit_and_keep_cross_period_counts) ... ok\ntest_coverage_distinguishes_missing_from_inapplicable (test_fx_observation_features.EntryFeatureTests.test_coverage_distinguishes_missing_from_inapplicable) ... ok\ntest_flat_zero_volatility_and_insufficient_warmup (test_fx_observation_features.EntryFeatureTests.test_flat_zero_volatility_and_insufficient_warmup) ... ok\ntest_future_changes_do_not_change_entry_features (test_fx_observation_features.EntryFeatureTests.test_future_changes_do_not_change_entry_features) ... ok\ntest_inputs_are_not_mutated (test_fx_observation_features.EntryFeatureTests.test_inputs_are_not_mutated) ... ok\ntest_macro_timing_and_missing_provenance_fail (test_fx_observation_features.EntryFeatureTests.test_macro_timing_and_missing_provenance_fail) ... ok\ntest_price_formulas_and_direction (test_fx_observation_features.EntryFeatureTests.test_price_formulas_and_direction) ... ok\ntest_standardized_difference_uses_sample_pooled_variance (test_fx_observation_features.EntryFeatureTests.test_standardized_difference_uses_sample_pooled_variance) ... ok\ntest_empty_account_and_input_objects_are_preserved (test_fx_state_filters.StateFilterTests.test_empty_account_and_input_objects_are_preserved) ... ok\ntest_every_feature_bin_is_prefix_causal (test_fx_state_filters.StateFilterTests.test_every_feature_bin_is_prefix_causal) ... ok\ntest_feature_calendar_and_macro_observation_clock_are_checked (test_fx_state_filters.StateFilterTests.test_feature_calendar_and_macro_observation_clock_are_checked) ... ok\ntest_pending_final_signal_has_no_fill_and_unknown_is_retained (test_fx_state_filters.StateFilterTests.test_pending_final_signal_has_no_fill_and_unknown_is_retained) ... ok\ntest_rejected_episode_stays_locked_and_new_episode_can_enter (test_fx_state_filters.StateFilterTests.test_rejected_episode_stays_locked_and_new_episode_can_enter) ... ok\ntest_unknown_state_and_custom_thresholds_cannot_be_rejected (test_fx_state_filters.StateFilterTests.test_unknown_state_and_custom_thresholds_cannot_be_rejected) ... ok\ntest_discovery_exact_quality_retention_and_effect_thresholds (test_fx_state_research.ChronologicalGateTests.test_discovery_exact_quality_retention_and_effect_thresholds) ... ok\ntest_drawdown_deterioration_limit_does_not_replace_ratio_improvement (test_fx_state_research.ChronologicalGateTests.test_drawdown_deterioration_limit_does_not_replace_ratio_improvement) ... ok\ntest_proposals_ignore_later_outcomes_and_require_both_discovery_blocks (test_fx_state_research.ChronologicalGateTests.test_proposals_ignore_later_outcomes_and_require_both_discovery_blocks) ... ok\ntest_validation_and_confirmation_keep_quality_and_actual_effect_support (test_fx_state_research.ChronologicalGateTests.test_validation_and_confirmation_keep_quality_and_actual_effect_support) ... ok\ntest_carry_in_and_open_tail_have_window_pnl_but_not_closed_support (test_fx_state_research.EpisodeEffectTests.test_carry_in_and_open_tail_have_window_pnl_but_not_closed_support) ... ok\ntest_exit_day_return_belongs_to_old_episode_and_entry_close_earns_none (test_fx_state_research.EpisodeEffectTests.test_exit_day_return_belongs_to_old_episode_and_entry_close_earns_none) ... ok\ntest_reversal_close_is_attributed_once_to_the_departing_episode (test_fx_state_research.EpisodeEffectTests.test_reversal_close_is_attributed_once_to_the_departing_episode) ... ok\ntest_top_three_uses_original_episode_effects_and_keeps_harmful_changes (test_fx_state_research.EpisodeEffectTests.test_top_three_uses_original_episode_effects_and_keeps_harmful_changes) ... ok\ntest_unchanged_path_has_no_effect_support (test_fx_state_research.EpisodeEffectTests.test_unchanged_path_has_no_effect_support) ... ok\n\n----------------------------------------------------------------------\nRan 76 tests in 6.122s\n\nOK\n"
+  },
+  "checks": [
+    {
+      "name": "source:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source:src/fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "source:src/fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "source:src/fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "source:src/fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "source:src/fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "source:run_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source:src/fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "source:src/fx_state_filters.py",
+      "passed": true
+    },
+    {
+      "name": "input:FX_Research_Datasets/data/raw/FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "name": "input:FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "name": "input:reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "observation:reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "locked_fit_output:fit_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "locked_fit_output:fit_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "locked_fit_output:discovery_proposals.json",
+      "passed": true
+    },
+    {
+      "name": "locked_fit_output:fit_locked_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "frozen_is_output:confirmation_full_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_is_output:confirmation_recent_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_is_output:confirmation_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_is_output:fit_locked_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "frozen_is_output:fit_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_is_output:fit_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_is_output:is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "frozen_is_output:is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_is_output:locked_is_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "frozen_is_output:locked_is_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "frozen_is_output:locked_is_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "lock:protocol_hash",
+      "passed": true
+    },
+    {
+      "name": "lock:source_manifest",
+      "passed": true
+    },
+    {
+      "name": "lock:input_manifest",
+      "passed": true
+    },
+    {
+      "name": "freeze:protocol_hash",
+      "passed": true
+    },
+    {
+      "name": "freeze:source_manifest",
+      "passed": true
+    },
+    {
+      "name": "freeze:input_manifest",
+      "passed": true
+    },
+    {
+      "name": "fit_status:lock_hash",
+      "passed": true
+    },
+    {
+      "name": "preaudit:lock_hash",
+      "passed": true
+    },
+    {
+      "name": "freeze:lock_hash",
+      "passed": true
+    },
+    {
+      "name": "development:freeze_hash",
+      "passed": true
+    },
+    {
+      "name": "chronological_lock_audit_freeze",
+      "passed": true
+    },
+    {
+      "name": "protocol_precedes_lock",
+      "passed": true
+    },
+    {
+      "name": "statuses_passed",
+      "passed": true
+    },
+    {
+      "name": "preaudit_checks_passed",
+      "passed": true
+    },
+    {
+      "name": "unopened_at_stage_boundaries",
+      "passed": true
+    },
+    {
+      "name": "exact_scope",
+      "passed": true
+    },
+    {
+      "name": "zero_cost_simple_protocol",
+      "passed": true
+    },
+    {
+      "name": "original_SCREEN_unchanged",
+      "passed": true
+    },
+    {
+      "name": "chronological_cutoffs",
+      "passed": true
+    },
+    {
+      "name": "three_year_OOS_definition",
+      "passed": true
+    },
+    {
+      "name": "observation_cache:is_entry_cohort_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "observation_cache:is_entry_state_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "observation_cache:is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "observation_cache_audited",
+      "passed": true
+    },
+    {
+      "name": "discovery_considered_all_180_accounts",
+      "passed": true
+    },
+    {
+      "name": "discovery_proposal_exact_set",
+      "passed": true
+    },
+    {
+      "name": "discovery_evidence_matches_cache",
+      "passed": true
+    },
+    {
+      "name": "proposal_specs_fixed_single_known_state",
+      "passed": true
+    },
+    {
+      "name": "fit_metrics_exact_grid",
+      "passed": true
+    },
+    {
+      "name": "fit_dates_no_confirmation",
+      "passed": true
+    },
+    {
+      "name": "DV_independent_rescreen:identities",
+      "passed": true
+    },
+    {
+      "name": "DV_independent_rescreen:discovery_changed_n",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "DV_independent_rescreen:validation_changed_n",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "DV_independent_rescreen:discovery_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "DV_independent_rescreen:validation_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "DV_independent_rescreen:fit_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "DV_independent_rescreen:discovery_failed",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "DV_independent_rescreen:validation_failed",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "DV_independent_rescreen:validation_annualized_pct",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "DV_independent_rescreen:fit_delta_pp",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "DV_independent_rescreen:preconfirmation_rank",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "DV_all_candidate_sort_order",
+      "passed": true
+    },
+    {
+      "name": "DV_top1_exact_lock_and_rank",
+      "passed": true
+    },
+    {
+      "name": "lock_specs_match_discovery",
+      "passed": true
+    },
+    {
+      "name": "four_locked_accounts",
+      "passed": true
+    },
+    {
+      "name": "locked_candidates_only:full_metrics",
+      "passed": true
+    },
+    {
+      "name": "locked_candidates_only:recent_metrics",
+      "passed": true
+    },
+    {
+      "name": "locked_candidates_only:selection",
+      "passed": true
+    },
+    {
+      "name": "locked_candidates_only:daily",
+      "passed": true
+    },
+    {
+      "name": "locked_candidates_only:fit_daily",
+      "passed": true
+    },
+    {
+      "name": "locked_candidates_only:ledger",
+      "passed": true
+    },
+    {
+      "name": "locked_candidates_only:decisions",
+      "passed": true
+    },
+    {
+      "name": "locked_candidates_only:effects",
+      "passed": true
+    },
+    {
+      "name": "daily_unique:fit",
+      "passed": true
+    },
+    {
+      "name": "daily_zero_cost:fit",
+      "passed": true
+    },
+    {
+      "name": "daily_cutoff:fit",
+      "passed": true
+    },
+    {
+      "name": "daily_unique:IS",
+      "passed": true
+    },
+    {
+      "name": "daily_zero_cost:IS",
+      "passed": true
+    },
+    {
+      "name": "daily_cutoff:IS",
+      "passed": true
+    },
+    {
+      "name": "metric_zero_cost:fit",
+      "passed": true
+    },
+    {
+      "name": "metric_zero_cost:IS",
+      "passed": true
+    },
+    {
+      "name": "metric_zero_cost:recent",
+      "passed": true
+    },
+    {
+      "name": "ledger_zero_cost",
+      "passed": true
+    },
+    {
+      "name": "daily_calendar:JPY|BB_MR_20|STATE_efficiency_63_1:BASE",
+      "passed": true
+    },
+    {
+      "name": "DV_prefix:JPY|BB_MR_20|STATE_efficiency_63_1:BASE",
+      "passed": true
+    },
+    {
+      "name": "next_close_held:JPY|BB_MR_20|STATE_efficiency_63_1:BASE",
+      "passed": true
+    },
+    {
+      "name": "independent_execution_episodes:JPY|BB_MR_20|STATE_efficiency_63_1:BASE",
+      "passed": true
+    },
+    {
+      "name": "ledger_indices:JPY|BB_MR_20|STATE_efficiency_63_1:BASE",
+      "passed": true
+    },
+    {
+      "name": "ledger_simple_return_from_daily:JPY|BB_MR_20|STATE_efficiency_63_1:BASE",
+      "passed": true
+    },
+    {
+      "name": "daily_calendar:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER",
+      "passed": true
+    },
+    {
+      "name": "DV_prefix:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER",
+      "passed": true
+    },
+    {
+      "name": "next_close_held:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER",
+      "passed": true
+    },
+    {
+      "name": "independent_execution_episodes:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER",
+      "passed": true
+    },
+    {
+      "name": "ledger_indices:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER",
+      "passed": true
+    },
+    {
+      "name": "ledger_simple_return_from_daily:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER",
+      "passed": true
+    },
+    {
+      "name": "daily_calendar:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "DV_prefix:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "next_close_held:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "independent_execution_episodes:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "ledger_indices:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "ledger_simple_return_from_daily:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "daily_calendar:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "DV_prefix:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "next_close_held:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "independent_execution_episodes:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "ledger_indices:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "ledger_simple_return_from_daily:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "daily_calendar:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "DV_prefix:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "next_close_held:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "independent_execution_episodes:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "ledger_indices:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "ledger_simple_return_from_daily:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE",
+      "passed": true
+    },
+    {
+      "name": "daily_calendar:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "DV_prefix:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "next_close_held:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "independent_execution_episodes:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "ledger_indices:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "ledger_simple_return_from_daily:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER",
+      "passed": true
+    },
+    {
+      "name": "daily_calendar:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE",
+      "passed": true
+    },
+    {
+      "name": "DV_prefix:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE",
+      "passed": true
+    },
+    {
+      "name": "next_close_held:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE",
+      "passed": true
+    },
+    {
+      "name": "independent_execution_episodes:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE",
+      "passed": true
+    },
+    {
+      "name": "ledger_indices:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE",
+      "passed": true
+    },
+    {
+      "name": "ledger_simple_return_from_daily:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE",
+      "passed": true
+    },
+    {
+      "name": "daily_calendar:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER",
+      "passed": true
+    },
+    {
+      "name": "DV_prefix:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER",
+      "passed": true
+    },
+    {
+      "name": "next_close_held:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER",
+      "passed": true
+    },
+    {
+      "name": "independent_execution_episodes:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER",
+      "passed": true
+    },
+    {
+      "name": "ledger_indices:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER",
+      "passed": true
+    },
+    {
+      "name": "ledger_simple_return_from_daily:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER",
+      "passed": true
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE:IS",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE:IS_EARLY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE:IS_MIDDLE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE:IS_LATE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:IS",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:IS_EARLY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:IS_MIDDLE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:IS_LATE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:BASE:IS",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:BASE:IS_EARLY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:BASE:IS_MIDDLE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:BASE:IS_LATE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER:IS",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER:IS_EARLY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER:IS_MIDDLE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER:IS_LATE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE:IS",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE:IS_EARLY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE:IS_MIDDLE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE:IS_LATE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:IS",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:IS_EARLY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:IS_MIDDLE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:IS_LATE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE:IS",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE:IS_EARLY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE:IS_MIDDLE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE:IS_LATE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER:IS",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER:IS_EARLY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER:IS_MIDDLE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER:IS_LATE",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE:CONFIRMATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE:RECENT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:CONFIRMATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:RECENT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:BASE:CONFIRMATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:BASE:RECENT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER:CONFIRMATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER:RECENT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE:CONFIRMATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE:RECENT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:CONFIRMATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:RECENT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE:CONFIRMATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE:RECENT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER:CONFIRMATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER:RECENT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:BASE:DISCOVERY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:BASE:VALIDATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:BASE:FIT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER:DISCOVERY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER:VALIDATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:JPY|BB_MR_20|STATE_efficiency_63_1:FILTER:FIT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE:DISCOVERY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE:VALIDATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:BASE:FIT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:DISCOVERY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:VALIDATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:FIT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE:DISCOVERY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE:VALIDATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:BASE:FIT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:DISCOVERY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:VALIDATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:FILTER:FIT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE:DISCOVERY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE:VALIDATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:BASE:FIT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER:DISCOVERY",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER:VALIDATION",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "independent_window:NOK|MA_10_30|STATE_vol_ratio_20_63_2:FILTER:FIT",
+      "passed": true,
+      "failed_fields": []
+    },
+    {
+      "name": "entry_rejection_only:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:IS",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:CONFIRMATION",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0:RECENT",
+      "passed": true
+    },
+    {
+      "name": "entry_rejection_only:JPY|BB_MR_20|STATE_efficiency_63_1",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:JPY|BB_MR_20|STATE_efficiency_63_1:IS",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:JPY|BB_MR_20|STATE_efficiency_63_1:CONFIRMATION",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:JPY|BB_MR_20|STATE_efficiency_63_1:RECENT",
+      "passed": true
+    },
+    {
+      "name": "entry_rejection_only:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:IS",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:CONFIRMATION",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0:RECENT",
+      "passed": true
+    },
+    {
+      "name": "entry_rejection_only:NOK|MA_10_30|STATE_vol_ratio_20_63_2",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:NOK|MA_10_30|STATE_vol_ratio_20_63_2:IS",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:NOK|MA_10_30|STATE_vol_ratio_20_63_2:CONFIRMATION",
+      "passed": true
+    },
+    {
+      "name": "independent_episode_effect:NOK|MA_10_30|STATE_vol_ratio_20_63_2:RECENT",
+      "passed": true
+    },
+    {
+      "name": "original_full_IS_rescreen:identities",
+      "passed": true
+    },
+    {
+      "name": "original_full_IS_rescreen:pair",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:strategy",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:filter_id",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:is_new",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:gross_return_improvement_pp",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:win_rate_improvement_pp",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:payoff_absolute_improvement",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:payoff_relative_improvement",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:retention",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:is_gross_return_pct",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:is_net_return_pct",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:is_annualized_simple_pct",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:is_win_rate",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:is_payoff_ratio",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:is_closed_n",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:is_max_drawdown_pp",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:positive_blocks",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:improved_blocks",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:positive_and_annualized_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:return_improvement_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:win_rate_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:payoff_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:drawdown_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:return_to_drawdown_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:sample_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:block_positive_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:block_improvement_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:original_is_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_full_IS_rescreen:failed_criteria",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "confirmation_gates:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0",
+      "passed": true
+    },
+    {
+      "name": "recent_robustness_gates:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0",
+      "passed": true
+    },
+    {
+      "name": "final_intersection:NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0",
+      "passed": true
+    },
+    {
+      "name": "confirmation_gates:JPY|BB_MR_20|STATE_efficiency_63_1",
+      "passed": true
+    },
+    {
+      "name": "recent_robustness_gates:JPY|BB_MR_20|STATE_efficiency_63_1",
+      "passed": true
+    },
+    {
+      "name": "final_intersection:JPY|BB_MR_20|STATE_efficiency_63_1",
+      "passed": true
+    },
+    {
+      "name": "confirmation_gates:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0",
+      "passed": true
+    },
+    {
+      "name": "recent_robustness_gates:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0",
+      "passed": true
+    },
+    {
+      "name": "final_intersection:NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0",
+      "passed": true
+    },
+    {
+      "name": "confirmation_gates:NOK|MA_10_30|STATE_vol_ratio_20_63_2",
+      "passed": true
+    },
+    {
+      "name": "recent_robustness_gates:NOK|MA_10_30|STATE_vol_ratio_20_63_2",
+      "passed": true
+    },
+    {
+      "name": "final_intersection:NOK|MA_10_30|STATE_vol_ratio_20_63_2",
+      "passed": true
+    },
+    {
+      "name": "confirmation_keeps_lock_order",
+      "passed": true
+    },
+    {
+      "name": "freeze_exact_survivors_no_fallback",
+      "passed": true
+    },
+    {
+      "name": "zero_survivors",
+      "passed": true
+    },
+    {
+      "name": "empty_frozen_outputs",
+      "passed": true
+    },
+    {
+      "name": "OOS_not_opened_no_artifacts",
+      "passed": true
+    },
+    {
+      "name": "all_repository_tests",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\protocol.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\validation_locked.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\fit_status.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\preconfirmation_integrity_audit.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\development_status.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\discovery_proposals.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\confirmation_effect_evidence.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:run_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_state_filters.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:FX_Research_Datasets\\data\\raw\\FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:FX_Research_Datasets\\data\\raw\\FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\filter_is_diagnostics_v2\\is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\fit_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\fit_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\fit_locked_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\confirmation_full_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\confirmation_recent_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\confirmation_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\locked_is_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\locked_is_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\locked_is_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\filter_is_diagnostics_v2\\entry_state_validation.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\filter_is_diagnostics_v2\\technical_validation_amendment.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\filter_is_diagnostics_v2\\is_entry_cohort_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\filter_is_diagnostics_v2\\is_entry_state_ledger.csv.gz",
+      "passed": true
+    }
+  ]
+}

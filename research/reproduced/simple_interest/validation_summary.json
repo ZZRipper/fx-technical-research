@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "pass": true,
+  "built_utc": "2026-10-22T23:55:09.811312+00:00",
+  "accounting": {
+    "method": "fixed_initial_capital_simple",
+    "initialCapitalUsd": 100000.0,
+    "dailyPnlFormula": "C0 * held_position * (price_t / price_previous - 1)",
+    "equityFormula": "C0 + sum(daily_pnl)",
+    "tradeReturnFormula": "sum(daily_strategy_return over the original trade segment)",
+    "annualization": "simple total return divided by elapsed calendar years (365.25 days)",
+    "drawdown": "primary: dollars below running peak divided by initial capital, in percentage points",
+    "costs": "gross spot-price PnL; no transaction costs, financing, carry or cash interest",
+    "precision": "float64 daily returns and equity, without decimal rounding",
+    "timing": "signals and execution unchanged; signal t, execution close t+1, first return t+2",
+    "historicalScreen": "Compound-account historical selection was not carried over or recomputed."
+  },
+  "accounts": 912,
+  "accounts_by_dataset": {
+    "main": 471,
+    "technical": 234,
+    "h10": 207
+  },
+  "daily_observations": 3041889,
+  "all_original_account_ids_and_calendars_preserved": true,
+  "all_compound_reference_paths_pass": true,
+  "compound_reference_max_abs_error_usd": 6.960472092032433e-07,
+  "compound_reference_tolerance_usd": 1.1e-06,
+  "simple_daily_increment_max_abs_error_usd": 5.1102233555866405e-11,
+  "simple_terminal_max_abs_error_usd": 0.0,
+  "simple_trade_segment_max_abs_error_usd": 1.4551915228366852e-11,
+  "simple_all_trade_pnl_max_abs_error_usd": 7.275957614183426e-11,
+  "archived_trade_ledgers_reconciled": 678,
+  "newly_reconstructed_v3_trade_ledgers": 234,
+  "original_explorer_sha256": "18620b85934a8d0e95bf44878349e627e3282f41166fbbd3d4639f3a7d5d609a",
+  "historical_screen_status": "Not applied; compound-screen results were not transferred.",
+  "failed_account_ids": [],
+  "payload_sha256": "29552b8684d764d77c9e8ca00351dd5e8188b07ef319fed88929905ded1150b2",
+  "payload_bytes": 36552383
+}

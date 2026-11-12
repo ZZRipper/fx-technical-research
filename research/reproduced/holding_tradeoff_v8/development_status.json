@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-23T14:17:00.948515+00:00",
+  "compute_cutoff": "2023-05-29",
+  "oos_evaluated": false,
+  "finished_utc": "2026-10-23T14:18:07.683092+00:00",
+  "is_screen_completed": true,
+  "source_integrity_pass": true,
+  "accounts_covered": 180,
+  "candidates_evaluated": 492,
+  "all_passing_versions": 60,
+  "frozen_candidates": 21,
+  "freeze_sha256": "8126136e79844055de2cfe243be3b4a4fbeb3c56f97070fbb84cadf13aa5cb35",
+  "holdout_returns_computed": false,
+  "all_old_IS_metrics_match": true,
+  "approved_review_selection_and_order_match": true
+}

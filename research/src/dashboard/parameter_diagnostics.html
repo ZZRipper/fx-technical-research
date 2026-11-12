@@ -1,0 +1,45 @@
+<section id="parameter-diagnostics" hidden aria-label="Parameter Diagnostics">
+ <section class="panel pd-intro">
+  <div class="section-heading"><div><div class="scope">Same strategy · different lookbacks · all nine USD pairs</div><h2>Parameter Diagnostics</h2><p>Compare signal distributions and the trading paths they produce.</p></div><span id="pd-family-badge" class="pd-badge">Bollinger Mean Reversion</span></div>
+  <div class="pd-controls">
+   <div class="field pd-family-field"><label for="pd-family">Strategy family</label><select id="pd-family"><option value="bb">Bollinger Mean Reversion</option><option value="bb_bo">Bollinger Breakout</option><option value="rsi">RSI Mean Reversion</option><option value="rsi_mom">RSI Momentum</option><option value="ma">Moving Average</option><option value="tsmom">Time-series Momentum</option><option value="donchian">Donchian Breakout</option></select></div>
+   <div class="field"><label for="pd-pair">Pair detail</label><select id="pd-pair"></select></div>
+   <div class="field"><label for="pd-from">From</label><input id="pd-from" type="date"></div>
+   <div class="field"><label for="pd-to">Through</label><input id="pd-to" type="date"></div>
+   <div class="field pd-versions"><label>Parameter sets</label><div class="chips" id="pd-versions"></div></div>
+  </div>
+  <div id="pd-presets" class="pd-presets"></div>
+  <p class="pd-note">Main history · original technical rules · fixed $100,000 exposure · zero costs / no carry. Dates apply to every view below. Historical comparison; no parameter fitting or new OOS test.</p>
+  <p id="pd-error" class="error" role="alert" hidden></p>
+ </section>
+ <div id="pd-content">
+  <section class="panel pd-section">
+   <div class="section-heading"><div><h2>All-pair Overview</h2><p id="pd-coverage"></p></div><div class="field"><label for="pd-metric">Compare metric</label><select id="pd-metric"><option value="return">Simple return (%)</option><option value="drawdown">Max drawdown (pp of initial capital)</option><option value="tails">Days outside ±2 (%)</option><option value="entries">Entries in window</option><option value="exposure">Exposure days (%)</option></select></div></div>
+   <div id="pd-overview" class="table-wrap"></div>
+   <p class="pd-note" id="pd-overview-note"></p>
+  </section>
+  <section class="panel pd-section" id="pd-detail">
+   <div class="section-heading"><div><div class="scope">Pair detail</div><h2 id="pd-detail-title"></h2></div><div class="segmented" role="group" aria-label="Diagnostic view"><button id="pd-tab-distribution" type="button" aria-pressed="true">Signal Distribution</button><button id="pd-tab-results" type="button" aria-pressed="false">Trading Results</button></div></div>
+   <div id="pd-legend" class="legend"></div>
+   <div id="pd-distribution">
+    <div class="pd-distribution-controls"><label for="pd-scope">Distribution sample</label><select id="pd-scope"><option value="pair">Selected pair</option><option value="pooled">All nine pairs pooled</option></select><span id="pd-range-control" hidden><label for="pd-range">Chart range</label> <select id="pd-range"><option value="focus">Focus: −3 to +3</option><option value="full">Full observed range</option></select></span></div>
+    <div class="pd-two-col"><div><h3 id="pd-density-title">Z-score distribution</h3><div id="pd-density" class="pd-svg"></div><p class="pd-note" id="pd-density-note"></p></div><div><h3>Percentiles</h3><div id="pd-percentiles" class="table-wrap"></div><p class="pd-note">P10: 10% of observed indicator values are at or below this value. Distributions describe signal frequency, not profitability.</p></div></div>
+    <h3>Threshold frequency &amp; actual entries</h3><div id="pd-frequency" class="table-wrap"></div>
+    <p class="pd-note" id="pd-frequency-note"></p>
+   </div>
+   <div id="pd-results" hidden>
+    <p id="pd-result-caption" class="pd-note"></p>
+    <div id="pd-pnl-wrap" class="pd-pnl-wrap"><div id="pd-pnl"></div><div id="pd-tooltip" class="tooltip" hidden></div></div>
+    <h3>Trading comparison</h3><div id="pd-trading-metrics" class="table-wrap"></div>
+    <p class="pd-note">PnL includes carry-in positions. Trade statistics use entries within this window that close by its end and earn at least one daily return. Open trades and carry-ins are listed separately. Holding days count FX trading-day intervals, not calendar days.</p>
+    <details><summary>Annual return comparison</summary><p class="pd-note">Simple returns add across years. First / last years may be partial.</p><div id="pd-annual" class="table-wrap"></div></details>
+   </div>
+   <details class="pd-method"><summary>Rule definitions &amp; comparison method</summary>
+    <div id="pd-rule-method"></div>
+    <p><b>Timing:</b> signal at day t close → execution at the next available close → first earned daily return ends one further trading day later. Indicators are warmed on earlier prices; all versions use exactly the same displayed dates. Changing dates slices existing continuous accounts, without restarting positions.</p>
+    <p><b>Pooled distribution:</b> each valid pair-day has equal weight. On the shared calendar each pair has equal weight. Currency observations are dependent; a larger pooled count is not a count of independent observations. Entry counts are summed across separate accounts.</p>
+    <p><b>Drawdown:</b> decline from the running peak of window-reset equity, shown as percentage points of the initial $100,000; peak-equity drawdown is also reported in the trading table. Exposure counts days earning a return with a nonzero held position, including zero-price-change days.</p>
+   </details>
+  </section>
+ </div>
+</section>

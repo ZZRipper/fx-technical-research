@@ -1,0 +1,2818 @@
+{
+  "created_utc": "2026-10-23T06:56:11.307176+00:00",
+  "candidates": [
+    {
+      "candidate_id": "AUD|BB_BO_10|REJECT_SHORT",
+      "pair": "AUD",
+      "strategy": "BB_BO_10",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 26.0,
+          "return_sum_pct": -34.05591865126535,
+          "return_without_worst_trade_pct": -21.099528580463016
+        },
+        "D2": {
+          "closed_n": 30.0,
+          "return_sum_pct": -6.299958121359551,
+          "return_without_worst_trade_pct": -2.0048089968492286
+        },
+        "D": {
+          "closed_n": 56.0,
+          "return_sum_pct": -40.355876772624896,
+          "return_without_worst_trade_pct": -27.39948670182256
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|BB_BO_20|REJECT_LONG",
+      "pair": "AUD",
+      "strategy": "BB_BO_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 26.0,
+          "return_sum_pct": -2.9737526889351944,
+          "return_without_worst_trade_pct": 2.605769916017996
+        },
+        "D2": {
+          "closed_n": 21.0,
+          "return_sum_pct": -3.257196379259964,
+          "return_without_worst_trade_pct": -0.6620428048317977
+        },
+        "D": {
+          "closed_n": 47.0,
+          "return_sum_pct": -6.230949068195155,
+          "return_without_worst_trade_pct": -0.6514264632419646
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|BB_MR_20|REJECT_LONG",
+      "pair": "AUD",
+      "strategy": "BB_MR_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 18.0,
+          "return_sum_pct": -2.7522766661250424,
+          "return_without_worst_trade_pct": 9.962900606226764
+        },
+        "D2": {
+          "closed_n": 22.0,
+          "return_sum_pct": -6.3194432136850605,
+          "return_without_worst_trade_pct": 1.7830946244264414
+        },
+        "D": {
+          "closed_n": 41.0,
+          "return_sum_pct": -8.185647069998655,
+          "return_without_worst_trade_pct": 4.529530202353152
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|MACD_12_26_9|REJECT_SHORT",
+      "pair": "AUD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 53.0,
+          "return_sum_pct": -29.392652532481538,
+          "return_without_worst_trade_pct": -16.4362624616792
+        },
+        "D2": {
+          "closed_n": 47.0,
+          "return_sum_pct": -1.5173036312028696,
+          "return_without_worst_trade_pct": 3.3070707106007475
+        },
+        "D": {
+          "closed_n": 101.0,
+          "return_sum_pct": -29.169267072641915,
+          "return_without_worst_trade_pct": -16.21287700183958
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|MACD_12_26_9|REJECT_LONG",
+      "pair": "AUD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 54.0,
+          "return_sum_pct": -6.40149837264231,
+          "return_without_worst_trade_pct": 4.543374890882658
+        },
+        "D2": {
+          "closed_n": 47.0,
+          "return_sum_pct": -8.029388244428404,
+          "return_without_worst_trade_pct": -4.321196513944514
+        },
+        "D": {
+          "closed_n": 101.0,
+          "return_sum_pct": -14.430886617070716,
+          "return_without_worst_trade_pct": -3.486013353545747
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|MA_20_60|REJECT_SHORT",
+      "pair": "AUD",
+      "strategy": "MA_20_60",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 12.0,
+          "return_sum_pct": -10.228922787653765,
+          "return_without_worst_trade_pct": 0.815814579123936
+        },
+        "D2": {
+          "closed_n": 13.0,
+          "return_sum_pct": -8.18681129609742,
+          "return_without_worst_trade_pct": -2.411286971926166
+        },
+        "D": {
+          "closed_n": 26.0,
+          "return_sum_pct": -21.657365870494544,
+          "return_without_worst_trade_pct": -10.612628503716843
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|RSI_MOM_14|REJECT_LONG",
+      "pair": "AUD",
+      "strategy": "RSI_MOM_14",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 74.0,
+          "return_sum_pct": -1.9290688864639938,
+          "return_without_worst_trade_pct": 2.962433329145018
+        },
+        "D2": {
+          "closed_n": 60.0,
+          "return_sum_pct": -2.0632805048191636,
+          "return_without_worst_trade_pct": 1.4343364507417258
+        },
+        "D": {
+          "closed_n": 134.0,
+          "return_sum_pct": -3.9923493912831565,
+          "return_without_worst_trade_pct": 0.8991528243258551
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|RSI_MR_7|REJECT_SHORT",
+      "pair": "AUD",
+      "strategy": "RSI_MR_7",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 36.0,
+          "return_sum_pct": -8.876912017671113,
+          "return_without_worst_trade_pct": -3.0996828200862705
+        },
+        "D2": {
+          "closed_n": 32.0,
+          "return_sum_pct": -2.4278296987185772,
+          "return_without_worst_trade_pct": 4.887443645106503
+        },
+        "D": {
+          "closed_n": 68.0,
+          "return_sum_pct": -11.304741716389689,
+          "return_without_worst_trade_pct": -3.989468372564609
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|TSMOM_63|REJECT_SHORT",
+      "pair": "AUD",
+      "strategy": "TSMOM_63",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 47.0,
+          "return_sum_pct": -15.01824447836091,
+          "return_without_worst_trade_pct": -7.95022822366942
+        },
+        "D2": {
+          "closed_n": 47.0,
+          "return_sum_pct": -4.693280776839838,
+          "return_without_worst_trade_pct": -0.2717587299112001
+        },
+        "D": {
+          "closed_n": 94.0,
+          "return_sum_pct": -19.711525255200748,
+          "return_without_worst_trade_pct": -12.643509000509258
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|VOTE_EQUAL_4|REJECT_SHORT",
+      "pair": "AUD",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 33.0,
+          "return_sum_pct": -0.8274110790800284,
+          "return_without_worst_trade_pct": 2.711180243860681
+        },
+        "D2": {
+          "closed_n": 33.0,
+          "return_sum_pct": -3.3636261150466895,
+          "return_without_worst_trade_pct": 0.85851018839407
+        },
+        "D": {
+          "closed_n": 67.0,
+          "return_sum_pct": -4.6842277195545625,
+          "return_without_worst_trade_pct": -0.462091416113803
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|BB_BO_10|REJECT_SHORT",
+      "pair": "CAD",
+      "strategy": "BB_BO_10",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 22.0,
+          "return_sum_pct": -23.961909782530512,
+          "return_without_worst_trade_pct": -19.97682707763806
+        },
+        "D2": {
+          "closed_n": 32.0,
+          "return_sum_pct": -1.2123396062612266,
+          "return_without_worst_trade_pct": 0.9183468516353535
+        },
+        "D": {
+          "closed_n": 54.0,
+          "return_sum_pct": -25.17424938879174,
+          "return_without_worst_trade_pct": -21.189166683899288
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|BB_BO_10|REJECT_LONG",
+      "pair": "CAD",
+      "strategy": "BB_BO_10",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 25.0,
+          "return_sum_pct": -0.7944802418981332,
+          "return_without_worst_trade_pct": 2.0798206248402775
+        },
+        "D2": {
+          "closed_n": 23.0,
+          "return_sum_pct": -10.011169983306011,
+          "return_without_worst_trade_pct": -7.8519581200893525
+        },
+        "D": {
+          "closed_n": 48.0,
+          "return_sum_pct": -10.805650225204147,
+          "return_without_worst_trade_pct": -7.931349358465736
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|BB_BO_20|REJECT_SHORT",
+      "pair": "CAD",
+      "strategy": "BB_BO_20",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 17.0,
+          "return_sum_pct": -9.563809024307389,
+          "return_without_worst_trade_pct": -7.744650444837596
+        },
+        "D2": {
+          "closed_n": 24.0,
+          "return_sum_pct": -9.103297449637514,
+          "return_without_worst_trade_pct": -6.701674206890484
+        },
+        "D": {
+          "closed_n": 41.0,
+          "return_sum_pct": -18.667106473944905,
+          "return_without_worst_trade_pct": -16.265483231197873
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|BB_BO_20|REJECT_LONG",
+      "pair": "CAD",
+      "strategy": "BB_BO_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 25.0,
+          "return_sum_pct": -2.951180579756584,
+          "return_without_worst_trade_pct": -0.31834093213089965
+        },
+        "D2": {
+          "closed_n": 18.0,
+          "return_sum_pct": -8.284808631092778,
+          "return_without_worst_trade_pct": -6.281456658598728
+        },
+        "D": {
+          "closed_n": 43.0,
+          "return_sum_pct": -11.235989210849363,
+          "return_without_worst_trade_pct": -8.603149563223678
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|DONCHIAN_BO_10|REJECT_SHORT",
+      "pair": "CAD",
+      "strategy": "DONCHIAN_BO_10",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 57.0,
+          "return_sum_pct": -9.837203877753455,
+          "return_without_worst_trade_pct": -6.672914260490782
+        },
+        "D2": {
+          "closed_n": 63.0,
+          "return_sum_pct": -12.537300817777417,
+          "return_without_worst_trade_pct": -10.197930506306639
+        },
+        "D": {
+          "closed_n": 120.0,
+          "return_sum_pct": -22.374504695530874,
+          "return_without_worst_trade_pct": -19.210215078268202
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|DONCHIAN_BO_20|REJECT_SHORT",
+      "pair": "CAD",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 28.0,
+          "return_sum_pct": -18.52844925452012,
+          "return_without_worst_trade_pct": -14.786565952598586
+        },
+        "D2": {
+          "closed_n": 35.0,
+          "return_sum_pct": -16.085567081785122,
+          "return_without_worst_trade_pct": -13.599932620122043
+        },
+        "D": {
+          "closed_n": 63.0,
+          "return_sum_pct": -34.61401633630524,
+          "return_without_worst_trade_pct": -30.872133034383708
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|MACD_12_26_9|REJECT_SHORT",
+      "pair": "CAD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 54.0,
+          "return_sum_pct": -18.829839412584946,
+          "return_without_worst_trade_pct": -14.906767894396031
+        },
+        "D2": {
+          "closed_n": 55.0,
+          "return_sum_pct": -6.655520817653506,
+          "return_without_worst_trade_pct": -4.101519814075207
+        },
+        "D": {
+          "closed_n": 109.0,
+          "return_sum_pct": -25.48536023023845,
+          "return_without_worst_trade_pct": -21.562288712049536
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|MACD_12_26_9|REJECT_LONG",
+      "pair": "CAD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 54.0,
+          "return_sum_pct": -1.4493285724514715,
+          "return_without_worst_trade_pct": 2.6316414449878733
+        },
+        "D2": {
+          "closed_n": 54.0,
+          "return_sum_pct": -14.947887875771828,
+          "return_without_worst_trade_pct": -11.114841365416163
+        },
+        "D": {
+          "closed_n": 109.0,
+          "return_sum_pct": -16.612933671559773,
+          "return_without_worst_trade_pct": -12.531963654120428
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|MA_10_30|REJECT_SHORT",
+      "pair": "CAD",
+      "strategy": "MA_10_30",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 24.0,
+          "return_sum_pct": -5.902545934877967,
+          "return_without_worst_trade_pct": -1.0772664424415375
+        },
+        "D2": {
+          "closed_n": 28.0,
+          "return_sum_pct": -5.808998939386389,
+          "return_without_worst_trade_pct": -2.91088134809323
+        },
+        "D": {
+          "closed_n": 52.0,
+          "return_sum_pct": -11.711544874264355,
+          "return_without_worst_trade_pct": -6.886265381827926
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|RSI_MOM_20|REJECT_SHORT",
+      "pair": "CAD",
+      "strategy": "RSI_MOM_20",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 38.0,
+          "return_sum_pct": -2.067235241262289,
+          "return_without_worst_trade_pct": 3.666281735017218
+        },
+        "D2": {
+          "closed_n": 39.0,
+          "return_sum_pct": -1.664640694252828,
+          "return_without_worst_trade_pct": 0.46604576364375205
+        },
+        "D": {
+          "closed_n": 77.0,
+          "return_sum_pct": -3.7318759355151156,
+          "return_without_worst_trade_pct": 2.001641040764391
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|RSI_MOM_7|REJECT_SHORT",
+      "pair": "CAD",
+      "strategy": "RSI_MOM_7",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 95.0,
+          "return_sum_pct": -9.16393031149506,
+          "return_without_worst_trade_pct": -3.430413335215553
+        },
+        "D2": {
+          "closed_n": 96.0,
+          "return_sum_pct": -1.8159253061768923,
+          "return_without_worst_trade_pct": -0.10972916950369305
+        },
+        "D": {
+          "closed_n": 191.0,
+          "return_sum_pct": -10.979855617671952,
+          "return_without_worst_trade_pct": -5.246338641392445
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|RSI_MOM_7|REJECT_LONG",
+      "pair": "CAD",
+      "strategy": "RSI_MOM_7",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 93.0,
+          "return_sum_pct": -7.919943223473105,
+          "return_without_worst_trade_pct": -3.898788841243097
+        },
+        "D2": {
+          "closed_n": 111.0,
+          "return_sum_pct": -9.480257626247269,
+          "return_without_worst_trade_pct": -6.569500120464079
+        },
+        "D": {
+          "closed_n": 204.0,
+          "return_sum_pct": -17.400200849720374,
+          "return_without_worst_trade_pct": -13.379046467490365
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|TSMOM_21|REJECT_SHORT",
+      "pair": "CAD",
+      "strategy": "TSMOM_21",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 68.0,
+          "return_sum_pct": -11.544969905651682,
+          "return_without_worst_trade_pct": -8.217649796871786
+        },
+        "D2": {
+          "closed_n": 75.0,
+          "return_sum_pct": -8.662649165985137,
+          "return_without_worst_trade_pct": -5.558539430352605
+        },
+        "D": {
+          "closed_n": 144.0,
+          "return_sum_pct": -21.32088180981373,
+          "return_without_worst_trade_pct": -17.993561701033833
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|VOTE_EQUAL_4|REJECT_SHORT",
+      "pair": "CAD",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 36.0,
+          "return_sum_pct": -16.56931108715173,
+          "return_without_worst_trade_pct": -12.642315474917087
+        },
+        "D2": {
+          "closed_n": 44.0,
+          "return_sum_pct": -14.014866972329322,
+          "return_without_worst_trade_pct": -11.460865968751023
+        },
+        "D": {
+          "closed_n": 80.0,
+          "return_sum_pct": -30.584178059481047,
+          "return_without_worst_trade_pct": -26.657182447246406
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|VOTE_STRENGTH_4|REJECT_SHORT",
+      "pair": "CAD",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 37.0,
+          "return_sum_pct": -7.660126256335864,
+          "return_without_worst_trade_pct": -2.807516189864489
+        },
+        "D2": {
+          "closed_n": 34.0,
+          "return_sum_pct": -12.84726033047724,
+          "return_without_worst_trade_pct": -8.360950002960367
+        },
+        "D": {
+          "closed_n": 71.0,
+          "return_sum_pct": -20.50738658681311,
+          "return_without_worst_trade_pct": -15.654776520341734
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|BB_BO_20|REJECT_LONG",
+      "pair": "CHF",
+      "strategy": "BB_BO_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 27.0,
+          "return_sum_pct": -0.6342454408106986,
+          "return_without_worst_trade_pct": 2.85711330017876
+        },
+        "D2": {
+          "closed_n": 23.0,
+          "return_sum_pct": -1.891799363562142,
+          "return_without_worst_trade_pct": 1.6600585695783368
+        },
+        "D": {
+          "closed_n": 50.0,
+          "return_sum_pct": -2.526044804372841,
+          "return_without_worst_trade_pct": 1.0258131287676377
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|BB_MR_10|REJECT_SHORT",
+      "pair": "CHF",
+      "strategy": "BB_MR_10",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 32.0,
+          "return_sum_pct": -0.38700918927681993,
+          "return_without_worst_trade_pct": 5.870016931654344
+        },
+        "D2": {
+          "closed_n": 29.0,
+          "return_sum_pct": -13.081500868075324,
+          "return_without_worst_trade_pct": -4.236511802101461
+        },
+        "D": {
+          "closed_n": 61.0,
+          "return_sum_pct": -13.468510057352141,
+          "return_without_worst_trade_pct": -4.623520991378278
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|BB_MR_10|REJECT_LONG",
+      "pair": "CHF",
+      "strategy": "BB_MR_10",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 25.0,
+          "return_sum_pct": -3.5409709209996767,
+          "return_without_worst_trade_pct": 1.6884633741011892
+        },
+        "D2": {
+          "closed_n": 30.0,
+          "return_sum_pct": -5.014445139736601,
+          "return_without_worst_trade_pct": 0.6675655153854594
+        },
+        "D": {
+          "closed_n": 55.0,
+          "return_sum_pct": -8.555416060736276,
+          "return_without_worst_trade_pct": -2.873405405614215
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|BB_MR_20|REJECT_LONG",
+      "pair": "CHF",
+      "strategy": "BB_MR_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 18.0,
+          "return_sum_pct": -1.567557255274033,
+          "return_without_worst_trade_pct": 4.633217549411017
+        },
+        "D2": {
+          "closed_n": 19.0,
+          "return_sum_pct": -7.765341348709663,
+          "return_without_worst_trade_pct": -2.6687487461019668
+        },
+        "D": {
+          "closed_n": 38.0,
+          "return_sum_pct": -9.624256378527452,
+          "return_without_worst_trade_pct": -3.423481573842402
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|MA_10_30|REJECT_SHORT",
+      "pair": "CHF",
+      "strategy": "MA_10_30",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 26.0,
+          "return_sum_pct": -16.822711137607985,
+          "return_without_worst_trade_pct": -11.474667157062427
+        },
+        "D2": {
+          "closed_n": 25.0,
+          "return_sum_pct": -10.848490380498191,
+          "return_without_worst_trade_pct": -7.099783832460751
+        },
+        "D": {
+          "closed_n": 52.0,
+          "return_sum_pct": -29.00687126526791,
+          "return_without_worst_trade_pct": -23.658827284722353
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|MA_10_30|REJECT_LONG",
+      "pair": "CHF",
+      "strategy": "MA_10_30",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 27.0,
+          "return_sum_pct": -3.0656695926890234,
+          "return_without_worst_trade_pct": 2.4407082986750654
+        },
+        "D2": {
+          "closed_n": 26.0,
+          "return_sum_pct": -2.342042030616708,
+          "return_without_worst_trade_pct": 1.369235421710414
+        },
+        "D": {
+          "closed_n": 53.0,
+          "return_sum_pct": -5.407711623305733,
+          "return_without_worst_trade_pct": 0.09866626805835566
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|MA_20_60|REJECT_SHORT",
+      "pair": "CHF",
+      "strategy": "MA_20_60",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 12.0,
+          "return_sum_pct": -14.603792136424321,
+          "return_without_worst_trade_pct": -11.142211036479777
+        },
+        "D2": {
+          "closed_n": 10.0,
+          "return_sum_pct": -9.560214797699539,
+          "return_without_worst_trade_pct": -5.451292457818301
+        },
+        "D": {
+          "closed_n": 23.0,
+          "return_sum_pct": -22.018910929605482,
+          "return_without_worst_trade_pct": -17.909988589724243
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|RSI_MR_7|REJECT_LONG",
+      "pair": "CHF",
+      "strategy": "RSI_MR_7",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 24.0,
+          "return_sum_pct": -0.7580607231629677,
+          "return_without_worst_trade_pct": 4.854419620734628
+        },
+        "D2": {
+          "closed_n": 29.0,
+          "return_sum_pct": -10.945457572954709,
+          "return_without_worst_trade_pct": -4.2231499855633015
+        },
+        "D": {
+          "closed_n": 53.0,
+          "return_sum_pct": -11.703518296117679,
+          "return_without_worst_trade_pct": -4.981210708726271
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|BB_BO_10|REJECT_LONG",
+      "pair": "EUR",
+      "strategy": "BB_BO_10",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 39.0,
+          "return_sum_pct": -12.354972320594594,
+          "return_without_worst_trade_pct": -8.521776648886384
+        },
+        "D2": {
+          "closed_n": 27.0,
+          "return_sum_pct": -13.71877190058528,
+          "return_without_worst_trade_pct": -10.557448447401406
+        },
+        "D": {
+          "closed_n": 66.0,
+          "return_sum_pct": -26.073744221179876,
+          "return_without_worst_trade_pct": -22.240548549471665
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|BB_BO_20|REJECT_LONG",
+      "pair": "EUR",
+      "strategy": "BB_BO_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 26.0,
+          "return_sum_pct": -1.513970545015031,
+          "return_without_worst_trade_pct": 1.2756245726313953
+        },
+        "D2": {
+          "closed_n": 21.0,
+          "return_sum_pct": -8.578016667464706,
+          "return_without_worst_trade_pct": -5.135714970666983
+        },
+        "D": {
+          "closed_n": 47.0,
+          "return_sum_pct": -10.091987212479737,
+          "return_without_worst_trade_pct": -6.649685515682014
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|BB_MR_10|REJECT_LONG",
+      "pair": "EUR",
+      "strategy": "BB_MR_10",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 24.0,
+          "return_sum_pct": -5.290370334910131,
+          "return_without_worst_trade_pct": 2.3239146578407883
+        },
+        "D2": {
+          "closed_n": 30.0,
+          "return_sum_pct": -9.08773591839568,
+          "return_without_worst_trade_pct": -5.138614893171524
+        },
+        "D": {
+          "closed_n": 54.0,
+          "return_sum_pct": -14.378106253305809,
+          "return_without_worst_trade_pct": -6.76382126055489
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|BB_MR_20|REJECT_LONG",
+      "pair": "EUR",
+      "strategy": "BB_MR_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 17.0,
+          "return_sum_pct": -0.9168029999102156,
+          "return_without_worst_trade_pct": 2.7035210793376896
+        },
+        "D2": {
+          "closed_n": 20.0,
+          "return_sum_pct": -19.001663976581447,
+          "return_without_worst_trade_pct": -12.033627979667756
+        },
+        "D": {
+          "closed_n": 38.0,
+          "return_sum_pct": -21.345057958931687,
+          "return_without_worst_trade_pct": -14.377021962017995
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|MA_20_60|REJECT_SHORT",
+      "pair": "EUR",
+      "strategy": "MA_20_60",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 13.0,
+          "return_sum_pct": -7.292468516379936,
+          "return_without_worst_trade_pct": -4.095700224778055
+        },
+        "D2": {
+          "closed_n": 12.0,
+          "return_sum_pct": -11.736364087395033,
+          "return_without_worst_trade_pct": -6.81104718567319
+        },
+        "D": {
+          "closed_n": 26.0,
+          "return_sum_pct": -9.603556115795147,
+          "return_without_worst_trade_pct": -4.678239214073304
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|RSI_MOM_20|REJECT_LONG",
+      "pair": "EUR",
+      "strategy": "RSI_MOM_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 49.0,
+          "return_sum_pct": -0.9945193201647884,
+          "return_without_worst_trade_pct": 2.442708549936201
+        },
+        "D2": {
+          "closed_n": 35.0,
+          "return_sum_pct": -12.226700187014838,
+          "return_without_worst_trade_pct": -10.183864250067066
+        },
+        "D": {
+          "closed_n": 84.0,
+          "return_sum_pct": -13.221219507179626,
+          "return_without_worst_trade_pct": -9.783991637078636
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|RSI_MR_7|REJECT_LONG",
+      "pair": "EUR",
+      "strategy": "RSI_MR_7",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 24.0,
+          "return_sum_pct": -3.9803981887256095,
+          "return_without_worst_trade_pct": 0.8631805238798806
+        },
+        "D2": {
+          "closed_n": 29.0,
+          "return_sum_pct": -6.4234006037156455,
+          "return_without_worst_trade_pct": 1.5794111689268142
+        },
+        "D": {
+          "closed_n": 54.0,
+          "return_sum_pct": -12.109894244656415,
+          "return_without_worst_trade_pct": -4.107082472013955
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|BB_MR_10|REJECT_LONG",
+      "pair": "GBP",
+      "strategy": "BB_MR_10",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 30.0,
+          "return_sum_pct": -1.4332362018416043,
+          "return_without_worst_trade_pct": 8.064394845824163
+        },
+        "D2": {
+          "closed_n": 23.0,
+          "return_sum_pct": -6.955618914953277,
+          "return_without_worst_trade_pct": -3.058576149450765
+        },
+        "D": {
+          "closed_n": 53.0,
+          "return_sum_pct": -8.388855116794883,
+          "return_without_worst_trade_pct": 1.108775930870884
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|BB_MR_20|REJECT_SHORT",
+      "pair": "GBP",
+      "strategy": "BB_MR_20",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 19.0,
+          "return_sum_pct": -1.015912351421333,
+          "return_without_worst_trade_pct": 3.2262491752381717
+        },
+        "D2": {
+          "closed_n": 24.0,
+          "return_sum_pct": -0.4760184842897859,
+          "return_without_worst_trade_pct": 6.524702704140606
+        },
+        "D": {
+          "closed_n": 43.0,
+          "return_sum_pct": -1.491930835711118,
+          "return_without_worst_trade_pct": 5.508790352719274
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|DONCHIAN_BO_20|REJECT_SHORT",
+      "pair": "GBP",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 33.0,
+          "return_sum_pct": -6.274700052603041,
+          "return_without_worst_trade_pct": -0.6669404209995484
+        },
+        "D2": {
+          "closed_n": 35.0,
+          "return_sum_pct": -6.551501967883423,
+          "return_without_worst_trade_pct": -3.358710220342344
+        },
+        "D": {
+          "closed_n": 69.0,
+          "return_sum_pct": -12.974984371507716,
+          "return_without_worst_trade_pct": -7.367224739904223
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|MA_10_30|REJECT_LONG",
+      "pair": "GBP",
+      "strategy": "MA_10_30",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 31.0,
+          "return_sum_pct": -7.827925207796605,
+          "return_without_worst_trade_pct": -1.5042873073728327
+        },
+        "D2": {
+          "closed_n": 23.0,
+          "return_sum_pct": -0.30199175284242274,
+          "return_without_worst_trade_pct": 3.4654238651339657
+        },
+        "D": {
+          "closed_n": 54.0,
+          "return_sum_pct": -8.129916960639022,
+          "return_without_worst_trade_pct": -1.8062790602152496
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|MA_20_60|REJECT_LONG",
+      "pair": "GBP",
+      "strategy": "MA_20_60",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 16.0,
+          "return_sum_pct": -6.578590957934737,
+          "return_without_worst_trade_pct": -0.8100970637886942
+        },
+        "D2": {
+          "closed_n": 12.0,
+          "return_sum_pct": -4.797819141515815,
+          "return_without_worst_trade_pct": 0.054052657121038905
+        },
+        "D": {
+          "closed_n": 28.0,
+          "return_sum_pct": -11.37641009945055,
+          "return_without_worst_trade_pct": -5.607916205304508
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|RSI_MOM_14|REJECT_LONG",
+      "pair": "GBP",
+      "strategy": "RSI_MOM_14",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 56.0,
+          "return_sum_pct": -0.430493131851863,
+          "return_without_worst_trade_pct": 1.966027448005501
+        },
+        "D2": {
+          "closed_n": 66.0,
+          "return_sum_pct": -7.095047619062644,
+          "return_without_worst_trade_pct": -5.186516648233918
+        },
+        "D": {
+          "closed_n": 122.0,
+          "return_sum_pct": -7.525540750914509,
+          "return_without_worst_trade_pct": -5.129020171057144
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|RSI_MOM_20|REJECT_LONG",
+      "pair": "GBP",
+      "strategy": "RSI_MOM_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 37.0,
+          "return_sum_pct": -1.986138503654176,
+          "return_without_worst_trade_pct": 1.0951756310873657
+        },
+        "D2": {
+          "closed_n": 46.0,
+          "return_sum_pct": -9.029194147774177,
+          "return_without_worst_trade_pct": -7.239331592409825
+        },
+        "D": {
+          "closed_n": 83.0,
+          "return_sum_pct": -11.015332651428357,
+          "return_without_worst_trade_pct": -7.934018516686816
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|RSI_MOM_7|REJECT_LONG",
+      "pair": "GBP",
+      "strategy": "RSI_MOM_7",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 93.0,
+          "return_sum_pct": -6.974092548225643,
+          "return_without_worst_trade_pct": -2.6990770724779756
+        },
+        "D2": {
+          "closed_n": 99.0,
+          "return_sum_pct": -5.463608984233549,
+          "return_without_worst_trade_pct": -3.6737464288691966
+        },
+        "D": {
+          "closed_n": 192.0,
+          "return_sum_pct": -12.43770153245919,
+          "return_without_worst_trade_pct": -8.162686056711522
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|RSI_MR_7|REJECT_LONG",
+      "pair": "GBP",
+      "strategy": "RSI_MR_7",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 31.0,
+          "return_sum_pct": -5.262250980592786,
+          "return_without_worst_trade_pct": 7.262710300921426
+        },
+        "D2": {
+          "closed_n": 23.0,
+          "return_sum_pct": -5.571242859395685,
+          "return_without_worst_trade_pct": -2.192026887099695
+        },
+        "D": {
+          "closed_n": 55.0,
+          "return_sum_pct": -11.528434882561763,
+          "return_without_worst_trade_pct": 0.9965263989524491
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|TSMOM_21|REJECT_LONG",
+      "pair": "GBP",
+      "strategy": "TSMOM_21",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 67.0,
+          "return_sum_pct": -0.8011027147073024,
+          "return_without_worst_trade_pct": 2.3015683545571264
+        },
+        "D2": {
+          "closed_n": 60.0,
+          "return_sum_pct": -1.0708223721539567,
+          "return_without_worst_trade_pct": 1.2477792406979882
+        },
+        "D": {
+          "closed_n": 127.0,
+          "return_sum_pct": -1.8719250868612614,
+          "return_without_worst_trade_pct": 1.2307459824031675
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|VOTE_EQUAL_4|REJECT_SHORT",
+      "pair": "GBP",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 38.0,
+          "return_sum_pct": -6.612568212883161,
+          "return_without_worst_trade_pct": -1.0048085812796685
+        },
+        "D2": {
+          "closed_n": 42.0,
+          "return_sum_pct": -4.812901859150643,
+          "return_without_worst_trade_pct": -1.6201101116095638
+        },
+        "D": {
+          "closed_n": 81.0,
+          "return_sum_pct": -11.57425242305505,
+          "return_without_worst_trade_pct": -5.966492791451557
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|VOTE_STRENGTH_4|REJECT_SHORT",
+      "pair": "GBP",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 44.0,
+          "return_sum_pct": -4.27307872949555,
+          "return_without_worst_trade_pct": -1.6549292614760795
+        },
+        "D2": {
+          "closed_n": 29.0,
+          "return_sum_pct": -2.657022773958973,
+          "return_without_worst_trade_pct": -0.2775263313901881
+        },
+        "D": {
+          "closed_n": 74.0,
+          "return_sum_pct": -6.532370735363727,
+          "return_without_worst_trade_pct": -3.914221267344256
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|VOTE_STRENGTH_4|REJECT_LONG",
+      "pair": "GBP",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 39.0,
+          "return_sum_pct": -7.816042769643981,
+          "return_without_worst_trade_pct": -4.959718028189973
+        },
+        "D2": {
+          "closed_n": 41.0,
+          "return_sum_pct": -7.545136637446959,
+          "return_without_worst_trade_pct": -5.617800019944785
+        },
+        "D": {
+          "closed_n": 80.0,
+          "return_sum_pct": -15.36117940709094,
+          "return_without_worst_trade_pct": -12.504854665636932
+        }
+      }
+    },
+    {
+      "candidate_id": "JPY|BB_BO_10|REJECT_LONG",
+      "pair": "JPY",
+      "strategy": "BB_BO_10",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 38.0,
+          "return_sum_pct": -5.613982601186474,
+          "return_without_worst_trade_pct": -1.172778405650221
+        },
+        "D2": {
+          "closed_n": 32.0,
+          "return_sum_pct": -11.78906730126542,
+          "return_without_worst_trade_pct": -9.751775226410885
+        },
+        "D": {
+          "closed_n": 70.0,
+          "return_sum_pct": -17.403049902451897,
+          "return_without_worst_trade_pct": -12.961845706915645
+        }
+      }
+    },
+    {
+      "candidate_id": "JPY|RSI_MOM_14|REJECT_LONG",
+      "pair": "JPY",
+      "strategy": "RSI_MOM_14",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 54.0,
+          "return_sum_pct": -5.171730679578057,
+          "return_without_worst_trade_pct": -2.561047528247884
+        },
+        "D2": {
+          "closed_n": 61.0,
+          "return_sum_pct": -17.185364800281608,
+          "return_without_worst_trade_pct": -13.923896717113523
+        },
+        "D": {
+          "closed_n": 115.0,
+          "return_sum_pct": -22.35709547985967,
+          "return_without_worst_trade_pct": -19.095627396691587
+        }
+      }
+    },
+    {
+      "candidate_id": "JPY|RSI_MOM_20|REJECT_LONG",
+      "pair": "JPY",
+      "strategy": "RSI_MOM_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 41.0,
+          "return_sum_pct": -1.121439808621294,
+          "return_without_worst_trade_pct": 2.4420648835080994
+        },
+        "D2": {
+          "closed_n": 33.0,
+          "return_sum_pct": -13.104871252014673,
+          "return_without_worst_trade_pct": -9.843403168846589
+        },
+        "D": {
+          "closed_n": 74.0,
+          "return_sum_pct": -14.226311060635966,
+          "return_without_worst_trade_pct": -10.662806368506573
+        }
+      }
+    },
+    {
+      "candidate_id": "JPY|RSI_MR_7|REJECT_LONG",
+      "pair": "JPY",
+      "strategy": "RSI_MR_7",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 29.0,
+          "return_sum_pct": -1.3799327716705,
+          "return_without_worst_trade_pct": 5.680172181936527
+        },
+        "D2": {
+          "closed_n": 24.0,
+          "return_sum_pct": -14.271807576337615,
+          "return_without_worst_trade_pct": -3.095988387724624
+        },
+        "D": {
+          "closed_n": 54.0,
+          "return_sum_pct": -14.909843983259464,
+          "return_without_worst_trade_pct": -3.734024794646473
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|BB_BO_10|REJECT_LONG",
+      "pair": "NOK",
+      "strategy": "BB_BO_10",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 29.0,
+          "return_sum_pct": -26.428482496108227,
+          "return_without_worst_trade_pct": -19.49870461144817
+        },
+        "D2": {
+          "closed_n": 24.0,
+          "return_sum_pct": -3.9776430413506985,
+          "return_without_worst_trade_pct": 0.10093512173539043
+        },
+        "D": {
+          "closed_n": 53.0,
+          "return_sum_pct": -30.40612553745893,
+          "return_without_worst_trade_pct": -23.47634765279887
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|BB_BO_20|REJECT_LONG",
+      "pair": "NOK",
+      "strategy": "BB_BO_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 22.0,
+          "return_sum_pct": -0.8637254392922289,
+          "return_without_worst_trade_pct": 5.1754483189020535
+        },
+        "D2": {
+          "closed_n": 22.0,
+          "return_sum_pct": -7.772206324044472,
+          "return_without_worst_trade_pct": -2.953993879309646
+        },
+        "D": {
+          "closed_n": 44.0,
+          "return_sum_pct": -8.635931763336702,
+          "return_without_worst_trade_pct": -2.5967580051424193
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|BB_MR_20|REJECT_LONG",
+      "pair": "NOK",
+      "strategy": "BB_MR_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 17.0,
+          "return_sum_pct": -11.19739434847886,
+          "return_without_worst_trade_pct": 3.9980034793394097
+        },
+        "D2": {
+          "closed_n": 19.0,
+          "return_sum_pct": -2.3607584487598583,
+          "return_without_worst_trade_pct": 5.267373321902269
+        },
+        "D": {
+          "closed_n": 37.0,
+          "return_sum_pct": -13.113106374134519,
+          "return_without_worst_trade_pct": 2.08229145368375
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|DONCHIAN_BO_10|REJECT_SHORT",
+      "pair": "NOK",
+      "strategy": "DONCHIAN_BO_10",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 58.0,
+          "return_sum_pct": -34.999159493352856,
+          "return_without_worst_trade_pct": -29.854927883575883
+        },
+        "D2": {
+          "closed_n": 59.0,
+          "return_sum_pct": -2.3462595180511427,
+          "return_without_worst_trade_pct": 1.4663984425886443
+        },
+        "D": {
+          "closed_n": 117.0,
+          "return_sum_pct": -37.34541901140401,
+          "return_without_worst_trade_pct": -32.20118740162704
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|DONCHIAN_BO_10|REJECT_LONG",
+      "pair": "NOK",
+      "strategy": "DONCHIAN_BO_10",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 57.0,
+          "return_sum_pct": -13.51874652065975,
+          "return_without_worst_trade_pct": -9.304497229992801
+        },
+        "D2": {
+          "closed_n": 57.0,
+          "return_sum_pct": -15.501984891823083,
+          "return_without_worst_trade_pct": -11.677450541603218
+        },
+        "D": {
+          "closed_n": 114.0,
+          "return_sum_pct": -29.02073141248284,
+          "return_without_worst_trade_pct": -24.80648212181589
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|DONCHIAN_BO_20|REJECT_SHORT",
+      "pair": "NOK",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 32.0,
+          "return_sum_pct": -13.931918344053537,
+          "return_without_worst_trade_pct": -8.787686734276566
+        },
+        "D2": {
+          "closed_n": 28.0,
+          "return_sum_pct": -16.406158201424535,
+          "return_without_worst_trade_pct": -13.272109572919565
+        },
+        "D": {
+          "closed_n": 61.0,
+          "return_sum_pct": -31.761884371415267,
+          "return_without_worst_trade_pct": -26.617652761638293
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|DONCHIAN_BO_20|REJECT_LONG",
+      "pair": "NOK",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 33.0,
+          "return_sum_pct": -14.591816340598076,
+          "return_without_worst_trade_pct": -6.629380388442309
+        },
+        "D2": {
+          "closed_n": 30.0,
+          "return_sum_pct": -14.236618880266203,
+          "return_without_worst_trade_pct": -9.418406435531377
+        },
+        "D": {
+          "closed_n": 63.0,
+          "return_sum_pct": -28.828435220864275,
+          "return_without_worst_trade_pct": -20.865999268708507
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|MACD_12_26_9|REJECT_LONG",
+      "pair": "NOK",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 54.0,
+          "return_sum_pct": -6.784598671726325,
+          "return_without_worst_trade_pct": 1.038398939399034
+        },
+        "D2": {
+          "closed_n": 49.0,
+          "return_sum_pct": -10.504216803373577,
+          "return_without_worst_trade_pct": -6.406246997277597
+        },
+        "D": {
+          "closed_n": 104.0,
+          "return_sum_pct": -17.596659072916893,
+          "return_without_worst_trade_pct": -9.773661461791534
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|MA_10_30|REJECT_SHORT",
+      "pair": "NOK",
+      "strategy": "MA_10_30",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 26.0,
+          "return_sum_pct": -0.5408389040271397,
+          "return_without_worst_trade_pct": 9.039563531773032
+        },
+        "D2": {
+          "closed_n": 28.0,
+          "return_sum_pct": -23.345290288560534,
+          "return_without_worst_trade_pct": -19.615040202956198
+        },
+        "D": {
+          "closed_n": 55.0,
+          "return_sum_pct": -26.465997448452836,
+          "return_without_worst_trade_pct": -16.885595012652665
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|MA_20_60|REJECT_SHORT",
+      "pair": "NOK",
+      "strategy": "MA_20_60",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 15.0,
+          "return_sum_pct": -8.90021844354617,
+          "return_without_worst_trade_pct": 1.3815685930983044
+        },
+        "D2": {
+          "closed_n": 16.0,
+          "return_sum_pct": -11.99727313029264,
+          "return_without_worst_trade_pct": -9.04438671286556
+        },
+        "D": {
+          "closed_n": 32.0,
+          "return_sum_pct": -17.92599889175458,
+          "return_without_worst_trade_pct": -7.6442118551101075
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|REGIME_RULE_FIXED|REJECT_SHORT",
+      "pair": "NOK",
+      "strategy": "REGIME_RULE_FIXED",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 21.0,
+          "return_sum_pct": -0.2296345102734585,
+          "return_without_worst_trade_pct": 4.79425530517168
+        },
+        "D2": {
+          "closed_n": 10.0,
+          "return_sum_pct": -1.4494223051483957,
+          "return_without_worst_trade_pct": 0.632332889461007
+        },
+        "D": {
+          "closed_n": 31.0,
+          "return_sum_pct": -1.6790568154218546,
+          "return_without_worst_trade_pct": 3.344833000023283
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|RSI_MOM_14|REJECT_LONG",
+      "pair": "NOK",
+      "strategy": "RSI_MOM_14",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 56.0,
+          "return_sum_pct": -8.478424093791983,
+          "return_without_worst_trade_pct": -5.461225658651793
+        },
+        "D2": {
+          "closed_n": 60.0,
+          "return_sum_pct": -8.236353049192179,
+          "return_without_worst_trade_pct": -6.054625765371911
+        },
+        "D": {
+          "closed_n": 116.0,
+          "return_sum_pct": -16.714777142984158,
+          "return_without_worst_trade_pct": -13.697578707843968
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|RSI_MOM_20|REJECT_LONG",
+      "pair": "NOK",
+      "strategy": "RSI_MOM_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 43.0,
+          "return_sum_pct": -13.752964036289116,
+          "return_without_worst_trade_pct": -10.67418583952745
+        },
+        "D2": {
+          "closed_n": 37.0,
+          "return_sum_pct": -17.297532592978424,
+          "return_without_worst_trade_pct": -13.218954429892335
+        },
+        "D": {
+          "closed_n": 80.0,
+          "return_sum_pct": -31.05049662926755,
+          "return_without_worst_trade_pct": -26.97191846618146
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|RSI_MOM_7|REJECT_SHORT",
+      "pair": "NOK",
+      "strategy": "RSI_MOM_7",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 92.0,
+          "return_sum_pct": -17.485199732274648,
+          "return_without_worst_trade_pct": -13.64234054393676
+        },
+        "D2": {
+          "closed_n": 95.0,
+          "return_sum_pct": -8.048055560896465,
+          "return_without_worst_trade_pct": -4.235397600256678
+        },
+        "D": {
+          "closed_n": 187.0,
+          "return_sum_pct": -25.533255293171113,
+          "return_without_worst_trade_pct": -21.690396104833226
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|RSI_MOM_7|REJECT_LONG",
+      "pair": "NOK",
+      "strategy": "RSI_MOM_7",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 87.0,
+          "return_sum_pct": -3.0490398703086328,
+          "return_without_worst_trade_pct": -0.4554943914273011
+        },
+        "D2": {
+          "closed_n": 90.0,
+          "return_sum_pct": -6.6501897244684685,
+          "return_without_worst_trade_pct": -2.341237624045732
+        },
+        "D": {
+          "closed_n": 177.0,
+          "return_sum_pct": -9.699229594777107,
+          "return_without_worst_trade_pct": -5.39027749435437
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|TSMOM_21|REJECT_SHORT",
+      "pair": "NOK",
+      "strategy": "TSMOM_21",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 63.0,
+          "return_sum_pct": -0.022533034916959682,
+          "return_without_worst_trade_pct": 2.9543035983679586
+        },
+        "D2": {
+          "closed_n": 74.0,
+          "return_sum_pct": -13.920244297975536,
+          "return_without_worst_trade_pct": -11.363843532459926
+        },
+        "D": {
+          "closed_n": 138.0,
+          "return_sum_pct": -14.899494254891021,
+          "return_without_worst_trade_pct": -11.922657621606103
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|VOTE_EQUAL_4|REJECT_SHORT",
+      "pair": "NOK",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 42.0,
+          "return_sum_pct": -15.90554797112357,
+          "return_without_worst_trade_pct": -10.761316361346598
+        },
+        "D2": {
+          "closed_n": 37.0,
+          "return_sum_pct": -14.79673695390824,
+          "return_without_worst_trade_pct": -11.41466846648871
+        },
+        "D": {
+          "closed_n": 80.0,
+          "return_sum_pct": -32.12609275096901,
+          "return_without_worst_trade_pct": -26.981861141192034
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|VOTE_EQUAL_4|REJECT_LONG",
+      "pair": "NOK",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 42.0,
+          "return_sum_pct": -18.174601888252127,
+          "return_without_worst_trade_pct": -10.21216593609636
+        },
+        "D2": {
+          "closed_n": 37.0,
+          "return_sum_pct": -11.856425137255334,
+          "return_without_worst_trade_pct": -7.038212692520508
+        },
+        "D": {
+          "closed_n": 79.0,
+          "return_sum_pct": -30.031027025507452,
+          "return_without_worst_trade_pct": -22.068591073351683
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|VOTE_STRENGTH_4|REJECT_SHORT",
+      "pair": "NOK",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 32.0,
+          "return_sum_pct": -16.925254174967275,
+          "return_without_worst_trade_pct": -11.781022565190302
+        },
+        "D2": {
+          "closed_n": 37.0,
+          "return_sum_pct": -9.483342312482192,
+          "return_without_worst_trade_pct": -6.477797575881307
+        },
+        "D": {
+          "closed_n": 70.0,
+          "return_sum_pct": -27.06688495746313,
+          "return_without_worst_trade_pct": -21.922653347686158
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|VOTE_STRENGTH_4|REJECT_LONG",
+      "pair": "NOK",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 41.0,
+          "return_sum_pct": -8.847321736002067,
+          "return_without_worst_trade_pct": -5.001927787349237
+        },
+        "D2": {
+          "closed_n": 30.0,
+          "return_sum_pct": -15.594661185250704,
+          "return_without_worst_trade_pct": -10.776448740515878
+        },
+        "D": {
+          "closed_n": 71.0,
+          "return_sum_pct": -24.441982921252766,
+          "return_without_worst_trade_pct": -19.62377047651794
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|BB_BO_20|REJECT_SHORT",
+      "pair": "NZD",
+      "strategy": "BB_BO_20",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 25.0,
+          "return_sum_pct": -8.652785691598421,
+          "return_without_worst_trade_pct": -3.464044500318832
+        },
+        "D2": {
+          "closed_n": 19.0,
+          "return_sum_pct": -7.395951691212465,
+          "return_without_worst_trade_pct": -4.346082479232871
+        },
+        "D": {
+          "closed_n": 44.0,
+          "return_sum_pct": -16.048737382810888,
+          "return_without_worst_trade_pct": -10.859996191531298
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|BB_MR_10|REJECT_LONG",
+      "pair": "NZD",
+      "strategy": "BB_MR_10",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 30.0,
+          "return_sum_pct": -3.3954421760921227,
+          "return_without_worst_trade_pct": 5.103319151637908
+        },
+        "D2": {
+          "closed_n": 26.0,
+          "return_sum_pct": -3.2487009196881194,
+          "return_without_worst_trade_pct": 3.2801600860526965
+        },
+        "D": {
+          "closed_n": 56.0,
+          "return_sum_pct": -6.644143095780243,
+          "return_without_worst_trade_pct": 1.8546182319497886
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|DONCHIAN_BO_20|REJECT_SHORT",
+      "pair": "NZD",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 31.0,
+          "return_sum_pct": -10.7942412673945,
+          "return_without_worst_trade_pct": -5.199573548816373
+        },
+        "D2": {
+          "closed_n": 30.0,
+          "return_sum_pct": -15.560677640717635,
+          "return_without_worst_trade_pct": -12.490642763015714
+        },
+        "D": {
+          "closed_n": 61.0,
+          "return_sum_pct": -26.35491890811214,
+          "return_without_worst_trade_pct": -20.76025118953401
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|MACD_12_26_9|REJECT_SHORT",
+      "pair": "NZD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 54.0,
+          "return_sum_pct": -13.904999136714816,
+          "return_without_worst_trade_pct": -9.740045061643235
+        },
+        "D2": {
+          "closed_n": 53.0,
+          "return_sum_pct": -3.536801971421388,
+          "return_without_worst_trade_pct": 0.17132510995741024
+        },
+        "D": {
+          "closed_n": 107.0,
+          "return_sum_pct": -17.441801108136204,
+          "return_without_worst_trade_pct": -13.276847033064623
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|MA_10_30|REJECT_SHORT",
+      "pair": "NZD",
+      "strategy": "MA_10_30",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 25.0,
+          "return_sum_pct": -11.78454115351402,
+          "return_without_worst_trade_pct": -3.9538330077953194
+        },
+        "D2": {
+          "closed_n": 27.0,
+          "return_sum_pct": -19.299036062384076,
+          "return_without_worst_trade_pct": -14.41803936104957
+        },
+        "D": {
+          "closed_n": 53.0,
+          "return_sum_pct": -31.927258356966863,
+          "return_without_worst_trade_pct": -24.096550211248164
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|MA_10_30|REJECT_LONG",
+      "pair": "NZD",
+      "strategy": "MA_10_30",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 26.0,
+          "return_sum_pct": -2.9066003743070756,
+          "return_without_worst_trade_pct": 6.438271399863673
+        },
+        "D2": {
+          "closed_n": 28.0,
+          "return_sum_pct": -12.004356416778084,
+          "return_without_worst_trade_pct": -6.937609171226445
+        },
+        "D": {
+          "closed_n": 54.0,
+          "return_sum_pct": -14.910956791085155,
+          "return_without_worst_trade_pct": -5.566085016914407
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|RSI_MOM_14|REJECT_LONG",
+      "pair": "NZD",
+      "strategy": "RSI_MOM_14",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 55.0,
+          "return_sum_pct": -2.8842473327881484,
+          "return_without_worst_trade_pct": 3.4810297279644793
+        },
+        "D2": {
+          "closed_n": 59.0,
+          "return_sum_pct": -9.134494678423275,
+          "return_without_worst_trade_pct": -5.96715543206585
+        },
+        "D": {
+          "closed_n": 114.0,
+          "return_sum_pct": -12.018742011211424,
+          "return_without_worst_trade_pct": -5.653464950458797
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|RSI_MOM_20|REJECT_LONG",
+      "pair": "NZD",
+      "strategy": "RSI_MOM_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 39.0,
+          "return_sum_pct": -5.671528432283367,
+          "return_without_worst_trade_pct": -3.329620787842645
+        },
+        "D2": {
+          "closed_n": 46.0,
+          "return_sum_pct": -2.394099179621,
+          "return_without_worst_trade_pct": 0.8710304307462233
+        },
+        "D": {
+          "closed_n": 85.0,
+          "return_sum_pct": -8.065627611904368,
+          "return_without_worst_trade_pct": -4.800498001537145
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|BB_BO_10|REJECT_LONG",
+      "pair": "SEK",
+      "strategy": "BB_BO_10",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 31.0,
+          "return_sum_pct": -28.067439471951054,
+          "return_without_worst_trade_pct": -23.023525985409027
+        },
+        "D2": {
+          "closed_n": 30.0,
+          "return_sum_pct": -6.282332227763921,
+          "return_without_worst_trade_pct": -2.3776165970522904
+        },
+        "D": {
+          "closed_n": 61.0,
+          "return_sum_pct": -34.34977169971497,
+          "return_without_worst_trade_pct": -29.305858213172943
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|BB_BO_20|REJECT_LONG",
+      "pair": "SEK",
+      "strategy": "BB_BO_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 22.0,
+          "return_sum_pct": -6.691020841830031,
+          "return_without_worst_trade_pct": -2.7906724868850046
+        },
+        "D2": {
+          "closed_n": 24.0,
+          "return_sum_pct": -16.299117606331837,
+          "return_without_worst_trade_pct": -12.733862797890627
+        },
+        "D": {
+          "closed_n": 46.0,
+          "return_sum_pct": -22.990138448161865,
+          "return_without_worst_trade_pct": -19.089790093216838
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|DONCHIAN_BO_10|REJECT_SHORT",
+      "pair": "SEK",
+      "strategy": "DONCHIAN_BO_10",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 51.0,
+          "return_sum_pct": -5.363742303367792,
+          "return_without_worst_trade_pct": -1.2266394135733059
+        },
+        "D2": {
+          "closed_n": 59.0,
+          "return_sum_pct": -17.236745318789815,
+          "return_without_worst_trade_pct": -12.777802314645736
+        },
+        "D": {
+          "closed_n": 110.0,
+          "return_sum_pct": -22.60048762215761,
+          "return_without_worst_trade_pct": -18.14154461801353
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|DONCHIAN_BO_10|REJECT_LONG",
+      "pair": "SEK",
+      "strategy": "DONCHIAN_BO_10",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 56.0,
+          "return_sum_pct": -0.9708801921344525,
+          "return_without_worst_trade_pct": 5.2776693178918945
+        },
+        "D2": {
+          "closed_n": 58.0,
+          "return_sum_pct": -9.659947631224567,
+          "return_without_worst_trade_pct": -6.071720913222592
+        },
+        "D": {
+          "closed_n": 115.0,
+          "return_sum_pct": -11.76631807337705,
+          "return_without_worst_trade_pct": -5.517768563350703
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|MACD_12_26_9|REJECT_SHORT",
+      "pair": "SEK",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 54.0,
+          "return_sum_pct": -3.466246465564265,
+          "return_without_worst_trade_pct": 0.6877809289464083
+        },
+        "D2": {
+          "closed_n": 56.0,
+          "return_sum_pct": -14.695868325685211,
+          "return_without_worst_trade_pct": -10.70439215666432
+        },
+        "D": {
+          "closed_n": 110.0,
+          "return_sum_pct": -18.16211479124948,
+          "return_without_worst_trade_pct": -14.008087396738805
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|MACD_12_26_9|REJECT_LONG",
+      "pair": "SEK",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 53.0,
+          "return_sum_pct": -4.816464844421237,
+          "return_without_worst_trade_pct": 1.2074952353810673
+        },
+        "D2": {
+          "closed_n": 56.0,
+          "return_sum_pct": -14.563547237957609,
+          "return_without_worst_trade_pct": -9.60779467701698
+        },
+        "D": {
+          "closed_n": 110.0,
+          "return_sum_pct": -20.445275182042508,
+          "return_without_worst_trade_pct": -14.421315102240204
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|MA_20_60|REJECT_SHORT",
+      "pair": "SEK",
+      "strategy": "MA_20_60",
+      "filter_id": "REJECT_SHORT",
+      "filter_name": "Reject short foreign / long USD entries; retain original long entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_SHORT",
+        "reject_position": -1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 14.0,
+          "return_sum_pct": -3.760201651877413,
+          "return_without_worst_trade_pct": 1.7715209582498748
+        },
+        "D2": {
+          "closed_n": 10.0,
+          "return_sum_pct": -7.204191746220723,
+          "return_without_worst_trade_pct": -1.7004069099436192
+        },
+        "D": {
+          "closed_n": 25.0,
+          "return_sum_pct": -10.641069220929278,
+          "return_without_worst_trade_pct": -5.109346610801991
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|RSI_MOM_14|REJECT_LONG",
+      "pair": "SEK",
+      "strategy": "RSI_MOM_14",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 55.0,
+          "return_sum_pct": -5.113541289418709,
+          "return_without_worst_trade_pct": -1.0031742643780026
+        },
+        "D2": {
+          "closed_n": 54.0,
+          "return_sum_pct": -9.984439093428987,
+          "return_without_worst_trade_pct": -6.53354134182994
+        },
+        "D": {
+          "closed_n": 109.0,
+          "return_sum_pct": -15.097980382847696,
+          "return_without_worst_trade_pct": -10.987613357806989
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|RSI_MOM_20|REJECT_LONG",
+      "pair": "SEK",
+      "strategy": "RSI_MOM_20",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 50.0,
+          "return_sum_pct": -5.348734989631254,
+          "return_without_worst_trade_pct": -2.4575574549400954
+        },
+        "D2": {
+          "closed_n": 38.0,
+          "return_sum_pct": -6.3324924455654505,
+          "return_without_worst_trade_pct": -2.8815946939664037
+        },
+        "D": {
+          "closed_n": 88.0,
+          "return_sum_pct": -11.681227435196707,
+          "return_without_worst_trade_pct": -8.23032968359766
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|RSI_MOM_7|REJECT_LONG",
+      "pair": "SEK",
+      "strategy": "RSI_MOM_7",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 83.0,
+          "return_sum_pct": -2.515893016415033,
+          "return_without_worst_trade_pct": 1.2623855193768239
+        },
+        "D2": {
+          "closed_n": 108.0,
+          "return_sum_pct": -9.500203983313723,
+          "return_without_worst_trade_pct": -6.559589851100452
+        },
+        "D": {
+          "closed_n": 192.0,
+          "return_sum_pct": -12.0133039767003,
+          "return_without_worst_trade_pct": -8.235025440908442
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|VOTE_EQUAL_4|REJECT_LONG",
+      "pair": "SEK",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 32.0,
+          "return_sum_pct": -2.5329540823483394,
+          "return_without_worst_trade_pct": 3.1313032715189464
+        },
+        "D2": {
+          "closed_n": 42.0,
+          "return_sum_pct": -10.626326039874929,
+          "return_without_worst_trade_pct": -6.310826481447169
+        },
+        "D": {
+          "closed_n": 74.0,
+          "return_sum_pct": -13.15928012222327,
+          "return_without_worst_trade_pct": -7.495022768355985
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|VOTE_STRENGTH_4|REJECT_LONG",
+      "pair": "SEK",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "REJECT_LONG",
+      "filter_name": "Reject long foreign / short USD entries; retain original short entries",
+      "is_new": true,
+      "spec": {
+        "id": "REJECT_LONG",
+        "reject_position": 1
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 38.0,
+          "return_sum_pct": -7.647725993877538,
+          "return_without_worst_trade_pct": 0.8351424063132971
+        },
+        "D2": {
+          "closed_n": 39.0,
+          "return_sum_pct": -10.472888895537224,
+          "return_without_worst_trade_pct": -6.907634087096015
+        },
+        "D": {
+          "closed_n": 77.0,
+          "return_sum_pct": -18.12061488941476,
+          "return_without_worst_trade_pct": -9.637746489223925
+        }
+      }
+    }
+  ]
+}

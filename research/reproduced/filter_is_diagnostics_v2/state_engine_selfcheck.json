@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-10-23T05:41:13.007131+00:00",
+  "status": "PASS",
+  "command": "python -B -m unittest discover -s tests -p test_fx_state_filters.py -v",
+  "test_methods_passed": 6,
+  "synthetic_only": true,
+  "research_outcomes_read": false,
+  "oos_read": false,
+  "prefix_checks": 624,
+  "prefix_features": 13,
+  "prefix_states_per_feature": 4,
+  "prefix_quote_lengths": [
+    1,
+    2,
+    7,
+    8,
+    63,
+    64,
+    100,
+    251,
+    252,
+    253,
+    269,
+    270
+  ],
+  "checks": [
+    "all feature/bin combinations preserve target, executed, held, gross_return and equity prefixes",
+    "rejected original target episode stays locked until its original end",
+    "next original target episode may enter",
+    "last signal pending entry changes target only, never fabricates a fill",
+    "UNKNOWN state is retained",
+    "all-cash input works and caller inputs remain unchanged",
+    "unknown rejection states and arbitrary bins or thresholds are disallowed",
+    "feature calendar and macro observation clock are validated"
+  ],
+  "sha256": {
+    "src/fx_state_filters.py": "47f6c3f4b5696bb2f1039cf31b67244da5c81929e6ecbc6aa91d08e78904e619",
+    "src/fx_is_states.py": "b14cacc51e83587dbd15514e05ff608ecb1ead4e8a875f6eab2acaf41a6d8f5b",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "tests/test_fx_state_filters.py": "0691fba82746b94cec51f209566389bfb28aaa316d9118d014e2d66f0130040e"
+  },
+  "notes_zh": [
+    "?????????????????????????????",
+    "???????????????????????????????"
+  ]
+}

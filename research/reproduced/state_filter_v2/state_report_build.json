@@ -1,0 +1,39 @@
+{
+  "report": "state_research_report.html",
+  "figures": [
+    "state_figures/locked_0001.png",
+    "state_figures/locked_0002.png",
+    "state_figures/locked_0003.png",
+    "state_figures/locked_0004.png"
+  ],
+  "counts": {
+    "proposals": 1201,
+    "discovery_pass": 84,
+    "validation_pass": 103,
+    "joint_pass": 5,
+    "preconfirmation_locked": 4,
+    "original_is_pass": 1,
+    "confirmation_pass": 0,
+    "robustness_pass": 0,
+    "final_is_survivors": 0
+  },
+  "confirmation_completed": true,
+  "oos_status_exists": false,
+  "oos_evaluated": false,
+  "daily_metric_endpoint_checks": 16,
+  "input_sha256": {
+    "protocol.json": "1211276d44902490a873f85a207841cee03f744af6d2cbc1d35101a07341f448",
+    "fit_status.json": "69ad8ce55140adb2ac305ab6b8d95570d0b843afb0779a642361cde6d356c8d5",
+    "fit_selection.csv": "b95622f124578882080326ad9bfde36fbf2db4ccb9040464e063e4b8cb659776",
+    "fit_metrics.csv": "a1235f0e059a620042e574611eafe88d8efcb968b25fd4e2896cdfa48006919e",
+    "validation_locked.json": "7e7275701d208811fed11f4149284c229a8a188d30b399b5ddfed94cde76b839",
+    "development_status.json": "43813075e6a7898e3f02006fd94df1d9d0661d212b8dad0b05928adb91b95ca0",
+    "confirmation_selection.csv": "0034f655b71c2bd3e58fa7b300d748f8d569ed79aac808443996b8dc384630d3",
+    "confirmation_full_metrics.csv": "bf7667c80807496bb4c7085b13cc7250d7878a3fb3b1d95acc2d2fe4989e85b7",
+    "confirmation_recent_metrics.csv": "80c058c9adfab972eb6d428f9fd90315cac8dfdc11d9ddd38f7c1eaa41880831",
+    "confirmation_effect_evidence.json": "70792892ecd8e1c1d59b553c66dcc2a4789640b15bb9735a41960c17c58db365",
+    "locked_is_daily.csv.gz": "3ef2d0da0fb18556d6707f7b98c0af329922fde4e4e066996726abc376f8885b"
+  },
+  "generated_utc": "2026-10-23T05:49:00.563814+00:00",
+  "renderer_sha256": "00fb7a0684b2c7aa8b8ceed3a6be2502e34aa407848653c1c5687289b808dcfc"
+}

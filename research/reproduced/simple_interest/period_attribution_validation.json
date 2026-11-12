@@ -1,0 +1,90 @@
+{
+  "accounts": 153,
+  "buckets": 104958,
+  "max_window_pnl_error_usd": 2.764863893389702e-10,
+  "boundary_and_reversal_fixtures": "passed",
+  "period_sum_and_state_checks": "passed",
+  "directional_exposure_checks": "passed: long + short = total; total + flat = 100%; held direction verified in all buckets",
+  "examples": [
+    {
+      "pair": "AUD",
+      "rule": "BB_MR_20",
+      "pnl": 16514.801251152578,
+      "complete": 77,
+      "partial": 0,
+      "top3": {
+        "k": 3,
+        "n": 3,
+        "keys": [
+          "2025-04",
+          "2023-06",
+          "2021-02"
+        ],
+        "removed": 15254.20234042695,
+        "share": 21.99862354460342,
+        "remaining": 1260.598910725621
+      },
+      "idle": 6
+    },
+    {
+      "pair": "AUD",
+      "rule": "TSMOM_63",
+      "pnl": -14773.204633746847,
+      "complete": 77,
+      "partial": 0,
+      "top3": {
+        "k": 3,
+        "n": 3,
+        "keys": [
+          "2022-09",
+          "2020-03",
+          "2024-12"
+        ],
+        "removed": 17458.705567833742,
+        "share": 19.12078849545544,
+        "remaining": -32231.910201580617
+      },
+      "idle": 0
+    },
+    {
+      "pair": "JPY",
+      "rule": "BB_MR_20",
+      "pnl": -2103.74862171526,
+      "complete": 77,
+      "partial": 0,
+      "top3": {
+        "k": 3,
+        "n": 3,
+        "keys": [
+          "2023-07",
+          "2026-01",
+          "2020-02"
+        ],
+        "removed": 13385.692400798078,
+        "share": 21.77660971806389,
+        "remaining": -15489.441022513347
+      },
+      "idle": 7
+    },
+    {
+      "pair": "JPY",
+      "rule": "TSMOM_63",
+      "pnl": 24610.695575714944,
+      "complete": 77,
+      "partial": 0,
+      "top3": {
+        "k": 3,
+        "n": 3,
+        "keys": [
+          "2022-04",
+          "2022-03",
+          "2022-12"
+        ],
+        "removed": 17265.446088734923,
+        "share": 18.122739059625367,
+        "remaining": 7345.249486979992
+      },
+      "idle": 0
+    }
+  ]
+}

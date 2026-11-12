@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-23T05:41:42.871929+00:00",
+  "status": "passed",
+  "checks": {
+    "fit_passed": true,
+    "no_confirmation_outcomes": true,
+    "lock_matches_ranking": true,
+    "lock_before_confirmation": true,
+    "cost_zero": true,
+    "no_oos_results": true
+  },
+  "lock_sha256": "7e7275701d208811fed11f4149284c229a8a188d30b399b5ddfed94cde76b839"
+}

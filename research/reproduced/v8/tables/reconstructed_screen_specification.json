@@ -1,0 +1,13 @@
+{
+  "win_rate_improvement_percentage_points": 2.0,
+  "payoff_ratio_relative_improvement": 0.1,
+  "return_improvement_percentage_points": 5.0,
+  "maximum_drawdown_deterioration_percentage_points": 2.0,
+  "minimum_retained_closed_fraction": 0.5,
+  "minimum_closed_trades": 30,
+  "minimum_positive_calendar_blocks": 3,
+  "review_condition": "Win rate, payoff ratio and return must each be no worse than BASE in 2015 onward.",
+  "source": "Delivered notebook cell 31; review and calendar conditions reconstructed explicitly.",
+  "original_frozen_protocol_available": false,
+  "new_untouched_out_of_sample": false
+}

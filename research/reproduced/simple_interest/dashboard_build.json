@@ -1,0 +1,24 @@
+{
+  "original_explorer_sha256": "18620b85934a8d0e95bf44878349e627e3282f41166fbbd3d4639f3a7d5d609a",
+  "simple_explorer_sha256": "ab26a58f3051b8bdad21faa9567e3e042f4008b5c732bee2a6cd8104a98151b8",
+  "builder_sha256": "70ab8e26d8b2223f7d3bfd0c5fe97fff6f703b43b54d4743124cc9ac98e03754",
+  "payload_sha256": "29552b8684d764d77c9e8ca00351dd5e8188b07ef319fed88929905ded1150b2",
+  "accounts": 912,
+  "original_preserved": true,
+  "accounting": "fixed_initial_capital_simple",
+  "window_reset": "additive",
+  "primary_drawdown_unit": "percentage_points_of_initial_capital",
+  "parameter_diagnostics": {
+    "accounts_reconciled": 144,
+    "maximum_daily_return_error": 0.0
+  },
+  "pair_comparison": {
+    "accounts": 171,
+    "rules": 17,
+    "pairs": 9,
+    "daily_return_max_error": 0.0,
+    "period_return_max_error_pp": 4.440892098500626e-14,
+    "same_calendar": true,
+    "observations": 5585
+  }
+}

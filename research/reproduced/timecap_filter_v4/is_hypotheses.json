@@ -1,0 +1,3237 @@
+{
+  "created_utc": "2026-10-23T06:15:27.928478+00:00",
+  "candidates": [
+    {
+      "candidate_id": "AUD|BB_BO_20|TIME_CAP_10",
+      "pair": "AUD",
+      "strategy": "BB_BO_20",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 23.0,
+          "remaining_return_sum_pct": -5.510865814287413,
+          "remaining_without_worst1_pct": 0.33749921322660015,
+          "remaining_without_worst3_pct": 4.71056631380481
+        },
+        "D2": {
+          "closed_n": 24.0,
+          "remaining_return_sum_pct": -0.46085680777813254,
+          "remaining_without_worst1_pct": 3.724371150346927,
+          "remaining_without_worst3_pct": 7.982008219003733
+        },
+        "D": {
+          "closed_n": 47.0,
+          "remaining_return_sum_pct": -5.971722622065544,
+          "remaining_without_worst1_pct": -0.12335759455153017,
+          "remaining_without_worst3_pct": 6.458487905624423
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|BB_MR_20|TIME_CAP_5",
+      "pair": "AUD",
+      "strategy": "BB_MR_20",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 34.0,
+          "remaining_return_sum_pct": -0.5068400036319374,
+          "remaining_without_worst1_pct": 4.417193186871492,
+          "remaining_without_worst3_pct": 11.748122651784175
+        },
+        "D2": {
+          "closed_n": 33.0,
+          "remaining_return_sum_pct": -7.382992506523955,
+          "remaining_without_worst1_pct": -0.34987971037794274,
+          "remaining_without_worst3_pct": 7.753826169586931
+        },
+        "D": {
+          "closed_n": 68.0,
+          "remaining_return_sum_pct": -6.6527271342457155,
+          "remaining_without_worst1_pct": 0.38038566190029677,
+          "remaining_without_worst3_pct": 10.229419197217027
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "pair": "AUD",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 34.0,
+          "remaining_return_sum_pct": -14.029634774053989,
+          "remaining_without_worst1_pct": -9.45211891128972,
+          "remaining_without_worst3_pct": -2.433238045838225
+        },
+        "D2": {
+          "closed_n": 31.0,
+          "remaining_return_sum_pct": -9.498549790626882,
+          "remaining_without_worst1_pct": -4.090970453901772,
+          "remaining_without_worst3_pct": 3.7013398462779215
+        },
+        "D": {
+          "closed_n": 66.0,
+          "remaining_return_sum_pct": -26.84369590620427,
+          "remaining_without_worst1_pct": -21.43611656947916,
+          "remaining_without_worst3_pct": -11.685486120340965
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|MACD_12_26_9|TIME_CAP_5",
+      "pair": "AUD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 66.0,
+          "remaining_return_sum_pct": -14.923196978522167,
+          "remaining_without_worst1_pct": -8.88489561449528,
+          "remaining_without_worst3_pct": 1.9661910342661635
+        },
+        "D2": {
+          "closed_n": 67.0,
+          "remaining_return_sum_pct": -9.412007524006107,
+          "remaining_without_worst1_pct": -4.533438374801703,
+          "remaining_without_worst3_pct": 4.011902885003892
+        },
+        "D": {
+          "closed_n": 134.0,
+          "remaining_return_sum_pct": -22.407685151699162,
+          "remaining_without_worst1_pct": -16.369383787672277,
+          "remaining_without_worst3_pct": -5.518297138910832
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|MACD_12_26_9|TIME_CAP_10",
+      "pair": "AUD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 52.0,
+          "remaining_return_sum_pct": -6.660848278048093,
+          "remaining_without_worst1_pct": -3.0201922144297955,
+          "remaining_without_worst3_pct": 2.799976022545291
+        },
+        "D2": {
+          "closed_n": 50.0,
+          "remaining_return_sum_pct": -19.07724831302964,
+          "remaining_without_worst1_pct": -13.431065853161385,
+          "remaining_without_worst3_pct": -7.752784816431969
+        },
+        "D": {
+          "closed_n": 103.0,
+          "remaining_return_sum_pct": -24.161414137614546,
+          "remaining_without_worst1_pct": -18.515231677746293,
+          "remaining_without_worst3_pct": -11.949727059047401
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|MA_20_60|TIME_CAP_5",
+      "pair": "AUD",
+      "strategy": "MA_20_60",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 24.0,
+          "remaining_return_sum_pct": -3.7992635567326047,
+          "remaining_without_worst1_pct": 6.819262803674782,
+          "remaining_without_worst3_pct": 19.948645405771575
+        },
+        "D2": {
+          "closed_n": 25.0,
+          "remaining_return_sum_pct": -11.182566257337795,
+          "remaining_without_worst1_pct": -4.953002432068637,
+          "remaining_without_worst3_pct": 4.436697898164761
+        },
+        "D": {
+          "closed_n": 50.0,
+          "remaining_return_sum_pct": -16.11596004152544,
+          "remaining_without_worst1_pct": -5.4974336811180535,
+          "remaining_without_worst3_pct": 9.253557320327513
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|MA_20_60|TIME_CAP_20",
+      "pair": "AUD",
+      "strategy": "MA_20_60",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 20.0,
+          "remaining_return_sum_pct": -11.853283855460099,
+          "remaining_without_worst1_pct": -5.175270235352229,
+          "remaining_without_worst3_pct": 7.193460011484294
+        },
+        "D2": {
+          "closed_n": 19.0,
+          "remaining_return_sum_pct": -8.572182782394808,
+          "remaining_without_worst1_pct": -2.51131743034769,
+          "remaining_without_worst3_pct": 6.4838194527180235
+        },
+        "D": {
+          "closed_n": 40.0,
+          "remaining_return_sum_pct": -19.78233175541905,
+          "remaining_without_worst1_pct": -13.104318135311182,
+          "remaining_without_worst3_pct": -0.7355878884746581
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|RSI_MOM_14|TIME_CAP_10",
+      "pair": "AUD",
+      "strategy": "RSI_MOM_14",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 12.0,
+          "remaining_return_sum_pct": -3.6852860227121975,
+          "remaining_without_worst1_pct": -1.3219776922476778,
+          "remaining_without_worst3_pct": 1.7705561380943924
+        },
+        "D2": {
+          "closed_n": 13.0,
+          "remaining_return_sum_pct": -0.869558963886063,
+          "remaining_without_worst1_pct": 1.0222607693433532,
+          "remaining_without_worst3_pct": 3.5188205825854366
+        },
+        "D": {
+          "closed_n": 25.0,
+          "remaining_return_sum_pct": -4.55484498659826,
+          "remaining_without_worst1_pct": -2.1915366561337404,
+          "remaining_without_worst3_pct": 1.3326470463129745
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|RSI_MOM_20|TIME_CAP_10",
+      "pair": "AUD",
+      "strategy": "RSI_MOM_20",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 11.0,
+          "remaining_return_sum_pct": -2.4979991556059122,
+          "remaining_without_worst1_pct": 1.4439442140333103,
+          "remaining_without_worst3_pct": 4.77264574468551
+        },
+        "D2": {
+          "closed_n": 11.0,
+          "remaining_return_sum_pct": -3.664747943051949,
+          "remaining_without_worst1_pct": -1.772928209822533,
+          "remaining_without_worst3_pct": 1.269983853950396
+        },
+        "D": {
+          "closed_n": 22.0,
+          "remaining_return_sum_pct": -6.16274709865786,
+          "remaining_without_worst1_pct": -2.2208037290186375,
+          "remaining_without_worst3_pct": 1.506093321645598
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|TSMOM_63|TIME_CAP_10",
+      "pair": "AUD",
+      "strategy": "TSMOM_63",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 21.0,
+          "remaining_return_sum_pct": -8.461762856850136,
+          "remaining_without_worst1_pct": -3.7635684713687,
+          "remaining_without_worst3_pct": 3.519156326497381
+        },
+        "D2": {
+          "closed_n": 23.0,
+          "remaining_return_sum_pct": -18.477051868312582,
+          "remaining_without_worst1_pct": -8.843758890893133,
+          "remaining_without_worst3_pct": 1.8736133458912967
+        },
+        "D": {
+          "closed_n": 45.0,
+          "remaining_return_sum_pct": -1.526972030847876,
+          "remaining_without_worst1_pct": 8.106320946571573,
+          "remaining_without_worst3_pct": 18.823693183356003
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|TSMOM_63|TIME_CAP_20",
+      "pair": "AUD",
+      "strategy": "TSMOM_63",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 15.0,
+          "remaining_return_sum_pct": -10.90801525175522,
+          "remaining_without_worst1_pct": -5.458844674944274,
+          "remaining_without_worst3_pct": 3.4734259624448427
+        },
+        "D2": {
+          "closed_n": 18.0,
+          "remaining_return_sum_pct": -14.475681630809735,
+          "remaining_without_worst1_pct": -9.01832815995617,
+          "remaining_without_worst3_pct": -0.1768783676482375
+        },
+        "D": {
+          "closed_n": 34.0,
+          "remaining_return_sum_pct": -6.157037790021223,
+          "remaining_without_worst1_pct": -0.699684319167658,
+          "remaining_without_worst3_pct": 9.736182835013107
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|VOTE_EQUAL_4|TIME_CAP_5",
+      "pair": "AUD",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 47.0,
+          "remaining_return_sum_pct": -5.087975533183643,
+          "remaining_without_worst1_pct": 1.6658306398020226,
+          "remaining_without_worst3_pct": 8.512512988019248
+        },
+        "D2": {
+          "closed_n": 50.0,
+          "remaining_return_sum_pct": -1.516329434837846,
+          "remaining_without_worst1_pct": 3.1621123605959727,
+          "remaining_without_worst3_pct": 9.82781906409709
+        },
+        "D": {
+          "closed_n": 98.0,
+          "remaining_return_sum_pct": -9.510934970074725,
+          "remaining_without_worst1_pct": -2.7571287970890594,
+          "remaining_without_worst3_pct": 5.907524331353997
+        }
+      }
+    },
+    {
+      "candidate_id": "AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "pair": "AUD",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 36.0,
+          "remaining_return_sum_pct": -17.01808906483162,
+          "remaining_without_worst1_pct": -10.587065794216944,
+          "remaining_without_worst3_pct": -2.653378168542277
+        },
+        "D2": {
+          "closed_n": 33.0,
+          "remaining_return_sum_pct": -10.044531106040324,
+          "remaining_without_worst1_pct": -4.636951769315214,
+          "remaining_without_worst3_pct": 3.155358530864479
+        },
+        "D": {
+          "closed_n": 70.0,
+          "remaining_return_sum_pct": -30.378131512395335,
+          "remaining_without_worst1_pct": -23.947108241780658,
+          "remaining_without_worst3_pct": -13.36641431868162
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|BB_BO_10|TIME_CAP_5",
+      "pair": "CAD",
+      "strategy": "BB_BO_10",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 24.0,
+          "remaining_return_sum_pct": -2.4807140436431734,
+          "remaining_without_worst1_pct": 0.5977184086771388,
+          "remaining_without_worst3_pct": 3.8705085701878135
+        },
+        "D2": {
+          "closed_n": 33.0,
+          "remaining_return_sum_pct": -9.976656597290889,
+          "remaining_without_worst1_pct": -7.696042123330293,
+          "remaining_without_worst3_pct": -4.058479037985507
+        },
+        "D": {
+          "closed_n": 57.0,
+          "remaining_return_sum_pct": -12.457370640934064,
+          "remaining_without_worst1_pct": -9.378938188613752,
+          "remaining_without_worst3_pct": -5.152075928064184
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|BB_BO_20|TIME_CAP_5",
+      "pair": "CAD",
+      "strategy": "BB_BO_20",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 32.0,
+          "remaining_return_sum_pct": -7.601591865746549,
+          "remaining_without_worst1_pct": -3.7650945594830403,
+          "remaining_without_worst3_pct": 1.986174113246463
+        },
+        "D2": {
+          "closed_n": 32.0,
+          "remaining_return_sum_pct": -18.07185822831262,
+          "remaining_without_worst1_pct": -15.206789722239666,
+          "remaining_without_worst3_pct": -10.9566923788887
+        },
+        "D": {
+          "closed_n": 64.0,
+          "remaining_return_sum_pct": -25.67345009405917,
+          "remaining_without_worst1_pct": -21.83695278779566,
+          "remaining_without_worst3_pct": -15.135921154804155
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|BB_BO_20|TIME_CAP_10",
+      "pair": "CAD",
+      "strategy": "BB_BO_20",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 20.0,
+          "remaining_return_sum_pct": -8.27739326628809,
+          "remaining_without_worst1_pct": 0.5837488846274344,
+          "remaining_without_worst3_pct": 7.153797707668886
+        },
+        "D2": {
+          "closed_n": 22.0,
+          "remaining_return_sum_pct": -5.465402660977038,
+          "remaining_without_worst1_pct": -3.641695699312409,
+          "remaining_without_worst3_pct": -1.1424129631334559
+        },
+        "D": {
+          "closed_n": 42.0,
+          "remaining_return_sum_pct": -13.742795927265128,
+          "remaining_without_worst1_pct": -4.881653776349603,
+          "remaining_without_worst3_pct": 1.6883950466918485
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|DONCHIAN_BO_10|TIME_CAP_5",
+      "pair": "CAD",
+      "strategy": "DONCHIAN_BO_10",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 65.0,
+          "remaining_return_sum_pct": -1.1845997989403556,
+          "remaining_without_worst1_pct": 2.22810884137451,
+          "remaining_without_worst3_pct": 6.659323845481735
+        },
+        "D2": {
+          "closed_n": 63.0,
+          "remaining_return_sum_pct": -27.284851877257843,
+          "remaining_without_worst1_pct": -24.71765472207963,
+          "remaining_without_worst3_pct": -20.396754470181566
+        },
+        "D": {
+          "closed_n": 129.0,
+          "remaining_return_sum_pct": -27.829023891046123,
+          "remaining_without_worst1_pct": -24.41631525073126,
+          "remaining_without_worst3_pct": -19.56850362159245
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|DONCHIAN_BO_20|TIME_CAP_5",
+      "pair": "CAD",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 44.0,
+          "remaining_return_sum_pct": -15.702429592239952,
+          "remaining_without_worst1_pct": -12.385977454916564,
+          "remaining_without_worst3_pct": -6.901808315783963
+        },
+        "D2": {
+          "closed_n": 43.0,
+          "remaining_return_sum_pct": -14.499923334462094,
+          "remaining_without_worst1_pct": -11.604350672233476,
+          "remaining_without_worst3_pct": -6.970699344402375
+        },
+        "D": {
+          "closed_n": 88.0,
+          "remaining_return_sum_pct": -32.096847100349244,
+          "remaining_without_worst1_pct": -28.780394963025856,
+          "remaining_without_worst3_pct": -22.979862665991554
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|DONCHIAN_BO_20|TIME_CAP_10",
+      "pair": "CAD",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 30.0,
+          "remaining_return_sum_pct": -6.6097256808006275,
+          "remaining_without_worst1_pct": -1.757115614329253,
+          "remaining_without_worst3_pct": 4.653946807106234
+        },
+        "D2": {
+          "closed_n": 32.0,
+          "remaining_return_sum_pct": -13.624769442227814,
+          "remaining_without_worst1_pct": -10.41280755618681,
+          "remaining_without_worst3_pct": -6.999654799679856
+        },
+        "D": {
+          "closed_n": 63.0,
+          "remaining_return_sum_pct": -22.280633027143498,
+          "remaining_without_worst1_pct": -17.428022960672124,
+          "remaining_without_worst3_pct": -10.431659675421773
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|DONCHIAN_BO_20|TIME_CAP_20",
+      "pair": "CAD",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 11.0,
+          "remaining_return_sum_pct": -5.019456046467419,
+          "remaining_without_worst1_pct": -1.163688930861329,
+          "remaining_without_worst3_pct": 3.2003631143039284
+        },
+        "D2": {
+          "closed_n": 13.0,
+          "remaining_return_sum_pct": -5.508848450996462,
+          "remaining_without_worst1_pct": -3.784554827338593,
+          "remaining_without_worst3_pct": -1.4590325983241499
+        },
+        "D": {
+          "closed_n": 24.0,
+          "remaining_return_sum_pct": -10.528304497463882,
+          "remaining_without_worst1_pct": -6.672537381857792,
+          "remaining_without_worst3_pct": -2.235672031543679
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|MACD_12_26_9|TIME_CAP_5",
+      "pair": "CAD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 73.0,
+          "remaining_return_sum_pct": -31.626027560496055,
+          "remaining_without_worst1_pct": -25.916711089904037,
+          "remaining_without_worst3_pct": -18.822790327726906
+        },
+        "D2": {
+          "closed_n": 75.0,
+          "remaining_return_sum_pct": -27.72003805913607,
+          "remaining_without_worst1_pct": -25.104712279842193,
+          "remaining_without_worst3_pct": -20.759581477964268
+        },
+        "D": {
+          "closed_n": 149.0,
+          "remaining_return_sum_pct": -59.27576326207412,
+          "remaining_without_worst1_pct": -53.56644679148211,
+          "remaining_without_worst3_pct": -46.47252602930497
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|MACD_12_26_9|TIME_CAP_10",
+      "pair": "CAD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 56.0,
+          "remaining_return_sum_pct": -16.96595155609665,
+          "remaining_without_worst1_pct": -13.638631447316751,
+          "remaining_without_worst3_pct": -7.99266643546569
+        },
+        "D2": {
+          "closed_n": 54.0,
+          "remaining_return_sum_pct": -15.511987719301565,
+          "remaining_without_worst1_pct": -11.752263413224115,
+          "remaining_without_worst3_pct": -6.348111139996879
+        },
+        "D": {
+          "closed_n": 111.0,
+          "remaining_return_sum_pct": -34.625967343588385,
+          "remaining_without_worst1_pct": -30.866243037510934,
+          "remaining_without_worst3_pct": -24.15503762228002
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|MACD_12_26_9|TIME_CAP_20",
+      "pair": "CAD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 12.0,
+          "remaining_return_sum_pct": -7.070350575636718,
+          "remaining_without_worst1_pct": -2.3033936140903872,
+          "remaining_without_worst3_pct": 1.6049848854791993
+        },
+        "D2": {
+          "closed_n": 12.0,
+          "remaining_return_sum_pct": -2.6551430015965938,
+          "remaining_without_worst1_pct": -0.33848234738644845,
+          "remaining_without_worst3_pct": 1.410431198182538
+        },
+        "D": {
+          "closed_n": 24.0,
+          "remaining_return_sum_pct": -9.725493577233312,
+          "remaining_without_worst1_pct": -4.958536615686981,
+          "remaining_without_worst3_pct": 0.010997614409646417
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|MA_10_30|TIME_CAP_5",
+      "pair": "CAD",
+      "strategy": "MA_10_30",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 43.0,
+          "remaining_return_sum_pct": -0.4393522073098701,
+          "remaining_without_worst1_pct": 4.8361669155456735,
+          "remaining_without_worst3_pct": 12.021721810978152
+        },
+        "D2": {
+          "closed_n": 44.0,
+          "remaining_return_sum_pct": -7.09870753949686,
+          "remaining_without_worst1_pct": -3.8086305985282927,
+          "remaining_without_worst3_pct": 0.7259113131353443
+        },
+        "D": {
+          "closed_n": 88.0,
+          "remaining_return_sum_pct": -10.902733966094752,
+          "remaining_without_worst1_pct": -5.627214843239209,
+          "remaining_without_worst3_pct": 1.8120113578194044
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|RSI_MOM_7|TIME_CAP_10",
+      "pair": "CAD",
+      "strategy": "RSI_MOM_7",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 14.0,
+          "remaining_return_sum_pct": -2.766273830947929,
+          "remaining_without_worst1_pct": 0.789571253197408,
+          "remaining_without_worst3_pct": 5.455539378685193
+        },
+        "D2": {
+          "closed_n": 12.0,
+          "remaining_return_sum_pct": -3.482714074484139,
+          "remaining_without_worst1_pct": -2.476794372827662,
+          "remaining_without_worst3_pct": -1.04872136834957
+        },
+        "D": {
+          "closed_n": 26.0,
+          "remaining_return_sum_pct": -6.2489879054320685,
+          "remaining_without_worst1_pct": -2.6931428212867314,
+          "remaining_without_worst3_pct": 1.972825304201054
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|RSI_MR_14|TIME_CAP_5",
+      "pair": "CAD",
+      "strategy": "RSI_MR_14",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 10.0,
+          "remaining_return_sum_pct": -3.9700262344571358,
+          "remaining_without_worst1_pct": 1.3798752260563147,
+          "remaining_without_worst3_pct": 4.883900415018326
+        },
+        "D2": {
+          "closed_n": 10.0,
+          "remaining_return_sum_pct": -3.071203144599244,
+          "remaining_without_worst1_pct": 0.4381199084376286,
+          "remaining_without_worst3_pct": 4.474460753875565
+        },
+        "D": {
+          "closed_n": 20.0,
+          "remaining_return_sum_pct": -7.041229379056379,
+          "remaining_without_worst1_pct": -1.6913279185429282,
+          "remaining_without_worst3_pct": 4.401797673185859
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|TSMOM_21|TIME_CAP_5",
+      "pair": "CAD",
+      "strategy": "TSMOM_21",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 54.0,
+          "remaining_return_sum_pct": -4.12498854214957,
+          "remaining_without_worst1_pct": -0.7787624450558512,
+          "remaining_without_worst3_pct": 5.6417799270234
+        },
+        "D2": {
+          "closed_n": 48.0,
+          "remaining_return_sum_pct": -14.57812277122782,
+          "remaining_without_worst1_pct": -11.366160885186815,
+          "remaining_without_worst3_pct": -5.623548304317284
+        },
+        "D": {
+          "closed_n": 102.0,
+          "remaining_return_sum_pct": -18.70311131337739,
+          "remaining_without_worst1_pct": -15.356885216283672,
+          "remaining_without_worst3_pct": -8.828471192919281
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|TSMOM_21|TIME_CAP_10",
+      "pair": "CAD",
+      "strategy": "TSMOM_21",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 36.0,
+          "remaining_return_sum_pct": -16.827834091937113,
+          "remaining_without_worst1_pct": -11.853565502779254,
+          "remaining_without_worst3_pct": -3.3743092919740345
+        },
+        "D2": {
+          "closed_n": 38.0,
+          "remaining_return_sum_pct": -22.51817816211375,
+          "remaining_without_worst1_pct": -18.139258247561845,
+          "remaining_without_worst3_pct": -11.407730023497692
+        },
+        "D": {
+          "closed_n": 74.0,
+          "remaining_return_sum_pct": -39.34601225405085,
+          "remaining_without_worst1_pct": -34.37174366489299,
+          "remaining_without_worst3_pct": -25.14021368386971
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|VOTE_EQUAL_4|TIME_CAP_5",
+      "pair": "CAD",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 48.0,
+          "remaining_return_sum_pct": -18.908429536884675,
+          "remaining_without_worst1_pct": -15.591977399561287,
+          "remaining_without_worst3_pct": -10.03414418886912
+        },
+        "D2": {
+          "closed_n": 47.0,
+          "remaining_return_sum_pct": -18.344366266716765,
+          "remaining_without_worst1_pct": -15.448793604488147,
+          "remaining_without_worst3_pct": -10.724554934817103
+        },
+        "D": {
+          "closed_n": 96.0,
+          "remaining_return_sum_pct": -39.14728997724863,
+          "remaining_without_worst1_pct": -35.830837839925245,
+          "remaining_without_worst3_pct": -30.030305542890943
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|VOTE_EQUAL_4|TIME_CAP_10",
+      "pair": "CAD",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 33.0,
+          "remaining_return_sum_pct": -14.480605335930054,
+          "remaining_without_worst1_pct": -9.62799526945868,
+          "remaining_without_worst3_pct": -2.1017105683277997
+        },
+        "D2": {
+          "closed_n": 33.0,
+          "remaining_return_sum_pct": -13.710070969896403,
+          "remaining_without_worst1_pct": -10.326185663445386,
+          "remaining_without_worst3_pct": -6.913032906938431
+        },
+        "D": {
+          "closed_n": 67.0,
+          "remaining_return_sum_pct": -30.236814209941524,
+          "remaining_without_worst1_pct": -25.38420414347015,
+          "remaining_without_worst3_pct": -17.85791944233927
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|VOTE_EQUAL_4|TIME_CAP_20",
+      "pair": "CAD",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 12.0,
+          "remaining_return_sum_pct": -6.918026490320683,
+          "remaining_without_worst1_pct": -3.0622593747145928,
+          "remaining_without_worst3_pct": 1.6689886378892798
+        },
+        "D2": {
+          "closed_n": 14.0,
+          "remaining_return_sum_pct": -6.339022245096361,
+          "remaining_without_worst1_pct": -4.066037430106007,
+          "remaining_without_worst3_pct": -1.5006727330743939
+        },
+        "D": {
+          "closed_n": 26.0,
+          "remaining_return_sum_pct": -13.257048735417044,
+          "remaining_without_worst1_pct": -9.401281619810954,
+          "remaining_without_worst3_pct": -4.415725078164357
+        }
+      }
+    },
+    {
+      "candidate_id": "CAD|VOTE_STRENGTH_4|TIME_CAP_5",
+      "pair": "CAD",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 40.0,
+          "remaining_return_sum_pct": -4.789820831139279,
+          "remaining_without_worst1_pct": -1.0662834923555677,
+          "remaining_without_worst3_pct": 3.9197031650424776
+        },
+        "D2": {
+          "closed_n": 34.0,
+          "remaining_return_sum_pct": -11.266030104882807,
+          "remaining_without_worst1_pct": -8.280371335667846,
+          "remaining_without_worst3_pct": -3.2814615140845493
+        },
+        "D": {
+          "closed_n": 75.0,
+          "remaining_return_sum_pct": -18.451384110002373,
+          "remaining_without_worst1_pct": -14.727846771218662,
+          "remaining_without_worst3_pct": -9.223538882930177
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|BB_BO_20|TIME_CAP_10",
+      "pair": "CHF",
+      "strategy": "BB_BO_20",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 23.0,
+          "remaining_return_sum_pct": -11.54944644770206,
+          "remaining_without_worst1_pct": -6.609354126525757,
+          "remaining_without_worst3_pct": -1.558829731467192
+        },
+        "D2": {
+          "closed_n": 24.0,
+          "remaining_return_sum_pct": -1.6077579395908037,
+          "remaining_without_worst1_pct": 0.6657647441476233,
+          "remaining_without_worst3_pct": 4.45513336541995
+        },
+        "D": {
+          "closed_n": 48.0,
+          "remaining_return_sum_pct": -13.89420171681186,
+          "remaining_without_worst1_pct": -8.954109395635557,
+          "remaining_without_worst3_pct": -3.8012275943171687
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|BB_MR_10|TIME_CAP_5",
+      "pair": "CHF",
+      "strategy": "BB_MR_10",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 32.0,
+          "remaining_return_sum_pct": -11.7957217366502,
+          "remaining_without_worst1_pct": -7.26293841687159,
+          "remaining_without_worst3_pct": 0.5083600160294619
+        },
+        "D2": {
+          "closed_n": 28.0,
+          "remaining_return_sum_pct": -22.41550577329052,
+          "remaining_without_worst1_pct": -16.88147146514287,
+          "remaining_without_worst3_pct": -7.03407803681044
+        },
+        "D": {
+          "closed_n": 60.0,
+          "remaining_return_sum_pct": -34.211227509940706,
+          "remaining_without_worst1_pct": -28.677193201793056,
+          "remaining_without_worst3_pct": -18.63164094191668
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|DONCHIAN_BO_20|TIME_CAP_20",
+      "pair": "CHF",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 15.0,
+          "remaining_return_sum_pct": -6.487309159983278,
+          "remaining_without_worst1_pct": -4.465097722994381,
+          "remaining_without_worst3_pct": -1.9788028030076168
+        },
+        "D2": {
+          "closed_n": 18.0,
+          "remaining_return_sum_pct": -3.0713141278859264,
+          "remaining_without_worst1_pct": -0.1468523832854447,
+          "remaining_without_worst3_pct": 4.106097784336971
+        },
+        "D": {
+          "closed_n": 33.0,
+          "remaining_return_sum_pct": -9.558623287869205,
+          "remaining_without_worst1_pct": -6.634161543268723,
+          "remaining_without_worst3_pct": -2.303635016482218
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|MACD_12_26_9|TIME_CAP_20",
+      "pair": "CHF",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 20.0,
+          "remaining_return_sum_pct": -4.192459715225284,
+          "remaining_without_worst1_pct": -0.8201958451525502,
+          "remaining_without_worst3_pct": 4.917999265521021
+        },
+        "D2": {
+          "closed_n": 17.0,
+          "remaining_return_sum_pct": -2.6489371004790763,
+          "remaining_without_worst1_pct": 0.9460547861223523,
+          "remaining_without_worst3_pct": 5.006226649012779
+        },
+        "D": {
+          "closed_n": 37.0,
+          "remaining_return_sum_pct": -6.841396815704357,
+          "remaining_without_worst1_pct": -3.2464049291029284,
+          "remaining_without_worst3_pct": 3.129028714456485
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|MA_10_30|TIME_CAP_10",
+      "pair": "CHF",
+      "strategy": "MA_10_30",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 40.0,
+          "remaining_return_sum_pct": -36.47128641147928,
+          "remaining_without_worst1_pct": -28.307879307755556,
+          "remaining_without_worst3_pct": -17.26674666443181
+        },
+        "D2": {
+          "closed_n": 38.0,
+          "remaining_return_sum_pct": -13.253076622730365,
+          "remaining_without_worst1_pct": -8.696256662691438,
+          "remaining_without_worst3_pct": -2.894455991421397
+        },
+        "D": {
+          "closed_n": 79.0,
+          "remaining_return_sum_pct": -51.54812122548536,
+          "remaining_without_worst1_pct": -43.38471412176164,
+          "remaining_without_worst3_pct": -32.29623169174863
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|MA_10_30|TIME_CAP_20",
+      "pair": "CHF",
+      "strategy": "MA_10_30",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 29.0,
+          "remaining_return_sum_pct": -35.47904110832421,
+          "remaining_without_worst1_pct": -25.760791386429965,
+          "remaining_without_worst3_pct": -17.492644933944295
+        },
+        "D2": {
+          "closed_n": 23.0,
+          "remaining_return_sum_pct": -12.670122746785227,
+          "remaining_without_worst1_pct": -8.91218715096138,
+          "remaining_without_worst3_pct": -1.699497706970785
+        },
+        "D": {
+          "closed_n": 53.0,
+          "remaining_return_sum_pct": -48.18844886787706,
+          "remaining_without_worst1_pct": -38.47019914598281,
+          "remaining_without_worst3_pct": -30.20205269349714
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|MA_20_60|TIME_CAP_5",
+      "pair": "CHF",
+      "strategy": "MA_20_60",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 25.0,
+          "remaining_return_sum_pct": -12.8848509738546,
+          "remaining_without_worst1_pct": -6.267865280484808,
+          "remaining_without_worst3_pct": 4.00395378405387
+        },
+        "D2": {
+          "closed_n": 21.0,
+          "remaining_return_sum_pct": -0.047022842137399046,
+          "remaining_without_worst1_pct": 4.880529490743325,
+          "remaining_without_worst3_pct": 12.210198500614855
+        },
+        "D": {
+          "closed_n": 47.0,
+          "remaining_return_sum_pct": -9.592511243682594,
+          "remaining_without_worst1_pct": -2.9755255503128017,
+          "remaining_without_worst3_pct": 8.217591938023197
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|RSI_MOM_7|TIME_CAP_10",
+      "pair": "CHF",
+      "strategy": "RSI_MOM_7",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 18.0,
+          "remaining_return_sum_pct": -1.8497306028717464,
+          "remaining_without_worst1_pct": 2.399250591959767,
+          "remaining_without_worst3_pct": 4.699808362249813
+        },
+        "D2": {
+          "closed_n": 19.0,
+          "remaining_return_sum_pct": -0.6471600415546175,
+          "remaining_without_worst1_pct": 6.044463189688388,
+          "remaining_without_worst3_pct": 7.389688635912606
+        },
+        "D": {
+          "closed_n": 37.0,
+          "remaining_return_sum_pct": -2.4968906444263643,
+          "remaining_without_worst1_pct": 4.194732586816641,
+          "remaining_without_worst3_pct": 9.637149677202771
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|TSMOM_21|TIME_CAP_10",
+      "pair": "CHF",
+      "strategy": "TSMOM_21",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 35.0,
+          "remaining_return_sum_pct": -14.918015187743773,
+          "remaining_without_worst1_pct": -9.73479669142544,
+          "remaining_without_worst3_pct": -3.2284520276908317
+        },
+        "D2": {
+          "closed_n": 35.0,
+          "remaining_return_sum_pct": -7.484906242218345,
+          "remaining_without_worst1_pct": -3.013355160227757,
+          "remaining_without_worst3_pct": 3.058663431579781
+        },
+        "D": {
+          "closed_n": 71.0,
+          "remaining_return_sum_pct": -25.56853265595371,
+          "remaining_without_worst1_pct": -20.385314159635378,
+          "remaining_without_worst3_pct": -11.483337349714194
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|TSMOM_21|TIME_CAP_20",
+      "pair": "CHF",
+      "strategy": "TSMOM_21",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 24.0,
+          "remaining_return_sum_pct": -8.588618064693154,
+          "remaining_without_worst1_pct": -6.328216694041988,
+          "remaining_without_worst3_pct": -3.421885619830123
+        },
+        "D2": {
+          "closed_n": 25.0,
+          "remaining_return_sum_pct": -17.372267068231814,
+          "remaining_without_worst1_pct": -5.189245949029184,
+          "remaining_without_worst3_pct": 1.8627137157113296
+        },
+        "D": {
+          "closed_n": 50.0,
+          "remaining_return_sum_pct": -27.63070806903079,
+          "remaining_without_worst1_pct": -15.447686949828158,
+          "remaining_without_worst3_pct": -8.395727285087645
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|VOTE_EQUAL_4|TIME_CAP_20",
+      "pair": "CHF",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 15.0,
+          "remaining_return_sum_pct": -2.8677575197425416,
+          "remaining_without_worst1_pct": -0.531916073267968,
+          "remaining_without_worst3_pct": 2.547761731095921
+        },
+        "D2": {
+          "closed_n": 19.0,
+          "remaining_return_sum_pct": -8.259600938421974,
+          "remaining_without_worst1_pct": -3.827980188546432,
+          "remaining_without_worst3_pct": 0.4249699790759838
+        },
+        "D": {
+          "closed_n": 34.0,
+          "remaining_return_sum_pct": -11.127358458164515,
+          "remaining_without_worst1_pct": -6.6957377082889735,
+          "remaining_without_worst3_pct": -2.0515811720167925
+        }
+      }
+    },
+    {
+      "candidate_id": "CHF|VOTE_STRENGTH_4|TIME_CAP_20",
+      "pair": "CHF",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 19.0,
+          "remaining_return_sum_pct": -10.445897222906861,
+          "remaining_without_worst1_pct": -5.655644671320301,
+          "remaining_without_worst3_pct": -0.08372755652813346
+        },
+        "D2": {
+          "closed_n": 19.0,
+          "remaining_return_sum_pct": -1.4881274265284858,
+          "remaining_without_worst1_pct": 2.991338845402768,
+          "remaining_without_worst3_pct": 9.234408556751394
+        },
+        "D": {
+          "closed_n": 39.0,
+          "remaining_return_sum_pct": -13.658260121189613,
+          "remaining_without_worst1_pct": -8.868007569603053,
+          "remaining_without_worst3_pct": -0.6306057018479532
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|BB_MR_10|TIME_CAP_10",
+      "pair": "EUR",
+      "strategy": "BB_MR_10",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 15.0,
+          "remaining_return_sum_pct": -4.212850452099748,
+          "remaining_without_worst1_pct": -0.5689358156898643,
+          "remaining_without_worst3_pct": 5.340382392180554
+        },
+        "D2": {
+          "closed_n": 15.0,
+          "remaining_return_sum_pct": -0.4981528064738612,
+          "remaining_without_worst1_pct": 1.629148096707001,
+          "remaining_without_worst3_pct": 3.4942024729150427
+        },
+        "D": {
+          "closed_n": 30.0,
+          "remaining_return_sum_pct": -4.711003258573609,
+          "remaining_without_worst1_pct": -1.0670886221637246,
+          "remaining_without_worst3_pct": 4.8422295857066935
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|MACD_12_26_9|TIME_CAP_20",
+      "pair": "EUR",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 23.0,
+          "remaining_return_sum_pct": -3.66451056776418,
+          "remaining_without_worst1_pct": -1.1848962399896203,
+          "remaining_without_worst3_pct": 3.3566588193016265
+        },
+        "D2": {
+          "closed_n": 14.0,
+          "remaining_return_sum_pct": -0.5145120681333881,
+          "remaining_without_worst1_pct": 2.9920596528318355,
+          "remaining_without_worst3_pct": 6.027048351381481
+        },
+        "D": {
+          "closed_n": 37.0,
+          "remaining_return_sum_pct": -4.179022635897569,
+          "remaining_without_worst1_pct": -0.6724509149323454,
+          "remaining_without_worst3_pct": 4.272583230146131
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|MA_10_30|TIME_CAP_10",
+      "pair": "EUR",
+      "strategy": "MA_10_30",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 35.0,
+          "remaining_return_sum_pct": -5.33816585551512,
+          "remaining_without_worst1_pct": 2.7921068864775194,
+          "remaining_without_worst3_pct": 12.221518028815604
+        },
+        "D2": {
+          "closed_n": 36.0,
+          "remaining_return_sum_pct": -4.343821481589316,
+          "remaining_without_worst1_pct": -0.6437645905744138,
+          "remaining_without_worst3_pct": 4.894795188896261
+        },
+        "D": {
+          "closed_n": 72.0,
+          "remaining_return_sum_pct": -5.218717754738826,
+          "remaining_without_worst1_pct": 2.9115549872538136,
+          "remaining_without_worst3_pct": 12.340966129591898
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|MA_10_30|TIME_CAP_20",
+      "pair": "EUR",
+      "strategy": "MA_10_30",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 28.0,
+          "remaining_return_sum_pct": -4.559374435956499,
+          "remaining_without_worst1_pct": 2.231378944601113,
+          "remaining_without_worst3_pct": 9.666585532604586
+        },
+        "D2": {
+          "closed_n": 21.0,
+          "remaining_return_sum_pct": -2.8848267895567465,
+          "remaining_without_worst1_pct": 0.3057722164425707,
+          "remaining_without_worst3_pct": 6.5756248630823775
+        },
+        "D": {
+          "closed_n": 50.0,
+          "remaining_return_sum_pct": -2.03568545425078,
+          "remaining_without_worst1_pct": 4.7550679263068325,
+          "remaining_without_worst3_pct": 12.730776555802159
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|MA_20_60|TIME_CAP_5",
+      "pair": "EUR",
+      "strategy": "MA_20_60",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 27.0,
+          "remaining_return_sum_pct": -1.1394142659063373,
+          "remaining_without_worst1_pct": 7.765663045357627,
+          "remaining_without_worst3_pct": 16.844512000230658
+        },
+        "D2": {
+          "closed_n": 24.0,
+          "remaining_return_sum_pct": -9.323399464504753,
+          "remaining_without_worst1_pct": -5.15239108988049,
+          "remaining_without_worst3_pct": 1.4034725112881414
+        },
+        "D": {
+          "closed_n": 52.0,
+          "remaining_return_sum_pct": -0.4894916131270568,
+          "remaining_without_worst1_pct": 8.415585698136908,
+          "remaining_without_worst3_pct": 18.633633965122222
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|MA_20_60|TIME_CAP_10",
+      "pair": "EUR",
+      "strategy": "MA_20_60",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 25.0,
+          "remaining_return_sum_pct": -7.399218467231492,
+          "remaining_without_worst1_pct": -2.2396665791370545,
+          "remaining_without_worst3_pct": 7.584925303955215
+        },
+        "D2": {
+          "closed_n": 19.0,
+          "remaining_return_sum_pct": -10.209847485425882,
+          "remaining_without_worst1_pct": -4.959939105567745,
+          "remaining_without_worst3_pct": 3.0681113297718827
+        },
+        "D": {
+          "closed_n": 45.0,
+          "remaining_return_sum_pct": -7.556525687906333,
+          "remaining_without_worst1_pct": -2.306617308048196,
+          "remaining_without_worst3_pct": 7.80343035574419
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|RSI_MR_7|TIME_CAP_5",
+      "pair": "EUR",
+      "strategy": "RSI_MR_7",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 20.0,
+          "remaining_return_sum_pct": -6.316584230081224,
+          "remaining_without_worst1_pct": -2.871692266593107,
+          "remaining_without_worst3_pct": 1.4973660476003783
+        },
+        "D2": {
+          "closed_n": 30.0,
+          "remaining_return_sum_pct": -4.086309332114258,
+          "remaining_without_worst1_pct": 0.942119932095264,
+          "remaining_without_worst3_pct": 6.189712429767379
+        },
+        "D": {
+          "closed_n": 51.0,
+          "remaining_return_sum_pct": -9.775629785424268,
+          "remaining_without_worst1_pct": -4.747200521214746,
+          "remaining_without_worst3_pct": 1.502943341533424
+        }
+      }
+    },
+    {
+      "candidate_id": "EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "pair": "EUR",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 19.0,
+          "remaining_return_sum_pct": -12.611112298029326,
+          "remaining_without_worst1_pct": -7.064668467152558,
+          "remaining_without_worst3_pct": -2.9380520748473096
+        },
+        "D2": {
+          "closed_n": 19.0,
+          "remaining_return_sum_pct": -19.024356689903048,
+          "remaining_without_worst1_pct": -14.949846970283547,
+          "remaining_without_worst3_pct": -9.282188369642833
+        },
+        "D": {
+          "closed_n": 39.0,
+          "remaining_return_sum_pct": -26.49077352629781,
+          "remaining_without_worst1_pct": -20.944329695421043,
+          "remaining_without_worst3_pct": -13.960266625830414
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|BB_MR_10|TIME_CAP_5",
+      "pair": "GBP",
+      "strategy": "BB_MR_10",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 27.0,
+          "remaining_return_sum_pct": -13.784842845220272,
+          "remaining_without_worst1_pct": -6.208314395017991,
+          "remaining_without_worst3_pct": 4.354876401061301
+        },
+        "D2": {
+          "closed_n": 30.0,
+          "remaining_return_sum_pct": -0.24869900149725455,
+          "remaining_without_worst1_pct": 1.5833128734221047,
+          "remaining_without_worst3_pct": 4.50909468730668
+        },
+        "D": {
+          "closed_n": 57.0,
+          "remaining_return_sum_pct": -14.033541846717524,
+          "remaining_without_worst1_pct": -6.457013396515244,
+          "remaining_without_worst3_pct": 4.106177399564048
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|MA_10_30|TIME_CAP_10",
+      "pair": "GBP",
+      "strategy": "MA_10_30",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 41.0,
+          "remaining_return_sum_pct": -3.8997169670014333,
+          "remaining_without_worst1_pct": -0.6615394069721794,
+          "remaining_without_worst3_pct": 5.39392375615415
+        },
+        "D2": {
+          "closed_n": 39.0,
+          "remaining_return_sum_pct": -14.910635652296557,
+          "remaining_without_worst1_pct": -11.145247589179476,
+          "remaining_without_worst3_pct": -5.539337988828299
+        },
+        "D": {
+          "closed_n": 81.0,
+          "remaining_return_sum_pct": -20.8467448473753,
+          "remaining_without_worst1_pct": -17.08135678425822,
+          "remaining_without_worst3_pct": -10.634187443666935
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|MA_10_30|TIME_CAP_20",
+      "pair": "GBP",
+      "strategy": "MA_10_30",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 25.0,
+          "remaining_return_sum_pct": -4.439836801418096,
+          "remaining_without_worst1_pct": -0.6398809372888175,
+          "remaining_without_worst3_pct": 4.943866448204437
+        },
+        "D2": {
+          "closed_n": 25.0,
+          "remaining_return_sum_pct": -9.718801471223081,
+          "remaining_without_worst1_pct": -6.821232015237198,
+          "remaining_without_worst3_pct": -2.062378045629286
+        },
+        "D": {
+          "closed_n": 51.0,
+          "remaining_return_sum_pct": -15.878361872051755,
+          "remaining_without_worst1_pct": -12.078406007922476,
+          "remaining_without_worst3_pct": -5.820262397011005
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|MA_20_60|TIME_CAP_5",
+      "pair": "GBP",
+      "strategy": "MA_20_60",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 29.0,
+          "remaining_return_sum_pct": -0.49066084765897555,
+          "remaining_without_worst1_pct": 5.927301823132456,
+          "remaining_without_worst3_pct": 14.997930667776046
+        },
+        "D2": {
+          "closed_n": 21.0,
+          "remaining_return_sum_pct": -21.795922358054987,
+          "remaining_without_worst1_pct": -16.556256131136184,
+          "remaining_without_worst3_pct": -8.72689773166503
+        },
+        "D": {
+          "closed_n": 51.0,
+          "remaining_return_sum_pct": -16.68604154051559,
+          "remaining_without_worst1_pct": -10.268078869724157,
+          "remaining_without_worst3_pct": -0.3193488804964133
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|MA_20_60|TIME_CAP_10",
+      "pair": "GBP",
+      "strategy": "MA_20_60",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 28.0,
+          "remaining_return_sum_pct": -4.464051292015377,
+          "remaining_without_worst1_pct": 2.3669291593626003,
+          "remaining_without_worst3_pct": 10.887530887560175
+        },
+        "D2": {
+          "closed_n": 20.0,
+          "remaining_return_sum_pct": -9.57820050681888,
+          "remaining_without_worst1_pct": -5.133287083342919,
+          "remaining_without_worst3_pct": 2.638508335361811
+        },
+        "D": {
+          "closed_n": 49.0,
+          "remaining_return_sum_pct": -9.91406159306777,
+          "remaining_without_worst1_pct": -3.0830811416897923,
+          "remaining_without_worst3_pct": 5.925067274556428
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|MA_20_60|TIME_CAP_20",
+      "pair": "GBP",
+      "strategy": "MA_20_60",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 24.0,
+          "remaining_return_sum_pct": -4.471626264309847,
+          "remaining_without_worst1_pct": 0.30754264193306646,
+          "remaining_without_worst3_pct": 7.573375889807231
+        },
+        "D2": {
+          "closed_n": 17.0,
+          "remaining_return_sum_pct": -7.590278193176671,
+          "remaining_without_worst1_pct": -4.57195893216288,
+          "remaining_without_worst3_pct": 0.6033323466687381
+        },
+        "D": {
+          "closed_n": 42.0,
+          "remaining_return_sum_pct": -6.290988964098494,
+          "remaining_without_worst1_pct": -1.51182005785558,
+          "remaining_without_worst3_pct": 5.7540131900185845
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|RSI_MR_14|TIME_CAP_5",
+      "pair": "GBP",
+      "strategy": "RSI_MR_14",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 11.0,
+          "remaining_return_sum_pct": -0.7937788613458396,
+          "remaining_without_worst1_pct": 3.074373867884206,
+          "remaining_without_worst3_pct": 6.421546579355142
+        },
+        "D2": {
+          "closed_n": 13.0,
+          "remaining_return_sum_pct": -7.858955773504805,
+          "remaining_without_worst1_pct": -1.0466416567760923,
+          "remaining_without_worst3_pct": 3.874485778170401
+        },
+        "D": {
+          "closed_n": 24.0,
+          "remaining_return_sum_pct": -8.652734634850646,
+          "remaining_without_worst1_pct": -1.8404205181219329,
+          "remaining_without_worst3_pct": 5.492774830012669
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|RSI_MR_7|TIME_CAP_10",
+      "pair": "GBP",
+      "strategy": "RSI_MR_7",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 13.0,
+          "remaining_return_sum_pct": -5.20233085704842,
+          "remaining_without_worst1_pct": 3.084325667191102,
+          "remaining_without_worst3_pct": 5.653283196577419
+        },
+        "D2": {
+          "closed_n": 13.0,
+          "remaining_return_sum_pct": -2.3166590829504785,
+          "remaining_without_worst1_pct": -0.564441121501702,
+          "remaining_without_worst3_pct": 1.2571836495075317
+        },
+        "D": {
+          "closed_n": 27.0,
+          "remaining_return_sum_pct": -7.064281012132312,
+          "remaining_without_worst1_pct": 1.2223755121072095,
+          "remaining_without_worst3_pct": 4.393209700534584
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|VOTE_EQUAL_4|TIME_CAP_5",
+      "pair": "GBP",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 48.0,
+          "remaining_return_sum_pct": -2.2163221909988415,
+          "remaining_without_worst1_pct": 0.7252680957627002,
+          "remaining_without_worst3_pct": 5.325127813579301
+        },
+        "D2": {
+          "closed_n": 47.0,
+          "remaining_return_sum_pct": -5.519390017584771,
+          "remaining_without_worst1_pct": -2.548010609923515,
+          "remaining_without_worst3_pct": 2.300210233687558
+        },
+        "D": {
+          "closed_n": 96.0,
+          "remaining_return_sum_pct": -8.536788965118177,
+          "remaining_without_worst1_pct": -5.5654095574569205,
+          "remaining_without_worst3_pct": 0.02337553856312269
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|VOTE_EQUAL_4|TIME_CAP_10",
+      "pair": "GBP",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 33.0,
+          "remaining_return_sum_pct": -9.147483650961217,
+          "remaining_without_worst1_pct": -5.582936640774491,
+          "remaining_without_worst3_pct": -0.8705655786127675
+        },
+        "D2": {
+          "closed_n": 36.0,
+          "remaining_return_sum_pct": -0.23214882166472295,
+          "remaining_without_worst1_pct": 1.7884304522182934,
+          "remaining_without_worst3_pct": 5.251625867542
+        },
+        "D": {
+          "closed_n": 70.0,
+          "remaining_return_sum_pct": -11.353571978568096,
+          "remaining_without_worst1_pct": -7.789024968381371,
+          "remaining_without_worst3_pct": -3.044812544659001
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|VOTE_STRENGTH_4|TIME_CAP_5",
+      "pair": "GBP",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 47.0,
+          "remaining_return_sum_pct": -14.784491092338605,
+          "remaining_without_worst1_pct": -7.609401784125738,
+          "remaining_without_worst3_pct": 0.6323650670302818
+        },
+        "D2": {
+          "closed_n": 37.0,
+          "remaining_return_sum_pct": -5.457110684734488,
+          "remaining_without_worst1_pct": -2.4857312770732314,
+          "remaining_without_worst3_pct": 2.939873412743456
+        },
+        "D": {
+          "closed_n": 85.0,
+          "remaining_return_sum_pct": -22.118729595294496,
+          "remaining_without_worst1_pct": -14.943640287081628,
+          "remaining_without_worst3_pct": -6.701873435925609
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|VOTE_STRENGTH_4|TIME_CAP_10",
+      "pair": "GBP",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 33.0,
+          "remaining_return_sum_pct": -5.659860507815085,
+          "remaining_without_worst1_pct": -1.5139926739640268,
+          "remaining_without_worst3_pct": 4.953107963139391
+        },
+        "D2": {
+          "closed_n": 27.0,
+          "remaining_return_sum_pct": -9.889270830955919,
+          "remaining_without_worst1_pct": -7.231568195007319,
+          "remaining_without_worst3_pct": -2.907591548972686
+        },
+        "D": {
+          "closed_n": 61.0,
+          "remaining_return_sum_pct": -16.14071687298368,
+          "remaining_without_worst1_pct": -11.994849039132623,
+          "remaining_without_worst3_pct": -5.527748402029205
+        }
+      }
+    },
+    {
+      "candidate_id": "GBP|VOTE_STRENGTH_4|TIME_CAP_20",
+      "pair": "GBP",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 21.0,
+          "remaining_return_sum_pct": -6.441502005063538,
+          "remaining_without_worst1_pct": -2.227492215894933,
+          "remaining_without_worst3_pct": 4.55119913925025
+        },
+        "D2": {
+          "closed_n": 19.0,
+          "remaining_return_sum_pct": -6.105366768027965,
+          "remaining_without_worst1_pct": -3.386874990433631,
+          "remaining_without_worst3_pct": 0.24641050313983648
+        },
+        "D": {
+          "closed_n": 41.0,
+          "remaining_return_sum_pct": -12.112219247532897,
+          "remaining_without_worst1_pct": -7.898209458364292,
+          "remaining_without_worst3_pct": -1.119518103219109
+        }
+      }
+    },
+    {
+      "candidate_id": "JPY|BB_MR_10|TIME_CAP_5",
+      "pair": "JPY",
+      "strategy": "BB_MR_10",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 35.0,
+          "remaining_return_sum_pct": -3.4862532595576936,
+          "remaining_without_worst1_pct": 2.747895416955535,
+          "remaining_without_worst3_pct": 8.757374941383999
+        },
+        "D2": {
+          "closed_n": 22.0,
+          "remaining_return_sum_pct": -6.036762580005117,
+          "remaining_without_worst1_pct": -1.0426534516139956,
+          "remaining_without_worst3_pct": 5.767353376559058
+        },
+        "D": {
+          "closed_n": 58.0,
+          "remaining_return_sum_pct": -12.482187837520963,
+          "remaining_without_worst1_pct": -6.248039161007734,
+          "remaining_without_worst3_pct": 3.153145316097694
+        }
+      }
+    },
+    {
+      "candidate_id": "JPY|BB_MR_20|TIME_CAP_5",
+      "pair": "JPY",
+      "strategy": "BB_MR_20",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 34.0,
+          "remaining_return_sum_pct": -10.080903605485169,
+          "remaining_without_worst1_pct": -0.03259622970803733,
+          "remaining_without_worst3_pct": 8.6070860356091
+        },
+        "D2": {
+          "closed_n": 29.0,
+          "remaining_return_sum_pct": -7.5282505333966405,
+          "remaining_without_worst1_pct": 3.696205191924884,
+          "remaining_without_worst3_pct": 12.87330552702549
+        },
+        "D": {
+          "closed_n": 63.0,
+          "remaining_return_sum_pct": -17.609154138881813,
+          "remaining_without_worst1_pct": -6.384698413560288,
+          "remaining_without_worst3_pct": 9.446092130066546
+        }
+      }
+    },
+    {
+      "candidate_id": "JPY|MACD_12_26_9|TIME_CAP_10",
+      "pair": "JPY",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 50.0,
+          "remaining_return_sum_pct": -0.11337043007343484,
+          "remaining_without_worst1_pct": 3.8218431992182436,
+          "remaining_without_worst3_pct": 11.142355303752248
+        },
+        "D2": {
+          "closed_n": 46.0,
+          "remaining_return_sum_pct": -10.88201129453612,
+          "remaining_without_worst1_pct": -7.8198481124646,
+          "remaining_without_worst3_pct": -2.054276917209963
+        },
+        "D": {
+          "closed_n": 97.0,
+          "remaining_return_sum_pct": -11.967490861402396,
+          "remaining_without_worst1_pct": -8.032277232110719,
+          "remaining_without_worst3_pct": -0.7117651275767134
+        }
+      }
+    },
+    {
+      "candidate_id": "JPY|MA_10_30|TIME_CAP_10",
+      "pair": "JPY",
+      "strategy": "MA_10_30",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 38.0,
+          "remaining_return_sum_pct": -14.60473412586326,
+          "remaining_without_worst1_pct": -10.639047508958065,
+          "remaining_without_worst3_pct": -4.589440132704379
+        },
+        "D2": {
+          "closed_n": 36.0,
+          "remaining_return_sum_pct": -1.629789258566062,
+          "remaining_without_worst1_pct": 2.5822471358808987,
+          "remaining_without_worst3_pct": 7.109885921175607
+        },
+        "D": {
+          "closed_n": 75.0,
+          "remaining_return_sum_pct": -19.792088563289898,
+          "remaining_without_worst1_pct": -15.580052168842936,
+          "remaining_without_worst3_pct": -8.056800373077163
+        }
+      }
+    },
+    {
+      "candidate_id": "JPY|RSI_MR_14|TIME_CAP_5",
+      "pair": "JPY",
+      "strategy": "RSI_MR_14",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 15.0,
+          "remaining_return_sum_pct": -1.442719573268492,
+          "remaining_without_worst1_pct": 7.826620461777855,
+          "remaining_without_worst3_pct": 12.712365816079794
+        },
+        "D2": {
+          "closed_n": 14.0,
+          "remaining_return_sum_pct": -5.848965519477678,
+          "remaining_without_worst1_pct": 4.906209485734081,
+          "remaining_without_worst3_pct": 8.39685447680637
+        },
+        "D": {
+          "closed_n": 29.0,
+          "remaining_return_sum_pct": -7.291685092746173,
+          "remaining_without_worst1_pct": 3.4634899124655867,
+          "remaining_without_worst3_pct": 15.91570327265226
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|BB_BO_10|TIME_CAP_5",
+      "pair": "NOK",
+      "strategy": "BB_BO_10",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 28.0,
+          "remaining_return_sum_pct": -15.605638447161352,
+          "remaining_without_worst1_pct": -10.792849576675412,
+          "remaining_without_worst3_pct": -5.72762541602272
+        },
+        "D2": {
+          "closed_n": 34.0,
+          "remaining_return_sum_pct": -0.1120509609875655,
+          "remaining_without_worst1_pct": 1.9000951252159934,
+          "remaining_without_worst3_pct": 5.1682421944677746
+        },
+        "D": {
+          "closed_n": 62.0,
+          "remaining_return_sum_pct": -15.717689408148914,
+          "remaining_without_worst1_pct": -10.904900537662973,
+          "remaining_without_worst3_pct": -5.8396763770102815
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|BB_BO_10|TIME_CAP_10",
+      "pair": "NOK",
+      "strategy": "BB_BO_10",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 12.0,
+          "remaining_return_sum_pct": -11.478125210048194,
+          "remaining_without_worst1_pct": -7.265787850477944,
+          "remaining_without_worst3_pct": -1.9047762827979806
+        },
+        "D2": {
+          "closed_n": 13.0,
+          "remaining_return_sum_pct": -0.042393909447080436,
+          "remaining_without_worst1_pct": 1.5002615054931279,
+          "remaining_without_worst3_pct": 3.6957611146270053
+        },
+        "D": {
+          "closed_n": 25.0,
+          "remaining_return_sum_pct": -11.520519119495276,
+          "remaining_without_worst1_pct": -7.308181759925025,
+          "remaining_without_worst3_pct": -1.9471701922450624
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|BB_BO_20|TIME_CAP_20",
+      "pair": "NOK",
+      "strategy": "BB_BO_20",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 11.0,
+          "remaining_return_sum_pct": -1.1875020261642444,
+          "remaining_without_worst1_pct": 2.306987020574991,
+          "remaining_without_worst3_pct": 6.040572004999833
+        },
+        "D2": {
+          "closed_n": 10.0,
+          "remaining_return_sum_pct": -3.758583053360697,
+          "remaining_without_worst1_pct": 0.8832838039972817,
+          "remaining_without_worst3_pct": 5.778855944217366
+        },
+        "D": {
+          "closed_n": 21.0,
+          "remaining_return_sum_pct": -4.946085079524941,
+          "remaining_without_worst1_pct": -0.3042182221669627,
+          "remaining_without_worst3_pct": 6.797876711338493
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|BB_MR_20|TIME_CAP_5",
+      "pair": "NOK",
+      "strategy": "BB_MR_20",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 29.0,
+          "remaining_return_sum_pct": -23.246806718548115,
+          "remaining_without_worst1_pct": -11.045911042147189,
+          "remaining_without_worst3_pct": 3.6490362995398584
+        },
+        "D2": {
+          "closed_n": 26.0,
+          "remaining_return_sum_pct": -0.7705815212749245,
+          "remaining_without_worst1_pct": 5.099784189065328,
+          "remaining_without_worst3_pct": 13.47447488576682
+        },
+        "D": {
+          "closed_n": 56.0,
+          "remaining_return_sum_pct": -24.077916153708376,
+          "remaining_without_worst1_pct": -11.87702047730745,
+          "remaining_without_worst3_pct": 2.817926864379597
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|DONCHIAN_BO_10|TIME_CAP_5",
+      "pair": "NOK",
+      "strategy": "DONCHIAN_BO_10",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 55.0,
+          "remaining_return_sum_pct": -16.880517600071435,
+          "remaining_without_worst1_pct": -9.119817802798616,
+          "remaining_without_worst3_pct": -1.0175535798493875
+        },
+        "D2": {
+          "closed_n": 67.0,
+          "remaining_return_sum_pct": -22.078914447524152,
+          "remaining_without_worst1_pct": -17.48636172785096,
+          "remaining_without_worst3_pct": -10.125369793191247
+        },
+        "D": {
+          "closed_n": 122.0,
+          "remaining_return_sum_pct": -38.9594320475956,
+          "remaining_without_worst1_pct": -31.198732250322777,
+          "remaining_without_worst3_pct": -22.46120886877929
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|DONCHIAN_BO_10|TIME_CAP_10",
+      "pair": "NOK",
+      "strategy": "DONCHIAN_BO_10",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 28.0,
+          "remaining_return_sum_pct": -9.459257073172234,
+          "remaining_without_worst1_pct": -4.184047535233337,
+          "remaining_without_worst3_pct": 1.908912182461565
+        },
+        "D2": {
+          "closed_n": 28.0,
+          "remaining_return_sum_pct": -11.03541977882576,
+          "remaining_without_worst1_pct": -7.629983978384779,
+          "remaining_without_worst3_pct": -3.2148910324389153
+        },
+        "D": {
+          "closed_n": 56.0,
+          "remaining_return_sum_pct": -20.494676851997994,
+          "remaining_without_worst1_pct": -15.219467314059099,
+          "remaining_without_worst3_pct": -8.25127895788209
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|DONCHIAN_BO_20|TIME_CAP_20",
+      "pair": "NOK",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 15.0,
+          "remaining_return_sum_pct": -0.6206614510804052,
+          "remaining_without_worst1_pct": 1.9681468355374,
+          "remaining_without_worst3_pct": 6.074221446175766
+        },
+        "D2": {
+          "closed_n": 14.0,
+          "remaining_return_sum_pct": -8.829746288724104,
+          "remaining_without_worst1_pct": -4.187879431366126,
+          "remaining_without_worst3_pct": -0.44095432927493405
+        },
+        "D": {
+          "closed_n": 29.0,
+          "remaining_return_sum_pct": -9.450407739804511,
+          "remaining_without_worst1_pct": -4.8085408824465325,
+          "remaining_without_worst3_pct": -0.13603607888646962
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|MACD_12_26_9|TIME_CAP_5",
+      "pair": "NOK",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 68.0,
+          "remaining_return_sum_pct": -12.529253564930077,
+          "remaining_without_worst1_pct": -7.1470873646747535,
+          "remaining_without_worst3_pct": 0.944056694761187
+        },
+        "D2": {
+          "closed_n": 69.0,
+          "remaining_return_sum_pct": -6.4666522889902485,
+          "remaining_without_worst1_pct": -1.4322773894817509,
+          "remaining_without_worst3_pct": 5.813055152817526
+        },
+        "D": {
+          "closed_n": 138.0,
+          "remaining_return_sum_pct": -21.67877106816225,
+          "remaining_without_worst1_pct": -16.296604867906925,
+          "remaining_without_worst3_pct": -6.449441097912487
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|MACD_12_26_9|TIME_CAP_10",
+      "pair": "NOK",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 51.0,
+          "remaining_return_sum_pct": -10.289540573460876,
+          "remaining_without_worst1_pct": -6.077203213890625,
+          "remaining_without_worst3_pct": 1.277140150011281
+        },
+        "D2": {
+          "closed_n": 47.0,
+          "remaining_return_sum_pct": -8.49997943118078,
+          "remaining_without_worst1_pct": -3.755113460505042,
+          "remaining_without_worst3_pct": 1.94434988192981
+        },
+        "D": {
+          "closed_n": 99.0,
+          "remaining_return_sum_pct": -21.93406087263989,
+          "remaining_without_worst1_pct": -17.18919490196415,
+          "remaining_without_worst3_pct": -9.129216766473888
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|RSI_MOM_14|TIME_CAP_10",
+      "pair": "NOK",
+      "strategy": "RSI_MOM_14",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 14.0,
+          "remaining_return_sum_pct": -4.99148065633973,
+          "remaining_without_worst1_pct": -0.7946130227339143,
+          "remaining_without_worst3_pct": 2.2125643274693134
+        },
+        "D2": {
+          "closed_n": 12.0,
+          "remaining_return_sum_pct": -7.1943820976094415,
+          "remaining_without_worst1_pct": -4.005684218707639,
+          "remaining_without_worst3_pct": 0.10864149367486675
+        },
+        "D": {
+          "closed_n": 26.0,
+          "remaining_return_sum_pct": -12.18586275394917,
+          "remaining_without_worst1_pct": -7.988995120343354,
+          "remaining_without_worst3_pct": -2.009008783032339
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|RSI_MOM_7|TIME_CAP_10",
+      "pair": "NOK",
+      "strategy": "RSI_MOM_7",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 19.0,
+          "remaining_return_sum_pct": -12.134101981357816,
+          "remaining_without_worst1_pct": -6.459796831757782,
+          "remaining_without_worst3_pct": -1.7540480596439885
+        },
+        "D2": {
+          "closed_n": 11.0,
+          "remaining_return_sum_pct": -10.164756205170356,
+          "remaining_without_worst1_pct": -6.739846771317026,
+          "remaining_without_worst3_pct": -2.011373716902753
+        },
+        "D": {
+          "closed_n": 30.0,
+          "remaining_return_sum_pct": -22.29885818652817,
+          "remaining_without_worst1_pct": -16.624553036928138,
+          "remaining_without_worst3_pct": -9.794207802633826
+        }
+      }
+    },
+    {
+      "candidate_id": "NOK|VOTE_EQUAL_4|TIME_CAP_20",
+      "pair": "NOK",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 15.0,
+          "remaining_return_sum_pct": -2.7071341852381465,
+          "remaining_without_worst1_pct": 1.6018689935000552,
+          "remaining_without_worst3_pct": 6.274373797060118
+        },
+        "D2": {
+          "closed_n": 14.0,
+          "remaining_return_sum_pct": -10.153335318071052,
+          "remaining_without_worst1_pct": -5.511468460713074,
+          "remaining_without_worst3_pct": -1.5586043196690866
+        },
+        "D": {
+          "closed_n": 29.0,
+          "remaining_return_sum_pct": -12.8604695033092,
+          "remaining_without_worst1_pct": -8.218602645951222,
+          "remaining_without_worst3_pct": -1.320791180595215
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|BB_BO_20|TIME_CAP_5",
+      "pair": "NZD",
+      "strategy": "BB_BO_20",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 38.0,
+          "remaining_return_sum_pct": -6.318905140959961,
+          "remaining_without_worst1_pct": -1.3989234020961838,
+          "remaining_without_worst3_pct": 4.451439750996002
+        },
+        "D2": {
+          "closed_n": 38.0,
+          "remaining_return_sum_pct": -12.576110343001705,
+          "remaining_without_worst1_pct": -8.151835992026228,
+          "remaining_without_worst3_pct": -0.5950227959200127
+        },
+        "D": {
+          "closed_n": 76.0,
+          "remaining_return_sum_pct": -18.895015483961668,
+          "remaining_without_worst1_pct": -13.97503374509789,
+          "remaining_without_worst3_pct": -5.37977513979159
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|BB_BO_20|TIME_CAP_10",
+      "pair": "NZD",
+      "strategy": "BB_BO_20",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 30.0,
+          "remaining_return_sum_pct": -13.682671737074237,
+          "remaining_without_worst1_pct": -8.893855229160586,
+          "remaining_without_worst3_pct": -1.3889151361365162
+        },
+        "D2": {
+          "closed_n": 28.0,
+          "remaining_return_sum_pct": -0.05146838221947725,
+          "remaining_without_worst1_pct": 3.2192907841471774,
+          "remaining_without_worst3_pct": 6.775594019863573
+        },
+        "D": {
+          "closed_n": 58.0,
+          "remaining_return_sum_pct": -13.734140119293716,
+          "remaining_without_worst1_pct": -8.945323611380065,
+          "remaining_without_worst3_pct": -0.9559818114006546
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|DONCHIAN_BO_20|TIME_CAP_5",
+      "pair": "NZD",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 45.0,
+          "remaining_return_sum_pct": -6.595866567616449,
+          "remaining_without_worst1_pct": -1.6758848287526718,
+          "remaining_without_worst3_pct": 5.462545187305922
+        },
+        "D2": {
+          "closed_n": 44.0,
+          "remaining_return_sum_pct": -30.32733010178383,
+          "remaining_without_worst1_pct": -25.903055750808353,
+          "remaining_without_worst3_pct": -17.532177042253377
+        },
+        "D": {
+          "closed_n": 89.0,
+          "remaining_return_sum_pct": -36.92319666940028,
+          "remaining_without_worst1_pct": -32.0032149305365,
+          "remaining_without_worst3_pct": -23.36578626253449
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|DONCHIAN_BO_20|TIME_CAP_10",
+      "pair": "NZD",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 32.0,
+          "remaining_return_sum_pct": -10.025121512160684,
+          "remaining_without_worst1_pct": -5.581549264561203,
+          "remaining_without_worst3_pct": 0.2057685991568512
+        },
+        "D2": {
+          "closed_n": 32.0,
+          "remaining_return_sum_pct": -17.934958647023993,
+          "remaining_without_worst1_pct": -12.760481827315864,
+          "remaining_without_worst3_pct": -5.5211225969773245
+        },
+        "D": {
+          "closed_n": 64.0,
+          "remaining_return_sum_pct": -27.96008015918468,
+          "remaining_without_worst1_pct": -22.785603339476552,
+          "remaining_without_worst3_pct": -14.54195851283447
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|DONCHIAN_BO_20|TIME_CAP_20",
+      "pair": "NZD",
+      "strategy": "DONCHIAN_BO_20",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 10.0,
+          "remaining_return_sum_pct": -11.497453233931376,
+          "remaining_without_worst1_pct": -8.871352308351987,
+          "remaining_without_worst3_pct": -4.071946002472371
+        },
+        "D2": {
+          "closed_n": 12.0,
+          "remaining_return_sum_pct": -6.368893082578164,
+          "remaining_without_worst1_pct": -3.6980816339793328,
+          "remaining_without_worst3_pct": -0.09958178400777395
+        },
+        "D": {
+          "closed_n": 22.0,
+          "remaining_return_sum_pct": -17.866346316509546,
+          "remaining_without_worst1_pct": -15.195534867910714,
+          "remaining_without_worst3_pct": -10.13939192028191
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|MACD_12_26_9|TIME_CAP_10",
+      "pair": "NZD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 51.0,
+          "remaining_return_sum_pct": -24.38977300732731,
+          "remaining_without_worst1_pct": -19.671190373714555,
+          "remaining_without_worst3_pct": -11.39020700565544
+        },
+        "D2": {
+          "closed_n": 46.0,
+          "remaining_return_sum_pct": -19.704279666911173,
+          "remaining_without_worst1_pct": -14.748751760964717,
+          "remaining_without_worst3_pct": -6.283492543224355
+        },
+        "D": {
+          "closed_n": 98.0,
+          "remaining_return_sum_pct": -48.53536923322134,
+          "remaining_without_worst1_pct": -43.579841327274885,
+          "remaining_without_worst3_pct": -34.35899025784295
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|MACD_12_26_9|TIME_CAP_20",
+      "pair": "NZD",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 19.0,
+          "remaining_return_sum_pct": -23.59016475607521,
+          "remaining_without_worst1_pct": -17.818361462773343,
+          "remaining_without_worst3_pct": -12.115343375595849
+        },
+        "D2": {
+          "closed_n": 16.0,
+          "remaining_return_sum_pct": -0.16721357774029943,
+          "remaining_without_worst1_pct": 1.8603244007123765,
+          "remaining_without_worst3_pct": 4.423784276311504
+        },
+        "D": {
+          "closed_n": 35.0,
+          "remaining_return_sum_pct": -23.757378333815517,
+          "remaining_without_worst1_pct": -17.98557504051365,
+          "remaining_without_worst3_pct": -12.282556953336154
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|MA_10_30|TIME_CAP_10",
+      "pair": "NZD",
+      "strategy": "MA_10_30",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 36.0,
+          "remaining_return_sum_pct": -9.241510965506848,
+          "remaining_without_worst1_pct": 2.87261063691048,
+          "remaining_without_worst3_pct": 18.693526559248554
+        },
+        "D2": {
+          "closed_n": 38.0,
+          "remaining_return_sum_pct": -26.20415962975178,
+          "remaining_without_worst1_pct": -20.260607807338406,
+          "remaining_without_worst3_pct": -11.79784675467016
+        },
+        "D": {
+          "closed_n": 75.0,
+          "remaining_return_sum_pct": -36.73632634736,
+          "remaining_without_worst1_pct": -24.62220474494267,
+          "remaining_without_worst3_pct": -8.801288822604597
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|RSI_MOM_14|TIME_CAP_5",
+      "pair": "NZD",
+      "strategy": "RSI_MOM_14",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 26.0,
+          "remaining_return_sum_pct": -8.37733940086277,
+          "remaining_without_worst1_pct": -4.767676300787937,
+          "remaining_without_worst3_pct": 0.8218889683926829
+        },
+        "D2": {
+          "closed_n": 22.0,
+          "remaining_return_sum_pct": -0.6584180750268018,
+          "remaining_without_worst1_pct": 1.9462482317551535,
+          "remaining_without_worst3_pct": 6.819566346741489
+        },
+        "D": {
+          "closed_n": 48.0,
+          "remaining_return_sum_pct": -9.035757475889572,
+          "remaining_without_worst1_pct": -5.426094375814738,
+          "remaining_without_worst3_pct": 0.26486921444047695
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|RSI_MOM_20|TIME_CAP_5",
+      "pair": "NZD",
+      "strategy": "RSI_MOM_20",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 21.0,
+          "remaining_return_sum_pct": -2.247608813819045,
+          "remaining_without_worst1_pct": 1.3620542862557885,
+          "remaining_without_worst3_pct": 7.266490029173346
+        },
+        "D2": {
+          "closed_n": 17.0,
+          "remaining_return_sum_pct": -4.106694458714166,
+          "remaining_without_worst1_pct": -1.353700212342135,
+          "remaining_without_worst3_pct": 3.436313048970807
+        },
+        "D": {
+          "closed_n": 38.0,
+          "remaining_return_sum_pct": -6.354303272533212,
+          "remaining_without_worst1_pct": -2.744640172458378,
+          "remaining_without_worst3_pct": 3.1597955704591794
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|VOTE_EQUAL_4|TIME_CAP_5",
+      "pair": "NZD",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_5",
+      "filter_name": "Exit after 5 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_5",
+        "checkpoint_age": 5
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 51.0,
+          "remaining_return_sum_pct": -4.693174909347322,
+          "remaining_without_worst1_pct": 1.025560604235018,
+          "remaining_without_worst3_pct": 7.636364028879436
+        },
+        "D2": {
+          "closed_n": 51.0,
+          "remaining_return_sum_pct": -21.857604550064647,
+          "remaining_without_worst1_pct": -17.64445023303811,
+          "remaining_without_worst3_pct": -9.738398621258193
+        },
+        "D": {
+          "closed_n": 102.0,
+          "remaining_return_sum_pct": -26.550779459411974,
+          "remaining_without_worst1_pct": -20.832043945829632,
+          "remaining_without_worst3_pct": -12.46116523727466
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|VOTE_EQUAL_4|TIME_CAP_10",
+      "pair": "NZD",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 34.0,
+          "remaining_return_sum_pct": -9.172015273087975,
+          "remaining_without_worst1_pct": -2.75844483282628,
+          "remaining_without_worst3_pct": 3.290238198985916
+        },
+        "D2": {
+          "closed_n": 32.0,
+          "remaining_return_sum_pct": -19.822779413087932,
+          "remaining_without_worst1_pct": -15.570674512374106,
+          "remaining_without_worst3_pct": -7.971902120352837
+        },
+        "D": {
+          "closed_n": 66.0,
+          "remaining_return_sum_pct": -28.994794686175908,
+          "remaining_without_worst1_pct": -22.581224245914214,
+          "remaining_without_worst3_pct": -14.210611647313245
+        }
+      }
+    },
+    {
+      "candidate_id": "NZD|VOTE_EQUAL_4|TIME_CAP_20",
+      "pair": "NZD",
+      "strategy": "VOTE_EQUAL_4",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 14.0,
+          "remaining_return_sum_pct": -15.459105041093414,
+          "remaining_without_worst1_pct": -12.103225304203159,
+          "remaining_without_worst3_pct": -7.042224141897359
+        },
+        "D2": {
+          "closed_n": 14.0,
+          "remaining_return_sum_pct": -9.641629076744287,
+          "remaining_without_worst1_pct": -6.5782043667726136,
+          "remaining_without_worst3_pct": -1.0832684817353027
+        },
+        "D": {
+          "closed_n": 28.0,
+          "remaining_return_sum_pct": -25.100734117837696,
+          "remaining_without_worst1_pct": -21.74485438094744,
+          "remaining_without_worst3_pct": -15.857305234537288
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|BB_BO_10|TIME_CAP_10",
+      "pair": "SEK",
+      "strategy": "BB_BO_10",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 13.0,
+          "remaining_return_sum_pct": -4.210422304069229,
+          "remaining_without_worst1_pct": 2.2110998914049214,
+          "remaining_without_worst3_pct": 6.184224106281964
+        },
+        "D2": {
+          "closed_n": 14.0,
+          "remaining_return_sum_pct": -2.7021487592895244,
+          "remaining_without_worst1_pct": 0.4453240075900977,
+          "remaining_without_worst3_pct": 3.2695767262901243
+        },
+        "D": {
+          "closed_n": 27.0,
+          "remaining_return_sum_pct": -6.912571063358753,
+          "remaining_without_worst1_pct": -0.49104886788460256,
+          "remaining_without_worst3_pct": 5.26258380063801
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|BB_BO_20|TIME_CAP_10",
+      "pair": "SEK",
+      "strategy": "BB_BO_20",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 23.0,
+          "remaining_return_sum_pct": -6.884945889387137,
+          "remaining_without_worst1_pct": 1.1021431272198585,
+          "remaining_without_worst3_pct": 9.327537888987528
+        },
+        "D2": {
+          "closed_n": 22.0,
+          "remaining_return_sum_pct": -2.271205707478241,
+          "remaining_without_worst1_pct": -0.8642799707637372,
+          "remaining_without_worst3_pct": 1.7698784264834067
+        },
+        "D": {
+          "closed_n": 45.0,
+          "remaining_return_sum_pct": -9.156151596865374,
+          "remaining_without_worst1_pct": -1.1690625802583785,
+          "remaining_without_worst3_pct": 7.0563321815092905
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|MACD_12_26_9|TIME_CAP_20",
+      "pair": "SEK",
+      "strategy": "MACD_12_26_9",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 20.0,
+          "remaining_return_sum_pct": -0.22264397019214943,
+          "remaining_without_worst1_pct": 3.3043222622350705,
+          "remaining_without_worst3_pct": 7.571188994999766
+        },
+        "D2": {
+          "closed_n": 11.0,
+          "remaining_return_sum_pct": -5.81082211782681,
+          "remaining_without_worst1_pct": -3.5578843340696733,
+          "remaining_without_worst3_pct": -0.17316132180160793
+        },
+        "D": {
+          "closed_n": 31.0,
+          "remaining_return_sum_pct": -6.033466088018958,
+          "remaining_without_worst1_pct": -2.506499855591738,
+          "remaining_without_worst3_pct": 2.0645190302467586
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|MA_10_30|TIME_CAP_10",
+      "pair": "SEK",
+      "strategy": "MA_10_30",
+      "filter_id": "TIME_CAP_10",
+      "filter_name": "Exit after 10 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_10",
+        "checkpoint_age": 10
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 35.0,
+          "remaining_return_sum_pct": -5.728952073472327,
+          "remaining_without_worst1_pct": 0.390953443039753,
+          "remaining_without_worst3_pct": 10.817412405637683
+        },
+        "D2": {
+          "closed_n": 34.0,
+          "remaining_return_sum_pct": -11.473660431146449,
+          "remaining_without_worst1_pct": -7.966894334167085,
+          "remaining_without_worst3_pct": -2.5390398457987757
+        },
+        "D": {
+          "closed_n": 70.0,
+          "remaining_return_sum_pct": -20.182209044039638,
+          "remaining_without_worst1_pct": -14.062303527527558,
+          "remaining_without_worst3_pct": -3.635844564929627
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|MA_20_60|TIME_CAP_20",
+      "pair": "SEK",
+      "strategy": "MA_20_60",
+      "filter_id": "TIME_CAP_20",
+      "filter_name": "Exit after 20 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_20",
+        "checkpoint_age": 20
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 21.0,
+          "remaining_return_sum_pct": -12.318682428314908,
+          "remaining_without_worst1_pct": -2.6251798705494753,
+          "remaining_without_worst3_pct": 6.246874576199335
+        },
+        "D2": {
+          "closed_n": 17.0,
+          "remaining_return_sum_pct": -3.4255194560101625,
+          "remaining_without_worst1_pct": 4.334251563073443,
+          "remaining_without_worst3_pct": 9.756389325367653
+        },
+        "D": {
+          "closed_n": 39.0,
+          "remaining_return_sum_pct": -14.669356375580275,
+          "remaining_without_worst1_pct": -4.975853817814842,
+          "remaining_without_worst3_pct": 7.4543194146000324
+        }
+      }
+    },
+    {
+      "candidate_id": "SEK|MA_20_60|TIME_CAP_40",
+      "pair": "SEK",
+      "strategy": "MA_20_60",
+      "filter_id": "TIME_CAP_40",
+      "filter_name": "Exit after 40 earned returns",
+      "is_new": true,
+      "spec": {
+        "id": "TIME_CAP_40",
+        "checkpoint_age": 40
+      },
+      "discovery_evidence": {
+        "D1": {
+          "closed_n": 13.0,
+          "remaining_return_sum_pct": -6.123822014622261,
+          "remaining_without_worst1_pct": -0.189529117542099,
+          "remaining_without_worst3_pct": 7.973054794250599
+        },
+        "D2": {
+          "closed_n": 11.0,
+          "remaining_return_sum_pct": -15.51020445436727,
+          "remaining_without_worst1_pct": -8.297453433761813,
+          "remaining_without_worst3_pct": -1.7169767278542345
+        },
+        "D": {
+          "closed_n": 25.0,
+          "remaining_return_sum_pct": -24.12528100398609,
+          "remaining_without_worst1_pct": -16.912529983380633,
+          "remaining_without_worst3_pct": -6.190507564204587
+        }
+      }
+    }
+  ]
+}

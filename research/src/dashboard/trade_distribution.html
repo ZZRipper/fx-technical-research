@@ -1,0 +1,51 @@
+<section id="trade-distribution" hidden aria-label="Trade Profit Distribution">
+ <section class="panel pd-intro">
+  <div class="scope">Baseline · all nine USD pairs · completed trades</div>
+  <h2>Trade Profit Distribution</h2>
+  <p>How trades make and lose money, and how concentrated the profits are.</p>
+  <div class="pd-controls">
+   <div class="field"><label for="td-pair">Currency pair</label><select id="td-pair"></select></div>
+   <div class="field pd-family-field"><label for="td-rule">Strategy / parameter</label><select id="td-rule"></select></div>
+   <div class="field"><label for="td-from">Closed from</label><input type="date" id="td-from"></div>
+   <div class="field"><label for="td-to">Closed through</label><input type="date" id="td-to"></div>
+  </div>
+  <div id="td-presets" class="pd-presets"></div>
+  <p id="td-rule-note" class="pd-note"></p>
+  <p class="pd-note"><b>Exit-date cohort:</b> completed trades closing within these dates, with at least one earned daily return. Include each trade’s entire PnL, even if entry precedes the window. Fixed $100,000 exposure; no compounding, costs or carry. Historical diagnostics, not a new OOS test.</p>
+  <p id="td-error" class="error" role="alert" hidden></p>
+ </section>
+ <div id="td-content">
+  <section class="panel pd-section">
+   <div class="section-heading"><h2 id="td-title"></h2><span class="pd-badge">Original Baseline</span></div>
+   <div id="td-cards" class="td-cards"></div>
+   <p id="td-cohort-note" class="pd-note"></p>
+   <p id="td-small" class="pd-note"></p>
+  </section>
+  <section class="panel pd-section">
+   <h2>Trade PnL distribution</h2>
+   <p class="pd-note">One observation per completed trade. Losses on the left, profits on the right. Equal-width bins include the full range; hover a bar for its range and count.</p>
+   <div id="td-histogram" class="pd-svg"></div>
+   <div id="td-reconcile" class="table-wrap"></div>
+  </section>
+  <section class="panel pd-section">
+   <h2>Profit concentration</h2>
+   <p class="pd-note">Winning trades ranked from largest to smallest. The curve shows their cumulative share of gross profit. The diagonal represents equal profit per winning trade.</p>
+   <div id="td-concentration" class="pd-svg"></div>
+   <div id="td-top" class="table-wrap"></div>
+   <p class="pd-note">Gross profit is the sum of winning-trade PnL. “Net PnL excluding top winners” subtracts those profits from this closed-trade cohort only; it does not rerun the strategy or identify removable trades in advance. A concentrated profit profile does not by itself invalidate a trend strategy.</p>
+  </section>
+  <section class="panel pd-section">
+   <details id="td-ledger-details"><summary>Trade details</summary>
+    <div class="pd-controls"><div class="field"><label for="td-sort">Sort trades</label><select id="td-sort"><option value="recent">Most recent exit</option><option value="winner">Largest profit</option><option value="loser">Largest loss</option><option value="absolute">Largest absolute PnL</option></select></div></div>
+    <div id="td-ledger" class="table-wrap"></div>
+    <div class="pd-presets"><button id="td-prev" type="button">Previous</button><span id="td-page"></span><button id="td-next" type="button">Next</button></div>
+   </details>
+   <details class="pd-method"><summary>Accounting &amp; cohort definitions</summary>
+    <p>Trade PnL = $100,000 × the sum of its daily strategy returns. Direction is long or short foreign currency against USD. Holding days are earned FX return intervals, not calendar days. Original execution and exit rules are unchanged.</p>
+    <p>Win rate = winning completed trades / all eligible completed trades, including flat trades. Average loss is an absolute amount. Payoff = average win / absolute average loss. A dash means undefined. Flat tolerance matches the main explorer: ±0.0000000001 percentage points of trade return.</p>
+    <p>Cross-window entries are completed trades in this cohort that opened before the selected start; their entire trade PnL is included and marked in the ledger. Open at end counts positions entered by the selected end that have not yet closed then, including positions that close later in the full dataset. Their PnL is excluded from the distribution. Trades with no earned return interval are excluded and counted separately.</p>
+    <p>The main PnL Explorer sums daily PnL within the date window. This module groups entire trades by exit date. The totals can differ because of pre-window earnings and positions still open at the end. No future part of an open trade is included in this cohort.</p>
+   </details>
+  </section>
+ </div>
+</section>

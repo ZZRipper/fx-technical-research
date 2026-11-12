@@ -1,0 +1,565 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JPY 固定状态过滤：原综合标准补充评估</title><style>
+*{box-sizing:border-box}body{margin:0;color:#193341;background:#f2f5f7;font:15px/1.7 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1400px;margin:auto;padding:30px 26px 50px}h1{font-size:29px;line-height:1.4}h2{font-size:22px;margin:0 0 12px}p{max-width:1180px}section{background:white;border:1px solid #dce5ea;padding:24px;margin:22px 0}.outcome{border-left:5px solid #b87c26;background:#fff4de}.outcome p{font-weight:600;font-size:18px}.muted{color:#627784;font-size:13px}.note{border-left:4px solid #16878a;background:#eaf5f6;padding:12px 16px}.table-wrap{overflow-x:auto;margin:14px 0}table{border-collapse:collapse;width:100%;font-size:12px;min-width:640px}th,td{text-align:left;padding:9px 10px;border:1px solid #dce5ea;vertical-align:top}th{background:#edf3f6;white-space:nowrap}tr:nth-child(even){background:#f8fafb}img{width:100%;height:auto}a{color:#006c78}details{margin-top:16px;border-top:1px solid #dce5ea;padding-top:12px}summary{cursor:pointer;font-weight:600}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}footer{font-size:12px;color:#627784}@media(max-width:650px){main{padding:18px 12px}section{padding:18px 12px}h1{font-size:24px}}
+</style></head><body><main><h1>JPY 固定状态过滤：原综合标准补充评估</h1><p class="muted">单一固定候选 · 成本 0 · 固定本金单利 · 已观察历史重复验证</p><section class="outcome"><h2>本次补充评估状态</h2><p>固定 JPY 候选的补充历史 OOS 评估已完成：预写曲线标准未通过，交易质量另行确认未通过。本候选未达到本次补充评估的预写 OOS 曲线目标。</p></section>
+<section><h2>为何单独补充</h2><p>本报告只评估固定候选 <strong>JPY · BB_MR_20 · STATE_efficiency_63_1</strong>。规则参数在 C 前已经锁定；<strong>看到 C 确认结果后</strong>，按用户此前确认的原综合标准，决定只对这个原先已锁定的 JPY 候选进行<strong>单独补充验证</strong>。因此，规则锁定发生在 C 前，补充晋级决策发生在 C 后，不能将本次补充称为统计独立验证。</p><p>该候选满足用户原综合 IS 标准；严格 v2 的额外时间确认与稳健性要求仍未通过：确认期 FILTER 只有 <strong>4 笔闭合亏损交易，少于 5 笔</strong>，且 RECENT 的改善集中于最有利的前三个原始交易，去掉其贡献后改善不再为正。这些额外门槛在本补充中用于披露限制；不把严格 v2 失败改成通过，不回写严格 v2 的筛选、冻结或结论，也不会在看到本次 OOS 后改规则、改阈值或补选其他候选。</p><p class="note">三年 OOS 是此前已经观察过的历史区间。本次运行隔离开发与评价流程，但属于历史重复验证，不能称为从未看过的新样本或新增的独立证据。</p></section>
+<section><h2>固定规则与收益口径</h2><p>BASE 使用 JPY 的 BB_MR_20。每个原始交易段在其<strong>信号日</strong>检查 efficiency_63：若 <code>0.1 ≤ efficiency_63 &lt; 0.2</code>，拒绝该整个原始交易段；区间外保留，特征缺失也保留。没有交易段内重新入场或根据后续收益改变拒绝条件。</p>
+<p>固定初始本金 $100,000，成本为 0，每日收益按初始本金累加；单利年化为累计收益除以实际日历年数。信号 t → t+1 收盘执行 → t+2 首次收益。IS 为 2005-01-03—2023-05-29，历史 OOS 为 2023-05-30—2026-05-29。</p>
+<p>主口径跨 IS/OOS 保持持仓连续。图中两个面板各自将展示的累计 PnL 归零，并使用相同纵轴尺度；不因此强制平仓。最大回撤是负 pp。胜率、盈亏比只统计在本区间内开仓并闭合的合格交易，跨界及未闭合交易的每日收益仍计入主曲线。</p>
+<div class="table-wrap"><table><thead><tr><th>评价层次</th><th>条件</th></tr></thead><tbody><tr><td>用户原综合 IS 标准</td><td>单利年化 ≥1%；累计相对 BASE 改善 ≥5 pp；胜率改善 ≥2 pp；盈亏比相对改善 ≥10%；收益/回撤比改善；回撤恶化 ≤2 pp；闭合 ≥50 笔、保留率 ≥50%；至少两个 IS 分段收益为正、至少两个分段改善，末段须同时为正并改善。</td></tr><tr><td>预写历史 OOS 曲线标准</td><td>单利年化 ≥1%；相对 BASE 累计改善 ≥0 pp；最大回撤 ≥-15 pp；三个周年至少 2 个正收益；闭合交易 ≥10 笔。</td></tr><tr><td>OOS 质量另行确认</td><td>闭合交易至少 20 笔，且胜率与盈亏比均不低于 BASE；曲线通过与质量确认分别展示。</td></tr></tbody></table></div>
+</section>
+<section><h2>IS 与 OOS 主曲线</h2>
+<p><a href="jpy_is_oos_comparison.pdf">下载单页 PDF</a> · <a href="figures/jpy_is_oos_comparison.png">下载 PNG</a></p><img src="figures/jpy_is_oos_comparison.png" alt="JPY BASE/FILTER: IS and historical OOS cumulative simple return comparison">
+<div class="table-wrap"><table><thead><tr><th>区间</th><th>实际起始日</th><th>实际结束日</th><th>版本</th><th>单利累计</th><th>单利年化</th><th>最大回撤 pp</th><th>胜率</th><th>盈亏比</th><th>闭合笔数</th><th>盈利笔数</th><th>亏损笔数</th><th>闭合保留率</th><th>跨界交易数</th><th>期内开仓未平数</th><th>闭合少于 20 笔</th></tr></thead><tbody><tr><td>IS</td><td>2005-01-03</td><td>2023-05-29</td><td>BASE</td><td>-1.25%</td><td>-0.07%</td><td>-28.51</td><td>66.45%</td><td>0.50</td><td>155</td><td>103</td><td>52</td><td>100.00%</td><td>0</td><td>1</td><td>否</td></tr><tr><td>IS</td><td>2005-01-03</td><td>2023-05-29</td><td>FILTER</td><td>31.50%</td><td>1.71%</td><td>-17.65</td><td>68.57%</td><td>0.71</td><td>105</td><td>72</td><td>33</td><td>67.74%</td><td>0</td><td>1</td><td>否</td></tr><tr><td>OOS</td><td>2023-05-30</td><td>2026-05-29</td><td>BASE</td><td>-0.16%</td><td>-0.05%</td><td>-14.64</td><td>64.00%</td><td>0.57</td><td>25</td><td>16</td><td>9</td><td>100.00%</td><td>1</td><td>0</td><td>否</td></tr><tr><td>OOS</td><td>2023-05-30</td><td>2026-05-29</td><td>FILTER</td><td>-1.25%</td><td>-0.42%</td><td>-13.19</td><td>68.42%</td><td>0.45</td><td>19</td><td>13</td><td>6</td><td>76.00%</td><td>1</td><td>0</td><td>是</td></tr></tbody></table></div>
+</section>
+<section><h2>预写 OOS 标准逐项结果</h2>
+<div class="table-wrap"><table><thead><tr><th>条件</th><th>结果</th></tr></thead><tbody><tr><td>单利年化门槛</td><td>未通过</td></tr><tr><td>相对 BASE 的收益改善</td><td>未通过</td></tr><tr><td>最大回撤门槛</td><td>通过</td></tr><tr><td>三个周年中正收益的期数</td><td>通过</td></tr><tr><td>合格闭合交易数量</td><td>通过</td></tr><tr><td>全部预写 OOS 曲线条件</td><td>未通过</td></tr><tr><td>OOS 胜率与盈亏比质量确认</td><td>未通过</td></tr></tbody></table></div>
+<p>未通过的曲线条件：单利年化门槛；相对 BASE 的收益改善。</p><p class="muted">质量确认不代替累计收益、回撤、分年稳定性与样本量等曲线标准。少于 20 笔闭合交易时，交易质量仍视为低样本。</p></section>
+<section><h2>全部 OOS 周年区间</h2><p>按时间顺序保留三个预定周年区间及 BASE/FILTER 两个版本；这些是主 OOS 的分段诊断，不是另外三份独立样本。</p>
+<div class="table-wrap"><table><thead><tr><th>区间</th><th>实际起始日</th><th>实际结束日</th><th>版本</th><th>单利累计</th><th>单利年化</th><th>最大回撤 pp</th><th>胜率</th><th>盈亏比</th><th>闭合笔数</th><th>盈利笔数</th><th>亏损笔数</th><th>闭合保留率</th><th>跨界交易数</th><th>期内开仓未平数</th><th>闭合少于 20 笔</th></tr></thead><tbody><tr><td>OOS_YEAR_1</td><td>2023-05-30</td><td>2024-05-29</td><td>BASE</td><td>0.38%</td><td>0.38%</td><td>-8.05</td><td>62.50%</td><td>0.68</td><td>8</td><td>5</td><td>3</td><td>100.00%</td><td>1</td><td>0</td><td>是</td></tr><tr><td>OOS_YEAR_1</td><td>2023-05-30</td><td>2024-05-29</td><td>FILTER</td><td>0.03%</td><td>0.03%</td><td>-5.98</td><td>66.67%</td><td>0.56</td><td>6</td><td>4</td><td>2</td><td>75.00%</td><td>1</td><td>0</td><td>是</td></tr><tr><td>OOS_YEAR_2</td><td>2024-05-30</td><td>2025-05-29</td><td>BASE</td><td>-7.82%</td><td>-7.83%</td><td>-13.19</td><td>55.56%</td><td>0.40</td><td>9</td><td>5</td><td>4</td><td>100.00%</td><td>0</td><td>0</td><td>是</td></tr><tr><td>OOS_YEAR_2</td><td>2024-05-30</td><td>2025-05-29</td><td>FILTER</td><td>-9.02%</td><td>-9.03%</td><td>-13.19</td><td>50.00%</td><td>0.43</td><td>8</td><td>4</td><td>4</td><td>88.89%</td><td>0</td><td>0</td><td>是</td></tr><tr><td>OOS_YEAR_3</td><td>2025-05-30</td><td>2026-05-29</td><td>BASE</td><td>7.28%</td><td>7.28%</td><td>-4.55</td><td>75.00%</td><td>1.38</td><td>8</td><td>6</td><td>2</td><td>100.00%</td><td>0</td><td>0</td><td>是</td></tr><tr><td>OOS_YEAR_3</td><td>2025-05-30</td><td>2026-05-29</td><td>FILTER</td><td>7.74%</td><td>7.75%</td><td>-2.84</td><td>100.00%</td><td>—</td><td>5</td><td>5</td><td>0</td><td>62.50%</td><td>0</td><td>0</td><td>是</td></tr></tbody></table></div>
+</section><section><h2>Fresh-start 边界诊断</h2><p>主结果连续持仓。此处另从 OOS 起点空仓开始，只接受此后新开的原始 BASE 交易段，禁止在跨界旧交易段中途重新进入。它用于显示边界假设的影响，不能用其中较好的结果替换主口径或调整门槛。</p>
+<div class="table-wrap"><table><thead><tr><th>区间</th><th>实际起始日</th><th>实际结束日</th><th>版本</th><th>单利累计</th><th>单利年化</th><th>最大回撤 pp</th><th>胜率</th><th>盈亏比</th><th>闭合笔数</th><th>盈利笔数</th><th>亏损笔数</th><th>闭合保留率</th><th>跨界交易数</th><th>期内开仓未平数</th><th>闭合少于 20 笔</th></tr></thead><tbody><tr><td>OOS_FRESH_START</td><td>2023-05-30</td><td>2026-05-29</td><td>BASE</td><td>0.41%</td><td>0.14%</td><td>-14.64</td><td>64.00%</td><td>0.57</td><td>25</td><td>16</td><td>9</td><td>100.00%</td><td>0</td><td>0</td><td>否</td></tr><tr><td>OOS_FRESH_START</td><td>2023-05-30</td><td>2026-05-29</td><td>FILTER</td><td>-0.68%</td><td>-0.23%</td><td>-13.19</td><td>68.42%</td><td>0.45</td><td>19</td><td>13</td><td>6</td><td>76.00%</td><td>0</td><td>0</td><td>是</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>版本</th><th>连续持仓累计</th><th>空仓起步累计</th><th>空仓−连续 pp</th><th>连续回撤 pp</th><th>空仓回撤 pp</th></tr></thead><tbody><tr><td>BASE</td><td>-0.16%</td><td>0.41%</td><td>0.57</td><td>-14.64</td><td>-14.64</td></tr><tr><td>FILTER</td><td>-1.25%</td><td>-0.68%</td><td>0.57</td><td>-13.19</td><td>-13.19</td></tr></tbody></table></div>
+</section>
+<section><h2>随本补充保存的严格 v2 诊断</h2><p>以下只使用本补充目录附带的记录。总闭合交易数不等于机制实际作用的样本数；受影响交易与贡献集中度单独列示。</p>
+<div class="table-wrap"><table><thead><tr><th>区间</th><th>实际起始日</th><th>实际结束日</th><th>版本</th><th>单利累计</th><th>单利年化</th><th>最大回撤 pp</th><th>胜率</th><th>盈亏比</th><th>闭合笔数</th><th>盈利笔数</th><th>亏损笔数</th><th>闭合保留率</th><th>跨界交易数</th><th>期内开仓未平数</th><th>闭合少于 20 笔</th></tr></thead><tbody><tr><td>CONFIRMATION</td><td>2020-01-01</td><td>2023-05-29</td><td>BASE</td><td>-1.94%</td><td>-0.57%</td><td>-20.96</td><td>80.00%</td><td>0.24</td><td>30</td><td>24</td><td>6</td><td>100.00%</td><td>0</td><td>1</td><td>否</td></tr><tr><td>CONFIRMATION</td><td>2020-01-01</td><td>2023-05-29</td><td>FILTER</td><td>6.35%</td><td>1.86%</td><td>-6.97</td><td>80.00%</td><td>0.44</td><td>20</td><td>16</td><td>4</td><td>66.67%</td><td>0</td><td>1</td><td>否</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>区间</th><th>FILTER−BASE pp</th><th>受影响闭合原始交易</th><th>全部受影响原始交易</th><th>去掉最有利 3 个后改善 pp</th></tr></thead><tbody><tr><td>IS</td><td>32.75</td><td>50</td><td>50</td><td>2.03</td></tr><tr><td>CONFIRMATION</td><td>8.29</td><td>10</td><td>10</td><td>-8.04</td></tr><tr><td>RECENT</td><td>16.55</td><td>21</td><td>21</td><td>-8.77</td></tr></tbody></table></div>
+<details><summary>查看随附诊断原始记录</summary><pre>{
+  &quot;candidate_id&quot;: &quot;JPY|BB_MR_20|STATE_efficiency_63_1&quot;,
+  &quot;notice_zh&quot;: &quot;本目录是原综合标准下的独立补充分析，只评估事先指定、已在 v2 锁定的 JPY BB_MR_20 候选。严格 v2 仍未通过：确认期结果样本不足，近期改善在剔除最有帮助的三个原交易段后不稳健。集中度与确认期亏损笔数在此作为披露诊断，不改变 v2 结论，也不改变过滤状态或阈值。2023—2026 历史 OOS 曾在前序研究中暴露；本次不是全新、未见样本。&quot;,
+  &quot;original_is_pass&quot;: true,
+  &quot;strict_v2_failed&quot;: true,
+  &quot;strict_v2_pass&quot;: false,
+  &quot;strict_v2_frozen_candidates&quot;: 0,
+  &quot;strict_v2_confirmation_failed&quot;: &quot;outcome_sample&quot;,
+  &quot;strict_v2_robustness_failed&quot;: &quot;recent_top3_robust&quot;,
+  &quot;confirmation_metrics&quot;: [
+    {
+      &quot;candidate_id&quot;: &quot;JPY|BB_MR_20|STATE_efficiency_63_1&quot;,
+      &quot;pair&quot;: &quot;JPY&quot;,
+      &quot;strategy&quot;: &quot;BB_MR_20&quot;,
+      &quot;filter_id&quot;: &quot;STATE_efficiency_63_1&quot;,
+      &quot;filter_name&quot;: &quot;Reject efficiency_63 state 1&quot;,
+      &quot;is_new&quot;: true,
+      &quot;variant&quot;: &quot;BASE&quot;,
+      &quot;split&quot;: &quot;CONFIRMATION&quot;,
+      &quot;start_date&quot;: &quot;2020-01-01&quot;,
+      &quot;end_date&quot;: &quot;2023-05-29&quot;,
+      &quot;anchor_date&quot;: &quot;2019-12-31&quot;,
+      &quot;calendar_years&quot;: 3.4086242299794662,
+      &quot;observations&quot;: 889,
+      &quot;gross_simple_return_pct&quot;: -1.939339913821092,
+      &quot;net_simple_return_pct&quot;: -1.939339913821092,
+      &quot;gross_annualized_simple_pct&quot;: -0.5689509265246215,
+      &quot;net_annualized_simple_pct&quot;: -0.5689509265246215,
+      &quot;gross_max_drawdown_pp&quot;: -20.9626453884616,
+      &quot;net_max_drawdown_pp&quot;: -20.9626453884616,
+      &quot;gross_compound_return_pct&quot;: -2.930112742311275,
+      &quot;net_sharpe_252&quot;: -0.0717899489420979,
+      &quot;turnover_units&quot;: 61,
+      &quot;cost_drag_pp&quot;: 0.0,
+      &quot;active_fraction&quot;: 0.4893138357705286,
+      &quot;closed_n&quot;: 30,
+      &quot;win_n&quot;: 24,
+      &quot;loss_n&quot;: 6,
+      &quot;flat_n&quot;: 0,
+      &quot;win_rate&quot;: 0.8,
+      &quot;payoff_ratio&quot;: 0.2433008716019636,
+      &quot;mean_win_pct&quot;: 1.0574831678778698,
+      &quot;mean_loss_abs_pct&quot;: 4.34640106677421,
+      &quot;expectancy_pct&quot;: -0.0232936790525461,
+      &quot;net_win_rate&quot;: 0.8,
+      &quot;net_payoff_ratio&quot;: 0.2433008716019636,
+      &quot;entry_n&quot;: 31,
+      &quot;carry_in_n&quot;: 0,
+      &quot;carry_in_net_return_pp&quot;: 0.0,
+      &quot;censored_entry_n&quot;: 1,
+      &quot;low_sample_flag&quot;: false,
+      &quot;base_closed_n&quot;: 30,
+      &quot;retention&quot;: 1.0
+    },
+    {
+      &quot;candidate_id&quot;: &quot;JPY|BB_MR_20|STATE_efficiency_63_1&quot;,
+      &quot;pair&quot;: &quot;JPY&quot;,
+      &quot;strategy&quot;: &quot;BB_MR_20&quot;,
+      &quot;filter_id&quot;: &quot;STATE_efficiency_63_1&quot;,
+      &quot;filter_name&quot;: &quot;Reject efficiency_63 state 1&quot;,
+      &quot;is_new&quot;: true,
+      &quot;variant&quot;: &quot;FILTER&quot;,
+      &quot;split&quot;: &quot;CONFIRMATION&quot;,
+      &quot;start_date&quot;: &quot;2020-01-01&quot;,
+      &quot;end_date&quot;: &quot;2023-05-29&quot;,
+      &quot;anchor_date&quot;: &quot;2019-12-31&quot;,
+      &quot;calendar_years&quot;: 3.4086242299794662,
+      &quot;observations&quot;: 889,
+      &quot;gross_simple_return_pct&quot;: 6.350153802324499,
+      &quot;net_simple_return_pct&quot;: 6.350153802324499,
+      &quot;gross_annualized_simple_pct&quot;: 1.862966808272308,
+      &quot;net_annualized_simple_pct&quot;: 1.862966808272308,
+      &quot;gross_max_drawdown_pp&quot;: -6.970640385181847,
+      &quot;net_max_drawdown_pp&quot;: -6.970640385181847,
+      &quot;gross_compound_return_pct&quot;: 5.958814187062034,
+      &quot;net_sharpe_252&quot;: 0.3183518461825943,
+      &quot;turnover_units&quot;: 41,
+      &quot;cost_drag_pp&quot;: 0.0,
+      &quot;active_fraction&quot;: 0.2947131608548931,
+      &quot;closed_n&quot;: 20,
+      &quot;win_n&quot;: 16,
+      &quot;loss_n&quot;: 4,
+      &quot;flat_n&quot;: 0,
+      &quot;win_rate&quot;: 0.8,
+      &quot;payoff_ratio&quot;: 0.4446926474854657,
+      &quot;mean_win_pct&quot;: 1.0836057230192466,
+      &quot;mean_loss_abs_pct&quot;: 2.4367520559346847,
+      &quot;expectancy_pct&quot;: 0.3795341672284603,
+      &quot;net_win_rate&quot;: 0.8,
+      &quot;net_payoff_ratio&quot;: 0.4446926474854657,
+      &quot;entry_n&quot;: 21,
+      &quot;carry_in_n&quot;: 0,
+      &quot;carry_in_net_return_pp&quot;: 0.0,
+      &quot;censored_entry_n&quot;: 1,
+      &quot;low_sample_flag&quot;: false,
+      &quot;base_closed_n&quot;: 30,
+      &quot;retention&quot;: 0.6666666666666666
+    }
+  ],
+  &quot;recent_metrics&quot;: [
+    {
+      &quot;candidate_id&quot;: &quot;JPY|BB_MR_20|STATE_efficiency_63_1&quot;,
+      &quot;pair&quot;: &quot;JPY&quot;,
+      &quot;strategy&quot;: &quot;BB_MR_20&quot;,
+      &quot;filter_id&quot;: &quot;STATE_efficiency_63_1&quot;,
+      &quot;filter_name&quot;: &quot;Reject efficiency_63 state 1&quot;,
+      &quot;is_new&quot;: true,
+      &quot;variant&quot;: &quot;BASE&quot;,
+      &quot;split&quot;: &quot;RECENT&quot;,
+      &quot;start_date&quot;: &quot;2015-01-01&quot;,
+      &quot;end_date&quot;: &quot;2023-05-29&quot;,
+      &quot;anchor_date&quot;: &quot;2014-12-31&quot;,
+      &quot;calendar_years&quot;: 8.407939767282683,
+      &quot;observations&quot;: 2193,
+      &quot;gross_simple_return_pct&quot;: -0.8153604100243794,
+      &quot;net_simple_return_pct&quot;: -0.8153604100243794,
+      &quot;gross_annualized_simple_pct&quot;: -0.0969750536507341,
+      &quot;net_annualized_simple_pct&quot;: -0.0969750536507341,
+      &quot;gross_max_drawdown_pp&quot;: -20.9626453884616,
+      &quot;net_max_drawdown_pp&quot;: -20.9626453884616,
+      &quot;gross_compound_return_pct&quot;: -2.8112171201993386,
+      &quot;net_sharpe_252&quot;: -0.0137029069083117,
+      &quot;turnover_units&quot;: 145,
+      &quot;cost_drag_pp&quot;: 0.0,
+      &quot;active_fraction&quot;: 0.4929320565435476,
+      &quot;closed_n&quot;: 72,
+      &quot;win_n&quot;: 49,
+      &quot;loss_n&quot;: 23,
+      &quot;flat_n&quot;: 0,
+      &quot;win_rate&quot;: 0.6805555555555556,
+      &quot;payoff_ratio&quot;: 0.4730361667692926,
+      &quot;mean_win_pct&quot;: 1.1250094163250457,
+      &quot;mean_loss_abs_pct&quot;: 2.378273576856821,
+      &quot;expectancy_pct&quot;: 0.0059051268363934,
+      &quot;net_win_rate&quot;: 0.6805555555555556,
+      &quot;net_payoff_ratio&quot;: 0.4730361667692926,
+      &quot;entry_n&quot;: 73,
+      &quot;carry_in_n&quot;: 0,
+      &quot;carry_in_net_return_pp&quot;: 0.0,
+      &quot;censored_entry_n&quot;: 1,
+      &quot;low_sample_flag&quot;: false,
+      &quot;base_closed_n&quot;: 72,
+      &quot;retention&quot;: 1.0
+    },
+    {
+      &quot;candidate_id&quot;: &quot;JPY|BB_MR_20|STATE_efficiency_63_1&quot;,
+      &quot;pair&quot;: &quot;JPY&quot;,
+      &quot;strategy&quot;: &quot;BB_MR_20&quot;,
+      &quot;filter_id&quot;: &quot;STATE_efficiency_63_1&quot;,
+      &quot;filter_name&quot;: &quot;Reject efficiency_63 state 1&quot;,
+      &quot;is_new&quot;: true,
+      &quot;variant&quot;: &quot;FILTER&quot;,
+      &quot;split&quot;: &quot;RECENT&quot;,
+      &quot;start_date&quot;: &quot;2015-01-01&quot;,
+      &quot;end_date&quot;: &quot;2023-05-29&quot;,
+      &quot;anchor_date&quot;: &quot;2014-12-31&quot;,
+      &quot;calendar_years&quot;: 8.407939767282683,
+      &quot;observations&quot;: 2193,
+      &quot;gross_simple_return_pct&quot;: 15.73452944405146,
+      &quot;net_simple_return_pct&quot;: 15.73452944405146,
+      &quot;gross_annualized_simple_pct&quot;: 1.871389410433017,
+      &quot;net_annualized_simple_pct&quot;: 1.871389410433017,
+      &quot;gross_max_drawdown_pp&quot;: -7.935954054230964,
+      &quot;net_max_drawdown_pp&quot;: -7.935954054230964,
+      &quot;gross_compound_return_pct&quot;: 15.728195749660957,
+      &quot;net_sharpe_252&quot;: 0.3549848600134726,
+      &quot;turnover_units&quot;: 103,
+      &quot;cost_drag_pp&quot;: 0.0,
+      &quot;active_fraction&quot;: 0.3182854537163703,
+      &quot;closed_n&quot;: 51,
+      &quot;win_n&quot;: 35,
+      &quot;loss_n&quot;: 16,
+      &quot;flat_n&quot;: 0,
+      &quot;win_rate&quot;: 0.6862745098039216,
+      &quot;payoff_ratio&quot;: 0.7758908351276026,
+      &quot;mean_win_pct&quot;: 1.1805827445323296,
+      &quot;mean_loss_abs_pct&quot;: 1.5215835670209603,
+      &quot;expectancy_pct&quot;: 0.3328442938489444,
+      &quot;net_win_rate&quot;: 0.6862745098039216,
+      &quot;net_payoff_ratio&quot;: 0.7758908351276026,
+      &quot;entry_n&quot;: 52,
+      &quot;carry_in_n&quot;: 0,
+      &quot;carry_in_net_return_pp&quot;: 0.0,
+      &quot;censored_entry_n&quot;: 1,
+      &quot;low_sample_flag&quot;: false,
+      &quot;base_closed_n&quot;: 72,
+      &quot;retention&quot;: 0.7083333333333334
+    }
+  ],
+  &quot;effects&quot;: {
+    &quot;candidate_id&quot;: &quot;JPY|BB_MR_20|STATE_efficiency_63_1&quot;,
+    &quot;IS&quot;: {
+      &quot;delta_pp&quot;: 32.747471764320075,
+      &quot;changed_closed_n&quot;: 50,
+      &quot;changed_episode_n&quot;: 50,
+      &quot;delta_without_best3_pp&quot;: 2.0303854708761264
+    },
+    &quot;CONFIRMATION&quot;: {
+      &quot;delta_pp&quot;: 8.289493716145591,
+      &quot;changed_closed_n&quot;: 10,
+      &quot;changed_episode_n&quot;: 10,
+      &quot;delta_without_best3_pp&quot;: -8.04190446076093
+    },
+    &quot;RECENT&quot;: {
+      &quot;delta_pp&quot;: 16.549889854075843,
+      &quot;changed_closed_n&quot;: 21,
+      &quot;changed_episode_n&quot;: 21,
+      &quot;delta_without_best3_pp&quot;: -8.772647654244587
+    }
+  },
+  &quot;diagnostic_only&quot;: true
+}</pre></details></section>
+<section><h2>样本内改善的来源：三笔大亏与贡献集中</h2><p>随本补充保存的 IS 观察记录显示：全 IS 的 FILTER−BASE 累计改善为 <strong>32.747 pp</strong>，其中最有利的三笔被拒原始交易贡献 30.717 pp，占净改善的 <strong>93.80%</strong>。这解释了样本内结果对少数大亏交易的依赖。</p><div class="table-wrap"><table><thead><tr><th>原始开仓日</th><th>原始平仓日</th><th>方向</th><th>原始交易单利</th><th>避开亏损贡献 pp</th><th>持有报价日</th><th>入场 efficiency_63</th></tr></thead><tbody><tr><td>2012-11-16</td><td>2013-02-26</td><td>LONG_JPY</td><td>-12.15%</td><td>12.15</td><td>72</td><td>0.1074</td></tr><tr><td>2022-03-11</td><td>2022-05-13</td><td>LONG_JPY</td><td>-9.58%</td><td>9.58</td><td>45</td><td>0.1462</td></tr><tr><td>2016-11-10</td><td>2017-01-06</td><td>LONG_JPY</td><td>-8.99%</td><td>8.99</td><td>41</td><td>0.1447</td></tr></tbody></table></div><div class="table-wrap"><table><thead><tr><th>区间</th><th>净改善 pp</th><th>前三笔贡献占净改善</th><th>去掉前三笔后改善 pp</th></tr></thead><tbody><tr><td>IS</td><td>32.75</td><td>93.80%</td><td>2.03</td></tr><tr><td>RECENT</td><td>16.55</td><td>153.01%</td><td>-8.77</td></tr></tbody></table></div><p class="muted">贡献占比可以超过 100%：这表示其余交易对改善有负贡献。按期内开平交易分组求和与连续持仓的日历区间账户收益口径不同，不能混用。上述都是 IS 事实解释，不是新的筛选条件。</p><h3>待验证的机制假设</h3><p>63????????20?Bollinger??????????????????????????????????????2???????????z?????????????????????</p><p><strong>观察支持：</strong>????????????????????JPY 20??63?????????JPY?????72?45?41????????????????????????????</p><p><strong>解释限制：</strong>?????????????E63?????????????1201?D???V???????D/V/C?????????????C????????top3?????????</p><p><strong>后续可检验问题：</strong>??[0.1,0.2)?BB20?????????????????????????????????????5?/5?????????????????episode????????????????????payoff??????????????????????????????????</p><p class="note">这些大亏事件说明本样本中改善来自何处；它们不能证明该 efficiency 区间能稳定预测未来亏损，也不构成因果确认。机制假设不改变本次已冻结规则或 OOS 判定。</p></section>
+<section><h2>可复核文件</h2><p>这里只链接本补充目录的实际输入；不读取或改写严格 v2 或旧 OOS 产物。渲染输入哈希记于 <a href="supplement_report_build.json">报告 manifest</a>。</p><ul>
+<li><a href="protocol.json">protocol.json</a></li>
+<li><a href="is_selection.csv">is_selection.csv</a></li>
+<li><a href="is_frozen_daily.csv.gz">is_frozen_daily.csv.gz</a></li>
+<li><a href="is_frozen_metrics.csv">is_frozen_metrics.csv</a></li>
+<li><a href="supplement_diagnostics.json">supplement_diagnostics.json</a></li>
+<li><a href="jpy_observation_explanation.json">jpy_observation_explanation.json</a></li>
+<li><a href="oos_status.json">oos_status.json</a></li>
+<li><a href="oos_daily.csv.gz">oos_daily.csv.gz</a></li>
+<li><a href="oos_metrics.csv">oos_metrics.csv</a></li>
+<li><a href="candidate_assessment.csv">candidate_assessment.csv</a></li>
+<li><a href="oos_anniversary_metrics.csv">oos_anniversary_metrics.csv</a></li>
+<li><a href="oos_fresh_start_metrics.csv">oos_fresh_start_metrics.csv</a></li>
+</ul><details><summary>查看补充协议</summary><pre>{
+  &quot;version&quot;: &quot;state_filter_supplement_v1&quot;,
+  &quot;created_utc&quot;: &quot;2026-10-23T05:52:54.591574+00:00&quot;,
+  &quot;is_start&quot;: &quot;2005-01-03&quot;,
+  &quot;is_end&quot;: &quot;2023-05-29&quot;,
+  &quot;oos_start&quot;: &quot;2023-05-30&quot;,
+  &quot;oos_end&quot;: &quot;2026-05-29&quot;,
+  &quot;oos_duration&quot;: &quot;Three calendar years immediately following IS, ending at the supplied workbook endpoint.&quot;,
+  &quot;scope&quot;: {
+    &quot;pairs&quot;: [
+      &quot;JPY&quot;
+    ],
+    &quot;strategies&quot;: [
+      &quot;BB_MR_20&quot;
+    ],
+    &quot;baseline_accounts&quot;: 1
+  },
+  &quot;initial_capital_usd&quot;: 100000,
+  &quot;accounting&quot;: &quot;fixed_initial_capital_simple&quot;,
+  &quot;cost_bp&quot;: 0.0,
+  &quot;reference_cost_bp&quot;: 0.0,
+  &quot;cost_instruction&quot;: &quot;User explicitly requested no costs. No cost sensitivity is used this round.&quot;,
+  &quot;carry_financing_cash_interest&quot;: 0.0,
+  &quot;prior_holdout_exposure&quot;: &quot;The three-year historical OOS was observed before v1 and evaluated by v1. V2 is a disclosed repeated historical evaluation, not independent untouched OOS.&quot;,
+  &quot;development_access&quot;: &quot;Use only independently audited, saved full-IS daily paths and metrics for the single designated candidate. No new threshold, fallback, ranking or OOS return is used for this supplemental freeze.&quot;,
+  &quot;screen&quot;: {
+    &quot;min_gross_annualized_simple_pct&quot;: 1.0,
+    &quot;min_return_improvement_pp&quot;: 5.0,
+    &quot;min_win_rate_improvement_pp&quot;: 2.0,
+    &quot;min_payoff_relative_improvement&quot;: 0.1,
+    &quot;max_drawdown_deterioration_pp&quot;: 2.0,
+    &quot;return_to_drawdown_must_improve&quot;: true,
+    &quot;min_closed_trades&quot;: 50,
+    &quot;min_closed_retention&quot;: 0.5,
+    &quot;min_positive_is_blocks&quot;: 2,
+    &quot;min_improved_is_blocks&quot;: 2,
+    &quot;last_is_block_positive_and_improved&quot;: true,
+    &quot;one_way_cost_bp&quot;: 0.0,
+    &quot;cost_sensitivity_evaluated&quot;: false,
+    &quot;cost_instruction&quot;: &quot;User explicitly requested no costs for this round.&quot;,
+    &quot;rank&quot;: [
+      &quot;gross_return_improvement_pp DESC&quot;,
+      &quot;payoff_absolute_improvement DESC&quot;,
+      &quot;win_rate_improvement_pp DESC&quot;,
+      &quot;candidate_id ASC&quot;
+    ],
+    &quot;freeze&quot;: &quot;One highest IS-ranked passing NEW filter per pair/strategy. All passing versions retained in IS table.&quot;,
+    &quot;schedule_delay_is_diagnostic_only&quot;: true
+  },
+  &quot;oos_screen&quot;: {
+    &quot;min_net_annualized_simple_pct&quot;: 1.0,
+    &quot;min_net_return_improvement_pp&quot;: 0.0,
+    &quot;worst_net_drawdown_pp&quot;: -15.0,
+    &quot;min_positive_anniversary_years&quot;: 2,
+    &quot;min_closed_trades&quot;: 10,
+    &quot;quality_confirmation&quot;: &quot;Separately report whether both gross trade win rate and payoff are no worse than BASE, with &gt;=20 closed trades. Not a license to tune on OOS.&quot;
+  },
+  &quot;is_blocks&quot;: [
+    [
+      &quot;IS_EARLY&quot;,
+      &quot;2005-01-03&quot;,
+      &quot;2014-12-31&quot;
+    ],
+    [
+      &quot;IS_MIDDLE&quot;,
+      &quot;2015-01-01&quot;,
+      &quot;2019-12-31&quot;
+    ],
+    [
+      &quot;IS_LATE&quot;,
+      &quot;2020-01-01&quot;,
+      &quot;2023-05-29&quot;
+    ]
+  ],
+  &quot;oos_anniversary_years&quot;: [
+    [
+      &quot;OOS_YEAR_1&quot;,
+      &quot;2023-05-30&quot;,
+      &quot;2024-05-29&quot;
+    ],
+    [
+      &quot;OOS_YEAR_2&quot;,
+      &quot;2024-05-30&quot;,
+      &quot;2025-05-29&quot;
+    ],
+    [
+      &quot;OOS_YEAR_3&quot;,
+      &quot;2025-05-30&quot;,
+      &quot;2026-05-29&quot;
+    ]
+  ],
+  &quot;candidate_specs&quot;: [
+    {
+      &quot;id&quot;: &quot;STATE_efficiency_63_1&quot;,
+      &quot;feature&quot;: &quot;efficiency_63&quot;,
+      &quot;state&quot;: 1
+    }
+  ],
+  &quot;legacy_comparator_ids&quot;: [
+    &quot;COMMODITY_USD&quot;,
+    &quot;RATE_USD_CONFLICT&quot;
+  ],
+  &quot;family_application&quot;: &quot;One explicitly designated v2-locked candidate; original rule and state bin unchanged.&quot;,
+  &quot;boundary_policy&quot;: &quot;Main evaluation preserves continuous positions across IS/OOS; PnL display resets only. Quality uses entries and closes inside each interval. Carry-in and censored trades are reported separately.&quot;,
+  &quot;fresh_start_sensitivity&quot;: &quot;Zero prior positions; only original BASE episodes with execution entry on/after OOS_START may enter. No mid-episode re-entry.&quot;,
+  &quot;schedule_delay_sensitivity&quot;: &quot;No additional IS delay experiment in this supplement.&quot;,
+  &quot;holdout_rule&quot;: &quot;Freeze the sole designated original-SCREEN passer at rank 1. Evaluate it under unchanged OOS_SCREEN; retain every outcome and diagnostic. No fallback, retuning or replacement.&quot;,
+  &quot;source_sha256&quot;: {
+    &quot;run_filter_research.py&quot;: &quot;b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9&quot;,
+    &quot;src/fx_filter_candidates.py&quot;: &quot;695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7&quot;,
+    &quot;src/fx_filter_evaluation.py&quot;: &quot;fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db&quot;,
+    &quot;src/fx_baselines.py&quot;: &quot;40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97&quot;,
+    &quot;src/fx_economics.py&quot;: &quot;87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e&quot;,
+    &quot;src/fx_observation_features.py&quot;: &quot;a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3&quot;,
+    &quot;run_state_filter_research.py&quot;: &quot;8851bcd8ec23bb5bbefb0658106cad6c336337508a8ab3ebf153bbdd2319c92c&quot;,
+    &quot;src/fx_is_states.py&quot;: &quot;b14cacc51e83587dbd15514e05ff608ecb1ead4e8a875f6eab2acaf41a6d8f5b&quot;,
+    &quot;src/fx_state_filters.py&quot;: &quot;47f6c3f4b5696bb2f1039cf31b67244da5c81929e6ecbc6aa91d08e78904e619&quot;,
+    &quot;run_state_filter_supplement.py&quot;: &quot;d41bb080c576551153c676f0ea4ee330e40175f86caa706d211400dafac927bf&quot;,
+    &quot;verify_state_filter_research.py&quot;: &quot;9c24f76e55617b690bd8f39b6e0050fc4a1cbf2e393a9dee4559aa8112795f0f&quot;,
+    &quot;tests/test_fx_filter_candidates.py&quot;: &quot;6f99c024b1ddd8de619e2409d1643cf305e63f598c9c15cfa66278cd4621869f&quot;,
+    &quot;tests/test_fx_filter_research.py&quot;: &quot;44f84a791454d202e6ab4018c31852da0682ce021679b1bf5f09cb53d88a3631&quot;,
+    &quot;tests/test_fx_is_states.py&quot;: &quot;2972bc7efcfb5f7de299edc499730c2442e1f8dbd069e8fd989935a4bad87155&quot;,
+    &quot;tests/test_fx_observation.py&quot;: &quot;427ecd0b1ec334aa94cda77eae0175018f2b27d128cbaf49cdb584432cd41156&quot;,
+    &quot;tests/test_fx_observation_features.py&quot;: &quot;141a6dd4a03a5d0e8a5c2a1f4380d240496e128e52081f07c2c43dadcccaa8fd&quot;,
+    &quot;tests/test_fx_state_filters.py&quot;: &quot;0691fba82746b94cec51f209566389bfb28aaa316d9118d014e2d66f0130040e&quot;,
+    &quot;tests/test_fx_state_research.py&quot;: &quot;daad00da9ae4e07a54814f411e4e45ca01b27cba3f235da47d353e9a5c43bfac&quot;
+  },
+  &quot;input_sha256&quot;: {
+    &quot;FX_Research_Datasets/data/raw/FX_Features_Book.xlsx&quot;: &quot;d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9&quot;,
+    &quot;FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx&quot;: &quot;70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de&quot;,
+    &quot;reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv&quot;: &quot;3e977f3e69662b1aba5e0e9d1d1cb8af4ecabccf24dd3fa2e315c9aa5ea91b2a&quot;
+  },
+  &quot;state_bins&quot;: {
+    &quot;vol_ratio_20_63&quot;: [
+      0.8,
+      1.0,
+      1.25
+    ],
+    &quot;realized_vol_20_pct&quot;: [
+      5.0,
+      10.0,
+      15.0
+    ],
+    &quot;efficiency_63&quot;: [
+      0.1,
+      0.2,
+      0.4
+    ],
+    &quot;direction_return_20_vol&quot;: [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    &quot;direction_distance_ma_60_vol&quot;: [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    &quot;K_vix&quot;: [
+      15.0,
+      20.0,
+      30.0
+    ],
+    &quot;K_vix_d5&quot;: [
+      -3.0,
+      0.0,
+      3.0
+    ],
+    &quot;direction_spread_bp&quot;: [
+      -100.0,
+      0.0,
+      100.0
+    ],
+    &quot;direction_spread_d20_bp&quot;: [
+      -10.0,
+      0.0,
+      10.0
+    ],
+    &quot;direction_dxy_d20_pct&quot;: [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    &quot;direction_commodity_d20_pct&quot;: [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    &quot;base_pnl_63_pct&quot;: [
+      -2.0,
+      0.0,
+      2.0
+    ],
+    &quot;base_pnl_252_pct&quot;: [
+      -5.0,
+      0.0,
+      5.0
+    ]
+  },
+  &quot;discovery&quot;: [
+    &quot;DISCOVERY&quot;,
+    &quot;2005-01-03&quot;,
+    &quot;2014-12-31&quot;
+  ],
+  &quot;validation&quot;: [
+    &quot;VALIDATION&quot;,
+    &quot;2015-01-01&quot;,
+    &quot;2019-12-31&quot;
+  ],
+  &quot;confirmation&quot;: [
+    &quot;CONFIRMATION&quot;,
+    &quot;2020-01-01&quot;,
+    &quot;2023-05-29&quot;
+  ],
+  &quot;observation_source_sha256&quot;: {
+    &quot;reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv&quot;: &quot;3e977f3e69662b1aba5e0e9d1d1cb8af4ecabccf24dd3fa2e315c9aa5ea91b2a&quot;
+  },
+  &quot;designated_candidate_id&quot;: &quot;JPY|BB_MR_20|STATE_efficiency_63_1&quot;,
+  &quot;original_search_scope&quot;: {
+    &quot;pairs&quot;: [
+      &quot;EUR&quot;,
+      &quot;GBP&quot;,
+      &quot;AUD&quot;,
+      &quot;NZD&quot;,
+      &quot;JPY&quot;,
+      &quot;CHF&quot;,
+      &quot;CAD&quot;,
+      &quot;NOK&quot;,
+      &quot;SEK&quot;
+    ],
+    &quot;strategies&quot;: [
+      &quot;RSI_MR_7&quot;,
+      &quot;RSI_MR_14&quot;,
+      &quot;RSI_MR_20&quot;,
+      &quot;RSI_MOM_7&quot;,
+      &quot;RSI_MOM_14&quot;,
+      &quot;RSI_MOM_20&quot;,
+      &quot;MA_10_30&quot;,
+      &quot;MA_20_60&quot;,
+      &quot;BB_MR_10&quot;,
+      &quot;BB_MR_20&quot;,
+      &quot;BB_BO_10&quot;,
+      &quot;BB_BO_20&quot;,
+      &quot;DONCHIAN_BO_10&quot;,
+      &quot;DONCHIAN_BO_20&quot;,
+      &quot;MACD_12_26_9&quot;,
+      &quot;TSMOM_21&quot;,
+      &quot;TSMOM_63&quot;,
+      &quot;VOTE_EQUAL_4&quot;,
+      &quot;VOTE_STRENGTH_4&quot;,
+      &quot;REGIME_RULE_FIXED&quot;
+    ],
+    &quot;baseline_accounts&quot;: 180
+  },
+  &quot;supplement&quot;: true,
+  &quot;notice_zh&quot;: &quot;本目录是原综合标准下的独立补充分析，只评估事先指定、已在 v2 锁定的 JPY BB_MR_20 候选。严格 v2 仍未通过：确认期结果样本不足，近期改善在剔除最有帮助的三个原交易段后不稳健。集中度与确认期亏损笔数在此作为披露诊断，不改变 v2 结论，也不改变过滤状态或阈值。2023—2026 历史 OOS 曾在前序研究中暴露；本次不是全新、未见样本。&quot;,
+  &quot;strict_v2_result_unchanged&quot;: true,
+  &quot;strict_v2_pass&quot;: false,
+  &quot;strict_v2_temporal_protocol&quot;: {
+    &quot;proposal&quot;: &quot;One fixed feature bin per candidate; UNKNOWN is never rejected. Each 2005-09/2010-14 discovery cohort has &gt;=10 closed trades and negative sum; combined 2005-14 sum remains negative after removing its worst trade.&quot;,
+    &quot;discovery&quot;: &quot;FILTER annualized&gt;=1%; improvement&gt;=5pp; win rate +2pp; payoff +10%; DD deterioration&lt;=2pp; return/DD improves; &gt;=30 closed and &gt;=50% retention; &gt;=20 changed closed episodes.&quot;,
+    &quot;validation&quot;: &quot;2015-19 FILTER annualized&gt;=1%, positive improvement and return/DD improvement; win rate/payoff no worse; &gt;=20 closed, &gt;=5 wins/losses, &gt;=50% retention, &gt;=5 changed closed episodes.&quot;,
+    &quot;locking&quot;: &quot;One candidate per pair/strategy, ranking VALIDATION annualized DESC, through-2019 return improvement DESC, candidate_id ASC. Lock before computing CONFIRMATION filtered paths; no fallback after failure.&quot;,
+    &quot;confirmation&quot;: &quot;2020-2023-05 FILTER annualized&gt;=1%, positive improvement and return/DD improvement; quality no worse; &gt;=20 closed with &gt;=5 wins/losses, &gt;=50% retention, &gt;=5 changed closed episodes.&quot;,
+    &quot;final&quot;: &quot;All original full-IS SCREEN criteria, plus RECENT annualized&gt;=1 and positive improvement/return-DD improvement. Full IS and RECENT delta remain positive after removing the three most helpful original episodes. &gt;=20 full-IS changed closed episodes.&quot;,
+    &quot;oos&quot;: &quot;Only final IS-passing candidates enter the same prewritten OOS_SCREEN, with all outcomes retained. Reused historical OOS is disclosed. No OOS-based rule change or fallback.&quot;
+  },
+  &quot;source_campaign&quot;: &quot;reproduced/state_filter_v2&quot;,
+  &quot;source_campaign_evidence_sha256&quot;: {
+    &quot;reproduced/state_filter_v2/protocol.json&quot;: &quot;1211276d44902490a873f85a207841cee03f744af6d2cbc1d35101a07341f448&quot;,
+    &quot;reproduced/state_filter_v2/validation_locked.json&quot;: &quot;7e7275701d208811fed11f4149284c229a8a188d30b399b5ddfed94cde76b839&quot;,
+    &quot;reproduced/state_filter_v2/fit_status.json&quot;: &quot;69ad8ce55140adb2ac305ab6b8d95570d0b843afb0779a642361cde6d356c8d5&quot;,
+    &quot;reproduced/state_filter_v2/preconfirmation_integrity_audit.json&quot;: &quot;ced85fa5c9df7c49b29032035fdd595fa82341db92a1076b1b1e4492a6b020b4&quot;,
+    &quot;reproduced/state_filter_v2/frozen_selection.json&quot;: &quot;069fd143beec224809a8454d477ff9dcafb5c8fe1a1c1c89a748529858b63f6c&quot;,
+    &quot;reproduced/state_filter_v2/development_status.json&quot;: &quot;43813075e6a7898e3f02006fd94df1d9d0661d212b8dad0b05928adb91b95ca0&quot;,
+    &quot;reproduced/state_filter_v2/discovery_proposals.json&quot;: &quot;856e486434ef010bed09444cac16ba33d706cff08f3f1de37da750217d1557b6&quot;,
+    &quot;reproduced/state_filter_v2/confirmation_effect_evidence.json&quot;: &quot;70792892ecd8e1c1d59b553c66dcc2a4789640b15bb9735a41960c17c58db365&quot;,
+    &quot;run_filter_research.py&quot;: &quot;b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9&quot;,
+    &quot;src/fx_filter_candidates.py&quot;: &quot;695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7&quot;,
+    &quot;src/fx_filter_evaluation.py&quot;: &quot;fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db&quot;,
+    &quot;src/fx_baselines.py&quot;: &quot;40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97&quot;,
+    &quot;src/fx_economics.py&quot;: &quot;87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e&quot;,
+    &quot;src/fx_observation_features.py&quot;: &quot;a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3&quot;,
+    &quot;run_state_filter_research.py&quot;: &quot;8851bcd8ec23bb5bbefb0658106cad6c336337508a8ab3ebf153bbdd2319c92c&quot;,
+    &quot;src/fx_is_states.py&quot;: &quot;b14cacc51e83587dbd15514e05ff608ecb1ead4e8a875f6eab2acaf41a6d8f5b&quot;,
+    &quot;src/fx_state_filters.py&quot;: &quot;47f6c3f4b5696bb2f1039cf31b67244da5c81929e6ecbc6aa91d08e78904e619&quot;,
+    &quot;FX_Research_Datasets/data/raw/FX_Features_Book.xlsx&quot;: &quot;d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9&quot;,
+    &quot;FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx&quot;: &quot;70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de&quot;,
+    &quot;reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv&quot;: &quot;3e977f3e69662b1aba5e0e9d1d1cb8af4ecabccf24dd3fa2e315c9aa5ea91b2a&quot;,
+    &quot;reproduced/state_filter_v2/fit_selection.csv&quot;: &quot;b95622f124578882080326ad9bfde36fbf2db4ccb9040464e063e4b8cb659776&quot;,
+    &quot;reproduced/state_filter_v2/fit_metrics.csv&quot;: &quot;a1235f0e059a620042e574611eafe88d8efcb968b25fd4e2896cdfa48006919e&quot;,
+    &quot;reproduced/state_filter_v2/fit_locked_daily.csv.gz&quot;: &quot;248d65b6f3dcce55bef1c701fbaf86db7e90e0ca2593bca93faa6501141c1fcc&quot;,
+    &quot;reproduced/state_filter_v2/confirmation_full_metrics.csv&quot;: &quot;bf7667c80807496bb4c7085b13cc7250d7878a3fb3b1d95acc2d2fe4989e85b7&quot;,
+    &quot;reproduced/state_filter_v2/confirmation_recent_metrics.csv&quot;: &quot;80c058c9adfab972eb6d428f9fd90315cac8dfdc11d9ddd38f7c1eaa41880831&quot;,
+    &quot;reproduced/state_filter_v2/confirmation_selection.csv&quot;: &quot;0034f655b71c2bd3e58fa7b300d748f8d569ed79aac808443996b8dc384630d3&quot;,
+    &quot;reproduced/state_filter_v2/is_frozen_daily.csv.gz&quot;: &quot;70d1b93f983f1a89b64b97992b9ead0b175bc73fb649f5b0bf43df699ea197bc&quot;,
+    &quot;reproduced/state_filter_v2/is_frozen_metrics.csv&quot;: &quot;e54a3df4c388fabcdb7161886af42910c48895b3a588737cf1640120066f7295&quot;,
+    &quot;reproduced/state_filter_v2/locked_is_daily.csv.gz&quot;: &quot;3ef2d0da0fb18556d6707f7b98c0af329922fde4e4e066996726abc376f8885b&quot;,
+    &quot;reproduced/state_filter_v2/locked_is_decisions.csv.gz&quot;: &quot;2d79a7995c6f295081c2d2f3694fc9fed07db631e52c3cde4b49e730290796ee&quot;,
+    &quot;reproduced/state_filter_v2/locked_is_trade_ledger.csv.gz&quot;: &quot;2b0249659cc977483ac88cd49867800c19fad0fa4d5032dfe8fc8964b70609f8&quot;,
+    &quot;reproduced/filter_is_diagnostics_v2/entry_state_validation.json&quot;: &quot;2637b364492c0f6b9ba80823cd3f4fcfbef2f5ddca05584a19ab010c4c208e18&quot;,
+    &quot;reproduced/filter_is_diagnostics_v2/technical_validation_amendment.json&quot;: &quot;9b53b05bad9b78eafc75775ab7ea877aedb5ed7bcd253edbd1992d04261a7056&quot;,
+    &quot;reproduced/filter_is_diagnostics_v2/is_entry_cohort_coverage.csv&quot;: &quot;3115e6fa52bfc599a1f0ffd3ebdd1208f05a9e265cc652e172d01f80651aaa8a&quot;,
+    &quot;reproduced/filter_is_diagnostics_v2/is_entry_state_ledger.csv.gz&quot;: &quot;46718a115c30684bc4cbba1180120b1eb695a2d7c3fe2648ca259cc111f9f078&quot;,
+    &quot;reproduced/state_filter_v2/independent_validation.json&quot;: &quot;fb6d2a57a66057aad9e810b30b81a62b7654f47cc3d8b46db1d896cb9754d766&quot;
+  },
+  &quot;source_independent_audit&quot;: {
+    &quot;status&quot;: &quot;passed&quot;,
+    &quot;checks_passed&quot;: 310,
+    &quot;checks_total&quot;: 310,
+    &quot;tests_run&quot;: 76
+  },
+  &quot;supplement_reason&quot;: &quot;Evaluate the explicitly designated, previously locked original-SCREEN passer separately. Extra v2 concentration and confirmation outcome-count gates remain disclosed diagnostics; strict v2 is not relabelled.&quot;
+}</pre></details></section><footer>生成时间：2026-10-23T05:55:32.245569+00:00 UTC。单页 PDF 为主曲线图；完整解释和诊断见本 HTML。</footer></main></body></html>

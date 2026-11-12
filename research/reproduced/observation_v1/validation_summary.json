@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-23T04:45:07.893524+00:00",
+  "new_untouched_out_of_sample": false,
+  "filter_optimization_performed": false,
+  "finished_utc": "2026-10-23T04:47:11.501014+00:00",
+  "accounts": 180,
+  "strategies": 20,
+  "currencies": 9,
+  "daily_observations": 1005300,
+  "all_trade_episodes": 54262,
+  "eligible_closed_trades": 54187,
+  "baseline_reconciliation_checks": 253,
+  "baseline_checks_pass": true,
+  "baseline_daily_records_reconciled": 1156095,
+  "economic_feature_checks": 18,
+  "economic_feature_checks_pass": true,
+  "calendar_additivity_and_compounding_pass": true,
+  "trade_partition_and_excursions_pass": true,
+  "drawdown_maximum_reconciliation_pass": true,
+  "window_trade_attribution_pass": true,
+  "entry_timing_checks_pass": true,
+  "stored_simple_baseline_checks": [
+    {
+      "metric": "simple_return_pct",
+      "accounts": 180,
+      "pass": true,
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "metric": "simple_max_drawdown_pp",
+      "accounts": 180,
+      "pass": true,
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "metric": "closed_trades",
+      "accounts": 180,
+      "pass": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "metric": "win_rate",
+      "accounts": 180,
+      "pass": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "metric": "payoff_ratio",
+      "accounts": 180,
+      "pass": true,
+      "max_abs_error": 2.220446049250313e-16
+    }
+  ],
+  "table_rows": {
+    "daily": 1005300,
+    "accounts": 180,
+    "periods": 11700,
+    "rolling": 1080,
+    "drawdowns": 3911,
+    "trades": 54262,
+    "attribution": 45113,
+    "rule_summary": 20,
+    "contrasts": 16560,
+    "coverage": 720
+  },
+  "source_sha256": {
+    "src/fx_analysis.py": "c7cf2e19a8262aeabcacba6fb58638fdd4f7c3a61c84fb87cc7d297a3d20de2c",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_evidence.py": "1a99ed9524faa9d15555f6dba4dc4c2bd168c00199fa9aba9583cd57b64c0c9f",
+    "src/fx_legacy.py": "71d919586f220088494e9c66382db4d11bb1ea914db6b74bec01add3a686294e",
+    "src/fx_observation.py": "568a49c91e0a3c42a1c7101bf77120f512325ea6cbc31700aa5387e3fd413297",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "src/fx_observation_report.py": "b9448a7ac972f39552f84f880d0f6f0b3a6ce393be569331c5f7ff8ae0575803",
+    "src/fx_research.py": "796667454b59a2a0da056374ef62f08a2350304a7dcad97a1c9c1b8b5c017ed9",
+    "src/fx_risk.py": "5ea76aa2d1abc211874e9f23308c496d1830a8add744a2775057c0c677b51168",
+    "src/fx_simple.py": "2fb303d6ba80beb6f65d364cb2161963ecc6f2a26382c51f624b1e80cc05e614",
+    "run_observation_research.py": "4deb293cd0c76323dd81b0a5536b1e988e0db9ea3fa72c08f8d6aebc79737133",
+    "requirements.txt": "d539bfd7501dc0102b28298e1d85e686c95dda0e934530e02b33981bd5057fa4",
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "FX_PnL_Explorer.html": "18620b85934a8d0e95bf44878349e627e3282f41166fbbd3d4639f3a7d5d609a",
+    "FX_Research_Datasets/data/clean/fixed_baseline_metrics_rebuilt.csv": "45c96c4ddaa49764fcb84cea100638419db59d5543090ec5bbb4e29ae8e9c3ac",
+    "FX_Research_Datasets/data/clean/economic_known_inputs_rebuilt.csv.gz": "acf294a230290dc1c5a0fe4f634c764814ba3247268eaef77984aae6dc8d6c48",
+    "reproduced/simple_interest/account_metrics.csv": "8344df5c0200420b778efc97ee6b6532b041d6cdba3a83b843c5d5395709378f"
+  },
+  "output_sha256": {
+    "daily_accounts.csv.gz": "09f9890b0caa0bcf34340f868a6d5786f6799c7e4626da0c4867a4a69e519bab",
+    "account_summary.csv": "979265868bf6b4518f20624e9cce8973bc24a38f85d74bdcb51fa1980abb3b7f",
+    "calendar_periods.csv": "b7ee304d7dfd976fc28d24fa08f67b46b18d5ded633124a0fb0c02b051c9d67b",
+    "rolling_windows.csv": "201810306bed53041b8be50714b8dbfb032032915666bf2ecd62f76616bdbb99",
+    "drawdown_episodes.csv": "1cb96710f8c5cc94ee9b41ddddf5a25f8ad7e2ab53d981aa14b9b111025787d9",
+    "enriched_trade_ledger.csv.gz": "7db4dbc30bae134e37c16f3bd73aaf31f33962776738eab29c0cabeaf1855936",
+    "window_trade_attribution.csv.gz": "5cc1e498c38784f424e91e56bbdd31c1bdccf3391dc92dbc3436863d6ff2524b",
+    "rule_summary.csv": "7d500b52e68aedd6a7836db9ddaa97f671cb7d574ba6c3b69fb76eb1f1544d0b",
+    "entry_feature_contrasts.csv": "0bbc4dd21d0293e9fd85bc65ca835a283b7b5b1e6c64acd31b8a4dba7e2f6dfc",
+    "entry_feature_coverage.csv": "4753682da79f95aa0cf33da158c67d83c223f1e14c0369085686d73b95b96918"
+  }
+}

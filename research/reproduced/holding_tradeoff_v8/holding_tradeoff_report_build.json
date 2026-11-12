@@ -1,0 +1,838 @@
+{
+  "created_utc": "2026-10-23T14:27:29.810052+00:00",
+  "report": "holding_tradeoff_report.html",
+  "atlas": "holding_tradeoff_atlas.pdf",
+  "figures": [
+    "tradeoff_figures/frozen_0001.png",
+    "tradeoff_figures/frozen_0002.png",
+    "tradeoff_figures/frozen_0003.png",
+    "tradeoff_figures/frozen_0004.png",
+    "tradeoff_figures/frozen_0005.png",
+    "tradeoff_figures/frozen_0006.png",
+    "tradeoff_figures/frozen_0007.png",
+    "tradeoff_figures/frozen_0008.png",
+    "tradeoff_figures/frozen_0009.png",
+    "tradeoff_figures/frozen_0010.png",
+    "tradeoff_figures/frozen_0011.png",
+    "tradeoff_figures/frozen_0012.png",
+    "tradeoff_figures/frozen_0013.png",
+    "tradeoff_figures/frozen_0014.png",
+    "tradeoff_figures/frozen_0015.png",
+    "tradeoff_figures/frozen_0016.png",
+    "tradeoff_figures/frozen_0017.png",
+    "tradeoff_figures/frozen_0018.png",
+    "tradeoff_figures/frozen_0019.png",
+    "tradeoff_figures/frozen_0020.png",
+    "tradeoff_figures/frozen_0021.png"
+  ],
+  "candidate_versions": 492,
+  "source_counts": {
+    "holding_filter_v3": 391,
+    "timecap_filter_v4": 101
+  },
+  "accounts": 180,
+  "original_standard_passing_versions": 0,
+  "authorized_standard_passing_versions": 60,
+  "frozen_candidates": 21,
+  "frozen_IS_tradeoff_diagnostics": {
+    "win_rate_actually_lower": 5,
+    "payoff_actually_lower": 10,
+    "old_win_rate_gate_failed": 7,
+    "old_payoff_gate_failed": 16
+  },
+  "frozen_candidate_ids": [
+    "AUD|TSMOM_63|CHECK_10_pnl_positive",
+    "AUD|DONCHIAN_BO_20|TIME_CAP_10",
+    "AUD|VOTE_EQUAL_4|TIME_CAP_10",
+    "GBP|MA_20_60|CHECK_5_pnl_negative",
+    "GBP|MA_10_30|CHECK_10_recent5_negative",
+    "NZD|TSMOM_21|CHECK_10_recent5_negative",
+    "AUD|MA_20_60|TIME_CAP_20",
+    "CAD|TSMOM_21|CHECK_5_pnl_positive",
+    "NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+    "NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+    "JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+    "JPY|BB_MR_20|TIME_CAP_5",
+    "NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+    "EUR|TSMOM_21|CHECK_5_giveback_half",
+    "NZD|MACD_12_26_9|CHECK_5_opposite20",
+    "EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+    "JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+    "JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+    "SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+    "AUD|BB_MR_20|CHECK_5_pnl_negative",
+    "GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20"
+  ],
+  "oos_evaluated": true,
+  "oos_pass_counts": {
+    "curve": 4,
+    "quality": 8,
+    "both": 4,
+    "not_both": 17
+  },
+  "passed_summary": {
+    "file": "holding_tradeoff_passed_summary.pdf",
+    "candidate_ids": [
+      "GBP|MA_10_30|CHECK_10_recent5_negative",
+      "JPY|BB_MR_20|TIME_CAP_5",
+      "JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative"
+    ],
+    "freeze_ranks": [
+      5,
+      12,
+      17,
+      18
+    ]
+  },
+  "plot_checks": [
+    {
+      "candidate_id": "AUD|TSMOM_63|CHECK_10_pnl_positive",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": -22.579699655680262,
+      "max_drawdown_pp": -51.552032440496134,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|TSMOM_63|CHECK_10_pnl_positive",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 34.77610702477749,
+      "max_drawdown_pp": -33.55138253479748,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|TSMOM_63|CHECK_10_pnl_positive",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -12.208672809303977,
+      "max_drawdown_pp": -26.475550281344884,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|TSMOM_63|CHECK_10_pnl_positive",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -11.236228500517232,
+      "max_drawdown_pp": -17.818336998283947,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 22.587608305539053,
+      "max_drawdown_pp": -38.248686675867624,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 75.75788795518147,
+      "max_drawdown_pp": -16.258281015023336,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -17.091104370483578,
+      "max_drawdown_pp": -19.72395258347266,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|DONCHIAN_BO_20|TIME_CAP_10",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -23.49709701457131,
+      "max_drawdown_pp": -24.70836215074641,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 25.921337675408385,
+      "max_drawdown_pp": -38.435909335055015,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 73.98466176739711,
+      "max_drawdown_pp": -23.816879409353806,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -27.473511666363713,
+      "max_drawdown_pp": -30.106359879352798,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|VOTE_EQUAL_4|TIME_CAP_10",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -32.07953667866751,
+      "max_drawdown_pp": -34.35376825382554,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|MA_20_60|CHECK_5_pnl_negative",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": -22.383547629758127,
+      "max_drawdown_pp": -47.626850783016025,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|MA_20_60|CHECK_5_pnl_negative",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 24.55969866042077,
+      "max_drawdown_pp": -19.620179533315095,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|MA_20_60|CHECK_5_pnl_negative",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -2.237593638117863,
+      "max_drawdown_pp": -12.338462179939947,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|MA_20_60|CHECK_5_pnl_negative",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": 0.31405358664292615,
+      "max_drawdown_pp": -9.093387854424307,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|MA_10_30|CHECK_10_recent5_negative",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": -8.308138027884027,
+      "max_drawdown_pp": -29.371504694120787,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|MA_10_30|CHECK_10_recent5_negative",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 35.36830710179181,
+      "max_drawdown_pp": -22.83025858429287,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|MA_10_30|CHECK_10_recent5_negative",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": 4.817336171926345,
+      "max_drawdown_pp": -9.453659704187501,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|MA_10_30|CHECK_10_recent5_negative",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": 7.029524954511945,
+      "max_drawdown_pp": -7.329630865165859,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|TSMOM_21|CHECK_10_recent5_negative",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 0.34831732078297595,
+      "max_drawdown_pp": -44.308891784606566,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|TSMOM_21|CHECK_10_recent5_negative",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 39.501386895757726,
+      "max_drawdown_pp": -26.072202916043928,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|TSMOM_21|CHECK_10_recent5_negative",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -18.013049852858963,
+      "max_drawdown_pp": -22.844992388332862,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|TSMOM_21|CHECK_10_recent5_negative",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -13.14968444884691,
+      "max_drawdown_pp": -20.37986448634942,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|MA_20_60|TIME_CAP_20",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": -10.575547377420557,
+      "max_drawdown_pp": -39.50767758518913,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|MA_20_60|TIME_CAP_20",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 26.58203289862735,
+      "max_drawdown_pp": -31.78939477767613,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|MA_20_60|TIME_CAP_20",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -35.57146631482713,
+      "max_drawdown_pp": -41.17999119249016,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|MA_20_60|TIME_CAP_20",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -15.119865012107391,
+      "max_drawdown_pp": -22.84378144741367,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "CAD|TSMOM_21|CHECK_5_pnl_positive",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": -13.635511776220344,
+      "max_drawdown_pp": -51.35841968232796,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "CAD|TSMOM_21|CHECK_5_pnl_positive",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 22.658201123158396,
+      "max_drawdown_pp": -24.672553671926725,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "CAD|TSMOM_21|CHECK_5_pnl_positive",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -5.8442683057055795,
+      "max_drawdown_pp": -10.684562145035759,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "CAD|TSMOM_21|CHECK_5_pnl_positive",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -1.1754896004116833,
+      "max_drawdown_pp": -6.216129402846127,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": -16.484564555641246,
+      "max_drawdown_pp": -43.38043298343419,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 19.032203685429405,
+      "max_drawdown_pp": -26.682962362486272,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -15.132742815719224,
+      "max_drawdown_pp": -21.092898282836725,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|DONCHIAN_BO_20|CHECK_10_giveback_half",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -13.397110593130101,
+      "max_drawdown_pp": -19.511495274092262,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 6.030090505240604,
+      "max_drawdown_pp": -37.76792865148654,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 41.30630084790562,
+      "max_drawdown_pp": -29.235553213092935,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -12.195179881705654,
+      "max_drawdown_pp": -18.291909999044453,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|VOTE_EQUAL_4|CHECK_10_giveback_half",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -14.30990531035019,
+      "max_drawdown_pp": -18.27795268821557,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 7.488746599941464,
+      "max_drawdown_pp": -38.95704559180425,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 42.258690103237896,
+      "max_drawdown_pp": -24.797669982849857,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -3.4125113994478373,
+      "max_drawdown_pp": -26.69367492494569,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|MACD_12_26_9|CHECK_10_pnl_positive",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -2.4291872056828256,
+      "max_drawdown_pp": -22.56804341474247,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|BB_MR_20|TIME_CAP_5",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": -1.249294962721148,
+      "max_drawdown_pp": -28.51149354237188,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|BB_MR_20|TIME_CAP_5",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 30.186026752696215,
+      "max_drawdown_pp": -9.50737893868545,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|BB_MR_20|TIME_CAP_5",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -0.16440870789417028,
+      "max_drawdown_pp": -14.63526696533738,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|BB_MR_20|TIME_CAP_5",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": 3.0090758390685868,
+      "max_drawdown_pp": -9.928448444010051,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 2.5992057647975297,
+      "max_drawdown_pp": -43.65963011617592,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 30.51583946272357,
+      "max_drawdown_pp": -34.55522903435538,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -23.967704088125263,
+      "max_drawdown_pp": -26.824492030833248,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|VOTE_STRENGTH_4|CHECK_10_recent5_negative",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -21.47732996566315,
+      "max_drawdown_pp": -25.539328101657453,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "EUR|TSMOM_21|CHECK_5_giveback_half",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 21.995485624863107,
+      "max_drawdown_pp": -44.00948398141667,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "EUR|TSMOM_21|CHECK_5_giveback_half",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 44.79202605660465,
+      "max_drawdown_pp": -38.40377970766255,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "EUR|TSMOM_21|CHECK_5_giveback_half",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": 17.115743209878342,
+      "max_drawdown_pp": -7.066669397247614,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "EUR|TSMOM_21|CHECK_5_giveback_half",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": 16.41480161295131,
+      "max_drawdown_pp": -6.9841526210476665,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|MACD_12_26_9|CHECK_5_opposite20",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 8.373170473459169,
+      "max_drawdown_pp": -49.46045479894997,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|MACD_12_26_9|CHECK_5_opposite20",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 30.716006939336303,
+      "max_drawdown_pp": -35.41941269835138,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|MACD_12_26_9|CHECK_5_opposite20",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": -10.68945005626838,
+      "max_drawdown_pp": -22.151491602526352,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "NZD|MACD_12_26_9|CHECK_5_opposite20",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -12.022603037781243,
+      "max_drawdown_pp": -16.438621467686833,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 10.493233555090098,
+      "max_drawdown_pp": -34.64425955878489,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 30.579425084513588,
+      "max_drawdown_pp": -25.603396377442834,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": 0.86564309793975,
+      "max_drawdown_pp": -7.464826436146589,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "EUR|VOTE_STRENGTH_4|TIME_CAP_20",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": -4.280379534281453,
+      "max_drawdown_pp": -8.593312688595178,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 4.084584841024563,
+      "max_drawdown_pp": -54.53608240149002,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 20.54790524867326,
+      "max_drawdown_pp": -42.848065829286725,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": 8.137821083828033,
+      "max_drawdown_pp": -13.071278814696331,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": 10.157488010584736,
+      "max_drawdown_pp": -11.043809034558869,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 21.5811437722467,
+      "max_drawdown_pp": -45.04464349341548,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 37.81654190370682,
+      "max_drawdown_pp": -35.945037914245106,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": 4.934317671368471,
+      "max_drawdown_pp": -15.084723380844645,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": 7.993151828048461,
+      "max_drawdown_pp": -14.174711414905026,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 14.53096968788703,
+      "max_drawdown_pp": -62.65749530507564,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 29.018332845819096,
+      "max_drawdown_pp": -47.49003018740808,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": 14.301119515431783,
+      "max_drawdown_pp": -16.593144482669707,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "SEK|MACD_12_26_9|CHECK_5_giveback_half_AND_opposite20",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": 14.143729422002881,
+      "max_drawdown_pp": -14.870060409094123,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|BB_MR_20|CHECK_5_pnl_negative",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 12.636255077871239,
+      "max_drawdown_pp": -37.87258592059263,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|BB_MR_20|CHECK_5_pnl_negative",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 24.62126988095542,
+      "max_drawdown_pp": -23.665608234349612,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|BB_MR_20|CHECK_5_pnl_negative",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": 26.670908141239412,
+      "max_drawdown_pp": -6.0253320590012525,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "AUD|BB_MR_20|CHECK_5_pnl_negative",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": 19.213497812184066,
+      "max_drawdown_pp": -7.699193965253814,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20",
+      "split": "IS",
+      "variant": "BASE",
+      "endpoint_pct": 16.75725338871119,
+      "max_drawdown_pp": -23.481705945345755,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20",
+      "split": "IS",
+      "variant": "FILTER",
+      "endpoint_pct": 28.671761901051763,
+      "max_drawdown_pp": -11.366609451100608,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20",
+      "split": "OOS",
+      "variant": "BASE",
+      "endpoint_pct": 15.135680649368844,
+      "max_drawdown_pp": -3.6830538674834883,
+      "matches_saved": true
+    },
+    {
+      "candidate_id": "GBP|BB_MR_10|CHECK_5_giveback_half_AND_opposite20",
+      "split": "OOS",
+      "variant": "FILTER",
+      "endpoint_pct": 13.572723944128228,
+      "max_drawdown_pp": -4.143556027683748,
+      "matches_saved": true
+    }
+  ],
+  "artifact_validation": {
+    "status": "passed",
+    "local_links_checked": 64,
+    "png_files": 21,
+    "pdf_pages": 21,
+    "passed_summary_pages": 4
+  },
+  "input_paths_relative_to": "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8",
+  "input_sha256": {
+    "development_status.json": "33807a71d90a58be3a84af3c6e4f444f3a5cdeac9e1ca0339b9f9899e4b41f1c",
+    "protocol.json": "936a87369ae6826b656021501d2926853dfe748fa4d8e2235b33b67a1f3fc60f",
+    "frozen_selection.json": "8126136e79844055de2cfe243be3b4a4fbeb3c56f97070fbb84cadf13aa5cb35",
+    "is_account_coverage.csv": "44a09a6e9fc42f86ee432fe716a19cca3f7202f03c79b845d3fd7362d4a83e5c",
+    "is_all_decisions.csv.gz": "e9bf5a2d16d4f921c7dc9c43e6961bcf9af58a6ce87bbbaf5d5cc2935b20f2fe",
+    "is_all_metrics.csv": "23b7a83c2996301c1bb6c2e429a6ff2acd75a76871d15af0889e301b23525c9e",
+    "is_frozen_daily.csv.gz": "1d148f27bb279202f050fc9d4e57174b6374ee415c284192c47d7392133089b8",
+    "is_frozen_decisions.csv.gz": "452b995d6e9ab7cd0cdb3a760890da3c3371246fa6a3af5826edd6a5246110d9",
+    "is_frozen_metrics.csv": "b6cbc80eee1dec740e70fe49d627e22537a0482982c5bca5c4b890bddf58f632",
+    "is_frozen_trades.csv.gz": "a011d93ff07f885cfebd61f7595c11c3533efaa547bc36cfc8804325ee40436c",
+    "is_hypotheses.json": "ab3ae51a41a135e59859ffd28efa795c0e3c26ede30f464fa8daf511ad05fea8",
+    "is_original_selection.csv": "dfa0b47f81586ce2e288b009996b9be7ab5a8e3e6fa860b982a49e48da85c27f",
+    "is_selection.csv": "603963fccd3b2b7360d43602593452db106d03a6f9bfc767cb0321adc3973d89",
+    "../holding_quality_tradeoff_review/review.json": "34cb72861f8166865afb23c24b1379d024f7bb861f3a35391cf8714efba6f1f3",
+    "../holding_quality_tradeoff_review/review.csv": "357e5a508eed3534bf3544a59c69395c742aee626626f834440d69cffbbc99d2",
+    "../holding_filter_v3/is_hypotheses.json": "21f61a768c627afdb541383693a08b7d066de774b6f745caf6ed041f0a889921",
+    "../timecap_filter_v4/is_hypotheses.json": "86c5def3b4c5431ba55504c9ad8bb9f34b182e65ff2fcf50c4a87d81cf9cc2b1",
+    "oos_status.json": "3074f1a72cd2f33a80993bb42dc8d571fe90bdda2e30e994a9fd0a3184ed0c5d",
+    "oos_metrics.csv": "186855bfbf5e2a791a492880292c170229e781cc570ae32c63c2a821588ad968",
+    "oos_anniversary_metrics.csv": "4ec83e79b49b1bc1a0614c6866dc1ada1c073772502740e93dfca71842ad7d3e",
+    "oos_fresh_start_metrics.csv": "38d655b0eef3809963d1289d6b7e1faf677daa7143ebe580470b0ec9e8e796fa",
+    "candidate_assessment.csv": "b85730c07ca26273af8af14b8d09d8deb03557fe0d25e2d85906556138af4365",
+    "oos_daily.csv.gz": "a303c2bed9cff2aff3861b5b0e5dfed8da571e41a6268ac1d320368477215094",
+    "frozen_full_trade_ledger.csv.gz": "f56e0e120935dce20e6d46b5ae18d93d72f75d26f7c67165515a27453baf22fe",
+    "frozen_full_episode_decisions.csv.gz": "9e33e66c51a37802e5b80c1b7395a128555434bd0c040974fb60c24817d21cab",
+    "independent_validation.json": "ead5457ee2c9b7d870bc864f38d266c25dcbe172234bbb559af9a8013805b08a",
+    "post_oos_independent_validation.json": "21fc417988c8fc55d7dcc34f0120efa9c83690d1f7c2c90ef462ef9245892bb5"
+  },
+  "output_sha256": {
+    "holding_tradeoff_report.html": "2b7bab3721dfcad917ff916069301a428f56d2a43c9c1cc58c2f0d9ccc03b735",
+    "holding_tradeoff_atlas.pdf": "7e94710a194ebf5ee58052228b7c6a4180de039d24acb2bf955e9291f970f98b",
+    "tradeoff_figures/frozen_0001.png": "421c0088f79edf8ec0f52c9b2c994ac8617b792459b374ba4694801e79ba2f42",
+    "tradeoff_figures/frozen_0002.png": "a4b8831fbbddbe9431d3c88fce1a545281aed362181541a2ce97366f28d3c1c0",
+    "tradeoff_figures/frozen_0003.png": "a4d1aa7972b185df5d3d3a3bd60603eb73be2f3e3b822e7110f1f596a03bf45a",
+    "tradeoff_figures/frozen_0004.png": "3f072d85a2278c287476c6702e1042e95cae5e301a487e586b47666ea015267c",
+    "tradeoff_figures/frozen_0005.png": "e577912ae3e6d4832b8da4da08045aedbf6b5bce1c9b9866cae2b23f31fb8366",
+    "tradeoff_figures/frozen_0006.png": "cc3ed9740ec97576b3c6990c33367584b1688323b109b2616c915e9b91ba4ae4",
+    "tradeoff_figures/frozen_0007.png": "0b0acef8ba9579dd966247df76fb1fb29686f49bd6405dde7e9e005aa83698cc",
+    "tradeoff_figures/frozen_0008.png": "06e6f32d24f50eff30a319969dc58a72d784399b980cbd44442e180e9ad66978",
+    "tradeoff_figures/frozen_0009.png": "419b288635842db7d4a2551ff76d4109b64cdfad67dae391f86338c55e79deb7",
+    "tradeoff_figures/frozen_0010.png": "c75eeaa265baafc188af4e1a4e393b4e98459165e6222c78a6b76020cba0445d",
+    "tradeoff_figures/frozen_0011.png": "1adc8205f5399c2ae2aac9aa4fb3ae6b55438524ad26ab76270fe303dc21fe3b",
+    "tradeoff_figures/frozen_0012.png": "3ffe6a9f37b345a22f922f40cbf29ff146763e03dcd02f6c7e9affe0c5e38ca5",
+    "tradeoff_figures/frozen_0013.png": "f3efa2ed07af0a2732b9c74d2a89b5e86a91150a4298cb96d000434e7c8dcc43",
+    "tradeoff_figures/frozen_0014.png": "4312c51e3b6f51b6f97cb446c39ac210719c1206af69b34e6e3d3f8923ebddcb",
+    "tradeoff_figures/frozen_0015.png": "f057d62206cfee5c2c25a9e92b384db0d09c0bea2abeed720cbb88f39cf897ce",
+    "tradeoff_figures/frozen_0016.png": "cdab2aa0875e77b456eda050c8692af316bf6be15cdd46cc26ff4cc819a66750",
+    "tradeoff_figures/frozen_0017.png": "68eaa8313bc881e927e5d61ce4d743819feff5c851b8241af0551c592663e040",
+    "tradeoff_figures/frozen_0018.png": "0b4b587b9da051f369fc8edcdc34a09987ca1c5d65bd0425601785bf2d9e314e",
+    "tradeoff_figures/frozen_0019.png": "c1c4d61eb8a7e40bf298f965c76a2c7e51fdd237e433cfe488738db7dd7662b3",
+    "tradeoff_figures/frozen_0020.png": "ebd06c7d3a4115ba9504ecdb20410e51e78e522dbd2c0213e75f5170560ae89d",
+    "tradeoff_figures/frozen_0021.png": "32a95dcdef20e5e3f91b55572f509bcd8f99876ce1964e28519ea1c48da9f850",
+    "report_all_492_criteria.csv": "8e4aefa8e25c975cbdda40ce4628c4e1f4c06fc9f7109ab72c9b0328f2242aa9",
+    "report_IS_failures.csv": "28b45e2c7537618238bc28e9b1e1110bbd62b8801fd401e5c88d19515d819265",
+    "report_gate_failure_counts.csv": "e3455a0707b0109a5b368171a86d9dc75fdac693d95517821d7d64420818a411",
+    "report_OOS_complete_results.csv": "d199412da61748393529f4cc0b803e39b32d7d31a879a29c31d90561acfadaef",
+    "report_OOS_failures.csv": "48458083643f32a06e5bcdeb26be2a32494d65032cc0bd11c2d77cedc21108c0",
+    "holding_tradeoff_passed_summary.pdf": "78e64a3c720ca9e6fb0ea63c2e7eeae7c265170b53eb10ce76719c9e17dce767"
+  },
+  "source_sha256": {
+    "build_holding_tradeoff_report.py": "5426f0230ae0ebc4f56729aee8b3dc35c6855430540d719f60216539cd515a81",
+    "src/fx_filter_report.py": "9ed0d4998444379cbd89a3f2edb29aa8dd31e7fd291939acfb1f32c94d112555"
+  },
+  "strategy_recomputed": false,
+  "selection_changed": false,
+  "old_OOS_results_read": false,
+  "ordering": "Every frozen candidate in saved IS freeze_rank order; every original version in saved selection order"
+}

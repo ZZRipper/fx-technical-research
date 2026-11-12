@@ -1,0 +1,61 @@
+{
+  "version": "direction_probe_v5",
+  "created_utc": "2026-10-23T06:34:20.184991+00:00",
+  "scope": "All 20 rules x 9 pairs; direction groups observed only inside DEVELOPMENT 2005-01-03 to 2014-12-31.",
+  "source_sha256": {
+    "reproduced/filter_is_diagnostics_v2/is_entry_state_ledger.csv.gz": "46718a115c30684bc4cbba1180120b1eb695a2d7c3fe2648ca259cc111f9f078"
+  },
+  "access_audit": {
+    "allowed_outcome_end": "2014-12-31",
+    "parsed_eligible_closed_trade_outcomes": 25133,
+    "rows_skipped_before_outcome_conversion": 21284,
+    "D_entry_metadata_rows": 25261,
+    "later_outcomes_read": false,
+    "OOS_read": false,
+    "strategy_recomputed": false
+  },
+  "current_standard_unchanged": true,
+  "cost_bp": 0,
+  "counts": {
+    "accounts": 180,
+    "account_direction_groups": 360,
+    "D_eligible_closed_trades": 25133,
+    "negative_in_both_subperiods_groups": 109,
+    "repeated_negative_with_at_least_10_per_subperiod_groups": 98,
+    "distinct_accounts_with_supported_repeated_negative_direction": 81,
+    "supported_groups_also_D_negative": 97,
+    "supported_groups_also_D_negative_without_worst_trade": 85
+  },
+  "blocks": [
+    [
+      "D1",
+      "2005-01-03",
+      "2009-12-31"
+    ],
+    [
+      "D2",
+      "2010-01-01",
+      "2014-12-31"
+    ],
+    [
+      "D",
+      "2005-01-03",
+      "2014-12-31"
+    ]
+  ],
+  "direction_definition": {
+    "+1": "long foreign currency / short USD under USD-per-foreign canonical prices",
+    "-1": "short foreign currency / long USD"
+  },
+  "cohort": "Each block includes only original eligible closed trades with both entry and exit inside that block. Full signed simple return comes from saved gross_simple_return_pct, including short daily-return accounting. No forced close.",
+  "diagnostic_flags": "Negative sum in D1 and D2; >=10 eligible closed per subperiod is a descriptive support flag, not a newly approved screen or frozen rule.",
+  "output_sha256": {
+    "direction_comparison.csv": "d809b654e52bb36535a6d07e7fa81326487c2bf9c1aafb3d4f49285671979296",
+    "direction_summary.csv": "e8bae976121a2348342fe6ef244eabd8a4d93584d712a19e4d6faf339cd26e10"
+  },
+  "cautions_en": [
+    "D includes trades spanning the 2009/2010 boundary, so D1 plus D2 need not equal D. Cross-boundary trade counts and return differences are saved separately for every direction.",
+    "Long and short groups are not independent market samples. A directional pattern can reflect the USD environment of that historical period and requires subsequent independent IS segment evaluation.",
+    "Rejecting one direction can reduce trade retention or change win rate and payoff. This observation does not simulate a filter or establish an original SCREEN pass."
+  ]
+}

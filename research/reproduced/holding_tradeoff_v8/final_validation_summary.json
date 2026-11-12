@@ -1,0 +1,1758 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-23T14:33:13.509848+00:00",
+  "computational_validation_passed": true,
+  "authorized_historical_criteria_met": true,
+  "future_effectiveness_established": false,
+  "authorized_criterion_change": {
+    "instruction_zh": "\u5141\u8bb8\u53d6\u820d\uff0c\u4f46\u6bcf\u7b14\u671f\u671b\u6536\u76ca\u4e0e\u603b\u76c8\u5229/\u603b\u4e8f\u635f\u6bd4\u90fd\u987b\u6539\u5584",
+    "recorded_utc": "2026-10-23T14:17:00.899211+00:00",
+    "scope": "Replace the two quality requirements for the fixed 492 previously discussed v3/v4 candidates; retain every other original gate and ranking."
+  },
+  "criterion_change_scope": "Fixed 492 v3/v4 hypotheses only; all other original gates/ranking retained.",
+  "original_study_artifacts_unchanged": true,
+  "coverage": {
+    "baseline_accounts": 180,
+    "rules": 20,
+    "currencies": 9,
+    "candidate_versions": 492,
+    "IS_passing_versions": 60,
+    "frozen_candidates": 21,
+    "OOS_curve_pass": 4,
+    "OOS_quality_pass": 8,
+    "OOS_both_pass": 4
+  },
+  "passed_candidates_in_frozen_order": [
+    "GBP|MA_10_30|CHECK_10_recent5_negative",
+    "JPY|BB_MR_20|TIME_CAP_5",
+    "JPY|DONCHIAN_BO_20|CHECK_5_pnl_negative",
+    "JPY|VOTE_EQUAL_4|CHECK_5_pnl_negative"
+  ],
+  "tests": {
+    "previously_run_new_module_tests": 9,
+    "test_source_hash_rechecked": true,
+    "pre_independent_checks": 7624,
+    "post_independent_checks": 501
+  },
+  "final_artifact_checks_total": 397,
+  "final_artifact_checks_passed": 397,
+  "checks": [
+    {
+      "check": "frozen sources:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "frozen sources:src/fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "check": "frozen sources:src/fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "check": "frozen sources:src/fx_baselines.py",
+      "passed": true
+    },
+    {
+      "check": "frozen sources:src/fx_economics.py",
+      "passed": true
+    },
+    {
+      "check": "frozen sources:src/fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "check": "frozen sources:run_holding_tradeoff_research.py",
+      "passed": true
+    },
+    {
+      "check": "frozen sources:src/fx_tradeoff_evaluation.py",
+      "passed": true
+    },
+    {
+      "check": "frozen sources:run_holding_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "frozen sources:run_timecap_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "frozen sources:src/fx_holding_filters.py",
+      "passed": true
+    },
+    {
+      "check": "frozen sources:src/fx_timecap_filters.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:FX_Research_Datasets/data/raw/FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_filter_v3/is_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_filter_v3/is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/timecap_filter_v4/is_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/timecap_filter_v4/is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_quality_tradeoff_review/review.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_quality_tradeoff_review/review.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_quality_tradeoff_review/final_review_validation.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:src/fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:src/fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:src/fx_baselines.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:src/fx_economics.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:src/fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:run_holding_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:src/fx_holding_filters.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:build_holding_observations.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_observations_v3/holding_observation_protocol.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_observations_v3/holding_observation_validation.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_observations_v3/discovery_repeated_negative_patterns.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_observations_v3/discovery_repeated_negative_patterns.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_observations_v3/holding_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_observations_v3/holding_state_summary.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_observations_v3/is_base_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_observations_v3/is_holding_checkpoints.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_filter_v3/protocol.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_filter_v3/frozen_selection.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_filter_v3/development_status.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_filter_v3/independent_validation.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_filter_v3/is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_filter_v3/is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_filter_v3/is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_filter_v3/is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/holding_filter_v3/is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:run_timecap_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:src/fx_timecap_filters.py",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/timecap_filter_v4/protocol.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/timecap_filter_v4/frozen_selection.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/timecap_filter_v4/development_status.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/timecap_filter_v4/independent_validation.json",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/timecap_filter_v4/is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/timecap_filter_v4/is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/timecap_filter_v4/is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/timecap_filter_v4/is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen inputs including original studies:reproduced/timecap_filter_v4/is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "frozen IS:is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen IS:is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "frozen IS:is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen IS:is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "frozen IS:is_frozen_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "frozen IS:is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen IS:is_frozen_trades.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "frozen IS:is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "frozen IS:is_original_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "frozen IS:is_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "OOS outputs:oos_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "OOS outputs:oos_anniversary_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "OOS outputs:oos_fresh_start_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "OOS outputs:candidate_assessment.csv",
+      "passed": true
+    },
+    {
+      "check": "OOS outputs:oos_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "OOS outputs:frozen_full_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "OOS outputs:frozen_full_episode_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_holding_tradeoff_research.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_entry_interaction_research.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_supplement.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\protocol.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\development_status.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_baselines.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_economics.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_holding_tradeoff_research.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_tradeoff_evaluation.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_holding_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_timecap_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_holding_filters.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_timecap_filters.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\review.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\review.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\final_review_validation.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\build_holding_observations.py",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_observation_protocol.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_observation_validation.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\discovery_repeated_negative_patterns.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\discovery_repeated_negative_patterns.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_state_summary.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\is_base_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\is_holding_checkpoints.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\protocol.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\development_status.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\independent_validation.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\protocol.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\development_status.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\independent_validation.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_trades.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_original_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "pre audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_holding_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_holding_tradeoff_oos.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_holding_tradeoff_research.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_entry_interaction_research.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_entry_interaction_oos.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_supplement.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\oos_status.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\protocol.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\independent_validation.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\development_status.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_baselines.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_economics.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_holding_tradeoff_research.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_tradeoff_evaluation.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_holding_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_timecap_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_holding_filters.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_timecap_filters.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\review.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\review.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_quality_tradeoff_review\\final_review_validation.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\build_holding_observations.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_observation_protocol.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_observation_validation.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\discovery_repeated_negative_patterns.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\discovery_repeated_negative_patterns.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\holding_state_summary.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\is_base_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_observations_v3\\is_holding_checkpoints.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\protocol.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\development_status.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\independent_validation.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_filter_v3\\is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\protocol.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\development_status.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\independent_validation.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\timecap_filter_v4\\is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_frozen_trades.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_original_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\is_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_holding_filter_research.py",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\oos_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\oos_anniversary_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\oos_fresh_start_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\candidate_assessment.csv",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\oos_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\frozen_full_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "post audited files:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\holding_tradeoff_v8\\frozen_full_episode_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "report inputs:development_status.json",
+      "passed": true
+    },
+    {
+      "check": "report inputs:protocol.json",
+      "passed": true
+    },
+    {
+      "check": "report inputs:frozen_selection.json",
+      "passed": true
+    },
+    {
+      "check": "report inputs:is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "report inputs:is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "report inputs:is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "report inputs:is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "report inputs:is_frozen_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "report inputs:is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "report inputs:is_frozen_trades.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "report inputs:is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "report inputs:is_original_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "report inputs:is_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "report inputs:../holding_quality_tradeoff_review/review.json",
+      "passed": true
+    },
+    {
+      "check": "report inputs:../holding_quality_tradeoff_review/review.csv",
+      "passed": true
+    },
+    {
+      "check": "report inputs:../holding_filter_v3/is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "report inputs:../timecap_filter_v4/is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "check": "report inputs:oos_status.json",
+      "passed": true
+    },
+    {
+      "check": "report inputs:oos_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "report inputs:oos_anniversary_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "report inputs:oos_fresh_start_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "report inputs:candidate_assessment.csv",
+      "passed": true
+    },
+    {
+      "check": "report inputs:oos_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "report inputs:frozen_full_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "report inputs:frozen_full_episode_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "report inputs:independent_validation.json",
+      "passed": true
+    },
+    {
+      "check": "report inputs:post_oos_independent_validation.json",
+      "passed": true
+    },
+    {
+      "check": "report outputs:holding_tradeoff_report.html",
+      "passed": true
+    },
+    {
+      "check": "report outputs:holding_tradeoff_atlas.pdf",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0001.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0002.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0003.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0004.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0005.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0006.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0007.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0008.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0009.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0010.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0011.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0012.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0013.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0014.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0015.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0016.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0017.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0018.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0019.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0020.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:tradeoff_figures/frozen_0021.png",
+      "passed": true
+    },
+    {
+      "check": "report outputs:report_all_492_criteria.csv",
+      "passed": true
+    },
+    {
+      "check": "report outputs:report_IS_failures.csv",
+      "passed": true
+    },
+    {
+      "check": "report outputs:report_gate_failure_counts.csv",
+      "passed": true
+    },
+    {
+      "check": "report outputs:report_OOS_complete_results.csv",
+      "passed": true
+    },
+    {
+      "check": "report outputs:report_OOS_failures.csv",
+      "passed": true
+    },
+    {
+      "check": "report outputs:holding_tradeoff_passed_summary.pdf",
+      "passed": true
+    },
+    {
+      "check": "report sources:build_holding_tradeoff_report.py",
+      "passed": true
+    },
+    {
+      "check": "report sources:src/fx_filter_report.py",
+      "passed": true
+    },
+    {
+      "check": "freeze protocol binding",
+      "passed": true
+    },
+    {
+      "check": "OOS frozen selection binding",
+      "passed": true
+    },
+    {
+      "check": "pre audit binding",
+      "passed": true
+    },
+    {
+      "check": "post audit final binding",
+      "passed": true
+    },
+    {
+      "check": "pre counts",
+      "passed": true
+    },
+    {
+      "check": "post counts",
+      "passed": true
+    },
+    {
+      "check": "report validated",
+      "passed": true
+    },
+    {
+      "check": "preflight authorized criterion change",
+      "passed": true
+    },
+    {
+      "check": "exact user approval UTF8 intact",
+      "passed": true
+    },
+    {
+      "check": "zero cost and fixed capital",
+      "passed": true
+    },
+    {
+      "check": "all original accounts in scope",
+      "passed": true
+    },
+    {
+      "check": "fixed IS/OOS boundaries",
+      "passed": true
+    },
+    {
+      "check": "freeze and pre audit before OOS, post before final report",
+      "passed": true
+    },
+    {
+      "check": "no retuning",
+      "passed": true
+    },
+    {
+      "check": "report does not recompute strategies or read old OOS",
+      "passed": true
+    },
+    {
+      "check": "492 evaluated,60 pass,21 frozen",
+      "passed": true
+    },
+    {
+      "check": "original standard still no passes",
+      "passed": true
+    },
+    {
+      "check": "180 accounts retained",
+      "passed": true
+    },
+    {
+      "check": "21 OOS in exact frozen order",
+      "passed": true
+    },
+    {
+      "check": "all frozen IS quality strictly improved",
+      "passed": true
+    },
+    {
+      "check": "four confirmed exact identities",
+      "passed": true
+    },
+    {
+      "check": "pass counts 4/8/4",
+      "passed": true
+    },
+    {
+      "check": "four passed OOS quality strict and finite",
+      "passed": true
+    },
+    {
+      "check": "all frozen failures retained",
+      "passed": true
+    },
+    {
+      "check": "AUD example failure retained",
+      "passed": true
+    },
+    {
+      "check": "report raw all-candidate criteria",
+      "passed": true
+    },
+    {
+      "check": "report raw all OOS candidates",
+      "passed": true
+    },
+    {
+      "check": "84 endpoints and drawdowns matched",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0001.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0002.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0003.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0004.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0005.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0006.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0007.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0008.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0009.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0010.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0011.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0012.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0013.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0014.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0015.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0016.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0017.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0018.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0019.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0020.png",
+      "passed": true
+    },
+    {
+      "check": "valid PNG tradeoff_figures/frozen_0021.png",
+      "passed": true
+    },
+    {
+      "check": "PDF header and page count holding_tradeoff_atlas.pdf",
+      "passed": true
+    },
+    {
+      "check": "PDF header and page count holding_tradeoff_passed_summary.pdf",
+      "passed": true
+    },
+    {
+      "check": "local report link 0",
+      "passed": true
+    },
+    {
+      "check": "report anchor 1",
+      "passed": true
+    },
+    {
+      "check": "report anchor 2",
+      "passed": true
+    },
+    {
+      "check": "report anchor 3",
+      "passed": true
+    },
+    {
+      "check": "report anchor 4",
+      "passed": true
+    },
+    {
+      "check": "local report link 5",
+      "passed": true
+    },
+    {
+      "check": "local report link 6",
+      "passed": true
+    },
+    {
+      "check": "local report link 7",
+      "passed": true
+    },
+    {
+      "check": "local report link 8",
+      "passed": true
+    },
+    {
+      "check": "local report link 9",
+      "passed": true
+    },
+    {
+      "check": "local report link 10",
+      "passed": true
+    },
+    {
+      "check": "report anchor 11",
+      "passed": true
+    },
+    {
+      "check": "report anchor 12",
+      "passed": true
+    },
+    {
+      "check": "report anchor 13",
+      "passed": true
+    },
+    {
+      "check": "report anchor 14",
+      "passed": true
+    },
+    {
+      "check": "report anchor 15",
+      "passed": true
+    },
+    {
+      "check": "report anchor 16",
+      "passed": true
+    },
+    {
+      "check": "report anchor 17",
+      "passed": true
+    },
+    {
+      "check": "report anchor 18",
+      "passed": true
+    },
+    {
+      "check": "report anchor 19",
+      "passed": true
+    },
+    {
+      "check": "report anchor 20",
+      "passed": true
+    },
+    {
+      "check": "report anchor 21",
+      "passed": true
+    },
+    {
+      "check": "report anchor 22",
+      "passed": true
+    },
+    {
+      "check": "report anchor 23",
+      "passed": true
+    },
+    {
+      "check": "report anchor 24",
+      "passed": true
+    },
+    {
+      "check": "report anchor 25",
+      "passed": true
+    },
+    {
+      "check": "report anchor 26",
+      "passed": true
+    },
+    {
+      "check": "report anchor 27",
+      "passed": true
+    },
+    {
+      "check": "report anchor 28",
+      "passed": true
+    },
+    {
+      "check": "report anchor 29",
+      "passed": true
+    },
+    {
+      "check": "report anchor 30",
+      "passed": true
+    },
+    {
+      "check": "report anchor 31",
+      "passed": true
+    },
+    {
+      "check": "report anchor 32",
+      "passed": true
+    },
+    {
+      "check": "report anchor 33",
+      "passed": true
+    },
+    {
+      "check": "report anchor 34",
+      "passed": true
+    },
+    {
+      "check": "report anchor 35",
+      "passed": true
+    },
+    {
+      "check": "local report link 36",
+      "passed": true
+    },
+    {
+      "check": "local report link 37",
+      "passed": true
+    },
+    {
+      "check": "local report link 38",
+      "passed": true
+    },
+    {
+      "check": "local report link 39",
+      "passed": true
+    },
+    {
+      "check": "local report link 40",
+      "passed": true
+    },
+    {
+      "check": "local report link 41",
+      "passed": true
+    },
+    {
+      "check": "local report link 42",
+      "passed": true
+    },
+    {
+      "check": "local report link 43",
+      "passed": true
+    },
+    {
+      "check": "local report link 44",
+      "passed": true
+    },
+    {
+      "check": "local report link 45",
+      "passed": true
+    },
+    {
+      "check": "local report link 46",
+      "passed": true
+    },
+    {
+      "check": "local report link 47",
+      "passed": true
+    },
+    {
+      "check": "local report link 48",
+      "passed": true
+    },
+    {
+      "check": "local report link 49",
+      "passed": true
+    },
+    {
+      "check": "local report link 50",
+      "passed": true
+    },
+    {
+      "check": "local report link 51",
+      "passed": true
+    },
+    {
+      "check": "local report link 52",
+      "passed": true
+    },
+    {
+      "check": "local report link 53",
+      "passed": true
+    },
+    {
+      "check": "local report link 54",
+      "passed": true
+    },
+    {
+      "check": "local report link 55",
+      "passed": true
+    },
+    {
+      "check": "local report link 56",
+      "passed": true
+    },
+    {
+      "check": "local report link 57",
+      "passed": true
+    },
+    {
+      "check": "local report link 58",
+      "passed": true
+    },
+    {
+      "check": "local report link 59",
+      "passed": true
+    },
+    {
+      "check": "local report link 60",
+      "passed": true
+    },
+    {
+      "check": "local report link 61",
+      "passed": true
+    },
+    {
+      "check": "local report link 62",
+      "passed": true
+    },
+    {
+      "check": "local report link 63",
+      "passed": true
+    },
+    {
+      "check": "near threshold annualized precision disclosed",
+      "passed": true
+    },
+    {
+      "check": "report does not contain Unicode replacement characters",
+      "passed": true
+    },
+    {
+      "check": "final visual inspected rank12 hash",
+      "passed": true
+    },
+    {
+      "check": "README updated with post audit and summary link",
+      "passed": true
+    },
+    {
+      "check": "README valid UTF8 without replacement characters",
+      "passed": true
+    },
+    {
+      "check": "nine-test module unchanged",
+      "passed": true
+    }
+  ],
+  "verified_files_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src\\fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src\\fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src\\fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src\\fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src\\fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "run_holding_tradeoff_research.py": "98342a731b996496d72b1a38941b0aacdd388cb309ac0fc46bfe08bbd75f916e",
+    "src\\fx_tradeoff_evaluation.py": "37dc8071aba94329a88db9688f9c46d6c3d891a53243ceca414bedb043d07e87",
+    "run_holding_filter_research.py": "02fdec7e7af9a94a8bb6e4c0029e57d193a4e7dc9cafb8a7ec61f5691501e71e",
+    "run_timecap_filter_research.py": "c4f68206fee9862598340123347f90ff8b9b0aaf3f739f30242efff592903fd0",
+    "src\\fx_holding_filters.py": "67b784ab5f2e2b1fdc86b555ab0f8e4b794017a3ad31df0f59a7834ae7e5a84e",
+    "src\\fx_timecap_filters.py": "e0bd60d7854a1ee425442009a3facda190463b1ab0cf09b82109f49381175bed",
+    "FX_Research_Datasets\\data\\raw\\FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets\\data\\raw\\FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "reproduced\\holding_filter_v3\\is_selection.csv": "edc4d06b409349246a0f90844e0fc70de64658b60ee6a5f3057671e69be52ce2",
+    "reproduced\\holding_filter_v3\\is_all_metrics.csv": "01149121361e108b2c01bda7b6c4b15e62bf983c3ef0c7b5d4f10cb61ed177ab",
+    "reproduced\\timecap_filter_v4\\is_selection.csv": "79dd1ecf497b19b4eb1523f9017d86fb4e9f30b183da3727c4f6d111a7203726",
+    "reproduced\\timecap_filter_v4\\is_all_metrics.csv": "3d96d5fe3e275473ac830a332a8662c1ae617048817b11c2826d66de18834bf3",
+    "reproduced\\holding_quality_tradeoff_review\\review.json": "34cb72861f8166865afb23c24b1379d024f7bb861f3a35391cf8714efba6f1f3",
+    "reproduced\\holding_quality_tradeoff_review\\review.csv": "357e5a508eed3534bf3544a59c69395c742aee626626f834440d69cffbbc99d2",
+    "reproduced\\holding_quality_tradeoff_review\\final_review_validation.json": "153714b255ef3fdf675d4a17f729e42ee08f1c9345d6cc3926be816e4e8ed869",
+    "build_holding_observations.py": "2a3e5140e35fbda6203a2b5cec9baaf0e2c79ed71a22418f496783b5e42a569d",
+    "reproduced\\holding_observations_v3\\holding_observation_protocol.json": "81109ee024c58b3751abfd1ce074ea69a8f00c4b18422b15eb619f6a4acee15f",
+    "reproduced\\holding_observations_v3\\holding_observation_validation.json": "0e4237476cb52702d8eeca76746c7cafd7880bbbd5f37c448b5214b5b1570841",
+    "reproduced\\holding_observations_v3\\discovery_repeated_negative_patterns.csv": "f02a7e7e36d82de365762c57bd4dacdfdf80ad84c832b91f2c4500b6c5893ccb",
+    "reproduced\\holding_observations_v3\\discovery_repeated_negative_patterns.json": "20c6d2c4b5330dea1536f60ee7c07bb594928bd1e5c3f6083fca142466495a57",
+    "reproduced\\holding_observations_v3\\holding_coverage.csv": "cad15ffb4b3c516539d58d15666abdb8bcd90f1d21a9f3082e9ee6ce92ee682e",
+    "reproduced\\holding_observations_v3\\holding_state_summary.csv": "a37a3d0862559690189ccbc335a4feccb2968f18c5e1a1293e12c6761cdf5203",
+    "reproduced\\holding_observations_v3\\is_base_trade_ledger.csv.gz": "1fa2f3f890cfab95c3562ed1a6ebaaebff64ebd82f7a9b3abfe70493fb0700e7",
+    "reproduced\\holding_observations_v3\\is_holding_checkpoints.csv.gz": "bd122a23fa6777c8f2dac7e8ff19dd471be5322843cf616ab883d30d6c0dfa74",
+    "reproduced\\holding_filter_v3\\protocol.json": "595770463740715a0e1abb22fa2a56887de039cf2d189779f03a437f1ae9d6f0",
+    "reproduced\\holding_filter_v3\\frozen_selection.json": "ff1e4ab1d0be38ac0e9308e9ff0b20d9be12fe5a35302a99a1da79633bbb0d3d",
+    "reproduced\\holding_filter_v3\\development_status.json": "d59cf353aba8b31c8fb8765e7fa274a6fe475d89244fd172db987cebc58150d3",
+    "reproduced\\holding_filter_v3\\independent_validation.json": "297930c284f7fdca30a419125759d8c2c1460235dc22dbdb5516e0b40fc2d588",
+    "reproduced\\holding_filter_v3\\is_account_coverage.csv": "fc09c109034d394b7c364cb928bdda4f9572cc67999d650d91a9e4f83389272d",
+    "reproduced\\holding_filter_v3\\is_all_decisions.csv.gz": "9b33eace54f06bbea3cfd77cc1b4794a024965f648c1c5135c2d8313efc3d01f",
+    "reproduced\\holding_filter_v3\\is_frozen_daily.csv.gz": "8fe66d2ddd3307e272efec3856674eb9874e3b957b995d11905d9106cc33887a",
+    "reproduced\\holding_filter_v3\\is_frozen_metrics.csv": "9c2cda6c7a5476c6666fda7e370a749d6c4163d35abe948b1bf17ec9bfab3a7f",
+    "reproduced\\holding_filter_v3\\is_hypotheses.json": "21f61a768c627afdb541383693a08b7d066de774b6f745caf6ed041f0a889921",
+    "reproduced\\timecap_filter_v4\\protocol.json": "83eaa7c7a4c35ac7ae789672c05ca5842cc2511a88c1eb25b75908bf49ac4c96",
+    "reproduced\\timecap_filter_v4\\frozen_selection.json": "97cd55a6a84d0a7bbae63b3e60ce4a471a524265fd8b7399bdeb74272ec394d8",
+    "reproduced\\timecap_filter_v4\\development_status.json": "58815cdafbf961ff2819b8f02ff16e3b2321dd7244ad66d5c174d4c6cf8430b7",
+    "reproduced\\timecap_filter_v4\\independent_validation.json": "a1a25aa14d391c07219efd632f130c7659fbda4d813486cabc59f27cf7eccac4",
+    "reproduced\\timecap_filter_v4\\is_account_coverage.csv": "971e38262c684d466eef06c63ce59345cd9bf563333fbe20518ac649647a90a9",
+    "reproduced\\timecap_filter_v4\\is_all_decisions.csv.gz": "d2122df133995f4edafd0749db78c196955da9321d434fd942f3fe93488e62db",
+    "reproduced\\timecap_filter_v4\\is_frozen_daily.csv.gz": "c9b63168eeee1723177120f10c75ec91ec5e16ffccbbc023af99d0410616fdb4",
+    "reproduced\\timecap_filter_v4\\is_frozen_metrics.csv": "9c2cda6c7a5476c6666fda7e370a749d6c4163d35abe948b1bf17ec9bfab3a7f",
+    "reproduced\\timecap_filter_v4\\is_hypotheses.json": "86c5def3b4c5431ba55504c9ad8bb9f34b182e65ff2fcf50c4a87d81cf9cc2b1",
+    "reproduced\\holding_tradeoff_v8\\is_account_coverage.csv": "44a09a6e9fc42f86ee432fe716a19cca3f7202f03c79b845d3fd7362d4a83e5c",
+    "reproduced\\holding_tradeoff_v8\\is_all_decisions.csv.gz": "e9bf5a2d16d4f921c7dc9c43e6961bcf9af58a6ce87bbbaf5d5cc2935b20f2fe",
+    "reproduced\\holding_tradeoff_v8\\is_all_metrics.csv": "23b7a83c2996301c1bb6c2e429a6ff2acd75a76871d15af0889e301b23525c9e",
+    "reproduced\\holding_tradeoff_v8\\is_frozen_daily.csv.gz": "1d148f27bb279202f050fc9d4e57174b6374ee415c284192c47d7392133089b8",
+    "reproduced\\holding_tradeoff_v8\\is_frozen_decisions.csv.gz": "452b995d6e9ab7cd0cdb3a760890da3c3371246fa6a3af5826edd6a5246110d9",
+    "reproduced\\holding_tradeoff_v8\\is_frozen_metrics.csv": "b6cbc80eee1dec740e70fe49d627e22537a0482982c5bca5c4b890bddf58f632",
+    "reproduced\\holding_tradeoff_v8\\is_frozen_trades.csv.gz": "a011d93ff07f885cfebd61f7595c11c3533efaa547bc36cfc8804325ee40436c",
+    "reproduced\\holding_tradeoff_v8\\is_hypotheses.json": "ab3ae51a41a135e59859ffd28efa795c0e3c26ede30f464fa8daf511ad05fea8",
+    "reproduced\\holding_tradeoff_v8\\is_original_selection.csv": "dfa0b47f81586ce2e288b009996b9be7ab5a8e3e6fa860b982a49e48da85c27f",
+    "reproduced\\holding_tradeoff_v8\\is_selection.csv": "603963fccd3b2b7360d43602593452db106d03a6f9bfc767cb0321adc3973d89",
+    "reproduced\\holding_tradeoff_v8\\oos_metrics.csv": "186855bfbf5e2a791a492880292c170229e781cc570ae32c63c2a821588ad968",
+    "reproduced\\holding_tradeoff_v8\\oos_anniversary_metrics.csv": "4ec83e79b49b1bc1a0614c6866dc1ada1c073772502740e93dfca71842ad7d3e",
+    "reproduced\\holding_tradeoff_v8\\oos_fresh_start_metrics.csv": "38d655b0eef3809963d1289d6b7e1faf677daa7143ebe580470b0ec9e8e796fa",
+    "reproduced\\holding_tradeoff_v8\\candidate_assessment.csv": "b85730c07ca26273af8af14b8d09d8deb03557fe0d25e2d85906556138af4365",
+    "reproduced\\holding_tradeoff_v8\\oos_daily.csv.gz": "a303c2bed9cff2aff3861b5b0e5dfed8da571e41a6268ac1d320368477215094",
+    "reproduced\\holding_tradeoff_v8\\frozen_full_trade_ledger.csv.gz": "f56e0e120935dce20e6d46b5ae18d93d72f75d26f7c67165515a27453baf22fe",
+    "reproduced\\holding_tradeoff_v8\\frozen_full_episode_decisions.csv.gz": "9e33e66c51a37802e5b80c1b7395a128555434bd0c040974fb60c24817d21cab",
+    "verify_holding_tradeoff_research.py": "c83a452f7452ae2bdf16f76bdc2480e3128e8b6164341f026fc65f777a809edb",
+    "verify_entry_interaction_research.py": "27426ed2e8f1bee41f7870faa993bbf5367a0432fb8f9fd59db5fd04af9b0680",
+    "verify_state_filter_research.py": "9c24f76e55617b690bd8f39b6e0050fc4a1cbf2e393a9dee4559aa8112795f0f",
+    "verify_state_filter_supplement.py": "05531b7c3044995ff445d1007b0e5abe2b2efceeb2ae0784d8e205ddf2aa814b",
+    "reproduced\\holding_tradeoff_v8\\protocol.json": "936a87369ae6826b656021501d2926853dfe748fa4d8e2235b33b67a1f3fc60f",
+    "reproduced\\holding_tradeoff_v8\\development_status.json": "33807a71d90a58be3a84af3c6e4f444f3a5cdeac9e1ca0339b9f9899e4b41f1c",
+    "reproduced\\holding_tradeoff_v8\\frozen_selection.json": "8126136e79844055de2cfe243be3b4a4fbeb3c56f97070fbb84cadf13aa5cb35",
+    "verify_holding_filter_research.py": "d4f939d232051d7cc9dcd7320625efb379b92dd62dcd3dc148571e857b41d696",
+    "verify_holding_tradeoff_oos.py": "46fa3669b08e281efa3899f81c007dda44dd43c25b58334db45641ccbe1f7079",
+    "verify_entry_interaction_oos.py": "2b7d3ef6a91c309950f335dd814fabd9b1d9e5d8728c5e98b01a8c777d53d7d4",
+    "reproduced\\holding_tradeoff_v8\\oos_status.json": "3074f1a72cd2f33a80993bb42dc8d571fe90bdda2e30e994a9fd0a3184ed0c5d",
+    "reproduced\\holding_tradeoff_v8\\independent_validation.json": "ead5457ee2c9b7d870bc864f38d266c25dcbe172234bbb559af9a8013805b08a",
+    "reproduced\\holding_tradeoff_v8\\post_oos_independent_validation.json": "21fc417988c8fc55d7dcc34f0120efa9c83690d1f7c2c90ef462ef9245892bb5",
+    "reproduced\\holding_tradeoff_v8\\holding_tradeoff_report.html": "2b7bab3721dfcad917ff916069301a428f56d2a43c9c1cc58c2f0d9ccc03b735",
+    "reproduced\\holding_tradeoff_v8\\holding_tradeoff_atlas.pdf": "7e94710a194ebf5ee58052228b7c6a4180de039d24acb2bf955e9291f970f98b",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0001.png": "421c0088f79edf8ec0f52c9b2c994ac8617b792459b374ba4694801e79ba2f42",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0002.png": "a4b8831fbbddbe9431d3c88fce1a545281aed362181541a2ce97366f28d3c1c0",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0003.png": "a4d1aa7972b185df5d3d3a3bd60603eb73be2f3e3b822e7110f1f596a03bf45a",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0004.png": "3f072d85a2278c287476c6702e1042e95cae5e301a487e586b47666ea015267c",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0005.png": "e577912ae3e6d4832b8da4da08045aedbf6b5bce1c9b9866cae2b23f31fb8366",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0006.png": "cc3ed9740ec97576b3c6990c33367584b1688323b109b2616c915e9b91ba4ae4",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0007.png": "0b0acef8ba9579dd966247df76fb1fb29686f49bd6405dde7e9e005aa83698cc",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0008.png": "06e6f32d24f50eff30a319969dc58a72d784399b980cbd44442e180e9ad66978",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0009.png": "419b288635842db7d4a2551ff76d4109b64cdfad67dae391f86338c55e79deb7",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0010.png": "c75eeaa265baafc188af4e1a4e393b4e98459165e6222c78a6b76020cba0445d",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0011.png": "1adc8205f5399c2ae2aac9aa4fb3ae6b55438524ad26ab76270fe303dc21fe3b",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0012.png": "3ffe6a9f37b345a22f922f40cbf29ff146763e03dcd02f6c7e9affe0c5e38ca5",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0013.png": "f3efa2ed07af0a2732b9c74d2a89b5e86a91150a4298cb96d000434e7c8dcc43",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0014.png": "4312c51e3b6f51b6f97cb446c39ac210719c1206af69b34e6e3d3f8923ebddcb",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0015.png": "f057d62206cfee5c2c25a9e92b384db0d09c0bea2abeed720cbb88f39cf897ce",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0016.png": "cdab2aa0875e77b456eda050c8692af316bf6be15cdd46cc26ff4cc819a66750",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0017.png": "68eaa8313bc881e927e5d61ce4d743819feff5c851b8241af0551c592663e040",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0018.png": "0b4b587b9da051f369fc8edcdc34a09987ca1c5d65bd0425601785bf2d9e314e",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0019.png": "c1c4d61eb8a7e40bf298f965c76a2c7e51fdd237e433cfe488738db7dd7662b3",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0020.png": "ebd06c7d3a4115ba9504ecdb20410e51e78e522dbd2c0213e75f5170560ae89d",
+    "reproduced\\holding_tradeoff_v8\\tradeoff_figures\\frozen_0021.png": "32a95dcdef20e5e3f91b55572f509bcd8f99876ce1964e28519ea1c48da9f850",
+    "reproduced\\holding_tradeoff_v8\\report_all_492_criteria.csv": "8e4aefa8e25c975cbdda40ce4628c4e1f4c06fc9f7109ab72c9b0328f2242aa9",
+    "reproduced\\holding_tradeoff_v8\\report_IS_failures.csv": "28b45e2c7537618238bc28e9b1e1110bbd62b8801fd401e5c88d19515d819265",
+    "reproduced\\holding_tradeoff_v8\\report_gate_failure_counts.csv": "e3455a0707b0109a5b368171a86d9dc75fdac693d95517821d7d64420818a411",
+    "reproduced\\holding_tradeoff_v8\\report_OOS_complete_results.csv": "d199412da61748393529f4cc0b803e39b32d7d31a879a29c31d90561acfadaef",
+    "reproduced\\holding_tradeoff_v8\\report_OOS_failures.csv": "48458083643f32a06e5bcdeb26be2a32494d65032cc0bd11c2d77cedc21108c0",
+    "reproduced\\holding_tradeoff_v8\\holding_tradeoff_passed_summary.pdf": "78e64a3c720ca9e6fb0ea63c2e7eeae7c265170b53eb10ce76719c9e17dce767",
+    "build_holding_tradeoff_report.py": "5426f0230ae0ebc4f56729aee8b3dc35c6855430540d719f60216539cd515a81",
+    "src\\fx_filter_report.py": "9ed0d4998444379cbd89a3f2edb29aa8dd31e7fd291939acfb1f32c94d112555",
+    "README.md": "84cf6692b39928d3a05801770b372fc4034358f247568d7875fccec90bb76c7b",
+    "tests\\test_fx_tradeoff_evaluation.py": "e486f23294ae027d424cad6ac7198e0169298ce652d70f303c00ca3304e77005",
+    "reproduced\\holding_tradeoff_v8\\holding_tradeoff_report_build.json": "4470f4aa5b1d4851d361964c040f86ec89a68008500975dcddc1f1bcc21438dc",
+    "reproduced\\holding_tradeoff_v8\\pre_oos_preflight.json": "1e3d00a48ac44c418d61464de17cd4f6e5b85d74bcefe264eb96a7361f175c98"
+  },
+  "visual_review": {
+    "final_root_inspected_png": "tradeoff_figures/frozen_0012.png",
+    "hash": "3ffe6a9f37b345a22f922f40cbf29ff146763e03dcd02f6c7e9affe0c5e38ca5",
+    "result": "Legible PnL/drawdown curves, four-decimal annualized value 1.0028, table and execution footnotes without overlaps. Other representative ranks inspected during report review."
+  },
+  "limitations": [
+    "OOS 2023-05-30 through 2026-05-29 was previously observed; repeated historical verification, not an untouched independent holdout.",
+    "Zero transaction, financing and interest costs by user instruction; fixed initial capital simple-return accounting.",
+    "492 candidate versions represent 362 distinct within-account IS execution paths, not 492 independent trials; repeated selection remains a limitation.",
+    "Four passed candidates have 23 to 40 eligible closed OOS trades; each has two positive anniversary years and three lose in the final anniversary year.",
+    "JPY BB_MR_20 simple annualized OOS return is approximately 1.0028%, only slightly above the original 1% curve threshold.",
+    "Original BASE technical signals inherited from saved ledgers; five IS and six full-period terminal unexecuted signals cannot be independently recovered solely from executed ledgers. No observed PnL impact.",
+    "No OOS-driven candidate adjustment, reranking, substitution or portfolio construction."
+  ]
+}

@@ -1,0 +1,15 @@
+FX PnL Explorer
+
+Start with the English Markdown guide. The dashboards open in a modern browser
+without a server or network connection.
+
+1. FX_PnL_Explorer_README.md
+   Detailed English Markdown guide: every strategy, filter, holding rule,
+   economic input, accounting convention, metric and reproduction command.
+2. FX_PnL_Explorer_Simple.html
+   New simple-interest edition: fixed initial USD 100,000 exposure and additive
+   daily PnL, with recomputed trade quality and all 912 account paths.
+3. FX_PnL_Explorer.html
+   Original compound-return edition, preserved unchanged as research evidence.
+
+Rebuild instructions and validation files are described in README.md.

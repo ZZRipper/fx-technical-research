@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "finished_utc": "2026-10-23T05:41:23.462252+00:00",
+  "locked_candidates": 4,
+  "proposals": 1201,
+  "cutoff": "2019-12-31",
+  "lock_sha256": "7e7275701d208811fed11f4149284c229a8a188d30b399b5ddfed94cde76b839"
+}

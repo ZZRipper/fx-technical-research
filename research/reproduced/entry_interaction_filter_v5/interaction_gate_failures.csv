@@ -1,0 +1,10 @@
+gate,criterion,failed_versions,failed_fraction
+positive_and_annualized_pass,正收益且简单年化 ≥ 1%,214,0.8014981273408239
+return_improvement_pass,收益改善 ≥ 5 pp,60,0.2247191011235955
+win_rate_pass,胜率改善 ≥ 2 pp,237,0.8876404494382022
+payoff_pass,盈亏比相对改善 ≥ 10%,229,0.8576779026217228
+drawdown_pass,最大回撤恶化 ≤ 2 pp,6,0.02247191011235955
+return_to_drawdown_pass,收益 / 回撤比改善,28,0.10486891385767791
+sample_pass,至少 50 笔且保留 ≥ 50%,3,0.011235955056179775
+block_positive_pass,至少两段正收益且末段为正,143,0.5355805243445693
+block_improvement_pass,至少两段优于 BASE 且末段改善,141,0.5280898876404494

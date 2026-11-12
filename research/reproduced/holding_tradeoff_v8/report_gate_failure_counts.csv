@@ -1,0 +1,10 @@
+gate,criterion,failed_versions,passed_versions
+positive_and_annualized_pass,正收益且简单年化至少 1%,351,141
+return_improvement_pass,累计收益改善至少 5 pp,132,360
+expectancy_pass,每笔期望值严格优于 BASE,71,421
+profit_factor_pass,毛利润因子严格优于 BASE,84,408
+drawdown_pass,最大回撤恶化不超过 2 pp,20,472
+return_to_drawdown_pass,收益／回撤比改善,75,417
+sample_pass,至少 50 笔合格闭合且保留至少 50%,0,492
+block_positive_pass,至少两段正收益且最后一段为正,243,249
+block_improvement_pass,至少两段优于 BASE 且最后一段改善,236,256

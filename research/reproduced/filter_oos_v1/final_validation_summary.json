@@ -1,0 +1,45 @@
+{
+  "validated_utc": "2026-10-23T05:26:01.461161+00:00",
+  "status": "passed",
+  "checks": {
+    "report_output_hashes_match": true,
+    "report_has_all_six_candidates": true,
+    "pdf_page_count": true,
+    "png_dimensions": true,
+    "all_local_report_links_exist": true,
+    "explicit_goal_not_achieved": true,
+    "attribution_rendered": true,
+    "all_independent_audits_pass": true,
+    "unit_tests_pass": true,
+    "attribution_checks_pass": true,
+    "result_counts_unchanged": true
+  },
+  "unit_tests": 46,
+  "independent_checks": 211,
+  "attribution_checks": 96,
+  "frozen_candidates": 6,
+  "oos_curve_passing_candidates": 0,
+  "oos_quality_confirmed_candidates": 1,
+  "research_goal_achieved": false,
+  "cost_bp": 0,
+  "source_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_filter_report.py": "9ed0d4998444379cbd89a3f2edb29aa8dd31e7fd291939acfb1f32c94d112555",
+    "verify_filter_research.py": "ebd7611931d7a991135b2ef6973e772ddc9468884bfee3d4d57888cfbecd935a",
+    "analyze_filter_outcomes.py": "091a927469018b93ca4736426aecc3d863a47fcb5067764970cb14ccaa262094",
+    "tests/test_fx_filter_candidates.py": "6f99c024b1ddd8de619e2409d1643cf305e63f598c9c15cfa66278cd4621869f",
+    "tests/test_fx_filter_research.py": "44f84a791454d202e6ab4018c31852da0682ce021679b1bf5f09cb53d88a3631"
+  },
+  "evidence_sha256": {
+    "protocol.json": "f177e690c0efa07b8efc3f331706251b6383a662fd57683ff76c6f37f3c37839",
+    "frozen_selection.json": "60121ca59443ceb6ec9ccf2f9312dfa44df0f5bd60b99a683ec5a79a6b45a671",
+    "pre_oos_integrity_audit.json": "8b14d011578a67b7e905cebddd5fce55332ef2fd56ee03c7109e84d65dc0bdd6",
+    "independent_integrity_audit.json": "0a3cb10139c485db75befc574637dd8b61d840e84a27323d49ce937b4673d212",
+    "failure_diagnostics.json": "28b48a1cf119905c785317e8c1f140e0039b74d17acf27b4e987674bf86ded6a",
+    "unit_test_summary.json": "91cdae14d787015ec29b3523e199602a7ae9511d8508f706f066e96b489ecfe4",
+    "report_build.json": "467aa7de5d9d91ae40d23a60e1b48deb01173c31629528afc83d0f10ec88abf9"
+  },
+  "validation_note": "The conclusion text is checked with Unicode escapes to avoid legacy PowerShell pipe encoding conversion."
+}

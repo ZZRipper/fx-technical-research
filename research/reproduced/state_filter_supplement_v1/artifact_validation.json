@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "checks": {
+    "input:protocol.json": true,
+    "input:is_selection.csv": true,
+    "input:is_frozen_daily.csv.gz": true,
+    "input:is_frozen_metrics.csv": true,
+    "input:supplement_diagnostics.json": true,
+    "input:jpy_observation_explanation.json": true,
+    "input:oos_status.json": true,
+    "input:oos_daily.csv.gz": true,
+    "input:oos_metrics.csv": true,
+    "input:candidate_assessment.csv": true,
+    "input:oos_anniversary_metrics.csv": true,
+    "input:oos_fresh_start_metrics.csv": true,
+    "link:jpy_is_oos_comparison.pdf": true,
+    "link:figures/jpy_is_oos_comparison.png": true,
+    "link:supplement_report_build.json": true,
+    "link:protocol.json": true,
+    "link:is_selection.csv": true,
+    "link:is_frozen_daily.csv.gz": true,
+    "link:is_frozen_metrics.csv": true,
+    "link:supplement_diagnostics.json": true,
+    "link:jpy_observation_explanation.json": true,
+    "link:oos_status.json": true,
+    "link:oos_daily.csv.gz": true,
+    "link:oos_metrics.csv": true,
+    "link:candidate_assessment.csv": true,
+    "link:oos_anniversary_metrics.csv": true,
+    "link:oos_fresh_start_metrics.csv": true,
+    "utf8": true,
+    "numeric_endpoints": true,
+    "negative_results_retained": true,
+    "strict_v2_unchanged": true,
+    "pdf_single_page": true
+  },
+  "artifact_sha256": {
+    "state_filter_supplement_report.html": "4e815e3ed11cbf77d6196559fb31270d72e8bd24d729fce79e16877e4b4ec914",
+    "jpy_is_oos_comparison.pdf": "e56b02dcd483da08fd58d531c67923358245fed0fd46d96d6c698b1d0d824348",
+    "figures/jpy_is_oos_comparison.png": "5473cfd4763c6f8d44834fca253d8dd7500bb46b6b56bbb2200b22d478ea3f19",
+    "supplement_report_build.json": "0e49378a4fb93a97a35c5ce2c07e1b2c3d2053597d6ec137e47a02f51353b5d8"
+  }
+}

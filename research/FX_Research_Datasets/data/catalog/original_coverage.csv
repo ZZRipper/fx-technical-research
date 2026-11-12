@@ -1,0 +1,46 @@
+source_column_1,source_column_2,source_column_3,source_column_4,source_column_5,source_column_6,source_column_7,source_column_8,source_column_9
+Data coverage and missingness,,,,,,,,
+,,,,,,,,
+group,series,source_field,first_valid,last_valid,observations,missing,core_ready_observations,note
+FX technical panel,EUR,EURUSD,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,6638,Standardized to USD per EUR; original convention USD per EUR
+FX technical panel,GBP,GBPUSD,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,6638,Standardized to USD per GBP; original convention USD per GBP
+FX technical panel,AUD,AUDUSD,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,6638,Standardized to USD per AUD; original convention USD per AUD
+FX technical panel,NZD,NZDUSD,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,6638,Standardized to USD per NZD; original convention USD per NZD
+FX technical panel,JPY,USDJPY,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,6638,Standardized to USD per JPY; original convention JPY per USD
+FX technical panel,CHF,USDCHF,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,6638,Standardized to USD per CHF; original convention CHF per USD
+FX technical panel,CAD,USDCAD,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,6638,Standardized to USD per CAD; original convention CAD per USD
+FX technical panel,NOK,USDNOK,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,6638,Standardized to USD per NOK; original convention NOK per USD
+FX technical panel,SEK,USDSEK,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,6638,Standardized to USD per SEK; original convention SEK per USD
+Market driver,spx_level,spx_level,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,spx_ret_1m,spx_ret_1m,2000-02-01 00:00:00,2026-05-29 00:00:00,6869,21,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,vix_level,vix_level,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,vix_chg_1m,vix_chg_1m,2000-02-01 00:00:00,2026-05-29 00:00:00,6869,21,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,vix_pctile_5y,vix_pctile_5y,2000-12-19 00:00:00,2026-05-29 00:00:00,6639,251,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,move_level,move_level,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,move_chg_1m,move_chg_1m,2000-02-01 00:00:00,2026-05-29 00:00:00,6869,21,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,us_ig_oas,us_ig_oas,2000-01-31 00:00:00,2026-05-29 00:00:00,6771,119,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,us_ig_oas_chg_1m,us_ig_oas_chg_1m,2000-02-29 00:00:00,2026-05-29 00:00:00,6744,146,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,us_hy_oas,us_hy_oas,2000-01-31 00:00:00,2026-05-29 00:00:00,6768,122,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,us_hy_oas_chg_1m,us_hy_oas_chg_1m,2000-02-29 00:00:00,2026-05-29 00:00:00,6738,152,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,hy_oas_pctile_5y,hy_oas_pctile_5y,2001-06-04 00:00:00,2026-05-29 00:00:00,6517,373,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,cdx_ig_5y,cdx_ig_5y,2011-09-09 00:00:00,2026-05-29 00:00:00,3841,3049,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,cdx_ig_chg_1m,cdx_ig_chg_1m,2011-10-10 00:00:00,2026-05-29 00:00:00,3820,3070,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,cdx_hy_5y,cdx_hy_5y,2012-08-08 00:00:00,2026-05-29 00:00:00,3603,3287,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,cdx_hy_chg_1m,cdx_hy_chg_1m,2012-09-06 00:00:00,2026-05-29 00:00:00,3582,3308,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,us_2y,us_2y,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,us_10y,us_10y,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,us_2s10s,us_2s10s,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,us_10y_chg_1m,us_10y_chg_1m,2000-02-01 00:00:00,2026-05-29 00:00:00,6869,21,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,wti_level,wti_level,2000-01-04 00:00:00,2026-05-29 00:00:00,6889,1,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,wti_ret_1m,wti_ret_1m,2000-02-02 00:00:00,2026-05-29 00:00:00,6866,24,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,dxy_level,dxy_level,2000-01-03 00:00:00,2026-05-29 00:00:00,6861,29,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,dxy_ret_1m,dxy_ret_1m,2000-02-01 00:00:00,2026-05-29 00:00:00,6811,79,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,bbdxy_level,bbdxy_level,2004-12-31 00:00:00,2026-05-29 00:00:00,5475,1415,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,bbdxy_ret_1m,bbdxy_ret_1m,2005-01-31 00:00:00,2026-05-29 00:00:00,5347,1543,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,equity_age_days,equity_age_days,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,credit_age_days,credit_age_days,2000-01-31 00:00:00,2026-05-29 00:00:00,6768,122,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,rates_age_days,rates_age_days,2000-01-03 00:00:00,2026-05-29 00:00:00,6890,0,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,wti_age_days,wti_age_days,2000-01-04 00:00:00,2026-05-29 00:00:00,6889,1,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,credit_widening_1m,credit_widening_1m,2000-02-29 00:00:00,2026-05-29 00:00:00,6738,152,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,equity_down_1m,equity_down_1m,2000-02-01 00:00:00,2026-05-29 00:00:00,6869,21,,As-of aligned; no future backfill; forward fill capped at five FX observations
+Market driver,vix_high_5y,vix_high_5y,2000-12-19 00:00:00,2026-05-29 00:00:00,6639,251,,As-of aligned; no future backfill; forward fill capped at five FX observations

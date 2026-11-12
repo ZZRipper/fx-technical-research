@@ -1,0 +1,1 @@
+candidate_id,freeze_rank,pair,strategy,filter_id,split,original_entry_idx,original_entry_date,original_exit_date,original_closed_at_snapshot,filtered_exit_date,baseline_return_pp,filtered_return_pp,delta_pp,return_days,changed_return_days,risk_signal_in_window,early_exit_fill_in_window

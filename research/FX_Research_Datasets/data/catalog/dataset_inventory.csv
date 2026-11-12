@@ -1,0 +1,15 @@
+dataset,sheet,clean_file,rows,feature_columns,start,end,duplicate_dates
+canonical_fx,PIT_Daily_Core,fx_spot_daily.csv,62010,4,2000-01-03,2026-05-29,
+original_context,PIT_Monthly,pit_monthly.csv,2853,64,2000-01-31,2026-05-29,
+separate_H10_extension,Federal Reserve H.10 historical pages,h10_official_daily.csv,7785,15,2023-06-26,2026-10-16,
+feature_workbook,1_FX_Spot,features_1_FX_Spot.csv,6890,11,2000-01-03,2026-05-29,0.0
+feature_workbook,2_Rates,features_2_Rates.csv,6890,22,2000-01-03,2026-05-29,0.0
+feature_workbook,3_Growth,features_3_Growth.csv,316,12,2000-01-31,2026-04-30,0.0
+feature_workbook,4_Inflation,features_4_Inflation.csv,316,10,2000-01-31,2026-04-30,0.0
+feature_workbook,5_Equities,features_5_Equities.csv,6871,10,2000-01-03,2026-05-29,0.0
+feature_workbook,6_Vol_Credit,features_6_Vol_Credit.csv,6828,5,2000-01-03,2026-05-29,0.0
+feature_workbook,7_FX_Options,features_7_FX_Options.csv,6888,14,2000-01-03,2026-05-29,0.0
+feature_workbook,8_Commodities,features_8_Commodities.csv,6884,13,2000-01-03,2026-05-29,0.0
+feature_workbook,9_Positioning,features_9_Positioning.csv,1312,1,2000-01-04,2026-05-19,0.0
+feature_workbook,10_Technicals,features_10_Technicals.csv,6890,126,2000-01-03,2026-05-29,0.0
+feature_workbook,11_Macro_Surprise,features_11_Macro_Surprise.csv,5950,2,2000-01-03,2026-05-29,0.0

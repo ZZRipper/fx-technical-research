@@ -1,0 +1,704 @@
+check,pass,observations,max_abs_error
+technical reference account count,True,234,0.0
+technical|EUR|RSI_MR_7|BASE daily equity,True,1673,5.054316716268659e-07
+technical|EUR|RSI_MR_7|BASE total_return_pct,True,1,1.0649259252204502e-12
+technical|EUR|RSI_MR_7|BASE max_drawdown_pct,True,1,6.258105145207082e-12
+technical|EUR|RSI_MR_14|BASE daily equity,True,1673,5.04165655001998e-07
+technical|EUR|RSI_MR_14|BASE total_return_pct,True,1,2.021494083237485e-12
+technical|EUR|RSI_MR_14|BASE max_drawdown_pct,True,1,3.3217872896784684e-12
+technical|EUR|RSI_MR_20|BASE daily equity,True,1673,5.212496034801006e-07
+technical|EUR|RSI_MR_20|BASE total_return_pct,True,1,4.7338133413177275e-11
+technical|EUR|RSI_MR_20|BASE max_drawdown_pct,True,1,4.67803573656056e-12
+technical|EUR|RSI_MOM_7|BASE daily equity,True,1673,5.029432941228151e-07
+technical|EUR|RSI_MOM_7|BASE total_return_pct,True,1,3.47544215628659e-12
+technical|EUR|RSI_MOM_7|BASE max_drawdown_pct,True,1,4.064304448547773e-12
+technical|EUR|RSI_MOM_14|BASE daily equity,True,1673,5.021283868700266e-07
+technical|EUR|RSI_MOM_14|BASE total_return_pct,True,1,4.970468481246826e-13
+technical|EUR|RSI_MOM_14|BASE max_drawdown_pct,True,1,3.0091484859440243e-12
+technical|EUR|RSI_MOM_20|BASE daily equity,True,1673,5.044421413913369e-07
+technical|EUR|RSI_MOM_20|BASE total_return_pct,True,1,2.2808421817899216e-12
+technical|EUR|RSI_MOM_20|BASE max_drawdown_pct,True,1,3.725020292222325e-12
+technical|EUR|MA_10_30|BASE daily equity,True,1673,5.49465767107904e-07
+technical|EUR|MA_10_30|BASE total_return_pct,True,1,1.8948398405882472e-11
+technical|EUR|MA_10_30|BASE max_drawdown_pct,True,1,1.3910650409343361e-11
+technical|EUR|MA_20_60|BASE daily equity,True,1673,5.191541276872158e-07
+technical|EUR|MA_20_60|BASE total_return_pct,True,1,3.091971123581061e-14
+technical|EUR|MA_20_60|BASE max_drawdown_pct,True,1,1.3773870932709542e-11
+technical|EUR|BB_MR_10|BASE daily equity,True,1673,5.490437615662813e-07
+technical|EUR|BB_MR_10|BASE total_return_pct,True,1,4.957989574450039e-11
+technical|EUR|BB_MR_10|BASE max_drawdown_pct,True,1,3.879563337250147e-11
+technical|EUR|BB_MR_20|BASE daily equity,True,1673,5.494512151926756e-07
+technical|EUR|BB_MR_20|BASE total_return_pct,True,1,4.945199805206357e-11
+technical|EUR|BB_MR_20|BASE max_drawdown_pct,True,1,3.794298208958935e-12
+technical|EUR|BB_BO_10|BASE daily equity,True,1673,5.3978874348104e-07
+technical|EUR|BB_BO_10|BASE total_return_pct,True,1,4.68212135729118e-11
+technical|EUR|BB_BO_10|BASE max_drawdown_pct,True,1,1.8207657603852567e-12
+technical|EUR|BB_BO_20|BASE daily equity,True,1673,5.486654117703438e-07
+technical|EUR|BB_BO_20|BASE total_return_pct,True,1,1.2592593634508376e-11
+technical|EUR|BB_BO_20|BASE max_drawdown_pct,True,1,1.6342482922482304e-13
+technical|EUR|DONCHIAN_BO_10|BASE daily equity,True,1673,5.174806574359536e-07
+technical|EUR|DONCHIAN_BO_10|BASE total_return_pct,True,1,2.289723965986923e-12
+technical|EUR|DONCHIAN_BO_10|BASE max_drawdown_pct,True,1,1.4210854715202004e-12
+technical|EUR|DONCHIAN_BO_20|BASE daily equity,True,1673,5.004840204492211e-07
+technical|EUR|DONCHIAN_BO_20|BASE total_return_pct,True,1,1.8074430840897548e-12
+technical|EUR|DONCHIAN_BO_20|BASE max_drawdown_pct,True,1,4.737898962048348e-11
+technical|EUR|MACD_12_26_9|BASE daily equity,True,1673,5.492620402947068e-07
+technical|EUR|MACD_12_26_9|BASE total_return_pct,True,1,2.3447910280083306e-13
+technical|EUR|MACD_12_26_9|BASE max_drawdown_pct,True,1,3.801403636316536e-12
+technical|EUR|TSMOM_21|BASE daily equity,True,1673,5.47763193026185e-07
+technical|EUR|TSMOM_21|BASE total_return_pct,True,1,2.547295707699959e-12
+technical|EUR|TSMOM_21|BASE max_drawdown_pct,True,1,4.8265391683344205e-11
+technical|EUR|TSMOM_63|BASE daily equity,True,1673,5.486799636855721e-07
+technical|EUR|TSMOM_63|BASE total_return_pct,True,1,1.4566126083082054e-12
+technical|EUR|TSMOM_63|BASE max_drawdown_pct,True,1,1.7505996652289468e-11
+technical|EUR|VOTE_EQUAL_4|BASE daily equity,True,1673,5.04922354593873e-07
+technical|EUR|VOTE_EQUAL_4|BASE total_return_pct,True,1,2.432498646953718e-13
+technical|EUR|VOTE_EQUAL_4|BASE max_drawdown_pct,True,1,2.0682122681137116e-11
+technical|EUR|VOTE_STRENGTH_4|BASE daily equity,True,1673,5.41098415851593e-07
+technical|EUR|VOTE_STRENGTH_4|BASE total_return_pct,True,1,1.9953483310075626e-13
+technical|EUR|VOTE_STRENGTH_4|BASE max_drawdown_pct,True,1,4.7275960923798266e-11
+technical|EUR|REGIME_RULE_FIXED|BASE daily equity,True,1673,4.997127689421177e-07
+technical|EUR|REGIME_RULE_FIXED|BASE total_return_pct,True,1,2.469136006766348e-12
+technical|EUR|REGIME_RULE_FIXED|BASE max_drawdown_pct,True,1,4.701128375472763e-12
+technical|EUR|ALWAYS_LONG_FX|BASE daily equity,True,1673,5.465117283165455e-07
+technical|EUR|ALWAYS_LONG_FX|BASE total_return_pct,True,1,2.1316282072803006e-13
+technical|EUR|ALWAYS_LONG_FX|BASE max_drawdown_pct,True,1,9.9298347322474e-12
+technical|EUR|ALWAYS_SHORT_FX|BASE daily equity,True,1673,5.497422534972429e-07
+technical|EUR|ALWAYS_SHORT_FX|BASE total_return_pct,True,1,1.9912960169676808e-12
+technical|EUR|ALWAYS_SHORT_FX|BASE max_drawdown_pct,True,1,4.367350925349456e-11
+technical|GBP|RSI_MR_7|BASE daily equity,True,1673,5.019246600568295e-07
+technical|GBP|RSI_MR_7|BASE total_return_pct,True,1,1.4135359549527493e-12
+technical|GBP|RSI_MR_7|BASE max_drawdown_pct,True,1,3.751665644813329e-11
+technical|GBP|RSI_MR_14|BASE daily equity,True,1673,5.384354153648019e-07
+technical|GBP|RSI_MR_14|BASE total_return_pct,True,1,4.817479748453479e-11
+technical|GBP|RSI_MR_14|BASE max_drawdown_pct,True,1,3.836753137420601e-11
+technical|GBP|RSI_MR_20|BASE daily equity,True,1673,5.419278750196099e-07
+technical|GBP|RSI_MR_20|BASE total_return_pct,True,1,1.6900258970053983e-11
+technical|GBP|RSI_MR_20|BASE max_drawdown_pct,True,1,3.198330489340151e-11
+technical|GBP|RSI_MOM_7|BASE daily equity,True,1673,5.495094228535891e-07
+technical|GBP|RSI_MOM_7|BASE total_return_pct,True,1,9.347189688924118e-12
+technical|GBP|RSI_MOM_7|BASE max_drawdown_pct,True,1,1.77209358298569e-11
+technical|GBP|RSI_MOM_14|BASE daily equity,True,1673,5.497713573276997e-07
+technical|GBP|RSI_MOM_14|BASE total_return_pct,True,1,3.664446523998777e-11
+technical|GBP|RSI_MOM_14|BASE max_drawdown_pct,True,1,3.718270136232604e-11
+technical|GBP|RSI_MOM_20|BASE daily equity,True,1673,5.47879608348012e-07
+technical|GBP|RSI_MOM_20|BASE total_return_pct,True,1,4.858335955759685e-11
+technical|GBP|RSI_MOM_20|BASE max_drawdown_pct,True,1,4.7986503659558366e-11
+technical|GBP|MA_10_30|BASE daily equity,True,1673,5.397159839048982e-07
+technical|GBP|MA_10_30|BASE total_return_pct,True,1,7.172040739078511e-13
+technical|GBP|MA_10_30|BASE max_drawdown_pct,True,1,3.4852121189032914e-11
+technical|GBP|MA_20_60|BASE daily equity,True,1673,5.042384145781398e-07
+technical|GBP|MA_20_60|BASE total_return_pct,True,1,1.4033219031261979e-13
+technical|GBP|MA_20_60|BASE max_drawdown_pct,True,1,3.61666252501891e-11
+technical|GBP|BB_MR_10|BASE daily equity,True,1673,5.452748155221343e-07
+technical|GBP|BB_MR_10|BASE total_return_pct,True,1,1.014655026665423e-11
+technical|GBP|BB_MR_10|BASE max_drawdown_pct,True,1,3.426592343203083e-12
+technical|GBP|BB_MR_20|BASE daily equity,True,1673,5.456531653180718e-07
+technical|GBP|BB_MR_20|BASE total_return_pct,True,1,2.722444492064824e-11
+technical|GBP|BB_MR_20|BASE max_drawdown_pct,True,1,2.1961099605505296e-11
+technical|GBP|BB_BO_10|BASE daily equity,True,1673,5.271431291475892e-07
+technical|GBP|BB_BO_10|BASE total_return_pct,True,1,7.528200285378261e-12
+technical|GBP|BB_BO_10|BASE max_drawdown_pct,True,1,1.3429257705865894e-11
+technical|GBP|BB_BO_20|BASE daily equity,True,1673,5.426700226962566e-07
+technical|GBP|BB_BO_20|BASE total_return_pct,True,1,4.970246436641901e-11
+technical|GBP|BB_BO_20|BASE max_drawdown_pct,True,1,1.3535839116229909e-11
+technical|GBP|DONCHIAN_BO_10|BASE daily equity,True,1673,5.400070222094655e-07
+technical|GBP|DONCHIAN_BO_10|BASE total_return_pct,True,1,1.971756091734278e-12
+technical|GBP|DONCHIAN_BO_10|BASE max_drawdown_pct,True,1,2.1394441773736617e-11
+technical|GBP|DONCHIAN_BO_20|BASE daily equity,True,1673,5.488254828378558e-07
+technical|GBP|DONCHIAN_BO_20|BASE total_return_pct,True,1,1.0878409284487134e-11
+technical|GBP|DONCHIAN_BO_20|BASE max_drawdown_pct,True,1,2.2946977651372436e-11
+technical|GBP|MACD_12_26_9|BASE daily equity,True,1673,5.49902324564755e-07
+technical|GBP|MACD_12_26_9|BASE total_return_pct,True,1,3.852917984659143e-12
+technical|GBP|MACD_12_26_9|BASE max_drawdown_pct,True,1,2.5721647034515627e-11
+technical|GBP|TSMOM_21|BASE daily equity,True,1673,5.325418896973133e-07
+technical|GBP|TSMOM_21|BASE total_return_pct,True,1,2.6778579353958776e-12
+technical|GBP|TSMOM_21|BASE max_drawdown_pct,True,1,2.1316282072803006e-11
+technical|GBP|TSMOM_63|BASE daily equity,True,1673,5.488691385835409e-07
+technical|GBP|TSMOM_63|BASE total_return_pct,True,1,3.297362383136715e-14
+technical|GBP|TSMOM_63|BASE max_drawdown_pct,True,1,3.2098768087962526e-11
+technical|GBP|VOTE_EQUAL_4|BASE daily equity,True,1673,5.48752723261714e-07
+technical|GBP|VOTE_EQUAL_4|BASE total_return_pct,True,1,4.68123317887148e-11
+technical|GBP|VOTE_EQUAL_4|BASE max_drawdown_pct,True,1,6.629363724641735e-12
+technical|GBP|VOTE_STRENGTH_4|BASE daily equity,True,1673,5.465262802317739e-07
+technical|GBP|VOTE_STRENGTH_4|BASE total_return_pct,True,1,1.7150725284409418e-12
+technical|GBP|VOTE_STRENGTH_4|BASE max_drawdown_pct,True,1,1.532995952402416e-11
+technical|GBP|REGIME_RULE_FIXED|BASE daily equity,True,1673,5.046313162893057e-07
+technical|GBP|REGIME_RULE_FIXED|BASE total_return_pct,True,1,1.963762485956977e-12
+technical|GBP|REGIME_RULE_FIXED|BASE max_drawdown_pct,True,1,1.3287149158713873e-12
+technical|GBP|ALWAYS_LONG_FX|BASE daily equity,True,1673,5.346519174054265e-07
+technical|GBP|ALWAYS_LONG_FX|BASE total_return_pct,True,1,9.630074515598608e-13
+technical|GBP|ALWAYS_LONG_FX|BASE max_drawdown_pct,True,1,2.2609469851886388e-11
+technical|GBP|ALWAYS_SHORT_FX|BASE daily equity,True,1673,5.269102985039353e-07
+technical|GBP|ALWAYS_SHORT_FX|BASE total_return_pct,True,1,2.3163693185779266e-12
+technical|GBP|ALWAYS_SHORT_FX|BASE max_drawdown_pct,True,1,1.765698698363849e-12
+technical|AUD|RSI_MR_7|BASE daily equity,True,1673,5.42087946087122e-07
+technical|AUD|RSI_MR_7|BASE total_return_pct,True,1,2.709610313900157e-12
+technical|AUD|RSI_MR_7|BASE max_drawdown_pct,True,1,3.0528468641932704e-11
+technical|AUD|RSI_MR_14|BASE daily equity,True,1673,5.460751708596945e-07
+technical|AUD|RSI_MR_14|BASE total_return_pct,True,1,4.135358722123783e-12
+technical|AUD|RSI_MR_14|BASE max_drawdown_pct,True,1,4.6501469341819757e-11
+technical|AUD|RSI_MR_20|BASE daily equity,True,1673,5.454785423353314e-07
+technical|AUD|RSI_MR_20|BASE total_return_pct,True,1,2.495781359357352e-13
+technical|AUD|RSI_MR_20|BASE max_drawdown_pct,True,1,1.1947776101806085e-11
+technical|AUD|RSI_MOM_7|BASE daily equity,True,1673,5.479378160089254e-07
+technical|AUD|RSI_MOM_7|BASE total_return_pct,True,1,2.6064483904519875e-11
+technical|AUD|RSI_MOM_7|BASE max_drawdown_pct,True,1,4.995115432393504e-11
+technical|AUD|RSI_MOM_14|BASE daily equity,True,1673,5.499896360561252e-07
+technical|AUD|RSI_MOM_14|BASE total_return_pct,True,1,1.1034728686354356e-11
+technical|AUD|RSI_MOM_14|BASE max_drawdown_pct,True,1,3.313971319585107e-11
+technical|AUD|RSI_MOM_20|BASE daily equity,True,1673,5.463371053338051e-07
+technical|AUD|RSI_MOM_20|BASE total_return_pct,True,1,3.0189184485607257e-11
+technical|AUD|RSI_MOM_20|BASE max_drawdown_pct,True,1,2.6915358830592595e-11
+technical|AUD|MA_10_30|BASE daily equity,True,1673,5.492620402947068e-07
+technical|AUD|MA_10_30|BASE total_return_pct,True,1,4.504485673351155e-11
+technical|AUD|MA_10_30|BASE max_drawdown_pct,True,1,4.991207447346824e-11
+technical|AUD|MA_20_60|BASE daily equity,True,1673,5.480833351612091e-07
+technical|AUD|MA_20_60|BASE total_return_pct,True,1,4.04085653826769e-11
+technical|AUD|MA_20_60|BASE max_drawdown_pct,True,1,1.7053025658242404e-11
+technical|AUD|BB_MR_10|BASE daily equity,True,1673,5.484034772962332e-07
+technical|AUD|BB_MR_10|BASE total_return_pct,True,1,4.158096089668106e-11
+technical|AUD|BB_MR_10|BASE max_drawdown_pct,True,1,3.5633718198369024e-12
+technical|AUD|BB_MR_20|BASE daily equity,True,1673,5.470647010952234e-07
+technical|AUD|BB_MR_20|BASE total_return_pct,True,1,3.3359981443936704e-12
+technical|AUD|BB_MR_20|BASE max_drawdown_pct,True,1,3.149480676256644e-11
+technical|AUD|BB_BO_10|BASE daily equity,True,1673,5.478941602632403e-07
+technical|AUD|BB_BO_10|BASE total_return_pct,True,1,1.2207124200358521e-11
+technical|AUD|BB_BO_10|BASE max_drawdown_pct,True,1,3.737454790098127e-12
+technical|AUD|BB_BO_20|BASE daily equity,True,1673,5.497422534972429e-07
+technical|AUD|BB_BO_20|BASE total_return_pct,True,1,6.0182969718880486e-12
+technical|AUD|BB_BO_20|BASE max_drawdown_pct,True,1,1.0743406164692715e-11
+technical|AUD|DONCHIAN_BO_10|BASE daily equity,True,1673,5.495385266840458e-07
+technical|AUD|DONCHIAN_BO_10|BASE total_return_pct,True,1,6.394884621840902e-13
+technical|AUD|DONCHIAN_BO_10|BASE max_drawdown_pct,True,1,4.54036808150704e-12
+technical|AUD|DONCHIAN_BO_20|BASE daily equity,True,1673,5.489710019901395e-07
+technical|AUD|DONCHIAN_BO_20|BASE total_return_pct,True,1,4.047429058573471e-12
+technical|AUD|DONCHIAN_BO_20|BASE max_drawdown_pct,True,1,3.2372327041230164e-11
+technical|AUD|MACD_12_26_9|BASE daily equity,True,1673,5.49902324564755e-07
+technical|AUD|MACD_12_26_9|BASE total_return_pct,True,1,4.416023102749023e-12
+technical|AUD|MACD_12_26_9|BASE max_drawdown_pct,True,1,1.0935252703347942e-11
+technical|AUD|TSMOM_21|BASE daily equity,True,1673,5.498295649886131e-07
+technical|AUD|TSMOM_21|BASE total_return_pct,True,1,3.902878020767275e-12
+technical|AUD|TSMOM_21|BASE max_drawdown_pct,True,1,2.0015988866362022e-11
+technical|AUD|TSMOM_63|BASE daily equity,True,1673,5.498732207342982e-07
+technical|AUD|TSMOM_63|BASE total_return_pct,True,1,1.0160761121369433e-12
+technical|AUD|TSMOM_63|BASE max_drawdown_pct,True,1,4.405364961712621e-12
+technical|AUD|VOTE_EQUAL_4|BASE daily equity,True,1673,5.462788976728916e-07
+technical|AUD|VOTE_EQUAL_4|BASE total_return_pct,True,1,4.860556401808935e-13
+technical|AUD|VOTE_EQUAL_4|BASE max_drawdown_pct,True,1,2.1671553440683056e-12
+technical|AUD|VOTE_STRENGTH_4|BASE daily equity,True,1673,5.488400347530842e-07
+technical|AUD|VOTE_STRENGTH_4|BASE total_return_pct,True,1,4.54072335287492e-11
+technical|AUD|VOTE_STRENGTH_4|BASE max_drawdown_pct,True,1,8.050449196161935e-12
+technical|AUD|REGIME_RULE_FIXED|BASE daily equity,True,1673,5.461624823510647e-07
+technical|AUD|REGIME_RULE_FIXED|BASE total_return_pct,True,1,3.943512183468556e-13
+technical|AUD|REGIME_RULE_FIXED|BASE max_drawdown_pct,True,1,3.4145131166951614e-11
+technical|AUD|ALWAYS_LONG_FX|BASE daily equity,True,1673,5.497713573276997e-07
+technical|AUD|ALWAYS_LONG_FX|BASE total_return_pct,True,1,2.9110047705671604e-12
+technical|AUD|ALWAYS_LONG_FX|BASE max_drawdown_pct,True,1,4.8757442527858075e-11
+technical|AUD|ALWAYS_SHORT_FX|BASE daily equity,True,1673,5.407637218013406e-07
+technical|AUD|ALWAYS_SHORT_FX|BASE total_return_pct,True,1,1.5205614545266144e-12
+technical|AUD|ALWAYS_SHORT_FX|BASE max_drawdown_pct,True,1,1.9241497284383513e-11
+technical|NZD|RSI_MR_7|BASE daily equity,True,1673,5.470647010952234e-07
+technical|NZD|RSI_MR_7|BASE total_return_pct,True,1,9.530154443382344e-13
+technical|NZD|RSI_MR_7|BASE max_drawdown_pct,True,1,1.1997514093309292e-11
+technical|NZD|RSI_MR_14|BASE daily equity,True,1673,5.486945156008005e-07
+technical|NZD|RSI_MR_14|BASE total_return_pct,True,1,1.6644463585180347e-12
+technical|NZD|RSI_MR_14|BASE max_drawdown_pct,True,1,4.403233333505341e-11
+technical|NZD|RSI_MR_20|BASE daily equity,True,1673,5.442416295409203e-07
+technical|NZD|RSI_MR_20|BASE total_return_pct,True,1,3.789857316860434e-12
+technical|NZD|RSI_MR_20|BASE max_drawdown_pct,True,1,3.7559289012278896e-11
+technical|NZD|RSI_MOM_7|BASE daily equity,True,1673,5.493202479556203e-07
+technical|NZD|RSI_MOM_7|BASE total_return_pct,True,1,8.286704655802168e-13
+technical|NZD|RSI_MOM_7|BASE max_drawdown_pct,True,1,2.0445867221496883e-11
+technical|NZD|RSI_MOM_14|BASE daily equity,True,1673,5.437905201688409e-07
+technical|NZD|RSI_MOM_14|BASE total_return_pct,True,1,1.765254609153999e-13
+technical|NZD|RSI_MOM_14|BASE max_drawdown_pct,True,1,6.398437335519702e-12
+technical|NZD|RSI_MOM_20|BASE daily equity,True,1673,5.425681592896581e-07
+technical|NZD|RSI_MOM_20|BASE total_return_pct,True,1,3.82804898890754e-12
+technical|NZD|RSI_MOM_20|BASE max_drawdown_pct,True,1,5.545786052607582e-12
+technical|NZD|MA_10_30|BASE daily equity,True,1673,5.488545866683125e-07
+technical|NZD|MA_10_30|BASE total_return_pct,True,1,2.0300205960666062e-11
+technical|NZD|MA_10_30|BASE max_drawdown_pct,True,1,4.2525982735241996e-11
+technical|NZD|MA_20_60|BASE daily equity,True,1673,5.496112862601876e-07
+technical|NZD|MA_20_60|BASE total_return_pct,True,1,4.1815439999481896e-12
+technical|NZD|MA_20_60|BASE max_drawdown_pct,True,1,1.1439738045737613e-11
+technical|NZD|BB_MR_10|BASE daily equity,True,1673,5.043839337304235e-07
+technical|NZD|BB_MR_10|BASE total_return_pct,True,1,1.0977885267493548e-12
+technical|NZD|BB_MR_10|BASE max_drawdown_pct,True,1,2.460076586885407e-11
+technical|NZD|BB_MR_20|BASE daily equity,True,1673,5.492183845490217e-07
+technical|NZD|BB_MR_20|BASE total_return_pct,True,1,1.2856382625159313e-12
+technical|NZD|BB_MR_20|BASE max_drawdown_pct,True,1,1.7280399333685637e-11
+technical|NZD|BB_BO_10|BASE daily equity,True,1673,5.456968210637569e-07
+technical|NZD|BB_BO_10|BASE total_return_pct,True,1,4.101607942175178e-12
+technical|NZD|BB_BO_10|BASE max_drawdown_pct,True,1,3.410249860280601e-11
+technical|NZD|BB_BO_20|BASE daily equity,True,1673,5.43121132068336e-07
+technical|NZD|BB_BO_20|BASE total_return_pct,True,1,3.0109248427834245e-13
+technical|NZD|BB_BO_20|BASE max_drawdown_pct,True,1,3.47526452060265e-11
+technical|NZD|DONCHIAN_BO_10|BASE daily equity,True,1673,5.466281436383724e-07
+technical|NZD|DONCHIAN_BO_10|BASE total_return_pct,True,1,4.61195526213487e-11
+technical|NZD|DONCHIAN_BO_10|BASE max_drawdown_pct,True,1,4.787636953551555e-11
+technical|NZD|DONCHIAN_BO_20|BASE daily equity,True,1673,5.499168764799833e-07
+technical|NZD|DONCHIAN_BO_20|BASE total_return_pct,True,1,1.5765166949677223e-13
+technical|NZD|DONCHIAN_BO_20|BASE max_drawdown_pct,True,1,3.249311930630938e-11
+technical|NZD|MACD_12_26_9|BASE daily equity,True,1673,5.482870619744062e-07
+technical|NZD|MACD_12_26_9|BASE total_return_pct,True,1,2.149214139990363e-11
+technical|NZD|MACD_12_26_9|BASE max_drawdown_pct,True,1,2.490452288839151e-12
+technical|NZD|TSMOM_21|BASE daily equity,True,1673,5.462788976728916e-07
+technical|NZD|TSMOM_21|BASE total_return_pct,True,1,3.6880720699628e-11
+technical|NZD|TSMOM_21|BASE max_drawdown_pct,True,1,1.2143175354140112e-11
+technical|NZD|TSMOM_63|BASE daily equity,True,1673,5.47799572814256e-07
+technical|NZD|TSMOM_63|BASE total_return_pct,True,1,1.9028334463655483e-11
+technical|NZD|TSMOM_63|BASE max_drawdown_pct,True,1,1.3997691894473974e-11
+technical|NZD|VOTE_EQUAL_4|BASE daily equity,True,1673,5.456095095723867e-07
+technical|NZD|VOTE_EQUAL_4|BASE total_return_pct,True,1,2.1023183194301964e-12
+technical|NZD|VOTE_EQUAL_4|BASE max_drawdown_pct,True,1,1.4992451724538114e-12
+technical|NZD|VOTE_STRENGTH_4|BASE daily equity,True,1673,5.48039679415524e-07
+technical|NZD|VOTE_STRENGTH_4|BASE total_return_pct,True,1,3.1167957104116795e-11
+technical|NZD|VOTE_STRENGTH_4|BASE max_drawdown_pct,True,1,2.389555220361217e-11
+technical|NZD|REGIME_RULE_FIXED|BASE daily equity,True,1673,5.475303623825312e-07
+technical|NZD|REGIME_RULE_FIXED|BASE total_return_pct,True,1,1.8248513811158773e-11
+technical|NZD|REGIME_RULE_FIXED|BASE max_drawdown_pct,True,1,4.8974158062264905e-11
+technical|NZD|ALWAYS_LONG_FX|BASE daily equity,True,1673,5.450710887089372e-07
+technical|NZD|ALWAYS_LONG_FX|BASE total_return_pct,True,1,1.652900039061933e-11
+technical|NZD|ALWAYS_LONG_FX|BASE max_drawdown_pct,True,1,3.984013119406882e-11
+technical|NZD|ALWAYS_SHORT_FX|BASE daily equity,True,1673,5.432229954749346e-07
+technical|NZD|ALWAYS_SHORT_FX|BASE total_return_pct,True,1,3.099742684753437e-13
+technical|NZD|ALWAYS_SHORT_FX|BASE max_drawdown_pct,True,1,3.396394276933279e-11
+technical|JPY|RSI_MR_7|BASE daily equity,True,1673,5.472247721627355e-07
+technical|JPY|RSI_MR_7|BASE total_return_pct,True,1,4.877875880993088e-12
+technical|JPY|RSI_MR_7|BASE max_drawdown_pct,True,1,2.0651924614867312e-11
+technical|JPY|RSI_MR_14|BASE daily equity,True,1673,5.397741915658116e-07
+technical|JPY|RSI_MR_14|BASE total_return_pct,True,1,5.938360914115037e-12
+technical|JPY|RSI_MR_14|BASE max_drawdown_pct,True,1,1.4637180356658064e-12
+technical|JPY|RSI_MR_20|BASE daily equity,True,1673,5.004840204492211e-07
+technical|JPY|RSI_MR_20|BASE total_return_pct,True,1,1.5285550603039155e-12
+technical|JPY|RSI_MR_20|BASE max_drawdown_pct,True,1,4.6908255058042414e-11
+technical|JPY|RSI_MOM_7|BASE daily equity,True,1673,5.45303919352591e-07
+technical|JPY|RSI_MOM_7|BASE total_return_pct,True,1,4.487965554744733e-12
+technical|JPY|RSI_MOM_7|BASE max_drawdown_pct,True,1,4.913403017781093e-12
+technical|JPY|RSI_MOM_14|BASE daily equity,True,1673,5.484325811266899e-07
+technical|JPY|RSI_MOM_14|BASE total_return_pct,True,1,4.529709940470639e-12
+technical|JPY|RSI_MOM_14|BASE max_drawdown_pct,True,1,1.9486634528220748e-11
+technical|JPY|RSI_MOM_20|BASE daily equity,True,1673,5.413021426647902e-07
+technical|JPY|RSI_MOM_20|BASE total_return_pct,True,1,4.348521542851813e-12
+technical|JPY|RSI_MOM_20|BASE max_drawdown_pct,True,1,2.254552100566798e-11
+technical|JPY|MA_10_30|BASE daily equity,True,1673,5.486508598551154e-07
+technical|JPY|MA_10_30|BASE total_return_pct,True,1,2.2470914018413168e-13
+technical|JPY|MA_10_30|BASE max_drawdown_pct,True,1,2.772893026303791e-11
+technical|JPY|MA_20_60|BASE daily equity,True,1673,5.493639037013054e-07
+technical|JPY|MA_20_60|BASE total_return_pct,True,1,1.788080794540292e-11
+technical|JPY|MA_20_60|BASE max_drawdown_pct,True,1,4.340527937074512e-11
+technical|JPY|BB_MR_10|BASE daily equity,True,1673,5.19401510246098e-07
+technical|JPY|BB_MR_10|BASE total_return_pct,True,1,4.4568793100552284e-12
+technical|JPY|BB_MR_10|BASE max_drawdown_pct,True,1,3.856825969705824e-11
+technical|JPY|BB_MR_20|BASE daily equity,True,1673,5.499896360561252e-07
+technical|JPY|BB_MR_20|BASE total_return_pct,True,1,1.4526158054195548e-12
+technical|JPY|BB_MR_20|BASE max_drawdown_pct,True,1,4.1744385725905886e-12
+technical|JPY|BB_BO_10|BASE daily equity,True,1673,5.31974365003407e-07
+technical|JPY|BB_BO_10|BASE total_return_pct,True,1,1.6404655411861313e-12
+technical|JPY|BB_BO_10|BASE max_drawdown_pct,True,1,1.3809398069497547e-11
+technical|JPY|BB_BO_20|BASE daily equity,True,1673,5.437468644231558e-07
+technical|JPY|BB_BO_20|BASE total_return_pct,True,1,3.213818100533672e-13
+technical|JPY|BB_BO_20|BASE max_drawdown_pct,True,1,2.7254642986918043e-11
+technical|JPY|DONCHIAN_BO_10|BASE daily equity,True,1673,5.489273462444544e-07
+technical|JPY|DONCHIAN_BO_10|BASE total_return_pct,True,1,2.2508217512040574e-11
+technical|JPY|DONCHIAN_BO_10|BASE max_drawdown_pct,True,1,4.631672823052213e-11
+technical|JPY|DONCHIAN_BO_20|BASE daily equity,True,1673,5.500041879713535e-07
+technical|JPY|DONCHIAN_BO_20|BASE total_return_pct,True,1,1.4072298881728784e-11
+technical|JPY|DONCHIAN_BO_20|BASE max_drawdown_pct,True,1,4.020606070298527e-11
+technical|JPY|MACD_12_26_9|BASE daily equity,True,1673,5.490001058205962e-07
+technical|JPY|MACD_12_26_9|BASE total_return_pct,True,1,4.60840254845607e-11
+technical|JPY|MACD_12_26_9|BASE max_drawdown_pct,True,1,2.7618796138995094e-11
+technical|JPY|TSMOM_21|BASE daily equity,True,1673,5.43717760592699e-07
+technical|JPY|TSMOM_21|BASE total_return_pct,True,1,2.433608869978343e-12
+technical|JPY|TSMOM_21|BASE max_drawdown_pct,True,1,2.2676971411783597e-11
+technical|JPY|TSMOM_63|BASE daily equity,True,1673,5.484907887876034e-07
+technical|JPY|TSMOM_63|BASE total_return_pct,True,1,7.744915819785092e-13
+technical|JPY|TSMOM_63|BASE max_drawdown_pct,True,1,2.8121505124545365e-11
+technical|JPY|VOTE_EQUAL_4|BASE daily equity,True,1673,5.493202479556203e-07
+technical|JPY|VOTE_EQUAL_4|BASE total_return_pct,True,1,3.1512570330960443e-12
+technical|JPY|VOTE_EQUAL_4|BASE max_drawdown_pct,True,1,2.9244162647046323e-11
+technical|JPY|VOTE_STRENGTH_4|BASE daily equity,True,1673,5.492765922099352e-07
+technical|JPY|VOTE_STRENGTH_4|BASE total_return_pct,True,1,4.993339075554104e-12
+technical|JPY|VOTE_STRENGTH_4|BASE max_drawdown_pct,True,1,2.6821211918104382e-11
+technical|JPY|REGIME_RULE_FIXED|BASE daily equity,True,1673,5.453184712678194e-07
+technical|JPY|REGIME_RULE_FIXED|BASE total_return_pct,True,1,3.597833142521267e-11
+technical|JPY|REGIME_RULE_FIXED|BASE max_drawdown_pct,True,1,3.363709311088314e-11
+technical|JPY|ALWAYS_LONG_FX|BASE daily equity,True,1673,5.481560947373509e-07
+technical|JPY|ALWAYS_LONG_FX|BASE total_return_pct,True,1,4.008882115158485e-11
+technical|JPY|ALWAYS_LONG_FX|BASE max_drawdown_pct,True,1,1.2320811038080137e-11
+technical|JPY|ALWAYS_SHORT_FX|BASE daily equity,True,1673,5.495676305145025e-07
+technical|JPY|ALWAYS_SHORT_FX|BASE total_return_pct,True,1,1.9802826045633992e-11
+technical|JPY|ALWAYS_SHORT_FX|BASE max_drawdown_pct,True,1,3.278444182797102e-11
+technical|CHF|RSI_MR_7|BASE daily equity,True,1673,5.180336302146316e-07
+technical|CHF|RSI_MR_7|BASE total_return_pct,True,1,3.0966340602844866e-12
+technical|CHF|RSI_MR_7|BASE max_drawdown_pct,True,1,1.8120616118721955e-11
+technical|CHF|RSI_MR_14|BASE daily equity,True,1673,5.008914740756154e-07
+technical|CHF|RSI_MR_14|BASE total_return_pct,True,1,4.5425885275562905e-12
+technical|CHF|RSI_MR_14|BASE max_drawdown_pct,True,1,2.0889956431346945e-12
+technical|CHF|RSI_MR_20|BASE daily equity,True,1673,5.446054274216294e-07
+technical|CHF|RSI_MR_20|BASE total_return_pct,True,1,4.404476783292921e-11
+technical|CHF|RSI_MR_20|BASE max_drawdown_pct,True,1,3.9683811792201595e-12
+technical|CHF|RSI_MOM_7|BASE daily equity,True,1673,5.498004611581564e-07
+technical|CHF|RSI_MOM_7|BASE total_return_pct,True,1,2.4668267428751278e-11
+technical|CHF|RSI_MOM_7|BASE max_drawdown_pct,True,1,4.312283863328048e-11
+technical|CHF|RSI_MOM_14|BASE daily equity,True,1673,5.442270776256919e-07
+technical|CHF|RSI_MOM_14|BASE total_return_pct,True,1,3.2587266218797595e-12
+technical|CHF|RSI_MOM_14|BASE max_drawdown_pct,True,1,1.7980283928409335e-11
+technical|CHF|RSI_MOM_20|BASE daily equity,True,1673,5.03772753290832e-07
+technical|CHF|RSI_MOM_20|BASE total_return_pct,True,1,4.018563259933217e-12
+technical|CHF|RSI_MOM_20|BASE max_drawdown_pct,True,1,3.161915174132446e-12
+technical|CHF|MA_10_30|BASE daily equity,True,1673,5.479087121784687e-07
+technical|CHF|MA_10_30|BASE total_return_pct,True,1,2.209898930516374e-13
+technical|CHF|MA_10_30|BASE max_drawdown_pct,True,1,2.5941915282601258e-11
+technical|CHF|MA_20_60|BASE daily equity,True,1673,5.475885700434446e-07
+technical|CHF|MA_20_60|BASE total_return_pct,True,1,8.189005029635155e-13
+technical|CHF|MA_20_60|BASE max_drawdown_pct,True,1,9.052314453583676e-12
+technical|CHF|BB_MR_10|BASE daily equity,True,1673,5.499605322256684e-07
+technical|CHF|BB_MR_10|BASE total_return_pct,True,1,4.75353090223507e-12
+technical|CHF|BB_MR_10|BASE max_drawdown_pct,True,1,3.0949465212870564e-11
+technical|CHF|BB_MR_20|BASE daily equity,True,1673,5.470210453495383e-07
+technical|CHF|BB_MR_20|BASE total_return_pct,True,1,3.1470381856024687e-12
+technical|CHF|BB_MR_20|BASE max_drawdown_pct,True,1,4.746425474877469e-12
+technical|CHF|BB_BO_10|BASE daily equity,True,1673,5.4558040574193e-07
+technical|CHF|BB_BO_10|BASE total_return_pct,True,1,3.0304647680168273e-12
+technical|CHF|BB_BO_10|BASE max_drawdown_pct,True,1,4.8750337100500474e-11
+technical|CHF|BB_BO_20|BASE daily equity,True,1673,5.498877726495266e-07
+technical|CHF|BB_BO_20|BASE total_return_pct,True,1,2.823075107016848e-12
+technical|CHF|BB_BO_20|BASE max_drawdown_pct,True,1,2.9132252166164108e-12
+technical|CHF|DONCHIAN_BO_10|BASE daily equity,True,1673,5.490437615662813e-07
+technical|CHF|DONCHIAN_BO_10|BASE total_return_pct,True,1,2.1451729281807275e-12
+technical|CHF|DONCHIAN_BO_10|BASE max_drawdown_pct,True,1,4.2314596271353366e-11
+technical|CHF|DONCHIAN_BO_20|BASE daily equity,True,1673,5.468027666211128e-07
+technical|CHF|DONCHIAN_BO_20|BASE total_return_pct,True,1,3.5778047191570295e-12
+technical|CHF|DONCHIAN_BO_20|BASE max_drawdown_pct,True,1,3.872457909892546e-13
+technical|CHF|MACD_12_26_9|BASE daily equity,True,1673,5.381298251450062e-07
+technical|CHF|MACD_12_26_9|BASE total_return_pct,True,1,4.270361841918202e-12
+technical|CHF|MACD_12_26_9|BASE max_drawdown_pct,True,1,1.8497203768674808e-11
+technical|CHF|TSMOM_21|BASE daily equity,True,1673,5.470938049256802e-07
+technical|CHF|TSMOM_21|BASE total_return_pct,True,1,3.51163542688937e-12
+technical|CHF|TSMOM_21|BASE max_drawdown_pct,True,1,1.1999290450148692e-11
+technical|CHF|TSMOM_63|BASE daily equity,True,1673,5.496403900906444e-07
+technical|CHF|TSMOM_63|BASE total_return_pct,True,1,4.193090319404291e-11
+technical|CHF|TSMOM_63|BASE max_drawdown_pct,True,1,4.652278562389256e-11
+technical|CHF|VOTE_EQUAL_4|BASE daily equity,True,1673,5.45303919352591e-07
+technical|CHF|VOTE_EQUAL_4|BASE total_return_pct,True,1,5.351274978693255e-13
+technical|CHF|VOTE_EQUAL_4|BASE max_drawdown_pct,True,1,3.7976732869537955e-11
+technical|CHF|VOTE_STRENGTH_4|BASE daily equity,True,1673,5.493056960403919e-07
+technical|CHF|VOTE_STRENGTH_4|BASE total_return_pct,True,1,2.220446049250313e-11
+technical|CHF|VOTE_STRENGTH_4|BASE max_drawdown_pct,True,1,1.8332002582610585e-11
+technical|CHF|REGIME_RULE_FIXED|BASE daily equity,True,1673,5.047477316111326e-07
+technical|CHF|REGIME_RULE_FIXED|BASE total_return_pct,True,1,3.54694051907245e-12
+technical|CHF|REGIME_RULE_FIXED|BASE max_drawdown_pct,True,1,1.3660184094987926e-12
+technical|CHF|ALWAYS_LONG_FX|BASE daily equity,True,1673,5.482288543134928e-07
+technical|CHF|ALWAYS_LONG_FX|BASE total_return_pct,True,1,1.9344525981068728e-11
+technical|CHF|ALWAYS_LONG_FX|BASE max_drawdown_pct,True,1,1.0558665053395089e-11
+technical|CHF|ALWAYS_SHORT_FX|BASE daily equity,True,1673,5.496403900906444e-07
+technical|CHF|ALWAYS_SHORT_FX|BASE total_return_pct,True,1,1.1375789199519204e-11
+technical|CHF|ALWAYS_SHORT_FX|BASE max_drawdown_pct,True,1,3.26174642850674e-11
+technical|CAD|RSI_MR_7|BASE daily equity,True,1673,4.984467523172498e-07
+technical|CAD|RSI_MR_7|BASE total_return_pct,True,1,2.8112234762289745e-13
+technical|CAD|RSI_MR_7|BASE max_drawdown_pct,True,1,2.5011104298755527e-12
+technical|CAD|RSI_MR_14|BASE daily equity,True,1673,4.964822437614202e-07
+technical|CAD|RSI_MR_14|BASE total_return_pct,True,1,1.6537882174816332e-12
+technical|CAD|RSI_MR_14|BASE max_drawdown_pct,True,1,4.675371201301459e-12
+technical|CAD|RSI_MR_20|BASE daily equity,True,1673,5.049805622547865e-07
+technical|CAD|RSI_MR_20|BASE total_return_pct,True,1,3.1650237986013963e-12
+technical|CAD|RSI_MR_20|BASE max_drawdown_pct,True,1,3.1530333899354446e-12
+technical|CAD|RSI_MOM_7|BASE daily equity,True,1673,5.046313162893057e-07
+technical|CAD|RSI_MOM_7|BASE total_return_pct,True,1,2.646771690706373e-12
+technical|CAD|RSI_MOM_7|BASE max_drawdown_pct,True,1,2.3451462993762107e-11
+technical|CAD|RSI_MOM_14|BASE daily equity,True,1673,5.040346877649426e-07
+technical|CAD|RSI_MOM_14|BASE total_return_pct,True,1,4.345857007592713e-12
+technical|CAD|RSI_MOM_14|BASE max_drawdown_pct,True,1,2.6689761511988763e-11
+technical|CAD|RSI_MOM_20|BASE daily equity,True,1673,5.033070920035243e-07
+technical|CAD|RSI_MOM_20|BASE total_return_pct,True,1,3.743672039036028e-12
+technical|CAD|RSI_MOM_20|BASE max_drawdown_pct,True,1,9.118039656641486e-12
+technical|CAD|MA_10_30|BASE daily equity,True,1673,5.373585736379027e-07
+technical|CAD|MA_10_30|BASE total_return_pct,True,1,7.736034035588091e-13
+technical|CAD|MA_10_30|BASE max_drawdown_pct,True,1,3.666755787889997e-11
+technical|CAD|MA_20_60|BASE daily equity,True,1673,5.470501491799951e-07
+technical|CAD|MA_20_60|BASE total_return_pct,True,1,1.8971491044794675e-12
+technical|CAD|MA_20_60|BASE max_drawdown_pct,True,1,3.4940939031002927e-11
+technical|CAD|BB_MR_10|BASE daily equity,True,1673,5.047040758654475e-07
+technical|CAD|BB_MR_10|BASE total_return_pct,True,1,2.1542767569826538e-12
+technical|CAD|BB_MR_10|BASE max_drawdown_pct,True,1,3.730349362740526e-12
+technical|CAD|BB_MR_20|BASE daily equity,True,1673,5.415640771389008e-07
+technical|CAD|BB_MR_20|BASE total_return_pct,True,1,7.158718062783009e-13
+technical|CAD|BB_MR_20|BASE max_drawdown_pct,True,1,4.9679371727506805e-11
+technical|CAD|BB_BO_10|BASE daily equity,True,1673,5.041947588324547e-07
+technical|CAD|BB_BO_10|BASE total_return_pct,True,1,3.5500491435414006e-12
+technical|CAD|BB_BO_10|BASE max_drawdown_pct,True,1,4.1882941559379105e-11
+technical|CAD|BB_BO_20|BASE daily equity,True,1673,5.427718861028552e-07
+technical|CAD|BB_BO_20|BASE total_return_pct,True,1,2.7853275241795927e-12
+technical|CAD|BB_BO_20|BASE max_drawdown_pct,True,1,4.3298697960381105e-11
+technical|CAD|DONCHIAN_BO_10|BASE daily equity,True,1673,5.407491698861122e-07
+technical|CAD|DONCHIAN_BO_10|BASE total_return_pct,True,1,2.6711965972481266e-12
+technical|CAD|DONCHIAN_BO_10|BASE max_drawdown_pct,True,1,2.4801494191706297e-11
+technical|CAD|DONCHIAN_BO_20|BASE daily equity,True,1673,5.049514584243298e-07
+technical|CAD|DONCHIAN_BO_20|BASE total_return_pct,True,1,4.190425784145191e-12
+technical|CAD|DONCHIAN_BO_20|BASE max_drawdown_pct,True,1,6.0751403907488566e-12
+technical|CAD|MACD_12_26_9|BASE daily equity,True,1673,5.472393240779638e-07
+technical|CAD|MACD_12_26_9|BASE total_return_pct,True,1,1.5445422718585178e-11
+technical|CAD|MACD_12_26_9|BASE max_drawdown_pct,True,1,2.362554596402333e-12
+technical|CAD|TSMOM_21|BASE daily equity,True,1673,5.202455213293433e-07
+technical|CAD|TSMOM_21|BASE total_return_pct,True,1,1.2931877790833823e-12
+technical|CAD|TSMOM_21|BASE max_drawdown_pct,True,1,8.661515948915621e-12
+technical|CAD|TSMOM_63|BASE daily equity,True,1673,5.049805622547865e-07
+technical|CAD|TSMOM_63|BASE total_return_pct,True,1,9.361955655151633e-14
+technical|CAD|TSMOM_63|BASE max_drawdown_pct,True,1,1.071498445526231e-11
+technical|CAD|VOTE_EQUAL_4|BASE daily equity,True,1673,5.433830665424466e-07
+technical|CAD|VOTE_EQUAL_4|BASE total_return_pct,True,1,3.9074299351682384e-13
+technical|CAD|VOTE_EQUAL_4|BASE max_drawdown_pct,True,1,3.813660498508398e-11
+technical|CAD|VOTE_STRENGTH_4|BASE daily equity,True,1673,5.405599949881434e-07
+technical|CAD|VOTE_STRENGTH_4|BASE total_return_pct,True,1,2.787103881018993e-12
+technical|CAD|VOTE_STRENGTH_4|BASE max_drawdown_pct,True,1,2.8389735007294803e-11
+technical|CAD|REGIME_RULE_FIXED|BASE daily equity,True,1673,5.041365511715412e-07
+technical|CAD|REGIME_RULE_FIXED|BASE total_return_pct,True,1,2.8343993818680246e-12
+technical|CAD|REGIME_RULE_FIXED|BASE max_drawdown_pct,True,1,1.482369782479509e-12
+technical|CAD|ALWAYS_LONG_FX|BASE daily equity,True,1673,5.306064849719405e-07
+technical|CAD|ALWAYS_LONG_FX|BASE total_return_pct,True,1,1.3722356584366935e-12
+technical|CAD|ALWAYS_LONG_FX|BASE max_drawdown_pct,True,1,4.922640073345974e-11
+technical|CAD|ALWAYS_SHORT_FX|BASE daily equity,True,1673,5.042820703238249e-07
+technical|CAD|ALWAYS_SHORT_FX|BASE total_return_pct,True,1,3.5229597017405467e-12
+technical|CAD|ALWAYS_SHORT_FX|BASE max_drawdown_pct,True,1,9.094947017729282e-13
+technical|NOK|RSI_MR_7|BASE daily equity,True,1673,5.414331099018455e-07
+technical|NOK|RSI_MR_7|BASE total_return_pct,True,1,2.4058532943627142e-12
+technical|NOK|RSI_MR_7|BASE max_drawdown_pct,True,1,4.552802579382842e-11
+technical|NOK|RSI_MR_14|BASE daily equity,True,1673,5.425972631201148e-07
+technical|NOK|RSI_MR_14|BASE total_return_pct,True,1,2.957634137601417e-12
+technical|NOK|RSI_MR_14|BASE max_drawdown_pct,True,1,1.829292273214378e-11
+technical|NOK|RSI_MR_20|BASE daily equity,True,1673,5.446490831673145e-07
+technical|NOK|RSI_MR_20|BASE total_return_pct,True,1,4.815037257799304e-13
+technical|NOK|RSI_MR_20|BASE max_drawdown_pct,True,1,2.000888343900442e-11
+technical|NOK|RSI_MOM_7|BASE daily equity,True,1673,5.44547219760716e-07
+technical|NOK|RSI_MOM_7|BASE total_return_pct,True,1,7.140954494389007e-13
+technical|NOK|RSI_MOM_7|BASE max_drawdown_pct,True,1,1.8260948309034575e-12
+technical|NOK|RSI_MOM_14|BASE daily equity,True,1673,5.45303919352591e-07
+technical|NOK|RSI_MOM_14|BASE total_return_pct,True,1,1.737276988933445e-12
+technical|NOK|RSI_MOM_14|BASE max_drawdown_pct,True,1,3.3157476764245075e-11
+technical|NOK|RSI_MOM_20|BASE daily equity,True,1673,5.496694939211011e-07
+technical|NOK|RSI_MOM_20|BASE total_return_pct,True,1,1.6919798895287386e-12
+technical|NOK|RSI_MOM_20|BASE max_drawdown_pct,True,1,9.727330052555772e-12
+technical|NOK|MA_10_30|BASE daily equity,True,1673,5.484471330419183e-07
+technical|NOK|MA_10_30|BASE total_return_pct,True,1,3.696598582791921e-11
+technical|NOK|MA_10_30|BASE max_drawdown_pct,True,1,4.426325972417544e-11
+technical|NOK|MA_20_60|BASE daily equity,True,1673,5.496840458363295e-07
+technical|NOK|MA_20_60|BASE total_return_pct,True,1,3.942091097997036e-11
+technical|NOK|MA_20_60|BASE max_drawdown_pct,True,1,9.805489753489383e-13
+technical|NOK|BB_MR_10|BASE daily equity,True,1673,5.479814717546105e-07
+technical|NOK|BB_MR_10|BASE total_return_pct,True,1,1.4583889651476056e-12
+technical|NOK|BB_MR_10|BASE max_drawdown_pct,True,1,1.6697754290362354e-12
+technical|NOK|BB_MR_20|BASE daily equity,True,1673,5.446345312520862e-07
+technical|NOK|BB_MR_20|BASE total_return_pct,True,1,3.2940317140628395e-13
+technical|NOK|BB_MR_20|BASE max_drawdown_pct,True,1,4.834888045479602e-11
+technical|NOK|BB_BO_10|BASE daily equity,True,1673,5.384354153648019e-07
+technical|NOK|BB_BO_10|BASE total_return_pct,True,1,3.540570614468663e-14
+technical|NOK|BB_BO_10|BASE max_drawdown_pct,True,1,3.33564287302579e-11
+technical|NOK|BB_BO_20|BASE daily equity,True,1673,5.481269909068942e-07
+technical|NOK|BB_BO_20|BASE total_return_pct,True,1,3.5464964298626e-12
+technical|NOK|BB_BO_20|BASE max_drawdown_pct,True,1,5.4001247917767614e-12
+technical|NOK|DONCHIAN_BO_10|BASE daily equity,True,1673,5.49902324564755e-07
+technical|NOK|DONCHIAN_BO_10|BASE total_return_pct,True,1,2.460254222569347e-12
+technical|NOK|DONCHIAN_BO_10|BASE max_drawdown_pct,True,1,1.710276364974561e-11
+technical|NOK|DONCHIAN_BO_20|BASE daily equity,True,1673,5.490146577358246e-07
+technical|NOK|DONCHIAN_BO_20|BASE total_return_pct,True,1,5.32018873400375e-13
+technical|NOK|DONCHIAN_BO_20|BASE max_drawdown_pct,True,1,4.8121506779352785e-11
+technical|NOK|MACD_12_26_9|BASE daily equity,True,1673,5.48316165804863e-07
+technical|NOK|MACD_12_26_9|BASE total_return_pct,True,1,2.19824158875781e-14
+technical|NOK|MACD_12_26_9|BASE max_drawdown_pct,True,1,4.4359182993503055e-11
+technical|NOK|TSMOM_21|BASE daily equity,True,1673,5.494075594469905e-07
+technical|NOK|TSMOM_21|BASE total_return_pct,True,1,3.4361846701358445e-11
+technical|NOK|TSMOM_21|BASE max_drawdown_pct,True,1,2.865263581952604e-11
+technical|NOK|TSMOM_63|BASE daily equity,True,1673,5.486508598551154e-07
+technical|NOK|TSMOM_63|BASE total_return_pct,True,1,5.4853899200679734e-12
+technical|NOK|TSMOM_63|BASE max_drawdown_pct,True,1,2.5508484213787597e-12
+technical|NOK|VOTE_EQUAL_4|BASE daily equity,True,1673,5.490146577358246e-07
+technical|NOK|VOTE_EQUAL_4|BASE total_return_pct,True,1,2.90700796767851e-12
+technical|NOK|VOTE_EQUAL_4|BASE max_drawdown_pct,True,1,9.048761739904876e-12
+technical|NOK|VOTE_STRENGTH_4|BASE daily equity,True,1673,5.468318704515696e-07
+technical|NOK|VOTE_STRENGTH_4|BASE total_return_pct,True,1,3.133493464702042e-12
+technical|NOK|VOTE_STRENGTH_4|BASE max_drawdown_pct,True,1,1.1837641977763269e-11
+technical|NOK|REGIME_RULE_FIXED|BASE daily equity,True,1673,5.440524546429515e-07
+technical|NOK|REGIME_RULE_FIXED|BASE total_return_pct,True,1,1.3535839116229909e-12
+technical|NOK|REGIME_RULE_FIXED|BASE max_drawdown_pct,True,1,4.11173317615976e-11
+technical|NOK|ALWAYS_LONG_FX|BASE daily equity,True,1673,5.481415428221226e-07
+technical|NOK|ALWAYS_LONG_FX|BASE total_return_pct,True,1,3.531397396727698e-12
+technical|NOK|ALWAYS_LONG_FX|BASE max_drawdown_pct,True,1,2.2311041902867146e-11
+technical|NOK|ALWAYS_SHORT_FX|BASE daily equity,True,1673,5.490437615662813e-07
+technical|NOK|ALWAYS_SHORT_FX|BASE total_return_pct,True,1,4.796163466380676e-13
+technical|NOK|ALWAYS_SHORT_FX|BASE max_drawdown_pct,True,1,1.4885870314174099e-12
+technical|SEK|RSI_MR_7|BASE daily equity,True,1673,5.399924702942371e-07
+technical|SEK|RSI_MR_7|BASE total_return_pct,True,1,9.192646643896296e-14
+technical|SEK|RSI_MR_7|BASE max_drawdown_pct,True,1,2.2859936166241823e-11
+technical|SEK|RSI_MR_14|BASE daily equity,True,1673,5.497422534972429e-07
+technical|SEK|RSI_MR_14|BASE total_return_pct,True,1,1.6399326341343112e-11
+technical|SEK|RSI_MR_14|BASE max_drawdown_pct,True,1,4.714451051768265e-12
+technical|SEK|RSI_MR_20|BASE daily equity,True,1673,5.474867066368461e-07
+technical|SEK|RSI_MR_20|BASE total_return_pct,True,1,4.673594844462059e-12
+technical|SEK|RSI_MR_20|BASE max_drawdown_pct,True,1,3.254285729781259e-12
+technical|SEK|RSI_MOM_7|BASE daily equity,True,1673,5.322799552232027e-07
+technical|SEK|RSI_MOM_7|BASE total_return_pct,True,1,1.4490630917407543e-12
+technical|SEK|RSI_MOM_7|BASE max_drawdown_pct,True,1,4.1449510490565444e-11
+technical|SEK|RSI_MOM_14|BASE daily equity,True,1673,5.458132363855839e-07
+technical|SEK|RSI_MOM_14|BASE total_return_pct,True,1,1.0880185641326534e-12
+technical|SEK|RSI_MOM_14|BASE max_drawdown_pct,True,1,4.1374903503310634e-11
+technical|SEK|RSI_MOM_20|BASE daily equity,True,1673,5.384645191952586e-07
+technical|SEK|RSI_MOM_20|BASE total_return_pct,True,1,2.327027459614328e-12
+technical|SEK|RSI_MOM_20|BASE max_drawdown_pct,True,1,3.3860914072647574e-11
+technical|SEK|MA_10_30|BASE daily equity,True,1673,5.462206900119781e-07
+technical|SEK|MA_10_30|BASE total_return_pct,True,1,3.2231994850917545e-12
+technical|SEK|MA_10_30|BASE max_drawdown_pct,True,1,2.2716051262250403e-11
+technical|SEK|MA_20_60|BASE daily equity,True,1673,5.480105755850673e-07
+technical|SEK|MA_20_60|BASE total_return_pct,True,1,1.0611955758577096e-11
+technical|SEK|MA_20_60|BASE max_drawdown_pct,True,1,3.532818482199218e-11
+technical|SEK|BB_MR_10|BASE daily equity,True,1673,5.457113729789853e-07
+technical|SEK|BB_MR_10|BASE total_return_pct,True,1,1.857181075592962e-12
+technical|SEK|BB_MR_10|BASE max_drawdown_pct,True,1,9.276135415348108e-12
+technical|SEK|BB_MR_20|BASE daily equity,True,1673,5.457695806398988e-07
+technical|SEK|BB_MR_20|BASE total_return_pct,True,1,1.5081269566508126e-12
+technical|SEK|BB_MR_20|BASE max_drawdown_pct,True,1,4.7119641521931044e-11
+technical|SEK|BB_BO_10|BASE daily equity,True,1673,5.278125172480941e-07
+technical|SEK|BB_BO_10|BASE total_return_pct,True,1,4.341416115494212e-12
+technical|SEK|BB_BO_10|BASE max_drawdown_pct,True,1,6.544098596350523e-12
+technical|SEK|BB_BO_20|BASE daily equity,True,1673,5.22850314155221e-07
+technical|SEK|BB_BO_20|BASE total_return_pct,True,1,6.007638830851647e-12
+technical|SEK|BB_BO_20|BASE max_drawdown_pct,True,1,8.256506589532364e-12
+technical|SEK|DONCHIAN_BO_10|BASE daily equity,True,1673,5.423789843916893e-07
+technical|SEK|DONCHIAN_BO_10|BASE total_return_pct,True,1,6.323830348264892e-12
+technical|SEK|DONCHIAN_BO_10|BASE max_drawdown_pct,True,1,4.2032155533888726e-11
+technical|SEK|DONCHIAN_BO_20|BASE daily equity,True,1673,5.335750756785274e-07
+technical|SEK|DONCHIAN_BO_20|BASE total_return_pct,True,1,4.221512028834695e-12
+technical|SEK|DONCHIAN_BO_20|BASE max_drawdown_pct,True,1,1.886135692075186e-11
+technical|SEK|MACD_12_26_9|BASE daily equity,True,1673,5.497131496667862e-07
+technical|SEK|MACD_12_26_9|BASE total_return_pct,True,1,1.3173462320992257e-11
+technical|SEK|MACD_12_26_9|BASE max_drawdown_pct,True,1,1.474376176702208e-11
+technical|SEK|TSMOM_21|BASE daily equity,True,1673,5.499314283952117e-07
+technical|SEK|TSMOM_21|BASE total_return_pct,True,1,1.5227819005758647e-12
+technical|SEK|TSMOM_21|BASE max_drawdown_pct,True,1,1.1226575225009583e-12
+technical|SEK|TSMOM_63|BASE daily equity,True,1673,5.434267222881317e-07
+technical|SEK|TSMOM_63|BASE total_return_pct,True,1,2.8315128020039992e-12
+technical|SEK|TSMOM_63|BASE max_drawdown_pct,True,1,3.785416424761934e-11
+technical|SEK|VOTE_EQUAL_4|BASE daily equity,True,1673,5.429465090855956e-07
+technical|SEK|VOTE_EQUAL_4|BASE total_return_pct,True,1,7.991829420461727e-12
+technical|SEK|VOTE_EQUAL_4|BASE max_drawdown_pct,True,1,1.7974954857891134e-11
+technical|SEK|VOTE_STRENGTH_4|BASE daily equity,True,1673,5.478214006870985e-07
+technical|SEK|VOTE_STRENGTH_4|BASE total_return_pct,True,1,2.9487523534044158e-12
+technical|SEK|VOTE_STRENGTH_4|BASE max_drawdown_pct,True,1,1.5266010677805752e-11
+technical|SEK|REGIME_RULE_FIXED|BASE daily equity,True,1673,5.448528099805117e-07
+technical|SEK|REGIME_RULE_FIXED|BASE total_return_pct,True,1,1.227284940341633e-11
+technical|SEK|REGIME_RULE_FIXED|BASE max_drawdown_pct,True,1,3.637623535723833e-11
+technical|SEK|ALWAYS_LONG_FX|BASE daily equity,True,1673,5.484180292114615e-07
+technical|SEK|ALWAYS_LONG_FX|BASE total_return_pct,True,1,3.7054803669889225e-12
+technical|SEK|ALWAYS_LONG_FX|BASE max_drawdown_pct,True,1,3.057465391975711e-11
+technical|SEK|ALWAYS_SHORT_FX|BASE daily equity,True,1673,5.465117283165455e-07
+technical|SEK|ALWAYS_SHORT_FX|BASE total_return_pct,True,1,4.68247662865906e-12
+technical|SEK|ALWAYS_SHORT_FX|BASE max_drawdown_pct,True,1,3.1537439326712047e-11
+technical|EUR|BB_MR_10|BB10_RANGE_GATE daily equity,True,1673,5.49189280718565e-07
+technical|EUR|BB_MR_10|BB10_RANGE_GATE total_return_pct,True,1,3.8275160818557197e-11
+technical|EUR|BB_MR_10|BB10_RANGE_GATE max_drawdown_pct,True,1,1.573852159708622e-12
+technical|EUR|BB_MR_20|BB20_RANGE_GATE daily equity,True,1673,5.45420334674418e-07
+technical|EUR|BB_MR_20|BB20_RANGE_GATE total_return_pct,True,1,1.0444978215673473e-11
+technical|EUR|BB_MR_20|BB20_RANGE_GATE max_drawdown_pct,True,1,3.1317171078626416e-12
+technical|EUR|TSMOM_63|MOM63_TREND_GATE daily equity,True,1673,3.330205800011754e-07
+technical|EUR|TSMOM_63|MOM63_TREND_GATE total_return_pct,True,1,9.2148511043888e-15
+technical|EUR|TSMOM_63|MOM63_TREND_GATE max_drawdown_pct,True,1,9.2148511043888e-15
+technical|EUR|TSMOM_63|MOM_MA_CONFIRM daily equity,True,1673,5.464389687404037e-07
+technical|EUR|TSMOM_63|MOM_MA_CONFIRM total_return_pct,True,1,3.0535574069290305e-12
+technical|EUR|TSMOM_63|MOM_MA_CONFIRM max_drawdown_pct,True,1,3.7047698242531624e-11
+technical|GBP|BB_MR_10|BB10_RANGE_GATE daily equity,True,1673,5.049660103395581e-07
+technical|GBP|BB_MR_10|BB10_RANGE_GATE total_return_pct,True,1,2.8528290840768022e-12
+technical|GBP|BB_MR_10|BB10_RANGE_GATE max_drawdown_pct,True,1,1.8465229345565604e-12
+technical|GBP|BB_MR_20|BB20_RANGE_GATE daily equity,True,1673,5.0361268222332e-07
+technical|GBP|BB_MR_20|BB20_RANGE_GATE total_return_pct,True,1,2.4638069362481474e-12
+technical|GBP|BB_MR_20|BB20_RANGE_GATE max_drawdown_pct,True,1,1.1510792319313623e-11
+technical|GBP|TSMOM_63|MOM63_TREND_GATE daily equity,True,1673,0.0
+technical|GBP|TSMOM_63|MOM63_TREND_GATE total_return_pct,True,1,0.0
+technical|GBP|TSMOM_63|MOM63_TREND_GATE max_drawdown_pct,True,1,0.0
+technical|GBP|TSMOM_63|MOM_MA_CONFIRM daily equity,True,1673,5.379988579079509e-07
+technical|GBP|TSMOM_63|MOM_MA_CONFIRM total_return_pct,True,1,8.129052986305396e-13
+technical|GBP|TSMOM_63|MOM_MA_CONFIRM max_drawdown_pct,True,1,4.887468207925849e-11
+technical|AUD|BB_MR_10|BB10_RANGE_GATE daily equity,True,1673,5.491456249728799e-07
+technical|AUD|BB_MR_10|BB10_RANGE_GATE total_return_pct,True,1,1.879740807453345e-11
+technical|AUD|BB_MR_10|BB10_RANGE_GATE max_drawdown_pct,True,1,1.1581846592889633e-12
+technical|AUD|BB_MR_20|BB20_RANGE_GATE daily equity,True,1673,5.47603121958673e-07
+technical|AUD|BB_MR_20|BB20_RANGE_GATE total_return_pct,True,1,4.687095156441501e-11
+technical|AUD|BB_MR_20|BB20_RANGE_GATE max_drawdown_pct,True,1,2.0410340084708878e-11
+technical|AUD|TSMOM_63|MOM63_TREND_GATE daily equity,True,1673,5.022302502766252e-07
+technical|AUD|TSMOM_63|MOM63_TREND_GATE total_return_pct,True,1,2.2284396550276142e-12
+technical|AUD|TSMOM_63|MOM63_TREND_GATE max_drawdown_pct,True,1,4.511058193656936e-12
+technical|AUD|TSMOM_63|MOM_MA_CONFIRM daily equity,True,1673,5.485053407028317e-07
+technical|AUD|TSMOM_63|MOM_MA_CONFIRM total_return_pct,True,1,4.758149430017511e-11
+technical|AUD|TSMOM_63|MOM_MA_CONFIRM max_drawdown_pct,True,1,2.616218353068689e-11
+technical|NZD|BB_MR_10|BB10_RANGE_GATE daily equity,True,1673,5.203764885663986e-07
+technical|NZD|BB_MR_10|BB10_RANGE_GATE total_return_pct,True,1,1.680433570072637e-12
+technical|NZD|BB_MR_10|BB10_RANGE_GATE max_drawdown_pct,True,1,2.717470692914503e-11
+technical|NZD|BB_MR_20|BB20_RANGE_GATE daily equity,True,1673,5.500041879713535e-07
+technical|NZD|BB_MR_20|BB20_RANGE_GATE total_return_pct,True,1,3.112177182629239e-12
+technical|NZD|BB_MR_20|BB20_RANGE_GATE max_drawdown_pct,True,1,4.0746073182162945e-11
+technical|NZD|TSMOM_63|MOM63_TREND_GATE daily equity,True,1673,4.808534868061543e-07
+technical|NZD|TSMOM_63|MOM63_TREND_GATE total_return_pct,True,1,3.933742220851855e-12
+technical|NZD|TSMOM_63|MOM63_TREND_GATE max_drawdown_pct,True,1,4.742872761198669e-13
+technical|NZD|TSMOM_63|MOM_MA_CONFIRM daily equity,True,1673,5.499459803104401e-07
+technical|NZD|TSMOM_63|MOM_MA_CONFIRM total_return_pct,True,1,1.7394086171407253e-11
+technical|NZD|TSMOM_63|MOM_MA_CONFIRM max_drawdown_pct,True,1,4.0401459955319297e-11
+technical|JPY|BB_MR_10|BB10_RANGE_GATE daily equity,True,1673,5.036708898842335e-07
+technical|JPY|BB_MR_10|BB10_RANGE_GATE total_return_pct,True,1,1.5698553568199713e-13
+technical|JPY|BB_MR_10|BB10_RANGE_GATE max_drawdown_pct,True,1,2.5075053144973936e-11
+technical|JPY|BB_MR_20|BB20_RANGE_GATE daily equity,True,1673,5.411711754277349e-07
+technical|JPY|BB_MR_20|BB20_RANGE_GATE total_return_pct,True,1,3.6193270602780103e-14
+technical|JPY|BB_MR_20|BB20_RANGE_GATE max_drawdown_pct,True,1,4.033395839542209e-11
+technical|JPY|TSMOM_63|MOM63_TREND_GATE daily equity,True,1673,4.7386856749653816e-07
+technical|JPY|TSMOM_63|MOM63_TREND_GATE total_return_pct,True,1,1.0880185641326534e-12
+technical|JPY|TSMOM_63|MOM63_TREND_GATE max_drawdown_pct,True,1,3.1308289294429414e-12
+technical|JPY|TSMOM_63|MOM_MA_CONFIRM daily equity,True,1673,5.469482857733965e-07
+technical|JPY|TSMOM_63|MOM_MA_CONFIRM total_return_pct,True,1,4.028777311759768e-11
+technical|JPY|TSMOM_63|MOM_MA_CONFIRM max_drawdown_pct,True,1,3.7125857943465235e-12
+technical|CHF|BB_MR_10|BB10_RANGE_GATE daily equity,True,1673,5.038600647822022e-07
+technical|CHF|BB_MR_10|BB10_RANGE_GATE total_return_pct,True,1,4.965888811270247e-13
+technical|CHF|BB_MR_10|BB10_RANGE_GATE max_drawdown_pct,True,1,2.0895285501865146e-11
+technical|CHF|BB_MR_20|BB20_RANGE_GATE daily equity,True,1673,5.280307959765196e-07
+technical|CHF|BB_MR_20|BB20_RANGE_GATE total_return_pct,True,1,3.554490035639901e-12
+technical|CHF|BB_MR_20|BB20_RANGE_GATE max_drawdown_pct,True,1,3.964650829857419e-11
+technical|CHF|TSMOM_63|MOM63_TREND_GATE daily equity,True,1673,3.4371623769402504e-07
+technical|CHF|TSMOM_63|MOM63_TREND_GATE total_return_pct,True,1,4.2471581807035363e-13
+technical|CHF|TSMOM_63|MOM63_TREND_GATE max_drawdown_pct,True,1,1.5056844659966373e-12
+technical|CHF|TSMOM_63|MOM_MA_CONFIRM daily equity,True,1673,5.485489964485168e-07
+technical|CHF|TSMOM_63|MOM_MA_CONFIRM total_return_pct,True,1,2.601474591301667e-12
+technical|CHF|TSMOM_63|MOM_MA_CONFIRM max_drawdown_pct,True,1,3.233679990444216e-11
+technical|CAD|BB_MR_10|BB10_RANGE_GATE daily equity,True,1673,5.015026545152068e-07
+technical|CAD|BB_MR_10|BB10_RANGE_GATE total_return_pct,True,1,4.977351863999502e-12
+technical|CAD|BB_MR_10|BB10_RANGE_GATE max_drawdown_pct,True,1,1.7612578062653483e-12
+technical|CAD|BB_MR_20|BB20_RANGE_GATE daily equity,True,1673,5.385518306866288e-07
+technical|CAD|BB_MR_20|BB20_RANGE_GATE total_return_pct,True,1,4.5004000526205346e-12
+technical|CAD|BB_MR_20|BB20_RANGE_GATE max_drawdown_pct,True,1,3.7280400988493057e-11
+technical|CAD|TSMOM_63|MOM63_TREND_GATE daily equity,True,1673,4.952453309670091e-07
+technical|CAD|TSMOM_63|MOM63_TREND_GATE total_return_pct,True,1,3.1525893007255945e-12
+technical|CAD|TSMOM_63|MOM63_TREND_GATE max_drawdown_pct,True,1,2.247091401841317e-12
+technical|CAD|TSMOM_63|MOM_MA_CONFIRM daily equity,True,1673,5.473702913150191e-07
+technical|CAD|TSMOM_63|MOM_MA_CONFIRM total_return_pct,True,1,3.5571545708990016e-12
+technical|CAD|TSMOM_63|MOM_MA_CONFIRM max_drawdown_pct,True,1,4.666844688472338e-11
+technical|NOK|BB_MR_10|BB10_RANGE_GATE daily equity,True,1673,5.403271643444896e-07
+technical|NOK|BB_MR_10|BB10_RANGE_GATE total_return_pct,True,1,8.903988657493755e-14
+technical|NOK|BB_MR_10|BB10_RANGE_GATE max_drawdown_pct,True,1,4.0239811482933874e-11
+technical|NOK|BB_MR_20|BB20_RANGE_GATE daily equity,True,1673,5.176843842491508e-07
+technical|NOK|BB_MR_20|BB20_RANGE_GATE total_return_pct,True,1,2.6556534749033744e-12
+technical|NOK|BB_MR_20|BB20_RANGE_GATE max_drawdown_pct,True,1,3.788969138440734e-11
+technical|NOK|TSMOM_63|MOM63_TREND_GATE daily equity,True,1673,4.74814441986382e-07
+technical|NOK|TSMOM_63|MOM63_TREND_GATE total_return_pct,True,1,4.839878497975292e-15
+technical|NOK|TSMOM_63|MOM63_TREND_GATE max_drawdown_pct,True,1,1.5372592088169768e-11
+technical|NOK|TSMOM_63|MOM_MA_CONFIRM daily equity,True,1673,5.499459803104401e-07
+technical|NOK|TSMOM_63|MOM_MA_CONFIRM total_return_pct,True,1,4.242650675223558e-11
+technical|NOK|TSMOM_63|MOM_MA_CONFIRM max_drawdown_pct,True,1,3.0468072509393096e-11
+technical|SEK|BB_MR_10|BB10_RANGE_GATE daily equity,True,1673,5.026522558182478e-07
+technical|SEK|BB_MR_10|BB10_RANGE_GATE total_return_pct,True,1,9.245937349078304e-13
+technical|SEK|BB_MR_10|BB10_RANGE_GATE max_drawdown_pct,True,1,4.437339384821826e-12
+technical|SEK|BB_MR_20|BB20_RANGE_GATE daily equity,True,1673,5.437032086774707e-07
+technical|SEK|BB_MR_20|BB20_RANGE_GATE total_return_pct,True,1,3.40563133249816e-11
+technical|SEK|BB_MR_20|BB20_RANGE_GATE max_drawdown_pct,True,1,2.232880547126115e-12
+technical|SEK|TSMOM_63|MOM63_TREND_GATE daily equity,True,1673,1.7308047972619534e-07
+technical|SEK|TSMOM_63|MOM63_TREND_GATE total_return_pct,True,1,8.107403637325206e-14
+technical|SEK|TSMOM_63|MOM63_TREND_GATE max_drawdown_pct,True,1,8.107403637325206e-14
+technical|SEK|TSMOM_63|MOM_MA_CONFIRM daily equity,True,1673,5.46569935977459e-07
+technical|SEK|TSMOM_63|MOM_MA_CONFIRM total_return_pct,True,1,1.1715073355844652e-11
+technical|SEK|TSMOM_63|MOM_MA_CONFIRM max_drawdown_pct,True,1,3.5775826745521044e-11

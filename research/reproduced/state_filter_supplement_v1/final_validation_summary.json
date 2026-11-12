@@ -1,0 +1,25 @@
+{
+  "computational_validation_status": "passed",
+  "research_goal_achieved": false,
+  "original_is_passing_candidates": 1,
+  "oos_curve_passing_candidates": 0,
+  "oos_quality_confirmed_candidates": 0,
+  "cost_bp": 0,
+  "accounting": "fixed_initial_capital_simple",
+  "oos_start": "2023-05-30",
+  "oos_end": "2026-05-29",
+  "historical_oos_previously_observed": true,
+  "strict_v2_result_unchanged": true,
+  "post_independent_checks_passed": 378,
+  "artifact_checks_passed": 32,
+  "goal_status": "active",
+  "evidence_sha256": {
+    "protocol.json": "d2ff2d289d9ba06c18bdd3032b068988a4da9d2506093b3a62cc0f622276eeea",
+    "frozen_selection.json": "eeaa471e2a702275aa2034784fcb34d5ddc645025e44f5c8abea67e69d96bb6c",
+    "oos_status.json": "66c449d18275e877a8cf273e21478ea57380d75b1ff9dc4f3539cbe90b5c5f5b",
+    "pre_oos_independent_audit.json": "f64b7b1e4fbe5e4ddcc49514ddc97fee583c6fa1eaa46f0fe558026bec77c93a",
+    "independent_validation.json": "e7a53fdc9d4feed94940d020e26040afe7007b9c8ed76dd1ca7edc21b97ca993",
+    "artifact_validation.json": "ee815dc8607ce02e80c14929b7178e3bf405dfa04cf87dc2a6be1f348e659843",
+    "supplement_report_build.json": "0e49378a4fb93a97a35c5ce2c07e1b2c3d2053597d6ec137e47a02f51353b5d8"
+  }
+}

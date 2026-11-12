@@ -1,0 +1,124 @@
+{
+  "created_utc": "2026-10-23T05:29:47.963237+00:00",
+  "compute_cutoff": "2023-05-29",
+  "cost_bp": 0,
+  "state_bins": {
+    "vol_ratio_20_63": [
+      0.8,
+      1.0,
+      1.25
+    ],
+    "realized_vol_20_pct": [
+      5.0,
+      10.0,
+      15.0
+    ],
+    "efficiency_63": [
+      0.1,
+      0.2,
+      0.4
+    ],
+    "direction_return_20_vol": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "direction_distance_ma_60_vol": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "K_vix": [
+      15.0,
+      20.0,
+      30.0
+    ],
+    "K_vix_d5": [
+      -3.0,
+      0.0,
+      3.0
+    ],
+    "direction_spread_bp": [
+      -100.0,
+      0.0,
+      100.0
+    ],
+    "direction_spread_d20_bp": [
+      -10.0,
+      0.0,
+      10.0
+    ],
+    "direction_dxy_d20_pct": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "direction_commodity_d20_pct": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "base_pnl_63_pct": [
+      -2.0,
+      0.0,
+      2.0
+    ],
+    "base_pnl_252_pct": [
+      -5.0,
+      0.0,
+      5.0
+    ]
+  },
+  "blocks": [
+    [
+      "DISCOVERY_1",
+      "2005-01-03",
+      "2009-12-31"
+    ],
+    [
+      "DISCOVERY_2",
+      "2010-01-01",
+      "2014-12-31"
+    ],
+    [
+      "DEVELOPMENT",
+      "2005-01-03",
+      "2014-12-31"
+    ],
+    [
+      "VALIDATION",
+      "2015-01-01",
+      "2019-12-31"
+    ],
+    [
+      "CONFIRMATION",
+      "2020-01-01",
+      "2023-05-29"
+    ],
+    [
+      "IS",
+      "2005-01-03",
+      "2023-05-29"
+    ]
+  ],
+  "accounts": 180,
+  "outcome_cohort": "Entry and eligible true close must both lie inside a block. Open and crossing trades are excluded from block quality, retained in full ledger.",
+  "signal_clock": "Signal-date price and already-earned unfiltered BASE PnL; macro strictly earlier and at most seven days old.",
+  "bin_closure": "Left inclusive, right exclusive; UNKNOWN=-1 retained separately.",
+  "purpose": "Descriptive IS-only state evidence, not a fitted filter or independent untouched validation.",
+  "oos_computed": false,
+  "source_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "build_is_filter_observations.py": "e5f96075dd5102319110031b0e9d13b84d7f4bf75ba6806aa5eee9449b723485",
+    "src/fx_is_states.py": "ca6caf54501109023e3ffe7d6777106c4cc746c328bd68955213f8208d12d90a"
+  },
+  "input_sha256": {
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de"
+  }
+}

@@ -1,0 +1,887 @@
+{
+  "checked_utc": "2026-10-23T05:25:42.592653+00:00",
+  "status": "passed",
+  "stage": "is_and_oos",
+  "read_only_decision_sources": true,
+  "auditor_sha256": "ebd7611931d7a991135b2ef6973e772ddc9468884bfee3d4d57888cfbecd935a",
+  "previous_full_sample_artifacts_read": false,
+  "checks": 211,
+  "passed_checks": 211,
+  "failed_checks": [],
+  "verified_file_count": 27,
+  "files_verified": [
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Features_Book.xlsx",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Technical_PIT_Dataset(6)(1).xlsx",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\candidate_assessment.csv",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\development_status.json",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\frozen_full_episode_decisions.csv.gz",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\frozen_full_trade_ledger.csv.gz",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\frozen_selection.json",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\is_account_coverage.csv",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\is_all_metrics.csv",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\is_frozen_daily.csv.gz",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\is_frozen_decisions.csv.gz",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\is_frozen_metrics.csv",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\is_frozen_trades.csv.gz",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\is_schedule_delay_diagnostic.csv",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\is_selection.csv",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\oos_anniversary_metrics.csv",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\oos_daily.csv.gz",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\oos_fresh_start_metrics.csv",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\oos_metrics.csv",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\oos_status.json",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_oos_v1\\protocol.json",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_filter_research.py",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_baselines.py",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_economics.py",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_candidates.py",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_evaluation.py",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_observation_features.py"
+  ],
+  "check_details": [
+    {
+      "check": "IS development completed before outcome-table access",
+      "pass": true
+    },
+    {
+      "check": "development freeze hash",
+      "pass": true
+    },
+    {
+      "check": "protocol hash bound to freeze and development",
+      "pass": true
+    },
+    {
+      "check": "freeze prior to OOS evaluation",
+      "pass": true
+    },
+    {
+      "check": "exact declared split",
+      "pass": true
+    },
+    {
+      "check": "zero-cost protocol",
+      "pass": true
+    },
+    {
+      "check": "source manifests equal",
+      "pass": true
+    },
+    {
+      "check": "input manifests equal",
+      "pass": true
+    },
+    {
+      "check": "decision source hash: run_filter_research.py",
+      "pass": true
+    },
+    {
+      "check": "decision source hash: src/fx_filter_candidates.py",
+      "pass": true
+    },
+    {
+      "check": "decision source hash: src/fx_filter_evaluation.py",
+      "pass": true
+    },
+    {
+      "check": "decision source hash: src/fx_baselines.py",
+      "pass": true
+    },
+    {
+      "check": "decision source hash: src/fx_economics.py",
+      "pass": true
+    },
+    {
+      "check": "decision source hash: src/fx_observation_features.py",
+      "pass": true
+    },
+    {
+      "check": "input hash: FX_Research_Datasets/data/raw/FX_Features_Book.xlsx",
+      "pass": true
+    },
+    {
+      "check": "input hash: FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "pass": true
+    },
+    {
+      "check": "frozen IS output hash: is_account_coverage.csv",
+      "pass": true
+    },
+    {
+      "check": "frozen IS output hash: is_all_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "frozen IS output hash: is_frozen_daily.csv.gz",
+      "pass": true
+    },
+    {
+      "check": "frozen IS output hash: is_frozen_decisions.csv.gz",
+      "pass": true
+    },
+    {
+      "check": "frozen IS output hash: is_frozen_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "frozen IS output hash: is_frozen_trades.csv.gz",
+      "pass": true
+    },
+    {
+      "check": "frozen IS output hash: is_schedule_delay_diagnostic.csv",
+      "pass": true
+    },
+    {
+      "check": "frozen IS output hash: is_selection.csv",
+      "pass": true
+    },
+    {
+      "check": "protocol scope matches full fixed universe",
+      "pass": true
+    },
+    {
+      "check": "180 exact accounts: 20 rules x 9 currencies",
+      "pass": true
+    },
+    {
+      "check": "IS compute cutoff per account",
+      "pass": true
+    },
+    {
+      "check": "all selection accounts covered",
+      "pass": true
+    },
+    {
+      "check": "candidate count matches coverage",
+      "pass": true
+    },
+    {
+      "check": "only IS periods in development metrics",
+      "pass": true
+    },
+    {
+      "check": "all IS metric endpoints at or before cutoff",
+      "pass": true
+    },
+    {
+      "check": "all IS metric starts inside development interval",
+      "pass": true
+    },
+    {
+      "check": "all IS metric costs zero",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: exact keys",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column pair",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values pair",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column strategy",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values strategy",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column filter_id",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values filter_id",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column is_new",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values is_new",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column gross_return_improvement_pp",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values gross_return_improvement_pp",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column win_rate_improvement_pp",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values win_rate_improvement_pp",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column payoff_absolute_improvement",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values payoff_absolute_improvement",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column payoff_relative_improvement",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values payoff_relative_improvement",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column retention",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values retention",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column is_gross_return_pct",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values is_gross_return_pct",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column is_net_return_pct",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values is_net_return_pct",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column is_annualized_simple_pct",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values is_annualized_simple_pct",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column is_win_rate",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values is_win_rate",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column is_payoff_ratio",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values is_payoff_ratio",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column is_closed_n",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values is_closed_n",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column is_max_drawdown_pp",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values is_max_drawdown_pp",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column positive_blocks",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values positive_blocks",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column improved_blocks",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values improved_blocks",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column positive_and_annualized_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values positive_and_annualized_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column return_improvement_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values return_improvement_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column win_rate_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values win_rate_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column payoff_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values payoff_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column drawdown_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values drawdown_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column return_to_drawdown_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values return_to_drawdown_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column sample_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values sample_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column block_positive_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values block_positive_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column block_improvement_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values block_improvement_pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values pass",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column failed_criteria",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values failed_criteria",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column freeze_rank",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values freeze_rank",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: column frozen",
+      "pass": true
+    },
+    {
+      "check": "IS rescreen: values frozen",
+      "pass": true
+    },
+    {
+      "check": "frozen exact ordered IS winners",
+      "pass": true
+    },
+    {
+      "check": "freeze count and all-passing count",
+      "pass": true
+    },
+    {
+      "check": "frozen specs equal prespecified registry",
+      "pass": true
+    },
+    {
+      "check": "freeze identity and rank metadata",
+      "pass": true
+    },
+    {
+      "check": "IS daily: unique account/date",
+      "pass": true
+    },
+    {
+      "check": "IS daily: exact frozen account set",
+      "pass": true
+    },
+    {
+      "check": "IS daily: date bounds",
+      "pass": true
+    },
+    {
+      "check": "IS daily: finite daily returns",
+      "pass": true
+    },
+    {
+      "check": "IS daily: zero costs gross equals net",
+      "pass": true
+    },
+    {
+      "check": "IS daily: signed unit positions",
+      "pass": true
+    },
+    {
+      "check": "IS daily: matched calendar SEK|TSMOM_63|MOM_NO_PROGRESS_5",
+      "pass": true
+    },
+    {
+      "check": "IS daily: matched calendar AUD|TSMOM_63|VOL_NOT_EXPANDING",
+      "pass": true
+    },
+    {
+      "check": "IS daily: matched calendar EUR|RSI_MOM_20|ENTRY_NOT_EXTENDED",
+      "pass": true
+    },
+    {
+      "check": "IS daily: matched calendar JPY|RSI_MR_7|VOL_TIME_20",
+      "pass": true
+    },
+    {
+      "check": "IS daily: matched calendar EUR|DONCHIAN_BO_20|MOM_ALIGNED_63",
+      "pass": true
+    },
+    {
+      "check": "IS daily: matched calendar JPY|BB_MR_10|VOL_TREND_CONFLICT",
+      "pass": true
+    },
+    {
+      "check": "IS ledger: holding segment positions",
+      "pass": true
+    },
+    {
+      "check": "IS ledger: holding observations",
+      "pass": true
+    },
+    {
+      "check": "IS ledger: independent arithmetic return",
+      "pass": true
+    },
+    {
+      "check": "IS ledger: eligible closed definition",
+      "pass": true
+    },
+    {
+      "check": "IS ledger: zero-cost trade returns",
+      "pass": true
+    },
+    {
+      "check": "IS ledger: dollar accounting",
+      "pass": true
+    },
+    {
+      "check": "IS ledger contains no post-cutoff entry or exit",
+      "pass": true
+    },
+    {
+      "check": "IS decisions contain no post-cutoff dates",
+      "pass": true
+    },
+    {
+      "check": "IS frozen metrics: daily simple sums",
+      "pass": true
+    },
+    {
+      "check": "IS frozen metrics: simple drawdowns",
+      "pass": true
+    },
+    {
+      "check": "IS frozen metrics: calendar annualization",
+      "pass": true
+    },
+    {
+      "check": "IS frozen metrics: closed cohort counts",
+      "pass": true
+    },
+    {
+      "check": "IS frozen metrics: win rates including flat",
+      "pass": true
+    },
+    {
+      "check": "IS frozen metrics: payoff ratios",
+      "pass": true
+    },
+    {
+      "check": "IS frozen metrics: carry-in counts",
+      "pass": true
+    },
+    {
+      "check": "IS frozen metrics: cash costs",
+      "pass": true
+    },
+    {
+      "check": "IS frozen metrics: quote observations",
+      "pass": true
+    },
+    {
+      "check": "IS selected versus development: exact keys",
+      "pass": true
+    },
+    {
+      "check": "IS selected versus development: column gross_simple_return_pct",
+      "pass": true
+    },
+    {
+      "check": "IS selected versus development: values gross_simple_return_pct",
+      "pass": true
+    },
+    {
+      "check": "IS selected versus development: column gross_max_drawdown_pp",
+      "pass": true
+    },
+    {
+      "check": "IS selected versus development: values gross_max_drawdown_pp",
+      "pass": true
+    },
+    {
+      "check": "IS selected versus development: column closed_n",
+      "pass": true
+    },
+    {
+      "check": "IS selected versus development: values closed_n",
+      "pass": true
+    },
+    {
+      "check": "IS selected versus development: column win_rate",
+      "pass": true
+    },
+    {
+      "check": "IS selected versus development: values win_rate",
+      "pass": true
+    },
+    {
+      "check": "IS selected versus development: column payoff_ratio",
+      "pass": true
+    },
+    {
+      "check": "IS selected versus development: values payoff_ratio",
+      "pass": true
+    },
+    {
+      "check": "OOS exact frozen digest",
+      "pass": true
+    },
+    {
+      "check": "OOS exact protocol digest",
+      "pass": true
+    },
+    {
+      "check": "freeze timestamp before OOS opened",
+      "pass": true
+    },
+    {
+      "check": "OOS completion after opening",
+      "pass": true
+    },
+    {
+      "check": "OOS output hash: candidate_assessment.csv",
+      "pass": true
+    },
+    {
+      "check": "OOS output hash: frozen_full_episode_decisions.csv.gz",
+      "pass": true
+    },
+    {
+      "check": "OOS output hash: frozen_full_trade_ledger.csv.gz",
+      "pass": true
+    },
+    {
+      "check": "OOS output hash: oos_anniversary_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "OOS output hash: oos_daily.csv.gz",
+      "pass": true
+    },
+    {
+      "check": "OOS output hash: oos_fresh_start_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "OOS output hash: oos_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: unique account/date",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: exact frozen account set",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: date bounds",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: finite daily returns",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: zero costs gross equals net",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: signed unit positions",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: matched calendar SEK|TSMOM_63|MOM_NO_PROGRESS_5",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: matched calendar AUD|TSMOM_63|VOL_NOT_EXPANDING",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: matched calendar EUR|RSI_MOM_20|ENTRY_NOT_EXTENDED",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: matched calendar JPY|RSI_MR_7|VOL_TIME_20",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: matched calendar EUR|DONCHIAN_BO_20|MOM_ALIGNED_63",
+      "pass": true
+    },
+    {
+      "check": "OOS daily: matched calendar JPY|BB_MR_10|VOL_TREND_CONFLICT",
+      "pass": true
+    },
+    {
+      "check": "OOS retains every frozen candidate in original order",
+      "pass": true
+    },
+    {
+      "check": "OOS metrics exact frozen accounts",
+      "pass": true
+    },
+    {
+      "check": "OOS three-year calendar bounds",
+      "pass": true
+    },
+    {
+      "check": "anniversary windows partition exactly",
+      "pass": true
+    },
+    {
+      "check": "all OOS anniversary accounts present once",
+      "pass": true
+    },
+    {
+      "check": "continuous execution across IS/OOS boundary",
+      "pass": true
+    },
+    {
+      "check": "full frozen ledger: holding segment positions",
+      "pass": true
+    },
+    {
+      "check": "full frozen ledger: holding observations",
+      "pass": true
+    },
+    {
+      "check": "full frozen ledger: independent arithmetic return",
+      "pass": true
+    },
+    {
+      "check": "full frozen ledger: eligible closed definition",
+      "pass": true
+    },
+    {
+      "check": "full frozen ledger: zero-cost trade returns",
+      "pass": true
+    },
+    {
+      "check": "full frozen ledger: dollar accounting",
+      "pass": true
+    },
+    {
+      "check": "OOS metrics: daily simple sums",
+      "pass": true
+    },
+    {
+      "check": "OOS metrics: simple drawdowns",
+      "pass": true
+    },
+    {
+      "check": "OOS metrics: calendar annualization",
+      "pass": true
+    },
+    {
+      "check": "OOS metrics: closed cohort counts",
+      "pass": true
+    },
+    {
+      "check": "OOS metrics: win rates including flat",
+      "pass": true
+    },
+    {
+      "check": "OOS metrics: payoff ratios",
+      "pass": true
+    },
+    {
+      "check": "OOS metrics: carry-in counts",
+      "pass": true
+    },
+    {
+      "check": "OOS metrics: cash costs",
+      "pass": true
+    },
+    {
+      "check": "OOS metrics: quote observations",
+      "pass": true
+    },
+    {
+      "check": "OOS anniversary metrics: daily simple sums",
+      "pass": true
+    },
+    {
+      "check": "OOS anniversary metrics: simple drawdowns",
+      "pass": true
+    },
+    {
+      "check": "OOS anniversary metrics: calendar annualization",
+      "pass": true
+    },
+    {
+      "check": "OOS anniversary metrics: closed cohort counts",
+      "pass": true
+    },
+    {
+      "check": "OOS anniversary metrics: win rates including flat",
+      "pass": true
+    },
+    {
+      "check": "OOS anniversary metrics: payoff ratios",
+      "pass": true
+    },
+    {
+      "check": "OOS anniversary metrics: carry-in counts",
+      "pass": true
+    },
+    {
+      "check": "OOS anniversary metrics: cash costs",
+      "pass": true
+    },
+    {
+      "check": "OOS anniversary metrics: quote observations",
+      "pass": true
+    },
+    {
+      "check": "anniversary metric boundaries",
+      "pass": true
+    },
+    {
+      "check": "anniversary arithmetic sums to OOS",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: exact keys",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: column annualized_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: values annualized_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: column baseline_improvement_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: values baseline_improvement_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: column drawdown_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: values drawdown_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: column positive_years_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: values positive_years_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: column sample_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: values sample_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: column oos_curve_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: values oos_curve_pass",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: column oos_quality_confirmed",
+      "pass": true
+    },
+    {
+      "check": "predeclared OOS assessment: values oos_quality_confirmed",
+      "pass": true
+    },
+    {
+      "check": "OOS status result counts",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "created_utc": "2026-10-23T06:39:33.853970+00:00",
+  "protocol_sha256": "fa1026caade32e10eeac0713128fa5316af53dbc9d77e252750d3aa66be8a6ea",
+  "selection_basis": "Original SCREEN and original within-account ranking, then freeze one passing candidate per account. Evaluate every frozen candidate under unchanged OOS_SCREEN. No OOS-based rule revisions, substitutions or deletions.",
+  "oos_evaluated_at_freeze": false,
+  "source_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "run_entry_interaction_research.py": "9ddd137af6adf5f55045e6b064900a6e07fea46c902b89dabd1356e3f8d21210",
+    "src/fx_entry_interaction_filters.py": "8af77715b0986469ac4a715aad4cb6a6bbb5b53ed6a81bf5ca4939fbb0f54104",
+    "src/fx_state_filters.py": "47f6c3f4b5696bb2f1039cf31b67244da5c81929e6ecbc6aa91d08e78904e619",
+    "src/fx_is_states.py": "b14cacc51e83587dbd15514e05ff608ecb1ead4e8a875f6eab2acaf41a6d8f5b",
+    "build_entry_interaction_observations.py": "ed53ec7acacaf763b0598af0818d47fa2bbb448e168d3d5c6a85d797ea114825"
+  },
+  "input_sha256": {
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "reproduced/entry_interaction_observations_v5/interaction_observation_protocol.json": "9be886f0e21feb3c97148b75ba016f79817f79541fd3921eb778183a439adbc3",
+    "reproduced/entry_interaction_observations_v5/interaction_observation_validation.json": "8e6c5a15a66675ea43b1a997196a7f4b7435579fe245b8c054fadec7d730ad46",
+    "reproduced/entry_interaction_observations_v5/discovery_closed_entry_ledger.csv.gz": "43d4fa4da2be207b76786505de231402aa20590c43f475bf6e0f75be0aab1591",
+    "reproduced/entry_interaction_observations_v5/interaction_account_coverage.csv": "c2d30b05c678c28a97779b25f98612e8109c9964333a5d074a1523c453e22317",
+    "reproduced/entry_interaction_observations_v5/interaction_comparison_summary.csv": "2ed586f8249bc16525a8061892357cb773ae50709b8504b2d5b684990d56a923",
+    "reproduced/entry_interaction_observations_v5/interaction_state_summary.csv": "65e031a03677fb621b28505e4079a212c11f915417c4e25228d7a64db9622d6b",
+    "reproduced/entry_interaction_observations_v5/interaction_support_diagnostics.csv": "ae2a9cce80487d660fc81415769a1411ea439c5b6a5f9babb1b8eb542eacf3a0"
+  },
+  "is_output_sha256": {
+    "is_account_coverage.csv": "3692ead48649be8de3a95a205e565d6bf435405e6bd77deb8326b67baaeb8116",
+    "is_all_decisions.csv.gz": "fb922e4c2059349fdaafc5eea2d31b23e00b287a38f8c760674f4f9fd2061723",
+    "is_all_metrics.csv": "1ec19a7df5b8fdc6aa6214721225ad7652db2e725d46da8538de2dcf468745ce",
+    "is_frozen_daily.csv.gz": "ea9bfc37945a8138a9fbaa7402cda9b6e6a0ab47fffc549028af123d69111267",
+    "is_frozen_decisions.csv.gz": "2cb270cbb6715c2b2baeb7f38446df602aa4b3a476400d412993049ec4b239c3",
+    "is_frozen_metrics.csv": "d14bf48c3089a3496657173dea8b999a557750d1bd6f37482aa0bb10fe5842f5",
+    "is_frozen_trades.csv.gz": "41203e10e6161f08ecddd177732e9d194bd3c655eea56fbf9662ca0d6ec7f0f4",
+    "is_hypotheses.json": "49f9b02b95af87e849852fe50f1d7b2623f5feeb5826fa086f5cc7420451e972",
+    "is_selection.csv": "afb8b8dd92e2e7a17f672862004ec4b793bf8a59e469b6554fe6e3fac6411704"
+  },
+  "candidates": [
+    {
+      "candidate_id": "NZD|VOTE_STRENGTH_4|AND_direction_return_20_vol_2__efficiency_63_0",
+      "pair": "NZD",
+      "strategy": "VOTE_STRENGTH_4",
+      "filter_id": "AND_direction_return_20_vol_2__efficiency_63_0",
+      "is_new": true,
+      "gross_return_improvement_pp": 42.402290484078996,
+      "win_rate_improvement_pp": 2.0171631485500106,
+      "payoff_absolute_improvement": 0.40915874850494993,
+      "payoff_relative_improvement": 0.23403157545717712,
+      "retention": 0.5401459854014599,
+      "is_gross_return_pct": 45.00149624887653,
+      "is_net_return_pct": 45.00149624887653,
+      "is_annualized_simple_pct": 2.4448604053104495,
+      "is_win_rate": 0.38513513513513514,
+      "is_payoff_ratio": 2.1574644961617118,
+      "is_closed_n": 148,
+      "is_max_drawdown_pp": -24.716700523696286,
+      "positive_blocks": 2,
+      "improved_blocks": 2,
+      "positive_and_annualized_pass": true,
+      "return_improvement_pass": true,
+      "win_rate_pass": true,
+      "payoff_pass": true,
+      "drawdown_pass": true,
+      "return_to_drawdown_pass": true,
+      "sample_pass": true,
+      "block_positive_pass": true,
+      "block_improvement_pass": true,
+      "pass": true,
+      "failed_criteria": "",
+      "freeze_rank": 1.0,
+      "frozen": true,
+      "filter_name": "Reject when direction_return_20_vol in [0, 1) AND efficiency_63 in [-inf, 0.1)",
+      "spec": {
+        "id": "AND_direction_return_20_vol_2__efficiency_63_0",
+        "conditions": [
+          {
+            "feature": "direction_return_20_vol",
+            "state": 2
+          },
+          {
+            "feature": "efficiency_63",
+            "state": 0
+          }
+        ]
+      }
+    },
+    {
+      "candidate_id": "GBP|BB_MR_20|AND_direction_return_20_vol_1__efficiency_63_0",
+      "pair": "GBP",
+      "strategy": "BB_MR_20",
+      "filter_id": "AND_direction_return_20_vol_1__efficiency_63_0",
+      "is_new": true,
+      "gross_return_improvement_pp": 9.942391006416603,
+      "win_rate_improvement_pp": 2.298850574712641,
+      "payoff_absolute_improvement": 0.10489524601628442,
+      "payoff_relative_improvement": 0.15796549888599154,
+      "retention": 0.6666666666666666,
+      "is_gross_return_pct": 34.18868767302,
+      "is_net_return_pct": 34.18868767302,
+      "is_annualized_simple_pct": 1.857417547608293,
+      "is_win_rate": 0.6724137931034483,
+      "is_payoff_ratio": 0.7689342086760388,
+      "is_closed_n": 116,
+      "is_max_drawdown_pp": -14.483842073688876,
+      "positive_blocks": 3,
+      "improved_blocks": 2,
+      "positive_and_annualized_pass": true,
+      "return_improvement_pass": true,
+      "win_rate_pass": true,
+      "payoff_pass": true,
+      "drawdown_pass": true,
+      "return_to_drawdown_pass": true,
+      "sample_pass": true,
+      "block_positive_pass": true,
+      "block_improvement_pass": true,
+      "pass": true,
+      "failed_criteria": "",
+      "freeze_rank": 2.0,
+      "frozen": true,
+      "filter_name": "Reject when direction_return_20_vol in [-1, 0) AND efficiency_63 in [-inf, 0.1)",
+      "spec": {
+        "id": "AND_direction_return_20_vol_1__efficiency_63_0",
+        "conditions": [
+          {
+            "feature": "direction_return_20_vol",
+            "state": 1
+          },
+          {
+            "feature": "efficiency_63",
+            "state": 0
+          }
+        ]
+      }
+    }
+  ],
+  "all_candidate_accounts_tested": 267,
+  "all_passing_versions": 2,
+  "frozen_candidates": 2
+}

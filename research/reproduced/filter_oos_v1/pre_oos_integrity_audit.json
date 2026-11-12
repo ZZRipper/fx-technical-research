@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-23T05:14:20.668265+00:00",
+  "passed": true,
+  "checks": {
+    "protocol_hash": true,
+    "freeze_hash": true,
+    "source_and_input_hashes": true,
+    "all_is_hashes": true,
+    "not_opened": true,
+    "180_accounts": true,
+    "is_cutoff": true,
+    "selection_replay": true,
+    "frozen_identity_order": true,
+    "zero_cost": true
+  },
+  "freeze_sha256": "60121ca59443ceb6ec9ccf2f9312dfa44df0f5bd60b99a683ec5a79a6b45a671",
+  "frozen_candidates": 6
+}

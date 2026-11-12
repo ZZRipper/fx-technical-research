@@ -1,0 +1,102 @@
+source_column_1,source_column_2,source_column_3,source_column_4,source_column_5,source_column_6,source_column_7
+"Column definitions, units, direction and PIT treatment",,,,,,
+,,,,,,
+sheet,column,role,definition,units,direction_or_encoding,pit_rule
+PIT_Daily_Core,row_id,key,Signal date and currency key,text,YYYY-MM-DD_CCY,Known at signal construction
+PIT_Daily_Core,signal_date,key,Market close date used to compute features,date,FX observation date,Use only after this close
+PIT_Daily_Core,trade_date_next,key,Next FX observation date; earliest backtest execution date under the workbook rule,date,blank for final live row,Strictly after signal_date
+PIT_Daily_Core,currency,key,Non-USD currency represented by the standardized price,ISO code,EUR/GBP/AUD/NZD/JPY/CHF/CAD/NOK/SEK,Static mapping
+PIT_Daily_Core,spot_usd_per_ccy,source,As-of standardized USD value of one unit of foreign currency,USD per foreign currency,Higher means foreign currency appreciation,Direct quote or reciprocal; one-observation forward fill allowed and flagged by spot_age_days
+PIT_Monthly,row_id,key,Signal date and currency key,text,YYYY-MM-DD_CCY,Known at signal construction
+PIT_Monthly,signal_date,key,Market close date used to compute features,date,FX observation date,Use only after this close
+PIT_Monthly,trade_date_next,key,Next FX observation date; earliest backtest execution date under the workbook rule,date,blank for final live row,Strictly after signal_date
+PIT_Monthly,currency,key,Non-USD currency represented by the standardized price,ISO code,EUR/GBP/AUD/NZD/JPY/CHF/CAD/NOK/SEK,Static mapping
+PIT_Monthly,pair,source,Original spot pair in the source workbook,text,Original quote,Source close at signal_date
+PIT_Monthly,quote_convention,source,Original source quote convention,text,Original numerator/denominator,Static mapping
+PIT_Monthly,raw_quote_value,source,Original source spot value,pair units,As quoted,Source close at signal_date
+PIT_Monthly,spot_age_days,quality flag,Calendar age of the as-of spot observation used for features,days,Zero = observed on signal_date; positive = prior close carried forward,Forward fill capped at one FX observation; never backfilled
+PIT_Monthly,spot_usd_per_ccy,source,As-of standardized USD value of one unit of foreign currency,USD per foreign currency,Higher means foreign currency appreciation,Direct quote or reciprocal; one-observation forward fill allowed and flagged by spot_age_days
+PIT_Daily_Core,ret_1d,technical feature,One-observation log return,decimal log return,Positive = foreign currency appreciation,Uses signal_date and earlier FX observations only
+PIT_Daily_Core,mom_1m,technical feature,21-observation log return,decimal log return,Positive = foreign currency appreciation,Uses signal_date and earlier FX observations only
+PIT_Daily_Core,mom_3m,technical feature,63-observation log return,decimal log return,Positive = foreign currency appreciation,Uses signal_date and earlier FX observations only
+PIT_Daily_Core,mom_12m,technical feature,252-observation log return,decimal log return,Positive = foreign currency appreciation,Uses signal_date and earlier FX observations only
+PIT_Daily_Core,mom_12_1m,technical feature,252-to-21 observation log return; skips the most recent month,decimal log return,Positive = prior foreign currency appreciation,Uses signal_date and earlier FX observations only
+PIT_Daily_Core,cs_rank_mom_3m,technical feature,Cross-sectional rank of 3m momentum across nine currencies,rank,1 = strongest recent winner,Uses signal_date and earlier FX observations only
+PIT_Daily_Core,cs_bucket_mom_3m,technical feature,"Top three, middle three or bottom three by 3m momentum",category,Winner/Middle/Loser,Uses signal_date and earlier FX observations only
+PIT_Daily_Core,usd_basket_mom_3m,technical feature,Negative equal-weight mean of nine foreign-currency 3m momentum values,decimal log return,Positive = broad USD strengthening,Uses signal_date and earlier FX observations only
+PIT_Daily_Core,core_ready,quality flag,"All core 12m, trend, volatility and cross-sectional features available",0 or 1,1 = core feature set complete,Uses signal_date and earlier FX observations only
+PIT_Monthly,ret_1d,technical feature,One-observation log return,decimal log return,Positive = foreign currency appreciation,Uses signal_date and earlier FX observations only
+PIT_Monthly,mom_1m,technical feature,21-observation log return,decimal log return,Positive = foreign currency appreciation,Uses signal_date and earlier FX observations only
+PIT_Monthly,mom_3m,technical feature,63-observation log return,decimal log return,Positive = foreign currency appreciation,Uses signal_date and earlier FX observations only
+PIT_Monthly,mom_12m,technical feature,252-observation log return,decimal log return,Positive = foreign currency appreciation,Uses signal_date and earlier FX observations only
+PIT_Monthly,mom_12_1m,technical feature,252-to-21 observation log return; skips the most recent month,decimal log return,Positive = prior foreign currency appreciation,Uses signal_date and earlier FX observations only
+PIT_Monthly,rsi_14,technical feature,Wilder 14-observation relative strength index on standardized price,0 to 100,Higher = stronger recent gains,Uses signal_date and earlier FX observations only
+PIT_Monthly,sma_50_gap,technical feature,Spot divided by 50-observation simple moving average minus one,decimal,Positive = above trend,Uses signal_date and earlier FX observations only
+PIT_Monthly,sma_200_gap,technical feature,Spot divided by 200-observation simple moving average minus one,decimal,Positive = above long trend,Uses signal_date and earlier FX observations only
+PIT_Monthly,trend_50_200,technical feature,50-observation SMA divided by 200-observation SMA minus one,decimal,Positive = faster trend above slower trend,Uses signal_date and earlier FX observations only
+PIT_Monthly,macd_hist_pct,technical feature,"MACD(12,26) minus 9-observation signal line, divided by spot",decimal,Positive = improving short trend,Uses signal_date and earlier FX observations only
+PIT_Monthly,bb_z_20,technical feature,"Spot minus 20-observation mean, divided by 20-observation sample standard deviation",z-score,Positive = above rolling mean,Uses signal_date and earlier FX observations only
+PIT_Monthly,rv_1m_ann,technical feature,"21-observation realized volatility of daily log returns, annualized by square root of 252",decimal annualized volatility,Higher = more volatile,Uses signal_date and earlier FX observations only
+PIT_Monthly,rv_3m_ann,technical feature,"63-observation realized volatility of daily log returns, annualized by square root of 252",decimal annualized volatility,Higher = more volatile,Uses signal_date and earlier FX observations only
+PIT_Monthly,breakout_12m,technical feature,Position within 252-observation high-low range,0 to 1,1 = at rolling high,Uses signal_date and earlier FX observations only
+PIT_Monthly,drawdown_12m,technical feature,Spot divided by rolling 252-observation high minus one,decimal,Zero = at high; negative = drawdown,Uses signal_date and earlier FX observations only
+PIT_Monthly,cs_rank_mom_3m,technical feature,Cross-sectional rank of 3m momentum across nine currencies,rank,1 = strongest recent winner,Uses signal_date and earlier FX observations only
+PIT_Monthly,cs_mom_3m_excess,technical feature,Currency 3m momentum minus equal-weight cross-sectional mean,decimal log return,Positive = relative winner,Uses signal_date and earlier FX observations only
+PIT_Monthly,cs_bucket_mom_3m,technical feature,"Top three, middle three or bottom three by 3m momentum",category,Winner/Middle/Loser,Uses signal_date and earlier FX observations only
+PIT_Monthly,usd_basket_mom_3m,technical feature,Negative equal-weight mean of nine foreign-currency 3m momentum values,decimal log return,Positive = broad USD strengthening,Uses signal_date and earlier FX observations only
+PIT_Monthly,fx_breadth_up_3m,technical feature,Fraction of nine currencies with positive 3m momentum versus USD,0 to 1,Higher = broader non-USD strength,Uses signal_date and earlier FX observations only
+PIT_Monthly,ts_signal_mom_3m,technical feature,Sign of own 3m momentum,-1 or 1,+1 = foreign currency uptrend; -1 = downtrend,Uses signal_date and earlier FX observations only
+PIT_Monthly,core_ready,quality flag,"All core 12m, trend, volatility and cross-sectional features available",0 or 1,1 = core feature set complete,Uses signal_date and earlier FX observations only
+PIT_Monthly,signal_month,key,Calendar month containing the month-end signal,YYYY-MM,Month label,Derived from signal_date
+PIT_Monthly,spx_level,market regime driver,S&P 500 level,index points,Market level,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,spx_ret_1m,market regime driver,21-observation S&P 500 log return,decimal log return,Positive = equity gain,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,vix_level,market regime driver,VIX index level,volatility points,Higher = more equity implied volatility,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,vix_chg_1m,market regime driver,21-observation VIX change,points,Positive = volatility rose,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,vix_pctile_5y,market regime driver,Current VIX percentile within trailing 1260 observations,0 to 1,Higher = elevated versus own past,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,move_level,market regime driver,MOVE index level,index points,Higher = more rates volatility,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,move_chg_1m,market regime driver,21-observation MOVE change,points,Positive = rates volatility rose,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,us_ig_oas,market regime driver,US investment-grade corporate option-adjusted spread,percentage points,Higher = wider credit spread,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,us_ig_oas_chg_1m,market regime driver,21-observation change in US IG OAS,percentage points,Positive = spread widened,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,us_hy_oas,market regime driver,US high-yield corporate option-adjusted spread,percentage points,Higher = wider credit spread,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,us_hy_oas_chg_1m,market regime driver,21-observation change in US HY OAS,percentage points,Positive = spread widened,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,hy_oas_pctile_5y,market regime driver,Current US HY OAS percentile within trailing 1260 observations,0 to 1,Higher = wide versus own past,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,cdx_ig_5y,market regime driver,CDX North America IG 5-year spread from source workbook,basis points,Higher = wider credit risk,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,cdx_ig_chg_1m,market regime driver,21-observation CDX IG change,basis points,Positive = spread widened,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,cdx_hy_5y,market regime driver,CDX North America HY 5-year level from source workbook,source units,Higher = wider credit risk,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,cdx_hy_chg_1m,market regime driver,21-observation CDX HY change,source units,Positive = credit risk rose,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,us_2y,market regime driver,US 2-year Treasury yield,percent,Yield level,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,us_10y,market regime driver,US 10-year Treasury yield,percent,Yield level,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,us_2s10s,market regime driver,US 10-year yield minus 2-year yield,percentage points,Positive = upward-sloping curve,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,us_10y_chg_1m,market regime driver,21-observation change in US 10-year yield,percentage points,Positive = yield rose,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,wti_level,market regime driver,WTI crude oil price from source workbook,USD per barrel,Higher = higher oil price,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,wti_ret_1m,market regime driver,21-observation WTI log return,decimal log return,Positive = oil price rose,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,dxy_level,market regime driver,DXY level,index points,Higher = stronger DXY basket USD,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,dxy_ret_1m,market regime driver,21-observation DXY log return,decimal log return,Positive = DXY strengthened,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,bbdxy_level,market regime driver,Bloomberg Dollar Spot Index level from source workbook,index points,Higher = stronger basket USD,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,bbdxy_ret_1m,market regime driver,21-observation BBDXY log return,decimal log return,Positive = BBDXY strengthened,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,equity_age_days,quality flag,Calendar age of the as-of S&P 500 observation,days,Higher = staler input,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,credit_age_days,quality flag,Calendar age of the as-of US HY OAS observation,days,Higher = staler input,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,rates_age_days,quality flag,Calendar age of the as-of US 10-year yield observation,days,Higher = staler input,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,wti_age_days,quality flag,Calendar age of the as-of WTI observation,days,Higher = staler input,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,credit_widening_1m,market regime driver,US HY OAS change over 21 observations is positive,0 or 1,1 = widening,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,equity_down_1m,market regime driver,S&P 500 21-observation return is negative,0 or 1,1 = equity market down,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+PIT_Monthly,vix_high_5y,market regime driver,VIX trailing 5-year percentile is at least 75%,0 or 1,1 = high-volatility regime,As-of aligned at signal_date; no future backfill; fill capped at five FX observations
+Monthly_Labels,row_id,join key,Joins one-to-one to PIT_Monthly,text,YYYY-MM-DD_CCY,Feature key only
+Monthly_Labels,signal_date,key,Feature signal date,date,Month-end observation date,Known before all outcome dates
+Monthly_Labels,currency,key,Non-USD currency,ISO code,Currency,Static mapping
+Monthly_Labels,entry_date,outcome label,Earliest execution date under next-observation rule,date,Strictly after signal_date,Not PIT at signal_date; never use as predictor
+Monthly_Labels,target_end_1w,outcome label,End date for 5-observation forward label,date,Outcome date,Not PIT at signal_date; never use as predictor
+Monthly_Labels,target_end_1m,outcome label,End date for 21-observation forward label,date,Outcome date,Not PIT at signal_date; never use as predictor
+Monthly_Labels,target_end_2m,outcome label,End date for 42-observation forward label,date,Outcome date,Not PIT at signal_date; never use as predictor
+Monthly_Labels,target_end_3m,outcome label,End date for 63-observation forward label,date,Outcome date,Not PIT at signal_date; never use as predictor
+Monthly_Labels,fwd_ret_1w,outcome label,Foreign-currency log return from entry to 5 observations later,decimal log return,Positive = foreign currency appreciation,Not PIT at signal_date; never use as predictor
+Monthly_Labels,fwd_ret_1m,outcome label,Foreign-currency log return from entry to 21 observations later,decimal log return,Positive = foreign currency appreciation,Not PIT at signal_date; never use as predictor
+Monthly_Labels,fwd_ret_2m,outcome label,Foreign-currency log return from entry to 42 observations later,decimal log return,Positive = foreign currency appreciation,Not PIT at signal_date; never use as predictor
+Monthly_Labels,fwd_ret_3m,outcome label,Foreign-currency log return from entry to 63 observations later,decimal log return,Positive = foreign currency appreciation,Not PIT at signal_date; never use as predictor
+Monthly_Labels,fwd_excess_1w,outcome label,Currency forward return minus nine-currency mean at the same signal date,decimal log return,Positive = future outperformance,Not PIT at signal_date; never use as predictor
+Monthly_Labels,fwd_excess_1m,outcome label,Currency forward return minus nine-currency mean at the same signal date,decimal log return,Positive = future outperformance,Not PIT at signal_date; never use as predictor
+Monthly_Labels,fwd_excess_2m,outcome label,Currency forward return minus nine-currency mean at the same signal date,decimal log return,Positive = future outperformance,Not PIT at signal_date; never use as predictor
+Monthly_Labels,fwd_excess_3m,outcome label,Currency forward return minus nine-currency mean at the same signal date,decimal log return,Positive = future outperformance,Not PIT at signal_date; never use as predictor
+Monthly_Labels,ts_continue_2m,outcome label,Own 3m momentum sign matches next 2m return sign,0 or 1,1 = time-series trend continued,Not PIT at signal_date; never use as predictor
+Monthly_Labels,winner_continues_2m,outcome label,Top-tercile 3m winner has positive next-2m excess return,0 or 1,Defined only for Winner rows,Not PIT at signal_date; never use as predictor
+Monthly_Labels,loser_continues_2m,outcome label,Bottom-tercile 3m loser has negative next-2m excess return,0 or 1,Defined only for Loser rows,Not PIT at signal_date; never use as predictor

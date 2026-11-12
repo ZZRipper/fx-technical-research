@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-23T14:21:21.954986+00:00",
+  "user_authorization": {
+    "instruction_zh": "允许取舍，但每笔期望收益与总盈利/总亏损比都须改善",
+    "recorded_utc": "2026-10-23T14:17:00.899211+00:00",
+    "scope": "Replace the two quality requirements for the fixed 492 previously discussed v3/v4 candidates; retain every other original gate and ranking."
+  },
+  "cost_bp": 0,
+  "other_original_gates_and_ranking_unchanged": true,
+  "quality_gates_changed_with_explicit_approval": true,
+  "IS_versions": 492,
+  "IS_passing_versions": 60,
+  "frozen_candidates": 21,
+  "audit_checks_passed": 7624,
+  "independent_validation_sha256": "ead5457ee2c9b7d870bc864f38d266c25dcbe172234bbb559af9a8013805b08a",
+  "freeze_sha256": "8126136e79844055de2cfe243be3b4a4fbeb3c56f97070fbb84cadf13aa5cb35",
+  "OOS_opened": false,
+  "historical_OOS_reuse_disclosed": true
+}

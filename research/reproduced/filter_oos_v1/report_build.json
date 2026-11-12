@@ -1,0 +1,32 @@
+{
+  "report": "filter_research_report.html",
+  "atlas": "pnl_comparison.pdf",
+  "figures": [
+    "figures/frozen_0001.png",
+    "figures/frozen_0002.png",
+    "figures/frozen_0003.png",
+    "figures/frozen_0004.png",
+    "figures/frozen_0005.png",
+    "figures/frozen_0006.png"
+  ],
+  "frozen_candidates": 6,
+  "pdf_pages": 6,
+  "oos_evaluated": true,
+  "ordering": "IS freeze_rank only",
+  "diagnostic_input_sha256": {
+    "oos_fresh_start_metrics.csv": "600a401b866821971be4db3e19e53875c6d6f4d3a961396fb9eab5ae55e5ee1c",
+    "failure_attribution.csv": "86f9267f142adc3fcd2245eaa7c5ecbceb8448c7a1f2caced9eb62de178ed06b",
+    "failure_episode_attribution.csv": "cc74cd29f759fb86b3f2ac7ae8662eaa1860dee73695b1b788d4fe025f5a079c",
+    "failure_diagnostics.json": "28b48a1cf119905c785317e8c1f140e0039b74d17acf27b4e987674bf86ded6a"
+  },
+  "sha256": {
+    "filter_research_report.html": "87ce814345dda22c29ccb06a1d7ff58bd7b6d183f28ab25b9219016295e4e78e",
+    "pnl_comparison.pdf": "5b107e79fe034b89e990a0c5a3e5c208462b474ba3f0e259ca9ed97f51cd02af",
+    "figures/frozen_0001.png": "e52c982e71c257f533433b65e20f19ae1406c8f043ad97d68a3ea90ae4e9be9c",
+    "figures/frozen_0002.png": "852461037bc9e27af01c8f1e4d63d818c5c41c077c842d1cfdd3b36fdad2e005",
+    "figures/frozen_0003.png": "d30b170fa6cdb92a3df4f6632d9bebd0ea187b9d4ccdc7a54d2e0abab892ac22",
+    "figures/frozen_0004.png": "b5eb3160b0134bb45368a6f4dd7d23a4982629e5a04e70fe0cf9c0cec6022402",
+    "figures/frozen_0005.png": "525ef90a99cb7d4fa19c182368de39a173ce8229b987b51d797804c934ea813a",
+    "figures/frozen_0006.png": "79fc883f216c571053685979f525e57131bc3315a5307a4d8ddf99f10c4d0f82"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "report": "state_filter_supplement_report.html",
+  "figure": "figures/jpy_is_oos_comparison.png",
+  "figures": [
+    "figures/jpy_is_oos_comparison.png"
+  ],
+  "pdf": "jpy_is_oos_comparison.pdf",
+  "pdf_pages": 1,
+  "candidate_id": "JPY|BB_MR_20|STATE_efficiency_63_1",
+  "original_is_pass": true,
+  "strict_v2_pass": false,
+  "oos_evaluated": true,
+  "oos_curve_pass": false,
+  "oos_quality_confirmed": false,
+  "counts": {
+    "frozen_candidates": 1,
+    "oos_candidates": 1,
+    "curve_pass": 0,
+    "quality_confirmed": 0
+  },
+  "daily_metric_endpoint_checks": [
+    {
+      "split": "IS",
+      "variant": "BASE",
+      "absolute_error_pp": 2.62456723021387e-13
+    },
+    {
+      "split": "IS",
+      "variant": "FILTER",
+      "absolute_error_pp": 1.7053025658242404e-13
+    },
+    {
+      "split": "OOS",
+      "variant": "BASE",
+      "absolute_error_pp": 8.981704269217516e-14
+    },
+    {
+      "split": "OOS",
+      "variant": "FILTER",
+      "absolute_error_pp": 8.193445921733655e-14
+    }
+  ],
+  "input_sha256": {
+    "protocol.json": "d2ff2d289d9ba06c18bdd3032b068988a4da9d2506093b3a62cc0f622276eeea",
+    "is_selection.csv": "0923b7548999e57e0b8af740ababef1bc5c661a61e4bb8f7c6fde0a95e58a88e",
+    "is_frozen_daily.csv.gz": "2e43352a539de4b7ac4385d6753126398a3796fab88421296b0e6c6136c6ed7c",
+    "is_frozen_metrics.csv": "b5277d746a91e66bfd4589460b466896476c68413c890721d032f2b5a3a032e1",
+    "supplement_diagnostics.json": "320e6a064278d0273eb048cc2ab5109ec2807fd5c590f0ba02659ad870d5a434",
+    "jpy_observation_explanation.json": "4598f204cb6cb9a34b4fc33753dac1c4a3ce1f72150298de1b395c2984332daf",
+    "oos_status.json": "66c449d18275e877a8cf273e21478ea57380d75b1ff9dc4f3539cbe90b5c5f5b",
+    "oos_daily.csv.gz": "81d0daedcbeea603d747422165ab76a0ac6db13739ca040f7f3ce29cd642e1a3",
+    "oos_metrics.csv": "ffda887861b6a08173d7a1c239c05d2c136c7a8c9ba36034dab5bcfcfb37f690",
+    "candidate_assessment.csv": "932fbaf48d06979db52360a7862a052cb8446d955931cec279163a933e1ffd16",
+    "oos_anniversary_metrics.csv": "c87a1021d043d2df01964cac98f4227bdc31d4108e7c31cb17138dd47f0b0e71",
+    "oos_fresh_start_metrics.csv": "0e545f08da9a882f6b24eb01a574a580ce16aa996f1e0cf8573411f85e4daea1"
+  },
+  "renderer_sha256": "71611913f368885de14a8b85c39c18798545914f80dc4c8ab3a840a8156f2cee",
+  "generated_utc": "2026-10-23T05:55:32.245569+00:00"
+}

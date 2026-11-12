@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "command": "python -B -m unittest discover -s tests -v",
+  "tests_run": 87,
+  "elapsed_seconds": 10.033,
+  "test_session_id": 45557,
+  "test_process_exit_code": 0,
+  "holding_engine_prefix_comparisons": 693,
+  "synthetic_observation_engine_checkpoints_compared": 75,
+  "source_sha256": {
+    "src/fx_holding_filters.py": "67b784ab5f2e2b1fdc86b555ab0f8e4b794017a3ad31df0f59a7834ae7e5a84e",
+    "tests/test_fx_holding_filters.py": "597cce675b33517000ee242948fbd1d8283726ad732bab8c7935af979a6b090f",
+    "tests/test_holding_campaign.py": "989b2c7fd69d7a4c2a3cd7f486105e5f90a6782e889f15c5750ab5085827019e"
+  },
+  "listed_engine_sources_changed_after_test": false,
+  "scope": "87-test suite before campaign freeze; source digests below identify the holding engine and its tests. Later timecap tests are reported separately."
+}

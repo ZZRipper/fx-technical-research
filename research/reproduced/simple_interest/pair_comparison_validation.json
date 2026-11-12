@@ -1,0 +1,23 @@
+{
+  "independent_numpy_metric_checks": 4617,
+  "annual_reconciliation_accounts": 171,
+  "bollinger_mirror_checks": 18,
+  "build_validation": {
+    "accounts": 171,
+    "rules": 17,
+    "pairs": 9,
+    "daily_return_max_error": 0.0,
+    "period_return_max_error_pp": 4.440892098500626e-14,
+    "same_calendar": true,
+    "observations": 5585
+  },
+  "unit_and_saved_output_tests_passed": 5,
+  "csv_rows_verified": 4617,
+  "browser_checks": [
+    "pair switch",
+    "annual view switch",
+    "four-module navigation",
+    "CSV download",
+    "no JavaScript errors"
+  ]
+}

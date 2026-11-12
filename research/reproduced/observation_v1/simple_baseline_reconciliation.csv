@@ -1,0 +1,6 @@
+metric,accounts,pass,max_abs_error
+simple_return_pct,180,True,1.4210854715202004e-14
+simple_max_drawdown_pp,180,True,2.842170943040401e-14
+closed_trades,180,True,0.0
+win_rate,180,True,5.551115123125783e-17
+payoff_ratio,180,True,2.220446049250313e-16

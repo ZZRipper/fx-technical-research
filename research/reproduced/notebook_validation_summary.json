@@ -1,0 +1,45 @@
+{
+  "implementation_status": "reconstructed source, compared with independently retained outputs",
+  "available_raw_file_hashes_verified": true,
+  "missing_original_raw_files": [
+    "data/raw/rejected_rolling_selection_notebook_snapshot.json"
+  ],
+  "original_snapshot_accounts": 792,
+  "fixed_baseline_accounts": 207,
+  "daily_baseline_rows_reconciled": 1156095,
+  "baseline_checks_pass": true,
+  "economic_feature_checks_pass": true,
+  "reconstructed_filter_accounts": 288,
+  "filter_reconciliation_checks_pass": true,
+  "reconstructed_historical_passing_rows": 5,
+  "reconstructed_screen_matches_archived": true,
+  "v3_accounts": 702,
+  "v3_checks_pass": true,
+  "h10_accounts": 207,
+  "h10_checks_pass": true,
+  "v5_accounts": 36,
+  "v5_checks_pass": true,
+  "new_untouched_OOS": false,
+  "zero_costs": true,
+  "source_sha256": {
+    "FX_Technical_Research_Complete.ipynb": "59a4796c11d516747048c9a66de9043bf91d8a92afc9f646f62053d1144e9e75",
+    "run_research.py": "c022642267a5fa5d035761865ec0d0d1fb071cf477d8e19205a8fc814230a18b",
+    "src\\fx_analysis.py": "c7cf2e19a8262aeabcacba6fb58638fdd4f7c3a61c84fb87cc7d297a3d20de2c",
+    "src\\fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src\\fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src\\fx_evidence.py": "1a99ed9524faa9d15555f6dba4dc4c2bd168c00199fa9aba9583cd57b64c0c9f",
+    "src\\fx_legacy.py": "71d919586f220088494e9c66382db4d11bb1ea914db6b74bec01add3a686294e",
+    "src\\fx_research.py": "796667454b59a2a0da056374ef62f08a2350304a7dcad97a1c9c1b8b5c017ed9",
+    "src\\fx_risk.py": "5ea76aa2d1abc211874e9f23308c496d1830a8add744a2775057c0c677b51168"
+  },
+  "not_reconstructed": [
+    "original source bytes and version history",
+    "original protocol files and freeze timestamps",
+    "rejected rolling-selection snapshot"
+  ],
+  "execution_status": "passed",
+  "started_utc": "2026-10-22T23:14:13.053208+00:00",
+  "finished_utc": "2026-10-22T23:18:40.574043+00:00",
+  "executed_code_cells": 24,
+  "validation_complete": true
+}

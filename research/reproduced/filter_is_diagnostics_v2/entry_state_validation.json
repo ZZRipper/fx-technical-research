@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "finished_utc": "2026-10-23T05:30:42.225231+00:00",
+  "compute_cutoff": "2023-05-29",
+  "oos_computed": false,
+  "accounts": 180,
+  "trade_rows": 46545,
+  "summary_rows": 70200,
+  "source_integrity_pass": true,
+  "output_sha256": {
+    "is_entry_cohort_coverage.csv": "3115e6fa52bfc599a1f0ffd3ebdd1208f05a9e265cc652e172d01f80651aaa8a",
+    "is_entry_state_ledger.csv.gz": "46718a115c30684bc4cbba1180120b1eb695a2d7c3fe2648ca259cc111f9f078",
+    "is_entry_state_summary.csv": "3e977f3e69662b1aba5e0e9d1d1cb8af4ecabccf24dd3fa2e315c9aa5ea91b2a"
+  }
+}

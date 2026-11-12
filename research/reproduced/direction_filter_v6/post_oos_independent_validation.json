@@ -1,0 +1,671 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-23T07:00:11.532083+00:00",
+  "finished_utc": "2026-10-23T07:00:14.239980+00:00",
+  "audit_script_sha256": "ce3546a470c0e077991d0125a20cff48d62bdf7895f2661b5b4aa9d50ae14686",
+  "checks_total": 137,
+  "checks_passed": 137,
+  "checks": [
+    {
+      "name": "passed_independent_IS_audit_unchanged",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_direction_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_entry_interaction_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_supplement.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\protocol.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\development_status.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_probe_v5\\direction_probe.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_observation_validation_v6\\validation.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\build_is_filter_observations.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\build_entry_interaction_observations.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_direction_observations.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\entry_state_protocol.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\entry_state_validation.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\technical_validation_amendment.json",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\is_entry_state_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\is_entry_cohort_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\source_snapshots\\fx_is_states_initial.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_probe_v5\\direction_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_probe_v5\\direction_comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_direction_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_direction_filter.py",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_frozen_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_frozen_trades.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "preaudit_evidence:C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "freeze_audit_before_OOS",
+      "passed": true
+    },
+    {
+      "name": "exact_protocol_and_freeze_chain",
+      "passed": true
+    },
+    {
+      "name": "fixed_direction_registry_cost_and_dates",
+      "passed": true
+    },
+    {
+      "name": "manifest_agreement:source_sha256",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:run_direction_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_direction_filter.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:verify_direction_observations.py",
+      "passed": true
+    },
+    {
+      "name": "manifest_agreement:input_sha256",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:FX_Research_Datasets/data/raw/FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:build_is_filter_observations.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:src/fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:build_entry_interaction_observations.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:verify_direction_observations.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/filter_is_diagnostics_v2/entry_state_protocol.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/filter_is_diagnostics_v2/entry_state_validation.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/filter_is_diagnostics_v2/technical_validation_amendment.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/filter_is_diagnostics_v2/is_entry_state_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/filter_is_diagnostics_v2/is_entry_cohort_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/filter_is_diagnostics_v2/source_snapshots/fx_is_states_initial.py",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/direction_probe_v5/direction_probe.json",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/direction_probe_v5/direction_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/direction_probe_v5/direction_comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/direction_observation_validation_v6/validation.json",
+      "passed": true
+    },
+    {
+      "name": "IS_output_hashes:is_account_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "IS_output_hashes:is_all_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "IS_output_hashes:is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "IS_output_hashes:is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "IS_output_hashes:is_frozen_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "IS_output_hashes:is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "IS_output_hashes:is_frozen_trades.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "IS_output_hashes:is_hypotheses.json",
+      "passed": true
+    },
+    {
+      "name": "IS_output_hashes:is_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "OOS_output_hashes:candidate_assessment.csv",
+      "passed": true
+    },
+    {
+      "name": "OOS_output_hashes:frozen_full_episode_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "OOS_output_hashes:frozen_full_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "OOS_output_hashes:oos_anniversary_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "OOS_output_hashes:oos_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "OOS_output_hashes:oos_fresh_start_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "OOS_output_hashes:oos_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "all_frozen_candidates_in_every_table",
+      "passed": true
+    },
+    {
+      "name": "assessment_in_frozen_IS_rank_order",
+      "passed": true
+    },
+    {
+      "name": "result_unique_keys_and_date_scope",
+      "passed": true
+    },
+    {
+      "name": "nonnullable_boolean_decisions:IS",
+      "passed": true
+    },
+    {
+      "name": "nonnullable_boolean_decisions:FULL",
+      "passed": true
+    },
+    {
+      "name": "frozen_spec_registered:GBP|RSI_MR_7|REJECT_LONG",
+      "passed": true
+    },
+    {
+      "name": "full_source_price_calendar:GBP|RSI_MR_7|REJECT_LONG",
+      "passed": true
+    },
+    {
+      "name": "BASE_segments_nonoverlapping:GBP|RSI_MR_7|REJECT_LONG",
+      "passed": true
+    },
+    {
+      "name": "all_IS_direction_decisions_preserved:GBP|RSI_MR_7|REJECT_LONG:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "all_IS_direction_decisions_preserved:GBP|RSI_MR_7|REJECT_LONG:unique_grid",
+      "passed": true,
+      "saved_rows": 223,
+      "computed_rows": 223
+    },
+    {
+      "name": "all_IS_direction_decisions_preserved:GBP|RSI_MR_7|REJECT_LONG:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "IS_pending_boundary_dates:GBP|RSI_MR_7|REJECT_LONG",
+      "passed": true
+    },
+    {
+      "name": "complete_original_episode_decisions:GBP|RSI_MR_7|REJECT_LONG",
+      "passed": true
+    },
+    {
+      "name": "full_direction_decisions_execution_clocks:GBP|RSI_MR_7|REJECT_LONG",
+      "passed": true,
+      "mismatched_signals": []
+    },
+    {
+      "name": "pointwise_original_direction_exclusion:GBP|RSI_MR_7|REJECT_LONG",
+      "passed": true
+    },
+    {
+      "name": "full_ledger_independent_prices_positions:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "full_ledger_independent_prices_positions:unique_grid",
+      "passed": true,
+      "saved_rows": 396,
+      "computed_rows": 396
+    },
+    {
+      "name": "full_ledger_independent_prices_positions:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "full_ledger_zero_cost_dollar_arithmetic",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS_positions_returns_prefix:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "frozen_IS_positions_returns_prefix:unique_grid",
+      "passed": true,
+      "saved_rows": 9602,
+      "computed_rows": 9602
+    },
+    {
+      "name": "frozen_IS_positions_returns_prefix:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "OOS_positions_returns:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "OOS_positions_returns:unique_grid",
+      "passed": true,
+      "saved_rows": 1568,
+      "computed_rows": 1568
+    },
+    {
+      "name": "OOS_positions_returns:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "continuous_OOS:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "continuous_OOS:unique_grid",
+      "passed": true,
+      "saved_rows": 2,
+      "computed_rows": 2
+    },
+    {
+      "name": "continuous_OOS:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "all_anniversary_years:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "all_anniversary_years:unique_grid",
+      "passed": true,
+      "saved_rows": 6,
+      "computed_rows": 6
+    },
+    {
+      "name": "all_anniversary_years:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "fresh_start_sensitivity:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "fresh_start_sensitivity:unique_grid",
+      "passed": true,
+      "saved_rows": 2,
+      "computed_rows": 2
+    },
+    {
+      "name": "fresh_start_sensitivity:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "prespecified_curve_and_quality_assessments:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "prespecified_curve_and_quality_assessments:unique_grid",
+      "passed": true,
+      "saved_rows": 1,
+      "computed_rows": 1
+    },
+    {
+      "name": "prespecified_curve_and_quality_assessments:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "metric_assessment_flags:schema",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "metric_assessment_flags:unique_grid",
+      "passed": true,
+      "saved_rows": 2,
+      "computed_rows": 2
+    },
+    {
+      "name": "metric_assessment_flags:all_values",
+      "passed": true,
+      "mismatched_fields": []
+    },
+    {
+      "name": "status_counts_from_recomputed_assessments",
+      "passed": true
+    },
+    {
+      "name": "all_evidence_unchanged_at_finish",
+      "passed": true
+    }
+  ],
+  "verified_files_sha256": {
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_direction_filter_oos.py": "ce3546a470c0e077991d0125a20cff48d62bdf7895f2661b5b4aa9d50ae14686",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_direction_filter_research.py": "055c1489a62451744ad639c1a369ad3dca68d182680a889b8faed0ddea9fb6d7",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_entry_interaction_research.py": "27426ed2e8f1bee41f7870faa993bbf5367a0432fb8f9fd59db5fd04af9b0680",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_entry_interaction_oos.py": "2b7d3ef6a91c309950f335dd814fabd9b1d9e5d8728c5e98b01a8c777d53d7d4",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_research.py": "9c24f76e55617b690bd8f39b6e0050fc4a1cbf2e393a9dee4559aa8112795f0f",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_state_filter_supplement.py": "05531b7c3044995ff445d1007b0e5abe2b2efceeb2ae0784d8e205ddf2aa814b",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\oos_status.json": "f7789613bcc9e683a5292263d66660d892ee2af718c45ee3c312a4dd9ae7d78f",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\protocol.json": "d8ae5377405da2f84bd47c671d00855e1f797ad2122cc45509f03cb117369428",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\frozen_selection.json": "9d08c5f75be3e7287332273b2fb65454293a1633bff764e1d4f01aca88672802",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\independent_validation.json": "a03e17fef504076b2910ade734a634a437e9c3d342575ac49b58afd0bb467566",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\development_status.json": "3a9e41c26f67e4186164a38593e88080c6af9d62cc7ff65df2ebf44104439388",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_hypotheses.json": "00c9721f0534d3a3b597abd90b3fef091f1a286ea4d672911b6096656d81350e",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_probe_v5\\direction_probe.json": "49541273b3a70fc335215bc0deeb985f760fec5e3f730cbbf6a152f544fb2ae4",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_observation_validation_v6\\validation.json": "575cfafde04c449b3bff293caad02c90c3ed6b3a2e1acfc6a51fb81e83791cd6",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\build_is_filter_observations.py": "e5f96075dd5102319110031b0e9d13b84d7f4bf75ba6806aa5eee9449b723485",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_is_states.py": "b14cacc51e83587dbd15514e05ff608ecb1ead4e8a875f6eab2acaf41a6d8f5b",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\build_entry_interaction_observations.py": "ed53ec7acacaf763b0598af0818d47fa2bbb448e168d3d5c6a85d797ea114825",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\verify_direction_observations.py": "e8654281875545c4dd587aa2f06e35547ff94a7bf8f9ee5d47c6f2acfb9b9887",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\FX_Research_Datasets\\data\\raw\\FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\entry_state_protocol.json": "94e8208cb3039808de13af472339443cca6dd818324f08d84db669e8a0d01c04",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\entry_state_validation.json": "2637b364492c0f6b9ba80823cd3f4fcfbef2f5ddca05584a19ab010c4c208e18",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\technical_validation_amendment.json": "9b53b05bad9b78eafc75775ab7ea877aedb5ed7bcd253edbd1992d04261a7056",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\is_entry_state_ledger.csv.gz": "46718a115c30684bc4cbba1180120b1eb695a2d7c3fe2648ca259cc111f9f078",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\is_entry_state_summary.csv": "3e977f3e69662b1aba5e0e9d1d1cb8af4ecabccf24dd3fa2e315c9aa5ea91b2a",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\is_entry_cohort_coverage.csv": "3115e6fa52bfc599a1f0ffd3ebdd1208f05a9e265cc652e172d01f80651aaa8a",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\filter_is_diagnostics_v2\\source_snapshots\\fx_is_states_initial.py": "ca6caf54501109023e3ffe7d6777106c4cc746c328bd68955213f8208d12d90a",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_probe_v5\\direction_summary.csv": "e8bae976121a2348342fe6ef244eabd8a4d93584d712a19e4d6faf339cd26e10",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_probe_v5\\direction_comparison.csv": "d809b654e52bb36535a6d07e7fa81326487c2bf9c1aafb3d4f49285671979296",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\run_direction_filter_research.py": "d2885598b78d23e0bf551d88036dbc760178e7c1fd611eae4e94daad2e49a9cd",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\src\\fx_direction_filter.py": "f695dafe674da034f916b80746b9ad43cd7ea53c81d590795c46465343789695",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_account_coverage.csv": "612ccb2f1190bf4de9e404a456c3cbb2415a2732b02ddc36b07369bc93c93e04",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_all_decisions.csv.gz": "5af15926a55e191f4a94b62376155642d17222803ddcad868ce522dddd2754ec",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_all_metrics.csv": "c2bcda4481c7fa59dc202ce9a513d77fcf28783de9ccd1f41da5c0e5fa1604e9",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_frozen_daily.csv.gz": "9660f5802024088e30a318ea74d8b3aa75b1ddaaa2c3d7584806faa37803158f",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_frozen_decisions.csv.gz": "e1508669acdf91da3b87514c6b896c6cba21c55eeb78481e95c32130a7aefc95",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_frozen_metrics.csv": "627c1da45bb35b1a191d0e5799039eedb374361d1417c99ea6ca7b3536f2edd8",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_frozen_trades.csv.gz": "143b2c91cfacc31b892a2f4ef9df29baf76117bdfac3c0312f5601b794c5943f",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\is_selection.csv": "1239a049e3f5a390e358452e28c7eefd64e0956d3dd615225d5621ead8b919ec",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\candidate_assessment.csv": "377121d503976a00b55e051e81744b0f6477fbdb0345bd207ab89a3769d553ca",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\frozen_full_episode_decisions.csv.gz": "f56e015f202875661e174b7f98ce088cea67217c5ca578547c8b22d7b2dbdf43",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\frozen_full_trade_ledger.csv.gz": "87f71a565cc26a109fc2b231231eca80be08aea727224440d8b0a7bd14af9e79",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\oos_anniversary_metrics.csv": "69ed5891ac67b22908721e132b82f4a9eec53923609c8c04fad383a2789b4140",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\oos_daily.csv.gz": "1e3541d86b98f1620c8f805ba2c8014acd380e304a5dfa30fab2770821263aa8",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\oos_fresh_start_metrics.csv": "e6a1c44b8cd3ee66ca6efe09f7dd85a740945853e8c3060e6dda204bba76ffb7",
+    "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6\\oos_metrics.csv": "3590b5301e6c0344b0b750b37318caf84e9d445fd0c4517a90699efdd0271c47"
+  },
+  "details": {
+    "candidate_ids_in_frozen_order": [
+      "GBP|RSI_MR_7|REJECT_LONG"
+    ],
+    "candidates": 1,
+    "curve_passes": 0,
+    "quality_confirmed": 0,
+    "full_episode_decisions_checked": 261,
+    "independently_recomputed_metric_windows": 10,
+    "all_frozen_IS_paths_match": true,
+    "current_campaign_OOS_only": true,
+    "strategy_engine_replays": 0,
+    "price_currencies": [
+      "GBP"
+    ],
+    "raw_price_cutoff": "2026-05-29",
+    "pending_IS_terminal_signal_limit": {
+      "rows": [],
+      "scope": "An executed ledger cannot independently recover the final IS TARGET instruction, including pending entry, exit or reversal. Saved direction decisions and next-close metadata are checked; later full replay verifies realized positions when the next quote arrives. Original BASE strategy signal generation is not rerun."
+    },
+    "evidence_status": "Repeated historical verification; no claim of untouched independent OOS."
+  }
+}

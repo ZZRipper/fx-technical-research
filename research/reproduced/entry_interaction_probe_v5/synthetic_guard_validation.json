@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-23T06:45:24.929342+00:00",
+  "command": "python -B -m unittest discover -s tests -p test_entry_interaction_observations.py -v",
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 0.277,
+  "source_sha256": {
+    "tests/test_entry_interaction_observations.py": "bcb0636fb3d574a6cff74b14e5f97f4d15d37b087078c8964b07250de51b74f8",
+    "build_entry_interaction_observations.py": "ed53ec7acacaf763b0598af0818d47fa2bbb448e168d3d5c6a85d797ea114825"
+  },
+  "scope": "Synthetic guard tests only; no original suite rerun, no research outcomes read by tests."
+}

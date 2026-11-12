@@ -1,0 +1,422 @@
+{
+  "version": "holding_tradeoff_v8",
+  "created_utc": "2026-10-23T14:17:00.899211+00:00",
+  "is_start": "2005-01-03",
+  "is_end": "2023-05-29",
+  "oos_start": "2023-05-30",
+  "oos_end": "2026-05-29",
+  "oos_duration": "Three calendar years immediately following IS, ending at the supplied workbook endpoint.",
+  "scope": {
+    "pairs": [
+      "EUR",
+      "GBP",
+      "AUD",
+      "NZD",
+      "JPY",
+      "CHF",
+      "CAD",
+      "NOK",
+      "SEK"
+    ],
+    "strategies": [
+      "RSI_MR_7",
+      "RSI_MR_14",
+      "RSI_MR_20",
+      "RSI_MOM_7",
+      "RSI_MOM_14",
+      "RSI_MOM_20",
+      "MA_10_30",
+      "MA_20_60",
+      "BB_MR_10",
+      "BB_MR_20",
+      "BB_BO_10",
+      "BB_BO_20",
+      "DONCHIAN_BO_10",
+      "DONCHIAN_BO_20",
+      "MACD_12_26_9",
+      "TSMOM_21",
+      "TSMOM_63",
+      "VOTE_EQUAL_4",
+      "VOTE_STRENGTH_4",
+      "REGIME_RULE_FIXED"
+    ],
+    "baseline_accounts": 180
+  },
+  "initial_capital_usd": 100000,
+  "accounting": "fixed_initial_capital_simple",
+  "cost_bp": 0.0,
+  "reference_cost_bp": 0.0,
+  "cost_instruction": "User explicitly requested no costs. No cost sensitivity is used this round.",
+  "carry_financing_cash_interest": 0.0,
+  "prior_holdout_exposure": "Historical 2023-05-30 to 2026-05-29 observations have already been seen in other campaigns. This is repeated historical verification, not untouched independent evidence. The original v3/v4 campaigns stopped with no IS-frozen candidates and no OOS evaluation.",
+  "development_access": "After workbook parsing, price and native feature rows after IS_END are removed before indicator/return/feature calculations. No full-sample outcome artifact is used as a development input.",
+  "screen": {
+    "min_gross_annualized_simple_pct": 1.0,
+    "min_return_improvement_pp": 5.0,
+    "max_drawdown_deterioration_pp": 2.0,
+    "return_to_drawdown_must_improve": true,
+    "min_closed_trades": 50,
+    "min_closed_retention": 0.5,
+    "min_positive_is_blocks": 2,
+    "min_improved_is_blocks": 2,
+    "last_is_block_positive_and_improved": true,
+    "one_way_cost_bp": 0.0,
+    "cost_sensitivity_evaluated": false,
+    "cost_instruction": "User explicitly requested no costs for this round.",
+    "rank": [
+      "gross_return_improvement_pp DESC",
+      "payoff_absolute_improvement DESC",
+      "win_rate_improvement_pp DESC",
+      "candidate_id ASC"
+    ],
+    "freeze": "One highest IS-ranked passing NEW filter per pair/strategy. All passing versions retained in IS table.",
+    "schedule_delay_is_diagnostic_only": true,
+    "quality_definition": "Eligible closed-trade expectancy_pct and gross profit factor must each be finite for BASE and FILTER and strictly improve (FILTER > BASE, no epsilon). Gross PF = win_n*mean_win_pct/(loss_n*mean_loss_abs_pct); zero-count sides contribute zero, and zero gross loss or nonfinite arithmetic is undefined.",
+    "expectancy_strict_improvement": true,
+    "gross_profit_factor_strict_improvement": true,
+    "quality_finiteness_required": true,
+    "quality_comparison_tolerance": 0.0,
+    "replaced_original_quality_gates": [
+      "win_rate_pass",
+      "payoff_pass"
+    ],
+    "original_quality_gates_diagnostic_only": true
+  },
+  "oos_screen": {
+    "min_net_annualized_simple_pct": 1.0,
+    "min_net_return_improvement_pp": 0.0,
+    "worst_net_drawdown_pp": -15.0,
+    "min_positive_anniversary_years": 2,
+    "min_closed_trades": 10,
+    "quality_confirmation": "At least 20 eligible closed FILTER trades, plus Eligible closed-trade expectancy_pct and gross profit factor must each be finite for BASE and FILTER and strictly improve (FILTER > BASE, no epsilon). Gross PF = win_n*mean_win_pct/(loss_n*mean_loss_abs_pct); zero-count sides contribute zero, and zero gross loss or nonfinite arithmetic is undefined.",
+    "min_quality_closed_trades": 20,
+    "expectancy_strict_improvement": true,
+    "gross_profit_factor_strict_improvement": true,
+    "quality_finiteness_required": true,
+    "quality_comparison_tolerance": 0.0,
+    "original_win_rate_payoff_quality_diagnostic_only": true
+  },
+  "is_blocks": [
+    [
+      "IS_EARLY",
+      "2005-01-03",
+      "2014-12-31"
+    ],
+    [
+      "IS_MIDDLE",
+      "2015-01-01",
+      "2019-12-31"
+    ],
+    [
+      "IS_LATE",
+      "2020-01-01",
+      "2023-05-29"
+    ]
+  ],
+  "oos_anniversary_years": [
+    [
+      "OOS_YEAR_1",
+      "2023-05-30",
+      "2024-05-29"
+    ],
+    [
+      "OOS_YEAR_2",
+      "2024-05-30",
+      "2025-05-29"
+    ],
+    [
+      "OOS_YEAR_3",
+      "2025-05-30",
+      "2026-05-29"
+    ]
+  ],
+  "candidate_specs": [
+    {
+      "id": "CHECK_5_giveback_half",
+      "checkpoint_age": 5,
+      "condition": "giveback_half"
+    },
+    {
+      "id": "CHECK_5_pnl_negative",
+      "checkpoint_age": 5,
+      "condition": "pnl_negative"
+    },
+    {
+      "id": "CHECK_5_pnl_negative_AND_recent5_negative",
+      "checkpoint_age": 5,
+      "condition": [
+        "pnl_negative",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_5_recent5_negative",
+      "checkpoint_age": 5,
+      "condition": "recent5_negative"
+    },
+    {
+      "id": "CHECK_5_opposite20",
+      "checkpoint_age": 5,
+      "condition": "opposite20"
+    },
+    {
+      "id": "CHECK_5_pnl_negative_AND_opposite20",
+      "checkpoint_age": 5,
+      "condition": [
+        "pnl_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_5_recent5_negative_AND_opposite20",
+      "checkpoint_age": 5,
+      "condition": [
+        "recent5_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_10_pnl_negative",
+      "checkpoint_age": 10,
+      "condition": "pnl_negative"
+    },
+    {
+      "id": "CHECK_10_pnl_negative_AND_opposite20",
+      "checkpoint_age": 10,
+      "condition": [
+        "pnl_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_10_giveback_half",
+      "checkpoint_age": 10,
+      "condition": "giveback_half"
+    },
+    {
+      "id": "CHECK_10_pnl_positive",
+      "checkpoint_age": 10,
+      "condition": "pnl_positive"
+    },
+    {
+      "id": "CHECK_5_pnl_positive",
+      "checkpoint_age": 5,
+      "condition": "pnl_positive"
+    },
+    {
+      "id": "CHECK_5_pnl_positive_AND_opposite20",
+      "checkpoint_age": 5,
+      "condition": [
+        "pnl_positive",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_10_recent5_negative",
+      "checkpoint_age": 10,
+      "condition": "recent5_negative"
+    },
+    {
+      "id": "CHECK_20_pnl_positive",
+      "checkpoint_age": 20,
+      "condition": "pnl_positive"
+    },
+    {
+      "id": "CHECK_5_giveback_half_AND_opposite20",
+      "checkpoint_age": 5,
+      "condition": [
+        "giveback_half",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_5_giveback_half_AND_recent5_negative",
+      "checkpoint_age": 5,
+      "condition": [
+        "giveback_half",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_5_pnl_negative_AND_giveback_half",
+      "checkpoint_age": 5,
+      "condition": [
+        "pnl_negative",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_10_pnl_negative_AND_giveback_half",
+      "checkpoint_age": 10,
+      "condition": [
+        "pnl_negative",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_20_recent5_negative",
+      "checkpoint_age": 20,
+      "condition": "recent5_negative"
+    },
+    {
+      "id": "CHECK_10_opposite20",
+      "checkpoint_age": 10,
+      "condition": "opposite20"
+    },
+    {
+      "id": "CHECK_10_pnl_negative_AND_recent5_negative",
+      "checkpoint_age": 10,
+      "condition": [
+        "pnl_negative",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_10_recent5_negative_AND_opposite20",
+      "checkpoint_age": 10,
+      "condition": [
+        "recent5_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_20_giveback_half_AND_recent5_negative",
+      "checkpoint_age": 20,
+      "condition": [
+        "giveback_half",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_10_giveback_half_AND_recent5_negative",
+      "checkpoint_age": 10,
+      "condition": [
+        "giveback_half",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_20_giveback_half",
+      "checkpoint_age": 20,
+      "condition": "giveback_half"
+    },
+    {
+      "id": "CHECK_10_pnl_positive_AND_recent5_negative",
+      "checkpoint_age": 10,
+      "condition": [
+        "pnl_positive",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_5_pnl_positive_AND_giveback_half",
+      "checkpoint_age": 5,
+      "condition": [
+        "pnl_positive",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "TIME_CAP_10",
+      "checkpoint_age": 10
+    },
+    {
+      "id": "TIME_CAP_5",
+      "checkpoint_age": 5
+    },
+    {
+      "id": "TIME_CAP_20",
+      "checkpoint_age": 20
+    },
+    {
+      "id": "TIME_CAP_40",
+      "checkpoint_age": 40
+    }
+  ],
+  "legacy_comparator_ids": [],
+  "family_application": "All 180 original accounts retained. Rank the fixed 492 versions together using the original rank; one highest-ranked passing version per account.",
+  "boundary_policy": "Main evaluation preserves continuous positions across IS/OOS; PnL display resets only. Quality uses entries and closes inside each interval. Carry-in and censored trades are reported separately.",
+  "fresh_start_sensitivity": "Zero prior positions; only original BASE episodes with execution entry on/after OOS_START may enter. No mid-episode re-entry.",
+  "schedule_delay_sensitivity": "No extra schedule-delay experiment.",
+  "holdout_rule": "Freeze all passing per-account winners under the approved new quality rule and unchanged original ranking before OOS. Evaluate every frozen candidate once; no OOS-driven revisions, substitutions, deletions, or re-ranking.",
+  "source_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "run_holding_tradeoff_research.py": "98342a731b996496d72b1a38941b0aacdd388cb309ac0fc46bfe08bbd75f916e",
+    "src/fx_tradeoff_evaluation.py": "37dc8071aba94329a88db9688f9c46d6c3d891a53243ceca414bedb043d07e87",
+    "run_holding_filter_research.py": "02fdec7e7af9a94a8bb6e4c0029e57d193a4e7dc9cafb8a7ec61f5691501e71e",
+    "run_timecap_filter_research.py": "c4f68206fee9862598340123347f90ff8b9b0aaf3f739f30242efff592903fd0",
+    "src/fx_holding_filters.py": "67b784ab5f2e2b1fdc86b555ab0f8e4b794017a3ad31df0f59a7834ae7e5a84e",
+    "src/fx_timecap_filters.py": "e0bd60d7854a1ee425442009a3facda190463b1ab0cf09b82109f49381175bed"
+  },
+  "input_sha256": {
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "reproduced/holding_filter_v3/is_selection.csv": "edc4d06b409349246a0f90844e0fc70de64658b60ee6a5f3057671e69be52ce2",
+    "reproduced/holding_filter_v3/is_all_metrics.csv": "01149121361e108b2c01bda7b6c4b15e62bf983c3ef0c7b5d4f10cb61ed177ab",
+    "reproduced/timecap_filter_v4/is_selection.csv": "79dd1ecf497b19b4eb1523f9017d86fb4e9f30b183da3727c4f6d111a7203726",
+    "reproduced/timecap_filter_v4/is_all_metrics.csv": "3d96d5fe3e275473ac830a332a8662c1ae617048817b11c2826d66de18834bf3",
+    "reproduced/holding_quality_tradeoff_review/review.json": "34cb72861f8166865afb23c24b1379d024f7bb861f3a35391cf8714efba6f1f3",
+    "reproduced/holding_quality_tradeoff_review/review.csv": "357e5a508eed3534bf3544a59c69395c742aee626626f834440d69cffbbc99d2",
+    "reproduced/holding_quality_tradeoff_review/final_review_validation.json": "153714b255ef3fdf675d4a17f729e42ee08f1c9345d6cc3926be816e4e8ed869",
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "run_holding_filter_research.py": "02fdec7e7af9a94a8bb6e4c0029e57d193a4e7dc9cafb8a7ec61f5691501e71e",
+    "src/fx_holding_filters.py": "67b784ab5f2e2b1fdc86b555ab0f8e4b794017a3ad31df0f59a7834ae7e5a84e",
+    "build_holding_observations.py": "2a3e5140e35fbda6203a2b5cec9baaf0e2c79ed71a22418f496783b5e42a569d",
+    "reproduced/holding_observations_v3/holding_observation_protocol.json": "81109ee024c58b3751abfd1ce074ea69a8f00c4b18422b15eb619f6a4acee15f",
+    "reproduced/holding_observations_v3/holding_observation_validation.json": "0e4237476cb52702d8eeca76746c7cafd7880bbbd5f37c448b5214b5b1570841",
+    "reproduced/holding_observations_v3/discovery_repeated_negative_patterns.csv": "f02a7e7e36d82de365762c57bd4dacdfdf80ad84c832b91f2c4500b6c5893ccb",
+    "reproduced/holding_observations_v3/discovery_repeated_negative_patterns.json": "20c6d2c4b5330dea1536f60ee7c07bb594928bd1e5c3f6083fca142466495a57",
+    "reproduced/holding_observations_v3/holding_coverage.csv": "cad15ffb4b3c516539d58d15666abdb8bcd90f1d21a9f3082e9ee6ce92ee682e",
+    "reproduced/holding_observations_v3/holding_state_summary.csv": "a37a3d0862559690189ccbc335a4feccb2968f18c5e1a1293e12c6761cdf5203",
+    "reproduced/holding_observations_v3/is_base_trade_ledger.csv.gz": "1fa2f3f890cfab95c3562ed1a6ebaaebff64ebd82f7a9b3abfe70493fb0700e7",
+    "reproduced/holding_observations_v3/is_holding_checkpoints.csv.gz": "bd122a23fa6777c8f2dac7e8ff19dd471be5322843cf616ab883d30d6c0dfa74",
+    "reproduced/holding_filter_v3/protocol.json": "595770463740715a0e1abb22fa2a56887de039cf2d189779f03a437f1ae9d6f0",
+    "reproduced/holding_filter_v3/frozen_selection.json": "ff1e4ab1d0be38ac0e9308e9ff0b20d9be12fe5a35302a99a1da79633bbb0d3d",
+    "reproduced/holding_filter_v3/development_status.json": "d59cf353aba8b31c8fb8765e7fa274a6fe475d89244fd172db987cebc58150d3",
+    "reproduced/holding_filter_v3/independent_validation.json": "297930c284f7fdca30a419125759d8c2c1460235dc22dbdb5516e0b40fc2d588",
+    "reproduced/holding_filter_v3/is_account_coverage.csv": "fc09c109034d394b7c364cb928bdda4f9572cc67999d650d91a9e4f83389272d",
+    "reproduced/holding_filter_v3/is_all_decisions.csv.gz": "9b33eace54f06bbea3cfd77cc1b4794a024965f648c1c5135c2d8313efc3d01f",
+    "reproduced/holding_filter_v3/is_frozen_daily.csv.gz": "8fe66d2ddd3307e272efec3856674eb9874e3b957b995d11905d9106cc33887a",
+    "reproduced/holding_filter_v3/is_frozen_metrics.csv": "9c2cda6c7a5476c6666fda7e370a749d6c4163d35abe948b1bf17ec9bfab3a7f",
+    "reproduced/holding_filter_v3/is_hypotheses.json": "21f61a768c627afdb541383693a08b7d066de774b6f745caf6ed041f0a889921",
+    "run_timecap_filter_research.py": "c4f68206fee9862598340123347f90ff8b9b0aaf3f739f30242efff592903fd0",
+    "src/fx_timecap_filters.py": "e0bd60d7854a1ee425442009a3facda190463b1ab0cf09b82109f49381175bed",
+    "reproduced/timecap_filter_v4/protocol.json": "83eaa7c7a4c35ac7ae789672c05ca5842cc2511a88c1eb25b75908bf49ac4c96",
+    "reproduced/timecap_filter_v4/frozen_selection.json": "97cd55a6a84d0a7bbae63b3e60ce4a471a524265fd8b7399bdeb74272ec394d8",
+    "reproduced/timecap_filter_v4/development_status.json": "58815cdafbf961ff2819b8f02ff16e3b2321dd7244ad66d5c174d4c6cf8430b7",
+    "reproduced/timecap_filter_v4/independent_validation.json": "a1a25aa14d391c07219efd632f130c7659fbda4d813486cabc59f27cf7eccac4",
+    "reproduced/timecap_filter_v4/is_account_coverage.csv": "971e38262c684d466eef06c63ce59345cd9bf563333fbe20518ac649647a90a9",
+    "reproduced/timecap_filter_v4/is_all_decisions.csv.gz": "d2122df133995f4edafd0749db78c196955da9321d434fd942f3fe93488e62db",
+    "reproduced/timecap_filter_v4/is_frozen_daily.csv.gz": "c9b63168eeee1723177120f10c75ec91ec5e16ffccbbc023af99d0410616fdb4",
+    "reproduced/timecap_filter_v4/is_frozen_metrics.csv": "9c2cda6c7a5476c6666fda7e370a749d6c4163d35abe948b1bf17ec9bfab3a7f",
+    "reproduced/timecap_filter_v4/is_hypotheses.json": "86c5def3b4c5431ba55504c9ad8bb9f34b182e65ff2fcf50c4a87d81cf9cc2b1"
+  },
+  "user_authorization": {
+    "instruction_zh": "允许取舍，但每笔期望收益与总盈利/总亏损比都须改善",
+    "recorded_utc": "2026-10-23T14:17:00.899211+00:00",
+    "scope": "Replace the two quality requirements for the fixed 492 previously discussed v3/v4 candidates; retain every other original gate and ranking."
+  },
+  "source_campaigns": [
+    "holding_filter_v3",
+    "timecap_filter_v4"
+  ],
+  "original_candidate_counts": {
+    "holding_filter_v3": 391,
+    "timecap_filter_v4": 101
+  },
+  "hypothesis_origin": "Exactly the saved 391 conditional checkpoint and 101 unconditional cap D-only hypotheses. Existing IS-only review predates this authorization. No new hypotheses, ages, conditions or bin fitting.",
+  "proposal_rule": "Reuse the entire original v3/v4 proposal lists including exact original specs and D1/D2/D evidence. Both D halves have >=10 closed actionable episodes and negative executable tails; combined D negative. Concentration remains diagnostic.",
+  "checkpoint_rule": "Unchanged original checkpoint engines: earned-return age, signal-close exit, next-close execution retaining that return, natural exits first, no reentry within original episode.",
+  "quality_rule": "Expectancy and gross profit factor must both be finite for BASE/FILTER and strictly improve (>0 delta, no fitted minimum). Zero loss denominator is undefined; zero-win numerator is zero. OOS quality additionally requires >=20 eligible closed FILTER trades.",
+  "criterion_change": "Explicit user-approved change from separate win-rate/payoff gates to expectancy/profit-factor gates. Old failures remain old failures. Original win/payoff results remain diagnostics."
+}

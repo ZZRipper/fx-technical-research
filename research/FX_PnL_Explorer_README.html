@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="FX 技术策略研究交互图完整中文说明：固定本金单利、原复利、20 条技术规则、14 个版本、信息时序与交易统计。">
+<title>FX Explorer · 策略与使用说明</title>
+<style>
+:root{--ink:#193443;--muted:#637782;--line:#dce6e7;--paper:#fff;--ground:#f4f7f6;--teal:#127b78;--teal-soft:#eaf5f2;--gold:#96651b;--gold-soft:#fff7e7;--blue:#345c91;--red:#a44b47;--side:272px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;color:var(--ink);background:var(--ground);font:15px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif}a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}button,input{font:inherit}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #79bfb4;outline-offset:3px}button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:7px;padding:7px 12px}.skip{position:fixed;top:-80px;left:20px;padding:10px;background:white;z-index:20}.skip:focus{top:10px}
+aside{position:fixed;inset:0 auto 0 0;width:var(--side);background:#fbfdfc;border-right:1px solid var(--line);padding:31px 23px;overflow:auto;z-index:5}.brand{font-size:21px;font-weight:750;letter-spacing:-.5px}.brand small{display:block;font-size:11px;letter-spacing:2px;color:var(--teal);font-weight:650}.aside-intro{font-size:12px;color:var(--muted);line-height:1.7;margin:11px 0 22px}.search-label{font-size:12px;font-weight:650;color:var(--muted)}#search{display:block;width:100%;margin:7px 0 5px;border:1px solid #cbdcdb;border-radius:8px;padding:9px 10px;background:white;color:var(--ink)}#search-status{font-size:11px;color:var(--muted);min-height:20px}.nav{display:flex;flex-direction:column;gap:3px;margin-top:18px}.nav a{padding:8px 10px;color:#526b75;border-radius:6px;font-size:13px}.nav a:hover,.nav a.active{background:var(--teal-soft);color:#126b67;text-decoration:none}.nav a span{display:inline-block;width:25px;font-size:10px;color:#849b9f}.aside-actions{margin-top:25px;display:flex;gap:6px;flex-wrap:wrap}.aside-actions button{font-size:11px;padding:5px 8px}.aside-foot{font-size:11px;color:#87979e;margin-top:22px}
+main{margin-left:var(--side);padding:38px 44px 40px;max-width:1560px}.hero{padding:34px 38px;background:linear-gradient(130deg,#fff 30%,#e8f3ef);border:1px solid #d8e5df;border-radius:16px;margin-bottom:23px}.eyebrow{font-size:11px;color:var(--teal);font-weight:750;letter-spacing:1.8px}.hero h1{font-size:37px;line-height:1.28;letter-spacing:-1px;margin:12px 0}.hero .lead{font-size:16px;max-width:830px;color:#4d6872;margin:12px 0 21px}.links{display:flex;flex-wrap:wrap;gap:10px}.links a{padding:9px 15px;border-radius:7px;border:1px solid #bed7d0;background:#fff;font-size:13px;font-weight:650}.links a.primary{background:var(--teal);border-color:var(--teal);color:white}.facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:28px;padding-top:20px;border-top:1px solid #d7e6df}.facts b{font-size:24px;line-height:1.1;font-weight:650}.facts span{display:block;font-size:11px;color:var(--muted);margin-top:4px}.section{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:28px 32px;margin:0 0 22px;scroll-margin-top:24px}.section h2{font-size:24px;line-height:1.4;margin:0 0 14px;letter-spacing:-.3px}.section h2 .num{font-size:12px;font-weight:700;color:#809a9c;vertical-align:middle;margin-right:12px}.section h3{font-size:17px;margin:26px 0 9px}.section p{margin:10px 0}.section .intro{color:var(--muted);margin-top:0}.section ul,.section ol{padding-left:23px}.section li{margin:6px 0}strong{font-weight:650}.callout{border-left:3px solid var(--teal);background:var(--teal-soft);padding:13px 17px;margin:17px 0;border-radius:0 7px 7px 0;font-size:14px}.callout.warn{background:var(--gold-soft);border-color:#c0994a;color:#735b35}.callout p{margin:3px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.card{padding:17px 19px;border:1px solid var(--line);background:#fbfdfc;border-radius:9px}.card h3{margin:0 0 7px;font-size:15px}.card p{font-size:13px;margin:0}.badge{display:inline-block;border:1px solid #d4e3dd;background:#f2f8f4;color:#377364;font-size:10px;letter-spacing:.4px;border-radius:20px;padding:2px 8px;vertical-align:middle;margin-left:7px}.badge.old{color:#826328;background:#fff8e9;border-color:#eadcb9}.table-wrap{overflow-x:auto;margin:16px 0}table{width:100%;border-collapse:collapse;font-size:13px;line-height:1.7;text-align:left}th{background:#f0f5f3;color:#536f76;font-size:12px;padding:11px 13px;border-bottom:1px solid #ccdeda;vertical-align:top}td{padding:12px 13px;border-bottom:1px solid #e4ece9;vertical-align:top}tr:last-child td{border-bottom:0}tbody tr:nth-child(even){background:#fcfdfc}td:first-child{font-weight:560}code{font:12px/1.65 ui-monospace,SFMono-Regular,Consolas,"Microsoft YaHei",monospace;background:#eef4f2;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}.formula{border:1px solid #dce7e3;background:#f7faf8;border-radius:8px;padding:14px 18px;margin:14px 0;font:13px/1.9 ui-monospace,SFMono-Regular,Consolas,"Microsoft YaHei",monospace;overflow-x:auto;white-space:pre-wrap;color:#2b565d}.muted,.source{color:var(--muted);font-size:12px}.source{border-top:1px solid #e8eeeb;padding-top:11px;margin-top:19px!important;overflow-wrap:anywhere}.step-line{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}.step{background:#f2f7f4;border-top:3px solid #66a99b;padding:15px 17px;border-radius:0 0 7px 7px}.step b{display:block;font-size:17px}.step span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);border-radius:8px;margin:13px 0;background:#fff}summary{cursor:pointer;padding:13px 17px;font-size:14px;font-weight:650;background:#f8fbf9;border-radius:8px}summary::marker{color:var(--teal)}.details-body{padding:6px 18px 17px}details[open] summary{border-bottom:1px solid var(--line);border-radius:8px 8px 0 0}.rule-list td:first-child{width:27%}.nowrap{white-space:nowrap}.no-results{padding:35px;color:var(--muted);text-align:center;background:white;border:1px solid var(--line);border-radius:10px}.hidden,[hidden]{display:none!important}.footer{padding:12px 4px 25px;font-size:12px;color:var(--muted)}.mini{font-size:12px}.file-list{display:grid;grid-template-columns:1fr 1fr;gap:9px}.file-list a{border:1px solid var(--line);border-radius:7px;padding:10px 13px;font-size:12px;background:#fbfdfc}
+@media(max-width:1100px){:root{--side:235px}aside{padding:26px 18px}main{padding:26px}.hero{padding:27px}.section{padding:24px}.hero h1{font-size:31px}}@media(max-width:760px){aside{position:static;width:auto;border-right:0;border-bottom:1px solid var(--line);padding:20px}.aside-intro,.aside-foot{display:none}.nav{display:grid;grid-template-columns:1fr 1fr;margin-top:12px;gap:0}.nav a{font-size:12px;padding:6px}.aside-actions{margin-top:10px}main{margin:0;padding:18px}.hero,.section{padding:22px}.hero h1{font-size:28px}.grid,.file-list,.step-line{grid-template-columns:1fr}.facts{gap:22px}.section h2{font-size:21px}table{min-width:600px}.links a{font-size:12px}}
+@media print{@page{size:A4;margin:17mm 15mm}html{scroll-behavior:auto}body{font-size:10pt;background:white;color:#172b32}aside,.skip,.links,.no-print,#no-results{display:none!important}main{margin:0;padding:0;max-width:none}.hero,.section{border:0;border-radius:0;padding:0;margin:0 0 22pt;box-shadow:none;background:white}.hero h1{font-size:26pt}.hero .lead{font-size:11pt}.facts{margin-top:14pt;padding-top:12pt}.section h2{font-size:17pt;border-bottom:1px solid #c8d8d1;padding-bottom:7pt;break-after:avoid}.section h3,summary{break-after:avoid}p,li{orphans:3;widows:3}.table-wrap{overflow:visible}table{font-size:9pt;min-width:0}thead{display:table-header-group}tr,.card,.step,.formula{break-inside:avoid}td,th{padding:7pt 8pt}details{break-inside:auto}details>.details-body{display:block!important}summary{background:#f4f7f5;font-size:10pt}.source,.muted{font-size:9pt}.section[hidden]{display:block!important}a{color:inherit;text-decoration:none}.footer{font-size:8pt}.grid{gap:12pt}.callout{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<a class="skip" href="#overview">跳转到说明正文</a>
+<aside aria-label="说明导航">
+ <div class="brand"><small>RESEARCH COMPANION</small>FX Explorer 指南</div>
+ <p class="aside-intro">把每条曲线追溯到报价、信号、成交与记账公式。适用于单利新版和原复利归档。</p>
+ <label class="search-label" for="search">搜索说明</label><input id="search" type="search" placeholder="例如 RSI、UNKNOWN、回撤…" autocomplete="off"><div id="search-status" aria-live="polite">输入关键词，筛选章节并展开细节</div>
+ <nav class="nav" id="toc">
+  <a href="#overview"><span>01</span>快速上手</a><a href="#accounting"><span>02</span>单利与复利记账</a><a href="#datasets"><span>03</span>数据集与账户边界</a><a href="#direction"><span>04</span>九币报价与交易方向</a><a href="#timing"><span>05</span>信号、执行与交易段</a><a href="#rules"><span>06</span>20 条技术规则 + 3 基准</a><a href="#variants"><span>07</span>14 个执行 / 过滤版本</a><a href="#information"><span>08</span>E / K / A 与经济字段</a><a href="#dashboard"><span>09</span>Dashboard 控件与导出</a><a href="#metrics"><span>10</span>指标、交易 cohort 与回撤</a><a href="#history"><span>11</span>历史候选与解释边界</a><a href="#files"><span>12</span>复现与文件索引</a>
+ </nav>
+ <div class="aside-actions"><button type="button" id="expand-all">展开全部</button><button type="button" id="collapse-all">收起细节</button><button type="button" id="print">打印 / PDF</button></div>
+ <p class="aside-foot">中文离线说明 · 2026-10-22<br>内联样式与脚本，无外部依赖</p>
+</aside>
+<main>
+<header class="hero">
+ <div class="eyebrow">FX TECHNICAL TIMING / 完整使用说明</div>
+ <h1>理解曲线，也理解曲线背后的规则</h1>
+ <p class="lead">本页把 9 种外币的技术信号、14 种执行版本、经济信息时序和统计口径放在一起。新图采用<strong>固定 100,000 美元本金、逐日累加的单利 PnL</strong>；原图保留历史复利结果，便于对照与核验。</p>
+ <div class="links"><a class="primary" href="FX_PnL_Explorer_Simple.html">打开固定本金单利 Explorer ↗</a><a href="FX_PnL_Explorer.html">打开原复利归档 ↗</a><a href="README.md">仓库说明</a></div>
+ <div class="facts"><div><b>20 + 3</b><span>技术规则与基准</span></div><div><b>14</b><span>执行 / 过滤版本</span></div><div><b>9</b><span>研究币种</span></div><div><b>3</b><span>独立研究数据集</span></div></div>
+</header>
+<p id="no-results" class="no-results" hidden>没有匹配的章节。可尝试英文策略编号或较短关键词。</p>
+
+<section class="section" id="overview">
+ <h2><span class="num">01</span>快速上手</h2>
+ <p class="intro">先固定一个问题，再选择比较维度。每条线都是独立账户，没有把不同货币收益合成为投资组合。</p>
+ <ol><li>打开 <a href="FX_PnL_Explorer_Simple.html">固定本金单利版</a>，选 <strong>Main history</strong>；它覆盖 2005 年起的连续账户。</li><li>选 <strong>Filters</strong>，固定币种与技术规则，例如 CAD + <code>BB_MR_20</code>；同时选 BASE 与 <code>COMMODITY_USD</code>，观察过滤改变了哪些时间段。</li><li>先看全历史，再切 2015–2019、2020–2024 等日期窗口；同时检查收益、回撤、交易数、胜率和盈亏比。</li><li>展开年度收益，检查改善是否分散在多个年份。将鼠标移到曲线上查看日期和值；用上方复选框增减曲线。</li><li>需要重用图表时下载 SVG，需要逐日报表时下载 CSV；文件反映<strong>当前账户选择、日期窗和归一化设置</strong>。</li></ol>
+ <div class="grid"><div class="card"><h3>比较规则</h3><p>选 Strategies / windows，固定币种与版本，比较 RSI 7/14/20、BB 10/20，或四个代表规则。窗口是预先固定的指标参数。</p></div><div class="card"><h3>比较货币</h3><p>选 Currencies，固定技术规则与版本，比较 9 个各自独立的 100,000 美元账户。曲线之间没有资金分配或净额抵消。</p></div></div>
+ <div class="callout">研究图的控制项只选择和展示已有路径。更改日期窗口不会重新寻找参数、重新选赢家，也不会在窗口开始处把持仓强制平掉。</div>
+</section>
+
+<section class="section" id="accounting">
+ <h2><span class="num">02</span>单利与复利：相同交易信号，两种记账方式</h2>
+ <p>令统一报价为 <code>P_t</code>，收益区间结束于报价日 <code>t</code>，实际持仓为 <code>h_t ∈ {−1,0,+1}</code>，固定初始本金 <code>C₀ = 100,000 USD</code>。当前研究成本为零：</p>
+ <div class="formula">现货简单收益：r_t = P_t / P_(t−1) − 1
+策略日收益：u_t = h_t × r_t
+单利每日美元 PnL：ΔΠ_t = C₀ × u_t
+单利累计 PnL：Π_t = C₀ × Σ_(j≤t) u_j
+单利权益：E_t = C₀ + Π_t</div>
+ <p>单利版每天使用相同的美元名义本金。盈利后不增加次日交易本金，亏损后也不缩小本金；它是一套固定名义敞口的研究记账规则。</p>
+ <div class="table-wrap"><table><thead><tr><th>项目</th><th>固定本金单利 · 新版</th><th>简单日收益复利 · 原归档</th></tr></thead><tbody>
+ <tr><td>累计收益</td><td><code>100 × Σ u_t</code></td><td><code>100 × [∏(1+u_t)−1]</code></td></tr>
+ <tr><td>每日美元损益</td><td><code>C₀ × u_t</code></td><td><code>上一日权益 × u_t</code></td></tr>
+ <tr><td>单笔交易收益</td><td>把该交易实际承担的每日策略收益相加</td><td>把该交易每日 <code>1+u_t</code> 相乘后减 1</td></tr>
+ <tr><td>窗口显示归零</td><td><code>W_t = C₀ + E_t − E_pre</code></td><td><code>W_t = C₀ × E_t / E_pre</code></td></tr>
+ <tr><td>年度收益</td><td><code>100 × Σ u_t</code>，仅年内且位于所选窗口的收益日</td><td>年内实际日收益复合；原图用年末权益 / 年前锚点权益 − 1</td></tr>
+ <tr><td>年化</td><td><code>累计简单收益% / Y</code>，线性年化</td><td><code>100 × [(1+累计收益)^(1/Y)−1]</code>，日历 CAGR</td></tr>
+ <tr><td>最大回撤主显示</td><td>相对于固定 C₀ 的回撤<strong>百分点 pp</strong>；另列峰值权益百分比</td><td>相对于运行峰值权益的百分比</td></tr>
+ </tbody></table></div>
+ <p><code>pre</code> 是所选窗口首个有效报价之前的可用报价；若窗口从账户首日开始，则使用该账户的初始资本锚点。<code>Y = (末个报价日 − pre 日期) / 365.25</code>。单利窗口美元 PnL 本身为 <code>E_last−E_pre</code>；收益率则将该 PnL 除以固定 C₀，<strong>不能改为除以 E_pre</strong>。</p>
+ <div class="formula">窗口收益：R_window = 100 × (E_last − E_pre) / C₀
+窗口 PnL：Π_window = E_last − E_pre = C₀ × Σ_window u_t
+窗口单利权益：W_pre = C₀；W_t = C₀ + E_t − E_pre
+窗口峰值：H_t = max(C₀, W_首日, …, W_t)
+固定本金回撤：DD_pp(t) = 100 × (W_t − H_t) / C₀
+峰值权益回撤：DD_peak%(t) = 100 × (W_t / H_t − 1)
+最大回撤：取对应 DD 序列的最小值（零或负数）</div>
+ <div class="callout"><strong>两种回撤都按所选窗口计算。</strong>即使主图选 Original account path，回撤与结果表仍使用上述窗口 W 和 H，不引入窗口之前的历史高点。全样本时 W 与原始单利 E 相同。</div>
+ <details><summary>两个小例子：相加与相乘、百分点与百分比</summary><div class="details-body"><p>先赚 10%，再亏 10%：固定本金单利为 <code>100,000 + 10,000 − 10,000 = 100,000</code>；复利为 <code>100,000 × 1.1 × 0.9 = 99,000</code>。</p><p>窗口权益从 100,000 升到 120,000，再回到 108,000：回撤金额 12,000，固定本金回撤 <strong>−12 pp</strong>，峰值权益回撤 <strong>−10%</strong>。二者描述同一回落，但分母不同。</p><p>单利各年的美元 PnL 和收益百分点可以相加得到同一完整窗口的结果；复利各年的收益率不能直接相加。不同规则或不同货币账户也不能因采用单利而自动被视为一个投资组合。</p></div></details>
+ <p class="source">策略日收益与原复利执行：<a href="src/fx_baselines.py">src/fx_baselines.py · fixed_execute / trade_ledger / account_metrics</a>。单利版在保持信号、持仓与成交日不变的前提下，使用固定本金的加法记账。</p>
+</section>
+
+<section class="section" id="datasets">
+ <h2><span class="num">03</span>三个数据集，各有独立账户起点</h2>
+ <div class="table-wrap"><table><thead><tr><th>研究样本</th><th>图内范围与路径数</th><th>包含什么</th><th>账户与解释边界</th></tr></thead><tbody>
+ <tr><td><code>main</code><br>连续主历史</td><td>2005-01-03 — 2026-05-29<br><strong>471</strong> 条路径</td><td>207 条 BASE（9×23）；36 条 V5；228 条去重后经济过滤路径</td><td>2000–2004 价格预热，2005 起现金开账户，此后连续执行；2015 是历史复核分界，不是再开一个账户。</td></tr>
+ <tr><td><code>technical</code><br>V3 价格门控</td><td>2020-01-01 — 2026-05-29<br><strong>234</strong> 条路径</td><td>9×（20 技术规则 + 2 方向基准 + 4 门控）；本样本没有 CASH 账户</td><td>基准和门控都在 2020 现金重置、沿用更早价格预热；图中是 V3 的 T 阶段，不能拼接 main。</td></tr>
+ <tr><td><code>h10</code><br>H.10 独立报价回放</td><td>2026-06-01 — 2026-10-16<br><strong>207</strong> 条路径</td><td>9×（20 技术规则 + 3 基准）；没有经济过滤版本</td><td>从 2024-01-02 预热、6 月独立现金起步；各币保留有效报价日，不填 ND，不接到工作簿价格水平后面。</td></tr>
+ </tbody></table></div>
+ <p>共 <strong>912 条可选择路径</strong>。经济实验本身有 9 币×4 核心规则×8 版本 = 288 账户；展示时删去 36 条重复 BASE，以及商品规则在另外 6 币×4 规则上的 24 条不适用副本，留下 228 条非基准路径。灰色选项表示该组合未研究或不适用。</p>
+ <details><summary>完整覆盖、暖启动与 V3 三阶段</summary><div class="details-body"><p>主报价原始跨度为 2000-01-03 至 2026-05-29，6,890 个日期×9 币，共 62,010 条记录。特征工作簿 11 张数据表、226 个字段，终点相同；增加字段没有增加样本外日期。</p><p>V3 完整重建包含 D（2005–2014）、V（2015–2019）、T（2020–2026-05-29）三个独立现金账户阶段，每阶段 234 个。Explorer 的 technical 仅展示 T；更改图中日期窗不会切换为 D 或 V。</p><p>H.10 原始记录含预热历史，最早 2023-06-26。当前回放每币使用 604 个样本前有效报价；评价段均有 96 个有效报价，100 个日历工作日中 4 个 ND 日期为 2026-06-19、07-03、09-07、10-12。代码还用更早全部有效历史检查预热，评价段所有技术目标信号一致。</p><p>H.10 是不同来源与定盘时点，现已被研究者看过，且没有配套的后续宏观特征；它不验证后开发的经济过滤器。短样本线性年化只是机械缩放，不是预测。</p></div></details>
+ <div class="callout warn">原复利 technical 归档未嵌入 V3 逐笔账本，交易胜率和盈亏比显示“—”。新版单利图使用源码新重建的 V3 交易段，因此可以计算这些指标；这不等于找回了原始归档中缺失的账本。</div>
+ <p class="source">数据覆盖：<a href="FX_Research_Datasets/data/README_Data_Dictionary.txt">数据字典</a>、<a href="reproduced/h10_coverage.csv">H.10 覆盖表</a>；阶段语义：<a href="src/fx_legacy.py">src/fx_legacy.py</a>。</p>
+</section>
+
+<section class="section" id="direction">
+ <h2><span class="num">04</span>九币报价与正负方向</h2>
+ <p>所有信号和收益统一使用 <strong>1 单位外币值多少美元（USD per foreign）</strong>。图中的 “JPY / USD” 表示研究对象为日元相对美元，不要求原始供应商以这个顺序报价。</p>
+ <div class="table-wrap"><table><thead><tr><th>币种</th><th>含义</th><th>常见原生报价</th><th>转为 P = USD / 外币</th><th>2Y 利率国家代理</th></tr></thead><tbody>
+ <tr><td>EUR</td><td>欧元</td><td>EURUSD</td><td>原值</td><td>德国 DE</td></tr><tr><td>GBP</td><td>英镑</td><td>GBPUSD</td><td>原值</td><td>英国 UK</td></tr><tr><td>AUD</td><td>澳元</td><td>AUDUSD</td><td>原值</td><td>澳大利亚 AU</td></tr><tr><td>NZD</td><td>新西兰元</td><td>NZDUSD</td><td>原值</td><td>新西兰 NZ</td></tr><tr><td>JPY</td><td>日元</td><td>USDJPY</td><td>取倒数 1 / 原值</td><td>日本 JP</td></tr><tr><td>CHF</td><td>瑞士法郎</td><td>USDCHF</td><td>取倒数</td><td>瑞士 CH</td></tr><tr><td>CAD</td><td>加元</td><td>USDCAD</td><td>取倒数</td><td>加拿大 CA</td></tr><tr><td>NOK</td><td>挪威克朗</td><td>USDNOK</td><td>取倒数</td><td>挪威 NO</td></tr><tr><td>SEK</td><td>瑞典克朗</td><td>USDSEK</td><td>取倒数</td><td>瑞典 SE</td></tr>
+ </tbody></table></div>
+ <div class="grid"><div class="card"><h3>q = +1 · Long FX</h3><p>做多外币、做空美元。统一价格 P 上涨时当日策略收益为正。例如 +1 JPY 表示做多日元，即常见 USDJPY 下跌的方向。</p></div><div class="card"><h3>q = −1 · Short FX / Long USD</h3><p>做空外币、做多美元。策略日收益为 −r_t。它不是把倒数报价买入并持有；后者每日收益是 −r_t/(1+r_t)。</p></div></div>
+ <p><code>q=0</code> 表示现货敞口为零。PIT 工作簿与清洗字段 <code>price_USD_per_foreign</code> 已经完成统一；<strong>不要对 JPY 等再次取倒数</strong>。H.10 使用 <code>usd_per_foreign</code>，<code>raw_rate</code> 只保留原生报价作追溯。</p>
+ <p>“每日 1×”在新单利版指对固定 C₀ 的有符号名义敞口，在原复利版指对变化的账户权益的敞口。当前两版均没有交易成本、swap/carry、融资费或现金利息。</p>
+</section>
+
+<section class="section" id="timing">
+ <h2><span class="num">05</span>从信号到第一笔收益：三个相邻报价日</h2>
+ <div class="step-line"><div class="step"><b>t · 收盘后形成目标</b><span>用截至 t 的价格计算技术信号 s_t；经济门控读信号日的 K_t。</span></div><div class="step"><b>t+1 · 下一收盘执行</b><span>e_(t+1)=s_t。新仓在这个收盘才建立，不能赚已经结束的价格区间。</span></div><div class="step"><b>t+2 · 首次计入收益</b><span>h_(t+2)=e_(t+1)，对应 t+1 → t+2 的 close-to-close 收益。</span></div></div>
+ <p>这里的 t+1、t+2 都是<strong>下一有效报价</strong>，不一定是下一日历天。日频连续账户持仓可以跨周末，也可以持续数月；“Daily”描述观察与执行频率，不表示每笔只持有一天。</p>
+ <div class="formula">目标 / 信号 s_t → 收盘后实际仓位 e_(t+1) → 当日承担收益的仓位 h_(t+2)
+在报价 t 结束的收益：h_t × (P_t/P_(t−1) − 1)
+在收盘 i 入场、收盘 j 平仓：交易包含 i+1, i+2, …, j 的收益（含退出收盘日）</div>
+ <h3>保持、平仓、反手和末期未平仓</h3>
+ <ul><li><strong>保持：</strong>目标仍为原方向则继续持有。状态型规则会记住上个状态；每日方向型规则则每日重算 −1/0/+1。</li><li><strong>平仓：</strong>目标变 0，下一收盘实际仓位变 0；旧仓仍承担截至该退出收盘的价格收益。</li><li><strong>反手：</strong>目标从 +1 直接变 −1，或相反，下一收盘同一时点结束旧交易、建立新交易。旧交易计入该收盘收益，新交易从再下一报价日开始。</li><li><strong>末期：</strong>最后还在持仓的交易按最后可用价格计入未实现 PnL，没有人为增加样本末强平或额外报价。最后收盘才开的仓可能有零个收益区间，不进入合格已平仓统计。</li></ul>
+ <h3>暖启动先于允许成交日</h3>
+ <p>先在全价格历史上计算指标与状态机，再把允许开始日前的执行目标压为零。因此，2005 或 2020 的首个允许成交日可以采用上一报价日已经形成、且用更早历史预热的目标。它不要求所有指标在开账户当天重新从空状态计算。账户此前始终为现金，不继承过去的 PnL。</p>
+ <h3>两种不同的过滤节奏</h3>
+ <div class="grid"><div class="card"><h3>V3 · 每日目标门控</h3><p>每天决定是否采用已经预热的基准目标。条件恢复时可在同一段基准技术持仓内重入；不要求新的技术入场事件。</p></div><div class="card"><h3>V5 / 经济过滤 · 锁定原始交易段</h3><p>先由 BASE 的实际非零仓位确定 episode。入场被拒则整段空仓；风险提前退出后，该原始 episode 剩余部分也空仓。等下一个 BASE episode 才重新判断。</p></div></div>
+ <details><summary>早期四种执行方式与当前 Explorer 的关系</summary><div class="details-body"><p>早期 notebook 另外探索了 Daily Continuous、Daily Weekflat（周五收盘后空仓）、Weekly Flat（上周最后收盘信号，本周第一收盘开、最后收盘平）、Fixed 5D（每隔 5 个价格观测作决定，下一收盘执行，持有 5 个完整收益区间）。它们保存在原探索与复现材料中。</p><p>当前 Explorer 的三个比较按钮是 Filters、Strategies / windows、Currencies，不是四种持仓模式。图中的 BASE 是最终日频连续固定规则，不把早期其他执行方式当作同一基准叠加。原始探索从 2000 年起，且 RSI 中心穿越边界不同。</p></div></details>
+ <p class="source">执行与账本：<a href="src/fx_baselines.py">fixed_execute / trade_ledger / reconstruct_fixed_baselines</a>；过滤执行：<a href="src/fx_economics.py">run_economic_filters</a>、<a href="src/fx_risk.py">run_vix_variants</a>。</p>
+</section>
+
+<section class="section" id="rules">
+ <h2><span class="num">06</span>全部 20 条技术规则与 3 个基准</h2>
+ <p class="intro">下表给出每日目标 s_t 的精确定义；所有目标再经过上一节的执行延迟。窗口单位都是有效价格观测数。规则没有按历史表现动态挑选或重新拟合。</p>
+ <details open><summary>公共公式、初值与缺失处理</summary><div class="details-body">
+ <div class="formula">SMA_n(t) = 最近 n 个 P 的算术均值（包括今日；需 n 个有效值）
+SD_n(t) = 最近 n 个值的样本标准差，ddof=1
+Z_n(t) = [P_t − SMA_n(t)] / SD_n(t)
+EMA_n(t) = α P_t + (1−α) EMA_n(t−1)，α=2/(n+1)
+ℓ_t = log(P_t/P_(t−1))
+ER63_t = |log(P_t/P_(t−63))| / Σ_(j=t−62…t)|ℓ_j|
+sign(x) = +1（x&gt;0）、−1（x&lt;0）、0（x=0 或非有限值）</div>
+ <p>EMA 用第一个有限输入本身为种子，不先取 n 日 SMA，也不等待 n 日后才开始输出。价格输入在主运行中被要求全部正且有限，H.10 的 ND 在计算前剔除。MACD 的信号 EMA 同样以首个 MACD 值为种子。</p>
+ <p>RSI 令 <code>g_t=max(P_t−P_(t−1),0)</code>、<code>l_t=max(P_(t−1)−P_t,0)</code>，平均涨/跌幅以<strong>第一笔价格变化</strong>的 g、l 为种子，随后用 Wilder 递推 <code>G_t=((n−1)G_(t−1)+g_t)/n</code>、L 同理；到索引 t≥n（至少 n 个变化）才输出。<code>RSI=100−100/(1+G/L)</code>；G=L=0 时为 50，L=0 且 G&gt;0 时为 100。它不是“先 n 日均值再递推”的另一种常用种子。</p>
+ <p>BB 的 SD≤1e−12 或缺失时 Z 为 NaN；该日输出 0，但内部 BB 状态变量没有重置，下一有效值继续按状态机判断。RSI MR 遇当前或前一 RSI 非有限时保留原目标状态。RSI MOM、MA、MACD、TSMOM 的无有效方向值输出 0。ER 分母无效或为零时 ER 为 NaN，固定 regime 与依赖 ER 的门控输出 0。</p>
+ </div></details>
+ <div class="table-wrap"><table class="rule-list"><thead><tr><th>编号 / 规则</th><th>每日目标、持有与退出</th></tr></thead><tbody>
+ <tr><td>01 · <code>RSI_MR_7</code></td><td>7 期 RSI 的事件均值回归；完整状态机见下方 RSI MR 说明。</td></tr><tr><td>02 · <code>RSI_MR_14</code></td><td>相同事件规则，RSI 窗口 14；也是经济过滤的四个核心规则之一。</td></tr><tr><td>03 · <code>RSI_MR_20</code></td><td>相同事件规则，RSI 窗口 20。</td></tr>
+ <tr><td>04 · <code>RSI_MOM_7</code></td><td>7 期 RSI&gt;60 → +1；RSI&lt;40 → −1；其余（含 40、60）→0。每日重算，可直接反手。</td></tr><tr><td>05 · <code>RSI_MOM_14</code></td><td>同上，RSI 窗口 14；四信号投票中的 RSI 票。</td></tr><tr><td>06 · <code>RSI_MOM_20</code></td><td>同上，RSI 窗口 20。</td></tr>
+ <tr><td>07 · <code>MA_10_30</code></td><td><code>sign(SMA10/SMA30−1)</code>。短均线上方 +1，下方 −1，相等/未暖足 0；方向不变则持续，符号变化可反手。</td></tr><tr><td>08 · <code>MA_20_60</code></td><td><code>sign(SMA20/SMA60−1)</code>，同上；核心规则、投票与 regime 的趋势分支。</td></tr>
+ <tr><td>09 · <code>BB_MR_10</code></td><td>10 期 Z≥2 → −1；Z≤−2 → +1；回到中心时退出，详见 BB 状态表。</td></tr><tr><td>10 · <code>BB_MR_20</code></td><td>同上，窗口 20；核心均值回归规则。</td></tr><tr><td>11 · <code>BB_BO_10</code></td><td>10 期 Z≥2 → +1；Z≤−2 → −1；逆向穿越中心时退出，详见 BB 状态表。</td></tr><tr><td>12 · <code>BB_BO_20</code></td><td>同上，窗口 20。</td></tr>
+ <tr><td>13 · <code>DONCHIAN_BO_10</code></td><td>比较今日收盘与<strong>前 10 个收盘、不含今日</strong>的最高 H 与最低 L：P&gt;H → +1，P&lt;L → −1；多仓 P&lt;(H+L)/2 时平，空仓 P&gt;中点时平。其余保持。</td></tr><tr><td>14 · <code>DONCHIAN_BO_20</code></td><td>同上，前 20 个收盘；相等不构成突破，恰好等于中点也不退出。先判断突破再判断中点，可直接反手；使用收盘价而非日内 high/low。</td></tr>
+ <tr><td>15 · <code>MACD_12_26_9</code></td><td><code>M=EMA12(P)−EMA26(P)</code>，<code>H=(M−EMA9(M))/P</code>，目标 sign(H)；0 则空仓，方向变则反手。种子见公共公式。</td></tr>
+ <tr><td>16 · <code>TSMOM_21</code></td><td><code>sign(log(P_t/P_(t−21)))</code>。过去 21 个区间上涨多外币、下跌空外币；等于零或未暖足空仓。</td></tr><tr><td>17 · <code>TSMOM_63</code></td><td>同上，回看 63 个区间；核心动量规则。</td></tr>
+ <tr><td>18 · <code>VOTE_EQUAL_4</code></td><td>RSI_MOM_14、MA_20_60、DONCHIAN_BO_20、MACD_12_26_9 的 −1/0/+1 四票求和取 sign；平票为 0。</td></tr><tr><td>19 · <code>VOTE_STRENGTH_4</code></td><td>同四票，按下方固定强度公式加权；分数&gt;0.2 → +1，&lt;−0.2 → −1；含边界的 [−0.2,0.2] 为 0。</td></tr><tr><td>20 · <code>REGIME_RULE_FIXED</code></td><td>ER63&gt;0.40 采用已预热 MA_20_60 目标；ER63&lt;0.20 采用已预热 RSI_MR_14 目标；其余（含 0.20、0.40、NaN）为 0。每日切换，可在原分支技术段内重入。</td></tr>
+ <tr><td>基准 · <code>ALWAYS_LONG_FX</code></td><td>允许执行期内始终目标 +1；与其他策略一样延迟执行并遵守现金起点。</td></tr><tr><td>基准 · <code>ALWAYS_SHORT_FX</code></td><td>始终目标 −1；每天赚统一报价简单收益的相反数，非倒数报价的 buy-and-hold。</td></tr><tr><td>基准 · <code>CASH</code></td><td>始终 0，零 PnL、无利息、无交易。main 与 H.10 可用，V3 technical 未设该账户。</td></tr>
+ </tbody></table></div>
+ <details open><summary>RSI MR：穿回阈值入场、中心 guard 与处理顺序</summary><div class="details-body"><ol><li>先处理退出：原目标 +1 且今日 RSI≥50，则置 0；原目标 −1 且今日 RSI≤50，则置 0。</li><li>再处理入场：<code>RSI_(t−1)&lt;30 ≤ RSI_t&lt;50</code>，置 +1；<code>RSI_(t−1)&gt;70 ≥ RSI_t&gt;50</code>，置 −1。</li><li>否则维持处理后的目标。只有穿回阈值的事件触发开仓，不是 RSI 一直低于 30 就一直新开多仓。</li></ol><p><strong>中心 guard：</strong>如果 RSI 从 25 直接跳到 55，已经越过多仓退出中心，不开多仓；从 75 跌到 45 同理。该边界是最终规则相对早期探索的实质修正。由于“先退出、再入场”，极端跃迁中也可能在一个信号日先结束原方向并满足反向新入场。</p></div></details>
+ <details><summary>BB：精确状态表，阈值优先于中心退出</summary><div class="details-body"><div class="table-wrap"><table><thead><tr><th>按顺序判断</th><th>BB_MR 均值回归</th><th>BB_BO 突破</th></tr></thead><tbody><tr><td>1. Z≥+2</td><td>直接设置 −1</td><td>直接设置 +1</td></tr><tr><td>2. Z≤−2</td><td>直接设置 +1</td><td>直接设置 −1</td></tr><tr><td>3. −2&lt;Z&lt;2，已有 +1</td><td>Z≥0 则退出，否则保持</td><td>Z≤0 则退出，否则保持</td></tr><tr><td>4. −2&lt;Z&lt;2，已有 −1</td><td>Z≤0 则退出，否则保持</td><td>Z≥0 则退出，否则保持</td></tr><tr><td>5. 其余</td><td>保持原状态（空仓仍空仓）</td><td>保持原状态（空仓仍空仓）</td></tr></tbody></table></div><p>这是阈值<strong>水平</strong>触发，不要求必须在当天首次穿越 ±2。外侧阈值先判断，所以从一侧越到另一侧可以直接反手；不能把它简化成“遇中心一律先空一日”。</p></div></details>
+ <details><summary>强度投票：完整权重公式与归一化</summary><div class="details-body"><p>令 <code>σ21 = SD21(ℓ)</code>（日对数收益的样本标准差），<code>S=max(σ21√20,10⁻⁷)</code>，<code>clip(x)=min(1,max(0,x))</code>，Donchian 中点 m20 使用前 20 个收盘。</p><div class="formula">w_RSI = clip(|RSI14−50| / 25)
+w_MA = clip(|SMA20/SMA60−1| / S)
+w_DON = clip(|log(P)−log(max(m20,10⁻¹⁰))| / (2S))
+w_MACD = clip(|H_MACD| / [1.5×max(σ21,10⁻⁷)])
+score = Σ_i (vote_i × w_i) / max(Σ_i w_i,10⁻¹⁰)
+s = +1 if score&gt;0.2；−1 if score&lt;−0.2；otherwise 0</div><p>缺失权重置零。分母包括全部四个有效权重，某个 vote 为 0 时该权重仍可进入分母。这些权重只表达当天价格指标强度，不是胜率估计，也不使用过去策略盈利来分配权重。</p></div></details>
+ <p class="source">精确定义：<a href="src/fx_baselines.py">src/fx_baselines.py · sma / rolling_std / ema / rsi_wilder / event_osc_reversion / bb_strategy / donchian / complete_signals</a>。</p>
+</section>
+
+<section class="section" id="variants">
+ <h2><span class="num">07</span>全部 14 个执行 / 过滤版本</h2>
+ <p>技术规则生成方向 <code>q</code>，variant 决定是否采用这次交易、是否提前退出。经济过滤的四条核心规则为 <code>TSMOM_63</code>、<code>MA_20_60</code>、<code>BB_MR_20</code>、<code>RSI_MR_14</code>；其他技术规则只有适用的 BASE 或专属 V3 门控。</p>
+ <h3>这些 filter 是怎样建立的</h3>
+ <p><strong>V3</strong> 先提出价格机制假设：均值回归在低趋势效率的横盘环境中运行，动量在高效率趋势环境中运行，或要求动量与均线方向相互确认。<strong>V5</strong> 将问题推进到统一市场压力：高且上升的 VIX 是否是均值回归不宜入场、或应提前退出的环境。它只有一个不分币种方向的 panic 条件。</p>
+ <p><strong>V7</strong> 改用货币间相对国债收益率，分别研究“利差正在逆持仓变化”和“利差水平也逆持仓”。<strong>V8</strong> 再提出三条不同机制：利率变化与美元方向共同逆风、风险上升时持有高收益率一侧、商品与美元共同逆风。随后保留固定 OR 组合，以及用方向性风险条件做提前退出的单独版本。全部版本与失败结果都保留，便于检查机会成本。</p>
+ <div class="callout">以下阈值是既有研究规定，当前实现没有重新优化。机制解释不是阈值最优性或统计显著性的证明；由于完整原冻结协议未交付，也不声称已独立验证原研究的全部事前冻结流程。历史筛选门槛是交易结果的评估条件，不是策略触发器。</div>
+ <div class="table-wrap"><table><thead><tr><th>版本</th><th>适用范围</th><th>精确规则</th></tr></thead><tbody>
+ <tr><td>01 · <code>BASE</code></td><td>所有已列账户</td><td>原始技术入场、持有、退出，无额外门控。</td></tr>
+ <tr><td>02 · <code>BB10_RANGE_GATE</code></td><td>technical · BB_MR_10</td><td>ER63&lt;0.20 时采用 BB_MR_10 目标，其余为 0。</td></tr><tr><td>03 · <code>BB20_RANGE_GATE</code></td><td>technical · BB_MR_20</td><td>ER63&lt;0.20 时采用 BB_MR_20 目标，其余为 0。</td></tr><tr><td>04 · <code>MOM63_TREND_GATE</code></td><td>technical · TSMOM_63</td><td>ER63&gt;0.40 时采用 TSMOM_63 目标，其余为 0。</td></tr><tr><td>05 · <code>MOM_MA_CONFIRM</code></td><td>technical · TSMOM_63</td><td>TSMOM_63 与 MA_20_60 目标相同才保留 TSMOM 目标；不同为 0。两者同为 0 仍为空仓。</td></tr>
+ <tr><td>06 · <code>V5_ENTRY_ONLY</code></td><td>main · BB_MR_20、RSI_MR_14；9 币</td><td>入场信号日已知 <code>VIX≥30 AND Δ5VIX≥3</code> 时拒绝整个原交易段；否则保持原技术退出。</td></tr><tr><td>07 · <code>V5_RISK_EXIT</code></td><td>同上</td><td>相同入场门控；接受后监测相同条件，首次触发后下一 FX 收盘退出，锁定原段剩余部分。</td></tr>
+ <tr><td>08 · <code>RATE_CHANGE_CONFLICT</code></td><td>main · 四核心规则；9 币</td><td><code>q × Δ20d ≤ −10 bp</code> 时拒绝。</td></tr><tr><td>09 · <code>DUAL_RATE_CONFLICT</code></td><td>同上</td><td><code>q × Δ20d ≤ −10 bp AND q × d ≤ −50 bp</code> 时拒绝。</td></tr><tr><td>10 · <code>POLICY_USD</code></td><td>同上</td><td><code>q × Δ20d ≤ −10 bp AND q × DXY20 ≥ 1%</code> 时拒绝。</td></tr><tr><td>11 · <code>RISK_YIELD</code></td><td>同上</td><td><code>VIX≥20 AND Δ5VIX≥3 AND q × d≥50 bp</code> 时拒绝。</td></tr><tr><td>12 · <code>COMMODITY_USD</code></td><td>main · 四核心规则；仅 AUD、CAD、NOK</td><td><code>q × C20&lt;0 AND q × DXY20≥1%</code> 时拒绝。AUD 用铜；CAD/NOK 用 Brent。</td></tr><tr><td>13 · <code>ECO_COMPOSITE</code></td><td>main · 四核心规则；9 币</td><td>POLICY_USD、RISK_YIELD、适用的 COMMODITY_USD 三组件的固定 OR；任一已确认 REJECT 就拒绝。没有包含两个 V7 规则或 V5。</td></tr><tr><td>14 · <code>RISK_YIELD_EXIT</code></td><td>同上</td><td>入场等同 RISK_YIELD；接受后持续监测同一条件，首次触发后下一收盘退出，原段内不重入。</td></tr>
+ </tbody></table></div>
+ <p>其中 <code>d</code> 为本国 2Y 国债收益率减美国 2Y、单位 bp；<code>Δ20d</code> 是该利差 20 个原生观测的变化；<code>DXY20</code>、<code>C20</code> 是 20 个原生观测百分比涨跌；VIX 变化单位是<strong>指数点</strong>。这些输入均是信号日 K 值。</p>
+ <details open><summary>每个经济 filter 的动机、所需字段与多空解释</summary><div class="details-body"><div class="table-wrap"><table><thead><tr><th>版本 / 动机</th><th>所需 K 字段</th><th>q=+1 时拒绝</th><th>q=−1 时拒绝</th></tr></thead><tbody>
+ <tr><td>RATE_CHANGE_CONFLICT<br>避免相对收益率正在逆持仓调整</td><td><code>K_spread_d20_bp</code></td><td>利差下降至少 10bp</td><td>利差上升至少 10bp（美元相对优势减弱）</td></tr>
+ <tr><td>DUAL_RATE_CONFLICT<br>变化逆风与水平逆风同时确认</td><td>上述字段 + <code>K_spread_bp</code></td><td>Δ20d≤−10 且 d≤−50bp</td><td>Δ20d≥+10 且 d≥+50bp</td></tr>
+ <tr><td>POLICY_USD<br>利差变化与广义美元方向同时冲突；名称不代表直接识别政策冲击</td><td><code>K_spread_d20_bp</code>、<code>K_dxy_d20_pct</code></td><td>Δ20d≤−10bp 且 DXY20≥+1%</td><td>Δ20d≥+10bp 且 DXY20≤−1%</td></tr>
+ <tr><td>RISK_YIELD<br>风险上升时，识别持有较高收益率一侧的方向敞口</td><td><code>K_vix</code>、<code>K_vix_d5</code>、<code>K_spread_bp</code></td><td>VIX≥20、Δ5VIX≥3，且外币 d≥+50bp</td><td>相同风险条件，且 d≤−50bp（USD 是较高收益率一侧）</td></tr>
+ <tr><td>COMMODITY_USD<br>商品代理与美元方向共同逆风</td><td>AUD 的 <code>K_copper_d20_pct</code>，或 CAD/NOK 的 <code>K_brent_d20_pct</code>；加 <code>K_dxy_d20_pct</code></td><td>商品跌幅严格&lt;0 且 DXY20≥+1%</td><td>商品涨幅严格&gt;0 且 DXY20≤−1%</td></tr>
+ <tr><td>ECO_COMPOSITE<br>任一确认机制即可否决，研究过滤广度和误删赢家</td><td>以上 POLICY、RISK、适用商品组件所需字段的并集</td><td colspan="2">依各组件的方向公式；任一 REJECT 优先，其余按 UNKNOWN 规则处理，不采用投票多数。</td></tr>
+ <tr><td>RISK_YIELD_EXIT<br>检验风险信息是否在入场后才出现，提前退出能否减少后续损失</td><td>与 RISK_YIELD 相同，入场与持仓监测时各取当时 K</td><td colspan="2">方向条件同 RISK_YIELD；首次持仓期触发后下一收盘退出，绝不使用后来新闻倒填触发依据。</td></tr>
+ </tbody></table></div><p>V5 仅需 <code>K_vix</code> 与 <code>K_vix_d5</code>，不看 q 或利差；两方向都以 30/3 条件判断。V3 只使用价格技术特征，没有经济 K 输入。</p></div></details>
+ <details open><summary>三个数值例子：相同条件如何随方向改变</summary><div class="details-body"><p class="muted">以下是假设的信号日已知输入，用于展示判定，不是新增历史案例或拟合结果。</p><ol><li><strong>CAD 做多，油跌且美元涨：</strong>q=+1，Brent20=−8%，DXY20=+1.2%。乘方向后仍为 −8% 与 +1.2%，满足商品&lt;0、美元≥1%，COMMODITY_USD 拒绝该整段多 CAD 交易。同样输入若 q=−1，得到 +8% 与 −1.2%，不拒绝。</li><li><strong>SEK 做空，USD 是较高收益率一侧：</strong>q=−1，d=−120bp，VIX=23，Δ5VIX=+4点。q×d=+120bp，所以 RISK_YIELD 的三条件成立，拒绝入场；若已接受的持仓后来首次看到这些 K 值，RISK_YIELD_EXIT 下一收盘退出。V5 因 VIX&lt;30 并不触发。</li><li><strong>GBP 利差与美元逆风，不一定有水平冲突：</strong>q=+1，Δ20d=−12bp，d=−40bp，DXY20=+1.3%。RATE_CHANGE_CONFLICT 拒绝；DUAL_RATE_CONFLICT 因 d 没到 −50bp 而 KEEP；POLICY_USD 因变化与美元两条件都满足而拒绝。OR 因已有 POLICY 拒绝，即使 VIX 缺失使 RISK 为 UNKNOWN，仍然拒绝。</li></ol></div></details>
+ <details open><summary>UNKNOWN、NOT_APPLICABLE、OR 的确定规则</summary><div class="details-body"><ul><li>每个组件先要求自身所有必要输入有限。任一缺失、过期或变化跨度超限即 <code>UNKNOWN</code>，不把缺失当成已观察到的低风险。</li><li>单独组件 UNKNOWN 时<strong>保留原技术入场</strong>；风险监测 UNKNOWN 时不触发退出。KEEP 表示完整条件已知但不拒绝。</li><li>商品组件对其他 6 币是 <code>NOT_APPLICABLE</code>，不是 UNKNOWN。NZD 没有乳制品代理，未强行使用铜或油。</li><li>OR 优先级：存在 REJECT → REJECT；否则存在 UNKNOWN → UNKNOWN；否则 KEEP。不适用组件不阻止其他组件判断；一个已知组件可以在另一个 UNKNOWN 时确认拒绝。</li><li>代码在包含等号的经济/VIX阈值使用绝对容差 <code>1e−10</code>；这只修正浮点边界。商品方向 <code>q×C20&lt;0</code> 是严格小于零；技术规则的 ER、RSI、投票等边界按各自公式。</li></ul></div></details>
+ <details><summary>为什么乘方向 q：两个例子</summary><div class="details-body"><p><strong>做多外币 q=+1：</strong>本国相对美国利差下降至少 10bp 触发 RATE_CHANGE_CONFLICT；若还低于美国至少 50bp，则触发 DUAL_RATE_CONFLICT。</p><p><strong>做多美元 q=−1：</strong>当本国利差为 −200bp 时，<code>q×d=+200bp</code>，表示所持美元方向是高收益率一侧。在 VIX≥20 且涨幅≥3 时，RISK_YIELD 可以拒绝这笔做多美元交易。该版本不是一律看空非美货币，也不假定 USD 在每次压力期都受益。</p><p>V5 的 30 点 VIX 与后期 RISK_YIELD 的 20 点 VIX 不是同一个条件；后者额外要求持仓方向暴露于高收益率一侧。</p></div></details>
+ <details><summary>退出监测与机会成本</summary><div class="details-body"><p>entry-only 在原始信号日判断一次；接受后不因后来过滤条件变差而改动原技术退出。拒绝后即使第二天条件恢复，也不在原 episode 内补入。</p><p>风险退出从实际入场收盘起监测 K；触发日 t 的下一可用收盘 t+1 退出，仍承担到退出收盘的区间收益。若信号来得太晚、下一收盘已经等于原技术退出日，就没有额外提前退出。退出后即使风险缓解，也保持空仓到下个 BASE episode。</p><p>“过滤”既可能删除亏损，也可能错过赢家；提前退出也可能保护利润或错过反弹。胜率、盈亏比、收益与样本留存必须一起看。</p></div></details>
+ <p class="source">V3：<a href="src/fx_legacy.py">reconstruct_v3</a>；V5：<a href="src/fx_risk.py">_rising_high_vix / run_vix_variants</a>；V7/V8：<a href="src/fx_economics.py">_predicate_state / run_economic_filters</a>。</p>
+</section>
+
+<section class="section" id="information">
+ <h2><span class="num">08</span>E / K / A：经济信息是什么时候知道的</h2>
+ <div class="table-wrap"><table><thead><tr><th>时钟</th><th>含义</th><th>用途</th></tr></thead><tbody><tr><td><strong>E</strong> · contemporaneous end-date</td><td>在收益结束日的同期环境描述，可包含该结束日观测。</td><td>事后解释当日发生了什么；不把交易结果日的 E 当成此前入场已知信息。</td></tr><tr><td><strong>K</strong> · known before signal</td><td>严格早于 FX 信号日、且最多 7 日历天旧的经济观测。</td><td>V5/V7/V8 的实际入场/风险判断。每个字段按自己的源观测日独立对齐。</td></tr><tr><td><strong>A</strong> · applied interval</td><td>按实际报价日顺序，把 K 后移 2 个 FX 观测；原技术持仓到收益生效区间的时钟。</td><td>每日条件收益归因。对日频连续原目标，收益日 t 对应 K_(t−2)；不要与固定在 episode 入场的 K 混淆。</td></tr></tbody></table></div>
+ <p>当前过滤重建函数直接构造 K 与来源日期；A 风险归因在 <code>conditional_daily</code> 中用 <code>shift(2)</code> 实现。E 是同期描述的概念层，不能假称完整旧 E/K/A 冻结表已在当前交付中恢复。</p>
+ <h3>七个最终数值字段</h3>
+ <p>下表<strong>全部七个字段</strong>都在计算原生变化后，严格匹配到信号日前、且最多 7 日历天旧的来源观测。水平字段没有 5/20 步变化要求；变化字段另须满足表内的 12/45 天跨度限制。每个字段的空值都保留，不统一前向填满。</p>
+ <div class="table-wrap"><table><thead><tr><th>字段</th><th>定义 / 单位</th><th>原始来源</th></tr></thead><tbody><tr><td><code>K_vix</code></td><td>VIX 水平，指数点</td><td><code>5_Equities.VIX</code></td></tr><tr><td><code>K_vix_d5</code></td><td>VIX 当前值 − 第 5 个先前非缺失原生观测值，指数点</td><td>同上；跨度不超过 12 日历天</td></tr><tr><td><code>K_spread_bp</code></td><td><code>(本国2Y − 美国2Y) × 100</code>，bp；输入收益率 1 表示 1%</td><td><code>2_Rates</code>；同日两国有效值相减后形成利差序列</td></tr><tr><td><code>K_spread_d20_bp</code></td><td>利差当前值 − 第 20 个先前非缺失利差观测，bp</td><td>同上；跨度不超过 45 日历天</td></tr><tr><td><code>K_dxy_d20_pct</code></td><td><code>100 × (DXY / DXY_(−20) − 1)</code>，百分比</td><td><code>1_FX_Spot.DXY</code>；≤45 日历天</td></tr><tr><td><code>K_brent_d20_pct</code></td><td>Brent 20 原生观测百分比涨跌</td><td><code>8_Commodities.BRENT</code>；≤45 日历天</td></tr><tr><td><code>K_copper_d20_pct</code></td><td>铜 20 原生观测百分比涨跌</td><td><code>8_Commodities.COPPER_LME</code>；≤45 日历天</td></tr></tbody></table></div>
+ <h3>计算顺序决定是否使用了正确的信息</h3>
+ <ol><li>各原生序列先把非数值/无穷视为缺失，丢弃缺失、按日期排序；不先铺到 FX 日历再填充。</li><li>在自己的非缺失原生序列上计算 5 或 20 步变化；检验起止跨度（5 步≤12天、20 步≤45天）。超限的变化值为缺失，水平值仍可能有效。</li><li>对每个 FX 信号日做 backward as-of，禁止同日匹配，只接受来源日严格更早且相距≤7日。<code>K_*_obs_date</code> 保留这一最近源观测日期。</li><li>若最近观测的变化本身无效，不跳过它去寻找更旧“恰好完整”的变化；所需输入仍 UNKNOWN。不同字段可能来自不同日期。</li></ol>
+ <p>来源日期字段包括 <code>K_vix_obs_date</code>、<code>K_rate_obs_date</code>、<code>K_dxy_obs_date</code>、<code>K_brent_obs_date</code>、<code>K_copper_obs_date</code>。7 天是来源陈旧上限；12/45 天是变化两端跨度上限，二者不能混为一谈。</p>
+ <details><summary>VIX 九状态归因与指标解释</summary><div class="details-body"><p>水平 L：VIX&lt;20；M：20≤VIX&lt;30；H：VIX≥30。变化 U：Δ5≥3；D：Δ5≤−3；F：−3&lt;Δ5&lt;3。组合为 L_U、H_D 等九状态，任一缺失则 UNKNOWN。A 时钟归因保持原账户实际收益，不按状态重新开账户。</p><p>VIX 是股票期权波动率指数，不是 FX 波动率或崩盘概率；政府收益率利差不是央行政策利率、实际 carry 或已识别的政策冲击。DXY 含部分研究货币，是美元确认变量而非独立因果工具。铜/Brent 是有限商品代理，不是国家出口篮子。</p></div></details>
+ <div class="callout warn">严格前日对齐是一项研究约定。原始数据缺完整发布日期、收盘时区与修订 vintage，不能据此声称已证明真实交易时点一定可获得。已有说明提出的额外 1/2 报价延迟与更严格陈旧敏感性，不能作为已完成检验。</div>
+ <p class="source">原生变动与对齐：<a href="src/fx_economics.py">_align_native / rebuild_economic_known</a>；A 状态：<a href="src/fx_risk.py">conditional_daily</a>。</p>
+</section>
+
+<section class="section" id="dashboard">
+ <h2><span class="num">09</span>Dashboard 的每个控件怎么用</h2>
+ <div class="table-wrap"><table><thead><tr><th>控件</th><th>含义与操作</th></tr></thead><tbody><tr><td>Research sample</td><td>切换 main / technical / h10；切换时会重设该样本的日期范围与建议选择。先看样本说明，再解释曲线。</td></tr><tr><td>Filters</td><td>固定一个币种 + 一条技术规则，以多选框叠加执行/过滤版本。</td></tr><tr><td>Strategies / windows</td><td>固定一个币种 + 一个版本，以多选框比较不同技术规则或参数窗口；有些版本仅支持四条/两条/一条规则。</td></tr><tr><td>Currencies</td><td>固定技术规则 + 版本，叠加可用币种。商品版本只支持 AUD、CAD、NOK。</td></tr><tr><td>Suggested comparison</td><td>载入固定的展示预设。不是用当前窗口收益自动挑最佳组合，也不改变研究规则。</td></tr><tr><td>All available / Clear</td><td>选择全部可用路径 / 清空选择。曲线太多时可手动减少上方复选框。</td></tr><tr><td>From / Through</td><td>包含起止日期范围内的真实有效报价；起止落在非报价日时选区间内实际报价。曲线额外显示前一可用报价作为窗口锚点。</td></tr><tr><td>日期预设按钮</td><td>快速取全样本或历史分段。它们只是展示窗口，不是新训练/新验证，也不触发账户重置。</td></tr><tr><td>Chart measure</td><td>PnL USD = 所显示权益 − C₀；Return % = 所显示 PnL / C₀ ×100；Account wealth USD = 所显示权益。选择只改变主图纵轴。</td></tr><tr><td>Rebase selected window</td><td>单利：减去窗口前权益再加 C₀，窗口前锚点从 100,000/零PnL开始；原复利：用窗口前权益做比例归一化。</td></tr><tr><td>Original account path</td><td>主图保留从该账户起点累计的原始权益/PnL；结果表、年度表与回撤仍解释所选日期窗口。</td></tr><tr><td>图例与悬浮</td><td>颜色与线条对应账户。图例是标识，增减曲线请用上方复选框。移动到图内显示日期和值；不同报价日历会标注该线最后真实日期，不制造新报价。</td></tr><tr><td>Annual return comparison</td><td>点击展开年度表；首尾年份只计算选中日期的部分年份。单利版为年内 u_t 累加，原版为复合收益。</td></tr><tr><td>What the selected rules do</td><td>随当前选择显示技术规则与过滤器简述；本指南补充状态机、初值和完整阈值。</td></tr></tbody></table></div>
+ <h3>下载 SVG 与日频 CSV</h3>
+ <p><strong>Download chart SVG</strong> 导出当前主图及回撤图的矢量图，含日期与账户说明，适合放大或排版。<strong>Download daily CSV</strong> 导出当前可见账户和窗口的日数据。日期按各账户实际报价的并集排列，不同日历缺数据的位置留空。</p>
+ <p>原复利 CSV 的字段为每个账户标识后加 <code>__display_pnl_usd</code>、<code>__display_equity_usd</code>、<code>__window_drawdown_pct</code>。新版单利每账户导出六列：<code>display_pnl_usd</code>、<code>display_equity_usd</code>、<code>window_drawdown_initial_capital_pp</code>、<code>window_drawdown_peak_equity_pct</code>、<code>daily_pnl_usd</code>、<code>daily_simple_return_pct</code>，每个列名前加账户标识与 <code>__</code>。</p>
+ <p>display 两列随归一化设置改变；两种 window drawdown 和每日原始单利损益不变。要保存从账户初始日起的完整原路径，先选 <strong>Full 日期范围 + Original account path</strong>；只改 Original 仍然只导出当前日期窗口。单利文件名以 <code>FX_Simple_Daily_</code> 开始，便于与原复利导出区分。</p>
+ <div class="callout">下载的日频 CSV 是当前图的数值导出，不是完整原始数据、所有信号或逐笔交易账本。新版单利逐笔数据嵌入图内与 <code>reproduced/simple_interest/explorer_payload.json.gz</code>；原复利交易账本与 episode decisions 在原 <code>reproduced/</code> 子目录。两者的逐笔收益不能混用。</div>
+ <details><summary>没有曲线、灰色选项、短样本如何判断</summary><div class="details-body"><ul><li>没有选择任何路径、日期开始晚于结束，或范围与样本没有交集，会没有有效曲线。</li><li>灰色版本通常是该规则未运行该过滤器、或币种不适用，不表示策略收益为零。</li><li>H.10 只有 96 个报价，某些规则没有平仓交易；“—”表示无定义或原归档缺失，不能当作零胜率。</li><li>报价之间的线段只连接实际点，不代表填入了报价或新交易；所有真实日点均保留。</li><li>两币曲线来自各自账户；即使走势重合，也不是仓位对冲或共同基金净值。</li></ul></div></details>
+</section>
+
+<section class="section" id="metrics">
+ <h2><span class="num">10</span>日历收益与交易 cohort，是两个分母</h2>
+ <p>选中日期窗口后，账户表现按<strong>收益结束日在窗内</strong>的所有实际持仓收益计算；交易胜率与盈亏比则按<strong>入场在窗内且结束前已平仓</strong>的交易群计算。两者回答不同问题。</p>
+ <div class="table-wrap"><table><thead><tr><th>指标</th><th>定义与边界</th></tr></thead><tbody>
+ <tr><td>Window PnL / Return</td><td>单利为 C₀×窗内每日收益之和、以及该和×100%。包含窗前开仓在窗内产生的收益，也包含窗末仍开着的仓位的市值变化。</td></tr>
+ <tr><td>Max drawdown</td><td>以窗口锚点为起点的路径回撤，主显示固定本金百分点，另列峰值权益百分比；不是最差单笔交易，也不是全历史最大回撤的简单裁切。</td></tr>
+ <tr><td>Closed trades</td><td>entry_date 在 From/Through 内；交易真实关闭；exit_date≤Through；至少承担 1 个收益观测。符合这些条件才进入胜率与 payoff。</td></tr>
+ <tr><td>Win rate</td><td>盈利交易数 / 合格已平仓交易总数。平手交易仍在分母；不是盈利日比例。</td></tr>
+ <tr><td>Payoff</td><td>平均盈利交易收益 / 平均亏损交易收益绝对值。新版每笔收益先逐日相加，原版每笔先逐日复合；缺赢家或缺输家时无定义。</td></tr>
+ <tr><td>Open / censored</td><td>在窗口入场，但样本末仍未关闭，或实际退出晚于 Through 的交易。它们不进入该窗已平仓胜率；已发生的 PnL 仍进入账户收益。</td></tr>
+ <tr><td>Carry-in</td><td>入场早于 From，且未平仓或 exit_date≥From 的原交易。贡献窗内收益，但不计入窗口入场 cohort 的 closed/win/payoff。</td></tr>
+ <tr><td>Small cohort</td><td>合格已平仓少于 20 笔时提示。它不修改阈值或权重，也不补足缺失样本。</td></tr>
+ <tr><td>Flat / “—”</td><td>绝对单笔收益≤1e−12（小数）即平手，相当于≤1e−10 个百分比点。没有定义或缺归档数据显示“—”，不填 0。</td></tr>
+ </tbody></table></div>
+ <div class="callout"><strong>例：</strong>12 月开仓、次年 2 月平仓。只看 1 月时，它的 1 月损益进入窗口 PnL，但它是 carry-in，不进入 1 月入场 cohort 的胜率。只看 12 月时，它是未完成/censored 入场；完整单笔收益仍不能塞进 12 月年度收益。</div>
+ <h3>解读时需要一起看</h3>
+ <p>删除大量交易可能抬高胜率却损失少数大赢家；盈亏比大于 1 也不自动保证总收益为正。应同时比较已平仓数、留存比例、活跃天数、收益路径和回撤。未完成交易从质量分母剔除，不表示其风险或账面损益不存在。</p>
+ <p>固定本金单利下，同一完整账户所有已平仓与期末未平仓交易的已发生美元 PnL 加总，可对回账户 PnL；局部窗口只挑“窗内入场且已关闭”的交易之和通常对不上窗口账户收益，因为 carry-in 和 censored 被排除。</p>
+ <details><summary>代码中其他统计字段</summary><div class="details-body"><p><code>sharpe_252</code> 使用所有评价日策略收益（含空仓零收益）的均值 / 样本标准差 ×√252；无风险利率取零，标准差近零时无定义。年化波动率为样本标准差×√252×100%。它们描述日收益，不决定资金是否复利。</p><p><code>active_pct</code> 为 h≠0 的比例；long/short 比例按当日实际承担收益的 h 统计。turnover 按实际仓位变化绝对值，+1→−1 计 2 单位，0→+1 计 1；当前成本为零，换仓仍保留统计。</p><p>线性年化取真实日历跨度，不能将所有样本都除以 252 个“交易日年”。尤其 H.10 短窗口的大年化结果只是一种比例展示，没有预测意义。</p></div></details>
+</section>
+
+<section class="section" id="history">
+ <h2><span class="num">11</span>历史五候选属于原复利筛选</h2>
+ <p class="intro">以下是当前重建历史筛选条件下的五个身份，保留作原研究记录。将日 PnL 改为固定本金单利，并不使原来的筛选结论自动成立。</p>
+ <div class="table-wrap"><table><thead><tr><th>货币 / 技术规则</th><th>历史通过版本</th><th>原复利全期收益</th></tr></thead><tbody><tr><td>GBP · RSI_MR_14</td><td>POLICY_USD</td><td>+29.78%</td></tr><tr><td>GBP · RSI_MR_14</td><td>ECO_COMPOSITE</td><td>+29.78%</td></tr><tr><td>CAD · BB_MR_20</td><td>COMMODITY_USD</td><td>+42.97%</td></tr><tr><td>CAD · BB_MR_20</td><td>ECO_COMPOSITE</td><td>+40.56%</td></tr><tr><td>SEK · RSI_MR_14</td><td>RISK_YIELD_EXIT</td><td>+16.73%</td></tr></tbody></table></div>
+ <p>原复利筛选要求：胜率提高≥2个百分点；payoff 相对提高≥10%；累计收益提高≥5个百分点；最大回撤恶化≤2个百分点；至少保留 BASE 的 50% 合格已平仓；至少 30 笔已平仓。另要求 2015 年以后胜率、payoff、收益均不比 BASE 差，以及五个日历区间至少三个收益改善。</p>
+ <div class="callout warn"><strong>没有将这五个候选重新标成“单利通过”。</strong>单利会改变逐笔收益、胜负分类、payoff、总收益、回撤和贡献集中度，因此需要独立口径和证据才能作新的筛选判断。原复利的对数财富贡献分析也不能直接搬成单利美元贡献。</div>
+ <p>主历史与 2015 年后复核段已被反复观察，H.10 也已使用过。完整重算和数值对账证明实现与保留证据一致，不生成新的未触碰样本外证据。CAD 的商品过滤、GBP 的危机交易集中度、SEK 的风险退出都是历史具体结果，不能据此永久给某货币贴“趋势”或“反转”标签。</p>
+ <details><summary>研究版本、缺失协议与旧说明的范围</summary><div class="details-body"><p>当前工作区是源码重建版：原 <code>src/</code>、完整 <code>data/frozen/</code> 与 rejected rolling-selection 历史快照没有完整交付。重建依据保留规则、代码片段、原 notebook 输出和离线 Explorer 对账，不声称恢复原始文件字节、版本历史或冻结时刻。</p><p>旧数据包 README / 数据字典中的“frozen 完整可用”“直接执行 unchanged frozen engine”描述的是原交付设计；当前实际能力与缺失边界以根目录 README、源码及核对记录为准。原复利 Explorer 的 provenance 文案也保留为归档，不作为这些缺失文件已经恢复的证明。</p><p>历史筛选协议的具体缺失处，已由 <code>src/fx_analysis.py</code> 明写重建条件，并与保存输出比较；它不是原冻结决策过程的逐字恢复。当前研究没有采用 rolling winner selection 或横截面货币排名。</p></div></details>
+ <p class="source">五候选与指标：<a href="reproduced/v8/tables/account_acceptance.csv">account_acceptance.csv（原复利）</a>；明确筛选条件：<a href="src/fx_analysis.py">src/fx_analysis.py · SCREEN_SPECIFICATION</a>。</p>
+</section>
+
+<section class="section" id="files">
+ <h2><span class="num">12</span>文件索引与复现入口</h2>
+ <div class="file-list"><a href="FX_PnL_Explorer_Simple.html"><strong>固定本金单利 Explorer</strong><br>新口径交互图</a><a href="FX_PnL_Explorer.html"><strong>原复利 Explorer</strong><br>保留的独立核对归档</a><a href="README.md"><strong>README.md</strong><br>当前源码结构、运行与证据边界</a><a href="FX_Technical_Research_Complete.ipynb"><strong>主研究 notebook</strong><br>重建研究与原复利分析</a><a href="reproduced/notebook_validation_summary.json"><strong>原复利复现摘要</strong><br>账户数、核对状态与源码哈希</a><a href="FX_Research_Datasets/data/catalog/data_manifest.json"><strong>数据 manifest</strong><br>来源、覆盖与文件哈希</a></div>
+ <div class="table-wrap"><table><thead><tr><th>代码 / 证据位置</th><th>职责</th></tr></thead><tbody><tr><td><a href="src/fx_baselines.py">src/fx_baselines.py</a></td><td>原始 Excel、指标与技术目标、执行时序、账本和原复利账户。</td></tr><tr><td><a href="src/fx_economics.py">src/fx_economics.py</a></td><td>原生七输入、K 对齐、经济过滤与原 episode 锁定。</td></tr><tr><td><a href="src/fx_legacy.py">src/fx_legacy.py</a> / <a href="src/fx_risk.py">src/fx_risk.py</a></td><td>V3、H.10、V5 与 A 时钟归因。</td></tr><tr><td><a href="src/fx_evidence.py">src/fx_evidence.py</a></td><td>解码原 Explorer，与曲线、指标及保存输出独立对账。</td></tr><tr><td><a href="src/fx_analysis.py">src/fx_analysis.py</a></td><td>原复利交易段贡献、集中度与历史筛选。</td></tr><tr><td><code>reproduced/*trade_ledger*</code></td><td>原研究各阶段的<strong>复利逐笔账本</strong>。单利逐笔收益位于 simple_interest 的 payload 各账户 <code>trades</code>，不能用旧复利账本替代。</td></tr><tr><td><code>reproduced/v8/tables/</code></td><td>原复利经济过滤结果、全部接受/拒绝决策与完整案例证据。</td></tr><tr><td><a href="reference/notebook_saved_outputs.json">reference/notebook_saved_outputs.json</a></td><td>保存的原主 notebook 文本/表格及原 notebook 哈希。</td></tr></tbody></table></div>
+ <h3>新单利产物与命令</h3>
+ <p><a href="src/fx_simple.py">src/fx_simple.py</a> 从重建引擎的未舍入每日策略收益生成单利路径，并重建所有逐笔收益。它不从归档中已经舍入的复利权益反推日收益。先确认同一批原始引擎能复现原复利归档，再计算固定本金加法 PnL。</p>
+ <div class="formula">python build_simple_data.py
+python build_simple_dashboard.py
+python verify_simple_dashboard.py</div>
+ <p>按顺序先运行 <a href="build_simple_data.py">build_simple_data.py</a> 构建数据，再运行 <a href="build_simple_dashboard.py">build_simple_dashboard.py</a> 打包离线图；<a href="verify_simple_dashboard.py">verify_simple_dashboard.py</a> 检查图内数据与展示计算。</p>
+ <p>单利独立输出目录为 <code>reproduced/simple_interest/</code>：<a href="reproduced/simple_interest/account_metrics.csv">account_metrics.csv</a> 保存所有单利账户指标；<a href="reproduced/simple_interest/validation_summary.json">validation_summary.json</a> 与 <a href="reproduced/simple_interest/reconciliation.csv">reconciliation.csv</a> 保存核对；<a href="reproduced/simple_interest/browser_validation.json">browser_validation.json</a> 保存浏览器验证结果；<a href="reproduced/simple_interest/explorer_payload.json.gz">explorer_payload.json.gz</a> 包含日历、全部路径及每个账户的单利 <code>trades</code> 逐笔记录。原 <a href="FX_PnL_Explorer.html">FX_PnL_Explorer.html</a> 保持为复利归档。</p>
+ <p>原研究重算入口仍是 <code>python run_research.py</code>，生成主 notebook 执行副本与原 <code>reproduced/</code> 产物；它不是把原复利归档改成单利的开关。新旧产物分别保存，引用时应注明记账口径。</p>
+ <p>本说明、原图、新图放在同一目录即可通过相对链接互相打开。说明本身不发网络请求；浏览器打印可导出完整展开版本为 PDF。搜索只筛选本地文字，不上传关键词。</p>
+</section>
+<footer class="footer">FX Technical Timing · 中文说明 · 2026-10-22<br>精确规则依据当前重建源码与原离线图；账户曲线为独立、零成本现货研究结果。单利与复利口径在阅读、引用和导出时请一并注明。</footer>
+</main>
+<script>
+(function(){
+'use strict';
+const search=document.getElementById('search'),status=document.getElementById('search-status');
+const sections=Array.from(document.querySelectorAll('main .section'));
+const navigation=Array.from(document.querySelectorAll('#toc a'));
+const panels=Array.from(document.querySelectorAll('main details'));
+const textIndex=new Map(sections.map(s=>[s,s.textContent.toLocaleLowerCase()]));
+let searchSnapshot=null,printSnapshot=null;
+function searchSections(){
+ const q=search.value.trim().toLocaleLowerCase(),terms=q.split(/\s+/).filter(Boolean);
+ if(q&&!searchSnapshot)searchSnapshot=panels.map(p=>p.open);
+ let count=0;
+ sections.forEach(s=>{const match=terms.every(t=>textIndex.get(s).includes(t));s.hidden=!match;if(match)count++;const link=navigation.find(a=>a.getAttribute('href')==='#'+s.id);if(link)link.hidden=!match;if(q&&match)s.querySelectorAll('details').forEach(p=>p.open=true);});
+ if(!q&&searchSnapshot){panels.forEach((p,i)=>p.open=searchSnapshot[i]);searchSnapshot=null;}
+ status.textContent=q?'匹配 '+count+' / '+sections.length+' 个章节':'输入关键词，筛选章节并展开细节';
+ document.getElementById('no-results').hidden=count>0;
+}
+search.addEventListener('input',searchSections);
+search.addEventListener('keydown',e=>{if(e.key==='Escape'){search.value='';searchSections();search.blur();}});
+document.getElementById('expand-all').addEventListener('click',()=>panels.forEach(p=>p.open=true));
+document.getElementById('collapse-all').addEventListener('click',()=>panels.forEach(p=>p.open=false));
+document.getElementById('print').addEventListener('click',()=>window.print());
+window.addEventListener('beforeprint',()=>{printSnapshot={panels:panels.map(p=>p.open),sections:sections.map(s=>s.hidden)};panels.forEach(p=>p.open=true);sections.forEach(s=>s.hidden=false);});
+window.addEventListener('afterprint',()=>{if(!printSnapshot)return;panels.forEach((p,i)=>p.open=printSnapshot.panels[i]);sections.forEach((s,i)=>s.hidden=printSnapshot.sections[i]);printSnapshot=null;});
+navigation.forEach(a=>a.addEventListener('click',()=>navigation.forEach(b=>b.classList.toggle('active',a===b))));
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)navigation.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));});},{rootMargin:'-8% 0px -75% 0px'});sections.forEach(s=>observer.observe(s));}
+})();
+</script>
+</body>
+</html>

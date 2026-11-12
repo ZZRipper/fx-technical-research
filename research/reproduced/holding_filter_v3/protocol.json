@@ -1,0 +1,647 @@
+{
+  "version": "holding_filter_v3",
+  "created_utc": "2026-10-23T06:09:01.256778+00:00",
+  "is_start": "2005-01-03",
+  "is_end": "2023-05-29",
+  "oos_start": "2023-05-30",
+  "oos_end": "2026-05-29",
+  "oos_duration": "Three calendar years immediately following IS, ending at the supplied workbook endpoint.",
+  "scope": {
+    "pairs": [
+      "EUR",
+      "GBP",
+      "AUD",
+      "NZD",
+      "JPY",
+      "CHF",
+      "CAD",
+      "NOK",
+      "SEK"
+    ],
+    "strategies": [
+      "RSI_MR_7",
+      "RSI_MR_14",
+      "RSI_MR_20",
+      "RSI_MOM_7",
+      "RSI_MOM_14",
+      "RSI_MOM_20",
+      "MA_10_30",
+      "MA_20_60",
+      "BB_MR_10",
+      "BB_MR_20",
+      "BB_BO_10",
+      "BB_BO_20",
+      "DONCHIAN_BO_10",
+      "DONCHIAN_BO_20",
+      "MACD_12_26_9",
+      "TSMOM_21",
+      "TSMOM_63",
+      "VOTE_EQUAL_4",
+      "VOTE_STRENGTH_4",
+      "REGIME_RULE_FIXED"
+    ],
+    "baseline_accounts": 180
+  },
+  "initial_capital_usd": 100000,
+  "accounting": "fixed_initial_capital_simple",
+  "cost_bp": 0.0,
+  "reference_cost_bp": 0.0,
+  "cost_instruction": "User explicitly requested no costs. No cost sensitivity is used this round.",
+  "carry_financing_cash_interest": 0.0,
+  "prior_holdout_exposure": "The 2023-2026 history was already plotted and inspected in earlier work. This is a development-isolated historical test, not virgin or newly collected OOS.",
+  "development_access": "After workbook parsing, price and native feature rows after IS_END are removed before indicator/return/feature calculations. No full-sample outcome artifact is used as a development input.",
+  "screen": {
+    "min_gross_annualized_simple_pct": 1.0,
+    "min_return_improvement_pp": 5.0,
+    "min_win_rate_improvement_pp": 2.0,
+    "min_payoff_relative_improvement": 0.1,
+    "max_drawdown_deterioration_pp": 2.0,
+    "return_to_drawdown_must_improve": true,
+    "min_closed_trades": 50,
+    "min_closed_retention": 0.5,
+    "min_positive_is_blocks": 2,
+    "min_improved_is_blocks": 2,
+    "last_is_block_positive_and_improved": true,
+    "one_way_cost_bp": 0.0,
+    "cost_sensitivity_evaluated": false,
+    "cost_instruction": "User explicitly requested no costs for this round.",
+    "rank": [
+      "gross_return_improvement_pp DESC",
+      "payoff_absolute_improvement DESC",
+      "win_rate_improvement_pp DESC",
+      "candidate_id ASC"
+    ],
+    "freeze": "One highest IS-ranked passing NEW filter per pair/strategy. All passing versions retained in IS table.",
+    "schedule_delay_is_diagnostic_only": true
+  },
+  "oos_screen": {
+    "min_net_annualized_simple_pct": 1.0,
+    "min_net_return_improvement_pp": 0.0,
+    "worst_net_drawdown_pp": -15.0,
+    "min_positive_anniversary_years": 2,
+    "min_closed_trades": 10,
+    "quality_confirmation": "Separately report whether both gross trade win rate and payoff are no worse than BASE, with >=20 closed trades. Not a license to tune on OOS."
+  },
+  "is_blocks": [
+    [
+      "IS_EARLY",
+      "2005-01-03",
+      "2014-12-31"
+    ],
+    [
+      "IS_MIDDLE",
+      "2015-01-01",
+      "2019-12-31"
+    ],
+    [
+      "IS_LATE",
+      "2020-01-01",
+      "2023-05-29"
+    ]
+  ],
+  "oos_anniversary_years": [
+    [
+      "OOS_YEAR_1",
+      "2023-05-30",
+      "2024-05-29"
+    ],
+    [
+      "OOS_YEAR_2",
+      "2024-05-30",
+      "2025-05-29"
+    ],
+    [
+      "OOS_YEAR_3",
+      "2025-05-30",
+      "2026-05-29"
+    ]
+  ],
+  "candidate_specs": [
+    {
+      "id": "CHECK_5_pnl_negative",
+      "checkpoint_age": 5,
+      "condition": "pnl_negative"
+    },
+    {
+      "id": "CHECK_5_pnl_positive",
+      "checkpoint_age": 5,
+      "condition": "pnl_positive"
+    },
+    {
+      "id": "CHECK_5_giveback_half",
+      "checkpoint_age": 5,
+      "condition": "giveback_half"
+    },
+    {
+      "id": "CHECK_5_recent5_negative",
+      "checkpoint_age": 5,
+      "condition": "recent5_negative"
+    },
+    {
+      "id": "CHECK_5_opposite20",
+      "checkpoint_age": 5,
+      "condition": "opposite20"
+    },
+    {
+      "id": "CHECK_5_pnl_negative_AND_giveback_half",
+      "checkpoint_age": 5,
+      "condition": [
+        "pnl_negative",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_5_pnl_negative_AND_recent5_negative",
+      "checkpoint_age": 5,
+      "condition": [
+        "pnl_negative",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_5_pnl_negative_AND_opposite20",
+      "checkpoint_age": 5,
+      "condition": [
+        "pnl_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_5_pnl_positive_AND_giveback_half",
+      "checkpoint_age": 5,
+      "condition": [
+        "pnl_positive",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_5_pnl_positive_AND_recent5_negative",
+      "checkpoint_age": 5,
+      "condition": [
+        "pnl_positive",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_5_pnl_positive_AND_opposite20",
+      "checkpoint_age": 5,
+      "condition": [
+        "pnl_positive",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_5_giveback_half_AND_recent5_negative",
+      "checkpoint_age": 5,
+      "condition": [
+        "giveback_half",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_5_giveback_half_AND_opposite20",
+      "checkpoint_age": 5,
+      "condition": [
+        "giveback_half",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_5_recent5_negative_AND_opposite20",
+      "checkpoint_age": 5,
+      "condition": [
+        "recent5_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_10_pnl_negative",
+      "checkpoint_age": 10,
+      "condition": "pnl_negative"
+    },
+    {
+      "id": "CHECK_10_pnl_positive",
+      "checkpoint_age": 10,
+      "condition": "pnl_positive"
+    },
+    {
+      "id": "CHECK_10_giveback_half",
+      "checkpoint_age": 10,
+      "condition": "giveback_half"
+    },
+    {
+      "id": "CHECK_10_recent5_negative",
+      "checkpoint_age": 10,
+      "condition": "recent5_negative"
+    },
+    {
+      "id": "CHECK_10_opposite20",
+      "checkpoint_age": 10,
+      "condition": "opposite20"
+    },
+    {
+      "id": "CHECK_10_pnl_negative_AND_giveback_half",
+      "checkpoint_age": 10,
+      "condition": [
+        "pnl_negative",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_10_pnl_negative_AND_recent5_negative",
+      "checkpoint_age": 10,
+      "condition": [
+        "pnl_negative",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_10_pnl_negative_AND_opposite20",
+      "checkpoint_age": 10,
+      "condition": [
+        "pnl_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_10_pnl_positive_AND_giveback_half",
+      "checkpoint_age": 10,
+      "condition": [
+        "pnl_positive",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_10_pnl_positive_AND_recent5_negative",
+      "checkpoint_age": 10,
+      "condition": [
+        "pnl_positive",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_10_pnl_positive_AND_opposite20",
+      "checkpoint_age": 10,
+      "condition": [
+        "pnl_positive",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_10_giveback_half_AND_recent5_negative",
+      "checkpoint_age": 10,
+      "condition": [
+        "giveback_half",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_10_giveback_half_AND_opposite20",
+      "checkpoint_age": 10,
+      "condition": [
+        "giveback_half",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_10_recent5_negative_AND_opposite20",
+      "checkpoint_age": 10,
+      "condition": [
+        "recent5_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_20_pnl_negative",
+      "checkpoint_age": 20,
+      "condition": "pnl_negative"
+    },
+    {
+      "id": "CHECK_20_pnl_positive",
+      "checkpoint_age": 20,
+      "condition": "pnl_positive"
+    },
+    {
+      "id": "CHECK_20_giveback_half",
+      "checkpoint_age": 20,
+      "condition": "giveback_half"
+    },
+    {
+      "id": "CHECK_20_recent5_negative",
+      "checkpoint_age": 20,
+      "condition": "recent5_negative"
+    },
+    {
+      "id": "CHECK_20_opposite20",
+      "checkpoint_age": 20,
+      "condition": "opposite20"
+    },
+    {
+      "id": "CHECK_20_pnl_negative_AND_giveback_half",
+      "checkpoint_age": 20,
+      "condition": [
+        "pnl_negative",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_20_pnl_negative_AND_recent5_negative",
+      "checkpoint_age": 20,
+      "condition": [
+        "pnl_negative",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_20_pnl_negative_AND_opposite20",
+      "checkpoint_age": 20,
+      "condition": [
+        "pnl_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_20_pnl_positive_AND_giveback_half",
+      "checkpoint_age": 20,
+      "condition": [
+        "pnl_positive",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_20_pnl_positive_AND_recent5_negative",
+      "checkpoint_age": 20,
+      "condition": [
+        "pnl_positive",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_20_pnl_positive_AND_opposite20",
+      "checkpoint_age": 20,
+      "condition": [
+        "pnl_positive",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_20_giveback_half_AND_recent5_negative",
+      "checkpoint_age": 20,
+      "condition": [
+        "giveback_half",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_20_giveback_half_AND_opposite20",
+      "checkpoint_age": 20,
+      "condition": [
+        "giveback_half",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_20_recent5_negative_AND_opposite20",
+      "checkpoint_age": 20,
+      "condition": [
+        "recent5_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_40_pnl_negative",
+      "checkpoint_age": 40,
+      "condition": "pnl_negative"
+    },
+    {
+      "id": "CHECK_40_pnl_positive",
+      "checkpoint_age": 40,
+      "condition": "pnl_positive"
+    },
+    {
+      "id": "CHECK_40_giveback_half",
+      "checkpoint_age": 40,
+      "condition": "giveback_half"
+    },
+    {
+      "id": "CHECK_40_recent5_negative",
+      "checkpoint_age": 40,
+      "condition": "recent5_negative"
+    },
+    {
+      "id": "CHECK_40_opposite20",
+      "checkpoint_age": 40,
+      "condition": "opposite20"
+    },
+    {
+      "id": "CHECK_40_pnl_negative_AND_giveback_half",
+      "checkpoint_age": 40,
+      "condition": [
+        "pnl_negative",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_40_pnl_negative_AND_recent5_negative",
+      "checkpoint_age": 40,
+      "condition": [
+        "pnl_negative",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_40_pnl_negative_AND_opposite20",
+      "checkpoint_age": 40,
+      "condition": [
+        "pnl_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_40_pnl_positive_AND_giveback_half",
+      "checkpoint_age": 40,
+      "condition": [
+        "pnl_positive",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_40_pnl_positive_AND_recent5_negative",
+      "checkpoint_age": 40,
+      "condition": [
+        "pnl_positive",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_40_pnl_positive_AND_opposite20",
+      "checkpoint_age": 40,
+      "condition": [
+        "pnl_positive",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_40_giveback_half_AND_recent5_negative",
+      "checkpoint_age": 40,
+      "condition": [
+        "giveback_half",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_40_giveback_half_AND_opposite20",
+      "checkpoint_age": 40,
+      "condition": [
+        "giveback_half",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_40_recent5_negative_AND_opposite20",
+      "checkpoint_age": 40,
+      "condition": [
+        "recent5_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_63_pnl_negative",
+      "checkpoint_age": 63,
+      "condition": "pnl_negative"
+    },
+    {
+      "id": "CHECK_63_pnl_positive",
+      "checkpoint_age": 63,
+      "condition": "pnl_positive"
+    },
+    {
+      "id": "CHECK_63_giveback_half",
+      "checkpoint_age": 63,
+      "condition": "giveback_half"
+    },
+    {
+      "id": "CHECK_63_recent5_negative",
+      "checkpoint_age": 63,
+      "condition": "recent5_negative"
+    },
+    {
+      "id": "CHECK_63_opposite20",
+      "checkpoint_age": 63,
+      "condition": "opposite20"
+    },
+    {
+      "id": "CHECK_63_pnl_negative_AND_giveback_half",
+      "checkpoint_age": 63,
+      "condition": [
+        "pnl_negative",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_63_pnl_negative_AND_recent5_negative",
+      "checkpoint_age": 63,
+      "condition": [
+        "pnl_negative",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_63_pnl_negative_AND_opposite20",
+      "checkpoint_age": 63,
+      "condition": [
+        "pnl_negative",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_63_pnl_positive_AND_giveback_half",
+      "checkpoint_age": 63,
+      "condition": [
+        "pnl_positive",
+        "giveback_half"
+      ]
+    },
+    {
+      "id": "CHECK_63_pnl_positive_AND_recent5_negative",
+      "checkpoint_age": 63,
+      "condition": [
+        "pnl_positive",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_63_pnl_positive_AND_opposite20",
+      "checkpoint_age": 63,
+      "condition": [
+        "pnl_positive",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_63_giveback_half_AND_recent5_negative",
+      "checkpoint_age": 63,
+      "condition": [
+        "giveback_half",
+        "recent5_negative"
+      ]
+    },
+    {
+      "id": "CHECK_63_giveback_half_AND_opposite20",
+      "checkpoint_age": 63,
+      "condition": [
+        "giveback_half",
+        "opposite20"
+      ]
+    },
+    {
+      "id": "CHECK_63_recent5_negative_AND_opposite20",
+      "checkpoint_age": 63,
+      "condition": [
+        "recent5_negative",
+        "opposite20"
+      ]
+    }
+  ],
+  "legacy_comparator_ids": [],
+  "family_application": "All 180 BASE accounts are observed. Every discovery-supported exact-checkpoint hypothesis is replayed on its originating account; zero-proposal accounts remain in the coverage table.",
+  "boundary_policy": "Main evaluation preserves continuous positions across IS/OOS; PnL display resets only. Quality uses entries and closes inside each interval. Carry-in and censored trades are reported separately.",
+  "fresh_start_sensitivity": "Zero prior positions; only original BASE episodes with execution entry on/after OOS_START may enter. No mid-episode re-entry.",
+  "schedule_delay_sensitivity": "No extra schedule-delay experiment in this campaign.",
+  "holdout_rule": "Original SCREEN and original within-account ranking, then freeze one passing candidate per account. Evaluate every frozen candidate under unchanged OOS_SCREEN. No OOS-based rule revisions, substitutions or deletions.",
+  "source_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "run_holding_filter_research.py": "02fdec7e7af9a94a8bb6e4c0029e57d193a4e7dc9cafb8a7ec61f5691501e71e",
+    "src/fx_holding_filters.py": "67b784ab5f2e2b1fdc86b555ab0f8e4b794017a3ad31df0f59a7834ae7e5a84e",
+    "build_holding_observations.py": "2a3e5140e35fbda6203a2b5cec9baaf0e2c79ed71a22418f496783b5e42a569d"
+  },
+  "input_sha256": {
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "reproduced/holding_observations_v3/holding_observation_protocol.json": "81109ee024c58b3751abfd1ce074ea69a8f00c4b18422b15eb619f6a4acee15f",
+    "reproduced/holding_observations_v3/holding_observation_validation.json": "0e4237476cb52702d8eeca76746c7cafd7880bbbd5f37c448b5214b5b1570841",
+    "reproduced/holding_observations_v3/discovery_repeated_negative_patterns.csv": "f02a7e7e36d82de365762c57bd4dacdfdf80ad84c832b91f2c4500b6c5893ccb",
+    "reproduced/holding_observations_v3/discovery_repeated_negative_patterns.json": "20c6d2c4b5330dea1536f60ee7c07bb594928bd1e5c3f6083fca142466495a57",
+    "reproduced/holding_observations_v3/holding_coverage.csv": "cad15ffb4b3c516539d58d15666abdb8bcd90f1d21a9f3082e9ee6ce92ee682e",
+    "reproduced/holding_observations_v3/holding_state_summary.csv": "a37a3d0862559690189ccbc335a4feccb2968f18c5e1a1293e12c6761cdf5203",
+    "reproduced/holding_observations_v3/is_base_trade_ledger.csv.gz": "1fa2f3f890cfab95c3562ed1a6ebaaebff64ebd82f7a9b3abfe70493fb0700e7",
+    "reproduced/holding_observations_v3/is_holding_checkpoints.csv.gz": "bd122a23fa6777c8f2dac7e8ff19dd471be5322843cf616ab883d30d6c0dfa74"
+  },
+  "proposal_rule": "Only D1 (2005-09), D2 (2010-14), and D (2005-14) outcomes are parsed. Each half must have >=10 closed actionable original episodes and negative executable remaining-return sum; combined discovery must also be negative. Worst-trade concentration is diagnostic only.",
+  "checkpoint_rule": "Exactly one check at the specified earned-return age. If the original technical target still holds and the condition is true, issue an exit at this close, execute next close, and keep that execution-day return. Never re-enter the original episode. False/unknown retains the original episode without later retries.",
+  "observation_source_sha256": {
+    "reproduced/holding_observations_v3/holding_observation_protocol.json": "81109ee024c58b3751abfd1ce074ea69a8f00c4b18422b15eb619f6a4acee15f",
+    "reproduced/holding_observations_v3/holding_observation_validation.json": "0e4237476cb52702d8eeca76746c7cafd7880bbbd5f37c448b5214b5b1570841",
+    "reproduced/holding_observations_v3/discovery_repeated_negative_patterns.csv": "f02a7e7e36d82de365762c57bd4dacdfdf80ad84c832b91f2c4500b6c5893ccb",
+    "reproduced/holding_observations_v3/discovery_repeated_negative_patterns.json": "20c6d2c4b5330dea1536f60ee7c07bb594928bd1e5c3f6083fca142466495a57",
+    "reproduced/holding_observations_v3/holding_coverage.csv": "cad15ffb4b3c516539d58d15666abdb8bcd90f1d21a9f3082e9ee6ce92ee682e",
+    "reproduced/holding_observations_v3/holding_state_summary.csv": "a37a3d0862559690189ccbc335a4feccb2968f18c5e1a1293e12c6761cdf5203",
+    "reproduced/holding_observations_v3/is_base_trade_ledger.csv.gz": "1fa2f3f890cfab95c3562ed1a6ebaaebff64ebd82f7a9b3abfe70493fb0700e7",
+    "reproduced/holding_observations_v3/is_holding_checkpoints.csv.gz": "bd122a23fa6777c8f2dac7e8ff19dd471be5322843cf616ab883d30d6c0dfa74"
+  }
+}

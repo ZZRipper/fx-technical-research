@@ -1,0 +1,1109 @@
+{
+  "status": "passed",
+  "stage": "pre",
+  "started_utc": "2026-10-23T05:54:35.667757+00:00",
+  "finished_utc": "2026-10-23T05:54:36.273038+00:00",
+  "audit_script_sha256": "1057e33b8492af0c75513f21d331b1281db2f0ed7bf75649545711f5bf0da7c7",
+  "checks_passed": 247,
+  "checks_total": 247,
+  "verified_file_count": 53,
+  "verified_files_sha256": {
+    "reproduced/state_filter_supplement_v1/protocol.json": "d2ff2d289d9ba06c18bdd3032b068988a4da9d2506093b3a62cc0f622276eeea",
+    "reproduced/state_filter_supplement_v1/frozen_selection.json": "eeaa471e2a702275aa2034784fcb34d5ddc645025e44f5c8abea67e69d96bb6c",
+    "reproduced/state_filter_supplement_v1/development_status.json": "85bd764d77e27fd11740dfa51618a696d0f78863783327938b66b6f7f05e7d03",
+    "reproduced/state_filter_supplement_v1/supplement_diagnostics.json": "320e6a064278d0273eb048cc2ab5109ec2807fd5c590f0ba02659ad870d5a434",
+    "reproduced/state_filter_v2/protocol.json": "1211276d44902490a873f85a207841cee03f744af6d2cbc1d35101a07341f448",
+    "reproduced/state_filter_v2/validation_locked.json": "7e7275701d208811fed11f4149284c229a8a188d30b399b5ddfed94cde76b839",
+    "reproduced/state_filter_v2/frozen_selection.json": "069fd143beec224809a8454d477ff9dcafb5c8fe1a1c1c89a748529858b63f6c",
+    "reproduced/state_filter_v2/development_status.json": "43813075e6a7898e3f02006fd94df1d9d0661d212b8dad0b05928adb91b95ca0",
+    "reproduced/state_filter_v2/independent_validation.json": "fb6d2a57a66057aad9e810b30b81a62b7654f47cc3d8b46db1d896cb9754d766",
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "run_state_filter_research.py": "8851bcd8ec23bb5bbefb0658106cad6c336337508a8ab3ebf153bbdd2319c92c",
+    "src/fx_is_states.py": "b14cacc51e83587dbd15514e05ff608ecb1ead4e8a875f6eab2acaf41a6d8f5b",
+    "src/fx_state_filters.py": "47f6c3f4b5696bb2f1039cf31b67244da5c81929e6ecbc6aa91d08e78904e619",
+    "run_state_filter_supplement.py": "d41bb080c576551153c676f0ea4ee330e40175f86caa706d211400dafac927bf",
+    "verify_state_filter_research.py": "9c24f76e55617b690bd8f39b6e0050fc4a1cbf2e393a9dee4559aa8112795f0f",
+    "tests/test_fx_filter_candidates.py": "6f99c024b1ddd8de619e2409d1643cf305e63f598c9c15cfa66278cd4621869f",
+    "tests/test_fx_filter_research.py": "44f84a791454d202e6ab4018c31852da0682ce021679b1bf5f09cb53d88a3631",
+    "tests/test_fx_is_states.py": "2972bc7efcfb5f7de299edc499730c2442e1f8dbd069e8fd989935a4bad87155",
+    "tests/test_fx_observation.py": "427ecd0b1ec334aa94cda77eae0175018f2b27d128cbaf49cdb584432cd41156",
+    "tests/test_fx_observation_features.py": "141a6dd4a03a5d0e8a5c2a1f4380d240496e128e52081f07c2c43dadcccaa8fd",
+    "tests/test_fx_state_filters.py": "0691fba82746b94cec51f209566389bfb28aaa316d9118d014e2d66f0130040e",
+    "tests/test_fx_state_research.py": "daad00da9ae4e07a54814f411e4e45ca01b27cba3f235da47d353e9a5c43bfac",
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv": "3e977f3e69662b1aba5e0e9d1d1cb8af4ecabccf24dd3fa2e315c9aa5ea91b2a",
+    "reproduced/state_filter_v2/fit_status.json": "69ad8ce55140adb2ac305ab6b8d95570d0b843afb0779a642361cde6d356c8d5",
+    "reproduced/state_filter_v2/preconfirmation_integrity_audit.json": "ced85fa5c9df7c49b29032035fdd595fa82341db92a1076b1b1e4492a6b020b4",
+    "reproduced/state_filter_v2/discovery_proposals.json": "856e486434ef010bed09444cac16ba33d706cff08f3f1de37da750217d1557b6",
+    "reproduced/state_filter_v2/confirmation_effect_evidence.json": "70792892ecd8e1c1d59b553c66dcc2a4789640b15bb9735a41960c17c58db365",
+    "reproduced/state_filter_v2/fit_selection.csv": "b95622f124578882080326ad9bfde36fbf2db4ccb9040464e063e4b8cb659776",
+    "reproduced/state_filter_v2/fit_metrics.csv": "a1235f0e059a620042e574611eafe88d8efcb968b25fd4e2896cdfa48006919e",
+    "reproduced/state_filter_v2/fit_locked_daily.csv.gz": "248d65b6f3dcce55bef1c701fbaf86db7e90e0ca2593bca93faa6501141c1fcc",
+    "reproduced/state_filter_v2/confirmation_full_metrics.csv": "bf7667c80807496bb4c7085b13cc7250d7878a3fb3b1d95acc2d2fe4989e85b7",
+    "reproduced/state_filter_v2/confirmation_recent_metrics.csv": "80c058c9adfab972eb6d428f9fd90315cac8dfdc11d9ddd38f7c1eaa41880831",
+    "reproduced/state_filter_v2/confirmation_selection.csv": "0034f655b71c2bd3e58fa7b300d748f8d569ed79aac808443996b8dc384630d3",
+    "reproduced/state_filter_v2/is_frozen_daily.csv.gz": "70d1b93f983f1a89b64b97992b9ead0b175bc73fb649f5b0bf43df699ea197bc",
+    "reproduced/state_filter_v2/is_frozen_metrics.csv": "e54a3df4c388fabcdb7161886af42910c48895b3a588737cf1640120066f7295",
+    "reproduced/state_filter_v2/locked_is_daily.csv.gz": "3ef2d0da0fb18556d6707f7b98c0af329922fde4e4e066996726abc376f8885b",
+    "reproduced/state_filter_v2/locked_is_decisions.csv.gz": "2d79a7995c6f295081c2d2f3694fc9fed07db631e52c3cde4b49e730290796ee",
+    "reproduced/state_filter_v2/locked_is_trade_ledger.csv.gz": "2b0249659cc977483ac88cd49867800c19fad0fa4d5032dfe8fc8964b70609f8",
+    "reproduced/filter_is_diagnostics_v2/entry_state_validation.json": "2637b364492c0f6b9ba80823cd3f4fcfbef2f5ddca05584a19ab010c4c208e18",
+    "reproduced/filter_is_diagnostics_v2/technical_validation_amendment.json": "9b53b05bad9b78eafc75775ab7ea877aedb5ed7bcd253edbd1992d04261a7056",
+    "reproduced/filter_is_diagnostics_v2/is_entry_cohort_coverage.csv": "3115e6fa52bfc599a1f0ffd3ebdd1208f05a9e265cc652e172d01f80651aaa8a",
+    "reproduced/filter_is_diagnostics_v2/is_entry_state_ledger.csv.gz": "46718a115c30684bc4cbba1180120b1eb695a2d7c3fe2648ca259cc111f9f078",
+    "reproduced/state_filter_supplement_v1/is_all_metrics.csv": "61fe46e3fedbb8dba3fc374dc397a5f7486d918f120dee15e69a10fdb051e007",
+    "reproduced/state_filter_supplement_v1/is_frozen_daily.csv.gz": "2e43352a539de4b7ac4385d6753126398a3796fab88421296b0e6c6136c6ed7c",
+    "reproduced/state_filter_supplement_v1/is_frozen_metrics.csv": "b5277d746a91e66bfd4589460b466896476c68413c890721d032f2b5a3a032e1",
+    "reproduced/state_filter_supplement_v1/is_selection.csv": "0923b7548999e57e0b8af740ababef1bc5c661a61e4bb8f7c6fde0a95e58a88e"
+  },
+  "details": {
+    "candidate_id": "JPY|BB_MR_20|STATE_efficiency_63_1",
+    "spec": {
+      "id": "STATE_efficiency_63_1",
+      "feature": "efficiency_63",
+      "state": 1
+    },
+    "original_SCREEN_pass": true,
+    "strict_v2_pass": false,
+    "inherited_tests": {
+      "tests_run": 76,
+      "exit_code": 0,
+      "rerun": false,
+      "reason": "No decision source changed; all audited test-source hashes checked."
+    },
+    "protocol_sha256": "d2ff2d289d9ba06c18bdd3032b068988a4da9d2506093b3a62cc0f622276eeea",
+    "freeze_sha256": "eeaa471e2a702275aa2034784fcb34d5ddc645025e44f5c8abea67e69d96bb6c",
+    "OOS_results_opened": false,
+    "raw_workbooks_parsed": false
+  },
+  "checks": [
+    {
+      "name": "manifest_agreement:source_sha256",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:run_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/fx_state_filters.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:run_state_filter_supplement.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:verify_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:tests/test_fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:tests/test_fx_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:tests/test_fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:tests/test_fx_observation.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:tests/test_fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:tests/test_fx_state_filters.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:tests/test_fx_state_research.py",
+      "passed": true
+    },
+    {
+      "name": "manifest_agreement:input_sha256",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:FX_Research_Datasets/data/raw/FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "name": "input_sha256:reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "manifest_agreement:source_campaign_evidence_sha256",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/protocol.json",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/validation_locked.json",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/fit_status.json",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/preconfirmation_integrity_audit.json",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/frozen_selection.json",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/development_status.json",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/discovery_proposals.json",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/confirmation_effect_evidence.json",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:src/fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:src/fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:src/fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:src/fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:src/fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:run_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:src/fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:src/fx_state_filters.py",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:FX_Research_Datasets/data/raw/FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/fit_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/fit_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/fit_locked_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/confirmation_full_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/confirmation_recent_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/confirmation_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/locked_is_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/locked_is_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/locked_is_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/filter_is_diagnostics_v2/entry_state_validation.json",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/filter_is_diagnostics_v2/technical_validation_amendment.json",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/filter_is_diagnostics_v2/is_entry_cohort_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/filter_is_diagnostics_v2/is_entry_state_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "source_campaign_evidence_sha256:reproduced/state_filter_v2/independent_validation.json",
+      "passed": true
+    },
+    {
+      "name": "observation:reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS:is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS:is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS:is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen_IS:is_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "original_v2_IS:confirmation_full_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "original_v2_IS:confirmation_recent_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "original_v2_IS:confirmation_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "original_v2_IS:fit_locked_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "original_v2_IS:fit_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "original_v2_IS:fit_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "original_v2_IS:is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "original_v2_IS:is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "original_v2_IS:locked_is_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "original_v2_IS:locked_is_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "original_v2_IS:locked_is_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "original_v2_lock_outputs:fit_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "original_v2_lock_outputs:fit_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "original_v2_lock_outputs:discovery_proposals.json",
+      "passed": true
+    },
+    {
+      "name": "original_v2_lock_outputs:fit_locked_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "protocol_freeze_link",
+      "passed": true
+    },
+    {
+      "name": "freeze_status_link",
+      "passed": true
+    },
+    {
+      "name": "diagnostics_hash",
+      "passed": true
+    },
+    {
+      "name": "v2_freeze_status_link",
+      "passed": true
+    },
+    {
+      "name": "v2_protocol_lock_links",
+      "passed": true
+    },
+    {
+      "name": "v2_audit_passed",
+      "passed": true
+    },
+    {
+      "name": "v2_audit_source_matches",
+      "passed": true
+    },
+    {
+      "name": "audited_test_sources:tests/test_fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "audited_test_sources:tests/test_fx_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "audited_test_sources:tests/test_fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "audited_test_sources:tests/test_fx_observation.py",
+      "passed": true
+    },
+    {
+      "name": "audited_test_sources:tests/test_fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "audited_test_sources:tests/test_fx_state_filters.py",
+      "passed": true
+    },
+    {
+      "name": "audited_test_sources:tests/test_fx_state_research.py",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/protocol.json",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/validation_locked.json",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/fit_status.json",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/preconfirmation_integrity_audit.json",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/frozen_selection.json",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/development_status.json",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/discovery_proposals.json",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/confirmation_effect_evidence.json",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:src/fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:src/fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:src/fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:src/fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:src/fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:run_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:src/fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:src/fx_state_filters.py",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:FX_Research_Datasets/data/raw/FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/fit_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/fit_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/fit_locked_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/confirmation_full_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/confirmation_recent_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/confirmation_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/locked_is_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/locked_is_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/state_filter_v2/locked_is_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/filter_is_diagnostics_v2/entry_state_validation.json",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/filter_is_diagnostics_v2/technical_validation_amendment.json",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/filter_is_diagnostics_v2/is_entry_cohort_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "audited_v2_evidence:reproduced/filter_is_diagnostics_v2/is_entry_state_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "v2_tests_passed",
+      "passed": true
+    },
+    {
+      "name": "exact_original_SCREEN",
+      "passed": true
+    },
+    {
+      "name": "exact_original_OOS_SCREEN",
+      "passed": true
+    },
+    {
+      "name": "cost_zero_simple",
+      "passed": true
+    },
+    {
+      "name": "dates_unchanged",
+      "passed": true
+    },
+    {
+      "name": "original_state_bins",
+      "passed": true
+    },
+    {
+      "name": "sole_designated_scope",
+      "passed": true
+    },
+    {
+      "name": "previously_locked_same_spec",
+      "passed": true
+    },
+    {
+      "name": "one_frozen_candidate",
+      "passed": true
+    },
+    {
+      "name": "candidate_spec_and_rank_unchanged",
+      "passed": true
+    },
+    {
+      "name": "strict_v2_failure_preserved",
+      "passed": true
+    },
+    {
+      "name": "v2_outcomes_not_relabelled",
+      "passed": true
+    },
+    {
+      "name": "historical_exposure_disclosed",
+      "passed": true
+    },
+    {
+      "name": "supplement_status_passed",
+      "passed": true
+    },
+    {
+      "name": "freeze_precedes_this_audit",
+      "passed": true
+    },
+    {
+      "name": "freeze_records_no_OOS_computation",
+      "passed": true
+    },
+    {
+      "name": "sole_candidate_in_IS_outputs",
+      "passed": true
+    },
+    {
+      "name": "v2_saved_original_pass_strict_fail",
+      "passed": true
+    },
+    {
+      "name": "copied_IS_metrics_exact",
+      "passed": true,
+      "rows": 8
+    },
+    {
+      "name": "copied_IS_daily_exact",
+      "passed": true,
+      "rows": 9602
+    },
+    {
+      "name": "frozen_IS_metrics_subset",
+      "passed": true,
+      "rows": 2
+    },
+    {
+      "name": "original_SCREEN_rescreen:identities",
+      "passed": true
+    },
+    {
+      "name": "original_SCREEN_rescreen:pair",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:strategy",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:filter_id",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:is_new",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:gross_return_improvement_pp",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:win_rate_improvement_pp",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:payoff_absolute_improvement",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:payoff_relative_improvement",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:retention",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:is_gross_return_pct",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:is_net_return_pct",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:is_annualized_simple_pct",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:is_win_rate",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:is_payoff_ratio",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:is_closed_n",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:is_max_drawdown_pp",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:positive_blocks",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:improved_blocks",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:positive_and_annualized_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:return_improvement_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:win_rate_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:payoff_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:drawdown_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:return_to_drawdown_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:sample_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:block_positive_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:block_improvement_pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:pass",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:failed_criteria",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:freeze_rank",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_rescreen:frozen",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "original_SCREEN_pass_and_freeze",
+      "passed": true
+    },
+    {
+      "name": "IS_only_dates",
+      "passed": true
+    },
+    {
+      "name": "IS_zero_cost_daily",
+      "passed": true
+    },
+    {
+      "name": "IS_simple_sum_DD:IS:BASE",
+      "passed": true
+    },
+    {
+      "name": "IS_simple_sum_DD:IS_EARLY:BASE",
+      "passed": true
+    },
+    {
+      "name": "IS_simple_sum_DD:IS_MIDDLE:BASE",
+      "passed": true
+    },
+    {
+      "name": "IS_simple_sum_DD:IS_LATE:BASE",
+      "passed": true
+    },
+    {
+      "name": "IS_simple_sum_DD:IS:FILTER",
+      "passed": true
+    },
+    {
+      "name": "IS_simple_sum_DD:IS_EARLY:FILTER",
+      "passed": true
+    },
+    {
+      "name": "IS_simple_sum_DD:IS_MIDDLE:FILTER",
+      "passed": true
+    },
+    {
+      "name": "IS_simple_sum_DD:IS_LATE:FILTER",
+      "passed": true
+    },
+    {
+      "name": "OOS_artifacts_absent_before_opening",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_supplement_v1\\protocol.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_supplement_v1\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_supplement_v1\\development_status.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_supplement_v1\\supplement_diagnostics.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\protocol.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\validation_locked.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\frozen_selection.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\development_status.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\independent_validation.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:run_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:src\\fx_state_filters.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:run_state_filter_supplement.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:verify_state_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:tests\\test_fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:tests\\test_fx_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:tests\\test_fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:tests\\test_fx_observation.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:tests\\test_fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:tests\\test_fx_state_filters.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:tests\\test_fx_state_research.py",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:FX_Research_Datasets\\data\\raw\\FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:FX_Research_Datasets\\data\\raw\\FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\filter_is_diagnostics_v2\\is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\fit_status.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\preconfirmation_integrity_audit.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\discovery_proposals.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\confirmation_effect_evidence.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\fit_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\fit_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\fit_locked_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\confirmation_full_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\confirmation_recent_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\confirmation_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\locked_is_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\locked_is_decisions.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_v2\\locked_is_trade_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\filter_is_diagnostics_v2\\entry_state_validation.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\filter_is_diagnostics_v2\\technical_validation_amendment.json",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\filter_is_diagnostics_v2\\is_entry_cohort_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\filter_is_diagnostics_v2\\is_entry_state_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_supplement_v1\\is_all_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_supplement_v1\\is_frozen_daily.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_supplement_v1\\is_frozen_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "read_only_preserved:reproduced\\state_filter_supplement_v1\\is_selection.csv",
+      "passed": true
+    }
+  ]
+}

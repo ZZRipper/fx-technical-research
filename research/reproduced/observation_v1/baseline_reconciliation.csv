@@ -1,0 +1,254 @@
+check,expected_rows,compared_rows,max_abs_error,mismatch_count,absolute_tolerance,pass,reference_source
+baseline metrics: exact key coverage,207,207,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: indicator,207,207,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: hypothesis,207,207,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: technical,207,207,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: start_date,207,207,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: end_date,207,207,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: observations,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: total_return_pct,207,207,7.105427357601002e-15,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: cagr_calendar_pct,207,207,8.881784197001252e-16,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: sharpe_252,207,207,9.71445146547012e-17,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: volatility_252_pct,207,207,3.552713678800501e-15,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: max_drawdown_pct,207,207,7.105427357601002e-15,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: active_pct,207,207,1.4210854715202004e-14,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: long_foreign_pct,207,207,7.105427357601002e-15,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: short_foreign_pct,207,207,7.105427357601002e-15,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: turnover_one_way_units,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: position_changes,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: pnl_on_100k_usd,207,207,7.275957614183426e-12,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: initial_capital_usd,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: account_pnl_usd,207,207,7.275957614183426e-12,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: terminal_held_for_last_return,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: all_entry_n,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: eligible_closed_n,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: win_n,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: loss_n,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: flat_n,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: win_rate,207,207,5.551115123125783e-17,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: win_rate_nonflat,207,207,5.551115123125783e-17,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: avg_win_return,207,207,9.71445146547012e-17,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: avg_loss_abs_return,207,207,9.8879238130678e-17,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: payoff_ratio,207,207,4.440892098500626e-16,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: breakeven_win_rate_nonflat,207,207,5.551115123125783e-17,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: expectancy_return,207,207,9.996344030316351e-17,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: median_trade_return,207,207,9.974659986866641e-17,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: profit_factor_return,207,207,2.220446049250313e-16,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: positive_return_sum,207,207,8.881784197001252e-16,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: negative_return_abs_sum,207,207,4.440892098500626e-16,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: eligible_return_sum,207,207,1.1102230246251565e-16,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: median_holding_observations,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: open_n,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: open_zero_observation_n,207,207,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: open_mtm_pnl_usd,207,207,1.0913936421275139e-10,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: closed_pnl_usd,207,207,2.9103830456733704e-11,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: all_pnl_usd,207,207,1.0913936421275139e-10,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline metrics: low_sample_flag,207,207,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\fixed_baseline_metrics_rebuilt.csv
+baseline reference account coverage,207,207,,0,,True,FX_PnL_Explorer.html + fixed_baseline_metrics_rebuilt.csv
+baseline daily: EUR RSI_MR_7,5585,5585,5.456240614876151e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|RSI_MR_7|BASE
+baseline daily: EUR RSI_MR_14,5585,5585,5.494803190231323e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|RSI_MR_14|BASE
+baseline daily: EUR RSI_MR_20,5585,5585,5.482288543134928e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|RSI_MR_20|BASE
+baseline daily: EUR RSI_MOM_7,5585,5585,5.498877726495266e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|RSI_MOM_7|BASE
+baseline daily: EUR RSI_MOM_14,5585,5585,5.499459803104401e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|RSI_MOM_14|BASE
+baseline daily: EUR RSI_MOM_20,5585,5585,5.480105755850673e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|RSI_MOM_20|BASE
+baseline daily: EUR MA_10_30,5585,5585,5.483598215505481e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|MA_10_30|BASE
+baseline daily: EUR MA_20_60,5585,5585,5.495676305145025e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|MA_20_60|BASE
+baseline daily: EUR BB_MR_10,5585,5585,5.48752723261714e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|BB_MR_10|BASE
+baseline daily: EUR BB_MR_20,5585,5585,5.49785909242928e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|BB_MR_20|BASE
+baseline daily: EUR BB_BO_10,5585,5585,5.499459803104401e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|BB_BO_10|BASE
+baseline daily: EUR BB_BO_20,5585,5585,5.488254828378558e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|BB_BO_20|BASE
+baseline daily: EUR DONCHIAN_BO_10,5585,5585,5.494803190231323e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|DONCHIAN_BO_10|BASE
+baseline daily: EUR DONCHIAN_BO_20,5585,5585,5.486072041094303e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|DONCHIAN_BO_20|BASE
+baseline daily: EUR MACD_12_26_9,5585,5585,5.492183845490217e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|MACD_12_26_9|BASE
+baseline daily: EUR TSMOM_21,5585,5585,5.48912794329226e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|TSMOM_21|BASE
+baseline daily: EUR TSMOM_63,5585,5585,5.493930075317621e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|TSMOM_63|BASE
+baseline daily: EUR VOTE_EQUAL_4,5585,5585,5.489710019901395e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|VOTE_EQUAL_4|BASE
+baseline daily: EUR VOTE_STRENGTH_4,5585,5585,5.48199750483036e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|VOTE_STRENGTH_4|BASE
+baseline daily: EUR REGIME_RULE_FIXED,5585,5585,5.496403900906444e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|REGIME_RULE_FIXED|BASE
+baseline daily: EUR ALWAYS_LONG_FX,5585,5585,5.499314283952117e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|ALWAYS_LONG_FX|BASE
+baseline daily: EUR ALWAYS_SHORT_FX,5585,5585,5.494075594469905e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|ALWAYS_SHORT_FX|BASE
+baseline daily: EUR CASH,5585,5585,0.0,0,1.1e-06,True,FX_PnL_Explorer.html#main|EUR|CASH|BASE
+baseline daily: GBP RSI_MR_7,5585,5585,5.473557393997908e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|RSI_MR_7|BASE
+baseline daily: GBP RSI_MR_14,5585,5585,5.493347998708487e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|RSI_MR_14|BASE
+baseline daily: GBP RSI_MR_20,5585,5585,5.46730007044971e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|RSI_MR_20|BASE
+baseline daily: GBP RSI_MOM_7,5585,5585,5.498586688190699e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|RSI_MOM_7|BASE
+baseline daily: GBP RSI_MOM_14,5585,5585,5.499314283952117e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|RSI_MOM_14|BASE
+baseline daily: GBP RSI_MOM_20,5585,5585,5.492474883794785e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|RSI_MOM_20|BASE
+baseline daily: GBP MA_10_30,5585,5585,5.499168764799833e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|MA_10_30|BASE
+baseline daily: GBP MA_20_60,5585,5585,5.49902324564755e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|MA_20_60|BASE
+baseline daily: GBP BB_MR_10,5585,5585,5.477922968566418e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|BB_MR_10|BASE
+baseline daily: GBP BB_MR_20,5585,5585,5.477486411109567e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|BB_MR_20|BASE
+baseline daily: GBP BB_BO_10,5585,5585,5.498586688190699e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|BB_BO_10|BASE
+baseline daily: GBP BB_BO_20,5585,5585,5.498295649886131e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|BB_BO_20|BASE
+baseline daily: GBP DONCHIAN_BO_10,5585,5585,5.499605322256684e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|DONCHIAN_BO_10|BASE
+baseline daily: GBP DONCHIAN_BO_20,5585,5585,5.496913217939436e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|DONCHIAN_BO_20|BASE
+baseline daily: GBP MACD_12_26_9,5585,5585,5.498877726495266e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|MACD_12_26_9|BASE
+baseline daily: GBP TSMOM_21,5585,5585,5.499605322256684e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|TSMOM_21|BASE
+baseline daily: GBP TSMOM_63,5585,5585,5.48316165804863e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|TSMOM_63|BASE
+baseline daily: GBP VOTE_EQUAL_4,5585,5585,5.499750841408968e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|VOTE_EQUAL_4|BASE
+baseline daily: GBP VOTE_STRENGTH_4,5585,5585,5.49982360098511e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|VOTE_STRENGTH_4|BASE
+baseline daily: GBP REGIME_RULE_FIXED,5585,5585,5.496985977515578e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|REGIME_RULE_FIXED|BASE
+baseline daily: GBP ALWAYS_LONG_FX,5585,5585,5.497422534972429e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|ALWAYS_LONG_FX|BASE
+baseline daily: GBP ALWAYS_SHORT_FX,5585,5585,5.474139470607042e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|ALWAYS_SHORT_FX|BASE
+baseline daily: GBP CASH,5585,5585,0.0,0,1.1e-06,True,FX_PnL_Explorer.html#main|GBP|CASH|BASE
+baseline daily: AUD RSI_MR_7,5585,5585,5.495967343449593e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|RSI_MR_7|BASE
+baseline daily: AUD RSI_MR_14,5585,5585,5.491747288033366e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|RSI_MR_14|BASE
+baseline daily: AUD RSI_MR_20,5585,5585,5.476758815348148e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|RSI_MR_20|BASE
+baseline daily: AUD RSI_MOM_7,5585,5585,5.467591108754277e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|RSI_MOM_7|BASE
+baseline daily: AUD RSI_MOM_14,5585,5585,5.497568054124713e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|RSI_MOM_14|BASE
+baseline daily: AUD RSI_MOM_20,5585,5585,5.48752723261714e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|RSI_MOM_20|BASE
+baseline daily: AUD MA_10_30,5585,5585,5.496549420058727e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|MA_10_30|BASE
+baseline daily: AUD MA_20_60,5585,5585,5.498441169038415e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|MA_20_60|BASE
+baseline daily: AUD BB_MR_10,5585,5585,4.999164957553148e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|BB_MR_10|BASE
+baseline daily: AUD BB_MR_20,5585,5585,5.476904334500432e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|BB_MR_20|BASE
+baseline daily: AUD BB_BO_10,5585,5585,5.497713573276997e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|BB_BO_10|BASE
+baseline daily: AUD BB_BO_20,5585,5585,5.499750841408968e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|BB_BO_20|BASE
+baseline daily: AUD DONCHIAN_BO_10,5585,5585,5.497131496667862e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|DONCHIAN_BO_10|BASE
+baseline daily: AUD DONCHIAN_BO_20,5585,5585,5.492620402947068e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|DONCHIAN_BO_20|BASE
+baseline daily: AUD MACD_12_26_9,5585,5585,5.499969120137393e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|MACD_12_26_9|BASE
+baseline daily: AUD TSMOM_21,5585,5585,5.498295649886131e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|TSMOM_21|BASE
+baseline daily: AUD TSMOM_63,5585,5585,5.497713573276997e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|TSMOM_63|BASE
+baseline daily: AUD VOTE_EQUAL_4,5585,5585,5.496549420058727e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|VOTE_EQUAL_4|BASE
+baseline daily: AUD VOTE_STRENGTH_4,5585,5585,5.497422534972429e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|VOTE_STRENGTH_4|BASE
+baseline daily: AUD REGIME_RULE_FIXED,5585,5585,5.475158104673028e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|REGIME_RULE_FIXED|BASE
+baseline daily: AUD ALWAYS_LONG_FX,5585,5585,5.498732207342982e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|ALWAYS_LONG_FX|BASE
+baseline daily: AUD ALWAYS_SHORT_FX,5585,5585,5.494221113622189e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|ALWAYS_SHORT_FX|BASE
+baseline daily: AUD CASH,5585,5585,0.0,0,1.1e-06,True,FX_PnL_Explorer.html#main|AUD|CASH|BASE
+baseline daily: NZD RSI_MR_7,5585,5585,5.424808477982879e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|RSI_MR_7|BASE
+baseline daily: NZD RSI_MR_14,5585,5585,5.442270776256919e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|RSI_MR_14|BASE
+baseline daily: NZD RSI_MR_20,5585,5585,5.493347998708487e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|RSI_MR_20|BASE
+baseline daily: NZD RSI_MOM_7,5585,5585,5.488545866683125e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|RSI_MOM_7|BASE
+baseline daily: NZD RSI_MOM_14,5585,5585,5.465553840622306e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|RSI_MOM_14|BASE
+baseline daily: NZD RSI_MOM_20,5585,5585,5.496694939211011e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|RSI_MOM_20|BASE
+baseline daily: NZD MA_10_30,5585,5585,5.496403900906444e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|MA_10_30|BASE
+baseline daily: NZD MA_20_60,5585,5585,5.498150130733848e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|MA_20_60|BASE
+baseline daily: NZD BB_MR_10,5585,5585,5.484907887876034e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|BB_MR_10|BASE
+baseline daily: NZD BB_MR_20,5585,5585,5.489273462444544e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|BB_MR_20|BASE
+baseline daily: NZD BB_BO_10,5585,5585,5.489564500749111e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|BB_BO_10|BASE
+baseline daily: NZD BB_BO_20,5585,5585,5.497277015820146e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|BB_BO_20|BASE
+baseline daily: NZD DONCHIAN_BO_10,5585,5585,5.487090675160289e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|DONCHIAN_BO_10|BASE
+baseline daily: NZD DONCHIAN_BO_20,5585,5585,5.49902324564755e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|DONCHIAN_BO_20|BASE
+baseline daily: NZD MACD_12_26_9,5585,5585,5.499314283952117e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|MACD_12_26_9|BASE
+baseline daily: NZD TSMOM_21,5585,5585,5.497422534972429e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|TSMOM_21|BASE
+baseline daily: NZD TSMOM_63,5585,5585,5.483743734657764e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|TSMOM_63|BASE
+baseline daily: NZD VOTE_EQUAL_4,5585,5585,5.496549420058727e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|VOTE_EQUAL_4|BASE
+baseline daily: NZD VOTE_STRENGTH_4,5585,5585,5.498150130733848e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|VOTE_STRENGTH_4|BASE
+baseline daily: NZD REGIME_RULE_FIXED,5585,5585,4.999164957553148e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|REGIME_RULE_FIXED|BASE
+baseline daily: NZD ALWAYS_LONG_FX,5585,5585,5.492038326337934e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|ALWAYS_LONG_FX|BASE
+baseline daily: NZD ALWAYS_SHORT_FX,5585,5585,5.497568054124713e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|ALWAYS_SHORT_FX|BASE
+baseline daily: NZD CASH,5585,5585,0.0,0,1.1e-06,True,FX_PnL_Explorer.html#main|NZD|CASH|BASE
+baseline daily: JPY RSI_MR_7,5585,5585,5.489418981596828e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|RSI_MR_7|BASE
+baseline daily: JPY RSI_MR_14,5585,5585,5.495676305145025e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|RSI_MR_14|BASE
+baseline daily: JPY RSI_MR_20,5585,5585,5.417969077825546e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|RSI_MR_20|BASE
+baseline daily: JPY RSI_MOM_7,5585,5585,5.499168764799833e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|RSI_MOM_7|BASE
+baseline daily: JPY RSI_MOM_14,5585,5585,5.490001058205962e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|RSI_MOM_14|BASE
+baseline daily: JPY RSI_MOM_20,5585,5585,5.492911441251636e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|RSI_MOM_20|BASE
+baseline daily: JPY MA_10_30,5585,5585,5.487672751769423e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|MA_10_30|BASE
+baseline daily: JPY MA_20_60,5585,5585,5.494075594469905e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|MA_20_60|BASE
+baseline daily: JPY BB_MR_10,5585,5585,5.469482857733965e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|BB_MR_10|BASE
+baseline daily: JPY BB_MR_20,5585,5585,5.499459803104401e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|BB_MR_20|BASE
+baseline daily: JPY BB_BO_10,5585,5585,5.489710019901395e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|BB_BO_10|BASE
+baseline daily: JPY BB_BO_20,5585,5585,5.495967343449593e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|BB_BO_20|BASE
+baseline daily: JPY DONCHIAN_BO_10,5585,5585,5.487672751769423e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|DONCHIAN_BO_10|BASE
+baseline daily: JPY DONCHIAN_BO_20,5585,5585,5.492765922099352e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|DONCHIAN_BO_20|BASE
+baseline daily: JPY MACD_12_26_9,5585,5585,5.488109309226274e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|MACD_12_26_9|BASE
+baseline daily: JPY TSMOM_21,5585,5585,5.498441169038415e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|TSMOM_21|BASE
+baseline daily: JPY TSMOM_63,5585,5585,5.49349351786077e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|TSMOM_63|BASE
+baseline daily: JPY VOTE_EQUAL_4,5585,5585,5.499314283952117e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|VOTE_EQUAL_4|BASE
+baseline daily: JPY VOTE_STRENGTH_4,5585,5585,5.497422534972429e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|VOTE_STRENGTH_4|BASE
+baseline daily: JPY REGIME_RULE_FIXED,5585,5585,5.499605322256684e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|REGIME_RULE_FIXED|BASE
+baseline daily: JPY ALWAYS_LONG_FX,5585,5585,5.494803190231323e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|ALWAYS_LONG_FX|BASE
+baseline daily: JPY ALWAYS_SHORT_FX,5585,5585,5.497422534972429e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|ALWAYS_SHORT_FX|BASE
+baseline daily: JPY CASH,5585,5585,0.0,0,1.1e-06,True,FX_PnL_Explorer.html#main|JPY|CASH|BASE
+baseline daily: CHF RSI_MR_7,5585,5585,5.406764103099704e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|RSI_MR_7|BASE
+baseline daily: CHF RSI_MR_14,5585,5585,5.253677954897285e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|RSI_MR_14|BASE
+baseline daily: CHF RSI_MR_20,5585,5585,5.29675162397325e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|RSI_MR_20|BASE
+baseline daily: CHF RSI_MOM_7,5585,5585,5.491310730576515e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|RSI_MOM_7|BASE
+baseline daily: CHF RSI_MOM_14,5585,5585,5.494075594469905e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|RSI_MOM_14|BASE
+baseline daily: CHF RSI_MOM_20,5585,5585,5.493784556165338e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|RSI_MOM_20|BASE
+baseline daily: CHF MA_10_30,5585,5585,5.499896360561252e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|MA_10_30|BASE
+baseline daily: CHF MA_20_60,5585,5585,5.499605322256684e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|MA_20_60|BASE
+baseline daily: CHF BB_MR_10,5585,5585,5.495821824297309e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|BB_MR_10|BASE
+baseline daily: CHF BB_MR_20,5585,5585,5.479378160089254e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|BB_MR_20|BASE
+baseline daily: CHF BB_BO_10,5585,5585,5.498732207342982e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|BB_BO_10|BASE
+baseline daily: CHF BB_BO_20,5585,5585,5.48636307939887e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|BB_BO_20|BASE
+baseline daily: CHF DONCHIAN_BO_10,5585,5585,5.496840458363295e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|DONCHIAN_BO_10|BASE
+baseline daily: CHF DONCHIAN_BO_20,5585,5585,5.498732207342982e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|DONCHIAN_BO_20|BASE
+baseline daily: CHF MACD_12_26_9,5585,5585,5.494512151926756e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|MACD_12_26_9|BASE
+baseline daily: CHF TSMOM_21,5585,5585,5.499314283952117e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|TSMOM_21|BASE
+baseline daily: CHF TSMOM_63,5585,5585,5.499896360561252e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|TSMOM_63|BASE
+baseline daily: CHF VOTE_EQUAL_4,5585,5585,5.497568054124713e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|VOTE_EQUAL_4|BASE
+baseline daily: CHF VOTE_STRENGTH_4,5585,5585,5.497131496667862e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|VOTE_STRENGTH_4|BASE
+baseline daily: CHF REGIME_RULE_FIXED,5585,5585,5.495821824297309e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|REGIME_RULE_FIXED|BASE
+baseline daily: CHF ALWAYS_LONG_FX,5585,5585,5.491019692271948e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|ALWAYS_LONG_FX|BASE
+baseline daily: CHF ALWAYS_SHORT_FX,5585,5585,5.497131496667862e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|ALWAYS_SHORT_FX|BASE
+baseline daily: CHF CASH,5585,5585,0.0,0,1.1e-06,True,FX_PnL_Explorer.html#main|CHF|CASH|BASE
+baseline daily: CAD RSI_MR_7,5585,5585,5.465117283165455e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|RSI_MR_7|BASE
+baseline daily: CAD RSI_MR_14,5585,5585,5.498877726495266e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|RSI_MR_14|BASE
+baseline daily: CAD RSI_MR_20,5585,5585,5.492329364642501e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|RSI_MR_20|BASE
+baseline daily: CAD RSI_MOM_7,5585,5585,5.493639037013054e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|RSI_MOM_7|BASE
+baseline daily: CAD RSI_MOM_14,5585,5585,5.499750841408968e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|RSI_MOM_14|BASE
+baseline daily: CAD RSI_MOM_20,5585,5585,5.495821824297309e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|RSI_MOM_20|BASE
+baseline daily: CAD MA_10_30,5585,5585,5.499459803104401e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|MA_10_30|BASE
+baseline daily: CAD MA_20_60,5585,5585,5.492038326337934e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|MA_20_60|BASE
+baseline daily: CAD BB_MR_10,5585,5585,5.487381713464856e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|BB_MR_10|BASE
+baseline daily: CAD BB_MR_20,5585,5585,5.345063982531428e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|BB_MR_20|BASE
+baseline daily: CAD BB_BO_10,5585,5585,5.494512151926756e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|BB_BO_10|BASE
+baseline daily: CAD BB_BO_20,5585,5585,5.488400347530842e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|BB_BO_20|BASE
+baseline daily: CAD DONCHIAN_BO_10,5585,5585,5.498586688190699e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|DONCHIAN_BO_10|BASE
+baseline daily: CAD DONCHIAN_BO_20,5585,5585,5.496403900906444e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|DONCHIAN_BO_20|BASE
+baseline daily: CAD MACD_12_26_9,5585,5585,5.497349775396287e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|MACD_12_26_9|BASE
+baseline daily: CAD TSMOM_21,5585,5585,5.492329364642501e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|TSMOM_21|BASE
+baseline daily: CAD TSMOM_63,5585,5585,5.499750841408968e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|TSMOM_63|BASE
+baseline daily: CAD VOTE_EQUAL_4,5585,5585,5.499896360561252e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|VOTE_EQUAL_4|BASE
+baseline daily: CAD VOTE_STRENGTH_4,5585,5585,5.497131496667862e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|VOTE_STRENGTH_4|BASE
+baseline daily: CAD REGIME_RULE_FIXED,5585,5585,5.482143023982644e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|REGIME_RULE_FIXED|BASE
+baseline daily: CAD ALWAYS_LONG_FX,5585,5585,5.500041879713535e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|ALWAYS_LONG_FX|BASE
+baseline daily: CAD ALWAYS_SHORT_FX,5585,5585,5.497277015820146e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|ALWAYS_SHORT_FX|BASE
+baseline daily: CAD CASH,5585,5585,0.0,0,1.1e-06,True,FX_PnL_Explorer.html#main|CAD|CASH|BASE
+baseline daily: NOK RSI_MR_7,5585,5585,5.48912794329226e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|RSI_MR_7|BASE
+baseline daily: NOK RSI_MR_14,5585,5585,5.491165211424232e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|RSI_MR_14|BASE
+baseline daily: NOK RSI_MR_20,5585,5585,5.478650564327836e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|RSI_MR_20|BASE
+baseline daily: NOK RSI_MOM_7,5585,5585,5.496622179634869e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|RSI_MOM_7|BASE
+baseline daily: NOK RSI_MOM_14,5585,5585,5.495967343449593e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|RSI_MOM_14|BASE
+baseline daily: NOK RSI_MOM_20,5585,5585,5.491310730576515e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|RSI_MOM_20|BASE
+baseline daily: NOK MA_10_30,5585,5585,5.49465767107904e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|MA_10_30|BASE
+baseline daily: NOK MA_20_60,5585,5585,5.495821824297309e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|MA_20_60|BASE
+baseline daily: NOK BB_MR_10,5585,5585,4.998582880944014e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|BB_MR_10|BASE
+baseline daily: NOK BB_MR_20,5585,5585,5.491165211424232e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|BB_MR_20|BASE
+baseline daily: NOK BB_BO_10,5585,5585,5.498586688190699e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|BB_BO_10|BASE
+baseline daily: NOK BB_BO_20,5585,5585,5.491019692271948e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|BB_BO_20|BASE
+baseline daily: NOK DONCHIAN_BO_10,5585,5585,5.499314283952117e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|DONCHIAN_BO_10|BASE
+baseline daily: NOK DONCHIAN_BO_20,5585,5585,5.49625838175416e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|DONCHIAN_BO_20|BASE
+baseline daily: NOK MACD_12_26_9,5585,5585,5.499459803104401e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|MACD_12_26_9|BASE
+baseline daily: NOK TSMOM_21,5585,5585,5.499459803104401e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|TSMOM_21|BASE
+baseline daily: NOK TSMOM_63,5585,5585,5.496549420058727e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|TSMOM_63|BASE
+baseline daily: NOK VOTE_EQUAL_4,5585,5585,5.497422534972429e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|VOTE_EQUAL_4|BASE
+baseline daily: NOK VOTE_STRENGTH_4,5585,5585,5.498877726495266e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|VOTE_STRENGTH_4|BASE
+baseline daily: NOK REGIME_RULE_FIXED,5585,5585,5.484180292114615e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|REGIME_RULE_FIXED|BASE
+baseline daily: NOK ALWAYS_LONG_FX,5585,5585,5.499896360561252e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|ALWAYS_LONG_FX|BASE
+baseline daily: NOK ALWAYS_SHORT_FX,5585,5585,5.498732207342982e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|ALWAYS_SHORT_FX|BASE
+baseline daily: NOK CASH,5585,5585,0.0,0,1.1e-06,True,FX_PnL_Explorer.html#main|NOK|CASH|BASE
+baseline daily: SEK RSI_MR_7,5585,5585,5.492183845490217e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|RSI_MR_7|BASE
+baseline daily: SEK RSI_MR_14,5585,5585,5.486072041094303e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|RSI_MR_14|BASE
+baseline daily: SEK RSI_MR_20,5585,5585,5.467154551297426e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|RSI_MR_20|BASE
+baseline daily: SEK RSI_MOM_7,5585,5585,5.497422534972429e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|RSI_MOM_7|BASE
+baseline daily: SEK RSI_MOM_14,5585,5585,5.496840458363295e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|RSI_MOM_14|BASE
+baseline daily: SEK RSI_MOM_20,5585,5585,5.482870619744062e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|RSI_MOM_20|BASE
+baseline daily: SEK MA_10_30,5585,5585,5.498441169038415e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|MA_10_30|BASE
+baseline daily: SEK MA_20_60,5585,5585,5.495821824297309e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|MA_20_60|BASE
+baseline daily: SEK BB_MR_10,5585,5585,5.460751708596945e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|BB_MR_10|BASE
+baseline daily: SEK BB_MR_20,5585,5585,5.493639037013054e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|BB_MR_20|BASE
+baseline daily: SEK BB_BO_10,5585,5585,5.498004611581564e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|BB_BO_10|BASE
+baseline daily: SEK BB_BO_20,5585,5585,5.498513928614557e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|BB_BO_20|BASE
+baseline daily: SEK DONCHIAN_BO_10,5585,5585,5.499896360561252e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|DONCHIAN_BO_10|BASE
+baseline daily: SEK DONCHIAN_BO_20,5585,5585,5.497568054124713e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|DONCHIAN_BO_20|BASE
+baseline daily: SEK MACD_12_26_9,5585,5585,5.499168764799833e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|MACD_12_26_9|BASE
+baseline daily: SEK TSMOM_21,5585,5585,5.499605322256684e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|TSMOM_21|BASE
+baseline daily: SEK TSMOM_63,5585,5585,5.49785909242928e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|TSMOM_63|BASE
+baseline daily: SEK VOTE_EQUAL_4,5585,5585,5.498586688190699e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|VOTE_EQUAL_4|BASE
+baseline daily: SEK VOTE_STRENGTH_4,5585,5585,5.499750841408968e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|VOTE_STRENGTH_4|BASE
+baseline daily: SEK REGIME_RULE_FIXED,5585,5585,4.957546480000019e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|REGIME_RULE_FIXED|BASE
+baseline daily: SEK ALWAYS_LONG_FX,5585,5585,5.499605322256684e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|ALWAYS_LONG_FX|BASE
+baseline daily: SEK ALWAYS_SHORT_FX,5585,5585,5.499896360561252e-07,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|ALWAYS_SHORT_FX|BASE
+baseline daily: SEK CASH,5585,5585,0.0,0,1.1e-06,True,FX_PnL_Explorer.html#main|SEK|CASH|BASE

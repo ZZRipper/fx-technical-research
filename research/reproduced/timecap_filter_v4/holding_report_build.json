@@ -1,0 +1,51 @@
+{
+  "report": "holding_filter_report.html",
+  "base_report": "filter_research_report.html",
+  "atlas": "pnl_comparison.pdf",
+  "figures": [],
+  "pdf_pages": 1,
+  "is_completed": true,
+  "oos_evaluated": false,
+  "frozen_candidates": 0,
+  "diagnostics_completed": true,
+  "ordering": "saved IS freeze_rank only",
+  "paired_quality_rows": 0,
+  "episode_effect_rows": 0,
+  "effect_summary_rows": 0,
+  "paired_quality_available": false,
+  "equivalence_diagnostic": {
+    "versions": 101,
+    "unique_signal_paths": 101,
+    "unique_executed_paths": 101,
+    "redundant_versions_by_signal_path": 0,
+    "max_within_path_is_return_range_pp": 0.0
+  },
+  "reconciliation": {
+    "checks": 0,
+    "max_absolute_error": 0.0
+  },
+  "base_renderer_sha256": "9ed0d4998444379cbd89a3f2edb29aa8dd31e7fd291939acfb1f32c94d112555",
+  "input_sha256": {
+    "protocol.json": "83eaa7c7a4c35ac7ae789672c05ca5842cc2511a88c1eb25b75908bf49ac4c96",
+    "development_status.json": "58815cdafbf961ff2819b8f02ff16e3b2321dd7244ad66d5c174d4c6cf8430b7",
+    "is_selection.csv": "79dd1ecf497b19b4eb1523f9017d86fb4e9f30b183da3727c4f6d111a7203726",
+    "is_all_metrics.csv": "3d96d5fe3e275473ac830a332a8662c1ae617048817b11c2826d66de18834bf3",
+    "is_all_decisions.csv.gz": "d2122df133995f4edafd0749db78c196955da9321d434fd942f3fe93488e62db",
+    "is_account_coverage.csv": "971e38262c684d466eef06c63ce59345cd9bf563333fbe20518ac649647a90a9",
+    "is_hypotheses.json": "86c5def3b4c5431ba55504c9ad8bb9f34b182e65ff2fcf50c4a87d81cf9cc2b1",
+    "frozen_selection.json": "97cd55a6a84d0a7bbae63b3e60ce4a471a524265fd8b7399bdeb74272ec394d8",
+    "is_frozen_daily.csv.gz": "c9b63168eeee1723177120f10c75ec91ec5e16ffccbbc023af99d0410616fdb4",
+    "is_frozen_metrics.csv": "9c2cda6c7a5476c6666fda7e370a749d6c4163d35abe948b1bf17ec9bfab3a7f"
+  },
+  "generated_utc": "2026-10-23T06:17:43.180751+00:00",
+  "renderer_sha256": "748ee5f02e17018afa5ca445bdd211760a29e7f832f25537faad220c4ea95dfc",
+  "output_sha256": {
+    "holding_filter_report.html": "6bc3bc18e5b710dfd04b9cc03a8e97a2e8e9a32de41f8b8cf73da1282d2b0ce1",
+    "filter_research_report.html": "9fb19d3733b34146a95b73e6fa5007adf8d339eb33298b0563ae8a13fdd521da",
+    "pnl_comparison.pdf": "a09b1220e014a2f65f59892940e699775b8fddfde4278e274e236561573928a0",
+    "paired_quality.csv": "20fc2b23caf636ee527aff85867dc745d2d96d86b8cbed717ddf0285c10ee4fd",
+    "episode_effects.csv": "f5325816be22fb0e2c1db8204569879d7a21ebe8f9b890afe553728dbdf5cab0",
+    "effect_summary.csv": "a74e34b7461a81dcde7065a4dae682359bd8df19a84384fc1a149d3556921571",
+    "equivalent_rules.csv": "87a36ee7f2185900a2ea89680a5c5f1b0d60186d7532ff160ffc6af7530e8da5"
+  }
+}

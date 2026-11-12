@@ -1,0 +1,10 @@
+FX research data: independent download package
+
+Canonical prices, PIT exports, H10, rebuilt economic inputs and metrics
+
+This is a normal ZIP file and can be extracted independently.
+To restore the full data package, extract all four Data_*.zip files
+into the same destination. Identical documentation is repeated;
+replacing repeated documentation during extraction is safe.
+All original dataset contents are preserved across the four ZIPs.
+The dataset manifest lists the full dataset, not only this part.

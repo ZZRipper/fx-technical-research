@@ -1,0 +1,1023 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-23T05:37:47.909866+00:00",
+  "amendment_type": "Result-independent defensive input validation; no numerical formula, state threshold, or research result changed.",
+  "scope": "IS only through 2023-05-29. No OOS performance or prior whole-history results read. No filters fitted, selected, or frozen by this audit.",
+  "original_source_sha256": "ca6caf54501109023e3ffe7d6777106c4cc746c328bd68955213f8208d12d90a",
+  "amended_source_sha256": "b14cacc51e83587dbd15514e05ff608ecb1ead4e8a875f6eab2acaf41a6d8f5b",
+  "source_path": "src/fx_is_states.py",
+  "original_source_snapshot": "reproduced/filter_is_diagnostics_v2/source_snapshots/fx_is_states_initial.py",
+  "snapshot_sha256": "ca6caf54501109023e3ffe7d6777106c4cc746c328bd68955213f8208d12d90a",
+  "original_protocol_sha256": "94e8208cb3039808de13af472339443cca6dd818324f08d84db669e8a0d01c04",
+  "preserved_files_sha256": {
+    "reproduced\\filter_is_diagnostics_v2\\entry_state_protocol.json": "94e8208cb3039808de13af472339443cca6dd818324f08d84db669e8a0d01c04",
+    "reproduced\\filter_is_diagnostics_v2\\entry_state_validation.json": "2637b364492c0f6b9ba80823cd3f4fcfbef2f5ddca05584a19ab010c4c208e18",
+    "reproduced\\filter_is_diagnostics_v2\\is_entry_cohort_coverage.csv": "3115e6fa52bfc599a1f0ffd3ebdd1208f05a9e265cc652e172d01f80651aaa8a",
+    "reproduced\\filter_is_diagnostics_v2\\is_entry_state_ledger.csv.gz": "46718a115c30684bc4cbba1180120b1eb695a2d7c3fe2648ca259cc111f9f078",
+    "reproduced\\filter_is_diagnostics_v2\\is_entry_state_summary.csv": "3e977f3e69662b1aba5e0e9d1d1cb8af4ecabccf24dd3fa2e315c9aa5ea91b2a"
+  },
+  "added_guards": [
+    "Finite integral nonnegative signal indices strictly inside feature calendar.",
+    "BASE gross return must be one-dimensional and match feature calendar length.",
+    "Finite selected-row macro values must have their corresponding observation date; existing strictly-prior and at-most-seven-calendar-day validation retained."
+  ],
+  "formula_invariance_evidence": "Entry function AST identical after removing the two added validation-call statements; state_codes AST and STATE_BINS unchanged.",
+  "tests": {
+    "command": "python -B -m unittest discover -s tests -p test_fx_is_states.py -v",
+    "passed": 15,
+    "failed": 0
+  },
+  "cache_audit": {
+    "accounts": 180,
+    "ledger_rows": 46545,
+    "summary_rows": 70200,
+    "coverage_rows": 1080,
+    "finite_macro_rows": {
+      "K_vix": 46545,
+      "K_vix_d5": 46545,
+      "K_spread_bp": 41401,
+      "K_spread_d20_bp": 41066,
+      "K_dxy_d20_pct": 46545,
+      "K_copper_d20_pct": 46545,
+      "K_brent_d20_pct": 46545
+    },
+    "state_code_cells_checked": 605085,
+    "quote_calendar_source": "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx",
+    "calendar_cutoff": "2023-05-29",
+    "base_pnl_note": "Rolling-BASE-PnL formula unchanged by AST comparison and synthetic causal-window tests; cached state encoding checked for every row. This amendment does not rerun 180 BASE strategies."
+  },
+  "check_count": 233,
+  "passed_checks": 233,
+  "checks": [
+    {
+      "name": "snapshot_exact_original_source",
+      "passed": true,
+      "sha256": "ca6caf54501109023e3ffe7d6777106c4cc746c328bd68955213f8208d12d90a",
+      "bytes": 2938
+    },
+    {
+      "name": "original_validation_passed",
+      "passed": true
+    },
+    {
+      "name": "IS_only_protocol",
+      "passed": true
+    },
+    {
+      "name": "original_source_hash:run_filter_research.py",
+      "passed": true
+    },
+    {
+      "name": "original_source_hash:src/fx_filter_candidates.py",
+      "passed": true
+    },
+    {
+      "name": "original_source_hash:src/fx_filter_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "original_source_hash:src/fx_baselines.py",
+      "passed": true
+    },
+    {
+      "name": "original_source_hash:src/fx_economics.py",
+      "passed": true
+    },
+    {
+      "name": "original_source_hash:src/fx_observation_features.py",
+      "passed": true
+    },
+    {
+      "name": "original_source_hash:build_is_filter_observations.py",
+      "passed": true
+    },
+    {
+      "name": "original_source_hash:src/fx_is_states.py",
+      "passed": true
+    },
+    {
+      "name": "input_hash:FX_Research_Datasets/data/raw/FX_Features_Book.xlsx",
+      "passed": true
+    },
+    {
+      "name": "input_hash:FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "passed": true
+    },
+    {
+      "name": "original_output_hash:is_entry_cohort_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "original_output_hash:is_entry_state_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "original_output_hash:is_entry_state_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "entry_numeric_formula_AST_unchanged",
+      "passed": true
+    },
+    {
+      "name": "state_codes_AST_unchanged",
+      "passed": true
+    },
+    {
+      "name": "state_bins_unchanged",
+      "passed": true
+    },
+    {
+      "name": "exact_180_ledger_accounts",
+      "passed": true,
+      "account_count": 180
+    },
+    {
+      "name": "ledger_row_count",
+      "passed": true,
+      "rows": 46545
+    },
+    {
+      "name": "summary_row_count",
+      "passed": true,
+      "rows": 70200
+    },
+    {
+      "name": "ledger_unique_episodes",
+      "passed": true
+    },
+    {
+      "name": "all_signal_entry_exit_dates_within_IS_cutoff",
+      "passed": true
+    },
+    {
+      "name": "entry_dates_begin_in_declared_research_period",
+      "passed": true
+    },
+    {
+      "name": "zero_cost_cached_ledger",
+      "passed": true
+    },
+    {
+      "name": "calendar_unique:EUR",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:EUR:signal",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:EUR:signal",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:EUR:entry",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:EUR:entry",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:EUR:exit",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:EUR:exit",
+      "passed": true
+    },
+    {
+      "name": "next_quote_entry:EUR",
+      "passed": true
+    },
+    {
+      "name": "signal_precedes_entry:EUR",
+      "passed": true
+    },
+    {
+      "name": "calendar_unique:GBP",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:GBP:signal",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:GBP:signal",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:GBP:entry",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:GBP:entry",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:GBP:exit",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:GBP:exit",
+      "passed": true
+    },
+    {
+      "name": "next_quote_entry:GBP",
+      "passed": true
+    },
+    {
+      "name": "signal_precedes_entry:GBP",
+      "passed": true
+    },
+    {
+      "name": "calendar_unique:AUD",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:AUD:signal",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:AUD:signal",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:AUD:entry",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:AUD:entry",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:AUD:exit",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:AUD:exit",
+      "passed": true
+    },
+    {
+      "name": "next_quote_entry:AUD",
+      "passed": true
+    },
+    {
+      "name": "signal_precedes_entry:AUD",
+      "passed": true
+    },
+    {
+      "name": "calendar_unique:NZD",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:NZD:signal",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:NZD:signal",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:NZD:entry",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:NZD:entry",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:NZD:exit",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:NZD:exit",
+      "passed": true
+    },
+    {
+      "name": "next_quote_entry:NZD",
+      "passed": true
+    },
+    {
+      "name": "signal_precedes_entry:NZD",
+      "passed": true
+    },
+    {
+      "name": "calendar_unique:JPY",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:JPY:signal",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:JPY:signal",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:JPY:entry",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:JPY:entry",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:JPY:exit",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:JPY:exit",
+      "passed": true
+    },
+    {
+      "name": "next_quote_entry:JPY",
+      "passed": true
+    },
+    {
+      "name": "signal_precedes_entry:JPY",
+      "passed": true
+    },
+    {
+      "name": "calendar_unique:CHF",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:CHF:signal",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:CHF:signal",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:CHF:entry",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:CHF:entry",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:CHF:exit",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:CHF:exit",
+      "passed": true
+    },
+    {
+      "name": "next_quote_entry:CHF",
+      "passed": true
+    },
+    {
+      "name": "signal_precedes_entry:CHF",
+      "passed": true
+    },
+    {
+      "name": "calendar_unique:CAD",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:CAD:signal",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:CAD:signal",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:CAD:entry",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:CAD:entry",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:CAD:exit",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:CAD:exit",
+      "passed": true
+    },
+    {
+      "name": "next_quote_entry:CAD",
+      "passed": true
+    },
+    {
+      "name": "signal_precedes_entry:CAD",
+      "passed": true
+    },
+    {
+      "name": "calendar_unique:NOK",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:NOK:signal",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:NOK:signal",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:NOK:entry",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:NOK:entry",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:NOK:exit",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:NOK:exit",
+      "passed": true
+    },
+    {
+      "name": "next_quote_entry:NOK",
+      "passed": true
+    },
+    {
+      "name": "signal_precedes_entry:NOK",
+      "passed": true
+    },
+    {
+      "name": "calendar_unique:SEK",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:SEK:signal",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:SEK:signal",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:SEK:entry",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:SEK:entry",
+      "passed": true
+    },
+    {
+      "name": "index_bounds:SEK:exit",
+      "passed": true
+    },
+    {
+      "name": "index_date_match:SEK:exit",
+      "passed": true
+    },
+    {
+      "name": "next_quote_entry:SEK",
+      "passed": true
+    },
+    {
+      "name": "signal_precedes_entry:SEK",
+      "passed": true
+    },
+    {
+      "name": "macro_strict_prior_fresh:K_vix_obs_date",
+      "passed": true
+    },
+    {
+      "name": "finite_macro_has_observation:K_vix",
+      "passed": true,
+      "finite_rows": 46545
+    },
+    {
+      "name": "finite_macro_has_observation:K_vix_d5",
+      "passed": true,
+      "finite_rows": 46545
+    },
+    {
+      "name": "macro_strict_prior_fresh:K_rate_obs_date",
+      "passed": true
+    },
+    {
+      "name": "finite_macro_has_observation:K_spread_bp",
+      "passed": true,
+      "finite_rows": 41401
+    },
+    {
+      "name": "finite_macro_has_observation:K_spread_d20_bp",
+      "passed": true,
+      "finite_rows": 41066
+    },
+    {
+      "name": "macro_strict_prior_fresh:K_dxy_obs_date",
+      "passed": true
+    },
+    {
+      "name": "finite_macro_has_observation:K_dxy_d20_pct",
+      "passed": true,
+      "finite_rows": 46545
+    },
+    {
+      "name": "macro_strict_prior_fresh:K_copper_obs_date",
+      "passed": true
+    },
+    {
+      "name": "finite_macro_has_observation:K_copper_d20_pct",
+      "passed": true,
+      "finite_rows": 46545
+    },
+    {
+      "name": "macro_strict_prior_fresh:K_brent_obs_date",
+      "passed": true
+    },
+    {
+      "name": "finite_macro_has_observation:K_brent_d20_pct",
+      "passed": true,
+      "finite_rows": 46545
+    },
+    {
+      "name": "state_matches_value:vol_ratio_20_63",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 0
+    },
+    {
+      "name": "state_matches_value:realized_vol_20_pct",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 0
+    },
+    {
+      "name": "state_matches_value:efficiency_63",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 0
+    },
+    {
+      "name": "state_matches_value:direction_return_20_vol",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 0
+    },
+    {
+      "name": "state_matches_value:direction_distance_ma_60_vol",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 0
+    },
+    {
+      "name": "state_matches_value:K_vix",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 0
+    },
+    {
+      "name": "state_matches_value:K_vix_d5",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 0
+    },
+    {
+      "name": "state_matches_value:direction_spread_bp",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 5144
+    },
+    {
+      "name": "state_matches_value:direction_spread_d20_bp",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 5479
+    },
+    {
+      "name": "state_matches_value:direction_dxy_d20_pct",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 0
+    },
+    {
+      "name": "state_matches_value:direction_commodity_d20_pct",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 30966
+    },
+    {
+      "name": "state_matches_value:base_pnl_63_pct",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 0
+    },
+    {
+      "name": "state_matches_value:base_pnl_252_pct",
+      "passed": true,
+      "rows": 46545,
+      "unknown_rows": 0
+    },
+    {
+      "name": "direction_formula:direction_return_20_vol",
+      "passed": true
+    },
+    {
+      "name": "direction_formula:direction_distance_ma_60_vol",
+      "passed": true
+    },
+    {
+      "name": "direction_formula:direction_spread_bp",
+      "passed": true
+    },
+    {
+      "name": "direction_formula:direction_spread_d20_bp",
+      "passed": true
+    },
+    {
+      "name": "direction_formula:direction_dxy_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "direction_formula:direction_commodity_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "exact_coverage_accounts:DISCOVERY_1",
+      "passed": true
+    },
+    {
+      "name": "block_counts:DISCOVERY_1",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:vol_ratio_20_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:realized_vol_20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:efficiency_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:direction_return_20_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:direction_distance_ma_60_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:K_vix",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:K_vix_d5",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:direction_spread_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:direction_spread_d20_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:direction_dxy_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:direction_commodity_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:base_pnl_63_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_1:base_pnl_252_pct",
+      "passed": true
+    },
+    {
+      "name": "exact_coverage_accounts:DISCOVERY_2",
+      "passed": true
+    },
+    {
+      "name": "block_counts:DISCOVERY_2",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:vol_ratio_20_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:realized_vol_20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:efficiency_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:direction_return_20_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:direction_distance_ma_60_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:K_vix",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:K_vix_d5",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:direction_spread_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:direction_spread_d20_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:direction_dxy_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:direction_commodity_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:base_pnl_63_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DISCOVERY_2:base_pnl_252_pct",
+      "passed": true
+    },
+    {
+      "name": "exact_coverage_accounts:DEVELOPMENT",
+      "passed": true
+    },
+    {
+      "name": "block_counts:DEVELOPMENT",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:vol_ratio_20_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:realized_vol_20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:efficiency_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:direction_return_20_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:direction_distance_ma_60_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:K_vix",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:K_vix_d5",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:direction_spread_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:direction_spread_d20_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:direction_dxy_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:direction_commodity_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:base_pnl_63_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:DEVELOPMENT:base_pnl_252_pct",
+      "passed": true
+    },
+    {
+      "name": "exact_coverage_accounts:VALIDATION",
+      "passed": true
+    },
+    {
+      "name": "block_counts:VALIDATION",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:vol_ratio_20_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:realized_vol_20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:efficiency_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:direction_return_20_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:direction_distance_ma_60_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:K_vix",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:K_vix_d5",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:direction_spread_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:direction_spread_d20_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:direction_dxy_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:direction_commodity_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:base_pnl_63_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:VALIDATION:base_pnl_252_pct",
+      "passed": true
+    },
+    {
+      "name": "exact_coverage_accounts:CONFIRMATION",
+      "passed": true
+    },
+    {
+      "name": "block_counts:CONFIRMATION",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:vol_ratio_20_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:realized_vol_20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:efficiency_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:direction_return_20_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:direction_distance_ma_60_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:K_vix",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:K_vix_d5",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:direction_spread_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:direction_spread_d20_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:direction_dxy_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:direction_commodity_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:base_pnl_63_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:CONFIRMATION:base_pnl_252_pct",
+      "passed": true
+    },
+    {
+      "name": "exact_coverage_accounts:IS",
+      "passed": true
+    },
+    {
+      "name": "block_counts:IS",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:vol_ratio_20_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:realized_vol_20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:efficiency_63",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:direction_return_20_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:direction_distance_ma_60_vol",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:K_vix",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:K_vix_d5",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:direction_spread_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:direction_spread_d20_bp",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:direction_dxy_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:direction_commodity_d20_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:base_pnl_63_pct",
+      "passed": true
+    },
+    {
+      "name": "summary_state_counts:IS:base_pnl_252_pct",
+      "passed": true
+    },
+    {
+      "name": "immutable_file_preserved:reproduced\\filter_is_diagnostics_v2\\entry_state_protocol.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_file_preserved:reproduced\\filter_is_diagnostics_v2\\entry_state_validation.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_file_preserved:reproduced\\filter_is_diagnostics_v2\\is_entry_cohort_coverage.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable_file_preserved:reproduced\\filter_is_diagnostics_v2\\is_entry_state_ledger.csv.gz",
+      "passed": true
+    },
+    {
+      "name": "immutable_file_preserved:reproduced\\filter_is_diagnostics_v2\\is_entry_state_summary.csv",
+      "passed": true
+    }
+  ]
+}

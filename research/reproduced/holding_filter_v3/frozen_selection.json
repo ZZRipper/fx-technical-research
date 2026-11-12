@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-10-23T06:09:37.511197+00:00",
+  "protocol_sha256": "595770463740715a0e1abb22fa2a56887de039cf2d189779f03a437f1ae9d6f0",
+  "selection_basis": "Original SCREEN and original within-account ranking, then freeze one passing candidate per account. Evaluate every frozen candidate under unchanged OOS_SCREEN. No OOS-based rule revisions, substitutions or deletions.",
+  "oos_evaluated_at_freeze": false,
+  "source_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "run_holding_filter_research.py": "02fdec7e7af9a94a8bb6e4c0029e57d193a4e7dc9cafb8a7ec61f5691501e71e",
+    "src/fx_holding_filters.py": "67b784ab5f2e2b1fdc86b555ab0f8e4b794017a3ad31df0f59a7834ae7e5a84e",
+    "build_holding_observations.py": "2a3e5140e35fbda6203a2b5cec9baaf0e2c79ed71a22418f496783b5e42a569d"
+  },
+  "input_sha256": {
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "reproduced/holding_observations_v3/holding_observation_protocol.json": "81109ee024c58b3751abfd1ce074ea69a8f00c4b18422b15eb619f6a4acee15f",
+    "reproduced/holding_observations_v3/holding_observation_validation.json": "0e4237476cb52702d8eeca76746c7cafd7880bbbd5f37c448b5214b5b1570841",
+    "reproduced/holding_observations_v3/discovery_repeated_negative_patterns.csv": "f02a7e7e36d82de365762c57bd4dacdfdf80ad84c832b91f2c4500b6c5893ccb",
+    "reproduced/holding_observations_v3/discovery_repeated_negative_patterns.json": "20c6d2c4b5330dea1536f60ee7c07bb594928bd1e5c3f6083fca142466495a57",
+    "reproduced/holding_observations_v3/holding_coverage.csv": "cad15ffb4b3c516539d58d15666abdb8bcd90f1d21a9f3082e9ee6ce92ee682e",
+    "reproduced/holding_observations_v3/holding_state_summary.csv": "a37a3d0862559690189ccbc335a4feccb2968f18c5e1a1293e12c6761cdf5203",
+    "reproduced/holding_observations_v3/is_base_trade_ledger.csv.gz": "1fa2f3f890cfab95c3562ed1a6ebaaebff64ebd82f7a9b3abfe70493fb0700e7",
+    "reproduced/holding_observations_v3/is_holding_checkpoints.csv.gz": "bd122a23fa6777c8f2dac7e8ff19dd471be5322843cf616ab883d30d6c0dfa74"
+  },
+  "is_output_sha256": {
+    "is_account_coverage.csv": "fc09c109034d394b7c364cb928bdda4f9572cc67999d650d91a9e4f83389272d",
+    "is_all_decisions.csv.gz": "9b33eace54f06bbea3cfd77cc1b4794a024965f648c1c5135c2d8313efc3d01f",
+    "is_all_metrics.csv": "01149121361e108b2c01bda7b6c4b15e62bf983c3ef0c7b5d4f10cb61ed177ab",
+    "is_frozen_daily.csv.gz": "8fe66d2ddd3307e272efec3856674eb9874e3b957b995d11905d9106cc33887a",
+    "is_frozen_metrics.csv": "9c2cda6c7a5476c6666fda7e370a749d6c4163d35abe948b1bf17ec9bfab3a7f",
+    "is_hypotheses.json": "21f61a768c627afdb541383693a08b7d066de774b6f745caf6ed041f0a889921",
+    "is_selection.csv": "edc4d06b409349246a0f90844e0fc70de64658b60ee6a5f3057671e69be52ce2"
+  },
+  "candidates": [],
+  "all_candidate_accounts_tested": 391,
+  "all_passing_versions": 0,
+  "frozen_candidates": 0
+}

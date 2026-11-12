@@ -1,0 +1,3 @@
+check,rows,max_abs_error,pass
+BB_MR_10_and_BB_BO_10_opposite_daily_returns,50265,0.0,True
+BB_MR_20_and_BB_BO_20_opposite_daily_returns,50265,0.0,True

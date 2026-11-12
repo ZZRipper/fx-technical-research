@@ -1,0 +1,10 @@
+gate,criterion,failed_versions,passed_versions
+positive_and_annualized_pass,正收益且简单年化至少 1%,82,15
+return_improvement_pass,收益改善至少 5 pp,25,72
+win_rate_pass,胜率改善至少 2 pp,68,29
+payoff_pass,盈亏比相对改善至少 10%,56,41
+drawdown_pass,最大回撤恶化不超过 2 pp,0,97
+return_to_drawdown_pass,收益 / 回撤比改善,28,69
+sample_pass,至少 50 笔平仓且保留至少 50%,45,52
+block_positive_pass,至少两段正收益且末段为正,55,42
+block_improvement_pass,至少两段优于 BASE 且末段改善,54,43

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "opened_utc": "2026-10-23T05:14:24.314326+00:00",
+  "freeze_sha256": "60121ca59443ceb6ec9ccf2f9312dfa44df0f5bd60b99a683ec5a79a6b45a671",
+  "protocol_sha256": "f177e690c0efa07b8efc3f331706251b6383a662fd57683ff76c6f37f3c37839",
+  "oos_evaluated": true,
+  "freeze_created_before_oos": true,
+  "candidate_count": 6,
+  "retuning_permitted": false,
+  "finished_utc": "2026-10-23T05:14:33.455752+00:00",
+  "source_integrity_pass": true,
+  "is_prefix_positions_and_returns_match": true,
+  "is_screen_completed": true,
+  "curve_passing_candidates": 0,
+  "quality_confirmed_candidates": 1,
+  "both_curve_and_quality_candidates": 0,
+  "output_sha256": {
+    "candidate_assessment.csv": "521bd3680bc36e82ffee8b9fb0dad95918b56d0ccc9c1a9d0df0ae7ad838a124",
+    "frozen_full_episode_decisions.csv.gz": "fc4df2982b076533cdcdd8f808f557793501cc71ce209ed0802c34b72f9ad05b",
+    "frozen_full_trade_ledger.csv.gz": "94af47a28c0b6e9d31eed538a566e25a2c905a3fc901872173c3fb8a30f3b60f",
+    "oos_anniversary_metrics.csv": "b886dde00fee7e4cac1f28fb30a20aeb8b2f0b68adb533f2b4a462f0a572da6d",
+    "oos_daily.csv.gz": "17f3eb6c4f1a91ff1a1fec8795c7c86ed58a35f1340037304317a597a52de57f",
+    "oos_fresh_start_metrics.csv": "600a401b866821971be4db3e19e53875c6d6f4d3a961396fb9eab5ae55e5ee1c",
+    "oos_metrics.csv": "f7a5e72c0e3665de54b1103e8010081c3da760d5aacf8548aad2e7c3361b7ea3"
+  }
+}

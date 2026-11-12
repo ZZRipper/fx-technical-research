@@ -1,0 +1,61 @@
+<section id="pair-comparison" hidden aria-label="Pair and Strategy Comparison">
+ <section class="panel pd-intro">
+  <div class="scope">Fixed rules · nine USD pairs · retrospective evidence</div>
+  <h2>Pair × Strategy Comparison</h2>
+  <p>Which style has broader historical support: Mean Reversion or Trend / Momentum?</p>
+  <p id="pc-scope" class="pc-warning"></p>
+  <div class="pc-controls"><label>Pair detail <select id="pc-pair"></select></label><button id="pc-export" type="button">Download all rule metrics · CSV</button></div>
+  <p class="pd-note">MR = Mean Reversion. Trend includes momentum and breakout rules. Compare fixed rules, not a fitted model or a strategy-selection portfolio.</p>
+ </section>
+ <section class="panel"><h2>1. Conclusions by pair</h2>
+  <p>Question: which style worked better for each pair from 2020 onward? These conclusions weigh rule breadth, annual consistency and earlier-history checks. They describe this historical sample, not future trading suitability. Click a pair to inspect its evidence.</p>
+  <div id="pc-overview" class="table-wrap"></div><details class="pd-method"><summary>Numerical evidence behind the conclusions</summary><div id="pc-statistics" class="table-wrap"></div></details>
+  <p class="pd-note">Category Sharpe = median of strategy-family median Sharpes. Positive families = families with positive median rule return. MR has 2 families; Trend has 6. No daily returns are pooled into a portfolio. Counts of rules, families and years are not independent statistical trials.</p>
+ </section>
+ <section class="panel"><h2 id="pc-title"></h2><div id="pc-conclusion" class="pc-conclusion"></div><div class="pc-detail-nav" role="group" aria-label="Pair detail views"><button id="pc-view-evidence" type="button" aria-pressed="true">Style comparison</button><button id="pc-view-timeline" type="button" aria-pressed="false">Performance timeline</button></div><div id="pc-evidence-view"><div id="pc-reading" class="pc-warning"></div>
+  <h3>2. Historical comparison</h3><p class="pd-note">Earlier history checks whether the recent ranking persists. Three five-year blocks and the complete pre-2020 period are shown separately. Different durations and market conditions limit direct comparability.</p><div id="pc-periods" class="table-wrap"></div>
+  <h3>3. Strategy families and individual rules · 2020 onward</h3><div id="pc-family" class="table-wrap"></div><h4>Individual rules</h4><p class="pd-note">All 17 eligible rules remain visible in fixed family order. No winner selection. Benchmarks are separate and excluded from category summaries. Low trade count (&lt;20) is a descriptive flag, not a significance threshold.</p><div id="pc-rules" class="table-wrap"></div>
+  <h3>4. Annual simple return (%)</h3><p class="pd-note">Each cell is a rule's daily PnL summed within that calendar year / initial capital. Color is capped at ±20% for readability; numbers are not capped. Orange = loss; teal = profit. An asterisk marks an incomplete calendar year. Annual cells reconcile to the corresponding full-period return.</p><label>Annual view <select id="pc-years"><option value="recent">2020 onward</option><option value="history">2005–2019</option><option value="all">All years</option></select></label><div id="pc-heatmap" class="table-wrap"></div>
+  <h3>5. Dependence on strategy-family coverage</h3><p class="pd-note">Remove one family at a time and recompute the 2020-onward category medians. A ranking reversal indicates dependence on the chosen strategy set. Removing one MR family leaves only one; this is a limitation, not independent confirmation. The final row removes both mirrored Bollinger families together.</p><div id="pc-sensitivity" class="table-wrap"></div>
+  <details class="pd-method"><summary>Definitions, execution and evidence limits</summary>
+   <p><b>Universe:</b> 5 MR rules in 2 families; 12 Trend rules in 6 families. Ensemble, regime-switch and economic-filter versions are excluded. Rules were already examined historically; the universe is not a preregistered, untouched test set.</p>
+   <p><b>Accounting:</b> fixed initial USD 100,000, signed 1× exposure, additive daily spot PnL; zero transaction costs, zero financing / carry, zero cash interest. Results are gross spot diagnostics, not deployable net returns. Equal notional is not equal risk.</p>
+   <p><b>Timing:</b> existing engine: signal at day t close, execute at next available close, first earned return ends one trading day later. Continuous accounts are sliced, not restarted; carry-in positions contribute to window PnL. Early prices warm indicators.</p>
+   <p><b>Sharpe:</b> √252 × mean(daily strategy return) / sample standard deviation. Flat days included, zero reference return. Conventional annualization is descriptive; serial dependence is not adjusted and no significance is claimed. Zero volatility gives an undefined Sharpe.</p>
+   <p><b>Drawdown:</b> most negative decline from the running peak of window-reset additive equity, divided by initial capital, in percentage points. Not the same as peak-equity percentage drawdown.</p>
+   <p><b>Closed trades:</b> exits inside the window, at least one earned return interval; includes trades entered before the window. Open trades are excluded from this count but contribute daily PnL. Exposure counts held return intervals, including zero-price-change days.</p>
+   <p><b>Category summaries:</b> median within each family, then median across families. Metrics summarize individual rules; they are not performance of a combined account. Positive-family breadth uses median cumulative return, while ranking uses median Sharpe; the two may disagree.</p>
+   <p><b>Dependence:</b> same-price indicators, overlapping positions, USD exposure and different currency pairs are correlated. Bollinger MR / Breakout have opposite directions under the existing matched rules. More positive rules do not constitute more independent evidence.</p>
+   <p><b>Conclusions:</b> qualitative, pair-specific assessments of the displayed fixed-window evidence, not a fitted classification or a claim of statistical significance. No universal numerical cutoff assigns a preferred style. A mixed conclusion may coexist with a small category-median lead.</p>
+   <p><b>Interpretation:</b> no fitted cutoffs, p-values, significance labels or “suitable for trading” classification. Earlier-history agreement, annual consistency and family-removal sensitivity are descriptive checks. Existing full-history review prevents calling 2020 onward an untouched OOS test. Costs, portfolio exposure and genuinely unseen validation remain unresolved.</p>
+   <div id="pc-definitions"></div><p id="pc-validation" class="pd-note"></p>
+  </details>
+ </div>
+ <div id="pc-timeline-view" hidden>
+  <div class="pt-heading"><div><h3 id="pt-title"></h3><p>When did this rule earn, lose or hold no exposure? Inspect fixed calendar periods and the positions behind them.</p></div></div>
+  <div class="pc-controls pt-controls">
+   <label>Trading rule<select id="pt-rule"></select></label>
+   <label>History<select id="pt-scope"><option value="recent">2020 onward</option><option value="history">2005–2019</option><option value="all">All workbook history</option></select></label>
+   <label>Period size<select id="pt-group"><option value="month">Calendar month</option><option value="quarter">Calendar quarter</option></select></label>
+   <button id="pt-export" type="button">Export periods · all pairs &amp; rules</button>
+  </div>
+  <p id="pt-rule-text" class="pd-note"></p>
+  <div id="pt-summary" class="pt-summary"></div>
+  <div class="pt-legend"><span class="pt-state gain">Gain</span><span class="pt-state loss">Loss</span><span class="pt-state idle">No exposure</span><span class="pt-state flat">Active flat</span><span>Daily cumulative PnL · USD</span></div>
+  <div id="pt-curve"></div>
+  <p class="pd-note">Shading describes the completed period's outcome, not a signal known at its start. Gain / Loss use the sign of net PnL; they do not imply statistical significance. No exposure means zero held return intervals, not necessarily zero raw indicator signals.</p>
+  <div id="pt-calendar" class="table-wrap"></div>
+  <p class="pd-note">Click a calendar cell to inspect it, or select a range below. Cell value = net PnL; Total = held intervals / all quote intervals; L / S = Long / Short exposure on the same denominator. Hover for percentages to one decimal place. Flat means no position. Display rounding may prevent exact addition. * = incomplete boundary period. Changing months to quarters checks sensitivity to period boundaries; it does not change trades.</p>
+  <div class="pc-controls pt-range"><label>Inspect from<select id="pt-first"></select></label><label>Through<select id="pt-last"></select></label><button id="pt-reset-range" type="button">Inspect full window</button></div>
+  <div id="pt-inspection" class="pt-inspection"></div>
+  <h4>Does the result depend on a few profitable periods?</h4>
+  <div id="pt-concentration" class="table-wrap"></div><p id="pt-concentration-note" class="pd-note"></p>
+  <details class="pd-method"><summary>Period attribution method</summary>
+   <p>All 17 fixed rules and all nine pairs use the original continuous BASE accounts. Daily PnL is assigned by its return-ending date. Trades spanning months are split across those months by daily PnL; a whole trade is not assigned to its exit month. Open positions and carry-ins contribute when held.</p>
+   <p>Labels are based on fixed, non-overlapping calendar months or quarters. Gain: positive net PnL; Loss: negative net PnL; No exposure: no held return intervals; Active flat: exposure exists but net PnL is zero within a numerical tolerance of USD 0.0000001. Small gains and losses remain gains and losses; no economic or significance cutoff is fitted. Offset measures cancellation continuously instead of imposing a subjective sideways label.</p>
+   <p>Partial periods are excluded only from the profitable-period concentration comparison, not from the PnL curve or period ledger. Completeness checks the first and last weekdays of the calendar bucket; weekends are adjusted, unavailable weekday boundaries are conservatively treated as incomplete. Exposure is measured from actual held positions, not indicator targets or entry counts. Long = long the foreign currency versus USD; Short = short the foreign currency versus USD. Long and Short percentages both divide by all quote intervals in the selected period; their sum equals Total exposure. Flat = no position and completes 100%. Counts include unchanged-price days. The entry close earns no return interval; the exit close includes the final held interval. Displayed percentages are rounded independently; use the underlying counts or CSV for exact reconciliation.</p>
+   <p>All figures are gross spot PnL on fixed initial USD 100,000, without transaction costs or carry. Calendar labels are retrospective outcomes, not market regimes or forward trading signals. The export records the last return date when each label is known; do not use that label as a predictor of returns inside the same period. Annual / style evidence remains in the adjacent Style comparison view; trade-level profit distributions remain in Trade Profit Distribution.</p>
+  </details>
+ </div>
+ </section>
+</section>

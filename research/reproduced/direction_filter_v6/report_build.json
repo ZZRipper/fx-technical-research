@@ -1,0 +1,19 @@
+{
+  "report": "filter_research_report.html",
+  "atlas": "pnl_comparison.pdf",
+  "figures": [
+    "figures/frozen_0001.png"
+  ],
+  "frozen_candidates": 1,
+  "pdf_pages": 1,
+  "oos_evaluated": true,
+  "ordering": "IS freeze_rank only",
+  "diagnostic_input_sha256": {
+    "oos_fresh_start_metrics.csv": "e6a1c44b8cd3ee66ca6efe09f7dd85a740945853e8c3060e6dda204bba76ffb7"
+  },
+  "sha256": {
+    "filter_research_report.html": "deeb5280609e6ff5ec2464f16881fd10d23a4de67b6c526065ad636cb5f06fa8",
+    "pnl_comparison.pdf": "48ec6b0611923b28ba4aa41833ffab7d3480c5c95510eb1f0d33cf7a13a55684",
+    "figures/frozen_0001.png": "760342e9b8bf82e7dd3bc51b79e2f9706da244abb8d957c2d1a81f2c10264e2d"
+  }
+}

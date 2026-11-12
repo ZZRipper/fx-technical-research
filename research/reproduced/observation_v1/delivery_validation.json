@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-23T04:52:51.538450+00:00",
+  "unit_tests": 19,
+  "unit_test_command": "python -B -X utf8 -m unittest discover -s tests -v",
+  "pdf_pages": 20,
+  "html_images": 20,
+  "broken_links": [],
+  "source_or_output_hash_mismatches": [],
+  "all_selected_windows_complete_and_disjoint": true,
+  "hypothesis_cards": 4,
+  "hypotheses_sha256": "0d1f9062684fcb1dc56e3f2befddbc472f7b9ecc4cd54640a6844268047d191f",
+  "structural_checks": [
+    {
+      "check": "BB_MR_10_and_BB_BO_10_opposite_daily_returns",
+      "rows": 50265,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "BB_MR_20_and_BB_BO_20_opposite_daily_returns",
+      "rows": 50265,
+      "max_abs_error": 0.0,
+      "pass": true
+    }
+  ],
+  "new_filter_backtests_performed": false
+}

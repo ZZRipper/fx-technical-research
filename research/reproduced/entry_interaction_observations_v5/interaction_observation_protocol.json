@@ -1,0 +1,201 @@
+{
+  "version": "entry_interaction_observations_v5",
+  "created_utc": "2026-10-23T06:36:56.850634+00:00",
+  "compute_cutoff": "2014-12-31",
+  "source_cache_cutoff": "2023-05-29",
+  "cost_bp": 0,
+  "accounts": 180,
+  "pairs": [
+    "EUR",
+    "GBP",
+    "AUD",
+    "NZD",
+    "JPY",
+    "CHF",
+    "CAD",
+    "NOK",
+    "SEK"
+  ],
+  "strategies": [
+    "RSI_MR_7",
+    "RSI_MR_14",
+    "RSI_MR_20",
+    "RSI_MOM_7",
+    "RSI_MOM_14",
+    "RSI_MOM_20",
+    "MA_10_30",
+    "MA_20_60",
+    "BB_MR_10",
+    "BB_MR_20",
+    "BB_BO_10",
+    "BB_BO_20",
+    "DONCHIAN_BO_10",
+    "DONCHIAN_BO_20",
+    "MACD_12_26_9",
+    "TSMOM_21",
+    "TSMOM_63",
+    "VOTE_EQUAL_4",
+    "VOTE_STRENGTH_4",
+    "REGIME_RULE_FIXED"
+  ],
+  "allowed_interactions": [
+    {
+      "interaction_id": "efficiency_volatility",
+      "feature_a": "efficiency_63",
+      "feature_b": "vol_ratio_20_63"
+    },
+    {
+      "interaction_id": "efficiency_directional_stretch",
+      "feature_a": "efficiency_63",
+      "feature_b": "direction_return_20_vol"
+    },
+    {
+      "interaction_id": "dollar_carry_conflict",
+      "feature_a": "direction_dxy_d20_pct",
+      "feature_b": "direction_spread_bp"
+    }
+  ],
+  "state_bins": {
+    "vol_ratio_20_63": [
+      0.8,
+      1.0,
+      1.25
+    ],
+    "realized_vol_20_pct": [
+      5.0,
+      10.0,
+      15.0
+    ],
+    "efficiency_63": [
+      0.1,
+      0.2,
+      0.4
+    ],
+    "direction_return_20_vol": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "direction_distance_ma_60_vol": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "K_vix": [
+      15.0,
+      20.0,
+      30.0
+    ],
+    "K_vix_d5": [
+      -3.0,
+      0.0,
+      3.0
+    ],
+    "direction_spread_bp": [
+      -100.0,
+      0.0,
+      100.0
+    ],
+    "direction_spread_d20_bp": [
+      -10.0,
+      0.0,
+      10.0
+    ],
+    "direction_dxy_d20_pct": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "direction_commodity_d20_pct": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "base_pnl_63_pct": [
+      -2.0,
+      0.0,
+      2.0
+    ],
+    "base_pnl_252_pct": [
+      -5.0,
+      0.0,
+      5.0
+    ]
+  },
+  "allowed_states": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "blocks": [
+    [
+      "D1",
+      "2005-01-03",
+      "2009-12-31"
+    ],
+    [
+      "D2",
+      "2010-01-01",
+      "2014-12-31"
+    ],
+    [
+      "D",
+      "2005-01-03",
+      "2014-12-31"
+    ]
+  ],
+  "maximum_features_per_interaction": 2,
+  "clock": "Signal-close prices and already-earned BASE PnL; macro observation strictly earlier than signal and no older than seven calendar days. Original entry fills next quote close.",
+  "cohort": "Original BASE entry and eligible true close both inside each block. Cross-D1/D2 trades appear in combined D only. Open and cross-D-end rows are never decoded as numerical outcomes.",
+  "outcome_parse_guard": "Skip entries after 2014-12-31, pre-D entries, nonclosed entries and exits after D before float conversion of any return field. No later outcome numbers are parsed.",
+  "partition_groups": {
+    "joint": "A==a AND B==b",
+    "A_only": "A==a AND B known but not b",
+    "B_only": "B==b AND A known but not a",
+    "neither": "Both known and neither selected state",
+    "UNKNOWN": "Either feature unknown; always retained by a potential joint rule"
+  },
+  "comparison_groups": {
+    "A_all": "All A==a, including B unknown",
+    "B_all": "All B==b, including A unknown",
+    "retained": "Every original episode outside the known joint cell, including UNKNOWN"
+  },
+  "overlap": "Five partition groups disjoint within a cell. Comparison groups overlap them. Cells from different feature pairs and accounts can overlap; these are not independent samples.",
+  "proposal_support": {
+    "D1_min_joint_closed_n": 10,
+    "D2_min_joint_closed_n": 10,
+    "D1_D2_joint_return_sum_pct_each_lt": -1e-10,
+    "D_joint_return_sum_pct_lt": -1e-10,
+    "concentration_and_complement_differences": "Diagnostics only, never additional gates"
+  },
+  "mechanisms": {
+    "efficiency_volatility": "Distinguish path directionality from recent volatility acceleration; choppy expanding ranges may impair trend/breakout entries.",
+    "efficiency_directional_stretch": "Distinguish a strong opposite-direction move on an efficient path from a noisy pullback; relevant to mean reversion versus momentum.",
+    "dollar_carry_conflict": "Distinguish broad dollar conflict from directional interest-spread background. Positive direction_DXY is adverse to the foreign-currency position. No carry return is credited."
+  },
+  "multiplicity_and_status": "Exploratory reuse of previously observed IS. Exactly three feature pairs, all 16 cells each, no feature-set expansion from outcomes, no p-values or causal claim, no filtered paths. Prior three-year holdout has historical exposure and is not accessed here.",
+  "oos_computed": false,
+  "source_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "build_is_filter_observations.py": "e5f96075dd5102319110031b0e9d13b84d7f4bf75ba6806aa5eee9449b723485",
+    "src/fx_is_states.py": "b14cacc51e83587dbd15514e05ff608ecb1ead4e8a875f6eab2acaf41a6d8f5b",
+    "build_entry_interaction_observations.py": "ed53ec7acacaf763b0598af0818d47fa2bbb448e168d3d5c6a85d797ea114825"
+  },
+  "input_sha256": {
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "reproduced/filter_is_diagnostics_v2/entry_state_protocol.json": "94e8208cb3039808de13af472339443cca6dd818324f08d84db669e8a0d01c04",
+    "reproduced/filter_is_diagnostics_v2/entry_state_validation.json": "2637b364492c0f6b9ba80823cd3f4fcfbef2f5ddca05584a19ab010c4c208e18",
+    "reproduced/filter_is_diagnostics_v2/technical_validation_amendment.json": "9b53b05bad9b78eafc75775ab7ea877aedb5ed7bcd253edbd1992d04261a7056",
+    "reproduced/filter_is_diagnostics_v2/is_entry_state_ledger.csv.gz": "46718a115c30684bc4cbba1180120b1eb695a2d7c3fe2648ca259cc111f9f078",
+    "reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv": "3e977f3e69662b1aba5e0e9d1d1cb8af4ecabccf24dd3fa2e315c9aa5ea91b2a",
+    "reproduced/filter_is_diagnostics_v2/is_entry_cohort_coverage.csv": "3115e6fa52bfc599a1f0ffd3ebdd1208f05a9e265cc652e172d01f80651aaa8a",
+    "reproduced/filter_is_diagnostics_v2/source_snapshots/fx_is_states_initial.py": "ca6caf54501109023e3ffe7d6777106c4cc746c328bd68955213f8208d12d90a"
+  }
+}

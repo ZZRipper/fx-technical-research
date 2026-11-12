@@ -1,0 +1,218 @@
+{
+  "created_utc": "2026-10-23T07:18:05.316455+00:00",
+  "report": "state_original_screen_report.html",
+  "base_report": "filter_research_report.html",
+  "atlas": "pnl_comparison.pdf",
+  "figures": [
+    "figures/frozen_0001.png",
+    "figures/frozen_0002.png",
+    "figures/frozen_0003.png",
+    "figures/frozen_0004.png",
+    "figures/frozen_0005.png",
+    "figures/frozen_0006.png",
+    "figures/frozen_0007.png",
+    "figures/frozen_0008.png",
+    "figures/frozen_0009.png",
+    "figures/frozen_0010.png",
+    "figures/frozen_0011.png",
+    "figures/frozen_0012.png",
+    "figures/frozen_0013.png",
+    "figures/frozen_0014.png",
+    "figures/frozen_0015.png",
+    "figures/frozen_0016.png",
+    "figures/frozen_0017.png",
+    "figures/frozen_0018.png",
+    "figures/frozen_0019.png",
+    "figures/frozen_0020.png",
+    "figures/frozen_0021.png"
+  ],
+  "accounts": 180,
+  "candidate_versions": 1201,
+  "fixed_old_proposal_specs_match": true,
+  "original_standard_passing_versions": 23,
+  "frozen_candidates": 21,
+  "oos_evaluated": true,
+  "ordering": "Saved freeze_rank first, then original is_selection row order.",
+  "oos_pass_counts": {
+    "curve": 3,
+    "quality": 6,
+    "both": 3,
+    "not_both": 18
+  },
+  "passed_summary_pdf": {
+    "file": "passed_candidates.pdf",
+    "pages": 3,
+    "freeze_ranks": [
+      5,
+      12,
+      15
+    ],
+    "candidate_ids": [
+      "GBP|MACD_12_26_9|STATE_direction_dxy_d20_pct_3",
+      "CAD|TSMOM_63|STATE_direction_dxy_d20_pct_1",
+      "EUR|BB_MR_20|STATE_direction_distance_ma_60_vol_0"
+    ],
+    "definition": "Saved oos_curve_pass AND oos_quality_confirmed; original IS rank, complete atlas retained.",
+    "strategy_recomputed": false
+  },
+  "previously_evaluated_candidate_id": "JPY|BB_MR_20|STATE_efficiency_63_1",
+  "previously_evaluated_candidate_frozen_again": true,
+  "prior_v2_protocol_conclusion_unchanged": true,
+  "input_paths_relative_to": "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\state_original_screen_v7",
+  "input_sha256": {
+    "development_status.json": "4132a8670d9118517ef68d1213a72c956bf692e83280d8ce95e7627f30a82461",
+    "protocol.json": "59dc3ab2dc0489030f97974470a9ee5e2da70cf4ec29c2e1b28bcd6e9ff7a548",
+    "frozen_selection.json": "8aaf3d1b3ea70b7c384b57cbf998cf6ba15cdd72cef4f764c2e468d342ba209c",
+    "is_account_coverage.csv": "dbcc89ebcc454b4e7ec65a7aac389b578734353f53a8f426c1686638953caf03",
+    "is_all_decisions.csv.gz": "af93d5e0695e23364bce3d861b569441f43c95185faa3027eeaa125222594b99",
+    "is_all_metrics.csv": "35fa4e7cb19c0d55675fea5ba96e5d6ba01cc129d8f5f5a5eb806c40853ef8bf",
+    "is_frozen_daily.csv.gz": "51bfbba0d1ad2d74f9a046179c9af34cbd3a7a4720908f0a61bf40b0af5583e3",
+    "is_frozen_decisions.csv.gz": "a9d3c8d930f99bbe4039f11a75aacd4fb7b371b907ce062c14775122c3119cd2",
+    "is_frozen_metrics.csv": "1a9890de2031c88e789635fcf73a82a4ee0e0de7eed636e1dd3581d3c8e779da",
+    "is_frozen_trades.csv.gz": "5df8ace7fb2b24613941fab5522ffaccb72c885d2d305c8a899f11c08b106756",
+    "is_hypotheses.json": "c9ca17bc4db85759b6cd885b585c20826fda783ba25c873022b574c79a69db6e",
+    "is_selection.csv": "9bf46a03f80d10c0d4b16b2261d3d99bdfb142579ae327825ce6bda08433dbf8",
+    "../state_filter_v2/discovery_proposals.json": "856e486434ef010bed09444cac16ba33d706cff08f3f1de37da750217d1557b6",
+    "oos_status.json": "1910826539291b8d6f973fd735f5200b0a384c08185d855bbfdc63dc31dbbb42",
+    "candidate_assessment.csv": "ca54634ed3d5f55c65b52c22ae070744c5fd48a67b3720380ee55df90bb3f549",
+    "frozen_full_episode_decisions.csv.gz": "5b7733c5b963ed54a7a808c7e1f956ecd54baffba0eb123f4c339743e5acc537",
+    "frozen_full_trade_ledger.csv.gz": "f04cfe889261d2f16ac574ae2257cd488892479775d122be1d3ee72739de4b36",
+    "oos_anniversary_metrics.csv": "fe66bf9f9a1ab4d519f53ba7812a8f81aeaa806f1065e2383dff07dd73e98781",
+    "oos_daily.csv.gz": "c3b13cc5b8e9741f2cf7bc2249368f210cf8280293891e2eee14baae490fda6a",
+    "oos_fresh_start_metrics.csv": "d64d39129444db047362dadfc41999deaf4d6d8bfdac44306dfda8875ab4f0ab",
+    "oos_metrics.csv": "f8a186459c8d475767d1919adc5e2265fee6f7016666669fa6f25a36d201f8a7",
+    "independent_validation.json": "e1eb286216d12c0b487fec7545324c8ac49ae97473ca2d27959e016820253f48",
+    "post_oos_independent_validation.json": "d38b275b6e123c4c8fbc426d84c52ef047b6662c586bf89a8d8a4a5f53471906"
+  },
+  "output_sha256": {
+    "state_original_screen_report.html": "3f23d669e3ed1e4b327b97d2cddbf29afff3b9e07c49a62ecb360301fb964901",
+    "is_state_decision_counts.csv": "bd35951705d9c0fbfa91c7a65f99c9e8ff7cc235f310bb7555d05ed3d2e19ec7",
+    "is_state_gate_failures.csv": "514607605ce03c905b1f063367f8714c114da0ff7f33bba18ee417a0d2a06558",
+    "report_build.json": "34957de2acb2b4a17d84150079d70688fc330056d250ff6f7fa4499338b35820",
+    "filter_research_report.html": "7f63ebbc3e9f22ac614fd17bfdbed17fa4b0a3a6166fdb35209027bce7ae43c7",
+    "pnl_comparison.pdf": "76e5d839adad6397e2b039b12dd340850fcfd4555f5128d6571ab88552a97d3d",
+    "figures/frozen_0001.png": "4031186cfa926570c8a55765b05a14e32de17db21a69c107728973c7ccd22ce1",
+    "figures/frozen_0002.png": "faa5f1db2bd0ed06f315b764ea2563dabf33d92e29aedcfad130bcaa0259992f",
+    "figures/frozen_0003.png": "e36df73afc980f5748aeee1f99d7819617ec9c4440399948f149380d911f63b0",
+    "figures/frozen_0004.png": "f2e37ec2ebc9b4390f996553b5510f3812e7f1d62a5b1f3c108bd59ab83d94ea",
+    "figures/frozen_0005.png": "c582058ed1d44f78f736d616b9854895ad151b864a582e5b7cbaf0619924b2c6",
+    "figures/frozen_0006.png": "9ce1bc46e619d9ba68c68fc5d185500f5473871c2b9999b8b829bd8d9122d8f2",
+    "figures/frozen_0007.png": "185ff60aa2daae561b29c3b096ab80934309540c56eef1bdedd7bc547af027bb",
+    "figures/frozen_0008.png": "495ab79a6a58378315e850b0ebf027015614705a2be5d43fd32fb3cf9a9e5f52",
+    "figures/frozen_0009.png": "deb94cd93efee6a163f6d852736c683dfa5514454cc8685b81b81f753af42dac",
+    "figures/frozen_0010.png": "7d5b79119e39292ef7f3a392ab6a7f4d04db610e9600342a1a3d71f6369ebc1d",
+    "figures/frozen_0011.png": "070493c29ba5f8fb79ce8b1937d622dee31b3b784574fa1380f5890908a900e6",
+    "figures/frozen_0012.png": "e5dd5fa9289e4d8b8af28c24c3117ee41003d41186932393b6fc4ae47eecceb6",
+    "figures/frozen_0013.png": "0ef5fd4d963119fea60011e5b170ab66d7cff30de57cb8de966ec92fd7baf927",
+    "figures/frozen_0014.png": "09f08869c45bc0e4f9deede13176af610cff39dc49985ddc64c12558a05b6a42",
+    "figures/frozen_0015.png": "281b21d1c2a8f2e6fe5c39aa88a4137ff6edb872b5c1b7f4c7a68ec4f63175be",
+    "figures/frozen_0016.png": "bc70161f57910da87b71c80c55587c9ea0dda3f05f467df9f52d92911e2015f4",
+    "figures/frozen_0017.png": "df3c2f3c9d68abe5344939b4614e72e07f020aa5c0ef36bb09f5f92985b7e991",
+    "figures/frozen_0018.png": "87ca2d76ee763eb8ffb9949ee1544ed540b70f98b75bf8b04a876c97147d8e62",
+    "figures/frozen_0019.png": "e95065e390ccac75ac959bd9a2c51968961ee3b85d3b1b35f83b4d752d256c12",
+    "figures/frozen_0020.png": "3922c6cb99105b3c2f7ba2c7a656e1bbdaeba313bc4b4271eb084e60a9a4555c",
+    "figures/frozen_0021.png": "c67fb0a66a04037f64e2e7d511977df4bf4bd5c9e80e3a567117d187f48bb8b2",
+    "passed_candidates.pdf": "0941997287ecdd34ab58a1c4cd3a8ff25c538c62fa024fd0c9433df9299d63f1"
+  },
+  "source_sha256": {
+    "build_state_original_screen_report.py": "30f78e1e6ee49b05bfb7d35688cc0603a07ab0854ee0558296cccc003b6a2417",
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_report.py": "9ed0d4998444379cbd89a3f2edb29aa8dd31e7fd291939acfb1f32c94d112555"
+  },
+  "artifact_validation": {
+    "status": "passed",
+    "html_documents": 2,
+    "local_links_checked": 1393,
+    "png_dimensions": {
+      "figures/frozen_0001.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0002.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0003.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0004.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0005.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0006.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0007.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0008.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0009.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0010.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0011.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0012.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0013.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0014.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0015.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0016.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0017.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0018.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0019.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0020.png": [
+        2392,
+        1189
+      ],
+      "figures/frozen_0021.png": [
+        2392,
+        1189
+      ]
+    },
+    "pdf_pages": 21,
+    "pdf_check": "PDF header, EOF, Page object count; visual review is separate."
+  },
+  "strategy_recomputed": false,
+  "selection_changed": false,
+  "old_OOS_read": false
+}

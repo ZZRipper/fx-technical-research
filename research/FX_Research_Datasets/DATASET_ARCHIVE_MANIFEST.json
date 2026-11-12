@@ -1,0 +1,151 @@
+{
+  "archive_scope": "raw data, cleaned/exported data and documentation only",
+  "full_project_manifest_scope_note": "data_manifest.json is the full-package inventory; frozen_files references intentionally remain even though data/frozen is omitted from the dataset-only archive.",
+  "files": [
+    {
+      "path": "data/README_Data_Dictionary.txt",
+      "bytes": 3959,
+      "sha256": "d0963f0efd86220e82c0cf33fea56a50b728e4bc687aaf7d3e26c99c8fc19832"
+    },
+    {
+      "path": "data/catalog/data_dictionary.csv",
+      "bytes": 50524,
+      "sha256": "208e7810c5cfb1b03e845e27a78e8659502c2dd792a9e5854ac04bb1ca2dd38a"
+    },
+    {
+      "path": "data/catalog/data_manifest.json",
+      "bytes": 32171,
+      "sha256": "646fc1bde735fa0988c6b3f8497c3ac1647e8e3e7c282a9987c7f77f11b9c809"
+    },
+    {
+      "path": "data/catalog/dataset_inventory.csv",
+      "bytes": 1312,
+      "sha256": "932463ca17fac697b694c8b11270f632b76c245987ed8dde20e8cb4a06a658d6"
+    },
+    {
+      "path": "data/catalog/original_coverage.csv",
+      "bytes": 7088,
+      "sha256": "dca2ed4cef0741ae1ebeff510b501783f4731a3131d9934070fdd43b5d607211"
+    },
+    {
+      "path": "data/catalog/original_data_dictionary.csv",
+      "bytes": 18711,
+      "sha256": "71e155234195fb792853b511952d9be770e5b65d6d2c7d224469ea0456483135"
+    },
+    {
+      "path": "data/catalog/original_readme.csv",
+      "bytes": 3843,
+      "sha256": "918ef977ce6166b8f803da8837312e955102fc5e3b46cab875fba5a5199bb1ac"
+    },
+    {
+      "path": "data/clean/economic_known_inputs_rebuilt.csv.gz",
+      "bytes": 3380038,
+      "sha256": "acf294a230290dc1c5a0fe4f634c764814ba3247268eaef77984aae6dc8d6c48"
+    },
+    {
+      "path": "data/clean/features_10_Technicals.csv",
+      "bytes": 17054207,
+      "sha256": "c85622503d677df600fc6234d8619c4348c165f0fc1bd0a77d4c861d22ee7a70"
+    },
+    {
+      "path": "data/clean/features_11_Macro_Surprise.csv",
+      "bytes": 222288,
+      "sha256": "78114707190e34a637be5da054a8c8358712cffb837d622f6925422c934ef090"
+    },
+    {
+      "path": "data/clean/features_1_FX_Spot.csv",
+      "bytes": 1249382,
+      "sha256": "adcbadd927c8efa3f45776c9e87d12ff01418e61c710f6e158bf84f83e8d5edb"
+    },
+    {
+      "path": "data/clean/features_2_Rates.csv",
+      "bytes": 2316646,
+      "sha256": "3ba98f851b20284d482fca4ebde384dd5e12333d6aeff51d81edc0dc9afd69c9"
+    },
+    {
+      "path": "data/clean/features_3_Growth.csv",
+      "bytes": 42371,
+      "sha256": "53bd00defff8e007778319c7e9c72d22e0f33da1f3dee8bc2622c567cece404f"
+    },
+    {
+      "path": "data/clean/features_4_Inflation.csv",
+      "bytes": 47005,
+      "sha256": "5275df6ef504522aea2c971a08b2e9bf5c9679417b98ba1f538eabb04de3e5ed"
+    },
+    {
+      "path": "data/clean/features_5_Equities.csv",
+      "bytes": 1124404,
+      "sha256": "c91dd187f4dc410f0e5a6a610c0b2a282ff5f7c917ea947a0f7df6f75febb275"
+    },
+    {
+      "path": "data/clean/features_6_Vol_Credit.csv",
+      "bytes": 513491,
+      "sha256": "be11f1adc5fb0abf2f775b3074c3978ba6fbf0c6939e560597a88470e96d5c27"
+    },
+    {
+      "path": "data/clean/features_7_FX_Options.csv",
+      "bytes": 1497883,
+      "sha256": "d9005a57e946a3e411b6259e760423f47573328215f9c8251a1e9753d2635b0f"
+    },
+    {
+      "path": "data/clean/features_8_Commodities.csv",
+      "bytes": 1126680,
+      "sha256": "88b742bc134e603e12ce1aa4babdaa4e5f82781fab335e2b1f327fcde0f92a34"
+    },
+    {
+      "path": "data/clean/features_9_Positioning.csv",
+      "bytes": 21995,
+      "sha256": "5843fc79a1ec6c7463fbd2620126d77001df2becc0b19add12c7e6bfc2af2248"
+    },
+    {
+      "path": "data/clean/fixed_baseline_metrics_rebuilt.csv",
+      "bytes": 118172,
+      "sha256": "45c96c4ddaa49764fcb84cea100638419db59d5543090ec5bbb4e29ae8e9c3ac"
+    },
+    {
+      "path": "data/clean/fx_spot_daily.csv",
+      "bytes": 3577966,
+      "sha256": "db12de912b1a3a2a265e196a98a5b6f0f5007f44843e513f8c08dd019ef4086d"
+    },
+    {
+      "path": "data/clean/h10_official_daily.csv",
+      "bytes": 1647291,
+      "sha256": "09925682a957354876cd817707f070d64ee133df4f2ee816274b25d6e37f3154"
+    },
+    {
+      "path": "data/clean/original_exploration_metrics_rebuilt.csv",
+      "bytes": 202427,
+      "sha256": "af4245b9c053c651500c902ec05c803194e79d2187f5b7ce8f2de1895812f347"
+    },
+    {
+      "path": "data/clean/pit_daily_core.csv",
+      "bytes": 12253649,
+      "sha256": "a2deb30b48bb454f9b8b8b9b580cedf14aa367ef5cdec9dc864e0b82559c918a"
+    },
+    {
+      "path": "data/clean/pit_monthly.csv",
+      "bytes": 2657041,
+      "sha256": "4a3e4d926814d1765c78ac81c18b94df92e0be2d34767fa3b5a64703a6f7c6b4"
+    },
+    {
+      "path": "data/raw/FX_Features_Book(8).xlsx",
+      "bytes": 14135258,
+      "sha256": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9"
+    },
+    {
+      "path": "data/raw/FX_Technical_Complete_Research.ipynb",
+      "bytes": 71643,
+      "sha256": "904d7fb000616d5ea95a963bf8f9f8e40bfc245066b15f7b10b0d0088211d844"
+    },
+    {
+      "path": "data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx",
+      "bytes": 10034426,
+      "sha256": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de"
+    },
+    {
+      "path": "data/raw/rejected_rolling_selection_notebook_snapshot.json",
+      "bytes": 1043999,
+      "sha256": "40de009ec2447b7c03170487b9bc14684cc63a1250ae84a645aa3640e59d5d04"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "candidate_id": "NOK|BB_BO_20|STATE_direction_commodity_d20_pct_0",
+    "IS": {
+      "delta_pp": 24.021030261137042,
+      "changed_closed_n": 63,
+      "changed_episode_n": 63,
+      "delta_without_best3_pp": 10.319696738227899
+    },
+    "CONFIRMATION": {
+      "delta_pp": -5.55448339891228,
+      "changed_closed_n": 13,
+      "changed_episode_n": 13,
+      "delta_without_best3_pp": -11.230617691260527
+    },
+    "RECENT": {
+      "delta_pp": 8.837377711144288,
+      "changed_closed_n": 34,
+      "changed_episode_n": 34,
+      "delta_without_best3_pp": -0.5523792241284529
+    }
+  },
+  {
+    "candidate_id": "JPY|BB_MR_20|STATE_efficiency_63_1",
+    "IS": {
+      "delta_pp": 32.747471764320075,
+      "changed_closed_n": 50,
+      "changed_episode_n": 50,
+      "delta_without_best3_pp": 2.0303854708761264
+    },
+    "CONFIRMATION": {
+      "delta_pp": 8.289493716145591,
+      "changed_closed_n": 10,
+      "changed_episode_n": 10,
+      "delta_without_best3_pp": -8.04190446076093
+    },
+    "RECENT": {
+      "delta_pp": 16.549889854075843,
+      "changed_closed_n": 21,
+      "changed_episode_n": 21,
+      "delta_without_best3_pp": -8.772647654244587
+    }
+  },
+  {
+    "candidate_id": "NOK|DONCHIAN_BO_20|STATE_direction_commodity_d20_pct_0",
+    "IS": {
+      "delta_pp": 59.92528962694276,
+      "changed_closed_n": 92,
+      "changed_episode_n": 92,
+      "delta_without_best3_pp": 42.00040962027519
+    },
+    "CONFIRMATION": {
+      "delta_pp": -11.551257097450875,
+      "changed_closed_n": 21,
+      "changed_episode_n": 21,
+      "delta_without_best3_pp": -18.72224277398754
+    },
+    "RECENT": {
+      "delta_pp": 3.836469407689602,
+      "changed_closed_n": 49,
+      "changed_episode_n": 49,
+      "delta_without_best3_pp": -5.9214357324205995
+    }
+  },
+  {
+    "candidate_id": "NOK|MA_10_30|STATE_vol_ratio_20_63_2",
+    "IS": {
+      "delta_pp": 51.48987493464004,
+      "changed_closed_n": 87,
+      "changed_episode_n": 88,
+      "delta_without_best3_pp": 33.690095985830325
+    },
+    "CONFIRMATION": {
+      "delta_pp": -1.740881156033447,
+      "changed_closed_n": 19,
+      "changed_episode_n": 20,
+      "delta_without_best3_pp": -12.720936153148246
+    },
+    "RECENT": {
+      "delta_pp": 7.8890883863916965,
+      "changed_closed_n": 39,
+      "changed_episode_n": 40,
+      "delta_without_best3_pp": -5.648382843814003
+    }
+  }
+]

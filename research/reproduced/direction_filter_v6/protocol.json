@@ -1,0 +1,203 @@
+{
+  "version": "direction_filter_v6",
+  "created_utc": "2026-10-23T06:56:11.272778+00:00",
+  "is_start": "2005-01-03",
+  "is_end": "2023-05-29",
+  "oos_start": "2023-05-30",
+  "oos_end": "2026-05-29",
+  "oos_duration": "Three calendar years immediately following IS, ending at the supplied workbook endpoint.",
+  "scope": {
+    "pairs": [
+      "EUR",
+      "GBP",
+      "AUD",
+      "NZD",
+      "JPY",
+      "CHF",
+      "CAD",
+      "NOK",
+      "SEK"
+    ],
+    "strategies": [
+      "RSI_MR_7",
+      "RSI_MR_14",
+      "RSI_MR_20",
+      "RSI_MOM_7",
+      "RSI_MOM_14",
+      "RSI_MOM_20",
+      "MA_10_30",
+      "MA_20_60",
+      "BB_MR_10",
+      "BB_MR_20",
+      "BB_BO_10",
+      "BB_BO_20",
+      "DONCHIAN_BO_10",
+      "DONCHIAN_BO_20",
+      "MACD_12_26_9",
+      "TSMOM_21",
+      "TSMOM_63",
+      "VOTE_EQUAL_4",
+      "VOTE_STRENGTH_4",
+      "REGIME_RULE_FIXED"
+    ],
+    "baseline_accounts": 180
+  },
+  "initial_capital_usd": 100000,
+  "accounting": "fixed_initial_capital_simple",
+  "cost_bp": 0.0,
+  "reference_cost_bp": 0.0,
+  "cost_instruction": "User explicitly requested no costs. No cost sensitivity is used this round.",
+  "carry_financing_cash_interest": 0.0,
+  "prior_holdout_exposure": "The 2023-2026 history was already plotted and inspected in earlier work. This is a development-isolated historical test, not virgin or newly collected OOS.",
+  "development_access": "After workbook parsing, price and native feature rows after IS_END are removed before indicator/return/feature calculations. No full-sample outcome artifact is used as a development input.",
+  "screen": {
+    "min_gross_annualized_simple_pct": 1.0,
+    "min_return_improvement_pp": 5.0,
+    "min_win_rate_improvement_pp": 2.0,
+    "min_payoff_relative_improvement": 0.1,
+    "max_drawdown_deterioration_pp": 2.0,
+    "return_to_drawdown_must_improve": true,
+    "min_closed_trades": 50,
+    "min_closed_retention": 0.5,
+    "min_positive_is_blocks": 2,
+    "min_improved_is_blocks": 2,
+    "last_is_block_positive_and_improved": true,
+    "one_way_cost_bp": 0.0,
+    "cost_sensitivity_evaluated": false,
+    "cost_instruction": "User explicitly requested no costs for this round.",
+    "rank": [
+      "gross_return_improvement_pp DESC",
+      "payoff_absolute_improvement DESC",
+      "win_rate_improvement_pp DESC",
+      "candidate_id ASC"
+    ],
+    "freeze": "One highest IS-ranked passing NEW filter per pair/strategy. All passing versions retained in IS table.",
+    "schedule_delay_is_diagnostic_only": true
+  },
+  "oos_screen": {
+    "min_net_annualized_simple_pct": 1.0,
+    "min_net_return_improvement_pp": 0.0,
+    "worst_net_drawdown_pp": -15.0,
+    "min_positive_anniversary_years": 2,
+    "min_closed_trades": 10,
+    "quality_confirmation": "Separately report whether both gross trade win rate and payoff are no worse than BASE, with >=20 closed trades. Not a license to tune on OOS."
+  },
+  "is_blocks": [
+    [
+      "IS_EARLY",
+      "2005-01-03",
+      "2014-12-31"
+    ],
+    [
+      "IS_MIDDLE",
+      "2015-01-01",
+      "2019-12-31"
+    ],
+    [
+      "IS_LATE",
+      "2020-01-01",
+      "2023-05-29"
+    ]
+  ],
+  "oos_anniversary_years": [
+    [
+      "OOS_YEAR_1",
+      "2023-05-30",
+      "2024-05-29"
+    ],
+    [
+      "OOS_YEAR_2",
+      "2024-05-30",
+      "2025-05-29"
+    ],
+    [
+      "OOS_YEAR_3",
+      "2025-05-30",
+      "2026-05-29"
+    ]
+  ],
+  "candidate_specs": [
+    {
+      "id": "REJECT_SHORT",
+      "reject_position": -1
+    },
+    {
+      "id": "REJECT_LONG",
+      "reject_position": 1
+    }
+  ],
+  "legacy_comparator_ids": [],
+  "family_application": "All 180 BASE accounts observed for both position directions. Every D-supported direction hypothesis replayed on its originating account; zero-proposal accounts remain in coverage.",
+  "boundary_policy": "Main evaluation preserves continuous positions across IS/OOS; PnL display resets only. Quality uses entries and closes inside each interval. Carry-in and censored trades are reported separately.",
+  "fresh_start_sensitivity": "Zero prior positions; only original BASE episodes with execution entry on/after OOS_START may enter. No mid-episode re-entry.",
+  "schedule_delay_sensitivity": "No extra schedule-delay experiment in this campaign.",
+  "holdout_rule": "Original SCREEN and original within-account ranking, then freeze one passing candidate per account. Evaluate every frozen candidate under unchanged OOS_SCREEN. No OOS-based rule revisions, substitutions or deletions.",
+  "source_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "run_direction_filter_research.py": "d2885598b78d23e0bf551d88036dbc760178e7c1fd611eae4e94daad2e49a9cd",
+    "src/fx_direction_filter.py": "f695dafe674da034f916b80746b9ad43cd7ea53c81d590795c46465343789695",
+    "verify_direction_observations.py": "e8654281875545c4dd587aa2f06e35547ff94a7bf8f9ee5d47c6f2acfb9b9887"
+  },
+  "input_sha256": {
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "build_is_filter_observations.py": "e5f96075dd5102319110031b0e9d13b84d7f4bf75ba6806aa5eee9449b723485",
+    "src/fx_is_states.py": "b14cacc51e83587dbd15514e05ff608ecb1ead4e8a875f6eab2acaf41a6d8f5b",
+    "build_entry_interaction_observations.py": "ed53ec7acacaf763b0598af0818d47fa2bbb448e168d3d5c6a85d797ea114825",
+    "verify_direction_observations.py": "e8654281875545c4dd587aa2f06e35547ff94a7bf8f9ee5d47c6f2acfb9b9887",
+    "reproduced/filter_is_diagnostics_v2/entry_state_protocol.json": "94e8208cb3039808de13af472339443cca6dd818324f08d84db669e8a0d01c04",
+    "reproduced/filter_is_diagnostics_v2/entry_state_validation.json": "2637b364492c0f6b9ba80823cd3f4fcfbef2f5ddca05584a19ab010c4c208e18",
+    "reproduced/filter_is_diagnostics_v2/technical_validation_amendment.json": "9b53b05bad9b78eafc75775ab7ea877aedb5ed7bcd253edbd1992d04261a7056",
+    "reproduced/filter_is_diagnostics_v2/is_entry_state_ledger.csv.gz": "46718a115c30684bc4cbba1180120b1eb695a2d7c3fe2648ca259cc111f9f078",
+    "reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv": "3e977f3e69662b1aba5e0e9d1d1cb8af4ecabccf24dd3fa2e315c9aa5ea91b2a",
+    "reproduced/filter_is_diagnostics_v2/is_entry_cohort_coverage.csv": "3115e6fa52bfc599a1f0ffd3ebdd1208f05a9e265cc652e172d01f80651aaa8a",
+    "reproduced/filter_is_diagnostics_v2/source_snapshots/fx_is_states_initial.py": "ca6caf54501109023e3ffe7d6777106c4cc746c328bd68955213f8208d12d90a",
+    "reproduced/direction_probe_v5/direction_probe.json": "49541273b3a70fc335215bc0deeb985f760fec5e3f730cbbf6a152f544fb2ae4",
+    "reproduced/direction_probe_v5/direction_summary.csv": "e8bae976121a2348342fe6ef244eabd8a4d93584d712a19e4d6faf339cd26e10",
+    "reproduced/direction_probe_v5/direction_comparison.csv": "d809b654e52bb36535a6d07e7fa81326487c2bf9c1aafb3d4f49285671979296",
+    "reproduced/direction_observation_validation_v6/validation.json": "575cfafde04c449b3bff293caad02c90c3ed6b3a2e1acfc6a51fb81e83791cd6"
+  },
+  "proposal_rule": "Only D1 (2005-09), D2 (2010-14), and D (2005-14) direction rows are parsed. Each half has >=10 eligible closed original trades and negative sum; combined D sum also negative. Worst-trade removal is diagnostic, not a gate.",
+  "entry_rule": "Reject all original TARGET episodes with the fixed rejected position, +1 long foreign/short USD or -1 short foreign/long USD. Other original episodes and technical exit timing are unchanged; no mid-episode entry. Next-close fills and fixed initial capital remain unchanged.",
+  "hypothesis_origin": "The direction probe was saved before the preceding interaction campaign OOS evaluation. Nominations use only that earlier D-only table and its independent D revalidation. No outcome from a prior OOS is a nomination input. IS has been repeatedly examined and the last three-year history is reused historical verification, not untouched evidence.",
+  "direction_definition": {
+    "+1": "long foreign / short USD",
+    "-1": "short foreign / long USD"
+  },
+  "observation_source_sha256": {
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_candidates.py": "695a80f3914a2663e12859fcc2b8121106dea9859f2bb7e00f4d3c3eefde12c7",
+    "src/fx_filter_evaluation.py": "fb04db076d320dc21b245e5c7957d11b7448ed852656fa9a38f5a10896d099db",
+    "src/fx_baselines.py": "40774774f34b048480f1684ecd5913b5439f0386f73695b391e6809acce0fe97",
+    "src/fx_economics.py": "87314c8688d8cb52e2e637fe112f4a15124ce93ba893c7491a9b23c4114a868e",
+    "src/fx_observation_features.py": "a34acd39e7a86ea5770fc2b7152a703f47c47fadc795b974ce7eb11e53fdf3c3",
+    "build_is_filter_observations.py": "e5f96075dd5102319110031b0e9d13b84d7f4bf75ba6806aa5eee9449b723485",
+    "src/fx_is_states.py": "b14cacc51e83587dbd15514e05ff608ecb1ead4e8a875f6eab2acaf41a6d8f5b",
+    "build_entry_interaction_observations.py": "ed53ec7acacaf763b0598af0818d47fa2bbb448e168d3d5c6a85d797ea114825",
+    "verify_direction_observations.py": "e8654281875545c4dd587aa2f06e35547ff94a7bf8f9ee5d47c6f2acfb9b9887",
+    "FX_Research_Datasets/data/raw/FX_Features_Book.xlsx": "d2ea946ad85afdfc2e790307880528e6111b51aa6be00a73d5f8d083f4a67dc9",
+    "FX_Research_Datasets/data/raw/FX_Technical_PIT_Dataset(6)(1).xlsx": "70283428b418ab78af49951cdecf741c7f909ffeb17dafd86aaf3d9f9107f2de",
+    "reproduced/filter_is_diagnostics_v2/entry_state_protocol.json": "94e8208cb3039808de13af472339443cca6dd818324f08d84db669e8a0d01c04",
+    "reproduced/filter_is_diagnostics_v2/entry_state_validation.json": "2637b364492c0f6b9ba80823cd3f4fcfbef2f5ddca05584a19ab010c4c208e18",
+    "reproduced/filter_is_diagnostics_v2/technical_validation_amendment.json": "9b53b05bad9b78eafc75775ab7ea877aedb5ed7bcd253edbd1992d04261a7056",
+    "reproduced/filter_is_diagnostics_v2/is_entry_state_ledger.csv.gz": "46718a115c30684bc4cbba1180120b1eb695a2d7c3fe2648ca259cc111f9f078",
+    "reproduced/filter_is_diagnostics_v2/is_entry_state_summary.csv": "3e977f3e69662b1aba5e0e9d1d1cb8af4ecabccf24dd3fa2e315c9aa5ea91b2a",
+    "reproduced/filter_is_diagnostics_v2/is_entry_cohort_coverage.csv": "3115e6fa52bfc599a1f0ffd3ebdd1208f05a9e265cc652e172d01f80651aaa8a",
+    "reproduced/filter_is_diagnostics_v2/source_snapshots/fx_is_states_initial.py": "ca6caf54501109023e3ffe7d6777106c4cc746c328bd68955213f8208d12d90a",
+    "reproduced/direction_probe_v5/direction_probe.json": "49541273b3a70fc335215bc0deeb985f760fec5e3f730cbbf6a152f544fb2ae4",
+    "reproduced/direction_probe_v5/direction_summary.csv": "e8bae976121a2348342fe6ef244eabd8a4d93584d712a19e4d6faf339cd26e10",
+    "reproduced/direction_probe_v5/direction_comparison.csv": "d809b654e52bb36535a6d07e7fa81326487c2bf9c1aafb3d4f49285671979296",
+    "reproduced/direction_observation_validation_v6/validation.json": "575cfafde04c449b3bff293caad02c90c3ed6b3a2e1acfc6a51fb81e83791cd6"
+  }
+}

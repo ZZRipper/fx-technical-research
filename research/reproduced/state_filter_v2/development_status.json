@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "finished_utc": "2026-10-23T05:42:03.592654+00:00",
+  "is_screen_completed": true,
+  "frozen_candidates": 0,
+  "preconfirmation_locked": 4,
+  "oos_evaluated": false,
+  "freeze_sha256": "069fd143beec224809a8454d477ff9dcafb5c8fe1a1c1c89a748529858b63f6c",
+  "compute_cutoff": "2023-05-29"
+}

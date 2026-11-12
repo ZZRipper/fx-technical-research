@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-23T06:30:31.009472+00:00",
+  "status": "passed",
+  "original_selection_columns_preserved": true,
+  "versions": 492,
+  "original_passes": 0,
+  "review_only_suggestions": 21,
+  "review_criteria_approved": false,
+  "original_standard_unchanged": true,
+  "user_preference_pending": true,
+  "oos_evaluated": false,
+  "plot_numeric_fields_checked": 2108,
+  "plot_inspected_by_root": true,
+  "review_json_sha256": "34cb72861f8166865afb23c24b1379d024f7bb861f3a35391cf8714efba6f1f3",
+  "review_csv_sha256": "357e5a508eed3534bf3544a59c69395c742aee626626f834440d69cffbbc99d2",
+  "plot_validation_sha256": "76744e55791c5ee42024ded6eef490724ef6f75187f0d97a089bfc46720c2abe",
+  "research_goal_achieved": false
+}

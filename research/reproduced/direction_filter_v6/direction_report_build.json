@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-10-23T07:01:07.930535+00:00",
+  "report": "direction_report.html",
+  "base_report": "filter_research_report.html",
+  "atlas": "pnl_comparison.pdf",
+  "figures": [
+    "figures/frozen_0001.png"
+  ],
+  "accounts": 180,
+  "observed_account_directions": 360,
+  "candidate_versions": 97,
+  "original_standard_passing_versions": 1,
+  "frozen_candidates": 1,
+  "oos_evaluated": true,
+  "ordering": "Saved freeze_rank first, then original is_selection row order.",
+  "input_paths_relative_to": "C:\\Users\\pengb\\Desktop\\Cornell\\vanguard\\Technical indicator analysis\\reproduced\\direction_filter_v6",
+  "input_sha256": {
+    "development_status.json": "3a9e41c26f67e4186164a38593e88080c6af9d62cc7ff65df2ebf44104439388",
+    "protocol.json": "d8ae5377405da2f84bd47c671d00855e1f797ad2122cc45509f03cb117369428",
+    "frozen_selection.json": "9d08c5f75be3e7287332273b2fb65454293a1633bff764e1d4f01aca88672802",
+    "is_account_coverage.csv": "612ccb2f1190bf4de9e404a456c3cbb2415a2732b02ddc36b07369bc93c93e04",
+    "is_all_decisions.csv.gz": "5af15926a55e191f4a94b62376155642d17222803ddcad868ce522dddd2754ec",
+    "is_all_metrics.csv": "c2bcda4481c7fa59dc202ce9a513d77fcf28783de9ccd1f41da5c0e5fa1604e9",
+    "is_frozen_daily.csv.gz": "9660f5802024088e30a318ea74d8b3aa75b1ddaaa2c3d7584806faa37803158f",
+    "is_frozen_decisions.csv.gz": "e1508669acdf91da3b87514c6b896c6cba21c55eeb78481e95c32130a7aefc95",
+    "is_frozen_metrics.csv": "627c1da45bb35b1a191d0e5799039eedb374361d1417c99ea6ca7b3536f2edd8",
+    "is_frozen_trades.csv.gz": "143b2c91cfacc31b892a2f4ef9df29baf76117bdfac3c0312f5601b794c5943f",
+    "is_hypotheses.json": "00c9721f0534d3a3b597abd90b3fef091f1a286ea4d672911b6096656d81350e",
+    "is_selection.csv": "1239a049e3f5a390e358452e28c7eefd64e0956d3dd615225d5621ead8b919ec",
+    "oos_status.json": "f7789613bcc9e683a5292263d66660d892ee2af718c45ee3c312a4dd9ae7d78f",
+    "candidate_assessment.csv": "377121d503976a00b55e051e81744b0f6477fbdb0345bd207ab89a3769d553ca",
+    "frozen_full_episode_decisions.csv.gz": "f56e015f202875661e174b7f98ce088cea67217c5ca578547c8b22d7b2dbdf43",
+    "frozen_full_trade_ledger.csv.gz": "87f71a565cc26a109fc2b231231eca80be08aea727224440d8b0a7bd14af9e79",
+    "oos_anniversary_metrics.csv": "69ed5891ac67b22908721e132b82f4a9eec53923609c8c04fad383a2789b4140",
+    "oos_daily.csv.gz": "1e3541d86b98f1620c8f805ba2c8014acd380e304a5dfa30fab2770821263aa8",
+    "oos_fresh_start_metrics.csv": "e6a1c44b8cd3ee66ca6efe09f7dd85a740945853e8c3060e6dda204bba76ffb7",
+    "oos_metrics.csv": "3590b5301e6c0344b0b750b37318caf84e9d445fd0c4517a90699efdd0271c47",
+    "../direction_probe_v5/direction_summary.csv": "e8bae976121a2348342fe6ef244eabd8a4d93584d712a19e4d6faf339cd26e10",
+    "../direction_observation_validation_v6/cases.json": "24b68a8ee3ab068f2ad4283c4ab6d45e9b006d05a89ee14b9d9b73e961929d44",
+    "../direction_observation_validation_v6/validation.json": "575cfafde04c449b3bff293caad02c90c3ed6b3a2e1acfc6a51fb81e83791cd6",
+    "independent_validation.json": "a03e17fef504076b2910ade734a634a437e9c3d342575ac49b58afd0bb467566",
+    "post_oos_independent_validation.json": "f6632f74e4ba57175b9198de54d4b371fcd86cd04b011bc65fb16d504e265384"
+  },
+  "output_sha256": {
+    "direction_report.html": "acd2edc3b923a5cc47d8eefe7e13f4112f3455be6e489fe3fdbddb020b803986",
+    "is_direction_decision_counts.csv": "f1131a75981bb3c3dbe49351e61a84e55d42aade50dad3b1cb30936e78b8ac2e",
+    "is_direction_gate_failures.csv": "ecba81be64b510d767599e276ca34b840cf4684d39e8f73f11982cb2b16bdfb2",
+    "report_build.json": "fe1fb785b04ca79d090d4661177df7106654796455b4d6b9c9e7ffc34ac1b3e8",
+    "filter_research_report.html": "deeb5280609e6ff5ec2464f16881fd10d23a4de67b6c526065ad636cb5f06fa8",
+    "pnl_comparison.pdf": "48ec6b0611923b28ba4aa41833ffab7d3480c5c95510eb1f0d33cf7a13a55684",
+    "figures/frozen_0001.png": "760342e9b8bf82e7dd3bc51b79e2f9706da244abb8d957c2d1a81f2c10264e2d"
+  },
+  "source_sha256": {
+    "build_direction_filter_report.py": "875a018ff06ea3d9404e7023f03c8af51c5cd268b696ac83bedb7644270bea6d",
+    "run_filter_research.py": "b648e4043149df19dbdc48e37a65d2470f00613ffb95f2b9b3b904e024f2d7a9",
+    "src/fx_filter_report.py": "9ed0d4998444379cbd89a3f2edb29aa8dd31e7fd291939acfb1f32c94d112555"
+  },
+  "artifact_validation": {
+    "status": "passed",
+    "html_documents": 2,
+    "local_links_checked": 141,
+    "png_dimensions": {
+      "figures/frozen_0001.png": [
+        2392,
+        1189
+      ]
+    },
+    "pdf_pages": 1,
+    "pdf_check": "PDF header, EOF, Page object count; visual review is separate."
+  },
+  "strategy_recomputed": false,
+  "selection_changed": false,
+  "old_OOS_read": false,
+  "D_only_observation_cutoff": "2014-12-31"
+}

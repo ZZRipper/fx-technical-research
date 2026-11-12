@@ -1,0 +1,19 @@
+check,expected_rows,compared_rows,max_abs_error,mismatch_count,absolute_tolerance,pass,reference_source
+known economic inputs: exact key coverage,62010,62010,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_vix_obs_date,62010,62010,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_vix,62010,62010,0.0,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_vix_d5,62010,62010,3.552713678800501e-15,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_dxy_obs_date,62010,62010,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_dxy_d20_pct,62010,62010,1.7763568394002505e-15,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_brent_obs_date,62010,62010,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_brent_d20_pct,62010,62010,7.105427357601002e-15,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_copper_obs_date,62010,62010,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_copper_d20_pct,62010,62010,7.105427357601002e-15,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_rate_obs_date,62010,62010,,0,,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_spread_bp,62010,62010,5.684341886080802e-14,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known economic inputs: K_spread_d20_bp,62010,62010,2.842170943040401e-14,0,1e-07,True,C:\Users\pengb\Desktop\Cornell\vanguard\Technical indicator analysis\FX_Research_Datasets\data\clean\economic_known_inputs_rebuilt.csv.gz
+known timing: K_vix_obs_date strictly earlier and at most 7 days old,62001,62001,,0,,True,recomputed observation dates
+known timing: K_dxy_obs_date strictly earlier and at most 7 days old,62001,62001,,0,,True,recomputed observation dates
+known timing: K_brent_obs_date strictly earlier and at most 7 days old,61992,61992,,0,,True,recomputed observation dates
+known timing: K_copper_obs_date strictly earlier and at most 7 days old,62001,62001,,0,,True,recomputed observation dates
+known timing: K_rate_obs_date strictly earlier and at most 7 days old,53236,53236,,0,,True,recomputed observation dates
